@@ -1,0 +1,157 @@
+﻿.header {
+    display: block;
+    font-size: 18px;
+    height: 50px;
+    line-height: 49px;
+    margin: auto;
+    max-width: 396px;
+    padding: 0 0 0 86px;
+    position: relative;
+}
+
+    .header em {
+        /*background: transparent url("Images/mask.png") no-repeat 0 0;*/
+        height: 72px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 86px;
+    }
+
+
+    .header > span {
+        background: #ffffff none repeat scroll 0 0;
+        display: block;
+        height: 100%;
+    }
+
+#example .demo-container {
+    margin-top: 0;
+    max-width: 420px;
+}
+
+#example .RadPicker,
+#example .RadComboBox {
+    margin-bottom: 15px;
+}
+
+#example .RadPicker {
+    float: left;
+}
+
+#example label {
+    width: 80px;
+    padding-right: 0;
+}
+
+#example .toDate label {
+    padding-left: 10px;
+}
+
+.demo-container small {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    clear: both;
+    display: block;
+}
+
+.background-default .header {
+    color: #1976d2;
+    background-color: #1976d2;
+}
+
+.background-material .header {
+    background-color: #03a9f4;
+    color: #03a9f4;
+}
+
+.background-black .header {
+    color: #9eda29;
+    background-color: #9eda29;
+}
+
+.background-blackmetrotouch .header {
+    color: #0082cc;
+    background-color: #0082cc;
+}
+
+.background-bootstrap .header {
+    color: #337ab7;
+    background-color: #337ab7;
+}
+
+.background-glow .header {
+    color: #ffa915;
+    background-color: #ffa915;
+}
+
+.background-metro .header,
+.background-metrotouch .header {
+    color: #25a0da;
+    background-color: #25a0da;
+}
+
+.background-office2007 .header {
+    color: #00156e;
+    background-color: #00156e;
+}
+
+.background-office2010black .header {
+    color: #f7c840;
+    background-color: #f7c840;
+}
+
+.background-office2010blue .header {
+    color: #3a71b7;
+    background-color: #3a71b7;
+}
+
+.background-office2010silver .header {
+    color: #f6b700;
+    background-color: #f6b700;
+}
+
+.background-outlook .header {
+    color: #306ac5;
+    background-color: #306ac5;
+}
+
+.background-silk .header {
+    color: #2dabc1;
+    background-color: #2dabc1;
+}
+
+.background-simple .header {
+    color: #882501;
+    background-color: #882501;
+}
+
+.background-sunset .header {
+    color: #982e00;
+    background-color: #982e00;
+}
+
+.background-telerik .header {
+    color: #63ac39;
+    background-color: #63ac39;
+}
+
+.background-vista .header {
+    color: #3c7fb1;
+    background-color: #3c7fb1;
+}
+
+.background-web20 .header {
+    color: #12398a;
+    background-color: #12398a;
+}
+
+.background-webblue .header {
+    color: #0e3d4f;
+    background-color: #0e3d4f;
+}
+
+.background-windows7 .header {
+    color: #4c93cc;
+    background-color: #4c93cc;
+}

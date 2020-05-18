@@ -1,0 +1,557 @@
+﻿.stolovi {
+    border-color: Silver;
+    border-spacing: 1px;
+    border-style: solid;
+    background-color: white;
+    vertical-align: bottom;
+    /* set margins for top and left bound */
+    margin-top: 12px;
+    margin-left: 15px;
+    width: 64px;
+    height: 44px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 10px;
+    border-width: 1px;
+    white-space: normal;
+    margin-top: 12px;
+    -webkit-box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+.KoferceBox {
+    border-color: Silver;
+    border-spacing: 1px;
+    border-style: solid;
+    background-color: white;
+    vertical-align: bottom;
+    margin-top: 12px;
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 10px;
+    border-width: 1px;
+    white-space: normal;
+    -webkit-box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+.KoferceKruzicBox {
+    margin-top: 6px;
+    margin-left: 9px;
+    border-color: Silver;
+    border-spacing: 1px;
+    border-style: solid;
+    background-color: white;
+    vertical-align: bottom;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    /*font-family: Arial;*/
+    border-radius: 100px !important;
+    border-width: 1px;
+    white-space: normal;
+    -webkit-box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+.KoferceCircle {
+    background-image: url(../images/koferce60.png);
+    background-size: 50px 45px;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: inline-box;
+    width: 50px !important;
+    height: 60px !important;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.KoferceKruzic {
+    background-image: url(../images/kruzic-gore.svg);
+    background-size: 61px 60px;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: inline-block;
+    width: 60px !important;
+    height: 50px !important;
+    margin-left: 18px;
+    margin-top: 4px;
+}
+
+.simexBox, .simexRound {
+    border-color: #1e90ff;
+    border-spacing: 1px;
+    border-style: solid;
+    vertical-align: bottom;
+    margin-top: 12px;
+    margin-left: 15px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-width: 1px;
+    white-space: normal;
+    background-color: #fff;
+}
+
+.simexBox {
+    font-family: Arial;
+    font-size: 10px;
+}
+
+.simexRound {
+    -webkit-border-radius: 100px;
+}
+
+.simexContainers {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 270px;
+    height: 620px;
+    border: solid #e2e2e2;
+    float: left;
+    border-width: 1px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 20px 40px -14px rgba(0,0,0,.25);
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,.25);
+}
+
+.simexTitles {
+    Width: 268px;
+    margin-right: 30px;
+    background-color: rgba(51,122,183,.45);
+    float: left;
+    text-align: match-parent;
+    text-align: center;
+    line-height: 30px;
+}
+
+.left {
+    text-align: left !important;
+    float: left;
+    padding-left: 15px;
+}
+
+.right {
+    text-align: right !important;
+    padding-left: 100px;
+}
+
+.silver-title {
+    background: silver;
+    background: -webkit-linear-gradient(gray, silver, gray);
+    background: -o-linear-gradient(gray, silver, gray); /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear, left top, left bottom, from(gray), color-stop(silver), to(gray));
+    background: linear-gradient(gray, silver, gray); /* Standard syntax */
+    border-color: gray;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: initial;
+}
+
+#buttonsdiv {
+    margin-left: 100px;
+}
+
+form {
+    font-family: Lato,sans-serif;
+}
+
+.jumbotron {
+    width: 100%;
+}
+
+.info-panel {
+    font-size: 30px;
+    width: 90%;
+    height: 100px;
+    margin-top: -20px;
+    background: #a9a9a9;
+}
+
+.btn-block {
+    background-color: #d3d3d3;
+    border-bottom: solid;
+    border-width: .5pt;
+}
+
+#lblprofil {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.paneli {
+    display: table;
+    /*margin: 0px auto;*/
+    margin-left: 150px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.tooltip-wrap {
+    position: relative;
+}
+
+    .tooltip-wrap .tooltip-content {
+        display: none;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        right: 5%;
+        background-color: #fff;
+        padding: .5em;
+    }
+
+    .tooltip-wrap:hover .tooltip-content {
+        display: block;
+    }
+
+.navbar {
+    margin-bottom: 0 !important;
+    padding-left: 45px;
+}
+
+.contents {
+    width: 100%;
+    /*height: 87% !important;*/
+}
+
+.modal-content2 {
+    position: relative;
+    background-color: rgba(44,81,107,.03);
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    overflow-x: auto;
+}
+
+.btn-primary {
+    color: #464343;
+    background-color: #fff;
+    width: 220px;
+}
+
+    .btn-primary:hover {
+        background-color: #ffa300 !important;
+        color: #333 !important;
+        border-color: #ffa300 !important;
+    }
+
+.fa {
+    padding-top: 0px;
+    display: inline-block;
+    font-family: FontAwesome !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.faa-horizontal.animated, .faa-horizontal.animated-hover:hover, .faa-parent.animated-hover:hover > .faa-horizontal {
+    -webkit-animation: horizontal 2s ease infinite;
+    animation: horizontal 2s ease infinite;
+}
+
+.modalBackground {
+    background-color: #000;
+    filter: alpha(opacity=90);
+    opacity: .8;
+}
+
+.modalPopup {
+    background-color: #FFF;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 300px;
+    height: 140px;
+}
+
+.navbar-inverse {
+    border-radius: inherit !important;
+}
+
+span#lblTotEfficiency {
+    white-space: nowrap;
+}
+
+
+#glavnipaneliconfa {
+    overflow-x: hidden;
+    display: initial;
+    position: relative;
+}
+
+@media only screen and (max-width:1920px) {
+    #glavnipaneliconfa {
+        zoom: 0.8 !important;
+        -ms-zoom: 0.8;
+        padding-top: 30px;
+        left: 300px;
+        height: 800px;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    #glavnipaneliconfa {
+        zoom: 0.81 !important;
+        -ms-zoom: 0.81;
+        left: 100px;
+        height: 712px;
+    }
+
+    #left-navi {
+        top: 75px;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    #glavnipaneliconfa {
+        zoom: 0.7 !important;
+        -ms-zoom: 0.7;
+        left: 125px;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    #glavnipaneliconfa {
+        zoom: 0.65 !important;
+        -ms-zoom: 0.65;
+        padding-top: 65px;
+    }
+
+    #left-navi {
+        top: 80px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    #glavnipaneliconfa {
+        zoom: 0.59 !important;
+        -ms-zoom: 0.59;
+    }
+
+    /*#lbl_total_eff_text, #lbl_total_eff_value {
+        font-size:14px;
+    }*/
+    #lbl_ultimo_agiornato {
+        font-size: 8pt !important;
+    }
+
+    #btn_fullscreen {
+        display: none !important;
+    }
+
+    #fstext {
+        display: none !important;
+    }
+
+    #dockbar .scroll-container {
+        left: 30% !important;
+    }
+
+    #Totale_Efficiency {
+        right: 0px !important;
+        width: 230px!important;
+    }
+
+    #lbl_total_eff_text, #lbl_total_eff_value, #lbl_total_ass_text, #lbl_total_ass_value {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    #glavnipaneliconfa {
+        zoom: 0.49 !important;
+        -ms-zoom: 0.49;
+    }
+    #lbl_ultimo_agiornato {
+        font-size: 8pt !important;
+    }
+
+    #btn_fullscreen {
+        display: none !important;
+    }
+
+    #fstext {
+        display: none !important;
+    }
+
+    #dockbar .scroll-container {
+        left: 30% !important;
+    }
+
+    #Totale_Efficiency {
+        right: 0px !important;
+        width: 230px !important;
+    }
+
+    #lbl_total_eff_text, #lbl_total_eff_value, #lbl_total_ass_text, #lbl_total_ass_value {
+        font-size: 14px !important;
+    }
+    #jednatrecina1, #jednatrecina2, #jednatrecina3, #jednatrecina4, #jednatrecina5, #jednatrecina6, #jednatrecina7, #jednatrecina8, #jednatrecina9, #jednatrecina10, #jednatrecina11, #jednatrecina12 {
+        width: 31% !important;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    #glavnipaneliconfb {
+        zoom: 0.60 !important;
+        -ms-zoom: 0.60 !important;
+    }
+
+    #lbl_ultimo_agiornato {
+        font-size: 8pt !important;
+    }
+
+    #btn_fullscreen {
+        display: none !important;
+    }
+
+    #fstext {
+        display: none !important;
+    }
+
+    #dockbar .scroll-container {
+        left: 25% !important;
+    }
+
+    #Totale_Efficiency {
+        right: 0px !important;
+        width: 230px !important;
+    }
+
+    #lbl_total_eff_text, #lbl_total_eff_value, #lbl_total_ass_text, #lbl_total_ass_value {
+        font-size: 14px !important;
+    }
+    #jednatrecina1, #jednatrecina2, #jednatrecina3, #jednatrecina4, #jednatrecina5, #jednatrecina6, #jednatrecina7, #jednatrecina8, #jednatrecina9, #jednatrecina10, #jednatrecina11, #jednatrecina12 {
+        width: 31% !important;
+    }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    #glavnipaneliconfb {
+        zoom: 0.60 !important;
+        -ms-zoom: 0.60 !important;
+    }
+
+    #lbl_ultimo_agiornato {
+        font-size: 8pt !important;
+    }
+
+    #btn_fullscreen {
+        display: none !important;
+    }
+
+    #fstext {
+        display: none !important;
+    }
+
+    #dockbar .scroll-container {
+        left: 25% !important;
+    }
+
+    #Totale_Efficiency {
+        right: 0px !important;
+        width: 230px !important;
+    }
+
+    #lbl_total_eff_text, #lbl_total_eff_value, #lbl_total_ass_text, #lbl_total_ass_value {
+        font-size: 14px !important;
+    }
+    #jednatrecina1, #jednatrecina2, #jednatrecina3, #jednatrecina4, #jednatrecina5, #jednatrecina6, #jednatrecina7, #jednatrecina8, #jednatrecina9, #jednatrecina10, #jednatrecina11, #jednatrecina12 {
+        width: 31% !important;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 600px) and (-webkit-min-device-pixel-ratio: 1) {
+    #glavnipaneliconfb {
+        zoom: 0.60 !important;
+        -ms-zoom: 0.60 !important;
+    }
+
+    #lbl_ultimo_agiornato {
+        font-size: 8pt !important;
+    }
+
+    #btn_fullscreen {
+        display: none !important;
+    }
+
+    #fstext {
+        display: none !important;
+    }
+
+    #dockbar .scroll-container {
+        left: 25% !important;
+    }
+
+    #Totale_Efficiency {
+        right: 0px !important;
+        width: 230px !important;
+    }
+
+    #lbl_total_eff_text, #lbl_total_eff_value, #lbl_total_ass_text, #lbl_total_ass_value {
+        font-size: 14px !important;
+    }
+
+    #jednatrecina1, #jednatrecina2, #jednatrecina3, #jednatrecina4, #jednatrecina5, #jednatrecina6, #jednatrecina7, #jednatrecina8, #jednatrecina9, #jednatrecina10, #jednatrecina11, #jednatrecina12 {
+        width: 31% !important;
+    }
+}
+
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    #glavnipaneliconfb {
+        zoom: 0.60 !important;
+        -ms-zoom: 0.60 !important;
+    }
+
+    #lbl_ultimo_agiornato {
+        font-size: 8pt !important;
+    }
+
+    #btn_fullscreen {
+        display: none !important;
+    }
+
+    #fstext {
+        display: none !important;
+    }
+
+    #dockbar .scroll-container {
+        left: 25% !important;
+    }
+
+    #Totale_Efficiency {
+        right: 0px !important;
+        width: 230px !important;
+    }
+
+    #lbl_total_eff_text, #lbl_total_eff_value, #lbl_total_ass_text, #lbl_total_ass_value {
+        font-size: 14px !important;
+    }
+
+    #jednatrecina1, #jednatrecina2, #jednatrecina3, #jednatrecina4, #jednatrecina5, #jednatrecina6, #jednatrecina7, #jednatrecina8, #jednatrecina9, #jednatrecina10, #jednatrecina11, #jednatrecina12 {
+        width: 31% !important;
+    }
+}

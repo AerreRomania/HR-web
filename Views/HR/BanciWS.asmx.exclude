@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" Class="WbmOlimpias.BanciWS" CodeBehind="App_Code/CSCode/BanciWS.cs" %>

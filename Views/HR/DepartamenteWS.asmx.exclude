@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" Class="WbmOlimpias.DepartamenteWS" CodeBehind="App_Code/CSCode/DepartamenteWS.cs" %>

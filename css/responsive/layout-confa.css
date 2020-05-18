@@ -1,0 +1,174 @@
+﻿@media only screen and (max-width: 1920px) and (min-width: 1681px) {
+    .upd_confa {
+        transform: scale(1);
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width:1680px) and (min-width:1441px){
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .upd_confa {
+        transform: scale(0.8);
+        width: 1680px;
+        margin-top: -80px;
+        margin-left: 0px;
+    }
+
+    .confa_panel {
+         top: 100px!important; 
+         left: 0px!important; 
+        position: absolute;
+    }
+
+    #left-navi {
+        top: 80px!important;
+    }
+}
+
+@media only screen and (max-width:1440px) and (min-width:1000px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .upd_confa {
+        width:1440px;
+        transform: scale(0.7);
+        margin-left: -100px;
+        margin-top: 0px;
+    }
+
+    .confa_panel {
+        top: 0px !important;
+        left: 0px !important;
+        position: absolute;
+    }
+
+    #left-navi {
+        top: 80px !important;
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:661px) {
+    body{
+        height:2100px!important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 3180px !important;
+    }
+
+    .main-nav ul li a img {
+        width: 20px !important;
+        padding-left: 5px !important;
+        margin-left: 3px;
+    }
+
+    .main-nav ul li a span {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .main-nav ul li a {
+        padding: 5px;
+    }
+
+    .main-nav ul li {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 40px;
+        display: block;
+    }
+
+    #left-navi {
+        display: none;
+        position: fixed;
+        z-index: 12;
+        background: none #fff;
+        height: 100%;
+        width: 50%;
+        max-width: 30px !important;
+        left: 0;
+        top: 0;
+        box-shadow: 1px 1px 1px #ccc;
+        transition: all 0.4s ease 0.4s;
+    }
+
+    .main-nav {
+        margin-top: 100px;
+    }
+
+    .confa_panel {
+        left: 0px !important;
+        top: 0px !important;
+    }
+
+    #Totale_Efficiency {
+        position: absolute;
+        width: 300px;
+        right: 50px;
+        top: 55px;
+        right: 0px;
+        z-index: 999;
+    }
+
+    #main {
+        display: none;
+    }
+
+    .blur {
+        display: none;
+    }
+
+    #dockbar .scroll-container {
+        left: 20px !important;
+    }
+
+    .dockbutton {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
+
+    .docktitles {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #dockbar .scroll-container button {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
+
+    #dockbar {
+        height: 100px;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .scroll-container {
+        left: 10% !important;
+    }
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .upd_confa {
+        transform: scale(0.9);
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+        top: 0px !important;
+    }
+
+    .simexContainers {
+        height: 588px;
+    }
+}

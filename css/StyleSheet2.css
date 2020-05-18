@@ -1,0 +1,278 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Exo');
+
+* {
+    font-family: 'Exo', sans-serif !important;
+}
+
+
+body {
+    color: #232323;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+table.principal {
+    /*border: 1px solid #a9a9a9;
+	background-color: #f9f9f9;*/
+    padding: 0px;
+    width: 100%;
+}
+
+table.principal_grid {
+    background-color: #f9f9f9;
+    border-collapse: collapse;
+    border: 1px solid #a9a9a9;
+    padding: 0px;
+}
+
+table.raport {
+    border: 1px solid #800080;
+    border-collapse: collapse;
+}
+
+span.principal {
+    color: #ffffff;
+    /*font: 36px/20px Arial, Helvetica, sans-serif;*/
+    font-size: 36px;
+    /*font-weight: bold;*/
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+span.secund {
+    color: #294460;
+    font: 12px/20px Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+
+.continut {
+    color: #7c667c;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+}
+
+.meniuPrincipal {
+    color: #000000;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.meniuMain {
+    display: none;
+    color: #ffffff;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.meniu {
+    color: #000040;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td.principal {
+    /*background: url(../Images/Image/bg_principal.png) repeat-x left top;*/
+    height: 50px;
+    background: #2193b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6dd5ed, #2193b0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+td.secund {
+    background: url(../Images/Image/bg_secund.png) repeat-x left top;
+}
+
+td.selectat {
+    background-color: #ffbe57;
+    border-top: solid 1px #aa347a;
+    border-bottom: solid 1px #aa347a;
+    color: #9a246a;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+td.neselectat {
+    border-top: solid 1px #f9f9f9;
+    border-bottom: solid 1px #f9f9f9;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;
+    cursor: pointer;
+}
+
+input {
+    font-family: arial, verdana, ms sans serif;
+    border: 1px solid #b8b8b8;
+}
+
+    input.cit {
+        font-family: arial, verdana, ms sans serif;
+        border: 1px solid #b8b8b8;
+        background-color: #ecf7b0;
+    }
+
+.navigare {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.pdf {
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    background-image: url(../Images/Image/pdf.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: right;
+    padding-left: 30px;
+}
+
+.confirmare {
+    width: 70px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.taburi {
+    width: 70px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+}
+
+.comanda {
+    width: 65px;
+    height: 22px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.up {
+    background-color: #CF4342;
+    color: White;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+.iLoading {
+    vertical-align: middle;
+    margin: 2px;
+}
+
+.xls {
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    background-image: url(../Images/Image/xls.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: right;
+    padding-left: 30px;
+}
+
+td.rSelectat {
+    /*background-color: #b7b5b5;*/
+    background-color:#cecece;
+    /*color: #fd0000;*/
+    color:black;
+    /* font: 11px/20px Arial, Helvetica, sans-serif; */
+    border: 5px solid #ffffff;
+    font-weight: 600;
+    font-size: 14pt;
+    text-align: center !important;
+}
+
+td.rWeekend {
+    background-color: #d0d0d0;
+    color: #9a246a;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    border: 1px solid #800080;
+}
+
+td.rSubSelectat {
+    background-color: #d7e4bd;
+    color: #9a246a;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    border: 1px solid #800080;
+}
+
+td.rNeselectat {
+    /*font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;*/
+    border: 1px solid #800080;
+    color: #000000;
+    border: 5px solid #ffffff;
+    background-color: #e8e8e8;
+    font-weight: 600;
+    text-align: center !important;
+    letter-spacing: 0.5px;
+}
+
+td.rSecund {
+    /*background: url(../Images/Image/bg_secund.png) repeat-x left top;
+    border: 1px solid #800080;*/
+    border: 5px solid #ffffff;
+    color: black;
+    background: #FFC107;
+    font-weight: 600;
+    font-size: 10pt;
+    text-align: center;
+}
+
+td.rSecundLarge {
+    background: url(../Images/Image/bg_secund_large.png) repeat-x left top;
+    border: 1px solid #800080;
+}
+
+td.celula {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #96A7BA;
+}
+
+td.rAntet {
+    background-color: #c6efce;
+    color: #9a246a;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    border: 1px solid #800080;
+}
+
+td.rAntetSecund {
+    background-color: #ccffcc;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;
+    border: 1px solid #800080;
+}
+
+td.rAntetSecundGalben {
+    background-color: #f7ef5b;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;
+    border: 1px solid #800080;
+}
+
+td.rAntetSecundAlb {
+    background-color: #ffffff;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;
+    border: 1px solid #800080;
+}
+
+td.rAntetSecundRosu {
+    background-color: #ff0000;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;
+    border: 1px solid #800080;
+}

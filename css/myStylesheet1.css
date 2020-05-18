@@ -1,0 +1,254 @@
+﻿
+.butt {
+    text-align: left !important;
+}
+
+.efficiency {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.machineDiv {
+    position: absolute;
+    width: 70px;
+    height: 50px;
+}
+
+.machineDiv2 {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    margin-left: 10px;
+}
+
+.totalOnLine {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    margin-top: 10px;
+}
+
+.myImage {
+    width: inherit;
+    height: inherit;
+}
+
+.machineNumber {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    font-size: 9px;
+}
+
+.noBorder {
+    border-style: none;
+    background-color: white;
+    font-size: 10px;
+    image-rendering: pixelated;
+    /*image-resolution: from-image;*/
+}
+
+.shiftStyle {
+    border-style: none;
+    background-color: white;
+    font-size: 10px;
+    image-rendering: pixelated;
+    /*image-resolution: from-image;*/
+    display: inline-block;
+    text-align: center;
+    background-image: url(../css/resources/Images/img/MachinePic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 44px;
+    padding-bottom: 35%;
+    /*padding-left: 35px;*/
+    /*line-height: 18px;*/
+    font-weight: bold;
+}
+
+.labelTextStyle {
+    padding-right: 10px;
+}
+
+.lineStyle {
+    width: 70px;
+    height: 44px;
+    padding-top: 5px;
+}
+
+.panelStyle {
+    height: 24px;
+}
+
+.buttonStyle {
+    /*background-image: url(../css/resources/Images/img/machine_small.GIF);*/
+    border-style: none;
+    background-color: white;
+    font-size: 10px;
+    image-rendering: pixelated;
+    /*image-resolution: from-image;*/
+    display: -webkit-inline-box;
+    text-align: center;
+    /*background-image: url(../css/resources/Images/img/machine_small.GIF);*/
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    width: 70px;
+    height: 44px;
+    /*padding-bottom:45%;*/
+    /*padding-left: 35px;*/
+    /*line-height: 18px;*/
+    font-weight: bold;
+}
+
+
+.lineButtonStyle {
+    background-image: url(../css/resources/Images/img/machine_small.GIF);
+    border-style: none;
+    background-color: white;
+    font-size: 10px;
+    image-rendering: pixelated;
+    /*image-resolution: from-image;*/
+    display: -webkit-inline-box;
+    text-align: center;
+    background-image: url(../css/resources/Images/img/machine_small.GIF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 44px;
+    /*padding-bottom:45%;*/
+    /*padding-left: 35px;*/
+    /*line-height: 18px;*/
+    font-weight: bold;
+}
+
+
+.totalButtonStyle {
+    background-image: url(../css/resources/Images/img/machine_small.GIF);
+    border-style: none;
+    background-color: white;
+    font-size: 10px;
+    image-rendering: pixelated;
+    /*image-resolution: from-image;*/
+    display: inline-block;
+    text-align: center;
+    background-image: url(../css/resources/Images/img/machine_small.GIF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 44px;
+    padding-bottom: 45%;
+    /*padding-left: 35px;*/
+    /*line-height: 18px;*/
+    font-weight: bold;
+}
+
+/*.span {
+    max-width: 110px; 
+    display: -webkit-inline-box;
+    text-align: center;
+    background-image: url("./Images/img/machine_gif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 57px;
+    padding-left: 35px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+}*/
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #FFFFFF;
+    background-color: #CCC;
+    color: #fff;
+    opacity: 0.1;
+}
+
+.checkBoxStyle {
+    background-image: url(../css/resources/Images/img/machine_small.GIF);
+    /*background-repeat: no-repeat;
+    background-size: auto 100%;*/
+    width: 70px;
+    height: 44px;
+    display: inline-block;
+}
+
+/*#cbNight {
+    display: none;
+}*/
+
+.checker {
+    background-image: url(../css/resources/Images/img/machine_small.GIF);
+    background-position: left center;
+    background-size: auto 100%;
+    width: 70px;
+    height: 44px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#cbNight:checked + .checker {
+    background-position: right center;
+    background-image: url(../css/resources/Images/img/machine_small.GIF);
+    background-size: auto 100%;
+    width: 70px;
+    height: 44px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+
+.tdStyle {
+    padding-top: 5px;
+    width: 70px;
+}
+
+.tooltip1 {
+    width: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+
+    .tooltip1 .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+        .tooltip1 .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+    .tooltip1:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.panelStyle {
+    width: inherit;
+}

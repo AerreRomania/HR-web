@@ -1,0 +1,401 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Exo');
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');*/
+* {
+    font-family: 'Exo', sans-serif !important;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+input, textarea, select, button {
+    font-size:9pt;
+}
+
+.top-icons:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(105, 15, 27);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(105, 15, 27);
+    box-shadow: 0px 0px 10px 0px rgb(105, 15, 27);
+}
+
+select:hover {
+    -webkit-box-shadow: 1px 1px 0px 0px rgb(56, 56, 56);
+    -moz-box-shadow: 1px 1px 0px 0px rgb(56, 56, 56);
+    box-shadow: 1px 1px 0px 0px rgb(56, 56, 56);
+}
+
+td.principal {
+    -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.66);
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.66);
+}
+
+#tRaportNumarAngajati, #tRaportNumarAngajatiMaternita, #tRaportNumarAngajatiDetaliat, #tAbsenteProcent, #tSuplimentareOre, #tAbsenteDepartamentOre, #tSuplimentareDepartamentOre, #myTable, #tRaportEficienteDetalii {
+    -webkit-box-shadow: 1px 2px 2px 0px rgb(178, 178, 178);
+    -moz-box-shadow: 1px 2px 2px 0px rgb(178, 178, 178);
+    box-shadow: 1px 2px 2px 0px rgb(178, 178, 178);
+}
+
+html {
+    /*overflow: hidden;*/
+}
+
+#tbFiltruDepartament {
+padding-left:10px;
+width:123px;
+}
+
+.top-icons {
+    cursor: pointer;
+}
+
+    .top-icons:hover {
+    }
+
+.td_tess {
+    text-align: center;
+    font-weight: 600;
+    /*background: #98c5da;*/
+    background: #cecece;
+    color: black;
+}
+
+.td_conf {
+    text-align: center;
+    font-weight: 600;
+    /*background: pink;*/
+    background: #cecece;
+    color: black;
+    border-top: 10px solid white;
+}
+
+.td_stiro {
+    text-align: center;
+    font-weight: 600;
+    /*background: #b3e9ff;*/
+    background: #cecece;
+    color: black;
+    border-top: 10px solid white;
+}
+
+.td_amministrazione {
+    text-align: center;
+    font-weight: 600;
+    /*background: yellow;*/
+    background: #cecece;
+    color: black;
+    border-top: 10px solid white;
+}
+
+body {
+    color: black;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+table.principal
+{
+	/*border: 1px solid #a9a9a9;
+	background-color: #f9f9f9;*/
+	padding: 0px;
+    width:100%;
+}
+table.principal_grid
+{
+	background-color: #f9f9f9;
+    border-collapse: collapse;
+	border: 1px solid #a9a9a9;
+	padding: 0px;
+}
+table.raport{
+    border: 1px solid #ffffff; 
+    border-collapse: collapse;
+}
+span.principal {
+    color: #ffffff;
+    /*font: 36px/20px Arial, Helvetica, sans-serif;*/
+    font-size:22px;
+    /*font-weight: bold;*/
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+span.secund
+{
+	/*color: #294460;*/
+	/*font: 12px/20px Arial, Helvetica, sans-serif;*/
+	margin-left: 5px;
+    font-size: 10pt;
+}
+.continut {
+    color: black;
+    font: 9pt/20px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.meniuPrincipal
+{
+	color: #000000;
+	font: 11px/20px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+.meniuMain
+{
+    display:none!important;
+	color: #ffffff;
+	font: 11px/20px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+.meniu
+{
+	color: #000040;
+	font: 11px/20px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+td.principal {
+    /*background: url(../Images/Image/bg_principal.png) repeat-x left top;*/
+    height: 50px;
+    background: #c23749;
+    color: yellow;
+}
+td.secund {
+    padding-left: 3px;
+    background: #c23749;
+    color: white;
+    font-size:10pt;
+}
+td.selectat {
+    background-color: #ffbe57;
+    border-top: solid 1px #aa347a;
+    border-bottom: solid 1px #aa347a;
+    color: #9a246a;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.33);
+}
+td.neselectat {
+    border-top: solid 1px #f9f9f9;
+    border-bottom: solid 1px #f9f9f9;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.33);
+}
+input
+{
+	font-family: arial, verdana, ms sans serif;
+	border: 1px solid #b8b8b8;
+} 
+input.cit
+{
+	font-family: arial, verdana, ms sans serif;
+	border: 1px solid #b8b8b8;
+	background-color: #ecf7b0;
+}
+.navigare
+{
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	border-style: none;
+	cursor: pointer;
+}
+.pdf
+{
+	height: 32px;
+	background-color: transparent;
+	border: 1px solid #d0d0d0;
+	cursor: pointer;
+	background-image: url(../Images/Image/pdf.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	text-align: right;
+	padding-left: 30px;
+}
+.confirmare
+{
+	width: 70px;
+	height: 22px;
+	cursor: pointer;
+}
+.taburi
+{
+	width: 70px;
+	height: 22px;
+	border: none;
+	background-color: transparent;
+}
+.comanda
+{
+	width: 65px;
+	height: 22px;
+	background-color: transparent;
+	border-style: none;
+	cursor: pointer;
+}
+.up
+{
+	background-color:#CF4342;
+	color:White;
+	top: 0px;
+	right: 0px;
+	position:fixed;
+}
+ 
+.iLoading 
+{
+	vertical-align:middle;
+	margin:2px;
+ }
+.xls
+{
+	height: 32px;
+	background-color: transparent;
+	border: 1px solid #d0d0d0;
+	cursor: pointer;
+	background-image: url(../Images/Image/xls.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	text-align: right;
+	padding-left: 30px;
+}
+td.rSelectat {
+    color: black;
+    border: 1px solid #ffffff!important;
+    font-weight: 600;
+    font-size: 12pt;
+    text-align: center !important;
+    height: 40px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.33);
+}
+
+#myHeader2 td.rSelectat {
+    background-color: #cecece;
+    border: 0px solid #ffffff;
+    font-weight: 600;
+    font-size: 10pt;
+    text-align: center !important;
+    height: 40px;
+    color: black;
+    box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.42);
+    
+}
+
+    td.rSecund span {
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.33);
+    }
+
+
+    table#tAbsenteProcent {
+        border: none !important;
+    }
+
+table#tAbsenteOre {
+    border: none !important;
+}
+td.rWeekend {
+    background-color: #d0d0d0;
+    color: #9a246a;
+    font: 12px/20px Arial, Helvetica, sans-serif;
+    border: 1px solid #ffffff;
+    text-align: center !important;
+    font-weight:600;
+}
+td.rSubSelectat {
+    background-color: #cecece;
+    /*color: #9a246a;
+    font: 11px/20px Arial, Helvetica, sans-serif;*/
+    color: black;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.33);
+}
+td.rNeselectat {
+    border: 1px solid #ffffff;
+    color: #000000;
+    /* border: 2px solid #ffffff; */
+    background-color: #e8e8e8;
+    font-weight: 600;
+    text-align: center !important;
+    letter-spacing: 0.5px;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.33);
+}
+td.rSecund {
+    /*background: url(../Images/Image/bg_secund.png) repeat-x left top;
+    border: 1px solid #ffffff;*/
+    border: 2px solid #ffffff;
+    color: black;
+    background: #FFC107;
+    font-weight: 600;
+    font-size: 9pt;
+    text-align: center;
+    /*height:41px;*/
+    /*text-transform:uppercase;*/
+
+}
+td.rSecundLarge
+{
+	background: url(../Images/Image/bg_secund_large.png) repeat-x left top;
+    border: 1px solid #ffffff;
+}
+td.celula{
+    border-width: 1px; 
+    border-style: solid;
+    border-color: #96A7BA;
+}
+td.rAntet {
+    background-color: #FFC107;
+    color: black;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+td.rAntetSecund {
+    background-color: #FFC107;
+    color: black;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+    /*padding-left: 5px;*/
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 5px !important;
+    padding-right: 5px!important;
+}
+td.rAntetSecundGalben {
+    background-color: #f7ef5b;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #294460;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+td.rAntetSecundAlb {
+    background-color: #e2e2e2;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    /*color: #294460;*/
+    color:black;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+td.rAntetSecundRosu {
+    background-color: #ff0000;
+    font: 11px/20px Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+    text-align:center;
+}
+
+.blanko {
+    background: #f4f4f4;
+    width: 3px;
+}
+

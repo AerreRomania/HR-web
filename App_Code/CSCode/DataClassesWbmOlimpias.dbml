@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WbmOlimpias" Class="DataClassWbmOlimpias" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=WbmOlimpias;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WbmOlimpiasConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Zone" Member="Zones">
+    <Type Name="Zone">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodZona" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Zona" Type="System.String" DbType="VarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CentreDeCost" Member="CentreDeCosts">
+    <Type Name="CentreDeCost">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodCentruDeCost" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CentruDeCost" Type="System.String" DbType="VarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Faze" Member="Fazes">
+    <Type Name="Faze">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodFaza" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Faza" Type="System.String" DbType="VarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Firme" Member="Firmes">
+    <Type Name="Firme">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodFirma" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Firma" Type="System.String" DbType="VarChar(400) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fisiere" Member="Fisieres">
+    <Type Name="Fisiere">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumeFisier" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TipFisier" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Continut" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Valid" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Fisiere_FisiereAngajat" Member="FisiereAngajats" ThisKey="Id" OtherKey="IdFisier" Type="FisiereAngajat" />
+      <Association Name="Fisiere_FluturaseAngajat" Member="FluturaseAngajats" ThisKey="Id" OtherKey="IdFisier" Type="FluturaseAngajat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Localitati" Member="Localitatis">
+    <Type Name="Localitati">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Localitate" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pagini" Member="Paginis">
+    <Type Name="Pagini">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pagina" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Pagini_PaginiRol" Member="PaginiRols" ThisKey="Id" OtherKey="IdPagina" Type="PaginiRol" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaginiRol" Member="PaginiRols">
+    <Type Name="PaginiRol">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdRol" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPagina" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Adaugare" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Modificare" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Stergere" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Aprobare" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Pagini_PaginiRol" Member="Pagini" ThisKey="IdPagina" OtherKey="Id" Type="Pagini" IsForeignKey="true" />
+      <Association Name="Roluri_PaginiRol" Member="Roluri" ThisKey="IdRol" OtherKey="Id" Type="Roluri" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roluri" Member="Roluris">
+    <Type Name="Roluri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Rol" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Roluri_PaginiRol" Member="PaginiRols" ThisKey="Id" OtherKey="IdRol" Type="PaginiRol" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Utilizatori" Member="Utilizatoris">
+    <Type Name="Utilizatori">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Utilizator" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Parola" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdRol" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Incadrari" Member="Incadraris">
+    <Type Name="Incadrari">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodIncadrare" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incadrare" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Banci" Member="Bancis">
+    <Type Name="Banci">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Banca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipuriPostDeLucru" Member="TipuriPostDeLucrus">
+    <Type Name="TipuriPostDeLucru">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TipPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IntervaleDeLucru" Member="IntervaleDeLucrus">
+    <Type Name="IntervaleDeLucru">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IntervalDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NiveleStudii" Member="NiveleStudiis">
+    <Type Name="NiveleStudii">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NivelStudiu" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Departamente" Member="Departamentes">
+    <Type Name="Departamente">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodDepartament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Echipe" Member="Echipes">
+    <Type Name="Echipe">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodEchipa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Linii" Member="Liniis">
+    <Type Name="Linii">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodLinie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EficienteAngajat" Member="EficienteAngajats">
+    <Type Name="EficienteAngajat">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Eficienta" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DataEficienta" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Angajati_EficienteAngajat" Member="Angajati" ThisKey="IdAngajat" OtherKey="Id" Type="Angajati" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FisiereAngajat" Member="FisiereAngajats">
+    <Type Name="FisiereAngajat">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdFisier" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Descriere" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DataFisier" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Fisiere_FisiereAngajat" Member="Fisiere" ThisKey="IdFisier" OtherKey="Id" Type="Fisiere" IsForeignKey="true" />
+      <Association Name="Angajati_FisiereAngajat" Member="Angajati" ThisKey="IdAngajat" OtherKey="Id" Type="Angajati" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FluturaseAngajat" Member="FluturaseAngajats">
+    <Type Name="FluturaseAngajat">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdFisier" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataFluturas" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Fisiere_FluturaseAngajat" Member="Fisiere" ThisKey="IdFisier" OtherKey="Id" Type="Fisiere" IsForeignKey="true" />
+      <Association Name="Angajati_FluturaseAngajat" Member="Angajati" ThisKey="IdAngajat" OtherKey="Id" Type="Angajati" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipuriOre" Member="TipuriOres">
+    <Type Name="TipuriOre">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodTipOra" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TipOra" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Prezente" Member="Prezentes">
+    <Type Name="Prezente">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTipPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdDepartament" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdEchipa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdLinie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdTipOra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="R1DAL" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="R1ALL" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="R1TOT" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+<Table Name="dbo.PrezenteView" Member="PrezenteViews">
+    <Type Name="PrezenteView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTipPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdDepartament" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdEchipa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdLinie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdTipOra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="R1DAL" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="R1ALL" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="R1TOT" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="CodAngajat" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CodSistem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CodDepartament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodLinie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CodEchipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TipPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipOra" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TipOra" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbsenteLucratoareProcentView" Member="AbsenteLucratoareProcentViews">
+    <Type Name="AbsenteLucratoareProcentView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Categorie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Procent" Type="System.Decimal" DbType="Decimal(38,6)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbsenteOreAllView" Member="AbsenteOreAllViews">
+    <Type Name="AbsenteOreAllView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Categorie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ore" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbsenteOreGiornalieroAllView" Member="AbsenteOreGiornalieroAllViews">
+    <Type Name="AbsenteOreGiornalieroAllView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Zi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Categorie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ore" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+          <Column Name="SortHelper" Type="System.Int32" DbType="Int" CanBeNull="true" />
+
+    </Type>
+  </Table>
+  <Table Name="dbo.AbsenteOreGiornalieroView" Member="AbsenteOreGiornalieroViews">
+    <Type Name="AbsenteOreGiornalieroView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Zi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Categorie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ore" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>  
+  <Table Name="dbo.SuplimentareOreAllView" Member="SuplimentareOreAllViews">
+    <Type Name="SuplimentareOreAllView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Categorie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ore" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PrezenteZileView" Member="PrezenteZileViews">
+    <Type Name="PrezenteZileView">
+      <Column Name="Nume" Type="System.String" DbType="VarChar(101) NOT NULL" CanBeNull="false" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ZiLucratoare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Absent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbsenteAnView" Member="AbsenteAnViews">
+    <Type Name="AbsenteAnView">
+      <Column Name="Departament" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="B" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="C" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="D" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="E" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="G" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="H" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="I" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="J" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="K" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbsenteLunaView" Member="AbsenteLunaViews">
+    <Type Name="AbsenteLunaView">
+      <Column Name="Departament" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Zi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="B" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="C" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="D" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="E" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="F" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="G" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="H" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="I" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="J" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="K" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EficienteView" Member="EficienteViews">
+    <Type Name="EficienteView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="B" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="C" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="D" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="E" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="F" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="G" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="H" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="I" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="J" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="K" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="L" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="M" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CategoriiOreAnView" Member="CategoriiOreAnViews">
+    <Type Name="CategoriiOreAnView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ore" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Categorie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SalariiAngajat" Member="SalariiAngajats">
+    <Type Name="SalariiAngajat">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MarireSalar" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="SalarActual" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DataSalariu" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Angajati_SalariiAngajat" Member="Angajati" ThisKey="IdAngajat" OtherKey="Id" Type="Angajati" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AbsenteDepartamentAllView" Member="AbsenteDepartamentAllViews">
+    <Type Name="AbsenteDepartamentAllView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Zi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Angajat" Type="System.String" DbType="VarChar(101) NOT NULL" CanBeNull="false" />
+      <Column Name="Ore" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Categorie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SuplimentareDepartamentAllView" Member="SuplimentareDepartamentAllViews">
+    <Type Name="SuplimentareDepartamentAllView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Zi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Angajat" Type="System.String" DbType="VarChar(101) NOT NULL" CanBeNull="false" />
+      <Column Name="Ore" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConcediiAnView" Member="ConcediiAnViews">
+    <Type Name="ConcediiAnView">
+      <Column Name="IdAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAngajarii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConcediuEfectuat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Concediu" Type="System.Decimal" DbType="Decimal(14,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RaportPrezenteView" Member="RaportPrezenteViews">
+    <Type Name="RaportPrezenteView">
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ZiLucratoare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZiLucrata" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZiMaternitate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RaportEficienteView" Member="RaportEficienteViews">
+    <Type Name="RaportEficienteView">
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="OreLucratoare" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="OreLucrate" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="OreAbsente" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="OreAbsenteNemotivate" Type="System.Decimal" DbType="Decimal(38,1)" CanBeNull="true" />
+      <Column Name="Eficienta" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DataAngajarii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RaportEficienteLunarView" Member="RaportEficienteLunarViews">
+    <Type Name="RaportEficienteLunarView">
+      <Column Name="AnLuna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Eficienta" Type="System.Decimal" DbType="Decimal(38,6)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DataAngajarii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PosturiDeLucru" Member="PosturiDeLucrus">
+    <Type Name="PosturiDeLucru">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NumarOrdonare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ImportAngajati" Member="ImportAngajatis">
+    <Type Name="ImportAngajati">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodSistem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Strada" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Numar" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Localitate" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DataNasterii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataAngajarii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataNedeterminat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TipPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LoculNasterii" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NumarIdentificarePersonala" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodIncadrare" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CC" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodDepartament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodLinie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CodEchipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NivelStudiu" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incadrare" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DataLichidarii" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DataMaternitate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Somaj" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Angajati" Member="Angajatis">
+    <Type Name="Angajati">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodSistem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Strada" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocalitate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataNasterii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Somaj" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DataAngajarii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataNedeterminat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IdTipPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataExpirareContract" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DataExpirareProba" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IdIntervalDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdLoculNasterii" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumarIdentificarePersonala" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdIncadrare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdNivelStudiu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdBanca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StareCivila" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NumarTelefon" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CC" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdDepartament" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdEchipa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdresaEmail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdLinie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataLichidarii" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DataMaternitate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IdUtilizatorAdaugare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataAdaugare" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdUtilizatorModificare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataModificare" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdUtilizatorStergere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataStergere" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Angajati_EficienteAngajat" Member="EficienteAngajats" ThisKey="Id" OtherKey="IdAngajat" Type="EficienteAngajat" />
+      <Association Name="Angajati_FisiereAngajat" Member="FisiereAngajats" ThisKey="Id" OtherKey="IdAngajat" Type="FisiereAngajat" />
+      <Association Name="Angajati_FluturaseAngajat" Member="FluturaseAngajats" ThisKey="Id" OtherKey="IdAngajat" Type="FluturaseAngajat" />
+      <Association Name="Angajati_SalariiAngajat" Member="SalariiAngajats" ThisKey="Id" OtherKey="IdAngajat" Type="SalariiAngajat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AngajatiView" Member="AngajatiViews">
+    <Type Name="AngajatiView">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Strada" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocalitate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataNasterii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Somaj" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DataAngajarii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataNedeterminat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IdTipPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataExpirareContract" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DataExpirareProba" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IdIntervalDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPostDeLucru" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sex" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdLoculNasterii" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumarIdentificarePersonala" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdIncadrare" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdNivelStudiu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdBanca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StareCivila" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NumarTelefon" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CC" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdDepartament" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdEchipa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdresaEmail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdLinie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Banca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Echipa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Incadrare" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IntervalDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Linie" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Localitate" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NivelStudiu" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TipPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LoculNasterii" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodAngajat" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CodSistem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DataLichidarii" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DataMaternitate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ImportPrezente" Member="ImportPrezentes">
+    <Type Name="ImportPrezente">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodAngajat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodSistem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenume" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DataAngajarii" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataLichidarii" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CodPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodDeparatment" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipOra" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TipOra" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="R1DAL" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="R1ALL" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="R1TOT" Type="System.Decimal" DbType="Decimal(10,1) NOT NULL" CanBeNull="false" />
+      <Column Name="CodEchipa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CodLinie" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NumarAngajatiView" Member="NumarAngajatiViews">
+    <Type Name="NumarAngajatiView">
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NumarAngajati" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContractNedeterminat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NumarAngajatiDetaliatView" Member="NumarAngajatiDetaliatViews">
+    <Type Name="NumarAngajatiDetaliatView">
+      <Column Name="An" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Luna" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumarAngajati" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContractNedeterminat" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Departament" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TipPostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PostDeLucru" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ImportEficienteAngajat" Member="ImportEficienteAngajats">
+    <Type Name="ImportEficienteAngajat">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Eficienta" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ZonaStergere" Method="ZonaStergere">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Autentificare" Method="Autentificare">
+    <Parameter Name="Utilizator" Parameter="utilizator" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Parola" Parameter="parola" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FazaAdaugare" Method="FazaAdaugare">
+    <Parameter Name="CodFaza" Parameter="codFaza" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Faza" Parameter="faza" Type="System.String" DbType="VarChar(400)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FazaModificare" Method="FazaModificare">
+    <Parameter Name="CodFaza" Parameter="codFaza" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Faza" Parameter="faza" Type="System.String" DbType="VarChar(400)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FazaStergere" Method="FazaStergere">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FirmaAdaugare" Method="FirmaAdaugare">
+    <Parameter Name="CodFirma" Parameter="codFirma" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Firma" Parameter="firma" Type="System.String" DbType="VarChar(400)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FirmaModificare" Method="FirmaModificare">
+    <Parameter Name="CodFirma" Parameter="codFirma" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Firma" Parameter="firma" Type="System.String" DbType="VarChar(400)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FirmaStergere" Method="FirmaStergere">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FisierAdaugare" Method="FisierAdaugare">
+    <Parameter Name="NumeFisier" Parameter="numeFisier" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TipFisier" Parameter="tipFisier" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Continut" Parameter="continut" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PaginaAdaugare" Method="PaginaAdaugare">
+    <Parameter Name="Pagina" Parameter="pagina" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PaginaModificare" Method="PaginaModificare">
+    <Parameter Name="Pagina" Parameter="pagina" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PaginaRolAdaugare" Method="PaginaRolAdaugare">
+    <Parameter Name="IdRol" Parameter="idRol" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPagina" Parameter="idPagina" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Adaugare" Parameter="adaugare" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Modificare" Parameter="modificare" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Stergere" Parameter="stergere" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Aprobare" Parameter="aprobare" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="IdFirma" Parameter="idFirma" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PaginaRolModificare" Method="PaginaRolModificare">
+    <Parameter Name="IdRol" Parameter="idRol" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPagina" Parameter="idPagina" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Adaugare" Parameter="adaugare" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Modificare" Parameter="modificare" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Stergere" Parameter="stergere" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Aprobare" Parameter="aprobare" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PaginaRolStergere" Method="PaginaRolStergere">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PaginaStergere" Method="PaginaStergere">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RolAdaugare" Method="RolAdaugare">
+    <Parameter Name="Rol" Parameter="rol" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RolModificare" Method="RolModificare">
+    <Parameter Name="Rol" Parameter="rol" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RolStergere" Method="RolStergere">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UtilizatorStergere" Method="UtilizatorStergere">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.VerificareAcces" Method="VerificareAcces">
+    <Parameter Name="IdUtilizator" Parameter="idUtilizator" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Pagina" Parameter="pagina" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AccesAutorizat" Parameter="accesAutorizat" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.VerificareAccesOperatie" Method="VerificareAccesOperatie">
+    <Parameter Name="IdUtilizator" Parameter="idUtilizator" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Pagina" Parameter="pagina" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Operatie" Parameter="operatie" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AccesAutorizat" Parameter="accesAutorizat" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ZonaAdaugare" Method="ZonaAdaugare">
+    <Parameter Name="CodZona" Parameter="codZona" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Zona" Parameter="zona" Type="System.String" DbType="VarChar(400)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ZonaModificare" Method="ZonaModificare">
+    <Parameter Name="CodZona" Parameter="codZona" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Zona" Parameter="zona" Type="System.String" DbType="VarChar(400)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.IncadrareAdaugare" Method="IncadrareAdaugare">
+    <Parameter Name="CodIncadrare" Parameter="codIncadrare" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Incadrare" Parameter="incadrare" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.IncadrareStergere" Method="IncadrareStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.IncadrareModificare" Method="IncadrareModificare">
+    <Parameter Name="CodIncadrare" Parameter="codIncadrare" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Incadrare" Parameter="incadrare" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AngajatStergere" Method="AngajatStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.LocalitateAdaugare" Method="LocalitateAdaugare">
+    <Parameter Name="Localitate" Parameter="localitate" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.LocalitateModificare" Method="LocalitateModificare">
+    <Parameter Name="Localitate" Parameter="localitate" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.LocalitateStergere" Method="LocalitateStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BancaAdaugare" Method="BancaAdaugare">
+    <Parameter Name="Banca" Parameter="banca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BancaStergere" Method="BancaStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BancaModificare" Method="BancaModificare">
+    <Parameter Name="Banca" Parameter="banca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TipPostDeLucruAdaugare" Method="TipPostDeLucruAdaugare">
+    <Parameter Name="TipPostDeLucru" Parameter="tipPostDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TipPostDeLucruStergere" Method="TipPostDeLucruStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TipPostDeLucruModificare" Method="TipPostDeLucruModificare">
+    <Parameter Name="TipPostDeLucru" Parameter="tipPostDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.IntervalDeLucruAdaugare" Method="IntervalDeLucruAdaugare">
+    <Parameter Name="IntervalDeLucru" Parameter="intervalDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.IntervalDeLucruStergere" Method="IntervalDeLucruStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.IntervalDeLucruModificare" Method="IntervalDeLucruModificare">
+    <Parameter Name="IntervalDeLucru" Parameter="intervalDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.NivelStudiuAdaugare" Method="NivelStudiuAdaugare">
+    <Parameter Name="NivelStudiu" Parameter="nivelStudiu" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.NivelStudiuStergere" Method="NivelStudiuStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.NivelStudiuModificare" Method="NivelStudiuModificare">
+    <Parameter Name="NivelStudiu" Parameter="nivelStudiu" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PostDeLucruStergere" Method="PostDeLucruStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DepartamentAdaugare" Method="DepartamentAdaugare">
+    <Parameter Name="CodDepartament" Parameter="codDepartament" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Departament" Parameter="departament" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DepartamentStergere" Method="DepartamentStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DepartamentModificare" Method="DepartamentModificare">
+    <Parameter Name="CodDepartament" Parameter="codDepartament" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Departament" Parameter="departament" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EchipaAdaugare" Method="EchipaAdaugare">
+    <Parameter Name="CodEchipa" Parameter="codEchipa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Echipa" Parameter="echipa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EchipaModificare" Method="EchipaModificare">
+    <Parameter Name="CodEchipa" Parameter="codEchipa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Echipa" Parameter="echipa" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EchipaStergere" Method="EchipaStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.LinieAdaugare" Method="LinieAdaugare">
+    <Parameter Name="CodLinie" Parameter="codLinie" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Linie" Parameter="linie" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.LinieModificare" Method="LinieModificare">
+    <Parameter Name="CodLinie" Parameter="codLinie" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Linie" Parameter="linie" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.LinieStergere" Method="LinieStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FisierAngajatStergere" Method="FisierAngajatStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EficientaAngajatAdaugare" Method="EficientaAngajatAdaugare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eficienta" Parameter="eficienta" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="DataEficienta" Parameter="dataEficienta" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EficientaAngajatStergere" Method="EficientaAngajatStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EficientaAngajatModificare" Method="EficientaAngajatModificare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eficienta" Parameter="eficienta" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="DataEficienta" Parameter="dataEficienta" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FisierAngajatAdaugare" Method="FisierAngajatAdaugare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Descriere" Parameter="descriere" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DataFisier" Parameter="dataFisier" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdFisier" Parameter="idFisier" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FisierAngajatModificare" Method="FisierAngajatModificare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Descriere" Parameter="descriere" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DataFisier" Parameter="dataFisier" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdFisier" Parameter="idFisier" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FluturasAngajatAdaugare" Method="FluturasAngajatAdaugare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataFluturas" Parameter="dataFluturas" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdFisier" Parameter="idFisier" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FluturasAngajatStergere" Method="FluturasAngajatStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.FluturasAngajatModificare" Method="FluturasAngajatModificare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataFluturas" Parameter="dataFluturas" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdFisier" Parameter="idFisier" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TipOraAdaugare" Method="TipOraAdaugare">
+    <Parameter Name="CodTipOra" Parameter="codTipOra" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TipOra" Parameter="tipOra" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TipOraModificare" Method="TipOraModificare">
+    <Parameter Name="CodTipOra" Parameter="codTipOra" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TipOra" Parameter="tipOra" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.TipOraStergere" Method="TipOraStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PrezentaAdaugare" Method="PrezentaAdaugare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdTipPostDeLucru" Parameter="idTipPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPostDeLucru" Parameter="idPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdDepartament" Parameter="idDepartament" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdEchipa" Parameter="idEchipa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdLinie" Parameter="idLinie" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Data" Parameter="data" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdTipOra" Parameter="idTipOra" Type="System.Int32" DbType="Int" />
+    <Parameter Name="R1DAL" Parameter="r1DAL" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="R1ALL" Parameter="r1ALL" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="R1TOT" Parameter="r1TOT" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PrezentaStergere" Method="PrezentaStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PrezentaModificare" Method="PrezentaModificare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdTipPostDeLucru" Parameter="idTipPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPostDeLucru" Parameter="idPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdDepartament" Parameter="idDepartament" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdEchipa" Parameter="idEchipa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdLinie" Parameter="idLinie" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Data" Parameter="data" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdTipOra" Parameter="idTipOra" Type="System.Int32" DbType="Int" />
+    <Parameter Name="R1DAL" Parameter="r1DAL" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="R1ALL" Parameter="r1ALL" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="R1TOT" Parameter="r1TOT" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PrezentaImport" Method="PrezentaImport">
+    <Parameter Name="CodAngajat" Parameter="codAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Data" Parameter="data" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="CodTipOra" Parameter="codTipOra" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="R1DAL" Parameter="r1DAL" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="R1ALL" Parameter="r1ALL" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="R1TOT" Parameter="r1TOT" Type="System.Decimal" DbType="Decimal(10,1)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AngajatImport" Method="AngajatImport">
+    <Parameter Name="CodAngajat" Parameter="codAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nume" Parameter="nume" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Prenume" Parameter="prenume" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CodSistem" Parameter="codSistem" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Marca" Parameter="marca" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="NumarIdentificarePersonala" Parameter="numarIdentificarePersonala" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Sex" Parameter="sex" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DataAngajarii" Parameter="dataAngajarii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Localitate" Parameter="localitate" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Strada" Parameter="strada" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CodPostDeLucru" Parameter="codPostDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PostDeLucru" Parameter="postDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CodDepartament" Parameter="codDepartament" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Departament" Parameter="departament" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CodIncadrare" Parameter="codIncadrare" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Incadrare" Parameter="incadrare" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DataNedeterminata" Parameter="dataNedeterminata" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="CC" Parameter="cC" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CodTipPostDeLucru" Parameter="codTipPostDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TipPostDeLucru" Parameter="tipPostDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DataNasterii" Parameter="dataNasterii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="LoculNasterii" Parameter="loculNasterii" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SalariuAngajatStergere" Method="SalariuAngajatStergere">
+    <Parameter Name="IdUtilizatorStergere" Parameter="idUtilizatorStergere" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SalariuAngajatAdaugare" Method="SalariuAngajatAdaugare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataSalariu" Parameter="dataSalariu" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="MarireSalar" Parameter="marireSalar" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SalarActual" Parameter="salarActual" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SalariuAngajatModificare" Method="SalariuAngajatModificare">
+    <Parameter Name="IdAngajat" Parameter="idAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataSalariu" Parameter="dataSalariu" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="MarireSalar" Parameter="marireSalar" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SalarActual" Parameter="salarActual" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PostDeLucruAdaugare" Method="PostDeLucruAdaugare">
+    <Parameter Name="CodPostDeLucru" Parameter="codPostDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PostDeLucru" Parameter="postDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NumarOrdonare" Parameter="numarOrdonare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PostDeLucruModificare" Method="PostDeLucruModificare">
+    <Parameter Name="CodPostDeLucru" Parameter="codPostDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PostDeLucru" Parameter="postDeLucru" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NumarOrdonare" Parameter="numarOrdonare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ImportPrezenteSalvare" Method="ImportPrezenteSalvare">
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ImportAngajatiSalvare" Method="ImportAngajatiSalvare">
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AngajatAdaugare" Method="AngajatAdaugare">
+    <Parameter Name="CodAngajat" Parameter="codAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodSistem" Parameter="codSistem" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Marca" Parameter="marca" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Nume" Parameter="nume" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Prenume" Parameter="prenume" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Strada" Parameter="strada" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdLocalitate" Parameter="idLocalitate" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataNasterii" Parameter="dataNasterii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Somaj" Parameter="somaj" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DataAngajarii" Parameter="dataAngajarii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DataNedeterminat" Parameter="dataNedeterminat" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdTipPostDeLucru" Parameter="idTipPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataExpirareContract" Parameter="dataExpirareContract" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DataExpirareProba" Parameter="dataExpirareProba" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdIntervalDeLucru" Parameter="idIntervalDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPostDeLucru" Parameter="idPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Sex" Parameter="sex" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdLoculNasterii" Parameter="idLoculNasterii" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NumarIdentificarePersonala" Parameter="numarIdentificarePersonala" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdIncadrare" Parameter="idIncadrare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdNivelStudiu" Parameter="idNivelStudiu" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdBanca" Parameter="idBanca" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StareCivila" Parameter="stareCivila" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NumarTelefon" Parameter="numarTelefon" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CC" Parameter="cC" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdDepartament" Parameter="idDepartament" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdEchipa" Parameter="idEchipa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AdresaEmail" Parameter="adresaEmail" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdLinie" Parameter="idLinie" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataLichidarii" Parameter="dataLichidarii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DataMaternitate" Parameter="dataMaternitate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AngajatModificare" Method="AngajatModificare">
+    <Parameter Name="CodAngajat" Parameter="codAngajat" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CodSistem" Parameter="codSistem" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Marca" Parameter="marca" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Nume" Parameter="nume" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Prenume" Parameter="prenume" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Strada" Parameter="strada" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdLocalitate" Parameter="idLocalitate" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataNasterii" Parameter="dataNasterii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Somaj" Parameter="somaj" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DataAngajarii" Parameter="dataAngajarii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DataNedeterminat" Parameter="dataNedeterminat" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdTipPostDeLucru" Parameter="idTipPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataExpirareContract" Parameter="dataExpirareContract" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DataExpirareProba" Parameter="dataExpirareProba" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdIntervalDeLucru" Parameter="idIntervalDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPostDeLucru" Parameter="idPostDeLucru" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Sex" Parameter="sex" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdLoculNasterii" Parameter="idLoculNasterii" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NumarIdentificarePersonala" Parameter="numarIdentificarePersonala" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdIncadrare" Parameter="idIncadrare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdNivelStudiu" Parameter="idNivelStudiu" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdBanca" Parameter="idBanca" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StareCivila" Parameter="stareCivila" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NumarTelefon" Parameter="numarTelefon" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CC" Parameter="cC" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdDepartament" Parameter="idDepartament" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdEchipa" Parameter="idEchipa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AdresaEmail" Parameter="adresaEmail" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdLinie" Parameter="idLinie" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DataLichidarii" Parameter="dataLichidarii" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DataMaternitate" Parameter="dataMaternitate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="IdUtilizatorModificare" Parameter="idUtilizatorModificare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ImportEficienteAngajatSalvare" Method="ImportEficienteAngajatSalvare">
+    <Parameter Name="IdUtilizatorAdaugare" Parameter="idUtilizatorAdaugare" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Eroare" Parameter="eroare" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

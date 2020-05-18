@@ -1,0 +1,10 @@
+﻿body {
+    /*overflow: hidden;*/
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+}

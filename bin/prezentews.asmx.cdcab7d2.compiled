@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/WbmOlimpias2015_07_30/PrezenteWS.asmx" hash="7451ea39" filehash="39a35d689413" flags="130000" assembly="App_Code" type="WbmOlimpias.PrezenteWS">
+    <filedeps>
+        <filedep name="/WbmOlimpias2015_07_30/PrezenteWS.asmx" />
+    </filedeps>
+</preserve>

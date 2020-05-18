@@ -1,0 +1,46 @@
+﻿@media only screen and (max-width: 1920px) and (min-width: 1681px) {
+    .upd_confa {
+        transform: scale(1);
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width:1680px) and (min-width:1441px){
+    .upd_confa {
+        transform: scale(0.8);
+        max-width: 1680px;
+        width: 1680px;
+        margin-top: -80px;
+        margin-left: 0px;
+    }
+
+    .confa_panel {
+        top: 100px !important;
+        left: 0px !important;
+        right: 0px!important;
+        position: absolute;
+    }
+
+    #left-navi {
+        top: 80px!important;
+    }
+}
+
+@media only screen and (max-width:1440px) and (min-width:1000px) {
+    .upd_confa {
+        transform: scale(0.6);
+        width:1440px;
+        margin-left: -100px;
+        margin-top: -50px;
+    }
+
+    .confa_panel {
+        top: 0px !important;
+        left: 0px !important;
+        position: absolute;
+    }
+
+    #left-navi {
+        top: 80px !important;
+    }
+}

@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20.5, 46.75" name="DataClassesWbmOlimpias">
+  <DataContextMoniker Name="/DataClassWbmOlimpias" />
+  <nestedChildShapes>
+    <classShape Id="02660647-0382-42e0-b0b4-aa7a6b173b2c" absoluteBounds="8.75, 1, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Zone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4cdfd18-009a-414f-a727-863e70803702" absoluteBounds="8.765, 1.46, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b716ee5-35bc-4fc9-92b7-c89e3042eaf0" absoluteBounds="9.75, 11, 2, 2.2465844726562487">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/CentreDeCost" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0aca771-a8f7-4a2d-abb1-5129b109c6c1" absoluteBounds="9.765, 11.46, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eacbbc92-e134-446e-b420-50d78f848124" absoluteBounds="11.75, 1, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Faze" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eeca5d61-2f0b-4318-be66-dbfb9a94f13f" absoluteBounds="11.765, 1.46, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6a843c2-8727-4527-9c45-e3db71fb16cf" absoluteBounds="11.75, 4, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Firme" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c36b1cad-986d-4a96-b2c7-1773725e665e" absoluteBounds="11.765, 4.46, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1e121f9-3156-4f37-8f8b-fda086952749" absoluteBounds="3.5, 9.5, 2, 1.7535424804687487">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Fisiere" />
+      <nestedChildShapes>
+        <elementListCompartment Id="001ec255-43a5-494c-99ff-e3cc0736d1e6" absoluteBounds="3.515, 9.96, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38d46f13-cbf1-4c53-bdb2-6b348e97359e" absoluteBounds="0.75, 13, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Localitati" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5466d74-4666-463d-a5d6-a1b062ac5d8e" absoluteBounds="0.765, 13.46, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f6194f8-8644-4e48-b101-c8673245409c" absoluteBounds="6.75, 8.25, 2, 2.0822371419270835">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Pagini" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b33b2b6-82ad-4160-9b94-a2f0a0d347d9" absoluteBounds="6.765, 8.71, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e38b318f-c15f-4aa7-8634-42075b86a272" absoluteBounds="9.5, 7.25, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/PaginiRol" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17e10636-34b6-442c-bc19-6385a1b3fef3" absoluteBounds="9.515, 7.71, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0988ddce-c9d0-44ba-8145-40fed9d40bd8" absoluteBounds="6.75, 10.625, 2, 2.0822371419270844">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Roluri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c903dc8f-8d92-4996-be56-c8d1930adbf1" absoluteBounds="6.765, 11.085, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="618e6957-003d-48b7-9e12-db124c18efd9" absoluteBounds="12.75, 7, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Utilizatori" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e3fa9a4-e942-4ea1-b805-91c39bb8dfce" absoluteBounds="12.765, 7.46, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 9.20198689778646); (9.5 : 9.20198689778646)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Pagini/Pagini_PaginiRol" />
+      <nodes>
+        <classShapeMoniker Id="1f6194f8-8644-4e48-b101-c8673245409c" />
+        <classShapeMoniker Id="e38b318f-c15f-4aa7-8634-42075b86a272" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 10.78125); (9.59375 : 10.78125); (9.59375 : 10.1539737955729)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Roluri/Roluri_PaginiRol" />
+      <nodes>
+        <classShapeMoniker Id="0988ddce-c9d0-44ba-8145-40fed9d40bd8" />
+        <classShapeMoniker Id="e38b318f-c15f-4aa7-8634-42075b86a272" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7c2f0541-c0e5-448e-a75d-1b7d51b355ba" absoluteBounds="0.875, 2.375, 2, 2.24658447265625">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Incadrari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b48a843f-bb0d-4e24-b50a-09fb8bda5b59" absoluteBounds="0.89000000000000012, 2.835, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df84c8ad-b9cb-426d-87ac-4ec8363a949f" absoluteBounds="9.125, 3.375, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Banci" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f14e39fe-7217-4f33-a0e3-b1c5c849435f" absoluteBounds="9.14, 3.835, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a07060d1-2801-4813-8f1a-6d90de96e8c5" absoluteBounds="6.125, 0.5, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/TipuriPostDeLucru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="effb0007-ea4d-4221-9608-feff37e3baeb" absoluteBounds="6.1400000000000006, 0.96, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="199f5bed-f8a2-431d-9998-213dcbc33d0f" absoluteBounds="0.5, 4.5, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/IntervaleDeLucru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="813a1714-e071-46fa-920c-9d4531f1d8d2" absoluteBounds="0.51500000000000012, 4.96, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="715303d9-702d-4496-b944-15e10689ba1b" absoluteBounds="0.875, 6.875, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/NiveleStudii" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5be77b0d-f03e-4017-afbb-31b0841894b8" absoluteBounds="0.89000000000000012, 7.3350000000000009, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64cc5359-102c-45c1-a20f-aff6acdbb250" absoluteBounds="3.375, 12.75, 2, 2.2465844726562487">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Departamente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf5f5eda-6f20-4cea-b567-a436d4b33117" absoluteBounds="3.39, 13.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df057b47-5297-421b-bede-d55c94ec3e3e" absoluteBounds="12.375, 10.75, 2, 2.2465844726562487">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Echipe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67a3f9d0-ad0e-4786-a8ae-6533f7ab6447" absoluteBounds="12.39, 11.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb5a3e55-a3f3-4ecc-9d6f-10c66ee53e29" absoluteBounds="6.375, 13.75, 2, 2.2465844726562487">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Linii" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60679b5c-987a-4976-a1f8-12e702061072" absoluteBounds="6.39, 14.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="958dcf7f-eaa8-4b3d-a000-171a8a0448fc" absoluteBounds="4.75, 16.375, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/EficienteAngajat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30a2392f-b621-461d-a665-63961c11a7bf" absoluteBounds="4.765, 16.835, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc0b729d-2e82-4d06-bd90-18a3ce5e7a16" absoluteBounds="5.125, 5.5, 2, 2.5752791341145831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/FisiereAngajat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="957eb27b-5673-458b-a553-1448817d9cbc" absoluteBounds="5.14, 5.96, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.3124995 : 9.5); (4.3124995 : 6.78763956705729); (5.125 : 6.78763956705729)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Fisiere/Fisiere_FisiereAngajat" />
+      <nodes>
+        <classShapeMoniker Id="a1e121f9-3156-4f37-8f8b-fda086952749" />
+        <classShapeMoniker Id="dc0b729d-2e82-4d06-bd90-18a3ce5e7a16" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="36a20298-63d0-4ad4-9a53-274cc187f880" absoluteBounds="3.625, 2.25, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/FluturaseAngajat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29e5dfc6-f4af-43bd-982d-9a29199a25f4" absoluteBounds="3.6399999999999997, 2.71, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.74999975 : 9.5); (4.74999975 : 4.66093180338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Fisiere/Fisiere_FluturaseAngajat" />
+      <nodes>
+        <classShapeMoniker Id="a1e121f9-3156-4f37-8f8b-fda086952749" />
+        <classShapeMoniker Id="36a20298-63d0-4ad4-9a53-274cc187f880" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a0f93c95-c08e-4519-b3e0-7e3b466561f7" absoluteBounds="12.375, 13.75, 2, 2.2465844726562487">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/TipuriOre" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ece7009-15a4-49b9-a88b-5af517dff45f" absoluteBounds="12.39, 14.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2479018f-7483-4cce-b9a1-351b0b96d169" absoluteBounds="14.375, 0.75, 2, 3.7257104492187492">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Prezente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d347fa31-2cc7-4b16-ab3f-1dd492adb388" absoluteBounds="14.39, 1.21, 1.9700000000000002, 3.16571044921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ca08f37-092d-4fc3-abeb-898c7a396133" absoluteBounds="3.25, 18.875, 2, 5.3691837565104157">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/PrezenteView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e50ad0b1-265e-471e-8b93-47ebfc2ca3cd" absoluteBounds="3.2649999999999997, 19.335, 1.9700000000000002, 4.8091837565104161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0aa59039-397c-4bb0-9d83-40a1877acfce" absoluteBounds="15.375, 5.75, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/AbsenteLucratoareProcentView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="033711ab-1766-4323-a643-d05e3691a768" absoluteBounds="15.39, 6.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="882b5bd2-9636-4f90-bc27-448e8775ada3" absoluteBounds="15.375, 8.75, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/AbsenteOreAllView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c63cd6fa-560b-4cbf-86ae-598f3b72dcd0" absoluteBounds="15.39, 9.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e90a13b-7ee9-434e-811c-d1567ec4c697" absoluteBounds="18.25, 8, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/SuplimentareOreAllView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c999a0d1-299e-43b3-b9d7-4a4e034eb5fc" absoluteBounds="18.265, 8.46, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42d62ad9-96f7-43a9-bbbc-3ebeb104b9b6" absoluteBounds="5.875, 24.25, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/PrezenteZileView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae04eb67-b39c-4f54-ade3-d2a8f8b9d2e8" absoluteBounds="5.89, 24.71, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2fd5d98-e1e8-41d4-b886-073ff404563f" absoluteBounds="1, 19.125, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/AbsenteAnView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0dcadbb1-d613-470d-863c-93043fada0cf" absoluteBounds="1.0150000000000001, 19.585, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51daaaf5-aee8-4266-a67f-0f7cd0d792ed" absoluteBounds="0.75, 22.625, 2, 3.0683211263020831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/AbsenteLunaView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45afe918-4ddb-40be-8e2b-4911f9c1a446" absoluteBounds="0.76499999999999968, 23.085, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d432cab-5615-4dd5-bbb8-ddb88475a6b8" absoluteBounds="3.375, 24.875, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/EficienteView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8e427a4-8fab-4a51-abe2-837161957941" absoluteBounds="3.3899999999999997, 25.335, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e0baf0c-b3ef-47a0-bf91-d12ba18ed274" absoluteBounds="3.375, 28.25, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/CategoriiOreAnView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="318b6c49-a36f-4104-a155-d6c45a6a8a20" absoluteBounds="3.39, 28.71, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83f660ee-5ec3-497e-b4c1-b9d3ef36928e" absoluteBounds="7.5, 29.5, 2, 2.5752791341145831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/SalariiAngajat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7dc20c8c-d9fe-4e4b-984e-e34c8be2e614" absoluteBounds="7.515, 29.96, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a2dd9588-0ed1-4bb1-b8f3-5b8ec5148b34" absoluteBounds="7, 20.125, 2, 2.24658447265625">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/AbsenteDepartamentAllView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a98424a3-86b0-4d0a-baa8-9d84664d0561" absoluteBounds="7.015, 20.585, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2215dc4d-8579-41aa-9ebc-9d2d213aa4a0" absoluteBounds="16.5, 12.875, 2, 2.24658447265625">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/SuplimentareDepartamentAllView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8421137b-3b84-401c-806e-6d5e083f2094" absoluteBounds="16.515, 13.335, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3cb2e03a-6f75-49e9-9b65-5ca1bfda9184" absoluteBounds="0.75, 27.75, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/ConcediiAnView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdb10a4a-72dc-439f-81f7-8f8bbbc39683" absoluteBounds="0.76499999999999968, 28.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="724c81b0-5de0-4c40-be18-6d345a6e2aeb" absoluteBounds="6.625, 3, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/RaportPrezenteView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7b027f5-ce60-4a66-91a8-991d38b1ad4f" absoluteBounds="6.64, 3.46, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ff77fb40-404c-4725-b7e5-76c9e88c995c" absoluteBounds="1.125, 30.375, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/RaportEficienteView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6406be2-419b-4382-aaf8-d566ba6b6b21" absoluteBounds="1.1400000000000001, 30.835, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aad3d547-19ad-423f-ba4b-8298795c70d6" absoluteBounds="4.125, 30.875, 2, 2.24658447265625">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/RaportEficienteLunarView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6bf636e-c1ae-4b21-8f85-ae964ecd8f91" absoluteBounds="4.14, 31.335, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e613b73f-d258-49f6-9cdb-1798a712bafc" absoluteBounds="0.875, 9.5, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/PosturiDeLucru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efcc4068-9c5c-481f-9f20-78d004ccea52" absoluteBounds="0.88999999999999968, 9.96, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5cbf561d-59c2-4e77-9cc2-6de0f4eda10d" absoluteBounds="5.625, 41.125, 2, 5.3691837565104157">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/ImportAngajati" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2928546-d71e-4360-a966-7d08558cb070" absoluteBounds="5.64, 41.585, 1.9700000000000002, 4.8091837565104161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bfa6e2d7-0f1d-4c42-b46b-4259f55a29cc" absoluteBounds="7.625, 34.125, 2, 7.0126570638020826">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/Angajati" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6535f0d-f4c3-4610-b0bf-6b4cfba7f36a" absoluteBounds="7.64, 34.585, 1.9700000000000002, 6.452657063802083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.59375 : 34.125); (9.59375 : 17.5804659016927); (7.33333333333333 : 17.5804659016927 : JumpStart); (7.16666666666667 : 17.5804659016927 : JumpEnd); (7.02083333333333 : 17.5804659016927 : JumpStart); (6.85416666666667 : 17.5804659016927 : JumpEnd); (6.75 : 17.5804659016927)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Angajati/Angajati_EficienteAngajat" />
+      <nodes>
+        <classShapeMoniker Id="bfa6e2d7-0f1d-4c42-b46b-4259f55a29cc" />
+        <classShapeMoniker Id="958dcf7f-eaa8-4b3d-a000-171a8a0448fc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.625 : 37.6249995); (6.375 : 37.6249995); (6.375 : 26.8322371419271); (5.625 : 26.8322371419271); (5.625 : 19.0359318033854); (6.85416666666667 : 19.0359318033854 : JumpStart); (7.02083333333333 : 19.0359318033854 : JumpEnd); (7.25 : 19.0359318033854); (7.25 : 16.2465844726562); (7.02083333333333 : 16.2465844726562 : JumpStart); (6.85416666666667 : 16.2465844726562 : JumpEnd); (5.9375 : 16.2465844726562); (5.9375 : 8.07527913411458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Angajati/Angajati_FisiereAngajat" />
+      <nodes>
+        <classShapeMoniker Id="bfa6e2d7-0f1d-4c42-b46b-4259f55a29cc" />
+        <classShapeMoniker Id="dc0b729d-2e82-4d06-bd90-18a3ce5e7a16" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.578123 : 34.125); (8.578123 : 32.1377791341146); (7.4375 : 32.1377791341146); (7.4375 : 26.3947371419271); (5.8125 : 26.3947371419271); (5.8125 : 22.4340844726563); (6.9375 : 22.4340844726563); (6.9375 : 16.0590844726562); (6.3125 : 16.0590844726562); (6.3125 : 8.13777913411458); (5.0625 : 8.13777913411458); (5.0625 : 5.47343180338542); (6.5625 : 5.47343180338542); (6.5625 : 3.62158497265625); (5.625 : 3.62158497265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Angajati/Angajati_FluturaseAngajat" />
+      <nodes>
+        <classShapeMoniker Id="bfa6e2d7-0f1d-4c42-b46b-4259f55a29cc" />
+        <classShapeMoniker Id="36a20298-63d0-4ad4-9a53-274cc187f880" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.0390615 : 34.125); (8.0390615 : 32.0752791341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassWbmOlimpias/Angajati/Angajati_SalariiAngajat" />
+      <nodes>
+        <classShapeMoniker Id="bfa6e2d7-0f1d-4c42-b46b-4259f55a29cc" />
+        <classShapeMoniker Id="83f660ee-5ec3-497e-b4c1-b9d3ef36928e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="095299ef-efd5-42df-82d5-cef376ec3302" absoluteBounds="11.75, 23.25, 2, 7.8343937174479148">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/AngajatiView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="155ff56c-9d58-494b-9f9a-41f983c76b75" absoluteBounds="11.765, 23.71, 1.9700000000000002, 7.2743937174479161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af24452d-6203-408c-b2db-a24ad1b9956e" absoluteBounds="10.875, 33.25, 2, 4.0544051106770826">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/ImportPrezente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7021688-f12a-49b0-b633-96871a2f97d3" absoluteBounds="10.89, 33.71, 1.9700000000000002, 3.494405110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4774ad2-8232-4b0e-a8eb-445cf33fe0ff" absoluteBounds="1.375, 15.75, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/NumarAngajatiView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f61fe408-9724-4916-a3f1-2f89a631d702" absoluteBounds="1.3900000000000001, 16.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6077368-9785-45f5-8fd9-2ed55f7e1354" absoluteBounds="11.5, 16.625, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/NumarAngajatiDetaliatView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e16d3c0-b0d4-4204-83ea-df46594296b0" absoluteBounds="11.515, 17.085, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0fd0f7b2-a4c9-4966-817e-07c32639429c" absoluteBounds="14.875, 18.375, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DataClassWbmOlimpias/ImportEficienteAngajat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b129c42-f4b1-4f26-b981-8b95f36a3c72" absoluteBounds="14.89, 18.835, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

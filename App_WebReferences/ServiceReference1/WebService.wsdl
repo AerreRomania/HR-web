@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost">
+      <s:element name="InsertBookmark">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="link" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertBookmarkResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteBookmark">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="link" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteBookmarkResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertRole">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RoleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertRoleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteRole">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="RoleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteRoleResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SendMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msg_to" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg_from" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSoftwareModules">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="username" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSoftwareModulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSoftwareModulesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllSoftModules">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllSoftModulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSoftModulesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="useridentity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPermissionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPermissionsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNonActivatedUsers">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetNonActivatedUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNonActivatedUsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserFavorites">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="useridentity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadUserFavoritesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadUserFavoritesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendOfflineStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="useridentity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendOfflineStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SendOnlineStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="useridentity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendOnlineStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoadOtherUserProfiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="useridentity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadOtherUserProfilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadOtherUserProfilesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveUserImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="useridentity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveUserImageResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertBookmarkSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertBookmark" />
+  </wsdl:message>
+  <wsdl:message name="InsertBookmarkSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertBookmarkResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBookmarkSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteBookmark" />
+  </wsdl:message>
+  <wsdl:message name="DeleteBookmarkSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteBookmarkResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertRoleSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertRole" />
+  </wsdl:message>
+  <wsdl:message name="InsertRoleSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoleSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteRole" />
+  </wsdl:message>
+  <wsdl:message name="DeleteRoleSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSoftwareModulesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSoftwareModules" />
+  </wsdl:message>
+  <wsdl:message name="GetSoftwareModulesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSoftwareModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSoftModulesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSoftModules" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSoftModulesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSoftModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPermissionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPermissions" />
+  </wsdl:message>
+  <wsdl:message name="GetPermissionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPermissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNonActivatedUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNonActivatedUsers" />
+  </wsdl:message>
+  <wsdl:message name="GetNonActivatedUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNonActivatedUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserFavoritesSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadUserFavorites" />
+  </wsdl:message>
+  <wsdl:message name="LoadUserFavoritesSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadUserFavoritesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendOfflineStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:SendOfflineStatus" />
+  </wsdl:message>
+  <wsdl:message name="SendOfflineStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:SendOfflineStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendOnlineStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:SendOnlineStatus" />
+  </wsdl:message>
+  <wsdl:message name="SendOnlineStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:SendOnlineStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadOtherUserProfilesSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadOtherUserProfiles" />
+  </wsdl:message>
+  <wsdl:message name="LoadOtherUserProfilesSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadOtherUserProfilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveUserImageSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveUserImage" />
+  </wsdl:message>
+  <wsdl:message name="RemoveUserImageSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveUserImageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="InsertBookmark">
+      <wsdl:input message="tns:InsertBookmarkSoapIn" />
+      <wsdl:output message="tns:InsertBookmarkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBookmark">
+      <wsdl:input message="tns:DeleteBookmarkSoapIn" />
+      <wsdl:output message="tns:DeleteBookmarkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <wsdl:input message="tns:InsertRoleSoapIn" />
+      <wsdl:output message="tns:InsertRoleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <wsdl:input message="tns:DeleteRoleSoapIn" />
+      <wsdl:output message="tns:DeleteRoleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input message="tns:SendMessageSoapIn" />
+      <wsdl:output message="tns:SendMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSoftwareModules">
+      <wsdl:input message="tns:GetSoftwareModulesSoapIn" />
+      <wsdl:output message="tns:GetSoftwareModulesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSoftModules">
+      <wsdl:input message="tns:GetAllSoftModulesSoapIn" />
+      <wsdl:output message="tns:GetAllSoftModulesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPermissions">
+      <wsdl:input message="tns:GetPermissionsSoapIn" />
+      <wsdl:output message="tns:GetPermissionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNonActivatedUsers">
+      <wsdl:input message="tns:GetNonActivatedUsersSoapIn" />
+      <wsdl:output message="tns:GetNonActivatedUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserFavorites">
+      <wsdl:input message="tns:LoadUserFavoritesSoapIn" />
+      <wsdl:output message="tns:LoadUserFavoritesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendOfflineStatus">
+      <wsdl:input message="tns:SendOfflineStatusSoapIn" />
+      <wsdl:output message="tns:SendOfflineStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendOnlineStatus">
+      <wsdl:input message="tns:SendOnlineStatusSoapIn" />
+      <wsdl:output message="tns:SendOnlineStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadOtherUserProfiles">
+      <wsdl:input message="tns:LoadOtherUserProfilesSoapIn" />
+      <wsdl:output message="tns:LoadOtherUserProfilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserImage">
+      <wsdl:input message="tns:RemoveUserImageSoapIn" />
+      <wsdl:output message="tns:RemoveUserImageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertBookmark">
+      <soap:operation soapAction="http://localhost/InsertBookmark" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBookmark">
+      <soap:operation soapAction="http://localhost/DeleteBookmark" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <soap:operation soapAction="http://localhost/InsertRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap:operation soapAction="http://localhost/DeleteRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap:operation soapAction="http://localhost/SendMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoftwareModules">
+      <soap:operation soapAction="http://localhost/GetSoftwareModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSoftModules">
+      <soap:operation soapAction="http://localhost/GetAllSoftModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPermissions">
+      <soap:operation soapAction="http://localhost/GetPermissions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonActivatedUsers">
+      <soap:operation soapAction="http://localhost/GetNonActivatedUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserFavorites">
+      <soap:operation soapAction="http://localhost/LoadUserFavorites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOfflineStatus">
+      <soap:operation soapAction="http://localhost/SendOfflineStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOnlineStatus">
+      <soap:operation soapAction="http://localhost/SendOnlineStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadOtherUserProfiles">
+      <soap:operation soapAction="http://localhost/LoadOtherUserProfiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserImage">
+      <soap:operation soapAction="http://localhost/RemoveUserImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertBookmark">
+      <soap12:operation soapAction="http://localhost/InsertBookmark" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBookmark">
+      <soap12:operation soapAction="http://localhost/DeleteBookmark" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <soap12:operation soapAction="http://localhost/InsertRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap12:operation soapAction="http://localhost/DeleteRole" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap12:operation soapAction="http://localhost/SendMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSoftwareModules">
+      <soap12:operation soapAction="http://localhost/GetSoftwareModules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSoftModules">
+      <soap12:operation soapAction="http://localhost/GetAllSoftModules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPermissions">
+      <soap12:operation soapAction="http://localhost/GetPermissions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNonActivatedUsers">
+      <soap12:operation soapAction="http://localhost/GetNonActivatedUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadUserFavorites">
+      <soap12:operation soapAction="http://localhost/LoadUserFavorites" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOfflineStatus">
+      <soap12:operation soapAction="http://localhost/SendOfflineStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOnlineStatus">
+      <soap12:operation soapAction="http://localhost/SendOnlineStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadOtherUserProfiles">
+      <soap12:operation soapAction="http://localhost/LoadOtherUserProfiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserImage">
+      <soap12:operation soapAction="http://localhost/RemoveUserImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:43577/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:43577/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

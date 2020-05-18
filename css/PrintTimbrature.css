@@ -1,0 +1,10 @@
+﻿.rgDataDiv {
+    width: 50% !important;
+}
+table {
+    width:600px!important;
+}
+
+td{width:50px!important;}
+
+body{background:red;}

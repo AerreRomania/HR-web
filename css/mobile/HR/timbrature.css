@@ -1,0 +1,132 @@
+﻿
+
+
+
+@media (min-width: 1281px) and (max-width: 1367px) {
+    body {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        zoom: 0.98;
+        -webkit-zoom: 0.98;
+        -ms-zoom: 0.98;
+        width: 1367px;
+    }
+
+    #RadDatePicker1_dateInput_wrapper {
+        width: 120px;
+    }
+
+    #RadDatePicker2_dateInput_wrapper {
+        width: 120px;
+    }
+
+
+    #scallableDiv {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        zoom: 0.91;
+        -webkit-zoom: 0.91;
+        -ms-zoom: 0.91;
+        width: 1367px;
+        position: absolute;
+    }
+}
+
+/* 
+##Device = Laptops, Desktops //Ipad PRO 
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #scallableDiv {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        zoom: 0.75;
+        -webkit-zoom: 0.75;
+        -ms-zoom: 0.75;
+        width: 1188px;
+        position: absolute;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #scallableDiv {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        zoom: 0.74;
+        -webkit-zoom: 0.74;
+        -ms-zoom: 0.74;
+        width: 1188px;
+        position: absolute;
+        
+    }
+
+    body {
+        width: auto;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #scallableDiv {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        zoom: 0.74;
+        -webkit-zoom: 0.74;
+        -ms-zoom: 0.74;
+        width: 1188px;
+        position: absolute;
+    }
+
+    #RadDatePicker2_dateInput_wrapper {
+        padding-left: 17px;
+    }
+    body {
+        width: auto;
+    }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        width: auto;
+        font-size:11px;
+    }
+    #RadDatePicker2_dateInput_wrapper {
+        padding-left: 13px;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: auto;
+        font-size:11px;
+    }
+    #RadDatePicker2_dateInput_wrapper {
+        padding-left: 13px;
+    }
+}
+

@@ -1,0 +1,528 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeFile="Site.master.vb" Inherits="Views.Produzione.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <%--<title><%: Page.Title %> </title>--%>
+    <title>CONFEZIONE</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <link id="favicon" rel="shortcut icon" type="Images/Image/png" href="./Images/navA.png" runat="server" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fonts/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet"/>
+
+<%--    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>--%>
+    <style>
+        input:hover {
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            margin-top: 5px !important;
+        }
+
+        #btn_fullscreen:hover {
+            cursor: pointer;
+        }
+
+        #top_menu td {
+            font-size: 14px !important;
+        }
+
+        .h5_sort {
+            line-height: 24px;
+            background: coral;
+            width: 173px;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+<%--        <asp:ScriptManager runat="server" AsyncPostBackTimeout="1600000" EnablePageMethods="true">
+            <%--   <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+            </Scripts>--%>
+        <%--</asp:ScriptManager>--%>
+                <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="../../js/jquery-1.12.4.min.js" />
+                <asp:ScriptReference Path="../../js/jquery-ui.js" />
+                <asp:ScriptReference Path="../../js/bootstrap.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <asp:UpdatePanel runat="server" UpdateMode="Conditional" ChildrenAsTriggers="true">
+            <ContentTemplate>
+                <header>
+
+
+
+                    <asp:Panel runat="server" ID="pnl_header">
+
+                        <%-- DOCBAR --%>
+                        <div id="dockbar" class="ng-scope ">
+                            <div id="main">
+                                <div id="time">
+                                    <span id="hours"></span><span id="min"></span><span id="sec"></span><span id="ampm"></span>
+                                </div>
+                                <div id="fullDate">
+                                    <span id="month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="year"></span>
+                                </div>
+                                <asp:Label runat="server" ID="lbl_ultimo_agiornato"></asp:Label>
+                            </div>
+
+                            <%-- MAIN MANU - DOCKED --%>
+                            <div class="scroll-container">
+                                <%-- DISPLAY NONE BUTTONS --%>
+
+                                <div style="display: none;">
+                                    <asp:ImageButton ID="cmdDownload"  ImageUrl="../../images/geteff.png" runat="server" /><p style="color: white;">Efficiency</p>
+                                    <asp:ImageButton ID="ppptDownload"  ImageUrl="../../images/assenteismo.png" runat="server" /><p style="color: white;">Assenteismo</p>
+                                    <asp:ImageButton ID="capiDownload"  ImageUrl="../../images/getcapi.png" runat="server" /><p style="color: white;">Capi</p>
+                                    <asp:ImageButton ID="testdugme"  runat="server" ImageUrl="../../images/machinenumber.png" /><p style="color: white;">MachineNum.</p>
+
+                                    <asp:ImageButton ID="btn_report" runat="server" />
+                                    <asp:ImageButton ID="btn_org" runat="server" />
+                                    <asp:ImageButton ID="btn_pause" runat="server" />
+                                    <asp:ImageButton ID="btn_print" runat="server" />
+                                    <asp:ImageButton ID="btn_pdf" runat="server" />
+
+
+                                </div>
+
+
+                                <asp:Table runat="server">
+                                    <%-- BUTTONS WITH ICONS --%>
+                                    <asp:TableRow>
+                                        <%-- REPORT --%>
+                                        <asp:TableCell CssClass="docktitlesimagestd">
+                                    <a href="#" onclick="javascript:document.getElementById('btn_report').click();return false;"  id="report" class="dockbutton">
+                                    <img src="../../Images/users-group.png" alt="icon">
+                                </a>
+                                        </asp:TableCell>
+
+                                        <%-- ORGANIGRAMA --%>
+                                        <asp:TableCell CssClass="docktitlesimagestd">
+                                    <a href="#" onclick="javascript:document.getElementById('btn_org').click();return false;" target="_blank" id="organigramma" class="dockbutton">
+                                    <img src="../../Images/assenteismo.png" alt="icon">
+                                </a>
+                                        </asp:TableCell>
+
+
+                                        <%-- PAUSE REPORT --%>
+                                        <asp:TableCell CssClass="docktitlesimagestd">
+                                    <a href="#" onclick="javascript:document.getElementById('btn_pause').click();return false;" id="pause" target="_blank" class="dockbutton">
+                                    <img src="../../Images/assenteismo.png" alt="icon">
+                                </a>
+                                        </asp:TableCell>
+
+                                        <%-- PRINT --%>
+                                        <asp:TableCell CssClass="docktitlesimagestd">
+                                    <a href="#" onclick="javascript:document.getElementById('btn_print').click();return false;" id="print" class="dockbutton">
+                                    <img src="../../Images/dockicon/printer.svg" style="width: 25px;" alt="icon">
+                                    </a>
+                                        </asp:TableCell>
+
+
+                                        <%-- PDF DOWNLOAD --%>
+                                        <asp:TableCell CssClass="docktitlesimagestd">
+                            <button type="button" id="cmd" onclick="javascript:getPDF();geteff();">
+                                <img src="../../Images/dockicon/download.svg" style="width: 25px;" alt="icon"></button>
+                                        </asp:TableCell>
+
+                                        <%-- SORTING BY LINE - PHASE --%>
+                                        <asp:TableCell CssClass="docktitlesimagestd">
+                                            <div class="dropdown">
+                                                <button type="button">
+                                                    <img src="../../Images/dockicon/flag.svg" style="width: 25px;" alt="icon">
+
+                                                    <div class="dropdown-content">
+                                                        <h5 class="h5_sort">Sort by Efficiency:</h5>
+                                                        <%--<hr style="line-height:1px;margin:10px;" />--%>
+
+                                                        <asp:Table runat="server" ID="top_menu" ClientIDMode="Static">
+                                                            <asp:TableRow>
+                                                                <asp:TableCell Style="padding-right: 15px; padding-bottom: 0px;">
+                                                                    <asp:Button runat="server" ID="btndefault" Style="width: 24px; height: 24px; border-radius: 4px; background-color: white;" />
+                                                                </asp:TableCell>
+                                                                <asp:TableCell Style="white-space: nowrap;">Default</asp:TableCell>
+                                                            </asp:TableRow>
+                                                            <asp:TableRow>
+                                                                <asp:TableCell Style="padding-right: 15px; padding-bottom: 0px;">
+                                                                    <asp:Button runat="server" ID="crveno" Style="width: 24px; height: 24px; border-radius: 4px; background-color: #FF2851;" />
+                                                                </asp:TableCell>
+                                                                <asp:TableCell Style="white-space: nowrap;">0% - 69.5%</asp:TableCell>
+                                                            </asp:TableRow>
+
+                                                            <asp:TableRow>
+                                                                <asp:TableCell Style="padding-right: 15px; padding-bottom: 0px;">
+                                                                    <asp:Button runat="server" ID="zuto" Style="width: 24px; height: 24px; border-radius: 4px; background-color: #FFE900;" />
+                                                                </asp:TableCell>
+                                                                <asp:TableCell Style="white-space: nowrap;">65.5% - 89.5% </asp:TableCell>
+                                                            </asp:TableRow>
+
+                                                            <asp:TableRow>
+                                                                <asp:TableCell Style="padding-right: 15px; padding-bottom: 0px;">
+                                                                    <asp:Button runat="server" ID="zeleno" Style="width: 24px; height: 24px; border-radius: 4px; background-color: #14AF00;" />
+                                                                </asp:TableCell>
+                                                                <asp:TableCell Style="white-space: nowrap;">89.5% - 100%</asp:TableCell>
+                                                            </asp:TableRow>
+
+                                                            <asp:TableRow>
+                                                                <asp:TableCell Style="padding-right: 15px; padding-bottom: 0px;">
+                                                                    <asp:ImageButton runat="server" ID="filterassenteismo" Style="width: 24px; height: 24px;" ImageUrl="~/images/ass.png" />
+                                                                </asp:TableCell>
+                                                                <asp:TableCell>Assenteismo</asp:TableCell>
+                                                            </asp:TableRow>
+
+                                                            <asp:TableRow>
+                                                                <asp:TableCell></asp:TableCell>
+                                                            </asp:TableRow>
+                                                        </asp:Table>
+
+                                                        <asp:Panel ID="pnl_sort_by_phase" runat="server" ClientIDMode="static">
+                                                        </asp:Panel>
+
+                                                        <asp:Panel ID="pnl_sort_by_line" runat="server" ClientIDMode="static">
+                                                        </asp:Panel>
+                                                    </div>
+                                            </div>
+                                        </asp:TableCell>
+
+                                        <%-- HIGHLIGHT --%>
+                                        <%--  <asp:TableCell CssClass="docktitlesimagestd">
+                                    <div class="dropdown">
+                                        <button type="button">
+                                            <img src="images/dockicon/highlighter.svg" alt="icon"></button>
+                                        <div class="dropdown-content">
+
+                                            <asp:Table runat="server">
+                                                <asp:TableRow>
+                                                    <asp:TableCell Style="padding-right: 15px; padding-bottom: 5px;">
+                                                        <asp:ImageButton runat="server" ID="highlight" ImageUrl="~/images/evidenzia-verde.png" />
+                                                    </asp:TableCell>
+                                                    <asp:TableCell>Verde</asp:TableCell>
+                                                </asp:TableRow>
+
+                                                <asp:TableRow>
+                                                    <asp:TableCell Style="padding-right: 15px; padding-bottom: 5px;">
+                                                        <asp:ImageButton runat="server" ImageUrl="~/images/evidenzia-arancione.png"/></asp:TableCell>
+                                                    <asp:TableCell>Arancione</asp:TableCell>
+                                                </asp:TableRow>
+
+                                                <asp:TableRow>
+                                                    <asp:TableCell Style="padding-right: 15px; padding-bottom: 5px;">
+                                                        <asp:ImageButton runat="server" ID="eroso" ImageUrl="~/images/evidenzia-rosso.png" />
+                                                    </asp:TableCell>
+                                                    <asp:TableCell>Rosso</asp:TableCell>
+                                                </asp:TableRow>
+                                            </asp:Table>
+                                        </div>
+                                    </div>
+                                </asp:TableCell>--%>
+                                    </asp:TableRow>
+
+                                    <%-- SPANS WITH NAMES --%>
+                                    <asp:TableRow CssClass="docktitlesrow">
+
+                                        <asp:TableCell>
+                            <span class="docktitles" id="reporttxt">Report</span>
+                                        </asp:TableCell>
+
+                                        <asp:TableCell>
+                            <span class="docktitles" id="orgtxt">Org.</span>
+                                        </asp:TableCell>
+
+                                        <asp:TableCell>
+                            <span class="docktitles" id="pausetxt">Pause</span>
+                                        </asp:TableCell>
+
+
+                                        <asp:TableCell>
+                                <span class="docktitles">Print</span>
+                                        </asp:TableCell>
+
+                                        <asp:TableCell>
+                            <span class="docktitles">Get PDF</span>
+                                        </asp:TableCell>
+
+                                        <asp:TableCell>
+                            <span class="docktitles">Sorting</span>
+                                        </asp:TableCell>
+
+
+                                    </asp:TableRow>
+
+                                </asp:Table>
+
+                            </div>
+                        </div>
+
+                        <div id="Totale_Efficiency">
+                            <asp:Table runat="server" Style="margin-right: -45px;">
+                                <asp:TableRow>
+                                    <asp:TableCell>
+                                        <asp:Label runat="server" ID="lbl_total_eff_text" Style="font-size: 20px; text-transform: uppercase;">Efficienza prezenti:</asp:Label>
+                                    </asp:TableCell>
+                                    <asp:TableCell>
+                                        <asp:Label runat="server" ID="lbl_total_eff_value" Style="font-size: 20px; padding-left: 5px;"></asp:Label>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+
+                                <asp:TableRow>
+                                    <asp:TableCell>
+                                        <asp:Label runat="server" ID="lbl_total_ass_text" Style="font-size: 20px; text-transform: uppercase;">Efficienza reparto:</asp:Label>
+                                    </asp:TableCell>
+
+                                    <asp:TableCell>
+                                        <asp:Label runat="server" ID="lbl_total_ass_value" Style="font-size: 20px; padding-left: 5px;"></asp:Label>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                            </asp:Table>
+
+
+                        </div>
+
+                        <asp:Table runat="server" Style="position: fixed; right: 5px; top: 15px; z-index: 9999999999;">
+                            <asp:TableRow>
+                                <asp:TableCell>
+                                    <asp:Image runat="server" ClientIDMode="Static" src="../../Images/fullscreen.png" ID="btn_fullscreen" Style="margin-left: 20px; height: 32px; width: 32px;" />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>
+                                        <span style="color:white;" id="fstext">FullScreen</span>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </asp:Panel>
+
+
+                </header>
+
+
+                <div id="body">
+                    <asp:Panel runat="server" ID="pnl_leftnavi">
+                        <%-- LEFT SIDEBAR --%>
+                        <div id="left-navi" onmouseover="mouseOver()" onmouseout="mouseOut()" class="ng-scope ">
+                            <!-- Left navigation -->
+                            <nav class="main-nav ng-scope">
+                                <ul style="padding-left: 1px;">
+                        <%--            <li class="limenu" runat="server">
+                                        <a href="./Dashboard.aspx" class="all">
+                                            <img src="images/navicon/all.svg" style="width: 30px;" alt="icon">
+                                            <span>Menu</span>
+                                        </a></li>--%>
+
+                                        <%--          <li><a class="tessitura" href="#tessitura">
+                                    <img alt="icon" src="images/navicon/TS.svg"> <span>Tessitura</span> <span class="pull-right">
+                                    <img src="images/navicon/next.svg" />
+                                    </span></img></a> &nbsp;</li>--%>
+                              <%--      <li class="liconfa" id="idconfa" runat="server"><a class="confA" href="#" onclick="javascript:document.getElementById('ConfA_Change').click();return false;" target="">
+                                        <img alt="icon" src="images/navicon/CA.svg"> <span>Confezione A</span> <span class="pull-right">
+                                            <img src="images/navicon/next.svg" />
+                                        </span>
+                                    </a>&nbsp;</li>
+                                    <li class="liconfb" id="idconfb" runat="server"><a class="confB" href="#" onclick="javascript:document.getElementById('ConfB_Change').click();return false;" target="">
+                                        <img alt="icon" src="images/navicon/CB.svg"> <span>Confezione B</span> <span class="pull-right">
+                                            <img src="images/navicon/next.svg" />
+                                        </span></img>
+                                    </a></li>
+                                    <li class="listiro" id="idstiro" runat="server"><a class="stiro" href="#" onclick="javascript:document.getElementById('Stiro_Change').click();return false;" target="">
+                                        <img alt="icon" src="images/navicon/S.svg"> <span>Stiro</span> <span class="pull-right">
+                                            <img src="images/navicon/next.svg" />
+                                        </span>
+                                    </a></li>--%>
+                                    <li><a id="effclick" class="eff" href="#" onclick="javascript:document.getElementById('cmdDownload').click();return false;">
+                                        <img alt="icon" src="../../images/navicon/eff.svg" style="width: 30px;" />
+                                        <span>Get Efficienza</span> 
+                                    </a></li>
+                                    <li><a class="assenteismo" href="#" onclick="javascript:document.getElementById('ppptDownload').click();return false;">
+                                        <img alt="icon" src="../../images/navicon/human-res.svg" style="width: 30px;" />
+                                        <span>Get Assenteismo</span>
+                                    </a></li>
+                                    <li><a class="capi" href="#" onclick="javascript:document.getElementById('capiDownload').click();return false;">
+                                        <img alt="icon" src="../../images/navicon/warehouse.svg" style="width: 30px;" />
+                                        <span>Get Capi</span> 
+                                    </a></li>
+                                    <li><a class="machine" href="#" onclick="javascript:document.getElementById('testdugme').click();return false;">
+                                        <img alt="icon" src="../../images/navicon/sells.svg" style="width: 30px;" />
+                                        <span>Get Machine</span>
+                                    </a></li>
+                                </ul>
+
+
+                                <div class="" style="display: none;">
+                                    <asp:Label runat="server" ID="lblTotAss" Style="display: none"></asp:Label>
+                                    <asp:Label runat="server" ID="lbltoteffConfA" Style="display: none"></asp:Label>
+                                    <h4>
+                                        <asp:Label ID="lblTotEfficiency" runat="server" Style="padding-left: 21%;"></asp:Label></h4>
+                                    <asp:Label ID="lbl1" runat="server" Style="display: none;"></asp:Label>
+                                    <asp:Label ID="lbl2" runat="server" Style="display: none;"></asp:Label>
+                                    <asp:Label ID="lblloadtime" runat="server" Style="display: none;"></asp:Label>
+
+                                    <img src="images/ONLYOU.png" alt="logo" style="padding-bottom: 20px; padding-top: 10px; width: 200px; padding-left: 20%; height: 60px;" />
+
+                                </div>
+
+                            </nav>
+                        </div>
+                    </asp:Panel>
+
+                    <asp:ContentPlaceHolder runat="server" ID="MainStiro" />
+                    <asp:ContentPlaceHolder runat="server" ID="MainConfA" />
+                    <asp:ContentPlaceHolder runat="server" ID="MainConfB" />
+                    <asp:ContentPlaceHolder runat="server" ID="MainConfAcapi" />
+
+                    <asp:Button runat="server" ID="ConfA_Change" Style="display: none;" />
+                    <asp:Button runat="server" ID="ConfB_Change" Style="display: none;" />
+                    <asp:Button runat="server" ID="Stiro_Change" Style="display: none;" />
+
+
+                </div>
+                <script>
+                    $(document).ready(function () {
+
+                        document.getElementById("btn_fullscreen").addEventListener("click", function () {
+                            toggleFS();
+                        });
+
+                        function isFullScreen() {
+                            return (document.fullScreenElement && document.fullScreenElement !== null) ||
+                                (document.msFullscreenElement && document.msFullscreenElement !== null) ||
+                                (document.mozFullScreen || document.webkitIsFullScreen);
+                        }
+
+                        function enterFS() {
+                            var page = document.documentElement
+                            if (page.requestFullscreen) page.requestFullscreen();
+                            else if (page.mozRequestFullScreen) page.mozRequestFullScreen();
+                            else if (page.msRequestFullscreen) page.msRequestFullscreen();
+                            else if (page.webkitRequestFullScreen) page.webkitRequestFullScreen();
+                        }
+
+                        function exitFS() {
+                            if (document.exitFullScreen) return document.exitFullScreen();
+                            else if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+                            else if (document.msExitFullscreen) return document.msExitFullscreen();
+                            else if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
+                        }
+
+                        function toggleFS() {
+                            if (!isFullScreen()) {
+                                enterFS();
+                                $('#fstext').html('WideScreen');
+                            } else {
+                                exitFS();
+                                $('#fstext').html('FullScreen');
+                            }
+                        }
+                    });
+
+                    function fullscreen() {
+                        document.getElementById("btn_fullscreen").addEventListener("click", function () {
+                            toggleFS();
+                        });
+
+                        function isFullScreen() {
+                            return (document.fullScreenElement && document.fullScreenElement !== null) ||
+                                (document.msFullscreenElement && document.msFullscreenElement !== null) ||
+                                (document.mozFullScreen || document.webkitIsFullScreen);
+                        }
+
+                        function enterFS() {
+                            var page = document.documentElement
+                            if (page.requestFullscreen) page.requestFullscreen();
+                            else if (page.mozRequestFullScreen) page.mozRequestFullScreen();
+                            else if (page.msRequestFullscreen) page.msRequestFullscreen();
+                            else if (page.webkitRequestFullScreen) page.webkitRequestFullScreen();
+                        }
+
+                        function exitFS() {
+                            if (document.exitFullScreen) return document.exitFullScreen();
+                            else if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+                            else if (document.msExitFullscreen) return document.msExitFullscreen();
+                            else if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
+                        }
+
+                        function toggleFS() {
+                            if (!isFullScreen()) {
+                                enterFS();
+                                $('#fstext').html('WideScreen');
+                            } else {
+                                exitFS();
+                                $('#fstext').html('FullScreen');
+                            }
+                        }
+                    };
+                </script>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <%-- TIME SCRIPT --%>
+        <script>
+            $(function () {
+                setInterval(function () {
+                    var seconds = new Date().getTime() / 1000;
+                    var time = new Date(),
+                        hours = time.getHours(),
+                        min = time.getMinutes(),
+                        sec = time.getSeconds(),
+                        millSec = time.getMilliseconds(),
+                        millString = millSec.toString().slice(0, -2),
+                        day = time.getDay(),
+                        ampm = hours >= 12 ? 'PM' : 'AM',
+                        month = time.getMonth(),
+                        date = time.getDate(),
+                        year = time.getFullYear(),
+                        monthShortNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+                        ];
+                    //convert hours from military time and add the am or pm
+                    //if (hours > 11) $('#ampm').text(ampm);
+                    $('#ampm').text(ampm)
+                    if (hours > 12) hours = hours % 12;
+                    if (hours == 0) hours = 12;
+
+                    //add leading zero for min and sec 
+                    if (sec <= 9) sec = "0" + sec;
+                    if (min <= 9) min = "0" + min;
+
+                    $('#hours').text(hours);
+                    $('#min').text(":" + min + ":");
+                    $('#sec').text(sec);
+                    //$("#test").text(day);
+                    // $('#millSec').text(millString);
+                    $('.days:nth-child(' + (day + 1) + ')').addClass('active');
+                    $("#month").text(monthShortNames[month]);
+                    $('#date').text(date);
+                    $('#year').text(year);
+                }, 100);
+            });
+
+
+            function mouseOver() {
+                document.getElementById("left-navi").className = "ng-scope hover";
+            };
+            function mouseOut() {
+                document.getElementById("left-navi").className = "ng-scope";
+            };
+
+
+
+        </script>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/api.js"></script>
+
+        <%--<script src="js/ui-bootstrap-tpls-0.11.0.js"></script>--%>
+    </form>
+</body>
+</html>

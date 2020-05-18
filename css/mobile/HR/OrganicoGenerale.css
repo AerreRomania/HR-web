@@ -1,0 +1,140 @@
+﻿
+@media (min-width: 1281px) and (max-width: 1367px) {
+    body {
+        /*-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        zoom: 0.98;
+        -webkit-zoom: 0.98;
+        -ms-zoom: 0.98;
+        width: 1367px;*/
+        width: 1367px;
+        overflow: auto;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* 
+##Device = Laptops, Desktops //Ipad PRO 
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        width: 1280px;
+        overflow: auto;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #tbla1 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+
+    #tbla2 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 1024px;
+        overflow: auto;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #tbla1 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+
+    #tbla2 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        max-width: 1024px;
+        overflow: auto;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        max-width: 767px;
+        font-size: 10px;
+        overflow: auto;
+        padding-right: 40px;
+        padding-left: 10px;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #tbla1 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+
+    #tbla2 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        max-width: 480px;
+        font-size: 10px;
+        overflow: auto;
+        padding-right: 40px;
+        padding-left: 10px;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #tbla1 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+
+    #tbla2 {
+        zoom: 0.94;
+        -webkit-zoom: 0.94;
+        -ms-zoom: 0.94;
+    }
+}

@@ -1,0 +1,346 @@
+﻿
+.buttonsBox {
+    margin: 5px;
+    width: 83px;
+    height: 83px;
+    border-color: #b1b1b1;
+    border-style: solid;
+    border-width: 2px;
+    background-color: transparent;
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+.PiegoBox {
+    margin: 5px;
+    width: 63px;
+    height: 90px;
+    float: left;
+    border-color: #b1b1b1;
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    background-size: cover;
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+        .PiegoCircle {
+               background-image: url(../images/piego1.png);
+               background-size: 86px 100px;
+               width: 86px;
+             float:left;
+            margin-top: 15px;
+            /*margin: 5px;
+            background-size:cover;
+            background-size: 100% 100%;
+            background-color: transparent;*/
+        }
+
+
+.PresaBox {
+    margin: 5px;
+    width: 63px;
+    height: 90px;
+    float: left;
+    border-color: #b1b1b1;
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    background-size: cover;
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+        .PressaCircle {
+               background-image: url(../images/presa1.png);
+               background-size: 97px 100px;
+               width: 97px;
+               float:left;
+            margin-top: 15px;
+            /*margin: 5px;
+            background-size:cover;
+            background-size: 100% 100%;
+            background-color: transparent;*/
+        }
+
+
+.RammendoBox {
+    margin: 16px;
+    width: 43px;
+    height: 63px;
+    float: left;
+    border-color: #b1b1b1;
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    background-size: cover;
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+            .RammendoCircle {
+               background-image: url(../images/rammendo.png);
+               /*background-size: 80px 100px;*/
+               width: 97px;
+                margin-top: 15px;
+
+               float:left;
+            /*margin: 5px;
+            background-size:cover;
+            background-size: 100% 100%;
+            background-color: transparent;*/
+        }
+
+
+.ManichinoBox {
+    margin: 19px;
+    width: 63px;
+    height: 62px;
+    float: left;
+    border-color: #b1b1b1;
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    background-size: cover;
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+            .ManichinoCircle {
+               background-image: url(../images/manichino.png);
+               float:left;
+               background-size: 97px 100px;
+               width: 97px;
+               height: 100px;
+               float: left;
+                margin-top: 15px;
+        }
+
+
+.EticheteBox {
+    margin: 18px;
+    width: 48px;
+    height: 64px;
+    float: left;
+    border-color: #b1b1b1;
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    background-size: cover;
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.25);
+    margin-left: 9px;
+}
+
+
+            .EticheteCircle {
+               background-image: url(../images/etichete.png);
+               float:left;
+               background-size: 97px 100px;
+               width: 97px;
+               height: 100px;
+               float: left;
+                margin-top: 15px;
+        }
+
+
+
+.ThreeObjBox {
+    width: 300px;
+    height: 145px;
+    margin: 11px;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d4d4d4;
+    /*background-color: rgba(23, 23, 23, 0.18);*/
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+        .FourObjBox {
+            width: 383px;
+            height:130px;
+            margin: 10px;
+            float:left;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #b1b1b1;
+        }
+
+        .pnTitles {
+            height: 23px;
+            padding-left: 7px!important;
+            text-align:center
+        }
+
+
+        .auto-style2 {
+            border: 1px solid #b1b1b1;
+            margin: 10px;
+            float: left;
+            text-align: center;
+            height:130px;
+        }
+
+        .jumbotron {
+            background-color: white;
+            /*background-color: darkgray;*/ 
+        }
+
+
+
+       
+        body{ 
+            overflow: scroll;
+        }
+
+
+                   .tooltip-wrap {
+                position: relative;
+            }
+
+           .tooltip-wrap .tooltip-content {
+                display: none;
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;
+                background-color: #fff;
+                padding: .5em;
+            }
+
+            .tooltip-wrap:hover .tooltip-content {
+                display: block;
+            }
+
+
+/* Modal Content */
+            .modal-content {
+                position: relative;
+                background-color: rgba(44, 81, 107, 0.03);
+                margin: auto;
+                padding: 0;
+            /*border: 1px solid #888;*/
+                width: 60%;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                overflow-x:auto;
+}
+
+            #lblprofil {
+    margin-top: 15px;
+    color: white;
+}
+
+
+               form {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        .jumbotron {
+            width:100%;
+        }
+
+        .info-panel{
+            font-size:30px;
+            width:100%;
+            height:100px;
+            margin-top:-20px;
+            background:darkgray;
+        }
+
+        .btn-block{
+            background-color:lightgrey;
+            border-bottom:solid;
+            border-width: 0.5pt;
+        }
+
+         #lblprofil{
+             margin-top:15px; 
+             color:white;
+        }
+           
+           .paneli{
+               display:table; margin:0 auto; max-width: 1700px;
+           }
+
+             body{ 
+               /*background-image:url(./images/bg-blue.jpg); background-size:cover;*/
+               background-color:white;
+               padding-bottom: 80px;
+           }
+
+           .tooltip-wrap {
+                position: relative;
+            }
+
+           .tooltip-wrap .tooltip-content {
+                display: none;
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;
+                background-color: #fff;
+                padding: .5em;
+            }
+
+            .tooltip-wrap:hover .tooltip-content {
+                display: block;
+            }
+
+
+
+.navbar-inverse {
+    border-radius: inherit!important;
+}
+
+.navbar {
+    margin-bottom: 0px!important;
+}
+
+            .modal-content {
+                position: relative;
+                background-color: rgba(44, 81, 107, 0.03);
+                margin: auto;
+                padding: 0;
+                width: 60%;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                overflow-x:auto;
+}
+
+           .btn-primary {
+            color: #464343;
+            background-color: white;
+            width: 220px;
+        }  
+
+        .btn-primary:hover{
+            background-color:#ffa300;
+            color:#333;
+            border-color:#ffa300;
+        }
+
+        .fa{
+                padding-top: 3px;
+        }
+
+        .fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;}
+
+.faa-horizontal.animated, .faa-horizontal.animated-hover:hover, .faa-parent.animated-hover:hover > .faa-horizontal {
+    -webkit-animation: horizontal 2s ease infinite;
+    animation: horizontal 2s ease infinite;
+}
+
+            #lblusername{
+                padding-left:15px;
+            }
+
+            
+span#lblTotEfficiency{
+    white-space:nowrap;
+}
