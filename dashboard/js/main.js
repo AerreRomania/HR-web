@@ -30,9 +30,13 @@
 
     $("#lvl_two_stiro").addClass("hide");
     $("#lvl_two_stiro").removeClass("show");
+
+    $("#lvl_two_sartiroia").addClass("hide");
+    $("#lvl_two_sartiroia").removeClass("show");
     
     $("#conf_bread").hide();
     $("#stiro_bread").hide();
+    $("#sartoria_bread").hide();
     $("#produzione_bread").hide();
     $("#default_bread").show();
 

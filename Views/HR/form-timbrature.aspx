@@ -221,10 +221,10 @@
                                                  ShowFilterIcon="false">
                         </telerik:GridBoundColumn>
                         
-                        <telerik:GridBoundColumn FilterControlWidth="120px" UniqueName="isPausaAndLate"  DataField="IsPausaAndLate" HeaderText="IsPausaAndLate:" AllowFiltering="false"
+                        <%--<telerik:GridBoundColumn FilterControlWidth="120px" UniqueName="isPausaAndLate"  DataField="IsPausaAndLate" HeaderText="IsPausaAndLate:" AllowFiltering="false"
                                                  AutoPostBackOnFilter="true" CurrentFilterFunction="Contains"
                                                  ShowFilterIcon="false">
-                        </telerik:GridBoundColumn>
+                        </telerik:GridBoundColumn>--%>
                        
                     </Columns>
                 </MasterTableView>

@@ -136,6 +136,8 @@
                         <asp:DropDownList runat="server" id="ddp_year" OnSelectedIndexChanged="ddp_month_SelectedIndexChanged" AutoPostBack="true" Width="100" CssClass="custom-select custom-select-sm form-control form-control-sm">
                             <asp:ListItem Value="2019" Text="2019"></asp:ListItem>
                             <asp:ListItem Value="2020" Text="2020"></asp:ListItem>
+                            <asp:ListItem Value="2021" Text="2021"></asp:ListItem>
+
                         </asp:DropDownList>
 
                         <span>Linie:</span>

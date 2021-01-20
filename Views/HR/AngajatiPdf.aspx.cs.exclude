@@ -1,0 +1,129 @@
+using System;
+using System.Linq;
+using System.Web;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Font = System.Drawing.Font;
+
+namespace Views.HR
+{
+    public partial class AngajatiPdf : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            CrearePdf();
+        }
+
+        private void CrearePdf()
+        {
+            iTextSharp.text.Font arial8 = FontFactory.GetFont("Arial", 8);
+            iTextSharp.text.Font arial10 = FontFactory.GetFont("Arial", 10);
+            iTextSharp.text.Font arial12 = FontFactory.GetFont("Arial", 12);
+
+            HttpResponse resp = this.Response;
+            Document document = new Document(PageSize.A4);
+
+
+            PdfWriter writer = PdfWriter.GetInstance(document, resp.OutputStream);
+            document.Open();
+
+            PdfContentByte pdfContentByte = writer.DirectContent;
+
+
+
+            DataClassWbmOlimpias dcWbmOlimpias = new DataClassWbmOlimpias();
+
+            Paragraph p = new Paragraph();
+            p.Font = arial12;
+            p.Add("Lista Dipendenti");
+            p.Alignment = Element.ALIGN_CENTER;
+            document.Add(p);
+
+            p.Clear();
+            p.Font = arial10;
+            p.Add("Data: " + DateTime.Now.ToString("dd.MM.yyy HH:mm:ss"));
+            p.Alignment = Element.ALIGN_LEFT;
+            document.Add(p);
+
+            string[] col = { "Codice", "Numero dal sistema", "Numero matricola", "Cognome", "Nome", "Reparto","Mansione", "Data assunzione" };
+            PdfPTable table = new PdfPTable(8);
+            table.WidthPercentage = 100;
+            table.SetWidths(new Single[] { 2, 2, 2, 3, 3, 3,3, 2 });
+            table.SpacingBefore = 10;
+
+            p.Font = arial8;
+
+            for (int i = 0; i < col.Length; ++i)
+            {
+                PdfPCell cell = new PdfPCell();
+                Phrase ph = new Phrase();
+                ph.Font = arial10;
+                ph.Clear();
+                ph.Add(col[i]);
+                cell.Phrase = ph;
+                cell.BackgroundColor = new BaseColor(204, 204, 204);
+                table.AddCell(cell);
+            }
+
+            var qAngajati = from tAngajati in dcWbmOlimpias.AngajatiViews
+                select new { tAngajati.CodAngajat, tAngajati.CodSistem, tAngajati.Marca, tAngajati.Nume, tAngajati.Prenume, tAngajati.Departament, tAngajati.DataAngajarii, tAngajati.PostDeLucru };
+
+            foreach (var rezultat in qAngajati)
+            {
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.CodAngajat.ToString());
+                PdfPCell cell = new PdfPCell(p);
+                table.AddCell(cell);
+
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.CodSistem.ToString());
+                cell = new PdfPCell(p);
+                table.AddCell(cell);
+
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.Marca);
+                cell = new PdfPCell(p);
+                table.AddCell(cell);
+
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.Prenume);
+                cell = new PdfPCell(p);
+                table.AddCell(cell);
+
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.Nume);
+                cell = new PdfPCell(p);
+                table.AddCell(cell);
+
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.Departament);
+                cell = new PdfPCell(p);
+                table.AddCell(cell);
+
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.PostDeLucru);
+                cell = new PdfPCell(p);
+                table.AddCell(cell);
+
+                p = new Paragraph();
+                p.Font = arial8;
+                p.Add(rezultat.DataAngajarii.ToString("dd.MM.yyyy"));
+                cell = new PdfPCell(p);
+                table.AddCell(cell);
+            }
+
+            document.Add(table);
+
+            resp.AddHeader("Content-Disposition", "attachment;filename=ListaDipendenti.pdf");
+            resp.ContentType = "application/pdf";
+            document.Close();
+        }
+    }
+}

@@ -100,15 +100,16 @@
 
                                           var currentRow = $(this).closest("tr");
                                           var data = $(className).DataTable().row(currentRow).data();
-
+                                          console.log('DATA: ', data);
                                           $('#nrid').text(data[4]);
                                           $('#nrcode').text(data[1]);
+                                          $('#nrbadge').text(data[47]);
                                           $('#nseso').text(data[20]);
                                           $('#nimg').attr('src', data[45]);
                                           $('#ncognome').text(data[3]);
                                           $('#nnome').text(data[2]);
                                           $('#ncitta').text(data[9]);
-                                          $('#nteldom').text(data[26]);
+                                          $('#nteldom').text(data[25]);
                                           $('#nreparto').text(data[5]);
                                           $('#nlinea').text(data[6]);
                                           $('#nfase').text(data[37]);
@@ -116,11 +117,11 @@
                                           $('#nmansione').text(data[7]);
                                           $('#nlivelo').text(data[36]);
                                           $('#ndiretti').text(data[38]);
-                                          $('#nnascita').text(data[39]);
+                                          $('#nnascita').text(data[35]);
                                           $('#norarrio').text(data[48] + '->' + data[49]);
                                           $('#ntipodi').text(data[44]);
-                                          $('#ninizio').text(formatDate(data[13]));
-                                          $('#nscadenza').text(formatDate(data[42]));
+                                          $('#ninizio').text(formatDateTest2(data[13]));
+                                          $('#nscadenza').text(formatDateTest2(data[42]));
                                           $('.overlay').show();
                                            
                                           if ($('#nimg').attr('src').length < 7) {
@@ -140,16 +141,15 @@
                                               $('#nscadenza').text('');
                                           }
 
+                                          if ($('#nscadenza').text() == '01/01/0001') {
+                                              $('#nscadenza').text('');
+                                          }
+
                                           if ($('#ntipodi').text() == '1') {
                                               $('#ntipodi').text('I');
                                           } else {
                                               $('#ntipodi').text('D');
                                           } 
-
-                                        
-
-                                          
-
                                       });
 
                                       $(className).on('click', '.btn-edit', function (e) {
@@ -157,6 +157,7 @@
 
                                           var currentRow = $(this).closest("tr");
                                           var data = $(className).DataTable().row(currentRow).data();
+                                          console.log('DATA2: ', data);
 
                                           $('.fframe').show(); 
                                           $('.close_fframe').click(function () {
@@ -179,11 +180,12 @@
                                           //FILL DATA
                                           $('.nrid').val(data[4]);
                                           $('.nrcode').val(data[1]);
+                                          $('.nrbadge').val(data[47]);
                                           $('.nseso').val(data[20]);
                                           $('.ncognome').val(data[3]);
                                           $('.nnome').val(data[2]);
                                           $('.ncitta').val(data[9]);
-                                          $('.nteldom').val(data[26]); 
+                                          $('.nteldom').val(data[25]); 
                                           $('.nemail').val(data[30]);
                                           //$('.nlivelo').val(data[36]); 
                                           //$('.nnascita').val(data[39]);
@@ -238,7 +240,8 @@
                                           $('.update_data').click(function () {
                                               var dataToLog = {
                                                 nrid : $('.nrid').val(),
-                                                nrcode : $('.nrcode').val(),
+                                                  nrcode: $('.nrcode').val(),
+                                                  badge: $('.nrbadge').val(),
                                                 nses : $('.nseso').val(),
                                                 ncognome : $('.ncognome').val(),
                                                 nnome : $('.nnome').val(),
@@ -315,7 +318,7 @@
                                       if (month.length < 2) month = '0' + month;
                                       if (day.length < 2) day = '0' + day;
 
-                                      return date.substring(0, 10) //[day, month, year].join('/');
+                                      return date.substring(0, 11) //[day, month, year].join('/');
                                   }
                                   function formatDateTest(date) {
                                       var d = new Date(date),
@@ -327,6 +330,17 @@
                                       if (day.length < 2) day = '0' + day;
 
                                       return year + '-' + month + '-' + day; //[day, month, year].join('/');
+                                  }
+                                  function formatDateTest2(date) {
+                                      var d = new Date(date),
+                                          month = '' + (d.getMonth() + 1),
+                                          day = '' + d.getDate(),
+                                          year = d.getFullYear();
+
+                                      if (month.length < 2) month = '0' + month;
+                                      if (day.length < 2) day = '0' + day;
+
+                                      return day + '/' + month + '/' + year; //[day, month, year].join('/');
                                   }
                                   function printThis() {
                                       $('#ovr').printThis({
@@ -340,12 +354,12 @@
                                       //var rcode = $('#nrcode').text()
                                       //window.open("./_schieda_upload.aspx/?rcode="+rcode+""); 
                                   }
-                            </script>
+                              </script>
                       </section>
                 </div>
             </div>
         </div>
-     <asp:SqlDataSource ID="AngajatiView" runat="server" ConnectionString="<%$ ConnectionStrings:WbmOlimpiasConnectionString2 %>" SelectCommand="SELECT [Marca] as [R-nume], [Nume], [Prenume], [NumarIdentificarePersonala] as [N.Identificare], [Departament] as [Reparto], [Linie], [Incadrare] as [Mansione], [Id], [Strada], [IdLocalitate], [DataNasterii], [Somaj], [DataAngajarii], [DataNedeterminat], [IdTipPostDeLucru], [DataExpirareContract], [DataExpirareProba], [IdIntervalDeLucru], [IdPostDeLucru], [Sex], [IdLoculNasterii], [IdIncadrare], [IdNivelStudiu], [IdBanca], [StareCivila], [NumarTelefon], [CC], [IdDepartament], [IdEchipa], [AdresaEmail], [IdLinie], [Banca], [Echipa], [IntervalDeLucru], [Localitate], [NivelStudiu], [PostDeLucru], [TipPostDeLucru], [LoculNasterii], [CodAngajat], [CodSistem], [DataLichidarii], [DataMaternitate], [DeteIndete], [ImageUrl],[CvUrl],[IdBadge] as [Badge],[StartShift] as [Start Shift], [EndShift] as [End Shift] FROM [AngajatiView]"></asp:SqlDataSource>
+     <asp:SqlDataSource ID="AngajatiView" runat="server" ConnectionString="<%$ ConnectionStrings:WbmOlimpiasConnectionString2 %>" SelectCommand="SELECT [Marca] as [R-nume], [Nume], [Prenume], [NumarIdentificarePersonala] as [N.Identificare], [Departament] as [Reparto], [Linie], [Incadrare] as [Mansione],'null',  [Strada], [IdLocalitate], [DataNasterii], [Somaj], [DataAngajarii], [DataNedeterminat], [IdTipPostDeLucru], [DataExpirareContract], [DataExpirareProba], [IdIntervalDeLucru], [IdPostDeLucru], [Sex], [IdLoculNasterii], [IdIncadrare], [IdNivelStudiu], [IdBanca], [StareCivila], [NumarTelefon], [CC], [IdDepartament], [IdEchipa], [AdresaEmail], [IdLinie], [Banca], [Echipa], [IntervalDeLucru], [Localitate], [NivelStudiu], [PostDeLucru], [TipPostDeLucru], [LoculNasterii], [CodAngajat], [CodSistem], [DataLichidarii], [DataMaternitate], [DeteIndete], [ImageUrl],[CvUrl],[IdBadge] as [Badge],[StartShift] as [Start Shift], [EndShift] as [End Shift] FROM [AngajatiView]"></asp:SqlDataSource>
      <asp:SqlDataSource ID="AngajatiOdpusteni" runat="server" ConnectionString="<%$ ConnectionStrings:WbmOlimpiasConnectionString2 %>" SelectCommand="SELECT [Marca]  as [R-nume], [Nume], [Prenume], [NumarIdentificarePersonala] as [N.Identificare], [Departament] as [Reparto], [Linie], [Incadrare] as [Mansione], [Id], [Strada], [IdLocalitate], [DataNasterii], [Somaj], [DataAngajarii], [DataNedeterminat], [IdTipPostDeLucru], [DataExpirareContract], [DataExpirareProba], [IdIntervalDeLucru], [IdPostDeLucru], [Sex], [IdLoculNasterii], [IdIncadrare], [IdNivelStudiu], [IdBanca], [StareCivila], [NumarTelefon], [CC], [IdDepartament], [IdEchipa], [AdresaEmail], [IdLinie], [Banca], [Echipa], [IntervalDeLucru], [Localitate], [NivelStudiu], [PostDeLucru], [TipPostDeLucru], [LoculNasterii], [CodAngajat], [CodSistem], [DataLichidarii], [DataMaternitate], [DeteIndete],[ImageUrl],[CvUrl],[IdBadge] as [Badge],[StartShift] as [Start Shift], [EndShift] as [End Shift] FROM [AngajatiOdpusteni]"></asp:SqlDataSource>
     
         <%-- UPDATE START --%>
@@ -391,6 +405,8 @@
                 <div class="row">
                     <div class="col-md-3"><span class="firstpad">Cognome:</span><input  class="ncognome"/></div>
                     <div class="col-md-3"><span class="firstpad">Nome:</span><input  class="nnome"/></div>
+                    <div class="col-md-3"><span class="firstpad">Badge Code:</span><input  class="nrbadge"/></div>
+
                     </div>
                 <div class="row">
                     <div class="col-md-3"><span class="firstpad">Strada:</span><input class="ncitta"/></div>
@@ -500,8 +516,14 @@
                 
                 <p style="text-decoration:underline;color:darkslateblue;">Modulo - Scheda anagrafica Dipendente</p>
                 <h4>Dati Dipendente</h4>
-                <h6>Dati Personali <span class="col-md-2 offset-9" id="nrcode">R-Code:</span> <a id="cv_profile" href="#" target="_blanko">View CV</a></h6>
+                <h6>Dati Personali </h6>
+                
+                    
+                    
                   <div class="row">
+                      <span class="col-md-2 offset-6">Badge:<span id="nrbadge"></span></span>
+                      <span class="col-md-2">R-Code: <span id="nrcode"></span></span>
+                      <a class="col-md-2" id="cv_profile" href="#" target="_blanko">View CV</a>
                 </div>
                 <div class="row">
                     <div class="col-md-3"><span class="firstpad" >Nr.id:</span><span class="inputs" id="nrid"></span></div>

@@ -232,6 +232,7 @@
                                         </td>
                                         <td>
                                             <asp:DropDownList ID="ddlFiltruAn" runat="server">
+                                                <asp:ListItem>2021</asp:ListItem>
                                                 <asp:ListItem>2020</asp:ListItem>
                                                 <asp:ListItem>2019</asp:ListItem>
 

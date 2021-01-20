@@ -21,14 +21,14 @@ function Lista()
 
     if ($get("tbFiltruDepartament").value === "CONFEZIONE A") {
         console.log('confa');
-        TabelePeUnRand = 4;
+        TabelePeUnRand = 6;
         $('#tblPrezenze').css('zoom', '0.95');
         //    zoom: 0.95;
     }
 
     if ($get("tbFiltruDepartament").value === "CONFEZIONE B") {
         console.log('confb');
-        TabelePeUnRand = 4;
+        TabelePeUnRand = 6;
         $('#tblPrezenze').css('zoom', '0.95');
 
     }
@@ -363,11 +363,11 @@ function AfisarePrezenteDepartamentClone(Tabela) {
                 sTable = sTable + '<td class="rAntetSecundGalben">' + subTabela[subItem].Maternita + '</td>';
 
             else if (subTabela[subItem].Absent === '1' && subTabela[subItem].Ferie !== '1')
-                sTable = sTable + '<td class="rAntetSecundRosu">' + subTabela[subItem].Absent + '</td>';
+                sTable = sTable + '<td class="rAntetSecundRosu green">' + subTabela[subItem].Absent + '</td>';
             else if (subTabela[subItem].Ferie === '1')
-                sTable = sTable + '<td class="rAntetSecundRosu" style="background-color:forestgreen!important;">' + subTabela[subItem].Ferie + '</td>';
+                sTable = sTable + '<td class="rAntetSecundRosu red">' + subTabela[subItem].Ferie + '</td>';
             else
-                sTable = sTable + '<td class="rAntetSecundAlb">' + subTabela[subItem].Absent + '</td>';
+                sTable = sTable + '<td class="rAntetSecundAlb silver">' + subTabela[subItem].Absent + '</td>';
             sTable = sTable + '</tr>';
         }
 
@@ -456,9 +456,9 @@ function AfisarePrezenteDepartament(Tabela)
         }
         i++;
 
-        var sTable = '<table id=myTable  style="border: 1px solid #800080; border-collapse: collapse;" width="300">';
+        var sTable = '<table style="border: 1px solid #800080; border-collapse: collapse;" width="300">';
         sTable = sTable + '<tr><td class="rAntet" colspan="5" align="center">' + Tabela[item].Grup + '</td></tr>';
-        sTable = sTable + '<tr>';
+        sTable = sTable + '<tr class="tbl-first-row">';
         sTable = sTable + '<td class="rAntetSecund">&nbsp;</td>';
         sTable = sTable + '<td class="rAntetSecund">Nome e cognome</td>';
         sTable = sTable + '<td class="rAntetSecund">Mansione</td>';
@@ -466,6 +466,7 @@ function AfisarePrezenteDepartament(Tabela)
         sTable = sTable + '</tr>';
 
         var subTabela = Tabela[item].TabelaPrezentaGrup;
+        var counter = 0;
         for (var subItem in subTabela) {
             sTable = sTable + '<tr class="rAntetSecundAlb">';
             sTable = sTable + '<td class="rAntetSecundAlb">' + subTabela[subItem].ZiLucratoare + '</td>';
@@ -477,11 +478,11 @@ function AfisarePrezenteDepartament(Tabela)
                 sTable = sTable + '<td class="rAntetSecundGalben">' + subTabela[subItem].Maternita + '</td>';
 
             else if (subTabela[subItem].Absent === '1' && subTabela[subItem].Ferie !== '1')
-                sTable = sTable + '<td class="rAntetSecundRosu">' + subTabela[subItem].Absent + '</td>';
+                sTable = sTable + '<td class="rAntetSecundRosu red">' + subTabela[subItem].Absent + '</td>';
             else if (subTabela[subItem].Ferie === '1')
-                sTable = sTable + '<td class="rAntetSecundRosu" style="background-color:forestgreen!important;">' + subTabela[subItem].Ferie + '</td>';
+                sTable = sTable + '<td class="rAntetSecundRosu green">' + subTabela[subItem].Ferie + '</td>';
             else
-                sTable = sTable + '<td class="rAntetSecundAlb">' + subTabela[subItem].Absent + '</td>';
+                sTable = sTable + '<td class="rAntetSecundAlb default">' + subTabela[subItem].Absent + '</td>';
             sTable = sTable + '</tr>';
         }
         

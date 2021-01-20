@@ -21,12 +21,12 @@ Partial Class form_timbrature_new
             RadDatePicker1.SelectedDate = datee
             RadDatePicker2.SelectedDate = datee
             RadGrid1.DataSource = SqlDataSource1
-            RadGrid1.MasterTableView.GetColumn("isPausaAndLate").Display = false
+            'RadGrid1.MasterTableView.GetColumn("isPausaAndLate").Display = false
             RadGrid1.MasterTableView.GetColumn("IsLate").Display = false
 
 
         Else
-            RadGrid1.MasterTableView.GetColumn("isPausaAndLate").Display = false
+            'RadGrid1.MasterTableView.GetColumn("isPausaAndLate").Display = false
             RadGrid1.MasterTableView.GetColumn("IsLate").Display = false
 
 

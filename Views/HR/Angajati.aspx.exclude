@@ -1,0 +1,595 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Angajati.aspx.cs" Inherits="Angajati" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="hAngajati" runat="server">
+    <title>Angajati</title>
+    <link href="css/Content/overflow.css" rel="stylesheet" type="text/css" />
+    <link href="Css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body{
+            height:900px;
+            /*overflow-y:hidden;*/
+        }
+    </style>
+</head>
+<body>
+    <form id="fAngajati" runat="server" method="post" enctype="multipart/form-data" target="upload_target">
+    <asp:ScriptManager ID="smAngajati" runat="server">
+        <Services>
+            <asp:ServiceReference Path="AngajatiWS.asmx" />
+        </Services>
+        <Scripts>
+            <asp:ScriptReference Path="js/jquery-1.12.4.min.js" />
+            <asp:ScriptReference Path="Js/Angajati.js" />
+            <asp:ScriptReference Path="Js/pagina.js" />
+            <%--<asp:ScriptReference Path="js/showModalDialog.js" />--%>
+            
+        </Scripts>
+    </asp:ScriptManager>
+
+    <%-- PEKI CODE --%>
+    <script type="text/javascript">
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+            obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
+        }
+
+        function exitframe() {
+            $("#iframe_div").hide();
+        }
+    </script>
+    <div id="iframe_div" onclick="exitframe()" style="display:none;width:100%;height:100%;position:fixed;background:#c0c0c0b5;">
+    <iframe id="showskill" scrolling="no" onload="resizeIframe(this)" style="background-color:white;  z-index: 9999999; position: absolute; margin: 0 auto; left: 35%;" src="#!"></iframe>
+    </div>
+    <%-- END PE --%>
+    <table cellpadding="0" cellspacing="0" style="width:100%;">
+        <tr>
+            <td class="principal">
+                <table width="100%">
+                    <tr>
+                       <td style="width: 100px;">
+                            <asp:HyperLink ID="hlPersonal" runat="server" CssClass="meniuMain" NavigateUrl="Personal.aspx">&lt;Main&gt;</asp:HyperLink>
+                       </td>
+                       <td align="center">
+                            <asp:Label ID="lAngajati" runat="server" CssClass="principal" Text="Scheda dipendenti"></asp:Label>
+                       </td> 
+                       <td style="width: 150px;" align="right">
+                            <asp:UpdateProgress ID="up" runat="server">
+                                <ProgressTemplate>
+                                    <img src="Images/Image/loading.gif" alt="Loading ..."/> Loading ...</ProgressTemplate>
+                            </asp:UpdateProgress>
+                       </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table id="tRapoarte" style="width: 170px;visibility:visible">
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td align="center">
+                            <input runat="server" id="bFisiereAngajat" value="Lettere" type="button" onclick="bFisiereAngajat_Click()"/>
+                        </td>
+                        <td align="center">
+                             <input runat="server" id="bEficienteAngajat" value="Efficienze" type="button" onclick="bEficienteAngajat_Click()" />
+                        </td>
+                        <td align="center">
+                             <input runat="server" id="bOreSuplimentarAbsenta" value="Ore assenza / Straordinario" type="button" onclick="bAbsentaSuplimentar_Click()" />
+                        </td>
+                        <td align="center">
+                             <input runat="server" id="bFluturaseAngajat" value="Buste paga" type="button" onclick="bFluturaseAngajat_Click()" />
+                        </td>
+                        <td align="center">
+                             <input runat="server" id="bConcediu" value="Ferie / Previdenza" type="button" onclick="bConcedii_Click()" />
+                        </td>
+                        <td align="center">
+                             <input runat="server" id="bModificariSalar" value="Variazioni di stipendio" type="button" onclick="bSalariiAngajat_Click()" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="principal">
+                    <tr>
+                        <td valign="top" style="height: 130px">
+                            <table id="tAngajati" class="principal" width="675" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="secund"><asp:Label ID="htCodAngajat" runat="server" 
+                                            Text="Codice dipendente" Width="115px"></asp:Label></td>
+                                    <td class="secund"><asp:Label ID="htCodSistem" runat="server" 
+                                            Text="Numero dal sistema" Width="130px"></asp:Label></td>
+                                    <td class="secund"><asp:Label ID="htMarca" runat="server" 
+                                            Text="Numero matricola" Width="120px"></asp:Label></td>
+                                    <td class="secund"><asp:Label ID="htAngajat" runat="server" 
+                                            Text="Cognome" Width="220px"></asp:Label></td>
+                                    <td class="secund"><asp:Label ID="htPrenume" runat="server" 
+                                            Text="Nome" Width="220px"></asp:Label></td>
+                                    <td class="secund"><asp:Label ID="htDepartament" runat="server" Text="Reparto" 
+                                            Width="200px"></asp:Label></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td rowspan="4" valign="top" style="width: 160px;" align="right">
+                            <table cellpadding="0" cellspacing="0" class="principal">
+                                <tr>
+                                    <td class="secund">
+                                        <asp:Label ID="lCautare" runat="server" CssClass="secund" Text="Ricerca"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="lFiltruCodAngajat" runat="server" CssClass="continut" Text="Codice dipendente"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbFiltruCodAngajat" runat="server"  Width="100px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="lFiltruCodSistem" runat="server" CssClass="continut" Text="Numero dal sistema"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbFiltruCodSistem" runat="server"  Width="100px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="lFiltruMarca" runat="server" CssClass="continut" Text="Numero matricola"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbFiltruMarca" runat="server"  Width="100px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="lFiltruNume" runat="server" CssClass="continut" Text="Cognome" ToolTip="Nume"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbFiltruNume" runat="server"  Width="100px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="lFiltruDepartament" runat="server" CssClass="continut" Text="Reparto"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbFiltruDepartament" runat="server"  Width="100px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="lFiltruEchipa" runat="server" CssClass="continut" Text="Squadra"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbFiltruEchipa" runat="server"  Width="100px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:Label ID="lFiltruLinie" runat="server" CssClass="continut" Text="Linea"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbFiltruLinie" runat="server"  Width="100px"></asp:TextBox>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <input runat="server" id="bStergeFiltru" value="Cancella filtro" type="button" onclick="bStergeFiltru_Click()" style="height: 24px"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <asp:HiddenField ID="hfId" runat="server" />
+                            <asp:HiddenField ID="hfRowIndex" runat="server" />
+                            <asp:HiddenField ID="hfIdLocalitate" runat="server" />
+                            <asp:HiddenField ID="hfIdTipPostDeLucru" runat="server" />
+                            <asp:HiddenField ID="hfIdIntervalDeLucru" runat="server" />
+                            <asp:HiddenField ID="hfIdPostDeLucru" runat="server" />
+                            <asp:HiddenField ID="hfIdLoculNasterii" runat="server" />
+                            <asp:HiddenField ID="hfIdIncadrare" runat="server" />
+                            <asp:HiddenField ID="hfIdNivelStudiu" runat="server" />
+                            <asp:HiddenField ID="hfIdBanca" runat="server" />
+                            <asp:HiddenField ID="hfIdDepartament" runat="server" />
+                            <asp:HiddenField ID="hfIdEchipa" runat="server" />
+                            <asp:HiddenField ID="hfIdLinie" runat="server" />
+                            </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <table class="principal">
+                                <tr>
+                                    <td><input runat="server" id="bAdaugare" title="Aggiungi CTRL+N" type="button" onclick="bAdaugare_Click()" class="comanda" value="Aggiungi" /></td>
+                                    <td><input runat="server" id="bStergere" title="Cancella CTRL+D" type="button" onclick="bStergere_Click()" class="comanda" value="Cancella" /></td>
+                                    <td><input runat="server" id="bPrima" title="Prima pagina" type="button" onclick="bPrima_Click()" style="background-image: url(Images/Image/prima.png)" class="navigare" /></td>
+                                    <td><input runat="server" id="bAnterior" title="Pagina anterioara" type="button" onclick="bAnterior_Click()" style="background-image: url(Images/Image/anterior.png)" class="navigare" /></td>
+                                    <td>
+                                        <asp:TextBox ID="tbPaginaCurenta" ToolTip="Pagina curenta" runat="server" Width="30px" >1</asp:TextBox>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="lDin" runat="server" Text="din"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbNumarPagini" ToolTip="Numar pagini" runat="server" Width="30px" ReadOnly="True">1</asp:TextBox>
+                                    </td>
+                                    <td><input runat="server" id="bUrmator" title="Pagina urmatoare" type="button" onclick="bUrmator_Click()" style="background-image: url(Images/Image/urmator.png)" class="navigare" /></td>
+                                    <td><input runat="server" id="bUltima" title="Ultima pagina" type="button"  onclick="bUltima_Click()" style="background-image: url(Images/Image/ultima.png)" class="navigare" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+        <tr>
+            <td>
+
+                <table class="principal">
+                            
+                    <tr>
+                        <td style="border: solid 1px #c0c0c0;" valign="top">
+                            <table id="tGeneral">
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lCodAngajat" runat="server" Text="Codice dipendente" CssClass="continut" Width="130px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbCodAngajat" runat="server" Width="150px"></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lCodSistem" runat="server" Text="Numero dal sistema" CssClass="continut" Width="150px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbCodSistem" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lMarca" runat="server" Text="Numero matricola" CssClass="continut" Width="170px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbMarca" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lNume" runat="server" Text="Cognome" CssClass="continut" Width="130px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbNume" runat="server" Width="150px"></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lPrenume" runat="server" Text="Nome" CssClass="continut" Width="150px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbPrenume" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lStrada" runat="server" Text="Via" CssClass="continut" Width="170px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbStrada" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lLocalitate" runat="server" CssClass="continut" Text="Città"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbLocalitate" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bLocalitate" runat="server" class="navigare" onclick="bLocalitate_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDataNasterii" runat="server" Text="Data di nascita" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbDataNasterii" runat="server" Width="75px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lSomaj" runat="server" Text="Sgravi" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbSomaj" runat="server" Width="150px"></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDataAngajarii" runat="server" Text="Data Assunzione" 
+                                            CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbDataAngajarii" runat="server" Width="75px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDataNedeterminat" runat="server" Text="Data conferma tempo indeterminato" 
+                                            CssClass="continut" Width="210px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbDataNedeterminat" runat="server" Width="75px" ></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lTipPostDeLucru" runat="server" CssClass="continut" Text="Diretto/Indiretto/Struttura" Width="140px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbTipPostDeLucru" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bTipPostDeLucru" runat="server" class="navigare" onclick="bTipPostDeLucru_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDataExpirareContract" runat="server" Text="Scadenza Contratto" CssClass="continut" Width="140px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbDataExpirareContract" runat="server" Width="75px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDataExpirareProba" runat="server" Text="Scadenza Periodo Prova" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbDataExpirareProba" runat="server" Width="75px" ></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lIntervalDeLucru" runat="server" CssClass="continut" Text="Orario"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbIntervalDeLucru" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bIntervalDeLucru" runat="server" class="navigare" onclick="bIntervalDeLucru_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lPostDeLucru" runat="server" CssClass="continut" Text="Mansione"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbPostDeLucru" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bPostDeLucru" runat="server" class="navigare" onclick="bPostDeLucru_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lSex" runat="server" Text="Sesso" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbSex" runat="server" Width="50px" ></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lLoculNasterii" runat="server" CssClass="continut" Text="Luogo di nascita"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbLoculNasterii" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bLoculNasterii" runat="server" class="navigare" onclick="bLoculNasterii_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lNumarIdentificarePersonala" runat="server" Text="Nr Identificazione Personale" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbNumarIdentificarePersonala" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lIncadrare" runat="server" CssClass="continut" Text="Centro di costo"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbIncadrare" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bIncadrare" runat="server" class="navigare" onclick="bIncadrare_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lNivelStudiu" runat="server" CssClass="continut" Text="Livello di Studio"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbNivelStudiu" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bNivelStudiu" runat="server" class="navigare" onclick="bNivelStudiu_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lBanca" runat="server" CssClass="continut" Text="Banca"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbBanca" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bBanca" runat="server" class="navigare" onclick="bBanca_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lStareCivila" runat="server" Text="Stato Civile" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbStareCivila" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lNumarTelefon" runat="server" CssClass="continut" Text="Nr telefono" Width="100px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbNumarTelefon" runat="server" Width="150px"></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lCC" runat="server" Text="c/c" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbCC" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDepartament" runat="server" CssClass="continut" Text="Reparto"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbDepartament" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bDepartament" runat="server" class="navigare" onclick="bDepartament_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <asp:Label ID="lAdresaEmail" runat="server" Text="Mail" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbAdresaEmail" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDataLichidarii" runat="server" Text="Data di licenziamento" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbDataLichidarii" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                    <td align="right">
+                                        <asp:Label ID="lDataMaternitate" runat="server" Text="Data di maternita" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:TextBox ID="tbDataMaternitate" runat="server" Width="150px" ></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" colspan="3">
+                                        <asp:Label ID="lEchipa" runat="server" CssClass="continut" Text="Squadra" Width="100px"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbEchipa" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bEchipa" runat="server" class="navigare" onclick="bEchipa_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" colspan="3">
+                                        <asp:Label ID="lLinie" runat="server" Text="Linea" CssClass="continut"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <asp:TextBox ID="tbLinie" runat="server" Width="125px"></asp:TextBox>
+                                                </td>
+                                                <td>
+                                                    <input id="bLinie" runat="server" class="navigare" onclick="bLinie_Click()" style="background-image: url(Images/Image/table.png)" type="button" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input id="bOk" type="button" value="Ok" onclick="bOk_Click()" class="confirmare" /></td>
+                                    <td align="center">
+                                        <input id="bCancel" type="button" value="Cancel" onclick="bCancel_Click()" class="confirmare" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                                            <tr>
+                                        <td colspan="12">
+                                            <%--<asp:FileUpload id="fuImport" runat="server" Width="350px"></asp:FileUpload>--%>
+
+                                            <embed src="./form-anagrafiche.aspx" runat="server"  frameborder="0" width="100%" height="400px;"/>
+
+                                        </td>
+                                    </tr>
+                </table>
+            </td>
+        </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

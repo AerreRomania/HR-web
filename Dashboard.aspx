@@ -15,14 +15,15 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/animate.min.css" />
-    <link rel="stylesheet" href="./css/new/style2.min.css" />
+    <link rel="stylesheet" href="./css/new/style3.min.css" />
     <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/jquery-ui.css" />
     <link rel="stylesheet" href="./dashboard/css/peki-style.min.css" />
     <%--<link rel="stylesheet" href="./dashboard/css/messages.css" />--%>
     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/mobile/dashboard.css" />
+    <link rel="stylesheet" href="./css/mobile/dashboard_rework.css" />
     <style>
+        .blur{display:none!important;}
         .peki{display:none;}
         .loader {
   position: fixed;
@@ -300,72 +301,15 @@
         <asp:ScriptManager runat="server">
             <Scripts>
                 <asp:ScriptReference Path="js/jquery-1.12.4.min.js" />
-                <asp:ScriptReference Path="dashboard/js/main_controler5.6.js" />
+                <asp:ScriptReference Path="dashboard/js/main_controler5.7.js" />
                 <asp:ScriptReference Path="js/bootstrap.min.js" />
                 <asp:ScriptReference Path="js/modernizr.min.js" />
                 <asp:ScriptReference Path="js/notify.min.js" />
-                <%--<asp:ScriptReference Path="js/draggablescroll.js" />--%>
-
-                <%--<asp:ScriptReference Path="dashboard/js/messages.js" />--%>
             </Scripts>
         </asp:ScriptManager>
 
-        <%--        <div id="messages_control" runat="server" class="req_msg_hidden">
-<div id="frame">
-<div id="sidepanel">
-<div id="profile">
-<div class="wrap">
-<asp:Image runat="server" ID="msg_img" CssClass="online" />
-<asp:Label runat="server" ID="msg_me" Style="padding-left: 10px;"></asp:Label>
-<i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
-<div id="status-options">
-<ul>
-<li id="status-online" class="active"><span class="status-circle"></span>
-<p>Online</p>
-</li>
-<li id="status-away"><span class="status-circle"></span>
-<p>Away</p>
-</li>
-<li id="status-busy"><span class="status-circle"></span>
-<p>Busy</p>
-</li>
-<li id="status-offline"><span class="status-circle"></span>
-<p>Offline</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
 
-<div id="contacts">
-<ul runat="server" id="msg_ul"></ul>
-</div>
-</div>
-
-<div class="content">
-<div class="contact-profile">
-<img id="msg_selected_img" src="#" alt="" />
-<asp:Label runat="server" ID="msg_selected_usr"></asp:Label>
-<span id="msg_close" style="float: right; position: absolute; top: 0px; right: 30px; font-weight: 600; cursor: pointer; height: 10px; width: 10px;">X</span>
-</div>
-<div class="messages" runat="server">
-<ul id="msg_messages" runat="server">
-</ul>
-</div>
-<div class="message-input">
-<div class="wrap">
-<asp:TextBox runat="server" ID="msg_text"></asp:TextBox>
-<i class="fa fa-paperclip attachment" aria-hidden="true"></i>
-<button class="submit" id="msg_submit">Send</button>
-</div>
-</div>
-</div>
-</div>
-</div>--%>
-
-
-
-         <div class="container-fluid"  style="padding-left:50px;padding-right:50px;">
+         <div class="container-fluid" >
             <div id="left-navi" onmouseover="openClose()" onmouseout="openClose()">
                 <nav class="main-nav" id="left_navi" runat="server">
                     <div id="menu">
@@ -1404,7 +1348,7 @@
 
 
                             <li>
-                                <a href="#!" id="" class="disabled">
+                                <a href="#!"  class="disabled">
                                     <img class="notification" src="./dashboard/images/miscicon/notify.svg" alt="icon" />
                                     <img src="./dashboard/images/menu/m_tess_dp.png" class="radius" alt="icon" />
                                     <span>Clienti</span>
@@ -1412,7 +1356,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" id="" class="disabled">
+                                <a href="#!" class="disabled">
                                     <img class="notification" src="./dashboard/images/miscicon/notify.svg" alt="icon" />
                                     <img src="./dashboard/images/menu/m_tess_dp.png" class="radius" alt="icon" />
                                     <span>Articoli</span>
@@ -1420,7 +1364,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" id="" class="disabled">
+                                <a href="#!" class="disabled">
                                     <img src="./dashboard/images/menu/m_tess_dp.png" class="radius" alt="icon" />
                                     <span>Commesse</span>
                                     <span class="pull-right">></span>
@@ -1467,7 +1411,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" id="" class="disabled">
+                                <a href="#!"  class="disabled">
                                     <img class="notification" src="./dashboard/images/miscicon/notify.svg" alt="icon" />
                                     <img src="./dashboard/images/menu/m_tess_db.png" class="radius" alt="icon" />
                                     <span>Programma tessitura</span>
@@ -1475,7 +1419,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" id="" class="disabled">
+                                <a href="#!" class="disabled">
                                     <img src="./dashboard/images/menu/m_tess_db.png" class="radius" alt="icon" />
                                     <span>Sinotico</span>
                                     <span class="pull-right">></span>
@@ -1488,58 +1432,66 @@
             <%-- BREADCRUMPS --%>
             <div class="container-fluid" id="dbdpmenu" runat="server" >
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 mob-header">
                         <div id="default_bread">
                             <button id="prior" type="button" class="filter active">In primo piano</button>
                             <button id="all" type="button" class="filter">Tutti</button>
                         </div>
                         <div id="produzione_bread" style="display:none;">
-                            <button id="btn_back_prod" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word">PRODUZIONE</div>
                             </div>
+                            <button id="btn_back_prod" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="riso_bread" style="display:none;">
-                            <button id="btn_back_riso" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word" style="color: #732c7b;">RISORSE UMANE</div>
                             </div>
+                        <button id="btn_back_riso" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="smart_bread" style="display:none;">
-                            <button id="btn_back_smart" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word" style="color: #0671cc;">SMART FACTORY</div>
                             </div>
+                            <button id="btn_back_smart" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="riso_bread_scheda_dipedenti" style="display:none;">
-                            <button id="btn_back_to_riso" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word" style="color: #732c7b;">SCHEDA DIPEDENTI</div>
                             </div>
+                            <button id="btn_back_to_riso" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="riso_bread_stat" style="display:none;">
-                            <button id="btn_back_to_riso_u" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word" style="color: #732c7b;">STATISTICHE</div>
                             </div>
+                            <button id="btn_back_to_riso_u" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="riso_bread_org" style="display:none;">
-                            <button id="btn_back_to_riso_uorg" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word" style="color: #732c7b;">ORGANIGRAMMI</div>
                             </div>
+                         <button id="btn_back_to_riso_uorg" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="riso_bread_db" style="display:none;">
-                            <button id="btn_back_to_riso_udb" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word" style="color: #732c7b;">DATABASE</div>
                             </div>
+                         <button id="btn_back_to_riso_udb" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="riso_bread_chat" style="display:none;">
-                            <button id="btn_back_to_riso_uchat" type="button" class="filter active btnback">BACK</button>
                             <div class="title">
                                 <div class="title-word" style="color: #732c7b;">CHAT INTERNA</div>
                             </div>
+                        <button id="btn_back_to_riso_uchat" type="button" class="filter active btnback">BACK</button>
+
                         </div>
                         <div id="riso_bread_stat_bck" style="display:none;">
                             <button id="btn_back_to_riso_stat" type="button" class="filter active btnback">BACK</button>
@@ -1551,6 +1503,14 @@
                             <img src="./dashboard/images/back_icon.png" id="btn_back_conf" class="btnback" style="height: 25px; cursor: pointer; padding-bottom: 3px;" />
                             <button id="dp_conf" type="button" class="filter active">Dati produzione</button>
                             <button id="db_conf" type="button" class="filter">Dati Base</button>
+                        </div>
+                        <div id="sart_bread" style="display:none;">
+                            <div class="title">
+                                <div class="title-word" style="color: #af1d1d;">SARTORIA</div>
+                            </div>
+                            <img src="./dashboard/images/back_icon.png" id="btn_back_sart" class="btnback" style="height: 25px; cursor: pointer; padding-bottom: 3px;" />
+                            <button id="dp_sart" type="button" class="filter active">Dati produzione</button>
+                            <button id="db_sart" type="button" class="filter">Dati Base</button>
                         </div>
                         <div id="stiro_bread" style="display:none;">
                             <div class="title">
@@ -1604,7 +1564,7 @@
             </div>
             <br />
             <!-- IN PRIMO PIANO -->
-            <div id="lvl_zero" class="align-middle">
+            <div id="lvl_zero" class="align-middle" style="padding:0 15px 0px 15px">
                 <div class="row">
                     <%-- LEVEL 0 - CONTROLO DI GESTIONE --%>
                     <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
@@ -1683,7 +1643,7 @@
                     </article>
                 </div>
                 <%-- LEVEL 1 - LAVANDERIA --%>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="display:none!important">
                     <article class="disabled" id="lava" runat="server">
                         <a href="#!" class="img-container" style="background-image: url('./dashboard/images/LAVANDERIA1.png');"></a>
                         <div class="article-lblue">
@@ -1935,15 +1895,38 @@
                     </article>
                 </div>
             </div>
+             <%-- LVL 2 - SARTORIA --%>
+            <div id="sartoria_chooser" class="animated fadeIn">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                    <article id="sart_dp_start">
+                        <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                        <div class="article-orange">
+                            <h2>
+                                <a href="#!"><i class="icon-refresh"></i>Sartoria - Dati Produzioni</a>
+                            </h2>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                    <article id="sart_db_start">
+                        <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                        <div class="article-orange">
+                            <h2>
+                                <a href="#!"><i class="icon-refresh"></i>Sartoria - Dati Base</a>
+                            </h2>
+                        </div>
+                    </article>
+                </div>
+            </div>
             <%-- LEVEL 2 - CONFZIONE --%>
             <div id="lvl_two_conf" class="animated fadeIn">
                 <div id="dp_conf_bread">
                     <div id="frame_confezione_div_hide">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" runat="server">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Confezione A - Layout" data-link="./Views/Produzione/ConfezioneA.aspx" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="bm_conf_a_layout">★</div>
+                                <div class="nekaKlasa1" data-name="Confezione A - Layout" data-link="./Views/Produzione/_confezioneA.aspx" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="bm_conf_a_layout">★</div>
                             </div>
-                            <article id="conf_a_layout" class="nekaKlasa" data-name="Confezione A - Layout" data-link="./Views/Produzione/ConfezioneA.aspx" runat="server">
+                            <article id="conf_a_layout" class="nekaKlasa" data-name="Confezione A - Layout" data-link="./Views/Produzione/_confezioneA.aspx" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-produzione.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -1954,9 +1937,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" runat="server">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Confezione B - Layout" data-link="./Views/Produzione/ConfezioneB.aspx" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="bm_conf_b_layout">★</div>
+                                <div class="nekaKlasa1" data-name="Confezione B - Layout" data-link="./Views/Produzione/_confezioneB.aspx" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="bm_conf_b_layout">★</div>
                             </div>
-                            <article id="conf_b_layout" class="nekaKlasa" data-name="Confezione B - Layout" data-link="./Views/Produzione/ConfezioneB.aspx" runat="server">
+                            <article id="conf_b_layout" class="nekaKlasa" data-name="Confezione B - Layout" data-link="./Views/Produzione/_confezioneB.aspx" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-produzione.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -1965,7 +1948,33 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" runat="server">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Efficienza" data-link="./Views/Produzione/_efficienze.aspx?departament=1" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="Div76">★</div>
+                            </div>
+                            <article id="Article35" class="nekaKlasa" data-name="Efficienza" data-link="./Views/Produzione/_efficienze.aspx?departament=1" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-produzione.png');"></a>
+                                <div class="article-bordo">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Efficienza</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" runat="server">
+                        <div class="ribbon">
+                            <div class="nekaKlasa1" data-name="Intervali" data-link="./Views/Produzione/_intervali.aspx?Departament=1" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="Div726">★</div>
+                        </div>
+                        <article id="Article353" class="nekaKlasa" data-name="Intervali" data-link="./Views/Produzione/_intervali.aspx?Departament=1" runat="server">
+                            <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-produzione.png');"></a>
+                            <div class="article-bordo">
+                                <h2>
+                                    <a href="#!"><i class="icon-refresh"></i>Intervali</a>
+                                </h2>
+                            </div>
+                        </article>
+                    </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="opacity:0.3">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Confezione - Organigramma" data-link="./Views/Produzione/Report_Light.aspx" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="bm_conf_organigrama">★</div>
                             </div>
@@ -1979,7 +1988,7 @@
                             </article>
                         </div>
 
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="opacity:0.3">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Exacta" data-link="https://loexacta.olimpias.it/" data-img="./dashboard/images/confezione-data-produzione.png" runat="server" id="bm_conf_exacta">★</div>
                             </div>
@@ -2053,9 +2062,9 @@
                     <div id="frame_confezione_div_db_hide">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Commesse" data-link="./Views/Produzione/form-comesse-conf.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_commesse">★</div>
+                                <div class="nekaKlasa1" data-name="Commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=1" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_commesse">★</div>
                             </div>
-                            <article id="conf_commesse" class="nekaKlasa" runat="server" data-name="Commesse" data-link="./Views/Produzione/form-comesse-conf.aspx">
+                            <article id="conf_commesse" class="nekaKlasa" runat="server" data-name="Confezione commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=1">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-base.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -2066,9 +2075,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Confezione - Faze" data-link="./Views/Produzione/form-faze.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_faze">★</div>
+                                <div class="nekaKlasa1" data-name="Confezione - Faze" data-link="./Views/Produzione/_fase.aspx?Departament=1.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_faze">★</div>
                             </div>
-                            <article id="conf_faze" class="nekaKlasa" data-name="Confezione - Faze" data-link="./Views/Produzione/form-faze.aspx" runat="server">
+                            <article id="conf_faze" class="nekaKlasa" data-name="Confezione fase" data-link="./Views/Produzione/_fase.aspx?Departament=1" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-base.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -2079,9 +2088,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Confezione - Article" data-link="./Views/Produzione/form-article.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_article">★</div>
+                                <div class="nekaKlasa1" data-name="Confezione article" data-link="./Views/Produzione/_articles.aspx?Departament=1" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_article">★</div>
                             </div>
-                            <article id="conf_article" class="nekaKlasa" data-name="Confezione - Article" data-link="./Views/Produzione/form-article.aspx" runat="server">
+                            <article id="conf_article" class="nekaKlasa" data-name="Confezione article" data-link="./Views/Produzione/_articles.aspx?Departament=1" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-base.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -2092,9 +2101,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Confezione - Clienti" data-link="./Views/Produzione/form-gestione-clienti.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_clienti">★</div>
+                                <div class="nekaKlasa1" data-name="Confezione - Clienti" data-link="./Views/Produzione/_clients.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_clienti">★</div>
                             </div>
-                            <article id="conf_clienti" class="nekaKlasa" data-name="Confezione - Clienti" data-link="./Views/Produzione/form-gestione-clienti.aspx" runat="server">
+                            <article id="conf_clienti" class="nekaKlasa" data-name="Confezione - Clienti" data-link="./Views/Produzione/_clients.aspx" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-base.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -2105,9 +2114,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Confezione - Machines" data-link="./Views/Produzione/form-machine.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_machines">★</div>
+                                <div class="nekaKlasa1" data-name="Confezione machines" data-link="./Views/Produzione/_machines.aspx?Departament=1" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_machines">★</div>
                             </div>
-                            <article id="conf_machines" class="nekaKlasa" data-name="Confezione - Machines" data-link="./Views/Produzione/form-machine.aspx" runat="server">
+                            <article id="conf_machines" class="nekaKlasa" data-name="Confezione machines" data-link="./Views/Produzione/_machines.aspx?Departament=1" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-base.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -2118,9 +2127,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Confezione - Persone" data-link="./Views/Produzione/form-addemployee.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_persons">★</div>
+                                <div class="nekaKlasa1" data-name="Confezione persone" data-link="./Views/Produzione/_dipendenti.aspx?Departament=1" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_persons">★</div>
                             </div>
-                            <article id="conf_persons" class="nekaKlasa" data-name="Confezione - Persone" data-link="./Views/Produzione/form-addemployee.aspx" runat="server">
+                            <article id="conf_persons" class="nekaKlasa" data-name="Confezione persone" data-link="./Views/Produzione/_dipendenti.aspx?Departament=1" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/confezione-data-base.png');"></a>
                                 <div class="article-bordo">
                                     <h2>
@@ -2129,7 +2138,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="display:none!important;">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Confezione - Tablets" data-link="./Views/Produzione/form-angajati.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="bm_conf_tablets">★</div>
                             </div>
@@ -2142,7 +2151,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior"  style="display:none!important;">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Confezione - Tablets Serials" data-link="./Views/Produzione/form-tabletserials-conf.aspx" data-img="./dashboard/images/confezione-data-base.png" runat="server" id="Div54">★</div>
                             </div>
@@ -2695,7 +2704,7 @@
                     <div class="ribbon">
                         <div class="nekaKlasa1" data-name="Assenteismo Mensile Stiro" data-link="./Views/HR/_assMensileDepartYear.aspx?Departament=Tessitura" data-img="./dashboard/images/riso-stat-tessitura.png" runat="server" id="Div63">★</div>
                     </div>
-                    <article id="Article17" class="nekaKlasa" data-name="Assenteismo Mensile Tessitura" data-link="./Views/HR/_assMensileDepartYear.aspx?Departament=Stiro" runat="server">
+                    <article id="Article17" class="nekaKlasa" data-name="Assenteismo Mensile Stiro" data-link="./Views/HR/_assMensileDepartYear.aspx?Departament=Stiro" runat="server">
                         <a href="#!" class="img-container" style="background-image: url('./dashboard/images/riso-stat-tessitura.png');"></a>
                         <div class="article-lpurple">
                             <h2>
@@ -3046,9 +3055,9 @@
                     <div id="frame_stiro_div_hide">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Stiro - Layout" data-link="./Views/Produzione/Stiro.aspx" data-img="./dashboard/images/stiro_data_produzione.png" runat="server" id="bm_stiro_layout">★</div>
+                                <div class="nekaKlasa1" data-name="Stiro - Layout" data-link="./Views/Produzione/_Stiro.aspx" data-img="./dashboard/images/stiro_data_produzione.png" runat="server" id="bm_stiro_layout">★</div>
                             </div>
-                            <article id="stiro_layout" class="nekaKlasa" data-name="Stiro - Layout" data-link="./Views/Produzione/Stiro.aspx" runat="server">
+                            <article id="stiro_layout" class="nekaKlasa" data-name="Stiro - Layout" data-link="./Views/Produzione/_Stiro.aspx" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro_data_produzione.png');"></a>
                                 <div class="article-lgreen">
                                     <h2>
@@ -3057,7 +3066,33 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Efficienza" data-link="./Views/Produzione/_efficienze.aspx?departament=2" data-img="./dashboard/images/stiro_data_produzione.png" runat="server" id="Div85">★</div>
+                            </div>
+                            <article id="Article36" class="nekaKlasa" data-name="Efficienza" data-link="./Views/Produzione/_efficienze.aspx?departament=2" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro_data_produzione.png');"></a>
+                                <div class="article-lgreen">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Efficienza</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Intervali" data-link="./Views/Produzione/_intervali.aspx?Departament=2" data-img="./dashboard/images/stiro_data_produzione.png" runat="server" id="Div852">★</div>
+                            </div>
+                            <article id="Article326" class="nekaKlasa" data-name="Intervali" data-link="./Views/Produzione/_intervali.aspx?Departament=2" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro_data_produzione.png');"></a>
+                                <div class="article-lgreen">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Intervali</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="opacity:0.3">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Stiro - Organigramma" data-link="./Views/Produzione/ReportStiro_Light.aspx" data-img="./dashboard/images/stiro_data_produzione.png" runat="server" id="bm_stiro_organigramma">★</div>
                             </div>
@@ -3070,7 +3105,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="opacity:0.3">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Stiro - Intervals" data-link="./Views/Produzione/form-intervali-stiro.aspx" data-img="./dashboard/images/stiro_data_produzione.png" runat="server" id="bm_stiro_intervals">★</div>
                             </div>
@@ -3129,9 +3164,9 @@
                     <div id="frame_stiro_div_db_hide">
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Stiro - Commesse" data-link="./Views/Produzione/form-comesse-stiro.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_commesse">★</div>
+                                <div class="nekaKlasa1" data-name="Stiro commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=2" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_commesse">★</div>
                             </div>
-                            <article id="stiro_commesse" class="nekaKlasa" data-name="Stiro - Commesse" data-link="./Views/Produzione/form-comesse-stiro.aspx" runat="server">
+                            <article id="stiro_commesse" class="nekaKlasa" data-name="Stiro commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=2" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro-data-base.png');"></a>
                                 <div class="article-lgreen">
                                     <h2>
@@ -3142,9 +3177,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Stiro - Faze" data-link="./Views/Produzione/form-faze-stiro.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_faze">★</div>
+                                <div class="nekaKlasa1" data-name="Stiro fase" data-link="./Views/Produzione/_fase.aspx?Departament=2" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_faze">★</div>
                             </div>
-                            <article id="stiro_faze" class="nekaKlasa" data-name="Stiro - Faze" data-link="./Views/Produzione/form-faze-stiro.aspx" runat="server">
+                            <article id="stiro_faze" class="nekaKlasa" data-name="Stiro fase" data-link="./Views/Produzione/_fase.aspx?Departament=2" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro-data-base.png');"></a>
                                 <div class="article-lgreen">
                                     <h2>
@@ -3155,9 +3190,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Stiro - Article" data-link="./Views/Produzione/form-article-stiro.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_article">★</div>
+                                <div class="nekaKlasa1" data-name="Stiro articles" data-link="./Views/Produzione/_articles.aspx?Departament=2" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_article">★</div>
                             </div>
-                            <article id="stiro_article" class="nekaKlasa" data-name="Stiro - Article" data-link="./Views/Produzione/form-article-stiro.aspx" runat="server">
+                            <article id="stiro_article" class="nekaKlasa" data-name="Stiro articles" data-link="./Views/Produzione/_articles.aspx?Departament=2" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro-data-base.png');"></a>
                                 <div class="article-lgreen">
                                     <h2>
@@ -3168,9 +3203,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Stiro - Clienti" data-link="./Views/Produzione/form-gestione-clienti.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_clienti">★</div>
+                                <div class="nekaKlasa1" data-name="Stiro clienti" data-link="./Views/Produzione/_clients.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_clienti">★</div>
                             </div>
-                            <article id="stiro_clienti" class="nekaKlasa" data-name="Stiro - Clienti" data-link="./Views/Produzione/form-gestione-clienti.aspx" runat="server">
+                            <article id="stiro_clienti" class="nekaKlasa" data-name="Stiro clienti" data-link="./Views/Produzione/_clients.aspx" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro-data-base.png');"></a>
                                 <div class="article-lgreen">
                                     <h2>
@@ -3181,9 +3216,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Stiro - Machines" data-link="./Views/Produzione/form-machine-stiro.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_machines">★</div>
+                                <div class="nekaKlasa1" data-name="Stiro machines" data-link="./Views/Produzione/_machines.aspx?Departament=2" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_machines">★</div>
                             </div>
-                            <article id="stiro_machines" class="nekaKlasa" data-name="Stiro - Machines" data-link="./Views/Produzione/form-machine-stiro.aspx" runat="server">
+                            <article id="stiro_machines" class="nekaKlasa" data-name="Stiro machines" data-link="./Views/Produzione/_machines.aspx?Departament=2" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro-data-base.png');"></a>
                                 <div class="article-lgreen">
                                     <h2>
@@ -3194,9 +3229,9 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div class="nekaKlasa1" data-name="Stiro - Persons" data-link="./Views/Produzione/form-addemployee-stiro.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_persons">★</div>
+                                <div class="nekaKlasa1" data-name="Stiro persons" data-link="./Views/Produzione/_dipendenti.aspx?Departament=2" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_persons">★</div>
                             </div>
-                            <article id="stiro_persons" class="nekaKlasa" data-name="Stiro - Persons" data-link="./Views/Produzione/form-addemployee-stiro.aspx" runat="server">
+                            <article id="stiro_persons" class="nekaKlasa" data-name="Stiro persons" data-link="./Views/Produzione/_dipendenti.aspx?Departament=2" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/stiro-data-base.png');"></a>
                                 <div class="article-lgreen">
                                     <h2>
@@ -3205,7 +3240,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="display:none!important;">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Stiro - Tablets" data-link="./Views/Produzione/form-angajati-stiro.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="bm_stiro_tablets">★</div>
                             </div>
@@ -3218,7 +3253,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="display:none!important;">
                             <div class="ribbon">
                                 <div class="nekaKlasa1" data-name="Stiro - Tablet Serials" data-link="./Views/Produzione/form-tabletserials-stiro.aspx" data-img="./dashboard/images/stiro-data-base.png" runat="server" id="Div55">★</div>
                             </div>
@@ -3271,7 +3306,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" id="">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" >
                             <div class="ribbon">
                                 <div id="bm_tess_articoli" class="nekaKlasa1 booknone" data-name="Tessitura - Articoli" data-img="./dashboard/images/tessitura-data-produzione.png" data-link="">★</div>
                             </div>
@@ -3284,7 +3319,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" id="">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" >
                             <div class="ribbon">
                                 <div id="bm_tess_commesse" class="nekaKlasa1 booknone" data-name="Tessitura - Commesse" data-img="./dashboard/images/tessitura-data-produzione.png" data-link="">★</div>
                             </div>
@@ -3297,7 +3332,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" id="">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" >
                             <div class="ribbon">
                                 <div id="bm_tess_fasi" class="nekaKlasa1 booknone" data-name="Tessitura - Fasi" data-img="./dashboard/images/tessitura-data-produzione.png" data-link="">★</div>
                             </div>
@@ -3310,7 +3345,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" id="">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur">
                             <div class="ribbon">
                                 <div id="bm_tess_dipendenti" class="nekaKlasa1 booknone" data-name="Tessitura - Dipedenti" data-img="./dashboard/images/tessitura-data-produzione.png" data-link="">★</div>
                             </div>
@@ -3323,7 +3358,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" id="">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur">
                             <div class="ribbon">
                                 <div id="bm_tess_machine" class="nekaKlasa1 booknone" data-img="./dashboard/images/tessitura-data-produzione.png" data-name="Tessitura - Machine" data-link="">★</div>
                             </div>
@@ -3342,7 +3377,7 @@
                 <div id="db_tess_bread">
                     <%-- TESSITURA DB KONTROLE --%>
                     <div id="frame_tess_div_db_hide">
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" id="">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" >
                             <div class="ribbon">
                                 <div id="bm_tess_programma_programatori" class="nekaKlasa1 booknone" data-img="./dashboard/images/tessitura-data-base.png" data-name="Tessitura - Programma programatori" data-link="">★</div>
                             </div>
@@ -3355,7 +3390,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" id="">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" >
                             <div class="ribbon">
                                 <div id="bm_tess_programma_tessitura" class="nekaKlasa1 booknone" data-img="./dashboard/images/tessitura-data-base.png" data-name="Tessitura - Programma tessitura" data-link="">★</div>
                             </div>
@@ -3368,12 +3403,103 @@
                                 </div>
                             </article>
                         </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior show">
+                        <%-- OVDE!!! --%>
+                          <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                             <div class="ribbon">
-                                <div id="Div505" class="nekaKlasa1" data-name="Tessitura - Tablet Serials" data-link="./Views/Produzione/form-tabletserials-tess.aspx" data-img="./dashboard/images/tessitura-data-base.png">★</div>
+                                <div class="nekaKlasa1" data-name="Commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=7" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div68">★</div>
                             </div>
-                            <article id="Article401" class="nekaKlasa" data-name="Tessitura - Tablet Serials" data-link="./Views/Produzione/form-tabletserials-tess.aspx">
+                            <article id="Article22" class="nekaKlasa" runat="server" data-name="Tessitura commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=7">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
+                                <div class="article-braon">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Commesse</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Tessitura - Faze" data-link="./Views/Produzione/_fase.aspx?Departament=7.aspx" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div69">★</div>
+                            </div>
+                            <article id="Article23" class="nekaKlasa" data-name="Tessitura fase" data-link="./Views/Produzione/_fase.aspx?Departament=7" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
+                                <div class="article-braon">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Faze</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Tessitura article" data-link="./Views/Produzione/_articles.aspx?Departament=7" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div70">★</div>
+                            </div>
+                            <article id="Article24" class="nekaKlasa" data-name="Tessitura article" data-link="./Views/Produzione/_articles.aspx?Departament=7" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
+                                <div class="article-braon">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Gestione archivio articoli</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Tessitura - Clienti" data-link="./Views/Produzione/_clients.aspx" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div71">★</div>
+                            </div>
+                            <article id="Article26" class="nekaKlasa" data-name="Tessitura - Clienti" data-link="./Views/Produzione/_clients.aspx" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
+                                <div class="article-braon">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Gestione ordini clienti</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Tessitura machines" data-link="./Views/Produzione/_machines.aspx?Departament=7" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div72">★</div>
+                            </div>
+                            <article id="Article30" class="nekaKlasa" data-name="Tessitura machines" data-link="./Views/Produzione/_machines.aspx?Departament=7" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
+                                <div class="article-braon">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Machines</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Tessitura persone" data-link="./Views/Produzione/_dipendenti.aspx?Departament=7" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div73">★</div>
+                            </div>
+                            <article id="Article31" class="nekaKlasa" data-name="Tessitura persone" data-link="./Views/Produzione/_dipendenti.aspx?Departament=7" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
+                                <div class="article-braon">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Persone</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="display:none!important;">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Tessitura - Tablets" data-link="./Views/Produzione/form-angajati.aspx" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div74">★</div>
+                            </div>
+                            <article id="Article32" class="nekaKlasa" data-name="Tessitura - Tablets" data-link="./Views/Produzione/form-angajati.aspx" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
+                                <div class="article-braon">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Tablets</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior"  style="display:none!important;">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Tessitura - Tablets Serials" data-link="./Views/Produzione/form-tabletserials-conf.aspx" data-img="./dashboard/images/tessitura-data-base.png" runat="server" id="Div75">★</div>
+                            </div>
+                            <article id="Article34" class="nekaKlasa" data-name="Tessitura - Tablets Serials" data-link="./Views/Produzione/form-tabletserials-conf.aspx" runat="server">
                                 <a href="#!" class="img-container" style="background-image: url('./dashboard/images/tessitura-data-base.png');"></a>
                                 <div class="article-braon">
                                     <h2>
@@ -3386,6 +3512,126 @@
                 </div>
 
             </div>
+
+             <%-- LEVEL 2 - SARTORIA --%>
+            <div id="lvl_two_sart" class="animated fadeIn">
+
+                <div id="dp_sart_bread">
+                    <div id="frame_sart_div_hide">
+
+                    </div>
+                </div>
+
+                <div id="db_sart_bread">
+                    <div id="frame_sart_div_db_hide">
+                        <%-- OVDE!!! --%>
+                          <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=8" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div77">★</div>
+                            </div>
+                            <article id="Article48" class="nekaKlasa" runat="server" data-name="Sartoria commesse" data-link="./Views/Produzione/_commesse.aspx?Departament=8">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Commesse</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Sartoria - Faze" data-link="./Views/Produzione/_fase.aspx?Departament=8.aspx" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div78">★</div>
+                            </div>
+                            <article id="Article49" class="nekaKlasa" data-name="Sartoria fase" data-link="./Views/Produzione/_fase.aspx?Departament=8" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Faze</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Sartoria article" data-link="./Views/Produzione/_articles.aspx?Departament=8" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div79">★</div>
+                            </div>
+                            <article id="Article50" class="nekaKlasa" data-name="Sartoria article" data-link="./Views/Produzione/_articles.aspx?Departament=8" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Gestione archivio articoli</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Sartoria - Clienti" data-link="./Views/Produzione/_clients.aspx" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div80">★</div>
+                            </div>
+                            <article id="Article51" class="nekaKlasa" data-name="Sartoria - Clienti" data-link="./Views/Produzione/_clients.aspx" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Gestione ordini clienti</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Sartoria machines" data-link="./Views/Produzione/_machines.aspx?Departament=8" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div81">★</div>
+                            </div>
+                            <article id="Article52" class="nekaKlasa" data-name="Sartoria machines" data-link="./Views/Produzione/_machines.aspx?Departament=8" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Machines</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Sartoria persone" data-link="./Views/Produzione/_dipendenti.aspx?Departament=8" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div82">★</div>
+                            </div>
+                            <article id="Article53" class="nekaKlasa" data-name="Sartoria persone" data-link="./Views/Produzione/_dipendenti.aspx?Departament=8" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Persone</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" style="display:none!important;">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Sartoria - Tablets" data-link="./Views/Produzione/form-angajati.aspx" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div83">★</div>
+                            </div>
+                            <article id="Article54" class="nekaKlasa" data-name="Sartoria - Tablets" data-link="./Views/Produzione/form-angajati.aspx" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Tablets</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior"  style="display:none!important;">
+                            <div class="ribbon">
+                                <div class="nekaKlasa1" data-name="Sartoria - Tablets Serials" data-link="./Views/Produzione/form-tabletserials-conf.aspx" data-img="./dashboard/images/SARTORIA.png" runat="server" id="Div84">★</div>
+                            </div>
+                            <article id="Article55" class="nekaKlasa" data-name="Sartoria - Tablets Serials" data-link="./Views/Produzione/form-tabletserials-conf.aspx" runat="server">
+                                <a href="#!" class="img-container" style="background-image: url('./dashboard/images/SARTORIA.png');"></a>
+                                <div class="article-orange">
+                                    <h2>
+                                        <a href="#!"><i class="icon-refresh"></i>Tablet Serials</a>
+                                    </h2>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                </div>
         </div>
         <%-- FAVORITE LIST --%>
         <div class="favorite-list" runat="server" id="fav_list">
@@ -3657,7 +3903,7 @@
                             <div class="col-xs-1"><span style="font-size: 16px;">Select user:</span></div>
                             <div class="col-xs-2">
 
-                                <asp:DropDownList ID="req_userAll_drop_down" runat="server" AutoPostBack="true" AppendDataBoundItems="True" Style="font-size: 16px; border-style: dashed;" DataSourceID="SqlDataSourceUsers" DataTextField="FullName" DataValueField="UserID" OnSelectedIndexChanged="ddl_allusr_SelectedIndexChanged"></asp:DropDownList>
+                                <asp:DropDownList ID="req_userAll_drop_down" runat="server" AutoPostBack="true" AppendDataBoundItems="True" Style="font-size: 16px; border-style: dashed;" DataSourceID="SqlDataSourceUsers" DataTextField="FullName" DataValueField="UserID" OnSelectedIndexChanged="ddl_allusr_SelectedIndexChanged"> </asp:DropDownList>
                                 <asp:SqlDataSource ID="SqlDataSourceUsers" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [UserID], [FullName] FROM [Users]"></asp:SqlDataSource>
                                 <br />
                                 <br />
@@ -3835,9 +4081,9 @@
 
                     </ul>
                 </nav>
-                <footer>
+                <%--<footer>
                     <img src="images/logo.svg" id="logo-svg" style="height: 90px; margin-top: -20px; margin-bottom: 35px;" />
-                </footer>
+                </footer>--%>
             </div>
         </div>
     </form>

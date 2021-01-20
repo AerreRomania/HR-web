@@ -30,8 +30,8 @@
         }
 
         body {
-            height: 1000px;
-            overflow-y: hidden;
+            height: 800px;
+            overflow-y: auto;
         }
 
         .RadComboBoxDropDown .rcbList > li {
@@ -193,28 +193,29 @@
                             </td>
 
                             <td style="width: 50px;">
-                                <img class="top-icons" onclick="printExcel();" src="../../Images/icons/icon-excel.png" alt="Export to Excel">
+                                <img class="top-icons" id="btn_excel" onclick="printExcel();" src="../../Images/icons/icon-excel.png" alt="Export to Excel">
                             </td>
-
                             <td style="width: 50px;">
-                                <img class="top-icons" onclick="printPDF();" src="../../Images/icons/icon-pdf.png" alt="Export to PDF"></td>
+                                <img class="top-icons" id="btn_pdf" onclick="printPDF();" src="../../Images/icons/icon-pdf.png" alt="Export to PDF"></td>
                             <td style="width: 50px;">
-                                <img class="top-icons" onclick="printData();" src="../../Images/icons/icon-print.png" alt="Print"></td>
+                                <img class="top-icons" id="btn_print" onclick="printData();" src="../../Images/icons/icon-print.png" alt="Print"></td>
                         </tr>
                     </tbody>
                 </table>
 
                 <div style="float: left;">
                 <form name="myForm">
-                    <input type="radio" onclick="radio1()" name="myRadios" value="radio_generale" id="radio_elenco"  checked="checked"><label for="radio_elenco" class="radio-inline">Elenco</label>
+                    <asp:label runat="server" id="txt_loaded" style="margin-left:5px; margin-right:30px"></asp:label>
+
+                    <input type="radio" onclick="radio1()" name="myRadios" value="radio_generale" id="radio_elenco"  checked="checked">
+                    <label for="radio_elenco" class="radio-inline">Elenco</label>
                     <input type="radio" onclick="radio2()" name="myRadios" value="radio_maternita" id="radio_organigrammi" >
                     <label for="radio_organigrammi" class="radio-inline">Organigrammi</label>
                 </form>
                     </div>
                 <br />
                 <br />
-                <asp:label runat="server" id="txt_loaded"></asp:label>
-                <telerik:RadGrid runat="server" ID="RadGrid1" AllowFilteringByColumn="True" AllowSorting="true" Style="float: left; margin: 0px 60px auto;" AutoGenerateColumns="false" ClientSettings-Scrolling-AllowScroll="true" ClientSettings-Scrolling-ScrollHeight="700" Width="1444px" HeaderStyle-CssClass="grid_header">
+                <telerik:RadGrid runat="server" ID="RadGrid1" AllowFilteringByColumn="True" AllowSorting="true" Style="float: left; margin: 0px 60px auto;" AutoGenerateColumns="false" ClientSettings-Scrolling-AllowScroll="true" ClientSettings-Scrolling-ScrollHeight="600" Width="1444px" HeaderStyle-CssClass="grid_header">
                     <ClientSettings EnableRowHoverStyle="false" EnableClientPrint="true" Virtualization-EnableVirtualization="false">
                         <Scrolling AllowScroll="True" UseStaticHeaders="true" EnableColumnClientFreeze="true" SaveScrollPosition="true" />
                     </ClientSettings>
@@ -269,7 +270,7 @@
 
                 </telerik:RadGrid>
 
-                <iframe id="iframee" frameBorder="0" src="#" width="1550" height="700" style="display:none;"></iframe>
+                <iframe id="iframee" frameBorder="0" src="#" width="1550" height="700" style="display:none;" name="printf"></iframe>
 
                 <asp:label runat="server" ID="link" style="display:none;" />
 
@@ -322,13 +323,19 @@
                         $(this).show();
                     }
                 };
-
-
                 
                 function radio1() {
                     document.getElementById('radio_organigrammi').removeAttribute('checked');
                     document.getElementById('radio_elenco').setAttribute('checked', 'checked');
-                    
+
+                    document.getElementById('btn_excel').setAttribute("onClick", "printExcel()");
+                    document.getElementById('btn_pdf').setAttribute("onClick", "printPDF()");
+                    document.getElementById('btn_print').setAttribute("onClick", "printData()");
+
+                    $('#btn_excel').show();
+                    $('#btn_pdf').show();
+                    $('#btn_print').show();
+
                     $('#RadGrid1').show();
                      $('#iframee').hide();
                 };
@@ -337,6 +344,13 @@
                     document.getElementById('radio_elenco').removeAttribute('checked');
                     document.getElementById('radio_organigrammi').setAttribute('checked', 'checked');
 
+                    document.getElementById('btn_excel').setAttribute("onClick", "printExcel2()");
+                    document.getElementById('btn_pdf').setAttribute("onClick", "printPDF2()");
+                    document.getElementById('btn_print').setAttribute("onClick", "printData2()");
+
+                    $('#btn_excel').hide();
+                    $('#btn_pdf').hide();
+                    $('#btn_print').show();
                     $('#RadGrid1').hide();
 
                     $('#iframee').show();

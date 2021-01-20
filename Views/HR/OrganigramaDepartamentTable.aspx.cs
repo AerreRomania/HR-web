@@ -10,6 +10,8 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Web.Configuration;
 
 public partial class OrganigramaDepartament : System.Web.UI.Page
 {
@@ -35,20 +37,43 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
         List<int> lineListValue = new List<int>();
 
         DataClassWbmOlimpias dcWbmOlimpias = new DataClassWbmOlimpias();
-        var query = from tAngajati in dcWbmOlimpias.AngajatiViews
-                    where tAngajati.Departament.Equals(Departament) && tAngajati.DataLichidarii.Equals("0001-01-01")
-                    select new { tAngajati.Echipa, tAngajati.Linie, tAngajati.Nume, tAngajati.Prenume, tAngajati.PostDeLucru, tAngajati.Departament };
+        //var query = from tAngajati in dcWbmOlimpias.AngajatiViews
+        //            where tAngajati.Departament.Equals(Departament) && tAngajati.DataLichidarii.Equals("0001-01-01")
+        //            select new { tAngajati.Echipa, tAngajati.Linie, tAngajati.Nume, tAngajati.Prenume, tAngajati.PostDeLucru, tAngajati.Departament };
 
-        if (Departament == "STRUTTURA")
+
+        DataTable query = new DataTable();
+        using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
         {
-            query = from tAngajati in dcWbmOlimpias.AngajatiViews
-                    where !tAngajati.Departament.Equals("TESSITURA") && !tAngajati.Departament.Equals("CONFEZIONE") && !tAngajati.Departament.Equals("STIRO") && tAngajati.DataLichidarii.Equals("0001-01-01")
-                    select new { tAngajati.Echipa, tAngajati.Linie, tAngajati.Nume, tAngajati.Prenume, tAngajati.PostDeLucru, tAngajati.Departament };
+            using (SqlCommand cmd = new SqlCommand("SELECT Linea, COUNT(Linea), SortHelper from OrganigramaDepartamentListViewByDep WHERE Departament='" + Departament + "' Group by Linea, SortHelper", conn))
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(query);
+                }
+            }
         }
-        
 
-        lTotal.Text = "TOTALE DIPENDENTI: " + query.Count().ToString();
-        var queryLinie = query.GroupBy(x => x.Linie);
+        DataTable queryAngajat = new DataTable();
+        using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
+        {
+            using (SqlCommand cmd = new SqlCommand("SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='" + Departament + "' ORDER BY Mansione", conn))
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(queryAngajat);
+                }
+            }
+        }
+
+        Int32 total = 0;
+        foreach (DataRow dt in query.Rows)
+        {
+            total += Convert.ToInt32(dt[1]);
+        }
+
+        lTotal.Text = "TOTALE DIPENDENTI: " + total.ToString();
+        //var queryLinie = query.GroupBy(x => x.Linie);
         HtmlTableRow trPrincipal = new HtmlTableRow();
         tOrganigramaDepartament.Rows.Add(trPrincipal);
         HtmlTableCell tcPrincipal;
@@ -63,10 +88,9 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
             TabelePeUnRand = 4;*/
         int i = 0;
         int MaxLinii = 0;
-        foreach (var linie in queryLinie)
+        foreach (DataRow linie in query.Rows)
         {
-            var queryAngajati = query.Where(x => x.Linie.Equals(linie.Key)).OrderBy(x => x.PostDeLucru);
-
+            string LinieName = linie[0].ToString();
             if (i >= NumarRanduri * TabelePeUnRand)
             {
                 NumarRanduri++;
@@ -83,18 +107,19 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
             tLinie.Width = "450";
             HtmlTableRow tr = new HtmlTableRow();
             HtmlTableCell tc = new HtmlTableCell();
-            tc.InnerHtml = "Totale: " + queryAngajati.Count().ToString();
-            lineListValue.Add(queryAngajati.Count());
+            tc.InnerHtml = "Totale: " + linie[1].ToString();
+            lineListValue.Add(Convert.ToInt32(linie[1]));
             tc.Attributes.Add("class", "rAntet");
             tr.Cells.Add(tc);
 
             tc = new HtmlTableCell();
-            if (linie.Key == "") {
-                tc.InnerHtml = "ALTRI";
-            }
-            else { 
-                tc.InnerHtml = linie.Key;
-            }
+            tc.InnerHtml = linie[0].ToString();
+            //if (linie.Key == "") {
+            //    tc.InnerHtml = "ALTRI";
+            //}
+            //else { 
+            //    tc.InnerHtml = linie.Key;
+            //}
 
             tc.Align = "center";
             tc.Attributes.Add("class", "rAntet");
@@ -123,21 +148,24 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
             //    MaxLinii = 22;
             //}
 
-            foreach (var angajat in queryAngajati)
+            //OVO U ENABLE
+            foreach (DataRow angajat in queryAngajat.Rows)
             {
-                tr = new HtmlTableRow();
+                if (LinieName == angajat[3].ToString()) { 
+                    tr = new HtmlTableRow();
 
-                tc = new HtmlTableCell();
-                tc.Attributes.Add("class", "rAntetSecundAlb");
-                tc.InnerText = angajat.Prenume + " " + angajat.Nume;
-                tr.Cells.Add(tc);
+                    tc = new HtmlTableCell();
+                    tc.Attributes.Add("class", "rAntetSecundAlb");
+                    tc.InnerText = angajat[0].ToString() + " " + angajat[1].ToString();
+                    tr.Cells.Add(tc);
 
-                tc = new HtmlTableCell();
-                tc.Attributes.Add("class", "rAntetSecundAlb");
-                tc.InnerText = angajat.PostDeLucru;
-                tr.Cells.Add(tc);
+                    tc = new HtmlTableCell();
+                    tc.Attributes.Add("class", "rAntetSecundAlb");
+                    tc.InnerText = angajat[2].ToString();
+                    tr.Cells.Add(tc);
 
-                tLinie.Rows.Add(tr);
+                    tLinie.Rows.Add(tr);
+                }
             }
             tcPrincipal.Controls.Add(tLinie);
             trPrincipal.Cells.Add(tcPrincipal);

@@ -124,14 +124,15 @@ namespace WbmOlimpias
             return oRaportPrezenteDepartament;
         }
 
+        //OVDE NE VALJA
         private List<RaportPrezentaDepartamentObiect> PreparaPrezenteDepartament(DateTime FiltruData, string FiltruDepartament)
         {
             List<RaportPrezentaDepartamentObiect> TabelaPrezenteDepartament = new List<RaportPrezentaDepartamentObiect>();
             dcWbmOlimpias = new DataClassWbmOlimpias();
             var query = from tRaportPrezente in dcWbmOlimpias.RaportPrezenteViews
-                        orderby tRaportPrezente.Nume, tRaportPrezente.Linie, tRaportPrezente.Echipa
+                        orderby tRaportPrezente.Nume, tRaportPrezente.Linie
                         where tRaportPrezente.Data.Equals(FiltruData) && tRaportPrezente.Departament.Equals(FiltruDepartament)
-                        select new { tRaportPrezente.Nume, tRaportPrezente.ZiLucratoare,tRaportPrezente.ZiLucrata,  tRaportPrezente.ZiFerie, tRaportPrezente.PostDeLucru, tRaportPrezente.Echipa, tRaportPrezente.Linie };
+                        select new { tRaportPrezente.Nume, tRaportPrezente.PostDeLucru, tRaportPrezente.Linie, tRaportPrezente.ZiLucratoare,tRaportPrezente.ZiLucrata,  tRaportPrezente.ZiFerie  };
 
             var queryLinii = query.Where(x => !x.Linie.Equals(null)).GroupBy(x => x.Linie);
             foreach (var rezLinie in queryLinii)
@@ -168,9 +169,9 @@ namespace WbmOlimpias
             dcWbmOlimpias = new DataClassWbmOlimpias();
             var query = from tRaportPrezente in dcWbmOlimpias.RaportPrezenteViews
                         where tRaportPrezente.Data.Equals(FiltruData) && tRaportPrezente.Departament.Equals(FiltruDepartament) 
-                        group tRaportPrezente by new {tRaportPrezente.Linie,tRaportPrezente.Echipa} into t
+                        group tRaportPrezente by new {tRaportPrezente.Linie} into t
 
-                        select new { t.Key.Echipa, t.Key.Linie, NumarAngajati = t.Sum(x => x.ZiLucratoare), Prezenti = t.Sum(x => x.ZiLucrata), Ferie = t.Sum(x=> x.ZiFerie) };
+                        select new { t.Key.Linie, NumarAngajati = t.Sum(x => x.ZiLucratoare), Prezenti = t.Sum(x => x.ZiLucrata), Ferie = t.Sum(x=> x.ZiFerie) };
             int NumarAngajati = 0, Prezenti= 0, Absenti = 0, Ferie = 0;
             foreach (var rez in query)
             {

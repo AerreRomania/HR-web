@@ -231,7 +231,7 @@
                                             </td>
                                             <td>
                                                 <asp:DropDownList ID="ddlFiltruAn" onchange="Lista();" runat="server">
-                                                    <asp:ListItem value="2020">2020</asp:ListItem>
+                                                    <asp:ListItem value="2021">2021</asp:ListItem>
                                                 </asp:DropDownList>
                                             </td>
                                             <td><span class="spaner">MESE:</span></td>

@@ -190,8 +190,7 @@
 
                                  <div class="heading">
                                         <h3 style="margin-left: 65px; margin-bottom: 0px; text-transform: uppercase;">General Report: <span style="float:right;margin-right:15px;">Anno: <asp:DropDownList ID="ddlFiltruAn" runat="server">
-                                                
-                                                <asp:ListItem>2020</asp:ListItem>
+                                            <asp:ListItem>2021</asp:ListItem>
 
                                             </asp:DropDownList></span> </h3>
                                 </div>

@@ -1,54 +1,4 @@
-﻿function resizeIframe(obj) {
-    //function iOSversion() {
-    //    if (/iP(hone|od|ad)/.test(navigator.platform)) {
-    //         var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-    //        return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-    //    }
-    //}
-
-    //ver = iOSversion();
-
-    //if (ver[0] >= 5) {
-    //    obj.style.width = 300 + 'px';
-    //    obj.style.height = 1024 + 'px';
-    //    alert('This is running iOS ' + ver + 'width=' + obj.style.width + '' + 'width=' + obj.style.height + '' );
-    //}  
-
-    //////if ($(window).width() < 700) {
-    //////    obj.style.height = obj.contentWindow.document.body.scrollHeight + 25 + 'px';
-    //////    obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
-    //////} else {
-    //////    try {
-    //////        obj.style.height = obj.contentWindow.document.body.scrollHeight + 25 + 'px';
-    //////        obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
-    //////    }
-    //////    catch (err) {
-    //////        obj.style.height = 740 + 'px';
-    //////        obj.style.width = 1520 + 'px';
-    //////    }
-    //////} 
-
-    //if (screen.height > screen.width) {
-    //    $(".iframe_load").each(function () {
-    //        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-    //        obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
-
-    //        $(".iframe_load").css("width", $(window).height());
-    //        $(".iframe_load").css("height", $(window).prop('scrollHeight'));
-    //    });
-    //} else {
-    //    $(".iframe_load").each(function () {
-    //        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-    //        obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
-
-    //        $(".iframe_load").css("width", $(window).height());
-    //        $(".iframe_load").css("height", $(window).prop('scrollHeight'));
-    //    });
-    //}
-
-
-}
-
+﻿
 $(document).ready(function () {
 
     function doOnOrientationChange() {
@@ -249,7 +199,7 @@ $(document).ready(function () {
 
             var link = $(this).data('link');
             var name = $(this).data('name');
-            var iframe_elem = '<div style="overflow:auto;-webkit-overflow-scrolling:touch"><iframe src=" ' + link + ' "class="iframe_load" onload="resizeIframe(this)" frameBorder="0" style="overflow:hidden;width:100%;height:855px;" width="100%" height="855px;" ></iframe></div>';
+            var iframe_elem = '<div style="overflow:auto;-webkit-overflow-scrolling:touch"><iframe src=" ' + link + ' "class="iframe_load" onload="resizeIframe(this)" frameBorder="0" style="overflow:hidden;width:100%;height:950px;" width="100%" height="950px;" ></iframe></div>';
             var close_frame = '<a href="#" class="closeIframeHolder"><img class="btn_delete" src="./dashboard/images/delete-button.svg" style="height: 15px; width:15px;"/></a>';
             // append a new div to your tab container
             $('.tab_content').find('.tabs_item').hide(); // hide already shown content
@@ -276,7 +226,7 @@ $(document).ready(function () {
 
             var link = $(this).data('link');
             var name = $(this).data('name');
-        var iframe_elem = '<div style="overflow:auto;-webkit-overflow-scrolling:touch"><iframe src=" ' + link + ' "class="iframe_load" onload="resizeIframe(this)" frameBorder="0" style="overflow:hidden;width:100%;height:855px" width="100%" height="855px"></iframe></div>';
+        var iframe_elem = '<div style="overflow:auto;-webkit-overflow-scrolling:touch"><iframe src=" ' + link + ' "class="iframe_load" onload="resizeIframe(this)" frameBorder="0" style="overflow:hidden;width:100%;height:950px" width="100%" height="950px"></iframe></div>';
             var close_frame = '<a href="#" class="closeIframeHolder"><img class="btn_delete" src="./dashboard/images/delete-button.svg" style="height: 15px; width:15px;"/></a>';
             // append a new div to your tab container
             $('.tab_content').find('.tabs_item').hide(); // hide already shown content
@@ -351,6 +301,7 @@ $(document).ready(function () {
     $("#conf_chooser").hide();
     $("#stiro_chooser").hide();
     $("#tess_chooser").hide();
+    $("satroria_chooser").hide();
     ////
     $("#lvl_two_riso_statistiche").hide();
     $("#riso_bread_stat").hide();
@@ -403,11 +354,14 @@ $(document).ready(function () {
     $("#lvl_two_stiro").removeClass("show");
     $("#lvl_two_tess").addClass("hide");
     $("#lvl_two_tess").removeClass("show");
+    $("#lvl_two_sart").addClass("hide");
+    $("#lvl_two_sart").removeClass("show");
 
+    $("#sartoria_chooser").hide();
     $("#conf_bread").hide();
     $("#stiro_bread").hide();
     $("#tess_bread").hide();
-
+    $("#sart_bread").hide();
     $("#produzione_bread").hide();
     $("#riso_bread").hide();
     $("#riso_bread_scheda_dipedenti").hide();
@@ -592,6 +546,7 @@ $(document).ready(function () {
             $("#stiro_bread").hide();
             $("#default_bread").hide();
             $("#produzione_bread").hide();
+            $("#sart_bread").hide();
             $("#menu_prod").hide();
             //HIDE PRODUCTION
             $("#lvl_one_prod").addClass("hide");
@@ -614,6 +569,8 @@ $(document).ready(function () {
         $("#menu_prod_conf").hide();
         $("#menu_prod_stiro").hide();
         $("#menu_prod_tess").hide();
+        $("#menu_prod_tess").hide();
+        $("#sart_bread").hide();
         $("#lvl_two_conf").addClass("show");
         $("#lvl_two_conf").removeClass("hide");
     });
@@ -623,9 +580,49 @@ $(document).ready(function () {
         $("#menu_prod_conf").hide();
         $("#menu_prod_stiro").hide();
         $("#menu_prod_tess").hide();
+        $("#menu_prod_sart").hide();
         $("#lvl_two_conf").addClass("show");
         $("#lvl_two_conf").removeClass("hide");
     });
+
+
+    //LVL 1 - CONFEZIONE CLIEK EVENT
+    $("#sart").click(function () {
+        if ($(this).hasClass("disabled")) {
+            this.preventDefault();
+        } else {
+
+            $("#sartoria_chooser").show();
+
+            //SHOW BREADCRAMP
+            $("#sart_bread").show();
+            $("#menu_prod_conf").show();
+            //HIDE DEFAULT BREADCRAMP
+            $("#stiro_bread").hide();
+            $("#default_bread").hide();
+            $("#produzione_bread").hide();
+            $("#conf_bread").hide();
+            $("#menu_prod").hide();
+            //HIDE PRODUCTION
+            $("#lvl_one_prod").addClass("hide");
+            $("#lvl_one_prod").removeClass("show");
+            //SHOW CONFEZIONE
+            $("#lvl_two_conf").addClass("hide");
+            $("#lvl_two_conf").removeClass("show");
+            //HIDE STIRO
+            $("#lvl_two_stiro").addClass("hide");
+            $("#lvl_two_stiro").removeClass("show");
+
+            $("#lvl_two_tess").addClass("hide");
+            $("#lvl_two_tess").removeClass("show");
+
+            $("#dp_stiro").removeClass("active");
+            $("#db_stiro").removeClass("active");
+            //CONFEZIONE CHOOSER
+            $("#sart_chooser").show();
+        }
+    });
+
     //DP CONFEZIONE CLICK
     $("#dp_conf").click(function() {
         $("#frame_confezione_div_hide").show();
@@ -815,6 +812,35 @@ $(document).ready(function () {
         $("#menu_prod_stiro").hide();
     });
 
+
+    //BACK TO PRODUCTION
+    $("#btn_back_sart").click(function () {
+        $("#prod").click();
+        $("#sartoria_chooser").hide();
+        $("#sart_bread").hide();
+        $("#menu_prod_conf_db").hide();
+        $("#menu_prod_conf_dp").hide();
+        $("#menu_prod_stiro_db").hide();
+        $("#menu_prod_stiro_dp").hide();
+        $("#menu_prod_tess_db").hide();
+        $("#menu_prod_tess_dp").hide();
+        $("#menu_prod_sart_db").hide();
+        $("#menu_prod_sart_dp").hide();
+
+        $("#frame_sart_div_hide").hide();
+        $("#frame_sart_div_db_hide").hide();
+        //CLEAR HIDE FRAME
+        $("#frame_stiro_div").hide();
+        $("#frame_stiro_div_db").hide();
+        var iframe = $("#frame_stiro");
+        iframe.attr('src', '');
+        var iframe1 = $("#frame_stiro_db");
+        iframe1.attr('src', '');
+        $("#db_stiro_close").hide();
+        $("#menu_prod_conf").hide();
+        $("#menu_prod_stiro").hide();
+    });
+
     //HIDE DEFAULT DATI BASE STIRO
     $("#db_stiro_bread").addClass("hide");
     $("#db_stiro_bread").removeClass("show");
@@ -862,10 +888,29 @@ $(document).ready(function () {
         $("#lvl_two_tess").removeClass("hide");
     });
 
+    $("#sart_dp_start").click(function () {
+        $("#dp_sart").click();
+        $("#menu_prod_conf").hide();
+        $("#menu_prod_stiro").hide();
+        $("#menu_prod_tess").hide();
+        $("#lvl_two_sart").addClass("show");
+        $("#lvl_two_sart").removeClass("hide");
+    });
+
+    $("#sart_db_start").click(function () {
+        $("#db_sart").click();
+        $("#menu_prod_conf").hide();
+        $("#menu_prod_stiro").hide();
+        $("#menu_prod_tess").hide();
+        $("#lvl_two_sart").addClass("show");
+        $("#lvl_two_sart").removeClass("hide");
+    });
+
     //DP STIRO CLICK
     $("#dp_tess").click(function() {
         $("#frame_tess_div_hide").show();
         $("#tess_chooser").hide();
+        $("#sartoria_chooser").hide();
         //ACTIVE BREADCRAMP
         $("#dp_tess").addClass("active");
         $("#db_tess").removeClass("active");
@@ -894,6 +939,7 @@ $(document).ready(function () {
     $("#db_tess").click(function() {
         $("#frame_tess_div_db_hide").show();
         $("#tess_chooser").hide();
+        $("#sartoria_chooser").hide();
         //ACTIVE BREADCRAMP
         $("#dp_tess").removeClass("active");
         $("#db_tess").addClass("active");
@@ -917,6 +963,65 @@ $(document).ready(function () {
         $("#db_tess_close").hide();
         $("#lvl_two_tess").addClass("show");
         $("#lvl_two_tess").removeClass("hide");
+    });
+
+    //DP STIRO CLICK
+    $("#dp_sart").click(function () {
+        $("#frame_sart_div_hide").show();
+        $("#sart_chooser").hide();
+        $("#sartoria_chooser").hide();
+        //ACTIVE BREADCRAMP
+        $("#dp_sart").addClass("active");
+        $("#db_sart").removeClass("active");
+        //SHOW DP
+        $("#dp_sart_bread").addClass("show");
+        $("#dp_sart_bread").removeClass("hide");
+        //HIDE DB
+        $("#db_sart_bread").addClass("hide");
+        $("#db_sart_bread").removeClass("show");
+        $("#menu_prod_sart_dp").show();
+        $("#menu_prod_sart_db").hide();
+        $("#menu_prod_sart").hide();
+        $("#menu_prod").hide();
+        //CLEAR HIDE FRAME
+        $("#frame_sart_div").hide();
+        $("#frame_sart_div_db").hide();
+        var iframe = $("#frame_sart");
+        iframe.attr('src', '');
+        var iframe1 = $("#frame_sart_db");
+        iframe1.attr('src', '');
+        $("#db_sart_close").hide();
+        $("#lvl_two_sart").addClass("show");
+        $("#lvl_two_sart").removeClass("hide");
+    });
+    //DB STIRO CLICK
+    $("#db_sart").click(function () {
+        $("#frame_sart_div_db_hide").show();
+        $("#sart_chooser").hide();
+        $("#sartoria_chooser").hide();
+        //ACTIVE BREADCRAMP
+        $("#dp_sart").removeClass("active");
+        $("#db_sart").addClass("active");
+        //SHOW DB
+        $("#db_sart_bread").addClass("show");
+        $("#db_sart_bread").removeClass("hide");
+        //HIDE DP
+        $("#dp_sart_bread").addClass("hide");
+        $("#dp_sart_bread").removeClass("show");
+        $("#menu_prod_sart").hide();
+        $("#menu_prod_sart_db").show();
+        $("#menu_prod").hide();
+        $("#menu_prod_sart_dp").hide();
+        //CLEAR HIDE FRAME
+        $("#frame_sart_div").hide();
+        $("#frame_sart_div_db").hide();
+        var iframe = $("#frame_sart");
+        iframe.attr('src', '');
+        var iframe1 = $("#frame_sart_db");
+        iframe1.attr('src', '');
+        $("#db_sart_close").hide();
+        $("#lvl_two_sart").addClass("show");
+        $("#lvl_two_sart").removeClass("hide");
     });
 
     $("#db_tess_close").hide();

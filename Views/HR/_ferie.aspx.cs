@@ -49,8 +49,31 @@ public partial class Views_HR_ferie : System.Web.UI.Page
 
         foreach (DataRow dtRow in dt.Rows)
         {
-            dtRow[mattcol] = Convert.ToInt32(sMonth) * 1.66;
-            //dtRow[sitcol] = 0;
+            string iDate = dtRow[3].ToString();
+            //DateTime oDate = Convert.ToDateTime(iDate);
+            DateTime oDate = DateTime.ParseExact(iDate, "dd/MM/yyyy", null);
+
+            int lastMonth = Convert.ToInt32(sMonth);
+            int vMonth = 0;
+
+            if (oDate.Year == DateTime.Now.Year )
+            {
+                //if (oDate.Day > 1 && lastMonth >= oDate.Month) {
+                //    dtRow[mattcol] = 0;
+                //    vMonth = 0;
+                //} else
+                //{
+                    dtRow[mattcol] = (lastMonth - oDate.Month) * 1.66;
+                    vMonth = (int)((lastMonth - oDate.Month) * 1.66);
+               // }
+
+            } else
+            {
+                dtRow[mattcol] = Convert.ToInt32(sMonth) * 1.66;
+                vMonth = (int)(Convert.ToInt32(sMonth) * 1.66);
+
+            }
+
             int SumTotal = 0;
 
             foreach (DataRow dtLRow in dtLastY.Rows)
@@ -123,7 +146,7 @@ public partial class Views_HR_ferie : System.Web.UI.Page
                 }
             }
 
-            var vmatt = Convert.ToInt32(sMonth) * 1.66;
+            var vmatt = vMonth;
             int vsitt;
             try
             {
@@ -135,23 +158,8 @@ public partial class Views_HR_ferie : System.Web.UI.Page
                 vsitt = 0;
             } 
 
-            //if (Convert.ToInt64(vsitt) < 0)
-            //{
-            //    vsitt = 0;
-            //}
-
-
-            //if (vsitt == DBNull)
-            //{
-            //    vsitt = 0;
-            //} else
-            //{
-            //     vsitt = Convert.ToDouble(dtRow[sitcol]);
-
-            //}
-
             var vttot = vmatt + vsitt - SumTotal;
-            dtRow[total] = vttot.ToString().Substring(0,4);
+            dtRow[total] = vttot; //.ToString().Substring(0,4);
         }
         GridView.DataSource = dt;
         GridView.DataBind();

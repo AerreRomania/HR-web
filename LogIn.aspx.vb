@@ -6,7 +6,7 @@ Imports System.Net.Mail
 
 Partial Class LogIn
     Inherits Page
-    Dim constr As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+    Dim constr As String = ConfigurationManager.ConnectionStrings("NOYConnectionString").ConnectionString
     Dim _myConnection As SqlConnection = New SqlConnection(constr)
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         Session("User") = Nothing
@@ -207,8 +207,8 @@ Partial Class LogIn
                     End If
         End Using
                     Catch ex As Exception
-                            Login1.FailureText = "Username or Password is Incorrect. Or your account is not activated yet. Try again Later"
-                    End Try
+            Login1.FailureText = "Username or Password is incorrect."
+        End Try
     End Sub
     
     Public Shared Function CreateShaHash(salt As String, password As String) As String

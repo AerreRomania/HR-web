@@ -12,15 +12,30 @@ using System.Web.Configuration;
 
 public partial class OrganigramaGenerala : System.Web.UI.Page
 {
+    _MainClass helper = new _MainClass();
+    int month;
+    int year;
     protected void Page_Load(object sender, EventArgs e)
     {
-        lbl_LastDate.InnerText = "Loaded data from: " + DateTime.Now.AddMonths(-2).ToShortDateString();
+        DataTable LastMonth = helper.PkSelect("SELECT * FROM [LastLoadedData]", "WbmOlimpiasConnectionString");
+        string sMonth = LastMonth.Rows[0].ItemArray[0].ToString();
+        string lastY = LastMonth.Rows[0].ItemArray[1].ToString();
+
+        month = Convert.ToInt32(sMonth);
+        year = Convert.ToInt32(lastY);
+
+        lbl_LastDate.InnerText = "Loaded data from: " + sMonth + "/" + lastY;
         PreparaOrganigrama();
+
         if (Page.IsPostBack)
         {
             load_grid_Click(sender, e);
+
+          
         }
     }
+
+    
 
     private void PreparaOrganigrama()
     {
@@ -32,36 +47,35 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
         TableRow tr = new TableRow();
 
         TableCell tc = new TableCell();
-        tc.ColumnSpan = (NumarColoane / 2) * 2;
+        tc.ColumnSpan = Convert.ToInt32((NumarColoane / 3) * 2.5);
         tc.Text = "";
         tr.Cells.Add(tc);
 
         tc = new TableCell();
-        tc.ColumnSpan = 2;
+        tc.ColumnSpan = 5;
 
 
-        DataTable dt_total_generale = new DataTable();
+        int dt_total_generale = 0;
         using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT * from dbo.AngajatiMY where dbo.AngajatiMY.DataLichidarii = '0001-01-01'  and dbo.AngajatiMY.DYear = '2019' and dbo.AngajatiMY.DMonth = '12'", conn))
+            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) from EsteAngajatUnionDefault WHERE Luna='" + month + "' and An='"+year+"'", conn))
             {
                 using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
-                    da.Fill(dt_total_generale);
+                    conn.Open();
+                    dt_total_generale = (int)cmd.ExecuteScalar();
+                    conn.Close();
                 }
             }
         }
 
-        tc.Controls.Add(PreparaDetaliu("GENERALE", dt_total_generale.Rows.Count.ToString(), "#D99694"));
-        
-        //var employeeCount = dcWbmOlimpias.Angajatis.Where(a => (a.DMonth == DateTime.Now.Month - 1) && (a.DYear == DateTime.Now.Year)).Select(an => an.CodAngajat).Sum();
-        //tc.Controls.Add(PreparaDetaliu("GENERALE", employeeCount.ToString(), "#D99694"));
+        tc.Controls.Add(PreparaDetaliu("GENERALE", dt_total_generale.ToString(), "#D99694"));
         tr.Cells.Add(tc);
 
-        tc = new TableCell();
-        tc.ColumnSpan = (NumarColoane - NumarColoane / 2 - 1) * 2;
-        tc.Text = "";
-        tr.Cells.Add(tc);
+        //tc = new TableCell();
+        ////tc.ColumnSpan = (NumarColoane / 3) * 2;
+        //tc.Text = "";
+        //tr.Cells.Add(tc);
 
         tOrganigrama.Rows.Add(tr);
 
@@ -69,7 +83,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
         tr = new TableRow();
         tc = new TableCell();
         tc.Style.Add("height", "20px");
-        tc.ColumnSpan = (NumarColoane / 2) * 2 + 1;
+        tc.ColumnSpan = (NumarColoane / 2) * 2 ;
         tc.Text = "";
         tr.Cells.Add(tc);
 
@@ -104,21 +118,32 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
         string previousMonth = DateTime.Now.AddMonths(-1).ToString("MMMM");
         //int month = DateTime.ParseExact(previousMonth, "MMMM", CultureInfo.CurrentCulture).Month;
         //int year = Convert.ToInt32(DateTime.Now.Year);
-        int month = 12;
-        int year = 2019;
 
 
-        var vDepartamente = dcWbmOlimpias.Angajatis
-            .Join(dcWbmOlimpias.Departamentes, tAngajati => tAngajati.IdDepartament, tDepartamente => tDepartamente.Id,
-                (tAngajati, tDepartamente) => new {tAngajati, tDepartamente})
-            .Where(@t1 => @t1.tAngajati.DataLichidarii.Equals("0001-01-01") && t1.tAngajati.DYear.Equals(year) && t1.tAngajati.DMonth.Equals(month))
-            .GroupBy(@t1 => new { @t1.tDepartamente.SortHelper, @t1.tDepartamente.Id, @t1.tDepartamente.Departament}, @t1 => @t1.tDepartamente)
-            .Select(t => new {t.Key.SortHelper,t.Key.Id, t.Key.Departament, NumarAngajati = t.Count()})
-            .OrderBy(t => t.SortHelper);
+
+        //var vDepartamente = dcWbmOlimpias.Angajatis
+        //    .Join(dcWbmOlimpias.Departamentes, tAngajati => tAngajati.IdDepartament, tDepartamente => tDepartamente.Id,
+        //        (tAngajati, tDepartamente) => new {tAngajati, tDepartamente})
+        //    .Where(@t1 => t1.tAngajati.DYear.Equals(year) && t1.tAngajati.DMonth.Equals(month))
+        //    .GroupBy(@t1 => new { @t1.tDepartamente.SortHelper, @t1.tDepartamente.Id, @t1.tDepartamente.Departament}, @t1 => @t1.tDepartamente)
+        //    .Select(t => new {t.Key.SortHelper, t.Key.Id, t.Key.Departament, NumarAngajati = t.Count()})
+        //    .OrderBy(t => t.SortHelper);
+
+        DataTable vDepartamente = new DataTable();
+        using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
+        {
+            using (SqlCommand cmd = new SqlCommand("SELECT SortHelper, Departament, COUNT(*) from EsteAngajatUnionDefault WHERE Luna='" + month + "' and An='" + year + "' GROUP BY SortHelper, Departament ORDER BY SortHelper", conn))
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(vDepartamente);
+                }
+            }
+        }
 
         tr = new TableRow();
         int r = 0x79, g = 0x96, b = 0x94;
-        foreach (var vDepartament in vDepartamente)
+        foreach (DataRow vDepartament in vDepartamente.Rows)
         {
             tc = new TableCell();
             tc.ColumnSpan = 2;
@@ -135,7 +160,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
                 g = 0;
                 r = r + 1;
             }
-            tc.Controls.Add(PreparaDetaliu(vDepartament.Departament, vDepartament.NumarAngajati.ToString(), "#4db9d3"));
+            tc.Controls.Add(PreparaDetaliu(vDepartament[1].ToString(), vDepartament[2].ToString(), "#4db9d3"));
             //tc.Controls.Add.ClientID(vDepartament.Departament);
             tr.Cells.Add(tc);
         }
@@ -144,17 +169,30 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
 
         //// afisare linii/echipe si altele
         tr = new TableRow();
-        foreach (var vDepartament in vDepartamente)
+        foreach (DataRow vDepartament in vDepartamente.Rows)
         {
             tc = new TableCell();
             tc.VerticalAlign = VerticalAlign.Top;
             tc.HorizontalAlign = HorizontalAlign.Center;
             tc.ColumnSpan = 2;
             tr.Cells.Add(tc);
-            var vEchipeLinii = from tAngajati in dcWbmOlimpias.AngajatiViews
-                               where tAngajati.IdDepartament.Equals(vDepartament.Id) 
-                               group tAngajati by new { tAngajati.Linie  } into t
-                               select new { t.Key.Linie,   NumarAngajati = t.Count() };
+
+            DataTable vEchipeLinii = new DataTable();
+            using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT Linie, COUNT(Linie) from EsteAngajatUnionDefault WHERE Luna='"+month+"' and An='"+year+"' and Departament='" + vDepartament[1] + "' Group by Linie", conn))
+                {
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(vEchipeLinii);
+                    }
+                }
+            }
+
+            //var vEchipeLinii = from tAngajati in dcWbmOlimpias.Angajatis
+            //                   where tAngajati.IdDepartament.Equals(vDepartament.Id) 
+            //                   group tAngajati by new { tAngajati.Linie  } into t
+            //                   select new { t.Key.Linie,   NumarAngajati = t.Count() };
             HtmlTable ht = new HtmlTable();
             ht.Width = "140px";
 
@@ -167,7 +205,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
             ht.Rows.Add(htr);
 
             int i = 0;
-            foreach (var vEchipaLinie in vEchipeLinii)
+            foreach (DataRow vEchipaLinie in vEchipeLinii.Rows)
             {
                 i++;
                 htr = new HtmlTableRow();
@@ -183,8 +221,8 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
                 htc = new HtmlTableCell();
                 htc.RowSpan = 2;
                 htc.Style.Add("border", "1px solid black");
-                if (!String.IsNullOrEmpty(vEchipaLinie.Linie))
-                    htc.InnerText = vEchipaLinie.Linie;
+                if (!String.IsNullOrEmpty(vEchipaLinie[0].ToString()))
+                    htc.InnerText = vEchipaLinie[0].ToString();
           
                 else
                     htc.InnerText = "ADDETTI";
@@ -197,7 +235,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
                 htc.Style.Add("border-top", "1px solid black");
                 htc.Style.Add("border-right", "1px solid black");
                 htc.Style.Add("border-bottom", "1px solid black");
-                htc.InnerText = vEchipaLinie.NumarAngajati.ToString();
+                htc.InnerText = vEchipaLinie[1].ToString();
                 htr.Cells.Add(htc);
 
                 ht.Rows.Add(htr);
@@ -205,7 +243,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
                 htr = new HtmlTableRow();
 
                 htc = new HtmlTableCell();
-                if (i < vEchipeLinii.Count())
+                if (i < vEchipeLinii.Rows.Count)
                     htc.Style.Add("border-left", "1px solid black");
                 htc.Height = "15px";
                 htr.Cells.Add(htc);
@@ -317,7 +355,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
 
         using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT DISTINCT ROW_NUMBER() OVER (ORDER BY dbo.AngajatiMY.CodAngajat) AS [IDs] ,dbo.AngajatiMY.CodAngajat AS [Id], dbo.AngajatiMY.Prenume AS [Cognome], dbo.AngajatiMY.Nume AS [Nome], CONVERT(VARCHAR(10), dbo.AngajatiMY.DataAngajarii, 103) AS [Data Nascita], dbo.AngajatiMY.DYear,dbo.AngajatiMY.DMonth, dbo.PosturiDeLucru.PostDeLucru AS [Mansione],dbo.Linii.Linie AS [Linea], dbo.AngajatiMY.Note FROM dbo.AngajatiMY INNER JOIN dbo.Departamente ON dbo.AngajatiMY.IdDepartament = dbo.Departamente.Id INNER JOIN dbo.Linii ON dbo.AngajatiMY.IdLinie = dbo.Linii.Id INNER JOIN dbo.PosturiDeLucru ON dbo.AngajatiMY.IdPostDeLucru = dbo.PosturiDeLucru.Id WHERE dbo.AngajatiMY.IdDepartament='" + strLabelVal + "' AND dbo.AngajatiMY.DataLichidarii = '0001-01-01' and dbo.AngajatiMY.DYear = '2019' and dbo.AngajatiMY.DMonth = '12'", conn))
+            using (SqlCommand cmd = new SqlCommand("SELECT DISTINCT ROW_NUMBER() OVER (ORDER BY dbo.AngajatiViewLastMonth.CodAngajat) AS [IDs] ,dbo.AngajatiViewLastMonth.CodAngajat AS [Id], dbo.AngajatiViewLastMonth.Prenume AS [Cognome], dbo.AngajatiViewLastMonth.Nume AS [Nome], CONVERT(VARCHAR(10), dbo.AngajatiViewLastMonth.DataAngajarii, 103) AS [Data Nascita], dbo.AngajatiViewLastMonth.DYear,dbo.AngajatiViewLastMonth.DMonth, dbo.PosturiDeLucru.PostDeLucru AS [Mansione],dbo.Linii.Linie AS [Linea], dbo.AngajatiViewLastMonth.Note FROM dbo.AngajatiViewLastMonth INNER JOIN dbo.Departamente ON dbo.AngajatiViewLastMonth.IdDepartament = dbo.Departamente.Id INNER JOIN dbo.Linii ON dbo.AngajatiViewLastMonth.IdLinie = dbo.Linii.Id INNER JOIN dbo.PosturiDeLucru ON dbo.AngajatiViewLastMonth.IdPostDeLucru = dbo.PosturiDeLucru.Id WHERE dbo.AngajatiViewLastMonth.IdDepartament='" + strLabelVal + "'", conn))
             {
                 using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {

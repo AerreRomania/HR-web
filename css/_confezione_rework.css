@@ -1,0 +1,97 @@
+﻿html, body, form {
+    height: 950px;
+}
+body {
+    overflow-x: hidden;
+}
+.card-body
+{
+    width:250px;
+}
+
+.machine {
+    height: 40px;
+    width: 45px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #9c9c9c;
+}
+
+.card-header {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.panel {
+    /*min-width:235px;
+    margin-top:10px;
+    margin-bottom:10px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col-md-3 > span {
+    line-height: 38px;
+}
+
+.circle {
+    border-radius: 30px;
+    width: 45px;
+    margin-left: 5px;
+}
+
+.red {
+    color: lightgray;
+}
+
+.progress-bar {
+    font-size: 11px;
+}
+
+#lbl_time, .countdown {
+    position:inherit;
+}
+
+.countdown {
+    text-align: right;
+    padding-left: 5px;
+}
+
+.card-body{
+    width:auto;
+}
+
+.card-body > .row {
+    /*margin-right:-40px;*/
+    margin-right: -35px;
+}
+
+.header-first {
+    line-height: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.product-color{
+    padding-right:10px;
+}
+
+.container-fluid{
+    padding-left:0px;
+    padding-right:0px;
+    margin-right:0px;
+    margin-left:0px;
+}
+
+.header {
+    line-height: 0px;
+}
+
+.col-md-3 {
+    width:auto!important;
+}

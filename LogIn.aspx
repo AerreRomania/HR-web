@@ -9,16 +9,18 @@
     <link runat="server" rel="shortcut icon" href="./images/favicon.ico" type="Images/Image/x-icon" />
     <link runat="server" rel="icon" href="./images/favicon.ico" type="Images/Image/ico" />
 
-    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/login/jquery-2.2.2.min.js"></script>
     <script src="./js/Scripts/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="./js/login/TweenMax.min.js"></script>
+    <script src=".js/login/TimelineMax.min.js"></script> 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/fonts/font-awesome/4.3.0/css/font-awesome.min.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style-login.css"/>
+    <link rel="stylesheet" href="./css/login/reset.min.css"/>
+    <%--<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/fonts/font-awesome/4.3.0/css/font-awesome.min.css'/>--%>
+     <link href="./css/login/poppins.css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="css/style-login_rework.css"/>
     <link rel="stylesheet" href="./css/mobile/login.css"/>
+    <%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />--%>
 
 
     <script type="text/javascript">
@@ -38,6 +40,291 @@
         .hidden{
             display:none;
         }
+
+        @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+        body {
+          /*background-color: #3c3c3c;*/
+          /*margin: 50px 0;*/
+          font-family: 'Noto Sans', sans-serif;
+          text-align: center;
+        }
+
+        .container {
+          background-color: white;
+          /*background-image: url(./img/background_log.svg);*/
+          margin: 50px auto;
+          width: 100%;
+          max-width: 320px;
+          min-height: 568px;
+          margin: 0 auto;
+          border-radius: 8px;
+          position: relative;
+          overflow: hidden;
+          -webkit-box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.3);
+          -webkit-transform: scale(1);
+          border-radius: 10px;
+        }
+
+        .menu-trigger, .close-trigger {
+          position: absolute;
+          top: 32px;
+          right: 20px;
+          display: block;
+          width: 42px;
+          height: 42px;
+          cursor: pointer;
+          z-index: 333;
+        }
+        .menu-trigger:hover .menu-trigger-bar:before, .close-trigger:hover .menu-trigger-bar:before {
+          width: 100%;
+        }
+        .menu-trigger:hover .close-trigger-bar:before, .close-trigger:hover .close-trigger-bar:before {
+          width: 100%;
+        }
+
+        .close-trigger {
+          z-index: 5;
+          top: 25px;
+        }
+
+        .menu-trigger-bar {
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: #3855a5;
+          margin-bottom: 6px;
+          transform: rotate(-45deg);
+          position: relative;
+        }
+        .menu-trigger-bar:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.2);
+          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+        }
+        .menu-trigger-bar.top {
+          width: 50%;
+        }
+        .menu-trigger-bar.middle:before {
+          left: auto;
+          right: 0;
+        }
+        .menu-trigger-bar.bottom {
+          width: 50%;
+          margin-left: 50%;
+        }
+
+        .close-trigger-bar {
+          display: block;
+          width: 100%;
+          height: 4px;
+          background-color: #3855a5;
+          position: relative;
+        }
+        .close-trigger-bar:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.2);
+          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+        }
+        .close-trigger-bar.left {
+          transform: translateX(100px) translateY(-100px) rotate(-45deg);
+        }
+        .close-trigger-bar.right {
+          transform: translateX(-100px) translateY(-100px) rotate(45deg);
+          top: -3px;
+        }
+
+        .logo {
+          display: block;
+          width: 64px;
+          height: 64px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -52px;
+          margin-left: -32px;
+          text-align: center;
+          z-index: 10;
+        }
+        .logo span {
+          display: block;
+          text-align: center;
+          line-height: 62px;
+          font-size: 72px;
+          color: white;
+        }
+
+        .logo-title {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          color: #222222;
+          font-size: 32px;
+          line-height: 82x;
+        }
+
+        .logo-badge {
+          position: absolute;
+          display: block;
+          width: 24px;
+          height: 24px;
+          top: 6px;
+          right: -6px;
+          border-radius: 100%;
+          background-color: #6295ca;
+          font-size: 12px;
+          line-height: 2;
+          text-align: center;
+        }
+
+        .inner-container, .menu-container {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+        }
+
+        .inner-container {
+          z-index: 20;
+        }
+
+        .menu-container {
+          display: flex;
+          align-items: center;
+        }
+
+        .menu {
+          display: block;
+          width: 100%;
+          padding: 20%;
+        }
+        .menu li {
+          text-align: left;
+          display: block;
+          padding: 15px 0;
+        }
+        .menu a {
+          text-decoration: none;
+          color: #222222;
+          display: inline-block;
+          padding: 10px 0;
+          position: relative;
+        }
+        .menu a:hover:before {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+        .menu a:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 18px;
+          height: 4px;
+          opacity: 0;
+          background-color: #222222;
+          transform: translateX(100px);
+          transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+        }
+
+        .menu-bg {
+          position: absolute;
+          display: block;
+          width: 200%;
+          left: -53%;
+          top: -25%;
+          height: 40%;
+          background-color: white;
+        }
+        .menu-bg.middle {
+          top: 29%;
+          left: -53%;
+          transform: rotate(-45deg) scaleY(0);
+        }
+        .menu-bg.top {
+          left: -34%;
+          top: 0;
+          transform: rotate(-45deg) translateY(-152%);
+        }
+        .menu-bg.bottom {
+          top: 105%;
+          transform: rotate(-45deg) translateY(25%);
+          left: -20%;
+        }
+
+        #links {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+          height: 50px;
+          font-size: 13px;
+          font-family: tahoma;
+          color: #fff;
+        }
+
+        #links a {
+          text-decoration: none;
+          font-size: 2.3em;
+          color: #fff;
+        }
+
+        #twitter {
+          position: absolute;
+          bottom: 15px;
+          right: 20px;
+        }
+
+        #pens {
+          position: absolute;
+          bottom: 15px;
+          left: 20px;
+        }
+
+        .page {
+            z-index:40;
+        }
+        #UserName{
+            /*border-top-right-radius:20px;*/
+                        border: #d9d9d9 0.5px solid!important;
+
+        }
+        #Password{
+            /*border-bottom-right-radius:20px;*/
+                        border: #d9d9d9 0.5px solid!important;
+
+        }
+/*
+        #UserNameRequired{
+            position:absolute;
+            top:10px;
+            left:10px;
+            display:none;
+        }
+        #PasswordRequired{
+            position:absolute;
+            top:20px;
+            left:20px;
+            display:none;
+            border-top:none;
+        }*/
     </style>
 
  
@@ -51,26 +338,50 @@
   <form id="form" runat="server" class="form"  novalidate="novalidate" style="margin-top:100px;box-shadow:10px 15px 40px -10px rgba(0, 0, 0, 0.95);">
   <asp:ScriptManager runat="server" ID="scr1"></asp:ScriptManager>
 
+<div class="container">
+  <span class="menu-trigger">
+    <i class="menu-trigger-bar top"></i>
+    <i class="menu-trigger-bar middle"></i>
+    <i class="menu-trigger-bar bottom"></i>
+    <span style="font-size: 10px;text-transform: uppercase;margin-left: -6px;padding-top: 5px;">Registrati</span>
+  </span>
+    
+       <div id="Page1" class="page" runat="server" style="margin-left:20px;margin-right:15px;position:absolute;    height: 100%;" >
+          <img src="img/logo_noy.png" id="logo-svg" style="margin-top: 115px;margin-bottom: 50px;height: 85px;" />
+          <asp:Login ID = "Login1"  runat = "server"  ClientIDMode="static" TitleText="" 
+              UserNameLabelText="Nome utente:" PasswordLabelText="Password:" 
+              LoginButtonText="Accesso"  
+              UserNameRequiredErrorMessage="E 'richiesta il nome utente" 
+              PasswordRequiredErrorMessage="E 'richiesta la password" 
+             RememberMeText="Ricordati di me la prossima volta." 
 
-
-<%-- LOGIN --%>
-  <div id="Page1" class="page" runat="server" >
-          <img src="images/logo.svg" id="logo-svg" style="height:100px;margin-top:-20px;margin-bottom:20px" />
-          <asp:Login ID = "Login1"  runat = "server"  ClientIDMode="static" TitleText="" UserNameLabelText="Nome utente:" PasswordLabelText="Password:" LoginButtonText="Accesso"  RememberMeText="Ricordati di me la prossima volta."  UserNameRequiredErrorMessage="E 'richiesta il nome utente" PasswordRequiredErrorMessage="E 'richiesta la password" RememberMeSet="true" ValidateRequestMode="Enabled" OnAuthenticate= "ValidateUser">
+              RememberMeSet="true" ValidateRequestMode="Enabled" OnAuthenticate= "ValidateUser">
               <LabelStyle CssClass="labeltext" />
               <TitleTextStyle CssClass="titletext" />
               <TextBoxStyle CssClass="input" />
               <CheckBoxStyle CssClass="cbox" />
-              <LoginButtonStyle CssClass="hidden"/>
-          </asp:Login>
-                  <button class="g-recaptcha btn" data-sitekey="6LdtXHQUAAAAAOEhyVVPEH0kcUZzlwpmYyU65R77" data-callback="recaptcha_callback" style="line-height: 0px;">ACCESSO</button>
+              <LoginButtonStyle CssClass="btn"/>
+          </asp:Login> 
 
-           <p class="message">Non registrato? <a class="bysectorA" href="#A" onclick="show('Page2');">Crea un account</a></p>
-  </div>
+           <%-- <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username" name="usrnm"/>
+          </div>--%>
+   </div>
 
- <%-- REGISTRATION --%>
-  <div id="Page2" class="page" runat="server"  style="display:none;">
-    <h2  style="padding-bottom: 20px;">REGISTRATI</h2><br />
+
+
+  <span class="close-trigger">
+    <i class="close-trigger-bar left"></i>
+    <i class="close-trigger-bar right"></i>
+  </span> 
+ 
+  <div class="inner-container">
+      <i class="menu-bg top"></i>
+      <i class="menu-bg middle"></i>
+      <i class="menu-bg bottom"></i>
+    <div class="menu-container">
+     <div id="Page2" class="menu" runat="server" >
 
     <asp:TextBox type="text" runat="server" id="txtName" required="true" placeholder="Nome e Cognome" CssClass="input"></asp:TextBox> <!-- IME I PREZIME -->
       <asp:RequiredFieldValidator id="RequiredFieldValidator1" runat="server"
@@ -109,11 +420,13 @@
       <asp:TextBox type="text" runat="server" id="txtJob" required="true"  placeholder="Ruolo Aziendale" CssClass="input" style="margin: 0 0 15px;"></asp:TextBox>  <!-- JOB  -->
       <asp:textbox  type="number" runat="server" id="txtPhone"  placeholder="Telefono" CssClass="input" style="margin: 0 0 15px;"></asp:textbox>  <!-- PHONE  -->
 
-      <p class="message"><asp:CheckBox runat="server" ID="checkbox1" CssClass="" Text="Confermo di aver letto le " />  <a href="Terms.aspx"  class="message">Condizioni sulla Privacy</a></p><br />
-     <p class="message" style="text-align: left;    padding-left: 5px;"> <asp:CheckBox runat="server" ID="checkbox2" CssClass=""  Text="Accetto integralmente" /> <a href="Terms.aspx"  class="message">Termi e Condizioni</a></p> <br /><br />
+      <span class="message"><asp:CheckBox runat="server" ID="checkbox1" CssClass="" Text="Confermo di aver letto le " />  </span>
+     <span class="message"> <asp:CheckBox runat="server" ID="checkbox2" CssClass=""  Text="Accetto integralmente" /> </span>
     <asp:Button id="btnCheck1" runat="server" class="btn" onclick="CreateAccount1" Text="Registrati"></asp:Button>
-    <p class="message">Già registrato? &nbsp;<a class="bysectorA" href="#B" onclick="show('Page1');">Vai per accedere</a></p>
   </div>
+    </div>
+  </div>
+</div>  
 
   <div id="Page3" class="Page" runat="server" style="display:none;">
           <h3>Recupero della password</h3><br />  
@@ -122,9 +435,9 @@
   </div>
 
      
-      </form>
+   </form>
 
-    <div id="footer" class="footer">
+   <div id="footer" class="footer">
         <asp:table runat="server">
             <asp:TableFooterRow><asp:TableCell><p style="color:white;font-size: 10pt;">	&copy; 2018 - Olimpias Knitting Serbia </p></asp:TableCell> 
                 <asp:TableCell style="padding-left: 150px;"><a href="Terms.aspx" class="ahref_footer">TERMINI E CONDIZIONI</a></asp:TableCell>
@@ -285,6 +598,162 @@
             // then show the requested page
             ele.style.display = 'block';
         }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.btn').closest('td').attr('align', 'center');            //OPEN TRIGGER
+            var openTrigger = $('.menu-trigger');
+            var openTriggerTop = openTrigger.find('.menu-trigger-bar.top');
+            var openTriggerMiddle = openTrigger.find('.menu-trigger-bar.middle');
+            var openTriggerBottom = openTrigger.find('.menu-trigger-bar.bottom');
+
+            //CLOSE TRIGGER
+            var closeTrigger = $('.close-trigger');
+            var closeTriggerLeft = closeTrigger.find('.close-trigger-bar.left');
+            var closeTriggerRight = closeTrigger.find('.close-trigger-bar.right');
+
+            //LOGO
+            var logo = $('.logo');
+
+            //MENU
+            var menuContainer = $('.menu-container');
+            var menu = $('.menu');
+            var menuTop = $('.menu-bg.top');
+            var menuMiddle = $('.menu-bg.middle');
+            var menuBottom = $('.menu-bg.bottom');
+
+            //TL
+            var tlOpen = new TimelineMax({ paused: true });
+            var tlClose = new TimelineMax({ paused: true });
+
+            //OPEN TIMELINE
+            tlOpen.add("preOpen")
+                .to(logo, 0.4, {
+                    scale: 0.8,
+                    opacity: 0,
+                    ease: Power2.easeOut
+                }, "preOpen")
+                .to(openTriggerTop, 0.4, {
+                    x: "+80px", y: "-80px", delay: 0.1, ease: Power4.easeIn, onComplete: function () {
+                        closeTrigger.css('z-index', '25');
+                    }
+                }, "preOpen")
+                .to(openTriggerMiddle, 0.4, {
+                    x: "+=80px", y: "-=80px", ease: Power4.easeIn,
+                    onComplete: function () {
+                        openTrigger.css('visibility', 'hidden');
+                    }
+                }, "preOpen")
+                .to(openTriggerBottom, 0.4, {
+                    x: "+=80px", y: "-=80px", delay: 0.2, ease: Power4.easeIn
+                }, "preOpen")
+                .add("open", "-=0.4")
+                .to(menuTop, 0.8, {
+                    y: "13%",
+                    ease: Power4.easeInOut
+                }, "open")
+                .to(menuMiddle, 0.8, {
+                    scaleY: 1,
+                    ease: Power4.easeInOut
+                }, "open")
+                .to(menuBottom, 0.8, {
+                    y: "-114%",
+                    ease: Power4.easeInOut
+                }, "open")
+                .fromTo(menu, 0.6, {
+                    y: 30, opacity: 0, visibility: 'hidden'
+                }, {
+                    y: 0, opacity: 1, visibility: 'visible', ease: Power4.easeOut
+                }, "-=0.2")
+                .add("preClose", "-=0.8")
+                .to(closeTriggerLeft, 0.8, {
+                    x: "-=100px", y: "+=100px", ease: Power4.easeOut
+                }, "preClose")
+                .to(closeTriggerRight, 0.8, {
+                    x: "+=100px", y: "+=100px", delay: 0.2, ease: Power4.easeOut
+                }, "preClose");
+
+            //CLOSE TIMELINE
+            tlClose.add("close")
+                .to(menuTop, 0.2, {
+                    backgroundColor: "#6295ca", ease: Power4.easeInOut, onComplete: function () {
+                        logo.css('z-index', '26');
+                        closeTrigger.css('z-index', '5');
+                        openTrigger.css('visibility', 'visible');
+                    }
+                }, "close")
+                .to(menuMiddle, 0.2, {
+                    backgroundColor: "#6295ca", ease: Power4.easeInOut
+                }, "close")
+                .to(menuBottom, 0.2, {
+                    backgroundColor: "#6295ca", ease: Power4.easeInOut
+                }, "close")
+                .to(menu, 0.6, {
+                    y: 20, opacity: 0, ease: Power4.easeOut, onComplete: function () {
+                        menu.css('visibility', 'hidden');
+                    }
+                }, "close")
+                .to(logo, 0.8, {
+                    scale: 1, opacity: 1, ease: Power4.easeInOut
+                }, "close", "+=0.2")
+                .to(menuTop, 0.8, {
+                    y: "-113%",
+                    ease: Power4.easeInOut
+                }, "close", "+=0.2")
+                .to(menuMiddle, 0.8, {
+                    scaleY: 0,
+                    ease: Power4.easeInOut
+                }, "close", "+=0.2")
+                .to(menuBottom, 0.8, {
+                    y: "23%",
+                    ease: Power4.easeInOut,
+                    onComplete: function () {
+                        menuTop.css('background-color', '#ffffff');
+                        menuMiddle.css('background-color', '#ffffff');
+                        menuBottom.css('background-color', '#ffffff');
+                    }
+                }, "close", "+=0.2")
+                .to(closeTriggerLeft, 0.2, {
+                    x: "+=100px", y: "-=100px", ease: Power4.easeIn
+                }, "close")
+                .to(closeTriggerRight, 0.2, {
+                    x: "-=100px", y: "-=100px", delay: 0.1, ease: Power4.easeIn
+                }, "close")
+                .to(openTriggerTop, 1, {
+                    x: "-=80px", y: "+=80px", delay: 0.2, ease: Power4.easeOut
+                }, "close")
+                .to(openTriggerMiddle, 1, {
+                    x: "-=80px", y: "+=80px", ease: Power4.easeOut
+                }, "close")
+                .to(openTriggerBottom, 1, {
+                    x: "-=80px", y: "+=80px", delay: 0.1, ease: Power4.easeOut
+                }, "close");
+
+            //EVENTS
+            openTrigger.on('click', function () {
+                $('.page').css('position', 'unset');
+
+                if (tlOpen.progress() < 1) {
+                    tlOpen.play();
+                } else {
+                    tlOpen.restart();
+                }
+            });
+
+            closeTrigger.on('click', function () {
+               
+
+                setTimeout(function () { $('.page').css('position', 'absolute');}, 500);
+
+
+                if (tlClose.progress() < 1) {
+                    tlClose.play();
+                } else {
+                    tlClose.restart();
+                }
+            });
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,351 @@
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+ 
+
+#header {
+    width: 100%;
+    float: left;
+    height: 60px;
+    background-color: rgb(70, 70, 70);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+
+
+.logo {
+    top: 0;
+    left: 0;
+    float: left;
+    width: 200px;
+}
+
+.btn {
+
+    margin-top: 10px;
+    background: #074dbd;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    width: 210px;
+}
+
+    .btn:hover {
+        /*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+        background: #5392ce !important;
+    }
+
+
+.input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    /* margin: 0 0 15px; */
+    padding: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-sizing: border-box;
+    font-size: 12px;
+    border: #5392ce 0.5px solid;
+}
+
+.menu > span {
+    font-size: 12px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 9999;
+}
+
+.ahref_footer {
+    color: white;
+    text-decoration: none;
+    padding-top: 15px;
+    display: grid;
+    position: center;
+    font-size: 10pt;
+}
+
+.titletext {
+    padding-bottom: 50px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.labeltext {
+    padding-right: 10px;
+    font-size: 10pt;
+    width:83px;
+
+}
+
+label[for=Login1_RememberMe] {
+    font-size: 10pt;
+}
+/* Form */
+/*.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 400px;
+  width:100%;
+  margin: 0 auto 100px;
+  padding: 40px 5px 40px 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+.form .thumbnail {
+  background: #EF3B3A;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 50px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+.form .thumbnail img {
+  display: block;
+  width: 100%;
+}*/
+
+#Login1{
+    margin:0 auto!important;
+}
+.form button {
+    outline: 0;
+    background: #7b7b7b;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.form .message {
+    /*margin: 15px 0 0;*/
+    color: #b3b3b3;
+    font-size: 12px;
+    display:block;
+    float:left;
+}
+.form .message a {
+  color:  #7b7b7b;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+/* END Form */
+/* Demo Purposes */
+body {
+    background: #22222b;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+#video {
+  z-index: -99;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: silver !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+
+.cbox {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-image: url(technologies.css);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    top: 0;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    top: 0;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    /*top: 48px;*/
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+
+
+@media only screen and (max-width: 959px) {
+
+    #logo-svg{
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+    #particles-js {
+        display:none;
+    }
+}
+
+canvas {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #3855a5c7;
+    z-index: 1;
+}
+
+
+@media screen and (max-width:768px){
+/*    .form {
+        max-width: 100%;
+        max-height: 100vh;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+        .form .message {
+            margin: 0;
+        }*/
+}

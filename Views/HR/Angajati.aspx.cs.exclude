@@ -1,0 +1,18 @@
+using System;
+
+namespace Views.HR
+{
+    public partial class Angajati : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //if (Session["IdUtilizator"] != null)
+            //{
+            //    if (!GlobalClass.VerificareAcces("Angajati", "1"))
+            //        Response.Redirect("AccesInterzis.aspx");
+            //}
+            //else
+            //    Response.Redirect("AccesInterzis.aspx");
+        }
+    }
+}

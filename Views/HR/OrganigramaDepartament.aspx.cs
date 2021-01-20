@@ -47,14 +47,9 @@ public partial class OrganigrammaDepartamentNew : System.Web.UI.Page
         DataTable dtLastMonth = helper.PkSelect("SELECT [Month],[Year] FROM [LastLoadedData]", "WbmOlimpiasConnectionString");
         string year = dtLastMonth.Rows[0].ItemArray[1].ToString();
         string month = dtLastMonth.Rows[0].ItemArray[0].ToString();
-        txt_loaded.Text = "Latest loaded data from: "+month+"/"+year+"";
+        txt_loaded.Text = "Data: "+month+"/"+year+"";
 
-        dt = helper.PkSelect("SELECT ROW_NUMBER() OVER (ORDER BY dbo.AngajatiMY.CodAngajat) AS [IDs] ,dbo.AngajatiMY.CodAngajat AS [Id], dbo.AngajatiMY.Prenume AS [Cognome], " +
-                "dbo.AngajatiMY.Nume AS [Nome], dbo.AngajatiMY.DYear, dbo.AngajatiMY.DMonth, CONVERT(VARCHAR(10), dbo.AngajatiMY.DataAngajarii, 103) AS [Data Nascita],  dbo.PosturiDeLucru.PostDeLucru AS [Mansione],dbo.Linii.Linie AS [Linea], dbo.AngajatiMY.Note FROM dbo.AngajatiMY " +
-                "INNER JOIN dbo.Departamente ON dbo.AngajatiMY.IdDepartament = dbo.Departamente.Id " +
-                "INNER JOIN dbo.Linii ON dbo.AngajatiMY.IdLinie = dbo.Linii.Id " +
-                "INNER JOIN dbo.PosturiDeLucru ON dbo.AngajatiMY.IdPostDeLucru = dbo.PosturiDeLucru.Id " +
-                "WHERE dbo.AngajatiMY.IdDepartament=" + IdDepartament + " and dbo.AngajatiMY.DataLichidarii = '0001-01-01'  and dbo.AngajatiMY.DYear = '" + year + "' and dbo.AngajatiMY.DMonth = '" + month + "'", "WbmOlimpiasConnectionString");
+        dt = helper.PkSelect("SELECT ROW_NUMBER() OVER (ORDER BY Id) AS [IDs] ,Id, Cognome, Nome, DYear, DMonth, [Data Nascita],  Mansione,Linea, Note FROM OrganigramaDepartamentListViewByDep WHERE IdDepartament=" + IdDepartament + " ORDER BY Mansione", "WbmOlimpiasConnectionString");
 
    
 

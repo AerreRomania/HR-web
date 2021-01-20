@@ -25,7 +25,7 @@ public class WebServiceHR : System.Web.Services.WebService
     string _connectionString = "Data Source = KNSQL2014;Initial Catalog = WbmOlimpiasHR; user=sa;password=onlyouolimpias";
 
     [WebMethod]
-    public void EditUser(string nrid, string nrcode, string nses, string ncognome, string nnome, string ncitta, string nteldom, 
+    public void EditUser(string nrid, string badge, string nrcode, string nses, string ncognome, string nnome, string ncitta, string nteldom, 
         string nreparto, string nlinea, string nfase, string nemail, string nmansione, string nlivelo, string ndiretti, string nnascita, string ntipodi, string ninizio,
         string nscadenza, int IdTipPostDeLucru, int IdPostDeLucru, int IdEchipa, int IdLinie, int IdDepartament, int IdIncadrare, int IdLoculNasterii, int IdNivelStudiu, int IdLocalitate, string cc)
     {
@@ -102,6 +102,32 @@ public class WebServiceHR : System.Web.Services.WebService
                     Console.WriteLine("Error inserting data into Database!");
             }
         }
+
+        if (badge == "&nbsp;" || badge == string.Empty)
+        {
+            badge = "0";
+        }
+
+        string querybadge = @"IF EXISTS(SELECT * FROM dbo.Badge WHERE IdBadge = @IdBadge)
+                        UPDATE dbo.Badge 
+                        SET IdBadge = @IdBadge
+                        WHERE IdRnum = @IdRnum
+                    ELSE
+                        INSERT INTO dbo.Badge(IdBadge, IdRnum) VALUES(@IdBadge, @IdRnum);";
+
+        // create connection and command in "using" blocks
+        using (SqlConnection connection = new SqlConnection(_connectionString))
+        using (SqlCommand cmd = new SqlCommand(querybadge, connection))
+            {
+                cmd.Parameters.Add("@IdBadge", System.Data.SqlDbType.VarChar).Value = badge;
+                cmd.Parameters.Add("@IdRnum", System.Data.SqlDbType.VarChar).Value = nrcode;
+
+                    // open connection, execute query, close connection
+                    connection.Open();
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                    connection.Close();
+            }
+        
 
     }
 }

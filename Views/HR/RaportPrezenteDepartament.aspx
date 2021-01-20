@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes"/>
 
     <title>Analisi presenze</title>
+    <link rel="stylesheet" href="../../css/bootstrap/css/bootstrap.min.css" />
+
     <link href="~/css/Content/overflow.css" rel="stylesheet" type="text/css" />
     <link href="~/Css/StyleSheet.css" rel="stylesheet" type="text/css" />
     <link type="text/css" href="~/Css/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+
     <style type="text/css">
         .top-icons{
            cursor:pointer;
@@ -30,12 +33,30 @@
         td.rAntet{
             padding-left:0px; 
             padding-right:0px; 
+            
+            background-color: #c7c7c7;
+                letter-spacing: 0.5px;
+                    line-height: 25px;
+
         }
 
         td.rAntet span{
                 box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.33);
                 display: inline-block;
                 width: 100%;
+        }
+
+        td.rAntentSecund{
+                background-color: #f4f4f4;
+                    letter-spacing: 0.5px;
+        }
+
+        .peki > table{
+                box-shadow: 1px 1px 3px #949494;
+        }
+
+        td.rAntetSecund{
+            background-color:#c7c7c7;
         }
 
         td.rAntetSecundRosu{
@@ -47,20 +68,22 @@
             font: 9px/12px Arial, Helvetica, sans-serif;
             color: #ffffff;
             border: 1px solid #ffffff;
-            font-weight: 600;
+           /* font-weight: 600;
             text-align: left;
-             padding-left:5px;
+             padding-left:5px;*/
         }
 
         td.rAntetSecundAlb {
             background-color: #e2e2e2;
-            font: 10px/15px Arial, Helvetica, sans-serif;
+            /*font: 10px/15px Arial, Helvetica, sans-serif;*/
             /* color: #294460; */
             color: black;
             border: 1px solid #ffffff;
-            font-weight: 600;
+            /*font-weight: 600;*/
             text-align: left;
             padding-left:5px;
+            padding-right:5px;
+            font-weight:400;
         }
 
         #myTable .rAntet{
@@ -77,9 +100,63 @@
          cursor: -o-grab; 
          cursor: -moz-grab; 
          cursor: -webkit-grab;
-
     }
 
+        #tbFiltruDepartament{
+            width:auto!important;
+        }
+        .ui-datepicker-trigger{
+                position: relative;
+                top: 0px;
+                left: 4px;
+        }
+        .ui-datepicker-trigger:hover{
+            cursor:pointer;
+        }
+        input{
+                border: 1px solid #f4f4f4;
+                border-bottom: 1px solid black;
+             background: #f4f4f4;
+               pointer-events: none;
+
+        }
+        .continut{
+            margin-left:10px;
+            letter-spacing: 0.3px;
+                font-weight: 600;
+        }
+        .legend{
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            border-radius: 45px;
+            margin-bottom: 5px;
+            display: inline-block;
+
+        }
+
+        .legend-text{
+                font-size: 12px;
+                letter-spacing: 0.3px;
+                font-weight: 600;
+                position: relative;
+                
+                top: -3px;
+                left: 5px;
+
+        }
+
+        .red,.green,.silver,.rAntetSecundRosu,.{
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            border-radius: 45px;
+            color:none;
+        }
+
+        .tbl-first-row{
+            border-top:0px;
+        }
     </style>
 </head>
 <body>
@@ -102,37 +179,28 @@
                 <asp:ScriptReference Path="../../js/html2canvas.js" />
             </Scripts>
         </asp:ScriptManager>
-        <table cellpadding="0" cellspacing="0" style="width:97%">
-            <tr>
-                <td class="principal" colspan="2">
-                    <table width="100%">
-                        <tr>
-                           <td style="width: 200px;">
-                                <asp:HyperLink ID="hlPersonal" runat="server" CssClass="meniuMain" NavigateUrl="Statistica.aspx" Width="120px">&lt;Main&gt;</asp:HyperLink>
-                           </td>
-                           <td align="center">
-                                <asp:Label ID="lRaportPrezenteDepartament" runat="server" CssClass="principal" Text="Analisi presenze"></asp:Label>
-                           </td> 
-                            
+        <div class="container-fluid">
+        <div class="blog-header">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1  text-uppercase"> 
+            <h4 class="blog-header-logo text-dark">Analisi Presenze</h4>
 
-                           <td style="width: 350px;">
-                                <asp:UpdateProgress ID="up" runat="server">
-                                    <ProgressTemplate>
-                                        <img src="../../Images/Image/loading.gif" alt="Loading ..."/> Loading ...</ProgressTemplate>
-                                </asp:UpdateProgress>
-                           </td>
+          </div>
+          <div class="col-4 text-center">
+              <asp:UpdateProgress ID="up" runat="server">
+                <ProgressTemplate>
+                    <img src="../../Images/Image/loading.gif" alt="Loading ..."/> Loading ...</ProgressTemplate>
+            </asp:UpdateProgress>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+           <a class="top-iconss btn" onclick="printExcel();" href="#" >Excel</a>
+              <a class="top-iconss btn" onclick="printPDF();"  href="#">PDF</a>
+              <a class="top-iconss btn" onclick="printData();" href="#">Print</a>
+          </div>
+        </div>
+      </div>
 
-                             <td style="width: 50px;">
-                                <img class="top-icons" onclick="printExcel();" src="../../Images/icons/icon-excel.png" alt="Export to Excel" /></td>
-                            <td style="width: 50px;">
-                                <img class="top-icons" onclick="printPDF();" src="../../Images/icons/icon-pdf.png" alt="Export to PDF" /></td>
-                            <td style="width: 50px;">
-                                <img class="top-icons" onclick="printData();" src="../../Images/icons/icon-print.png" alt="Print" /></td>
-
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+        <table cellpadding="0" cellspacing="0" style="width:100%">
             <tr>
                 <td valign="middle" align="center" style="height:50px;" colspan="2">
                     <table cellpadding="0" cellspacing="0" class="principal">
@@ -172,7 +240,7 @@
                 </td>
             </tr>
             </table>
-        <table id="tblPrezenze" aling="center">
+        <table id="tblPrezenze" >
 
             <tr>
                 <td style="width: 475px" align="center">
@@ -184,29 +252,17 @@
                         </tr>
                       
                     </table>
-                   
-                    <%-- <table> <tr><td style="text-decoration:underline;">Legend:</td></tr></table>
-                    <table>
-                        <tr>
-                            <td class="rAntetSecundRosu"></td><td><span id="idassenti"></span> = Assenti</td>
-                        </tr>
-                        <tr style="display:none;">
-                            <td class="rAntetSecundGalben"></td><td><span runat="server" id="idmaternita"></span> = Maternita</td>
-                        </tr>
-                            <tr>
-                            <td style="background-color: forestgreen;"></td><td><span id="idferie"></span> = Ferie</td>
-                        </tr>
-                    </table>--%>
+
                 </td>
                 <td valign="top">
                     <table>
                         <tr>
-                            <td class="rAntetSecundRosu"></td>
-                            <td><span id="idassenti"></span> = Assenti</td>
+                            <td class="legend" style="background-color: red;"></td>
+                            <td class="legend-text"><span id="idassenti"></span>  ASSENTI</td>
                         </tr>
                         <tr>
-                            <td style="background-color: forestgreen;"></td>
-                            <td><span id="idferie"></span> = Ferie</td>
+                            <td class="legend" style="background-color: forestgreen;"></td>
+                            <td class="legend-text"><span id="idferie"></span>  FERIE</td>
                         </tr>
                     </table>
                 </td>
@@ -236,7 +292,7 @@
             </tr>
             
         </table>
-
+        </div>
         <script type="text/javascript">
             $(document).ajaxComplete(function () {
                 console.log('ovde ajaxComplete');
