@@ -16,6 +16,14 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
         dtt = GetData();
         DataGrid1.DataSource = dtt;
         DataGrid1.DataBind();
+        for (int i = 0; i <= DataGrid1.Rows.Count - 1; i++)
+        {
+            var x = DataGrid1.Rows[i];
+            //    x.Cells[0].Attributes.Add("style", "position:absolute; * position: relative; /*ie7*/ left: 0; width: 180px");
+            //    x.Cells[1].Attributes.Add("style", " position:absolute; * position: relative; /*ie7*/  left: 100px; width: 100px; ");
+            //}
+        }
+        
     }
 
     public string FindString(string month, string param)
@@ -180,6 +188,7 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
 
             }
 
+           
         }
 
 

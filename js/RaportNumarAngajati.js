@@ -84,13 +84,14 @@ function printData() {
 }
 
 
+
 function printPDF() {
     var pdf = new jsPDF('l', 'pt', [600, 1354]);
         //var pdf = new jsPDF('l', 'mm', [297, 210]);
 
     $("#printing-holder").append("<div id='printingDiv' style='background-color: white;width:1350px;'><h2 style='margin-left:20px;margin-top:5px'>ORGANICO GENERALE MENSILE - Anno: " + $('#ddlFiltruAn').val() +"</h2></div>");
     $('#tRaportNumarAngajati').clone().appendTo("#printingDiv");
-    $("#printingDiv").append('<h3>    di qui MATERNITA REPORT:</h3>');
+    $("#printingDiv").append('<h3 style="margin-top:0px;margin-bottom:0px;">    di qui MATERNITA REPORT:</h3>');
 
     $('#tRaportNumarAngajatiMaternita').clone().appendTo("#printingDiv");
     $("#printingDiv").append('<br/>');
@@ -101,6 +102,7 @@ function printPDF() {
         $("#printingDiv").remove();
     });
 }
+
 
 function SucceededCallback(result, userContext, methodName) {
     $get('up').style.display = 'none';

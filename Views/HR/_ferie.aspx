@@ -74,6 +74,26 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <table cellpadding="0" cellspacing="0" class="principal" style="width:100%;">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Label ID="lFiltruAn" runat="server" CssClass="continut" Text="ANNO"></asp:Label>
+                                        </td>
+                                        <td>
+                                            <asp:DropDownList ID="ddlFiltruAn" runat="server" OnSelectedIndexChanged="ddlFiltruAn_SelectedIndexChanged" AutoPostBack="true">
+                                                <asp:ListItem>2021</asp:ListItem>
+                                                <asp:ListItem>2020</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </td>                                        
+                                    
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -82,8 +102,6 @@
                 </div>
             </div>
         </div>
-
-
          <script type="text/javascript">  
              $(function () {
                  $(".grd tbody").before("<thead><tr></tr></thead>");

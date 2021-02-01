@@ -100,6 +100,8 @@
         .rSecund {
             text-transform: uppercase !important;
         }
+
+      
     </style>
 
 </head>
@@ -140,7 +142,7 @@
                             <td style="width: 50px;">
                                 <img class="top-icons" onclick="$('#bExcel').click();" src="../../Images/icons/icon-excel.png" alt="Export to Excel" /></td>
                             <td style="width: 50px;">
-                                <img class="top-icons" onclick="printPDF();" src="../../Images/icons/icon-pdf.png" alt="Export to PDF" /></td>
+                                <img class="top-icons" onclick="printPDF();"  src="../../Images/icons/icon-pdf.png" alt="Export to PDF" /></td>
                             <td style="width: 50px;">
                                 <img class="top-icons" onclick="printData();" src="../../Images/icons/icon-print.png" alt="Print" /></td>
 
@@ -315,6 +317,9 @@
             </tr>
         </table>
   <script type="text/javascript">
+
+      
+
       $(document).ready(function () {
           $("#ddlFiltruAn").change(function () {
               setTimeout(function () {

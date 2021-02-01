@@ -26,7 +26,6 @@
             var PostDelucruWidth = $("#DataGrid1  tr:first").find("th").eq(1).width();
             var total = (DepartamentWidth + PostDelucruWidth) * 1.08;
             $('#orelav').attr('style', 'min-width:' + total + 'px');
-
             var thead = 55 * 3;
             $('.td_cell').attr('style', 'min-width:' + thead + 'px');
 
@@ -321,6 +320,8 @@
 
         });
 
+        
+
        function printExcel() {
  
     var tab_text = "<html><head><style type='text/css'></style></head><table border='1px'><h3 style='padding-left:10px'>Ore Lavorate</h3><tr class='tHeader'><td colspan='2' id='orelav'  > </td><td colspan='3' class='td_cell'>Gennaio</td><td colspan='3' class='td_cell'>Febbraio</td><td colspan='3' class='td_cell'>Marzo</td><td colspan='3' class='td_cell'>Aprile</td><td colspan='3' class='td_cell'>Maggio</td><td colspan='3' class='td_cell'>Giugno</td><td colspan='3' class='td_cell'>Luglio</td><td colspan='3' class='td_cell'>Agosto</td><td colspan='3' class='td_cell'>Settembre</td><td colspan='3' class='td_cell'>Ottobre</td><td colspan='3' class='td_cell'>Novembre</td><td colspan='3' class='td_cell'>Dicembre</td></tr><tr border='1px'>";
@@ -403,6 +404,8 @@
             cursor: -moz-grab; 
             cursor: -webkit-grab; 
         }
+        
+        
     </style>
 </head>
 <body>
@@ -427,7 +430,7 @@
         <div class="dragscroll" id="scroll">
             <table style="width:100%">
                 <tr class="tHeader">
-                    <td colspan="3" id="orelav"  > </td>
+                    <td colspan="3" id="orelav" style="width:300px; "> </td>
                     <td colspan="3" class="td_cell">Gennaio</td>
                     <td colspan="3" class="td_cell">Febbraio</td>
                     <td colspan="3" class="td_cell">Marzo</td>

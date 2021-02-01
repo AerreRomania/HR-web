@@ -11,6 +11,8 @@ using System.Web.UI.WebControls;
 public partial class Views_HR_ferie : System.Web.UI.Page
 {
     _MainClass helper = new _MainClass();
+
+    string yearSelected = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!this.IsPostBack)
@@ -178,5 +180,11 @@ public partial class Views_HR_ferie : System.Web.UI.Page
         {
             //e.Row.Cells[20].Attributes.Add("style", "color: #922cd2;");
         }
+    }
+
+    protected void ddlFiltruAn_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        yearSelected = ddlFiltruAn.SelectedValue.ToString();
+        this.BindGrid();
     }
 }
