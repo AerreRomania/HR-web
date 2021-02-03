@@ -118,9 +118,23 @@
                  <div class="container-fluid">
                     <div class="row header">
                         <h4 id="total"></h4>
-                  
+                   <table cellpadding="0" cellspacing="0" class="principal" style="width:140px; margin-left:160px;margin-bottom:-80px; z-index:1;">
+                    
+                                    <tr>
+                                        <td>
+                                            <asp:Label ID="lFiltruAn" runat="server" CssClass="continut" Text="ANNO"></asp:Label>
+                                        </td>
+                                        <td style="padding:0px">
+                                            <asp:DropDownList ID="ddlFiltruAn" runat="server" OnSelectedIndexChanged="ddlFiltruAn_SelectedIndexChanged" AutoPostBack="true">
+                                                <asp:ListItem>2021</asp:ListItem>
+                                                <asp:ListItem>2020</asp:ListItem>
+                                            </asp:DropDownList>
+                                        </td>                                        
+                                    
+                                    </tr>
+                                </table>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-top:-10px;">
                         <div class="col-12">
                             <asp:GridView runat="server" ID="GridView" CssClass="grd stripe dataTable"   HeaderStyle-CssClass="header" Width="100%">
                             </asp:GridView>

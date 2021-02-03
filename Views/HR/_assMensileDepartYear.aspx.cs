@@ -36,8 +36,8 @@ public partial class Views_HR_assMensileDepartYear : System.Web.UI.Page
             "dbo.Departamente.Departament FROM dbo.Prezente INNER JOIN dbo.AngajatiViewLastMonth ON dbo.Prezente.IdAngajat = dbo.AngajatiViewLastMonth.CodAngajat " +
             "INNER JOIN dbo.TipuriOre ON dbo.Prezente.IdTipOra = dbo.TipuriOre.Id INNER JOIN dbo.Departamente ON dbo.Prezente.IdDepartament = dbo.Departamente.Id " +
             "INNER JOIN dbo.Linii ON dbo.Prezente.IdLinie = dbo.Linii.Id INNER JOIN dbo.PosturiDeLucru ON dbo.Prezente.IdPostDeLucru = dbo.PosturiDeLucru.Id " +
-            "WHERE (dbo.TipuriOre.Categorie = 'Malatia') AND (YEAR(dbo.Prezente.Data) = '2020') AND dbo.Departamente.Departament='" + Departament + "' AND dbo.Prezente.R1TOT > 0 " +
-            "OR (dbo.TipuriOre.Categorie = 'Infortuni') AND (YEAR(dbo.Prezente.Data) = '2020') AND dbo.Departamente.Departament='" + Departament + "' AND dbo.Prezente.R1TOT > 0" +
+            "WHERE (dbo.TipuriOre.Categorie = 'Malatia') AND (YEAR(dbo.Prezente.Data) = '"+ddlFiltruAn.SelectedValue+"') AND dbo.Departamente.Departament='" + Departament + "' AND dbo.Prezente.R1TOT > 0 " +
+            "OR (dbo.TipuriOre.Categorie = 'Infortuni') AND (YEAR(dbo.Prezente.Data) = '" + ddlFiltruAn.SelectedValue + "') AND dbo.Departamente.Departament='" + Departament + "' AND dbo.Prezente.R1TOT > 0" +
             "GROUP BY dbo.AngajatiViewLastMonth.Marca, MONTH(dbo.Prezente.Data), YEAR(dbo.Prezente.Data), dbo.Departamente.Departament", "WbmOlimpiasConnectionString");
         DataTable dt = helper.PkSelect("SELECT [Marca] as [R-CODE], CONCAT([Prenume],' ',[Nume]) as [NOMINATIVO], [PostDeLucru] as [MANSIONE]," +
             "CONVERT(VARCHAR(10), [DataNasterii], 103) as [DATA ASS.], [Departament] as [REPARTO], [Linie] as [LINE] FROM [AngajatiViewLastMonth] WHERE [Departament]= '" + Departament+"'", "WbmOlimpiasConnectionString");
@@ -49,7 +49,7 @@ public partial class Views_HR_assMensileDepartYear : System.Web.UI.Page
 
         for (int i = 1; i <= 12; i++)
         {
-            dt.Columns.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(0, 3) + "-" + DateTime.Now.Year % 100, typeof(string));
+            dt.Columns.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(0, 3) + "-" + int.Parse(ddlFiltruAn.SelectedValue) % 100, typeof(string));
         }
         dt.Columns.Add("Total", typeof(string));
         dt.Columns.Add("Days", typeof(string));
@@ -134,5 +134,10 @@ public partial class Views_HR_assMensileDepartYear : System.Web.UI.Page
         GridView.DataBind();
 
 
+    }
+
+    protected void ddlFiltruAn_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        BindGrid(Request.QueryString["Departament"]);
     }
 }
