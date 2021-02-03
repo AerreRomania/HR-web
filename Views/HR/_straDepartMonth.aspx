@@ -261,9 +261,9 @@
                                                  //alert('HELLO!');
                                                  //$('.tot').remove();
                                              },
-                                             title: 'Assenteismo Departament', 
+                                             title: 'Straordinario Departament', 
                                              extension: '.xlsx',
-                                             filename: 'Assenteismo Departament - ' + getUrlParameter('Departament') +'',
+                                             filename: 'Straordinario Departament - ' + getUrlParameter('Departament') +'',
 
                                          }
                                      ], 

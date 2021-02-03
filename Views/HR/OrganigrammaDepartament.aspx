@@ -114,7 +114,7 @@
                             </telerik:GridBoundColumn>
                             <telerik:GridBoundColumn DataField="Cognome" AllowSorting="true" AllowFiltering="false" FilterControlAltText="Filter Prenume column" HeaderText="Cognome:" SortExpression="Cognome" UniqueName="Cognome">
                             </telerik:GridBoundColumn>
-                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" FilterControlAltText="Filter Data Nascita column" HeaderText="Data Nascita:" SortExpression="Data Nascita" UniqueName="DataNascita">
+                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" FilterControlAltText="Filter Data Nascita column" HeaderText="Data di Assunzione:" SortExpression="Data Nascita" UniqueName="DataNascita">
                             </telerik:GridBoundColumn>
 
 

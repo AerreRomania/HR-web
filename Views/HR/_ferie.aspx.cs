@@ -182,9 +182,9 @@ public partial class Views_HR_ferie : System.Web.UI.Page
         }
     }
 
-    protected void ddlFiltruAn_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        yearSelected = ddlFiltruAn.SelectedValue.ToString();
-        this.BindGrid();
-    }
+    //protected void ddlFiltruAn_SelectedIndexChanged(object sender, EventArgs e)
+    //{
+    //    yearSelected = ddlFiltruAn.SelectedValue.ToString();
+    //    this.BindGrid();
+    //}
 }

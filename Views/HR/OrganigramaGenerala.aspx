@@ -39,7 +39,7 @@
             float: right;
             right: 20px;
             position: fixed;
-            top: 65px;
+            top: 50px;
             font-weight: 800;
             font-size: 11pt;
             cursor: pointer;
@@ -258,7 +258,7 @@
                             <telerik:GridBoundColumn DataField="Cognome" AllowSorting="true" HeaderStyle-Width="150px" AllowFiltering="false" FilterControlAltText="Filter Prenume column" HeaderText="Cognome:" SortExpression="Cognome" UniqueName="Cognome">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" HeaderStyle-Width="100px" FilterControlAltText="Filter Data Nascita column" HeaderText="Data Nascita:" SortExpression="Data Nascita" UniqueName="DataNascita">
+                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" HeaderStyle-Width="100px" FilterControlAltText="Filter Data Nascita column" HeaderText="Data di Assunzione:" SortExpression="Data Nascita" UniqueName="DataNascita">
                             </telerik:GridBoundColumn>
 
                             <telerik:GridBoundColumn DataField="Mansione" HeaderStyle-Width="150px" ItemStyle-CssClass="MansioneClass"
