@@ -11,8 +11,6 @@ using System.Web.UI.WebControls;
 public partial class Views_HR_ferie : System.Web.UI.Page
 {
     _MainClass helper = new _MainClass();
-
-    string yearSelected = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!this.IsPostBack)
@@ -25,7 +23,11 @@ public partial class Views_HR_ferie : System.Web.UI.Page
     private void BindGrid()
     {
         string month = DateTime.Now.Month.ToString();
-        DataTable dtFerie = helper.PkSelect("SELECT [Marca] as [R-CODE], [Month],[Year],[Sum] FROM [AngajatiFerieDays]", "WbmOlimpiasConnectionString");
+        DataTable dtFerie = helper.PkSelect("SELECT AngajatiViewLastMonth.Marca, MONTH(OreFerieView.Data) AS Month," +
+            " YEAR(OreFerieView.Data) AS Year, SUM(OreFerieView.Ore) / 8 AS Sum FROM  AngajatiViewLastMonth INNER JOIN  " +
+            "OreFerieView ON AngajatiViewLastMonth.CodAngajat = OreFerieView.IdAngajat " +
+            "WHERE (OreFerieView.Ore > 1) AND (YEAR(OreFerieView.Data) = '"+ddlFiltruAn.SelectedValue+"') GROUP BY MONTH(OreFerieView.Data), " +
+            "YEAR(OreFerieView.Data), AngajatiViewLastMonth.Marca", "WbmOlimpiasConnectionString");
         DataTable dt = helper.PkSelect("SELECT [Marca] as [R-CODE], CONCAT([Prenume],' ',[Nume]) as [NOMINATIVO], [PostDeLucru] as [MANSIONE]," +
             "CONVERT(VARCHAR(10), [DataNasterii], 103) as [DATA ASS.], [Departament] as [REPARTO], [Linie] as [LINE] FROM [AngajatiViewLastMonth]", "WbmOlimpiasConnectionString");
         DataTable dtLastY = helper.PkSelect("SELECT * FROM FerieTotYY", "WbmOlimpiasConnectionString");
@@ -36,18 +38,18 @@ public partial class Views_HR_ferie : System.Web.UI.Page
         dt.Columns.AddRange(new DataColumn[] 
         { 
           new DataColumn("SIT. FINE " + lastY,typeof(string)),
-          new DataColumn("MATT. " + DateTime.Now.Year % 100,typeof(string))
+          new DataColumn("MATT. " + int.Parse(ddlFiltruAn.SelectedValue) % 100,typeof(string))
         });
 
         for (int i = 1; i <= 12; i++)
         {
-            dt.Columns.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(0,3) + "-" + DateTime.Now.Year % 100, typeof(string));
+            dt.Columns.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(0,3) + "-" + int.Parse(ddlFiltruAn.SelectedValue) % 100, typeof(string));
         }
-            dt.Columns.Add("RESIDUO " + DateTime.Now.Year % 100, typeof(string));
+            dt.Columns.Add("RESIDUO " + int.Parse(ddlFiltruAn.SelectedValue) % 100, typeof(string));
 
-        var mattcol = dt.Columns["MATT. " + DateTime.Now.Year % 100];
+        var mattcol = dt.Columns["MATT. " + int.Parse(ddlFiltruAn.SelectedValue) % 100];
         var sitcol = dt.Columns["SIT. FINE " + lastY];
-        var total = dt.Columns["RESIDUO " + DateTime.Now.Year % 100];
+        var total = dt.Columns["RESIDUO " + int.Parse(ddlFiltruAn.SelectedValue) % 100];
 
         foreach (DataRow dtRow in dt.Rows)
         {
@@ -58,7 +60,7 @@ public partial class Views_HR_ferie : System.Web.UI.Page
             int lastMonth = Convert.ToInt32(sMonth);
             int vMonth = 0;
 
-            if (oDate.Year == DateTime.Now.Year )
+            if (oDate.Year == int.Parse(ddlFiltruAn.SelectedValue))
             {
                 //if (oDate.Day > 1 && lastMonth >= oDate.Month) {
                 //    dtRow[mattcol] = 0;
@@ -182,9 +184,9 @@ public partial class Views_HR_ferie : System.Web.UI.Page
         }
     }
 
-    //protected void ddlFiltruAn_SelectedIndexChanged(object sender, EventArgs e)
-    //{
-    //    yearSelected = ddlFiltruAn.SelectedValue.ToString();
-    //    this.BindGrid();
-    //}
+    protected void ddlFiltruAn_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        
+        this.BindGrid();
+    }
 }

@@ -73,17 +73,18 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" style="margin-top:10px;">
+       
         <div class="row header">
               <h4 id="total"></h4>
-            </div>
-        <%--<table cellpadding="0" cellspacing="0" class="principal" style="width:140px;">
+            
+        <table cellpadding="0" cellspacing="0" class="principal" style="width:120px; margin-left:195px;margin-bottom:-30px; z-index:1;">
                     
                                     <tr>
-                                        <td style="padding:0px,12px,0px,0px">
+                                        <td style="padding-right:0px;">
                                             <asp:Label ID="lFiltruAn" runat="server" CssClass="continut" Text="ANNO"></asp:Label>
                                         </td>
-                                        <td style="padding:0px">
+                                        <td style="padding:0px;width:56px;">
                                             <asp:DropDownList ID="ddlFiltruAn" runat="server" OnSelectedIndexChanged="ddlFiltruAn_SelectedIndexChanged" AutoPostBack="true">
                                                 <asp:ListItem>2021</asp:ListItem>
                                                 <asp:ListItem>2020</asp:ListItem>
@@ -91,8 +92,9 @@
                                         </td>                                        
                                     
                                     </tr>
-                                </table>--%>
-        <div class="container-fluid">
+                                </table>
+        </div>
+        <div class="container-fluid" style="margin-top:-8px;" >
             <div class="row">
                 <div class="col-12">
                     <asp:GridView runat="server" ID="GridView" CssClass="grd stripe hover" OnRowDataBound="GridView_RowDataBound"  HeaderStyle-CssClass="header" Width="100%">
