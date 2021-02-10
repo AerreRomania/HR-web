@@ -11,24 +11,34 @@
     <script src="../../js/jspdf.min.js"></script>
     <script src="../../js/html2canvas.js"></script>
     
-    
     <script src="../../js/jquery.maskedinput-1.3.js" ></script>
     <script src="../../js/draggablescroll.js" ></script>
     <title></title>
     
     <script type="text/javascript">
-        $(function() {
+
+        
+        $(function () {
             $("#DataGrid1  tr:first").find("th").addClass("tHeader");
+
+            $("#DataGrid2  tr:first").find("th").addClass("tHeader");
+
             $("#DataGrid1  tr").eq(1).find("th").addClass("tTotal");
+
+            $("#DataGrid2  tr").eq(1).find("th").addClass("tTotal");
+
             $("#DataGrid1  tr").find("th").eq(0).css('min-width', '20px!important');
+
+            $("#DataGrid2  tr").find("th").eq(0).css('min-width', '20px!important');
+
+           
 
             var DepartamentWidth = $("#DataGrid1  tr:first").find("th").eq(0).width();
             var PostDelucruWidth = $("#DataGrid1  tr:first").find("th").eq(1).width();
-            var total = (DepartamentWidth + PostDelucruWidth) * 1.08;
+            var total = (DepartamentWidth + PostDelucruWidth) * 1.07;
             $('#orelav').attr('style', 'min-width:' + total + 'px');
             var thead = 55 * 3;
             $('.td_cell').attr('style', 'min-width:' + thead + 'px');
-
 
             $("#DataGrid1  tr:first").find("th").eq(2).text("Ord.");
             $("#DataGrid1  tr:first").find("th").eq(3).text("Stra.");
@@ -78,6 +88,10 @@
             $("#DataGrid1  tr:first").find("th").eq(36).text("Stra.");
             $("#DataGrid1  tr:first").find("th").eq(37).text("Tot.");
 
+            //$('#DataGrid1 > tbody > tr').each(function () {
+            //    $(this).find("td").eq(0).css('position', 'absolute');
+            //    $(this).find("td").eq(1).css('position', 'absolute');
+            //});
 
             $('#DataGrid1 > tbody  > tr').each(function() {
                 //Color Td -> START
@@ -106,6 +120,7 @@
                 $(this).find("td").eq(34).css('background', '#dadada');
                 //Color Td -> END
 
+                
                 //Sum Main Totals -> START 4,10,16,22,28,34
                 //JAN
                 $("#DataGrid1  tr").eq(1).find('td').eq(4)
@@ -313,8 +328,11 @@
             });
 
             $('#DataGrid1 tr').eq(1).css('font-weight', '600');
- 
+            $('#DataGrid2 tr').eq(1).css('font-weight', '600');
             $('#DataGrid1 td').each(function() {
+                $(this).text().replace(/\,/g, '.');
+            });
+            $('#DataGrid2 td').each(function () {
                 $(this).text().replace(/\,/g, '.');
             });
 
@@ -364,48 +382,68 @@
         copyTagClasses: true,
         loadCSS: "Css/Absente-Giornaliero-Print.css"
     }); 
-}
+        }
+        
+
     </script>
     
     <link rel="stylesheet" type="text/css" href="../../css/AssenteismoMensilePerReparto.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap-3.4.1.min.css"/>
     <style type="text/css">
+        table {
+            border-style:none;
+        }
         .top-icons:hover{
             cursor:pointer;
         }
         .tHeader {
             min-width:55px;
-            width:55px;
         }
         .tDepartament {
             min-width:180px;
             font-weight:600;
         }
         .tPostDeLucru {
-            min-width:200px;
+            min-width:210px
+        }
+        .tPostDeLucru1 {
+            min-width:208px
         }
         .td_cell { 
             text-align:center;
             border-right:1px solid white;
-            border-left:1px solid white;
+            border-left:2px solid white;
+            
         }
 
         .totAmmin, .totConfa, .totConfb, .totStiro, .totTess {
             border-top: 5px solid white;
             font-weight:600;
         }
-
-        #scroll {
+        
+        #DataGrid2
+        {
+            position:absolute;
+            top: 82px;
+            left: 0px;
+        }
+        #DataGrid2 td {
+            font-size: 10pt;
+            border: 1px solid white !important;
+            background: #e8e8e8;
+            padding-left: 3px;
+            padding-right: 5px;
+        }
+       
+       #scroll {
             display: block;
-            overflow-x: auto;
+            overflow-x: scroll;
             white-space: nowrap; 
             cursor: grab; 
             cursor: -o-grab; 
             cursor: -moz-grab; 
             cursor: -webkit-grab; 
         }
-        
-        
     </style>
 </head>
 <body>
@@ -427,10 +465,10 @@
             </div>
         </div>
 
-        <div class="dragscroll" id="scroll">
-            <table style="width:100%">
+        <div class="dragscroll" id="scroll"  >
+            <table style="width:100%" runat="server">
                 <tr class="tHeader">
-                    <td colspan="3" id="orelav" style="width:300px; "> </td>
+                    <td colspan="3" id="orelav"></td>
                     <td colspan="3" class="td_cell">Gennaio</td>
                     <td colspan="3" class="td_cell">Febbraio</td>
                     <td colspan="3" class="td_cell">Marzo</td>
@@ -442,11 +480,12 @@
                     <td colspan="3" class="td_cell">Settembre</td>
                     <td colspan="3" class="td_cell">Ottobre</td>
                     <td colspan="3" class="td_cell">Novembre</td>
-
                     <td colspan="3" class="td_cell">Dicembre</td>
                 </tr>
             </table>
-            <asp:GridView runat="server"  ID="DataGrid1" OnRowDataBound="DataGrid1_RowDataBound"  ></asp:GridView>
+            
+            <asp:GridView runat="server" ID="DataGrid1" OnRowDataBound="DataGrid1_RowDataBound" ></asp:GridView>
+            <asp:GridView runat="server" ID="DataGrid2" OnRowDataBound="DataGrid2_RowDataBound"></asp:GridView>
         </div>
         </div>
          

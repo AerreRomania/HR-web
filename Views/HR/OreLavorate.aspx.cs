@@ -14,16 +14,12 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
     {
         DataTable dtt = new DataTable();
         dtt = GetData();
+        DataTable cpydt = new DataTable();
+        cpydt = CopyTable(dtt);
         DataGrid1.DataSource = dtt;
         DataGrid1.DataBind();
-        for (int i = 0; i <= DataGrid1.Rows.Count - 1; i++)
-        {
-            var x = DataGrid1.Rows[i];
-            //    x.Cells[0].Attributes.Add("style", "position:absolute; * position: relative; /*ie7*/ left: 0; width: 180px");
-            //    x.Cells[1].Attributes.Add("style", " position:absolute; * position: relative; /*ie7*/  left: 100px; width: 100px; ");
-            //}
-        }
-        
+        DataGrid2.DataSource = cpydt;
+        DataGrid2.DataBind();
     }
 
     public string FindString(string month, string param)
@@ -36,8 +32,25 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
 
     DataTable dt = new DataTable();
     DataTable sqlTbl = new DataTable();
+   
 
-
+    public DataTable CopyTable(DataTable dt)
+    {
+        
+        DataTable finalcopy = new DataTable();
+        finalcopy.Columns.Add("Reparto:");
+        finalcopy.Columns.Add("Mansione:");
+        DataRow newrow = finalcopy.NewRow();
+        for (int i=0;i<dt.Rows.Count;i++)
+        {
+            newrow = finalcopy.NewRow();
+            var x = dt.Rows[i];
+            newrow[0] = x[0];
+            newrow[1] = x[1];
+            finalcopy.Rows.Add(newrow);
+        }
+        return finalcopy;
+    }
     public DataTable GetData()
     { 
         using (var conn = new SqlConnection(System.Configuration.ConfigurationManager
@@ -55,7 +68,7 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
 
         dt.Columns.Add("Reparto:");
         dt.Columns.Add("Mansione:");
- 
+
 
         for (var i = 1; i <= 12; i++)
         {
@@ -151,17 +164,13 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
     }
 
 
-
-
- 
-
     protected void DataGrid1_RowDataBound(object sender, GridViewRowEventArgs e)
     {
         if (e.Row.RowType == DataControlRowType.DataRow)
         {
             e.Row.Cells[0].CssClass = "tDepartament"; 
             e.Row.Cells[1].CssClass = "tPostDeLucru";
-
+            
             if (e.Row.Cells[0].Text == "AMMINISTRAZIONE ")
             {
                 e.Row.CssClass = "totAmmin";
@@ -187,10 +196,45 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
                 e.Row.CssClass = "totTess";
 
             }
-
-           
         }
 
+        
 
+    }
+
+    protected void DataGrid2_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        if (e.Row.RowType == DataControlRowType.DataRow)
+        {
+            e.Row.Cells[0].CssClass = "tDepartament";
+            e.Row.Cells[1].CssClass = "tPostDeLucru1";
+
+            if (e.Row.Cells[0].Text == "AMMINISTRAZIONE ")
+            {
+                e.Row.CssClass = "totAmmin";
+
+
+            }
+            else if (e.Row.Cells[0].Text == "CONFEZIONE A")
+            {
+                e.Row.CssClass = "totConfa";
+
+            }
+            else if (e.Row.Cells[0].Text == "CONFEZIONE B")
+            {
+                e.Row.CssClass = "totConfb";
+
+            }
+            else if (e.Row.Cells[0].Text == "STIRO")
+            {
+                e.Row.CssClass = "totStiro";
+
+            }
+            else if (e.Row.Cells[0].Text == "TESSITURA  ")
+            {
+                e.Row.CssClass = "totTess";
+
+            }
+        }
     }
 }
