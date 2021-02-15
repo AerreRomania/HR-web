@@ -12,15 +12,15 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        DataTable dtt = new DataTable();
-        dtt = GetData();
-        DataTable cpydt = new DataTable();
-        cpydt = CopyTable(dtt);
-        DataGrid1.DataSource = dtt;
-        DataGrid1.DataBind();
-        DataGrid2.DataSource = cpydt;
-        DataGrid2.DataBind();
+
+        if (!this.IsPostBack)
+        {
+
+        }
+        GetData();
     }
+
+    
 
     public string FindString(string month, string param)
     {
@@ -30,11 +30,11 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
     }
 
 
-    DataTable dt = new DataTable();
+   // DataTable dt = new DataTable();
     DataTable sqlTbl = new DataTable();
    
 
-    public DataTable CopyTable(DataTable dt)
+    public void CopyTable(DataTable dt)
     {
         
         DataTable finalcopy = new DataTable();
@@ -49,15 +49,17 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
             newrow[1] = x[1];
             finalcopy.Rows.Add(newrow);
         }
-        return finalcopy;
+        DataGrid2.DataSource = finalcopy;
+        DataGrid2.DataBind();
     }
-    public DataTable GetData()
-    { 
+    public void GetData()
+    {
+        DataTable dt = new DataTable();
         using (var conn = new SqlConnection(System.Configuration.ConfigurationManager
             .ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
         { 
             var cmd = new SqlCommand(
-                "SELECT dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru, SUM(dbo.Prezente.R1TOT) AS Ore, dbo.TipuriOre.Categorie, DATEPART(YEAR, dbo.Prezente.Data) AS Yyear, DATEPART(MONTH, dbo.Prezente.Data) AS Mmonth FROM dbo.Departamente INNER JOIN dbo.Prezente ON dbo.Departamente.Id = dbo.Prezente.IdDepartament INNER JOIN dbo.PosturiDeLucru ON dbo.Prezente.IdPostDeLucru = dbo.PosturiDeLucru.Id INNER JOIN dbo.TipuriOre ON dbo.Prezente.IdTipOra = dbo.TipuriOre.Id WHERE (dbo.TipuriOre.Categorie = 'Ore straordinarie') AND  DATEPART(YEAR, dbo.Prezente.Data)='2020' OR (dbo.TipuriOre.Categorie = 'Ore lavorate') AND  DATEPART(YEAR, dbo.Prezente.Data)='2020' GROUP BY  dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru,dbo.TipuriOre.Categorie, DATEPART(YEAR, dbo.Prezente.Data), DATEPART(MONTH, dbo.Prezente.Data)  ORDER BY dbo.Departamente.Departament,PosturiDeLucru.postdelucru, TipuriOre.Categorie", conn);
+                "SELECT dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru, SUM(dbo.Prezente.R1TOT) AS Ore, dbo.TipuriOre.Categorie, DATEPART(YEAR, dbo.Prezente.Data) AS Yyear, DATEPART(MONTH, dbo.Prezente.Data) AS Mmonth FROM dbo.Departamente INNER JOIN dbo.Prezente ON dbo.Departamente.Id = dbo.Prezente.IdDepartament INNER JOIN dbo.PosturiDeLucru ON dbo.Prezente.IdPostDeLucru = dbo.PosturiDeLucru.Id INNER JOIN dbo.TipuriOre ON dbo.Prezente.IdTipOra = dbo.TipuriOre.Id WHERE (dbo.TipuriOre.Categorie = 'Ore straordinarie') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' OR (dbo.TipuriOre.Categorie = 'Ore lavorate') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' GROUP BY  dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru,dbo.TipuriOre.Categorie, DATEPART(YEAR, dbo.Prezente.Data), DATEPART(MONTH, dbo.Prezente.Data)  ORDER BY dbo.Departamente.Departament,PosturiDeLucru.postdelucru, TipuriOre.Categorie", conn);
 
             conn.Open();
             var dr = cmd.ExecuteReader();
@@ -160,7 +162,9 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
         //totSubRow[0] = "TOTAL " + lastDepart;
         //dt.Rows.Add(totSubRow);
 
-        return dt;
+        DataGrid1.DataSource=dt;
+        DataGrid1.DataBind();
+        CopyTable(dt);
     }
 
 
@@ -236,5 +240,10 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
 
             }
         }
+    }
+
+    protected void ddlFiltruAn_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        GetData();
     }
 }

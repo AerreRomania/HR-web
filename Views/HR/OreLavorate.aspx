@@ -36,8 +36,9 @@
             var DepartamentWidth = $("#DataGrid1  tr:first").find("th").eq(0).width();
             var PostDelucruWidth = $("#DataGrid1  tr:first").find("th").eq(1).width();
             var total = (DepartamentWidth + PostDelucruWidth) * 1.07;
-            $('#orelav').attr('style', 'min-width:' + total + 'px');
-            var thead = 55 * 3;
+            $('#orelav').attr('style', 'min-width:' + total + 'px;height:28px;');
+
+            var thead = 58*3;
             $('.td_cell').attr('style', 'min-width:' + thead + 'px');
 
             $("#DataGrid1  tr:first").find("th").eq(2).text("Ord.");
@@ -88,6 +89,7 @@
             $("#DataGrid1  tr:first").find("th").eq(36).text("Stra.");
             $("#DataGrid1  tr:first").find("th").eq(37).text("Tot.");
 
+           
             //$('#DataGrid1 > tbody > tr').each(function () {
             //    $(this).find("td").eq(0).css('position', 'absolute');
             //    $(this).find("td").eq(1).css('position', 'absolute');
@@ -335,7 +337,7 @@
             $('#DataGrid2 td').each(function () {
                 $(this).text().replace(/\,/g, '.');
             });
-
+          
         });
 
         
@@ -384,7 +386,7 @@
     }); 
         }
         
-
+        
     </script>
     
     <link rel="stylesheet" type="text/css" href="../../css/AssenteismoMensilePerReparto.css"/>
@@ -397,7 +399,9 @@
             cursor:pointer;
         }
         .tHeader {
-            min-width:55px;
+          min-width:58px;
+          max-width:58px;
+          text-align:center;
         }
         .tDepartament {
             min-width:180px;
@@ -407,12 +411,12 @@
             min-width:210px
         }
         .tPostDeLucru1 {
-            min-width:208px
+            min-width:210px
         }
         .td_cell { 
             text-align:center;
             border-right:1px solid white;
-            border-left:2px solid white;
+            border-left:3px solid white;
             
         }
 
@@ -424,17 +428,35 @@
         #DataGrid2
         {
             position:absolute;
-            top: 82px;
-            left: 0px;
+            top: 85px;
+            left: -1px;
         }
         #DataGrid2 td {
             font-size: 10pt;
             border: 1px solid white !important;
             background: #e8e8e8;
             padding-left: 3px;
-            padding-right: 5px;
+            padding-right: 3px;
         }
-       
+        .principal{
+            font-weight:600;
+            font-size:12pt;
+            text-decoration-color:black;
+            height:28px;
+            border: 1px solid white !important;
+            background-color:#ffc107;
+            width:390px;
+            margin-bottom:-29px;
+            margin-left:-15px;
+            
+        }
+        #lFiltruAn{
+            padding-left:5px;
+        }
+        #ddlFiltruAn
+        {
+            height:23px;
+        }
        #scroll {
             display: block;
             overflow-x: scroll;
@@ -455,6 +477,19 @@
             <div class="row">
                 <div class="col-md-3">
                     <h3>Ore Lavorate </h3>
+                    <table cellpadding="0" cellspacing="0" class="principal">
+                        <tr>
+                            <td >
+                        <asp:Label ID="lFiltruAn" runat="server" CssClass="continut" Text="ANNO"></asp:Label>
+                            </td>
+                        <td>
+                        <asp:DropDownList ID="ddlFiltruAn" runat="server" OnSelectedIndexChanged="ddlFiltruAn_SelectedIndexChanged" AutoPostBack="true">
+                            <asp:ListItem>2021</asp:ListItem>
+                            <asp:ListItem>2020</asp:ListItem>
+                        </asp:DropDownList>
+                        </td>  
+                        </tr>
+                    </table>
                 </div>
                 <div class="col-md-9">
                     <div align="right" style="margin-right:40px;margin-top:20px;">
@@ -464,11 +499,12 @@
                 </div>
             </div>
         </div>
-
+            
         <div class="dragscroll" id="scroll"  >
             <table style="width:100%" runat="server">
                 <tr class="tHeader">
-                    <td colspan="3" id="orelav"></td>
+                    <td colspan="3" id="orelav">
+                    </td>
                     <td colspan="3" class="td_cell">Gennaio</td>
                     <td colspan="3" class="td_cell">Febbraio</td>
                     <td colspan="3" class="td_cell">Marzo</td>
@@ -485,7 +521,7 @@
             </table>
             
             <asp:GridView runat="server" ID="DataGrid1" OnRowDataBound="DataGrid1_RowDataBound" ></asp:GridView>
-            <asp:GridView runat="server" ID="DataGrid2" OnRowDataBound="DataGrid2_RowDataBound"></asp:GridView>
+            <asp:GridView runat="server" ID="DataGrid2" OnRowDataBound="DataGrid2_RowDataBound" ></asp:GridView>
         </div>
         </div>
          

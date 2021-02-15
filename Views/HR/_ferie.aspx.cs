@@ -33,7 +33,7 @@ public partial class Views_HR_ferie : System.Web.UI.Page
         DataTable dtLastY = helper.PkSelect("SELECT * FROM FerieTotYY", "WbmOlimpiasConnectionString");
         DataTable LastMonth = helper.PkSelect("SELECT * FROM [LastLoadedData]", "WbmOlimpiasConnectionString");
         string sMonth = LastMonth.Rows[0].ItemArray[0].ToString();
-        string lastY = LastMonth.Rows[0].ItemArray[1].ToString();
+        string lastY = (int.Parse(ddlFiltruAn.SelectedValue)-1).ToString();
 
         dt.Columns.AddRange(new DataColumn[] 
         { 
