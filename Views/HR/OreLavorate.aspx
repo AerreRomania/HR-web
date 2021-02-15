@@ -436,7 +436,7 @@
             border: 1px solid white !important;
             background: #e8e8e8;
             padding-left: 2px;
-            padding-right: 2px;
+            padding-right: 1px;
         }
         .principal{
             font-weight:600;
