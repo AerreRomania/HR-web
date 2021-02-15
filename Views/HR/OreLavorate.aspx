@@ -35,7 +35,7 @@
 
             var DepartamentWidth = $("#DataGrid1  tr:first").find("th").eq(0).width();
             var PostDelucruWidth = $("#DataGrid1  tr:first").find("th").eq(1).width();
-            var total = (DepartamentWidth + PostDelucruWidth) * 1.07;
+            var total = (DepartamentWidth + PostDelucruWidth)*1.02 ;
             $('#orelav').attr('style', 'min-width:' + total + 'px;height:28px;');
 
             var thead = 58*3;
@@ -416,7 +416,7 @@
         .td_cell { 
             text-align:center;
             border-right:1px solid white;
-            border-left:3px solid white;
+            border-left:2px solid white;
             
         }
 
@@ -435,8 +435,8 @@
             font-size: 10pt;
             border: 1px solid white !important;
             background: #e8e8e8;
-            padding-left: 3px;
-            padding-right: 3px;
+            padding-left: 2px;
+            padding-right: 2px;
         }
         .principal{
             font-weight:600;
