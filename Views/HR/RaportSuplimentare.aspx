@@ -148,7 +148,7 @@
                                     <table id="tSuplimentareOre" width="675" style="  border-collapse: collapse;">
                                         <tr>
                                             <td class="rSecund" colspan="2">
-                                                <asp:Label ID="Label5" runat="server" Text="Ore" Width="250px"></asp:Label>
+                                                <asp:Label ID="Label5" runat="server" Text="Ore" Width="160px"></asp:Label>
                                             </td>
                                             <td class="rSecund">
                                                 <asp:Label ID="Label6" runat="server" Text="Gennaio" Width="70px"></asp:Label>

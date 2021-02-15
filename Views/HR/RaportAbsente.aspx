@@ -33,6 +33,12 @@
             background-color: #cecece;
         }
 
+        .rSubSelectat smanji
+
+        {
+            width:100px;
+
+        }
         #120 td {
             background-color: #cecece !important;
             background: #cecece;
@@ -261,7 +267,7 @@
                             <td valign="top">
                                 <table id="tAbsenteProcent" width="100%" style=" width:100%; border-collapse: collapse;">
                                     <tr>
-                                        <td class="rSecund" colspan="2"><asp:Label ID="htProcent" runat="server" Text="Percentuale" Width="250px"></asp:Label></td>
+                                        <td class="rSecund" colspan="2"><asp:Label ID="htProcent" runat="server" Text="Percentuale" Width="200px"></asp:Label></td>
                                         <td class="rSecund"><asp:Label ID="htCodSistem" runat="server" Text="Gennaio" Width="70px"></asp:Label></td>
                                         <td class="rSecund"><asp:Label ID="htMarca" runat="server" Text="Febbraio" Width="70px"></asp:Label></td>
                                         <td class="rSecund"><asp:Label ID="htRaportAbsenta" runat="server" Text="Marzo" Width="70px"></asp:Label></td>

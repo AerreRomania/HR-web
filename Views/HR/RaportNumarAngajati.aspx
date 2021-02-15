@@ -24,11 +24,14 @@
         body {
             height: 1200px !important;
             background-color: #f4f4f4;
+           
+            
         }
 
-        td.rSelectat {
+       td.rSelectat {
             background-color: #cecece;
             color: black !important;
+            
         }
 
         #tRaportNumarAngajati #Departament_6, #tRaportNumarAngajati #Ianuarie_6, #tRaportNumarAngajati #Februarie_6, #tRaportNumarAngajati #Martie_6, #tRaportNumarAngajati #Aprilie_6, #tRaportNumarAngajati #Mai_6, #tRaportNumarAngajati #Iunie_6, #tRaportNumarAngajati #Iulie_6, #tRaportNumarAngajati #August_6, #tRaportNumarAngajati #Septembrie_6, #tRaportNumarAngajati #Octombrie_6, #tRaportNumarAngajati #Noiembrie_6, #tRaportNumarAngajati #Decembrie_6, #tRaportNumarAngajati #Medie_6 {
@@ -89,6 +92,7 @@
                 box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.33);
         }
 
+        
 
     </style>
 
@@ -191,7 +195,7 @@
                             <td valign="top" style="height: 130px">
 
                                  <div class="heading">
-                                        <h3 style="margin-left: 65px; margin-bottom: 0px; text-transform: uppercase;">General Report: <span style="float:right;margin-right:15px;">Anno: <asp:DropDownList ID="ddlFiltruAn" runat="server">
+                                        <h3 style="margin-left: 65px; margin-bottom: 0px; text-transform: uppercase;">General Report: <span style="margin-right:15px;">Anno: <asp:DropDownList ID="ddlFiltruAn" runat="server">
                                             <asp:ListItem>2021</asp:ListItem>
 
                                             </asp:DropDownList></span> </h3>
@@ -201,45 +205,45 @@
                                     <tr>
                                         <td class="rSecund" style="">
                                             <asp:Label ID="htDepartament" runat="server"
-                                                Text="REPARTO:" Width="250px" Style=""></asp:Label></td>
+                                                Text="REPARTO:" Width="150px" Style=""></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htCodSistem" runat="server"
-                                                Text="Gennaio" Width="80px"></asp:Label></td>
+                                                Text="Gennaio" Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htMarca" runat="server"
-                                                Text="Febbraio" Width="80px"></asp:Label></td>
+                                                Text="Febbraio" Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htRaportNumarAngajat" runat="server"
-                                                Text="Marzo" Width="80px"></asp:Label></td>
+                                                Text="Marzo" Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htPrenume" runat="server"
-                                                Text="Aprile" Width="80px"></asp:Label></td>
+                                                Text="Aprile" Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htData" runat="server"
-                                                Text="Maggio" Width="80px"></asp:Label></td>
+                                                Text="Maggio" Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htTipOra" runat="server" Text="Giugno"
-                                                Width="80px"></asp:Label></td>
+                                                Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htR1DAL" runat="server" Text="Luglio"
-                                                Width="80px"></asp:Label></td>
+                                                Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htR1ALL" runat="server" Text="Agosto"
-                                                Width="80px"></asp:Label></td>
+                                                Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="htR1TOT" runat="server" Text="Settembre"
-                                                Width="80px"></asp:Label></td>
+                                                Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="Label1" runat="server" Text="Ottobre"
-                                                Width="80px"></asp:Label></td>
+                                                Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="Label2" runat="server" Text="Novembre"
-                                                Width="80px"></asp:Label></td>
+                                                Width="64px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="Label3" runat="server" Text="Dicembre"
-                                                Width="80px"></asp:Label></td>
+                                                Width="64px"></asp:Label></td>
                                         <td class="rSecund" style="background: transparent;">
-                                            <asp:Label ID="Label4" Style="background: #cecece;" runat="server" Text="MEDIA" Width="80px">
+                                            <asp:Label ID="Label4" Style="background: #cecece;" runat="server" Text="MEDIA" Width="64px">
                                             </asp:Label></td>
                                     </tr>
                                 </table>
@@ -258,45 +262,45 @@
                                 <tr>
                                     <td class="rSecund" style="">
                                         <asp:Label ID="Label5" runat="server"
-                                            Text="REPARTO:" Width="250px" Style=""></asp:Label></td>
+                                            Text="REPARTO:" Width="150px" Style=""></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label6" runat="server"
-                                            Text="Gennaio" Width="80px"></asp:Label></td>
+                                            Text="Gennaio" Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label7" runat="server"
-                                            Text="Febbraio" Width="80px"></asp:Label></td>
+                                            Text="Febbraio" Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label8" runat="server"
-                                            Text="Marzo" Width="80px"></asp:Label></td>
+                                            Text="Marzo" Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label9" runat="server"
-                                            Text="Aprile" Width="80px"></asp:Label></td>
+                                            Text="Aprile" Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label10" runat="server"
-                                            Text="Maggio" Width="80px"></asp:Label></td>
+                                            Text="Maggio" Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label11" runat="server" Text="Giugno"
-                                            Width="80px"></asp:Label></td>
+                                            Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label12" runat="server" Text="Luglio"
-                                            Width="80px"></asp:Label></td>
+                                            Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label13" runat="server" Text="Agosto"
-                                            Width="80px"></asp:Label></td>
+                                            Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label14" runat="server" Text="Settembre"
-                                            Width="80px"></asp:Label></td>
+                                            Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label15" runat="server" Text="Ottobre"
-                                            Width="80px"></asp:Label></td>
+                                            Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label16" runat="server" Text="Novembre"
-                                            Width="80px"></asp:Label></td>
+                                            Width="64px"></asp:Label></td>
                                     <td class="rSecund">
                                         <asp:Label ID="Label17" runat="server" Text="Dicembre"
-                                            Width="80px"></asp:Label></td>
+                                            Width="64px"></asp:Label></td>
                                     <td class="rSecund" style="background: transparent;">
-                                        <asp:Label ID="Label18" Style="background: #cecece;" runat="server" Text="MEDIA" Width="80px">
+                                        <asp:Label ID="Label18" Style="background: #cecece;" runat="server" Text="MEDIA" Width="64px">
                                         </asp:Label></td>
                                 </tr>
                             </table>

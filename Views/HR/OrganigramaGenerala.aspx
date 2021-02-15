@@ -20,7 +20,8 @@
 
         body {
             height: 1500px;
-            overflow-y: auto;
+            overflow-y:auto;
+
         }
 
         .RadComboBoxDropDown .rcbList > li {
@@ -176,7 +177,7 @@
                                     <td align="center">
                                         <asp:Label ID="lOrganigrama" runat="server" CssClass="principal" Text="Organigramma Generale"></asp:Label>
                                     </td>
-                            <td style="width: 50px;">
+                            <td style="width: 50px;"
                                 <img class="top-icons" onclick="printDataGenerale();" src="../../Images/icons/icon-print.png" alt="Print" /></td>
                             <td style="width: 50px;">
                                 <img class="top-icons" style="display:none;" onclick="printPDF();" src="../../Images/icons/icon-pdf.png" alt="Export to PDF" /></td>
@@ -211,14 +212,14 @@
                     <table class="principal">
                         <tbody>
                             <tr>
-                                <td style="width: 400px;"></td>
+                                <td style="width: 200px;"></td>
 
                                 <td align="center">
                                     <span id="lRaportSuplimentareDepartament" class="principal">
                                         <asp:Label runat="server" ID="lbl_Deparament_Name"></asp:Label></span>
                                 </td>
 
-                                <td style="width: 400px;">
+                                <td style="width: 200px;">
                                     <div id="up" style="display: none; font-size: 20px; left: 14%; position: absolute; top: 70px;" role="status" aria-hidden="true">
                                         <img src="../../Images/Image/loading.gif" alt="Loading ...">
                                         Loading ...</div>

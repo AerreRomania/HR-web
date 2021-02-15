@@ -194,7 +194,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
             //                   group tAngajati by new { tAngajati.Linie  } into t
             //                   select new { t.Key.Linie,   NumarAngajati = t.Count() };
             HtmlTable ht = new HtmlTable();
-            ht.Width = "140px";
+            ht.Width = "140px";/*140**/
 
             HtmlTableRow htr = new HtmlTableRow();
             HtmlTableCell htc = new HtmlTableCell();
@@ -257,7 +257,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
     private HtmlTable PreparaDetaliu(string Valoare, string Numar, string Culoare)
     {
         var ht = new HtmlTable();
-        ht.Width = "260px";
+        ht.Width = "180px";
 
         var htr = new HtmlTableRow();
 
@@ -267,7 +267,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
         htc.Style.Add("color", "#FFFFFF");
         htc.Style.Add("font-weight", "bold");
         htc.Style.Add("height", "40px");
-        htc.Style.Add("width", "120px");
+        htc.Style.Add("width", "110px");
         htc.Style.Add("cursor", "pointer");
         htc.Align = "center";
         htc.InnerText = Valoare;
@@ -291,7 +291,7 @@ public partial class OrganigramaGenerala : System.Web.UI.Page
         htc.Style.Add("border-top", "1px solid black");
         htc.Style.Add("border-bottom", "1px solid black");
         htc.Style.Add("border-right", "1px solid black");
-        htc.Style.Add("width", "50px");
+        htc.Style.Add("width", "40px");
         htc.Style.Add("background-color", "gray");
         htc.Style.Add("color", "#FFFFFF");
         htc.Style.Add("font-weight", "bold");
