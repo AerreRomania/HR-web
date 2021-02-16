@@ -18,7 +18,8 @@
         body {
             height: 800px;
              background-color: #f3f3f3;
-            width:1520px;
+                         width:1520px;
+
         }
 
         td.rSubSelectat {
@@ -91,6 +92,8 @@
             width: 60px;
         }
 
+/*        ddlFiltruAn
+*/
         #myHeader2 td.rSelectat {
             /*background-color: #cecece;*/
             border: 0px solid #ffffff !important;
@@ -156,7 +159,9 @@
 
         .rSecund {
             text-transform: uppercase !important;
+            
         }
+        
     </style>
 </head>
 <body>
@@ -336,7 +341,7 @@
                         <tr id="myHeader2" class="header2" style="display: none;">
                             <td class="rSelectat" style="width: 215px!important;">TOTALE GENERALE</td> 
                             <td class="rSelectat" style="width: 0px;" id="MeBigger"></td>
-                            <td class="rSelectat" style="width: 64px!important;" id="Gennaio"></td>
+                            <td class="rSelectat" style="width: 65px!important;" id="Gennaio"></td>
                             <td class="rSelectat" style="width: 65px!important;" id="Febbraio"></td>
                             <td class="rSelectat" style="width: 65px!important;" id="Marzo"></td>
                             <td class="rSelectat" style="width: 65px!important;" id="Aprile"></td>

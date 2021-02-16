@@ -19,7 +19,7 @@
         }
 
         body {
-            height: 1500px;
+            height: 100%;
             overflow-y:auto;
 
         }
@@ -36,16 +36,20 @@
         }
 
 
-          #btn_close {
+        #btn_close {
             float: right;
+            position: absolute;
             right: 20px;
-            position: fixed;
             top: 50px;
             font-weight: 800;
             font-size: 11pt;
             cursor: pointer;
             z-index: 9999999;
         }
+
+        
+
+        
         #btn_close:hover {
             color: red;
             cursor: pointer;
@@ -240,7 +244,7 @@
 
                 <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server" ClientEvents-OnRequestStart="onRequestStart"></telerik:RadAjaxManager>
 
-                <telerik:RadGrid runat="server" ID="RadGrid1" AllowFilteringByColumn="True" AllowSorting="true" align="center" Style=" margin: 0px 60px auto;" AutoGenerateColumns="false" ClientSettings-Scrolling-AllowScroll="true" ClientSettings-Scrolling-ScrollHeight="700" Width="1223px" HeaderStyle-CssClass="grid_header">
+                <telerik:RadGrid runat="server" ID="RadGrid1" AllowFilteringByColumn="True" AllowSorting="true" align="center" Style=" margin: 0px 0px auto;" AutoGenerateColumns="false" ClientSettings-Scrolling-AllowScroll="true" ClientSettings-Scrolling-ScrollHeight="500" Width="100%" HeaderStyle-CssClass="grid_header">
                     <ClientSettings EnableRowHoverStyle="false" EnableClientPrint="true" Virtualization-EnableVirtualization="false">
                         <Scrolling AllowScroll="True" UseStaticHeaders="true" EnableColumnClientFreeze="true" SaveScrollPosition="true" />
                     </ClientSettings>
@@ -253,16 +257,16 @@
                             <telerik:GridBoundColumn DataField="IDs" AllowFiltering="false" HeaderStyle-Width="20px" FilterControlAltText="Filter Ids column" HeaderText="N°:" SortExpression="IDs" UniqueName="IDs">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Nome" HeaderStyle-Width="150px" AllowFiltering="false" FilterControlAltText="Filter Nome column" HeaderText="Nome:" SortExpression="Nome" UniqueName="Nome">
+                            <telerik:GridBoundColumn DataField="Nome" HeaderStyle-Width="40px" AllowFiltering="false" FilterControlAltText="Filter Nome column" HeaderText="Nome:" SortExpression="Nome" UniqueName="Nome">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Cognome" AllowSorting="true" HeaderStyle-Width="150px" AllowFiltering="false" FilterControlAltText="Filter Prenume column" HeaderText="Cognome:" SortExpression="Cognome" UniqueName="Cognome">
+                            <telerik:GridBoundColumn DataField="Cognome" AllowSorting="true" HeaderStyle-Width="40px" AllowFiltering="false" FilterControlAltText="Filter Prenume column" HeaderText="Cognome:" SortExpression="Cognome" UniqueName="Cognome">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" HeaderStyle-Width="100px" FilterControlAltText="Filter Data Nascita column" HeaderText="Data di Assunzione:" SortExpression="Data Nascita" UniqueName="DataNascita">
+                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" HeaderStyle-Width="60px" FilterControlAltText="Filter Data Nascita column" HeaderText="Data di Assunzione:" SortExpression="Data Nascita" UniqueName="DataNascita">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Mansione" HeaderStyle-Width="150px" ItemStyle-CssClass="MansioneClass"
+                            <telerik:GridBoundColumn DataField="Mansione" HeaderStyle-Width="60px" ItemStyle-CssClass="MansioneClass"
                                 FilterControlAltText="Filter Mansione column" HeaderText="Mansione:"
                                 SortExpression="Mansione" UniqueName="Mansione">
                                 <FilterTemplate>
@@ -270,12 +274,12 @@
                                         DataTextField="Mansione" DataValueField="Mansione"
                                         OnDataBinding="cmbProductName_DataBinding_Mansione" OnDataBound="ComboMansione_DataBound"
                                         OnClientSelectedIndexChanged="applySearch"
-                                        Style="width: 100%;">
+                                        Style="width: 80%;">
                                     </telerik:RadComboBox>
                                 </FilterTemplate>
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Linea" HeaderStyle-Width="150px" AllowSorting="true"
+                            <telerik:GridBoundColumn DataField="Linea" HeaderStyle-Width="60px" AllowSorting="true"
                                 FilterControlAltText="Filter Linea column" HeaderText="Linea:" ItemStyle-CssClass="LineaClass"
                                 SortExpression="Linea" UniqueName="Linea">
                                 <FilterTemplate>
@@ -285,7 +289,7 @@
                                     </telerik:RadComboBox>
                                 </FilterTemplate>
                             </telerik:GridBoundColumn>
-                            <telerik:GridBoundColumn DataField="Note" AllowSorting="false" HeaderStyle-Width="100px" AllowFiltering="false" FilterControlAltText="Filter Note column" HeaderText="Note:" SortExpression="Note" UniqueName="Note">
+                            <telerik:GridBoundColumn DataField="Note" AllowSorting="false" HeaderStyle-Width="40px" AllowFiltering="false" FilterControlAltText="Filter Note column" HeaderText="Note:" SortExpression="Note" UniqueName="Note">
                             </telerik:GridBoundColumn>
                         </Columns>
                     </MasterTableView>
@@ -296,7 +300,7 @@
                 </telerik:RadGrid>
                 </div>
 
-                <table align="center" id="charts">
+                <table align="left" id="charts"style=margin-left:-120px;>
                     <tr>
                         <td>
                             <div style="width:800px;height:400px;margin-right:-130px; "  id="chart-percentuale"></div>
@@ -312,6 +316,8 @@
                 <asp:HiddenField runat="server" ID="lbl_mansione" />
 
                 <script type="text/javascript">
+
+                    
                     Sys.Application.add_load(function () {
                        
                         $("#btn_close").click(function () {
@@ -363,11 +369,20 @@
                             $("#RadGrid1").show();
                         });
 
+                        $(".SARTORIA").click(function () {
+                            $("#shade").show();
+                            $("#tbl_grid").hide();
+                            $('#<%=lbl_selected_dep.ClientID%>').attr('value', '15');
+                            $("#load_grid").click();
+                            $("#RadGrid1").show();
+                        });/*16.02*/
+
                         $(".GENERALE").click(function () {
                             $("#shade").show();
                             $("#RadGrid1").hide();
                             $("#shade_generale").show();
                         });
+
 
                         $("#btn_close_generale").click(function () {
                             $("#shade_generale").hide();
@@ -458,8 +473,9 @@
           ['Stiro',  parseInt($(".STIROClass td:nth-child(2)").text()) || 0],
           ['Amministrazione',  parseInt( $(".AMMINISTRAZIONEClass td:nth-child(2)").text()) || 0],
           ['Confezione A', parseInt( $(".CONFEZIONEAClass td:nth-child(2)").text()) || 0],
-          ['Confezione B',  parseInt( $(".CONFEZIONEBClass td:nth-child(2)").text()) || 0]
-        ]);
+            ['Confezione B', parseInt($(".CONFEZIONEBClass td:nth-child(2)").text()) || 0],
+            ['Sartoria', parseInt($(".SARTORIAClass td:nth-child(2)").text()) || 0] 
+        ]);/*16.02*/
 
         var options = {
             title: 'ORGANIGRAMMA - BY PERCENTUALE',
@@ -482,8 +498,10 @@
           ['Stiro',  parseInt($(".STIROClass td:nth-child(2)").text()) || 0],
           ['Amministrazione',  parseInt( $(".AMMINISTRAZIONEClass td:nth-child(2)").text()) || 0],
           ['Confezione A', parseInt( $(".CONFEZIONEAClass td:nth-child(2)").text()) || 0],
-          ['Confezione B',  parseInt( $(".CONFEZIONEBClass td:nth-child(2)").text()) || 0]
-        ]);
+            ['Confezione B', parseInt($(".CONFEZIONEBClass td:nth-child(2)").text()) || 0],
+            ['Sartoria', parseInt($(".SARTORIAClass td:nth-child(2)").text()) || 0] 
+
+        ]);/*16.02*/
 
         var options = {
             title: 'ORGANIGRAMMA - BY PERSONS',
@@ -496,7 +514,7 @@
         chart.draw(data, options);
       }
  
-        </script>
+            </script>
                                         </telerik:RadScriptBlock>
             </ContentTemplate>
         </asp:UpdatePanel>
