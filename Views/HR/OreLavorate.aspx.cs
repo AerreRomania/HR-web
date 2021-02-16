@@ -210,7 +210,7 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
     {
         if (e.Row.RowType == DataControlRowType.DataRow)
         {
-            e.Row.Cells[0].CssClass = "tDepartament";
+            e.Row.Cells[0].CssClass = "tDepartament1";
             e.Row.Cells[1].CssClass = "tPostDeLucru1";
 
             if (e.Row.Cells[0].Text == "AMMINISTRAZIONE ")

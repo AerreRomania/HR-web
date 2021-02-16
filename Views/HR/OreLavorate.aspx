@@ -407,11 +407,15 @@
             min-width:180px;
             font-weight:600;
         }
+        .tDepartament1 {
+            min-width:180px;
+            font-weight:600;
+        }
         .tPostDeLucru {
-            min-width:210px
+            min-width:210px;
         }
         .tPostDeLucru1 {
-            min-width:210px
+            min-width:210px;
         }
         .td_cell { 
             text-align:center;
@@ -457,6 +461,11 @@
         {
             height:23px;
         }
+        .headermonths
+        {
+            /*position:static;*/
+        }
+
        #scroll {
             display: block;
             overflow-x: scroll;
@@ -465,6 +474,7 @@
             cursor: -o-grab; 
             cursor: -moz-grab; 
             cursor: -webkit-grab; 
+
         }
     </style>
 </head>
@@ -501,7 +511,7 @@
         </div>
             
         <div class="dragscroll" id="scroll"  >
-            <table style="width:100%" runat="server">
+            <table style="width:100%" runat="server" class="headermonths">
                 <tr class="tHeader">
                     <td colspan="3" id="orelav">
                     </td>
