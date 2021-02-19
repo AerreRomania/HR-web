@@ -4,17 +4,7 @@
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-.tHeader {
-    min-width:55px;
-    border: 2px solid #ffffff;
-    color: black;
-    background: #FFC107!important;
-    font-weight: 600;
-    font-size: 12pt;
-    text-align: left;
-    padding:0px;
-    text-transform: uppercase;
-}
+
 
 .tTotal {
     background: white!important;
@@ -25,7 +15,7 @@
     font-size:10pt;
     border:1px solid white!important;
     background: #e8e8e8;
-    padding:0px;
+    padding:1px;
 }
 
 

@@ -57,9 +57,9 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
         DataTable dt = new DataTable();
         using (var conn = new SqlConnection(System.Configuration.ConfigurationManager
             .ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
-        { 
+        {
             var cmd = new SqlCommand(
-                "SELECT dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru, SUM(dbo.Prezente.R1TOT) AS Ore, dbo.TipuriOre.Categorie, DATEPART(YEAR, dbo.Prezente.Data) AS Yyear, DATEPART(MONTH, dbo.Prezente.Data) AS Mmonth FROM dbo.Departamente INNER JOIN dbo.Prezente ON dbo.Departamente.Id = dbo.Prezente.IdDepartament INNER JOIN dbo.PosturiDeLucru ON dbo.Prezente.IdPostDeLucru = dbo.PosturiDeLucru.Id INNER JOIN dbo.TipuriOre ON dbo.Prezente.IdTipOra = dbo.TipuriOre.Id WHERE (dbo.TipuriOre.Categorie = 'Ore straordinarie') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' OR (dbo.TipuriOre.Categorie = 'Ore lavorate') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' GROUP BY  dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru,dbo.TipuriOre.Categorie, DATEPART(YEAR, dbo.Prezente.Data), DATEPART(MONTH, dbo.Prezente.Data)  ORDER BY dbo.Departamente.Departament,PosturiDeLucru.postdelucru, TipuriOre.Categorie", conn);
+                "SELECT dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru,SUM(dbo.Prezente.R1TOT) AS Ore,dbo.TipuriOre.Categorie,dbo.TipuriPostDeLucru.TipPostDeLucru,DATEPART(YEAR, dbo.Prezente.Data) AS Yyear,DATEPART(MONTH, dbo.Prezente.Data) AS Mmonth FROM dbo.Departamente INNER JOIN dbo.Prezente ON dbo.Departamente.Id = dbo.Prezente.IdDepartament INNER JOIN dbo.PosturiDeLucru ON dbo.Prezente.IdPostDeLucru = dbo.PosturiDeLucru.Id INNER JOIN dbo.TipuriOre ON dbo.Prezente.IdTipOra = dbo.TipuriOre.Id INNER JOIN dbo.TipuriPostDeLucru On dbo.Prezente.IdTipPostDeLucru=dbo.TipuriPostDeLucru.Id WHERE (dbo.TipuriOre.Categorie = 'Ore straordinarie') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' OR (dbo.TipuriOre.Categorie = 'Ore lavorate') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' OR (dbo.TipuriOre.Categorie = 'Ore lavorabili') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' GROUP BY  dbo.Departamente.Departament,dbo.PosturiDeLucru.PostDeLucru,dbo.TipuriOre.Categorie,dbo.TipuriPostDeLucru.TipPostDeLucru,DATEPART(YEAR, dbo.Prezente.Data),DATEPART(MONTH, dbo.Prezente.Data)ORDER BY dbo.Departamente.Departament,PosturiDeLucru.postdelucru,TipuriOre.Categorie, TipPostDeLucru", conn);
 
             conn.Open();
             var dr = cmd.ExecuteReader();
@@ -70,17 +70,19 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
 
         dt.Columns.Add("Reparto:");
         dt.Columns.Add("Mansione:");
+        dt.Columns.Add("Dir/Indir");
 
 
         for (var i = 1; i <= 12; i++)
         {
+            dt.Columns.Add(i.ToString() + "_Ore lavorabili");
             dt.Columns.Add(i.ToString() + "_Ore lavorate");
             dt.Columns.Add(i.ToString() + "_Ore straordinarie");
             dt.Columns.Add(i.ToString() + "_Tot");
         }
 
         dt.Columns.Add("Total", typeof(decimal));
-        
+        dt.Columns.Add("Lav. T", typeof(decimal));
         DataRow deptRow = dt.NewRow(); 
         DataRow totRow = dt.NewRow();
          
@@ -91,6 +93,7 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
         var idx = 1;
 
         decimal bigTotal = 0;
+        decimal lavtot = 0;
         var lastDepart = default(string);
         //var firstRead = true;
         foreach (DataRow row in sqlTbl.Rows)
@@ -101,12 +104,15 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
             var postdelucru = row.ItemArray.GetValue(1).ToString();
             decimal.TryParse(row.ItemArray.GetValue(2).ToString(), out hr);
             var categorie = row.ItemArray.GetValue(3).ToString();
-            var year = row.ItemArray.GetValue(4).ToString();
-            var month = row.ItemArray.GetValue(5).ToString();
+            var tippostlucru = row.ItemArray.GetValue(4).ToString();
+            var year = row.ItemArray.GetValue(5).ToString();
+            var month = row.ItemArray.GetValue(6).ToString();
             var hKey = departament + postdelucru;
-            bigTotal += hr;             
+            if (categorie == "Ore lavorabili") lavtot+=hr;
+                else bigTotal += hr;             
             if (htbl.ContainsKey(hKey))
-            { 
+            {
+               
                 var h = Convert.ToInt32(htbl[hKey]);
                 decimal tot;
                 decimal keyHour;
@@ -115,8 +121,8 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
                 decimal.TryParse(dt.Rows[h][month + "_" + categorie].ToString(), out keyHour);
                 decimal.TryParse(dt.Rows[h][month + "_Tot"].ToString(), out totCateg);
                 dt.Rows[h][month + "_Tot"] = totCateg + hr;
-                dt.Rows[h][month+"_"+categorie] = keyHour + hr;
-                dt.Rows[h]["Total"] = tot + hr; 
+                dt.Rows[h][month + "_" + categorie] = keyHour + hr;
+                dt.Rows[h]["Total"] = tot + hr;
             }
             else
             {
@@ -128,28 +134,38 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
                     dt.Rows.Add(newRow);
                     idx++;
                 }
-                newRow = dt.NewRow();
-                newRow[1] = postdelucru;
-                newRow[month + "_" + categorie] = hr;
-                newRow[month + "_Tot"] = hr;
-                newRow["Total"] = hr;
-                dt.Rows.Add(newRow);
-                htbl.Add(hKey, idx);
-                //if (lastDepart != departament) 
-                //{
-                    
-                //}
-                //else
-                //{
-                //    var 
-                //}
-                idx++;
-                lastDepart = departament;
+                if (categorie == "Ore lavorabili")
+                {
+                    newRow = dt.NewRow();
+                    newRow[1] = postdelucru;
+                    newRow[2] = tippostlucru;
+                    newRow[month + "_" + categorie] = hr;
+                    newRow[month + "_Tot"] = 0;
+                    newRow["Lav. T"] = hr;
+                    dt.Rows.Add(newRow);
+                    htbl.Add(hKey, idx);
+                    idx++;
+                    lastDepart = departament;
+                }
+                else
+                {
+                    newRow = dt.NewRow();
+                    newRow[1] = postdelucru;
+                    newRow[2] = tippostlucru;
+                    newRow[month + "_" + categorie] = hr;
+                    newRow[month + "_Tot"] = hr;
+                    newRow["Total"] = hr;
+                    dt.Rows.Add(newRow);
+                    htbl.Add(hKey, idx);
+                    idx++;
+                    lastDepart = departament;
+                }
             }
+            
             decimal kkk;
             decimal.TryParse(totRow[month + "_" + categorie].ToString(), out kkk);
             totRow[month + "_" + categorie] = kkk + Convert.ToDecimal(hr);
-           
+
         }
 
         //////decimal depTot;
@@ -157,7 +173,7 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
         //////totDepRow[month + "_" + categorie] = 2; //depTot + hr;
 
         totRow["Total"] = bigTotal;
-
+        totRow["Lav. T"] = lavtot;
         //totSubRow = dt.NewRow();
         //totSubRow[0] = "TOTAL " + lastDepart;
         //dt.Rows.Add(totSubRow);
@@ -174,6 +190,7 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
         {
             e.Row.Cells[0].CssClass = "tDepartament"; 
             e.Row.Cells[1].CssClass = "tPostDeLucru";
+            e.Row.Cells[2].CssClass = "direct";
             
             if (e.Row.Cells[0].Text == "AMMINISTRAZIONE ")
             {
@@ -190,6 +207,10 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
                 e.Row.CssClass = "totConfb";
 
             }
+            else if (e.Row.Cells[0].Text=="SARTORIA")
+            {
+                e.Row.CssClass = "totSarto";
+            }
             else if (e.Row.Cells[0].Text == "STIRO")
             {
                 e.Row.CssClass = "totStiro";
@@ -200,6 +221,7 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
                 e.Row.CssClass = "totTess";
 
             }
+            
         }
 
         
@@ -210,14 +232,12 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
     {
         if (e.Row.RowType == DataControlRowType.DataRow)
         {
-            e.Row.Cells[0].CssClass = "tDepartament1";
+            e.Row.Cells[0].CssClass = "tDepartament";
             e.Row.Cells[1].CssClass = "tPostDeLucru1";
 
             if (e.Row.Cells[0].Text == "AMMINISTRAZIONE ")
             {
                 e.Row.CssClass = "totAmmin";
-
-
             }
             else if (e.Row.Cells[0].Text == "CONFEZIONE A")
             {
@@ -228,6 +248,10 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
             {
                 e.Row.CssClass = "totConfb";
 
+            }
+            else if (e.Row.Cells[0].Text == "SARTORIA")
+            {
+                e.Row.CssClass = "totSarto";
             }
             else if (e.Row.Cells[0].Text == "STIRO")
             {
