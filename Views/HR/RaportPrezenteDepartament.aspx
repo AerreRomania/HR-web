@@ -65,12 +65,18 @@
 
         td.rAntetSecundRosu {
             background-color: #ff0000;
-            font: 9px/12px Arial, Helvetica, sans-serif;
+            font: 11px/12px Arial, Helvetica, sans-serif;
             color: #ffffff;
             border: 1px solid #ffffff;
-           /* font-weight: 600;
-            text-align: left;
-             padding-left:5px;*/
+            font-weight: 600;
+        }
+        td.rAntetSecundGreen {
+            background-color: forestgreen;
+            font: 11px/12px Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            font-weight: 600;
+            text-align: center;
         }
 
         td.rAntetSecundAlb {
@@ -146,13 +152,30 @@
 
         }
 
-        .red,.green,.silver,.rAntetSecundRosu,.{
+       .green, .silver,.rAntetSecundRosum{
             width: 15px;
             height: 15px;
             line-height: 15px;
-            border-radius: 45px;
+          /* border-radius: 45px;*/
             color:none;
         }
+    .red
+        {
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+          /* border-radius: 45px;*/
+            background-color:#ff0000;
+        }
+    .green{
+        {
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+          /* border-radius: 45px;*/
+            background-color:forestgreen;
+        }
+    }
 
         .tbl-first-row{
             border-top:0px;

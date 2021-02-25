@@ -506,7 +506,7 @@
             font-size: 10pt;
             border: 1px solid white !important;
             background: #e8e8e8;
-            padding:1px;
+            padding:0px;
         }
         
         .filtru{

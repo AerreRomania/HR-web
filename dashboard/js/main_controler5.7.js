@@ -1109,14 +1109,98 @@ $(document).ready(function () {
         $("#menu_prod_tess_dp").hide();
     });
     //SCHEDA DIPEDENTI CLICK
-    $("#riso_scheda").click(function() {
-        $("#lvl_one_riso").hide();
-        $("#menu_riso").hide();
-        $("#riso_bread").hide();
-        $("#lvl_two_riso_scheda_dipedenti").show();
-        $("#riso_bread_scheda_dipedenti").show();
-        $("#menu_riso_scheda_dipedente").show();
+    $("#riso_scheda").click(async function () {
+
+        var realPW = "8241";
+        var pword = await passwordPrompt("PIN");
+        if (realPW === pword) {
+            $("#lvl_one_riso").hide();
+            $("#menu_riso").hide();
+            $("#riso_bread").hide();
+            $("#lvl_two_riso_scheda_dipedenti").show();
+            $("#riso_bread_scheda_dipedenti").show();
+            $("#menu_riso_scheda_dipedente").show();
+        }
     });
+    function passwordPrompt(text) {
+        /*creates a password-prompt instead of a normal prompt*/
+        /* first the styling - could be made here or in a css-file. looks very silly now but its just a proof of concept so who cares */
+        var width = 361;
+        var height = 100;
+        var pwprompt = document.createElement("div"); //creates the div to be used as a prompt
+        pwprompt.id = "password_prompt"; //gives the prompt an id - not used in my example but good for styling with css-file
+        pwprompt.style.position = "fixed"; //make it fixed as we do not want to move it around
+        pwprompt.style.left = ((window.innerWidth / 2) - (width / 2)) + "px"; //let it apear in the middle of the page
+        pwprompt.style.top = 0 + "px"; //let it apear in the middle of the page
+        pwprompt.style.border = "1px solid #bb3a34"; //give it a border
+        pwprompt.style.borderBottomLeftRadius = 5 + 'px';
+        pwprompt.style.borderBottomRightRadius = 5 + 'px';
+        pwprompt.style.padding = "8px"; //give it some space
+        pwprompt.style.background = "#f4f4f4"; //give it some background so its not transparent
+        pwprompt.style.zIndex = 99999; //put it above everything else - just in case
+        pwprompt.style.width = 361 + 'px';
+        pwprompt.style.boxShadow = "inset 0 1px 0 #fff, 0 3px 0 rgb(84 119 15 / 0%), 1px 3px 6px 2px rgb(169 13 13 / 48%)";
+        var pwtext = document.createElement("div"); //create the div for the password-text
+        pwtext.innerHTML = text; //put inside the text
+        pwtext.style.fontSize = 20 +'px';
+        pwtext.style.color = "black";
+        pwtext.style.fontFamily = 'Exo, sans-serif !important';
+        pwprompt.appendChild(pwtext); //append the text-div to the password-prompt
+        var pwinput = document.createElement("input"); //creates the password-input
+        pwinput.id = "password_id"; //give it some id - not really used in this example...
+        pwinput.type = "password"; // makes the input of type password to not show plain-text
+        pwinput.style.paddingLeft = 10 + 'px';
+        pwinput.style.paddingTop = 5 + 'px';
+        pwinput.style.paddingBottom = 5 + 'px';
+        pwinput.style.fontSize = 16 + 'px';
+        pwprompt.appendChild(pwinput); //append it to password-prompt
+        var pwcancelb = document.createElement("button"); //the cancel-button
+        pwcancelb.innerHTML = "Cancel";
+        pwcancelb.style.margin = 2 + 'px';
+        pwcancelb.style.padding = 6 + 'px';
+        pwcancelb.style.width = 80 + 'px';
+        pwcancelb.style.backgroundColor = "#732c7b"
+        pwcancelb.style.color = "white";
+        pwcancelb.style.borderWidth = 0 + 'px';
+        pwcancelb.style.fontSize = 16 + 'px';
+        var pwokbutton = document.createElement("button"); //the ok button
+        pwokbutton.innerHTML = "Ok";
+        pwokbutton.style.margin = 6 + 'px';
+        pwokbutton.style.padding = 6 + 'px';
+        pwokbutton.style.width = 50 + 'px';
+        pwokbutton.style.backgroundColor = "#732c7b"
+        pwokbutton.style.color = "white";
+        pwokbutton.style.borderWidth = 0 + 'px';
+        pwokbutton.style.fontSize = 16 + 'px';
+        pwprompt.appendChild(pwokbutton); //append the ok-button
+        pwprompt.appendChild(pwcancelb); //append cancel-button first
+        document.body.appendChild(pwprompt); //append the password-prompt so it gets visible
+        pwinput.focus(); //focus on the password-input-field so user does not need to click 
+
+        /*now comes the magic: create and return a promise*/
+        return new Promise(function (resolve, reject) {
+            pwprompt.addEventListener('click', function handleButtonClicks(e) { //lets handle the buttons
+                if (e.target.tagName !== 'BUTTON') { return; } //nothing to do - user clicked somewhere else
+                pwprompt.removeEventListener('click', handleButtonClicks); //removes eventhandler on cancel or ok
+                if (e.target === pwokbutton) { //click on ok-button
+                    resolve(pwinput.value); //return the value of the password
+                } else {
+                    reject(new Error('User cancelled')); //return an error
+                }
+                document.body.removeChild(pwprompt);  //as we are done clean up by removing the password-prompt
+
+            });
+            pwinput.addEventListener('keyup', function handleEnter(e) { //users dont like to click on buttons
+                if (e.keyCode == 13) { //if user enters "enter"-key on password-field
+                    resolve(pwinput.value); //return password-value
+                    document.body.removeChild(pwprompt); //clean up by removing the password-prompt
+                } else if (e.keyCode == 27) { //user enters "Escape" on password-field
+                    document.body.removeChild(pwprompt); //clean up the password-prompt
+                    reject(new Error("User cancelled")); //return an error
+                }
+            });
+        });
+    }
 
     $("#btn_back_to_riso").click(function () {
         $("#lvl_one_riso").show();

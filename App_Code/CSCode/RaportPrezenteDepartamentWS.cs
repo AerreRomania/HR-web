@@ -147,7 +147,7 @@ namespace WbmOlimpias
                     oRaportPrezentaGrup.PostDeLucru = rezGrup.PostDeLucru;
                     oRaportPrezentaGrup.ZiLucratoare = rezGrup.ZiLucratoare.ToString();
                     //oRaportPrezentaGrup.Ferie = rezGrup.ZiFerie.ToString();
-                    if (rezGrup.ZiLucrata == 0)
+                    if (rezGrup.ZiLucrata == 0 && rezGrup.ZiFerie == 0)
                         oRaportPrezentaGrup.Absent = "1";
                     //if (rezGrup.ZiMaternitate == 1)
                     //    oRaportPrezentaGrup.Maternitate = "1";
@@ -181,17 +181,17 @@ namespace WbmOlimpias
                 oRaportPrezentaSumar.NumarAngajati = rez.NumarAngajati.ToString();
                 Prezenti = Prezenti + rez.Prezenti;
                 oRaportPrezentaSumar.Prezenti = rez.Prezenti.ToString();
-                Absenti = Absenti + rez.NumarAngajati - rez.Prezenti;
+                Absenti = Absenti + rez.NumarAngajati - rez.Prezenti - rez.Ferie;
                 oRaportPrezentaSumar.Ferie = rez.Ferie.ToString();
                 Ferie = Ferie + rez.Ferie;
 
                 //oRaportPrezentaSumar.Maternita = rez.Maternita.ToString();
                 //Maternita = Maternita + rez.Maternita;
 
-                oRaportPrezentaSumar.Absenti = (rez.NumarAngajati - rez.Prezenti).ToString();
+                oRaportPrezentaSumar.Absenti = (rez.NumarAngajati - rez.Prezenti - rez.Ferie).ToString();
                 if(rez.NumarAngajati>0)
                 {
-                    oRaportPrezentaSumar.Procent = (100 * (rez.NumarAngajati - rez.Prezenti) / rez.NumarAngajati).ToString("N1");
+                    oRaportPrezentaSumar.Procent = (100 * (rez.NumarAngajati - rez.Prezenti - rez.Ferie) / rez.NumarAngajati).ToString("N1");
                 }
                 TabelaPrezenteSumar.Add(oRaportPrezentaSumar);
             }
@@ -214,7 +214,7 @@ namespace WbmOlimpias
                 //oRaportPrezentaSumar.Maternita = Maternita.ToString();
                 //oRaportPrezentaSumar.Maternita = queryMaternita.Count().ToString();
                 if(NumarAngajati>0)
-                    oRaportPrezentaSumar.Procent = (100 * (NumarAngajati - Prezenti) / NumarAngajati).ToString("N1");
+                    oRaportPrezentaSumar.Procent = ((NumarAngajati/100) * Absenti).ToString("N1");
                 TabelaPrezenteSumar.Add(oRaportPrezentaSumar);
             }
             
