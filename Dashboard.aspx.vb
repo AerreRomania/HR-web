@@ -43,17 +43,17 @@ Partial Class Dashboard
         FileUpload1.Attributes("onchange") = "UploadFile(this)"
 
         'IF ACCOUNT DOES NOT HAVE ROLES FOR ALL MAIN APPS
-        If riso.Attributes("class") = " disabled" And prod.Attributes("class") = " disabled" And cont.Attributes("class") = " disabled" And smart.Attributes("class") = " disabled"
+        If riso.Attributes("class") = " disabled" And prod.Attributes("class") = " disabled" And cont.Attributes("class") = " disabled" And smart.Attributes("class") = " disabled" Then
             not_activated.Visible = True
             dbdpmenu.Visible = False
             reg_notification_control.Visible = False
-            left_navi.Visible=False
-            fav_list.Visible=False
+            left_navi.Visible = False
+            fav_list.Visible = False
         End If
 
 
 
-       
+
     End Sub
 
     Protected Sub Page_PreRender(sender As Object, e As EventArgs) Handles Me.PreRenderComplete

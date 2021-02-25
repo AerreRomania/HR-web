@@ -2,12 +2,16 @@
 Imports System.Data.SqlClient
 Imports System.Net
 Imports System.Net.Mail
-
+Imports System.Web.Configuration
+Imports System.Xml
 
 Partial Class LogIn
     Inherits Page
     Dim constr As String = ConfigurationManager.ConnectionStrings("NOYConnectionString").ConnectionString
     Dim _myConnection As SqlConnection = New SqlConnection(constr)
+    Dim helper = New _MainClass
+
+
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         Session("User") = Nothing
         'Dim returnUrl As String = Request.QueryString("ReturnUrl")
@@ -15,11 +19,11 @@ Partial Class LogIn
             Session("User") = Login1.UserName
             'if return url is empty go to deshboart, else redirect to sended url
             'If returnUrl Is String.Empty
-                Response.Redirect("Dashboard.aspx")
+            Response.Redirect("Dashboard.aspx")
             '    Else
             '     Response.Redirect(returnUrl)
             'End If
-            
+
         Else
             Exit Sub
         End If
@@ -54,19 +58,19 @@ Partial Class LogIn
     'SEND EMAIL TO CLIENT
     Protected Sub SendRegistrationEmail(sender As Object, e As EventArgs)
         Dim mail As New MailMessage()
-        mail.From = New MailAddress("noreply@olimpias.rs","Web Application - Registration")
+        mail.From = New MailAddress("noreply@olimpias.rs", "Web Application - Registration")
         mail.[To].Add(txtEmail.Text)
         mail.Subject = "Olimpias Knitting Serbia - Web Account Information"
-            Dim sb As New StringBuilder
-            sb.AppendLine("<i><p style='font-size:16px;margin: 0 0 0px;'>Greetings " + txtName.Text + ",</p>We notify you that new Account is created on Web Application and waiting administrator for approvement.</i></br></br>")
-            sb.AppendLine("<b style='text-decoration:underline;'>Account information details:</b>")
-            sb.AppendLine("<p style='font-size:14px;margin: 0 0 0px;'>You can check your status <a href='loknitting.olimpias.it' style='color:blue;'>here</a></p>")
-            sb.AppendLine("<p style='font-size:14px;margin: 0 0 0px;'>Username: " + txtUsername.Text + "</p>")
-            sb.AppendLine("<p style='font-size:14px;margin: 0 0 0px;'>Password: " + txtPassword.Text + "</p></br></br>")
-            sb.AppendLine("</br></br></br><p style='font-size:16px;margin: 0 0 0px;'>Best Regards,</p>")
-            sb.AppendLine("<p style='margin: 0 0 0px;font-size:16px;color:blue;text-decoration:none;'><a href='loknitting.olimpias.it'>Olimpias Knitting Serbia</a></p>")
-            mail.Body = sb.ToString()
-            mail.IsBodyHtml = True
+        Dim sb As New StringBuilder
+        sb.AppendLine("<i><p style='font-size:16px;margin: 0 0 0px;'>Greetings " + txtName.Text + ",</p>We notify you that new Account is created on Web Application and waiting administrator for approvement.</i></br></br>")
+        sb.AppendLine("<b style='text-decoration:underline;'>Account information details:</b>")
+        sb.AppendLine("<p style='font-size:14px;margin: 0 0 0px;'>You can check your status <a href='loknitting.olimpias.it' style='color:blue;'>here</a></p>")
+        sb.AppendLine("<p style='font-size:14px;margin: 0 0 0px;'>Username: " + txtUsername.Text + "</p>")
+        sb.AppendLine("<p style='font-size:14px;margin: 0 0 0px;'>Password: " + txtPassword.Text + "</p></br></br>")
+        sb.AppendLine("</br></br></br><p style='font-size:16px;margin: 0 0 0px;'>Best Regards,</p>")
+        sb.AppendLine("<p style='margin: 0 0 0px;font-size:16px;color:blue;text-decoration:none;'><a href='loknitting.olimpias.it'>Olimpias Knitting Serbia</a></p>")
+        mail.Body = sb.ToString()
+        mail.IsBodyHtml = True
         Dim smtp As New SmtpClient("mail.olimpias.it")
         smtp.Port = 25
         smtp.Send(mail)
@@ -74,7 +78,7 @@ Partial Class LogIn
     'SEND EMAIL TO ADMIN
     Protected Sub SendRegistrationEmailToAdmin(sender As Object, e As EventArgs)
         Dim mail As New MailMessage()
-        mail.From = New MailAddress("noreply@olimpias.rs","Web Request - Waiting")
+        mail.From = New MailAddress("noreply@olimpias.rs", "Web Request - Waiting")
         mail.[To].Add("giovanni@antonioli.it")
         mail.[To].Add("pnikolic@olimpias.rs")
         'set the content
@@ -97,7 +101,7 @@ Partial Class LogIn
         smtp.Send(mail)
     End Sub
 
-   Dim _userId As Integer
+    Dim _userId As Integer
 
     Protected Sub RegisterUser(sender As Object, e As EventArgs)
 
@@ -105,41 +109,41 @@ Partial Class LogIn
 
         Using con As New SqlConnection(constr)
             Using cmd As New SqlCommand("spUserRole")
-                    cmd.CommandType = CommandType.StoredProcedure
-                    cmd.Parameters.Add("@username", SqlDbType.NVarChar,64).Value = txtUsername.Text.Trim()
-                    cmd.Parameters.Add("@password", SqlDbType.VarChar,128).Value = CreateSHAHash(txtUsername.Text, txtPassword.Text)
-                    'cmd.Parameters.Add("@roleID", SqlDbType.UniqueIdentifier).Direction = ParameterDirection.Output
-                    cmd.Parameters.Add("@userID", SqlDbType.Int).Direction = ParameterDirection.Output
-                    cmd.Parameters.Add("@return_value", SqlDbType.Int).Direction = ParameterDirection.ReturnValue
-                    cmd.Connection = con
-                    con.Open()
-                    cmd.ExecuteNonQuery
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.Add("@username", SqlDbType.NVarChar, 64).Value = txtUsername.Text.Trim()
+                cmd.Parameters.Add("@password", SqlDbType.VarChar, 128).Value = CreateShaHash(txtUsername.Text, txtPassword.Text)
+                'cmd.Parameters.Add("@roleID", SqlDbType.UniqueIdentifier).Direction = ParameterDirection.Output
+                cmd.Parameters.Add("@userID", SqlDbType.Int).Direction = ParameterDirection.Output
+                cmd.Parameters.Add("@return_value", SqlDbType.Int).Direction = ParameterDirection.ReturnValue
+                cmd.Connection = con
+                con.Open()
+                cmd.ExecuteNonQuery()
 
-                    Dim s As Integer                    
+                Dim s As Integer
                 Try
                     s = cmd.Parameters("@userID").Value
                 Catch ex As Exception
                     s = 0
                 End Try
 
-                    If s = 0
-                        _userId = 0
-                        Else
-                        _userId = s
-                    End If
+                If s = 0 Then
+                    _userId = 0
+                Else
+                    _userId = s
+                End If
                 con.Close()
             End Using
         End Using
 
-        If txtPassword.Text = txtPasswordre.Text
+        If txtPassword.Text = txtPasswordre.Text Then
             If _userId = 0 Then
 
-            Using con As New SqlConnection(constr)
-                Using cmd As New SqlCommand("crud_Users_Insert")
+                Using con As New SqlConnection(constr)
+                    Using cmd As New SqlCommand("crud_Users_Insert")
                         cmd.CommandType = CommandType.StoredProcedure
                         cmd.Parameters.AddWithValue("@FullName", txtName.Text.Trim())
                         cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim())
-                        cmd.Parameters.AddWithValue("@Password", CreateSHAHashWithoutMime(txtUsername.Text.ToLower(), txtPassword.Text))
+                        cmd.Parameters.AddWithValue("@Password", CreateShaHashWithoutMime(txtUsername.Text.ToLower(), txtPassword.Text))
                         cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim())
                         'cmd.Parameters.AddWithValue("@RoleID", Guid.Parse("6DEACE6E-D744-4E47-A3DB-014E97DC56C3"))
                         'cmd.Parameters.AddWithValue("@DepartmentID", Guid.Parse("F6BA006C-0B13-4F1D-B63B-C94E6EDA4826"))
@@ -152,35 +156,35 @@ Partial Class LogIn
                         cmd.Connection = con
                         con.Open()
 
-                    Dim reader As SqlDataReader
-                    reader = cmd.ExecuteReader()
-                    reader.Read()
+                        Dim reader As SqlDataReader
+                        reader = cmd.ExecuteReader()
+                        reader.Read()
 
-                    _userId = reader.GetOrdinal("UserID")
-                    con.Close()
+                        _userId = reader.GetOrdinal("UserID")
+                        con.Close()
+                    End Using
+                    message = "Succsessful created"
+                    Try
+                        SendRegistrationEmailToAdmin(sender, e)
+                    Catch ex As Exception
+                        Exit Try
+                    End Try
+
+                    Try
+                        SendRegistrationEmail(sender, e)
+                    Catch ex As Exception
+                        Exit Try
+                    End Try
+
+                    ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") + message) + "');", True)
                 End Using
-                message = "Succsessful created"
-                    Try
-                        SendRegistrationEmailToAdmin(sender,e)
-                    Catch ex As Exception
-                        Exit Try
-                    End Try
-
-                    Try
-                        SendRegistrationEmail(sender,e)
-                    Catch ex As Exception
-                        Exit Try
-                    End Try
-                
-                ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") + message) + "');", True)
-            End Using
-        Else
-            message = "User already exist"
-            ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") & message) + "');", True)
-        End If
             Else
-            message = "Your Password does not match!"
+                message = "User already exist"
                 ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") & message) + "');", True)
+            End If
+        Else
+            message = "Your Password does not match!"
+            ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") & message) + "');", True)
             Exit Sub
         End If
     End Sub
@@ -189,31 +193,50 @@ Partial Class LogIn
     Protected Sub ValidateUser(sender As Object, e As EventArgs)
         'Dim userId As Guid = New Guid
         Try
-        Using con As New SqlConnection(constr)
-            Using cmd As New SqlCommand("Validate_User")
+
+            '    Dim dt As New DataTable
+            '    dt = helper.PkSelect("Select * From Utilizatori where Utilizator='" + Login1.UserName + "'and Parola='" + Login1.Password + "'", "WbmOlimpiasConnectionString")
+            '    If (dt.Rows.Count = 0) Then
+            '        Login1.FailureText = "Failed to connect!"
+            '    Else
+            '        Dim Idrol = dt.Rows(0).ItemArray.GetValue(3).ToString()
+            '        If (Idrol = "1") Then
+            '            AddUpdateConnectionString("FinalConnString", "WbmOlimpiasHR")
+            '            FormsAuthentication.RedirectFromLoginPage(Login1.UserName, Login1.RememberMeSet)
+            '        Else
+            '            AddUpdateConnectionString("FinalConnString", "WbmOlimpiasHR_Serbia")
+            '            FormsAuthentication.RedirectFromLoginPage(Login1.UserName, Login1.RememberMeSet)
+            '        End If
+            '    End If
+
+            'Catch ex As Exception
+
+            'End Try
+            Using con As New SqlConnection(constr)
+                Using cmd As New SqlCommand("Validate_User")
                     cmd.CommandType = CommandType.StoredProcedure
                     cmd.Parameters.AddWithValue("@Username", Login1.UserName)
-                    cmd.Parameters.AddWithValue("@Password", CreateSHAHashWithoutMime(Login1.UserName.ToLower(), Login1.Password))
+                    cmd.Parameters.AddWithValue("@Password", CreateShaHashWithoutMime(Login1.UserName.ToLower(), Login1.Password))
                     cmd.Connection = con
                     con.Open()
                     _userId = cmd.ExecuteScalar()
                     cmd.Dispose()
                     con.Close()
+                End Using
+                If _userId = "-1" Then
+                    Login1.FailureText = "Username or Password is Incorrect. Or your account is not activated yet. Try again Later"
+                Else
+                    FormsAuthentication.RedirectFromLoginPage(Login1.UserName, Login1.RememberMeSet)
+                End If
             End Using
-                    If _userId = "-1"
-                        Login1.FailureText = "Username or Password is Incorrect. Or your account is not activated yet. Try again Later"
-                    Else
-                        FormsAuthentication.RedirectFromLoginPage(Login1.UserName, Login1.RememberMeSet)
-                    End If
-        End Using
-                    Catch ex As Exception
+        Catch ex As Exception
             Login1.FailureText = "Username or Password is incorrect."
         End Try
     End Sub
-    
+
     Public Shared Function CreateShaHash(salt As String, password As String) As String
         Dim hashTool = New System.Security.Cryptography.SHA512Managed()
-        Dim passwordAsByte As Byte() = Encoding.UTF8.GetBytes(String.Concat(Salt.ToLower() + ":" + Password))
+        Dim passwordAsByte As Byte() = Encoding.UTF8.GetBytes(String.Concat(salt.ToLower() + ":" + password))
         Dim hashedPassword As Byte() = hashTool.ComputeHash(passwordAsByte)
         Dim strBuild As New StringBuilder(128)
 
@@ -221,26 +244,63 @@ Partial Class LogIn
             strBuild.Append(bt.ToString("X2"))
         Next
 
-        Dim enc = Encoding.UTF8.GetBytes(Salt + ":" + strBuild.ToString())
+        Dim enc = Encoding.UTF8.GetBytes(salt + ":" + strBuild.ToString())
         Return Convert.ToBase64String(enc)
 
     End Function
     'REGISTRATION
     Public Shared Function CreateShaHashWithoutMime(ByVal salt As String, ByVal password As String) As String
-        Dim hashTool  = New System.Security.Cryptography.SHA512Managed()
-        Dim passwordAsByte As Byte() = Encoding.UTF8.GetBytes(String.Concat(Salt.ToLower() + ":" + Password))
+        Dim hashTool = New System.Security.Cryptography.SHA512Managed()
+        Dim passwordAsByte As Byte() = Encoding.UTF8.GetBytes(String.Concat(salt.ToLower() + ":" + password))
         Dim hashedPassword As Byte() = hashTool.ComputeHash(passwordAsByte)
         Dim strBuild As New StringBuilder(128)
 
-      Dim stringBuilder As New StringBuilder()
+        Dim stringBuilder As New StringBuilder()
 
-      For i As Integer = 0 To hashedPassword.Length - 1
-        stringBuilder.Append(hashedPassword(i).ToString("x2"))
-      Next
+        For i As Integer = 0 To hashedPassword.Length - 1
+            stringBuilder.Append(hashedPassword(i).ToString("x2"))
+        Next
 
-      Return stringBuilder.ToString()
+        Return stringBuilder.ToString()
 
     End Function
+    Private Sub AddUpdateConnectionString(name As String, database As String)
+        Dim isNew As Boolean = False
+        Dim path As String = Server.MapPath("~/Web.Config")
+        Dim doc As New XmlDocument()
+        doc.Load(path)
+        Dim list As XmlNodeList = doc.DocumentElement.SelectNodes(String.Format("connectionStrings/add[@name='{0}']", name))
+        Dim node As XmlNode
+        isNew = list.Count = 0
+        If isNew Then
+            node = doc.CreateNode(XmlNodeType.Element, "add", Nothing)
+            Dim attribute As XmlAttribute = doc.CreateAttribute("name")
+            attribute.Value = name
+            node.Attributes.Append(attribute)
+
+            attribute = doc.CreateAttribute("connectionString")
+            attribute.Value = ""
+            node.Attributes.Append(attribute)
+
+            attribute = doc.CreateAttribute("providerName")
+            attribute.Value = "System.Data.SqlClient"
+            node.Attributes.Append(attribute)
+        Else
+            node = list(0)
+        End If
+        Dim conString As String = node.Attributes("connectionString").Value
+        Dim conStringBuilder As New SqlConnectionStringBuilder(conString)
+        conStringBuilder.InitialCatalog = database
+        conStringBuilder.DataSource = "DESKTOP-VRT03OS\SQLEXPRESS"
+        conStringBuilder.IntegratedSecurity = False
+        conStringBuilder.UserID = "sa"
+        conStringBuilder.Password = "sergiu123"
+        node.Attributes("connectionString").Value = conStringBuilder.ConnectionString
+        If isNew Then
+            doc.DocumentElement.SelectNodes("connectionStrings")(0).AppendChild(node)
+        End If
+        doc.Save(path)
+    End Sub
 
 
 #Region "DatabaseCommunication"

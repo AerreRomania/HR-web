@@ -1602,10 +1602,10 @@
                     <%-- LEVEL 0 - SMART FACTORY --%>
                     <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                         <article class="disabled" id="smart" runat="server">
-                            <a href="#!" class="img-container " style="background-image: url('./dashboard/images/smart-factory.png');"></a>
+                            <a href="http://192.168.96.17:3000/" target="_blank" class="img-container " style="background-image: url('./dashboard/images/smart-factory.png');"></a>
                             <div class="article-lblue">
                                 <h2>
-                                    <a href="#!"><i class="icon-refresh"></i>Smart factory</a>
+                                    <a href="http://192.168.96.17:3000/" target="_blank"><i class="icon-refresh"></i>Smart factory</a>
                                 </h2>
                             </div>
                         </article>
@@ -1790,7 +1790,7 @@
                     <div class="ribbon">
                         <div class="nekaKlasa1" data-name="Allarmi" data-link="" data-img="" runat="server" id="Div39">★</div>
                     </div>
-                    <article id="smart_allarmi" class="nekaKlasa" data-name="Smart - Allarmi" data-link="" runat="server">
+                    <article id="smart_allarmi" class="nekaKlasa" data-name="Smart - Allarmi" data-link="http://192.168.96.17:3000/" runat="server">
                         <a href="#!" class="img-container" style="background-image: url('./dashboard/images/smart-allarmi.png');"></a>
                         <div class="article-lblue">
                             <h2>
@@ -1799,9 +1799,10 @@
                         </div>
                     </article>
                 </div>
+               
                 <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" runat="server">
                     <div class="ribbon">
-                        <div class="nekaKlasa1" data-name="Macchine" data-link="" data-img="" runat="server" id="Div40">★</div>
+                        <div data-name="Macchine" class="nekaKlasa1" data-link="" data-img="" runat="server" id="Div40">★</div>
                     </div>
                     <article id="smart_machine" class="nekaKlasa" data-name="Smart - Macchine" data-link="" runat="server">
                         <a href="#!" class="img-container" style="background-image: url('./dashboard/images/smart-macchine.png');"></a>

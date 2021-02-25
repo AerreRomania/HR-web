@@ -40,7 +40,7 @@
 
             var DepartamentWidth = $("#DataGrid1  tr:first").find("th").eq(0).width();
             var PostDelucruWidth = $("#DataGrid1  tr:first").find("th").eq(1).width();
-            var total = (DepartamentWidth + PostDelucruWidth)*1.01;
+            var total = (DepartamentWidth + PostDelucruWidth)*1.02;
             $('#orelav').attr('style', 'min-width:' + total + 'px');
             
             var thead = 60*4;
@@ -456,21 +456,30 @@
             border-style:none;
            
         }
-       /* th {
-        position: sticky;
-        top: 28px;
-        }*/
+       
         .top-icons:hover{
             cursor:pointer;
         }
         
-        
+        .tHeader {
+              border: 1px solid #ffffff;
+              color: black;
+              background: #FFC107 !important;
+              font-weight: 600;
+              font-size: 12pt;
+              padding: 1px;
+              min-width: 60px;
+              max-width: 60px;
+              text-align: center;
+              text-transform: uppercase;
+              height:25px;
+        }
         .tDepartament {
             min-width:180px;
             font-weight:600;
         }
         .tPostDeLucru {
-            min-width:211px;
+            min-width:210px;
         }
         .tPostDeLucru1 {
             min-width:209px;
@@ -478,9 +487,7 @@
       
         .td_cell { 
             text-align:center;
-            border-right:2px solid white;
-            border-left:2px solid white;
-            
+            border:1px solid white;
         }
 
         .totAmmin, .totConfa, .totConfb, .totStiro, .totTess, .totSarto {
@@ -491,7 +498,7 @@
         #DataGrid2
         {
             position:absolute;
-            top:81px;
+            top:82px;
             left: 0px;
         }
        
@@ -502,12 +509,12 @@
             padding:1px;
         }
         
-        .principal{
+        .filtru{
             font-weight:600;
             font-size:12pt;
             text-decoration-color:black;
             width:390px;
-            margin-bottom:-24px;
+            margin-bottom:-25px;
             margin-left:-15px;
             z-index:1;
             height:24px;
@@ -532,25 +539,7 @@
             cursor: -moz-grab; 
             cursor: -webkit-grab; 
         }
-      
-      .pinned{
-          display:block;
-          padding-top:-3px;
-      }
-      #Table1{
-          position:fixed;
-          margin-left:390px;
-          overflow-x: hidden;
-          overflow-y:auto;
-          top:56px;
-          display: block;
-      }
-      #Table1 td{
-           border-bottom: 2px solid white !important;
-           border-right: 1px solid #ffffff;
-           border-left: 1px solid #ffffff;
-           height: 25px;
-      }
+        
      .direct{
         border: 1px solid #ffffff;
         color: black;
@@ -562,19 +551,7 @@
         text-transform: uppercase;
      }
      
-     .tHeader {
-    border: 1px solid #ffffff;
-    color: black;
-    background: #FFC107 !important;
-    font-weight: 600;
-    font-size: 12pt;
-    padding: 0px;
-    min-width: 60px;
-    max-width: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    height:25px;
-}
+     
        
     </style>
 </head>
@@ -585,7 +562,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <h3>Ore Lavorate </h3>
-                    <table cellpadding="0" cellspacing="0" class="principal">
+                    <table cellpadding="0" cellspacing="0" class="filtru">
                         <tr>
                             <td >
                         <asp:Label ID="lFiltruAn" runat="server" CssClass="continut" Text="ANNO"></asp:Label>
@@ -611,104 +588,12 @@
             
         <div class="dragscroll" id="scroll"  >
 
-             <table style="width:75.4vw" runat="server" id="Table1" class="dragscroll">
+            <table style="width:100%;" runat="server">
                 <tr class="tHeader">
-                    <td colspan="3">
-                         
-                    </td>
-                    <td colspan="3" class="direct"></td>
-                    <td colspan="4" class="td_cell">Gennaio</td>
-                    <td colspan="4" class="td_cell">Febbraio</td>
-                    <td colspan="4" class="td_cell">Marzo</td>
-                    <td colspan="4" class="td_cell">Aprile</td>
-                    <td colspan="4" class="td_cell">Maggio</td>
-                    <td colspan="4" class="td_cell">Giugno</td>
-                    <td colspan="4" class="td_cell">Luglio</td>
-                    <td colspan="4" class="td_cell">Agosto</td>
-                    <td colspan="4" class="td_cell">Settembre</td>
-                    <td colspan="4" class="td_cell">Ottobre</td>
-                    <td colspan="4" class="td_cell">Novembre</td>
-                    <td colspan="4" class="td_cell">Dicembre</td>
-                    <td colspan="2" class="tHeader"></td>
-                </tr>
-                 <tr>
-                     <td colspan="3"></td>
-                     <td colspan="3" class="tHeader">Dir/Indir</td>
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                      <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Lav.</td>
-                     <td class="tHeader">Ord.</td>
-                     <td class="tHeader">Stra.</td>
-                     <td class="tHeader">Tot.</td>
-
-                     <td class="tHeader">Total</td>
-                     <td class="tHeader">Lav. T</td>
-                 </tr>
-                
-               <tr style="background-color:rgba(255, 255, 255, 0.00);height:900px;">
-                   <td colspan="40"></td>
-               </tr>
-            </table>
-
-            <table style="width:100%;margin-top:-2px;" runat="server">
-                <tr class="tHeader">
-                    <td colspan="3" id="orelav">
+                    <td id="orelav">
                         
                     </td>
-                    <td colspan="3" class="direct"></td>
+                    <td class="direct"></td>
                     <td colspan="3" class="td_cell">Gennaio</td>
                     <td colspan="3" class="td_cell">Febbraio</td>
                     <td colspan="3" class="td_cell">Marzo</td>
@@ -730,7 +615,7 @@
            
           <asp:GridView runat="server" ID="DataGrid1" OnRowDataBound="DataGrid1_RowDataBound" CssClass="pinned" ></asp:GridView>
           
-          <asp:GridView runat="server" ID="DataGrid2" OnRowDataBound="DataGrid2_RowDataBound"></asp:GridView>
+          <asp:GridView runat="server" ID="DataGrid2" OnRowDataBound="DataGrid2_RowDataBound" ></asp:GridView>
                 
         </div>
         </div>
