@@ -14,7 +14,7 @@ Imports System.Web.Services.Protocols
 Public Class WebService
     Inherits System.Web.Services.WebService
 
-    Const StrConnection = "Data Source = KNSQL2014;Initial Catalog = ONLYOU; user=sa;password=onlyouolimpias"
+    Const StrConnection = "Data Source=192.168.96.37;Initial Catalog=ONLYOU; User Id=sa; Password=olimpiasknitting;"
     ReadOnly _myConnection As SqlConnection = New SqlConnection(StrConnection)
 
     <WebMethod()>

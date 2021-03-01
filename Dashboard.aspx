@@ -480,10 +480,18 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!" class="" id="m_temperature">
+                                <a href="http://192.168.96.17:3000/d/XT4Vu0UZk/temperature?orgId=1&refresh=5s" target="_blank" class="" id="m_temperature">
                                     <img class="notification" src="./dashboard/images/miscicon/notify.svg" alt="icon" />
                                     <img src="./dashboard/images/menu/m_smart-temperature.png" class="radius" alt="icon" />
                                     <span>Temperature</span>
+                                    <span class="pull-right">></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://192.168.96.17:3000/d/WY3MuAUZk/humidity?orgId=1&refresh=5s" target="_blank" class="" id="m_humidity">
+                                    <img class="notification" src="./dashboard/images/miscicon/notify.svg" alt="icon" />
+                                    <img src="./dashboard/images/menu/m_smart-temperature.png" class="radius" alt="icon" />
+                                    <span>Humidity</span>
                                     <span class="pull-right">></span>
                                 </a>
                             </li>
@@ -1602,10 +1610,10 @@
                     <%-- LEVEL 0 - SMART FACTORY --%>
                     <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                         <article class="disabled" id="smart" runat="server">
-                            <a href="http://192.168.96.17:3000/" target="_blank" class="img-container " style="background-image: url('./dashboard/images/smart-factory.png');"></a>
+                            <a href="#!" class="img-container " style="background-image: url('./dashboard/images/smart-factory.png');"></a>
                             <div class="article-lblue">
                                 <h2>
-                                    <a href="http://192.168.96.17:3000/" target="_blank"><i class="icon-refresh"></i>Smart factory</a>
+                                    <a href="#!" ><i class="icon-refresh"></i>Smart factory</a>
                                 </h2>
                             </div>
                         </article>
@@ -1773,15 +1781,28 @@
                         </div>
                     </article>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior blur" runat="server">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" runat="server">
                     <div class="ribbon">
-                        <div class="nekaKlasa1" data-name="Temperature" data-link="" runat="server" id="Div38">★</div>
+                        <div  data-name="Temperature"  class="nekaKlasa1" runat="server" id="Div38">★</div>
                     </div>
-                    <article id="smart_temp" class="nekaKlasa" data-name="Smart - Temperature" data-link="" runat="server">
-                        <a href="#!" class="img-container" style="background-image: url('./dashboard/images/smart-temperature.png');"></a>
+                    <article id="smart_temp"  class="nekaKlasa" data-name="Smart - Temperature"  runat="server">
+                        <a href="http://192.168.96.17:3000/d/XT4Vu0UZk/temperature?orgId=1&refresh=5s" target="_blank" class="img-container" style="background-image: url('./dashboard/images/smart-temperature1.png');"></a>
+                        <div class="article-lyellow">
+                            <h2>
+                                <a href="http://192.168.96.17:3000/d/XT4Vu0UZk/temperature?orgId=1&refresh=5s" target="_blank"><i class="icon-refresh"></i>Temperature</a>
+                            </h2>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior" runat="server">
+                    <div class="ribbon">
+                        <div data-name="Temperature" runat="server" id="Div86">★</div>
+                    </div>
+                    <article id="smart_humidity"   data-name="Smart - Humidity"  runat="server">
+                        <a href="http://192.168.96.17:3000/d/WY3MuAUZk/humidity?orgId=1&refresh=5s" target="_blank" class="img-container" style="background-image: url('./dashboard/images/smart-temperature.png');"></a>
                         <div class="article-lblue">
                             <h2>
-                                <a href="#!"><i class="icon-refresh"></i>Temperature</a>
+                                <a href="http://192.168.96.17:3000/d/WY3MuAUZk/humidity?orgId=1&refresh=5s" target="_blank"><i class="icon-refresh"></i>Humidity</a>
                             </h2>
                         </div>
                     </article>
@@ -1790,7 +1811,7 @@
                     <div class="ribbon">
                         <div class="nekaKlasa1" data-name="Allarmi" data-link="" data-img="" runat="server" id="Div39">★</div>
                     </div>
-                    <article id="smart_allarmi" class="nekaKlasa" data-name="Smart - Allarmi" data-link="http://192.168.96.17:3000/" runat="server">
+                    <article id="smart_allarmi" class="nekaKlasa" data-name="Smart - Allarmi" data-link="" runat="server">
                         <a href="#!" class="img-container" style="background-image: url('./dashboard/images/smart-allarmi.png');"></a>
                         <div class="article-lblue">
                             <h2>
@@ -3832,6 +3853,9 @@
                         <div class="col-xs-3 req_sm_list">
                             <asp:CheckBox runat="server" CssClass="role_check" data-name="smart_temp" ID="check_smart_temp" Text="Temperature" />
                         </div>
+                        <div class="col-xs-3 req_sm_list">
+                            <asp:CheckBox runat="server" CssClass="role_check" data-name="smart_humidity" ID="check_smart_humidity" Text="Humidity" />
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-3 req_sm_list">
@@ -3905,7 +3929,7 @@
                             <div class="col-xs-2">
 
                                 <asp:DropDownList ID="req_userAll_drop_down" runat="server" AutoPostBack="true" AppendDataBoundItems="True" Style="font-size: 16px; border-style: dashed;" DataSourceID="SqlDataSourceUsers" DataTextField="FullName" DataValueField="UserID" OnSelectedIndexChanged="ddl_allusr_SelectedIndexChanged"> </asp:DropDownList>
-                                <asp:SqlDataSource ID="SqlDataSourceUsers" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [UserID], [FullName] FROM [Users]"></asp:SqlDataSource>
+                                <asp:SqlDataSource ID="SqlDataSourceUsers" runat="server" ConnectionString="<%$ ConnectionStrings:NOYConnectionString %>" SelectCommand="SELECT [UserID], [FullName] FROM [Users]"></asp:SqlDataSource>
                                 <br />
                                 <br />
                             </div>
@@ -3969,6 +3993,9 @@
                                 </div>
                                 <div class="col-xs-3 req_sm_list">
                                     <asp:CheckBox runat="server" CssClass="role_check" data-name="smart_temp" ID="cbx_temp" Text="Temperature" />
+                                </div>
+                                 <div class="col-xs-3 req_sm_list">
+                                    <asp:CheckBox runat="server" CssClass="role_check" data-name="smart_humidity" ID="cbx_hum" Text="Humidity" />
                                 </div>
                             </div>
                             <div class="row">

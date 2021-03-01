@@ -1125,7 +1125,7 @@ $(document).ready(function () {
     function passwordPrompt(text) {
         /*creates a password-prompt instead of a normal prompt*/
         /* first the styling - could be made here or in a css-file. looks very silly now but its just a proof of concept so who cares */
-        var width = 361;
+        var width = 366;
         var height = 100;
         var pwprompt = document.createElement("div"); //creates the div to be used as a prompt
         pwprompt.id = "password_prompt"; //gives the prompt an id - not used in my example but good for styling with css-file
@@ -1138,7 +1138,7 @@ $(document).ready(function () {
         pwprompt.style.padding = "8px"; //give it some space
         pwprompt.style.background = "#f4f4f4"; //give it some background so its not transparent
         pwprompt.style.zIndex = 99999; //put it above everything else - just in case
-        pwprompt.style.width = 361 + 'px';
+        pwprompt.style.width = 366 + 'px';
         pwprompt.style.boxShadow = "inset 0 1px 0 #fff, 0 3px 0 rgb(84 119 15 / 0%), 1px 3px 6px 2px rgb(169 13 13 / 48%)";
         var pwtext = document.createElement("div"); //create the div for the password-text
         pwtext.innerHTML = text; //put inside the text

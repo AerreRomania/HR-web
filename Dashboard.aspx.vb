@@ -4,7 +4,7 @@ Imports System.IO
 Partial Class Dashboard
     Inherits System.Web.UI.Page
     Dim _tblUsrFav As New DataTable
-    ReadOnly _constr As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+    ReadOnly _constr As String = ConfigurationManager.ConnectionStrings("NOYConnectionString").ConnectionString
     ReadOnly _myConnection2 As SqlConnection = New SqlConnection(_constr)
     Dim _tblAuth As New DataTable
     Dim _tblAuthActivated As New DataTable
@@ -94,6 +94,7 @@ Partial Class Dashboard
             .Add(check_smart_musica)
             .Add(check_smart_porte)
             .Add(check_smart_temp)
+
         End With
 
         
@@ -163,6 +164,7 @@ Partial Class Dashboard
             .Add(cbx_musica)
             .Add(cbx_porte)
             .Add(cbx_temp)
+
         End With
     End Sub
     Dim fullListOfControls As New List(Of HtmlControl)
@@ -239,6 +241,7 @@ Partial Class Dashboard
             .Add(smart_allarmi)
             .Add(smart_machine)
             .Add(smart_musica)
+
 
         End With
 

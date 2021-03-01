@@ -673,6 +673,57 @@ body {
     box-shadow: inset 0 1px 0 #fff, 0 3px 0 rgba(84,119,15,0), 0px 3px 6px 0px rgba(6, 113, 204, 0.58);
 }
 
+.article-lyellow a {
+    color: white;
+    background: #f1dd2a;
+    width: 85%;
+    position: inherit;
+    display: inline-block;
+    display: -moz-inline-block;
+    display: -webkit-inline-block;
+    text-align: center;
+    padding: 15px;
+    line-height: 20px;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    box-shadow: 2px 2px #ccc9c9;
+}
+
+    .article-lyellow a:before {
+        border-radius: inherit;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#1d7dd6), to(#2596ff));
+        background-image: linear-gradient(#1d7dd6, #2596ff);
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -100;
+        -webkit-transition: opacity 0.45s ease-in-out;
+        transition: opacity 0.45s ease-in-out;
+        color: white;
+    }
+
+    .article-lyellow a:hover:before {
+        opacity: 1;
+    }
+
+    .article-lyellow a :active:before {
+        opacity: 0;
+    }
+
+.article-lyellow h2 {
+    padding: 20px 0 20px;
+    background: white;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 3px 0 rgba(84,119,15,0), 0px 3px 6px 0px rgba(242, 222, 43, 0.80);
+    -moz-box-shadow: inset 0 1px 0 #fff, 0 3px 0 rgba(84,119,15,0), 0px 3px 6px 0px rgba(242, 222, 43, 0.80);
+    box-shadow: inset 0 1px 0 #fff, 0 3px 0 rgba(84,119,15,0), 0px 3px 6px 0px rgba(242, 222, 43, 0.80);
+}
+
+
 .article-lgreen a {
     color: white;
     background: #259f11;
