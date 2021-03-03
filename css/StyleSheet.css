@@ -385,14 +385,6 @@ td.rAntetSecundAlb {
     font-weight: 600;
     text-align: center;
 }
-td.rAntetSecundRosu {
-    /*background-color: #ff0000;*/
-    font: 11px/20px Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    font-weight: 600;
-    text-align:center;
-}
 
 .blanko {
     background: #f4f4f4;

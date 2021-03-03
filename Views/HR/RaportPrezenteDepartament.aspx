@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/bootstrap/css/bootstrap.min.css" />
 
     <link href="~/css/Content/overflow.css" rel="stylesheet" type="text/css" />
-    <link href="~/Css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
     <link type="text/css" href="~/Css/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
 
     <style type="text/css">
@@ -64,14 +64,15 @@
         }
 
         td.rAntetSecundRosu {
-            background-color: #ff0000;
+          /*  background-color: #ff0000;*/
             font: 11px/12px Arial, Helvetica, sans-serif;
             color: #ffffff;
             border: 1px solid #ffffff;
             font-weight: 600;
+            text-align:center;
         }
         td.rAntetSecundGreen {
-            background-color: forestgreen;
+           /* background-color: forestgreen;*/
             font: 11px/12px Arial, Helvetica, sans-serif;
             color: #ffffff;
             border: 1px solid #ffffff;
@@ -152,7 +153,7 @@
 
         }
 
-       .green, .silver,.rAntetSecundRosum{
+        .silver,.rAntetSecundRosum{
             width: 15px;
             height: 15px;
             line-height: 15px;
@@ -168,13 +169,13 @@
             background-color:#ff0000;
         }
     .green{
-        {
+        
             width: 15px;
             height: 15px;
             line-height: 15px;
           /* border-radius: 45px;*/
             background-color:forestgreen;
-        }
+        
     }
 
         .tbl-first-row{
