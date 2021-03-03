@@ -478,9 +478,9 @@ function AfisarePrezenteDepartament(Tabela)
                 sTable = sTable + '<td class="rAntetSecundGalben">' + subTabela[subItem].Maternita + '</td>';
 
             else if (subTabela[subItem].Absent === '1' && subTabela[subItem].Ferie==="0")
-                sTable = sTable + '<td class="rAntetSecundRosu">' + subTabela[subItem].Absent + '</td>';
+                sTable = sTable + '<td class="rAntetSecundRosu red">' + subTabela[subItem].Absent + '</td>';
             else if (subTabela[subItem].Ferie === '1')
-                sTable = sTable + '<td class="rAntetSecundGreen">' + subTabela[subItem].Ferie + '</td>';
+                sTable = sTable + '<td class="rAntetSecundGreen green">' + subTabela[subItem].Ferie + '</td>';
             else
                 sTable = sTable + '<td class="rAntetSecundAlb default">' + subTabela[subItem].Absent + '</td>';
             sTable = sTable + '</tr>';
