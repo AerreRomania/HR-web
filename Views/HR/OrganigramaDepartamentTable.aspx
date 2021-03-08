@@ -33,15 +33,54 @@
     color: black;
     border: 1px solid #ffffff;
     /*font-weight: 600;*/
-        padding-left: 10px;
+    padding-left: 10px;
     padding-right: 10px;
     text-align: left;
+    width:auto !important;
 }
 
         .rAntet{
-            width:225px!important;
+            width:auto !important;
+        }
+
+        .empty{
+            height:6px;
+            background-color:#f4f4f4;
+         /* color: #294460; */
+            color: black;
+            border: 1px solid #ffffff;
+         /*font-weight: 600;*/
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: left;
+            width:auto !important;
+
+        }
+        .capoSquadra
+        {
+        background-color: #f4f4f4;
+        color: black;
+        font: 17px Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: right;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight:600;
+        }
+
+        #capoSquadraT1,#capoSquadraT2, #capoSquadraT3
+        {
+        background-color: #f4f4f4;
+        color: black;
+        font: 17px Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight:600;
         }
     </style>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
     <form id="fOrganigramaDepartament" runat="server">
@@ -67,11 +106,31 @@
             </tr>
             <tr>
                 <td>
-                    <table cellpadding="5" cellspacing="5" runat="server" id="tOrganigramaDepartament">
+                    <table cellpadding="5" cellspacing="5" runat="server" id="tOrganigramaDepartament"  width="100%">
                     </table>
                 </td>
             </tr>
         </table>
+         <asp:Label runat="server" ID="capo1" ></asp:Label>
+         <asp:Label ID="capo2" runat="server" ></asp:Label>
+         <asp:Label ID="capo3" runat="server" ></asp:Label>
     </form>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sq4").attr("style", "visibility:hidden;");
+           
+        });
+        var c1 = document.getElementById("capo1");
+        var c2 = document.getElementById("capo2");
+        var c3 = document.getElementById("capo3");
+        document.getElementById("capoSquadraT1").innerHTML = c1.innerHTML;
+        document.getElementById("capoSquadraT2").innerHTML = c2.innerHTML;
+        document.getElementById("capoSquadraT3").innerHTML = c3.innerHTML;
+        c1.hidden = true;
+        c2.hidden = true;
+        c3.hidden = true;
+
+    </script>
 </body>
 </html>

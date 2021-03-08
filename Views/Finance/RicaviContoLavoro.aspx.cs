@@ -12,7 +12,6 @@ public partial class Views_Finance_RicaviContoLavoro : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         helper.ExcelToJSON("D:/Finance_Files/invio.xlsx", "5.1", "B4", "R31", grdReport);
-
     }
 
     protected void LoginButton_Click(object sender, EventArgs e)
