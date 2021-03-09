@@ -344,9 +344,12 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
                 //    }
             }
         }
-        capo1.Text = CapoSqList[0];
-        capo2.Text = CapoSqList[1];
-        capo3.Text = CapoSqList[2];
+        if (Departament == "STIRO")
+        {
+            capo1.Text = CapoSqList[0];
+            capo2.Text = CapoSqList[1];
+            capo3.Text = CapoSqList[2];
+        }
     }
 
 
