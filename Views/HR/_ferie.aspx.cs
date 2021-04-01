@@ -34,7 +34,8 @@ public partial class Views_HR_ferie : System.Web.UI.Page
         DataTable LastMonth = helper.PkSelect("SELECT * FROM [LastLoadedData]", "WbmOlimpiasConnectionString");
         string sMonth = LastMonth.Rows[0].ItemArray[0].ToString();
         string lastY = (int.Parse(ddlFiltruAn.SelectedValue)-1).ToString();
-
+        DateTime lastdayOfLastYear = new DateTime(Convert.ToInt32( lastY), 12, 31);
+       
         dt.Columns.AddRange(new DataColumn[] 
         { 
           new DataColumn("SIT. FINE " + lastY,typeof(string)),
@@ -71,11 +72,15 @@ public partial class Views_HR_ferie : System.Web.UI.Page
                     vMonth = (int)((lastMonth - oDate.Month) * 1.66);
                // }
 
-            } else
+            } else if(oDate.Year==2020)
             {
-                dtRow[mattcol] = Convert.ToInt32(sMonth) * 1.66;
-                vMonth = (int)(Convert.ToInt32(sMonth) * 1.66);
-
+                dtRow[mattcol] = (lastdayOfLastYear.Month - oDate.Month) * 1.66;
+                vMonth = (int)((lastdayOfLastYear.Month - oDate.Month) * 1.66);
+            }
+                else
+            {
+                dtRow[mattcol] = 12 * 1.66;
+                vMonth = (int)(12 * 1.66);
             }
 
             int SumTotal = 0;

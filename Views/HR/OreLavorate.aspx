@@ -22,8 +22,6 @@
       
         $(function () {
 
-            
-
             $("#DataGrid1  tr:first").find("th").addClass("tHeader");
 
             $("#DataGrid2  tr:first").find("th").addClass("tHeader");
