@@ -1,5 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports System.Diagnostics
 Imports System.IO
 Partial Class Dashboard
     Inherits System.Web.UI.Page
@@ -17,21 +18,23 @@ Partial Class Dashboard
     Dim _usrID As Integer
     Dim clientService As ServiceReference1.WebServiceSoapClient = New ServiceReference1.WebServiceSoapClient
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        not_activated.Visible=False
+        not_activated.Visible = False
 
         If Not Me.Page.User.Identity.IsAuthenticated Then
             FormsAuthentication.RedirectToLoginPage()
         Else
             profil_username.Text = Page.User.Identity.Name
 
-            GetPerrmissions()
+            GetPerrmissions(User.Identity.Name)
             GetAllSoftModules()
+            ' GetNonActivatedUsers()
             'Ucitava i poruke i online/offline usere - staviti u tajmer
-            If Page.IsPostBack = False
+            If Page.IsPostBack = False Then
                 LoadUserProfile()
+                GetNonActivatedUsers()
             End If
 
-            GetNonActivatedUsers()
+
             'GetOnlineUsers()
 
             GenerateGroupOfCheckboxes()
@@ -60,7 +63,7 @@ Partial Class Dashboard
         req_all.InnerText = req_userAll_drop_down.Items.Count
     End Sub
 
-    Dim  Count As Int32 = 0
+    Dim Count As Int32 = 0
     'GENERATE - GROUP OF CHECKBOXES
     Public Sub GenerateGroupOfCheckboxes()
 
@@ -97,7 +100,7 @@ Partial Class Dashboard
 
         End With
 
-        
+
         With _fullListOfCheckboxesAccepted
             .Add(cbx_cont)
             .Add(cbx_prod)
@@ -172,7 +175,7 @@ Partial Class Dashboard
     'GENERATE - GROUP OF CONTROLS
     Public Sub GenerateGroupOfControls()
 
-        
+
 
         With fullListOfControls
             '.Add(conf_eff)
@@ -253,14 +256,14 @@ Partial Class Dashboard
                 End If
             Next
         Next
-        
+
         For Each row As DataRow In _dtAllSoftModules.Rows
             For Each conts As CheckBox In _fullListOfCheckboxes
                 If conts.Attributes("data-name") = row.Item(1).ToString Then
                     conts.Attributes.Add("data-guid", row.Item(0).ToString())
                 End If
             Next
-             For Each conts As CheckBox In _fullListOfCheckboxesAccepted
+            For Each conts As CheckBox In _fullListOfCheckboxesAccepted
                 If conts.Attributes("data-name") = row.Item(1).ToString Then
                     conts.Attributes.Add("data-guid", row.Item(0).ToString())
                     'conts.Checked = True
@@ -397,15 +400,15 @@ Partial Class Dashboard
 
     Protected Sub ddl_allusr_SelectedIndexChanged(sender As Object, e As EventArgs)
         For Each conts As CheckBox In _fullListOfCheckboxesAccepted
-conts.Checked=False
+            conts.Checked = False
         Next
 
         _tblAuthActivated.Clear()
         _tblAuthActivated = clientService.GetSoftwareModules(req_userAll_drop_down.SelectedValue)
-        
 
-        For each row As DataRow In _tblAuthActivated.Rows
-             For Each conts As CheckBox In _fullListOfCheckboxesAccepted
+
+        For Each row As DataRow In _tblAuthActivated.Rows
+            For Each conts As CheckBox In _fullListOfCheckboxesAccepted
                 If conts.Attributes("data-guid") = row.Item(0).ToString Then
                     conts.Checked = True
 
@@ -414,11 +417,32 @@ conts.Checked=False
         Next
     End Sub
     'SQL - Permissions Get
-    Private Sub GetPerrmissions()
-        _usrID = clientService.GetPermissions(User.Identity.Name)
-        _tblAuth = clientService.GetSoftwareModules(_usrID)
+    Private Sub GetPerrmissions(username As String)
 
-        gv_permissions.DataSource =  _tblAuth
+        Dim UserID As Int32 = 0
+        Using con As New SqlConnection(_constr)
+            Using cmd As New SqlCommand("spUserRolePermissinUserID")
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.Add("@username", SqlDbType.NVarChar, 64).Value = username
+                cmd.Parameters.Add("@userID", SqlDbType.Int).Direction = ParameterDirection.Output
+                cmd.Parameters.Add("@return_value", SqlDbType.Int).Direction = ParameterDirection.ReturnValue
+                cmd.Connection = con
+                con.Open()
+                cmd.ExecuteNonQuery()
+                UserID = cmd.Parameters("@userID").Value
+                con.Close()
+            End Using
+        End Using
+        _usrID = UserID
+        If _myConnection2.State = ConnectionState.Closed Then _myConnection2.Open()
+        Dim q As String = "SELECT DISTINCT SoftwareModules.SoftwareModuleID FROM UserSoftwareModuleAccesability INNER JOIN SoftwareModules ON UserSoftwareModuleAccesability.SoftwareModuleID = SoftwareModules.SoftwareModuleID INNER JOIN Users ON UserSoftwareModuleAccesability.UserID = '" + _usrID.ToString() + "'"
+
+        Dim adap As New SqlDataAdapter(q, _myConnection2)
+        adap.Fill(_tblAuth)
+        adap.Dispose()
+        If _myConnection2.State = ConnectionState.Open Then _myConnection2.Close()
+
+        gv_permissions.DataSource = _tblAuth
         gv_permissions.DataBind()
     End Sub
     'SQL - Modules GET
@@ -437,14 +461,17 @@ conts.Checked=False
     Public Sub online_users_data_bound(sender As Object, e As GridViewRowEventArgs)
         e.Row.Cells(2).Attributes.Add("style", "width: 1px; margin-left: 20px;border:none;")
         e.Row.Cells(2).Attributes.Add("class", "online_user_td")
-        e.Row.Cells(2).Attributes.Add("class","online_user_img")
+        e.Row.Cells(2).Attributes.Add("class", "online_user_img")
         e.Row.Cells(1).Attributes.Add("style", "font-size: 12px;border:none;")
-        e.Row.Cells(1).Attributes.Add("data-guid", e.Row.Cells(0).Text )
-        e.Row.Cells(0).Attributes.Add("style","display:none;")
+        e.Row.Cells(1).Attributes.Add("data-guid", e.Row.Cells(0).Text)
+        e.Row.Cells(0).Attributes.Add("style", "display:none;")
     End Sub
     'SQL - Load unactivated users
     Private Sub GetNonActivatedUsers()
-        _reqDt = clientService.GetNonActivatedUsers()
+        Dim q As String = "SELECT DISTINCT * FROM Users WHERE UserID NOT IN (SELECT UserID FROM UserSoftwareModuleAccesability)"
+        Dim adap As New SqlDataAdapter(q, _myConnection2)
+        adap.Fill(_reqDt)
+        adap.Dispose()
         reg_notification_control.Attributes.Add("data-count", _reqDt.Rows.Count.ToString)
 
         req_h1.InnerText = "- " + _reqDt.Rows.Count.ToString + " Pending Requests"
@@ -460,19 +487,7 @@ conts.Checked=False
         'req_userAll_drop_down.SelectedIndex = 0
     End Sub
     'SQL - Validate User Auth
-    Private Sub ValidateAuthUser() Handles req_save_proced.Click
-        Dim Name As String = String.Empty
-        Dim UserStr As String = String.Empty
-        Name = req_user_drop_down.SelectedItem.ToString()
 
-        'USERID ID
-        For Each row As DataRow In _reqDt.Rows
-            If row(0).ToString().Equals(req_user_drop_down.SelectedValue.ToString) Then
-                req_user_drop_down.Attributes.Add("data-attr", row(0).ToString)
-                UserStr = req_user_drop_down.Attributes("data-attr")
-            End If
-        Next
-    End Sub
     Dim tbl_msg As New DataTable
     'SQL - Load User Messages
     Private Sub GetReciveMessages()
@@ -480,12 +495,12 @@ conts.Checked=False
 
         If _myConnection2.State = ConnectionState.Closed Then _myConnection2.Open()
 
-        Dim q As String = "SELECT * from User_Message Where [To] = '" + User.Identity.Name + "' UNION SELECT * from User_Message WHERE [From]='"+User.Identity.Name+"' ORDER BY Sended ASC"
+        Dim q As String = "Select * from User_Message Where [To] = '" + User.Identity.Name + "' UNION SELECT * from User_Message WHERE [From]='" + User.Identity.Name + "' ORDER BY Sended ASC"
         Dim adap As New SqlDataAdapter(q, _myConnection2)
         adap.Fill(tbl_msg)
         adap.Dispose()
         If _myConnection2.State = ConnectionState.Open Then _myConnection2.Close()
-        
+
         'For each row As DataRow In tbl_msg.Rows
 
         '    If msg_selected_usr.Text = row.Item(0).ToString()
@@ -495,7 +510,7 @@ conts.Checked=False
         '    If row.Item(3) IsNOT Nothing
         '        chat_control_icon.Attributes.Add("data-count",tbl_msg.Rows.Count)
         '        Else
-        '        'chat_control_icon.Attributes.Add("data-count","0")
+        '        'chat_control_icon.Attributes.Add("data-count","0")0
         '    End If
         'Next
 
@@ -517,7 +532,7 @@ conts.Checked=False
             Link = row.ItemArray(1).ToString()
             imglink = row.ItemArray(6).ToString()
 
-            Dim str = "<a href='#!' class='nekaKlasa card__status book' data-name='"+Name+"' data-link='"+Link+"' data-img='"+imglink+"' style='background-image:url("+imglink+");background-size: 90px; background-attachment:inherit;background-position: 47% 15%;'> <span> "+Name+" </span> </a>"
+            Dim str = "<a href='#!' class='nekaKlasa card__status book' data-name='" + Name + "' data-link='" + Link + "' data-img='" + imglink + "' style='background-image:url(" + imglink + ");background-size: 90px; background-attachment:inherit;background-position: 47% 15%;'> <span> " + Name + " </span> </a>"
 
             myControl.Controls.Add(New LiteralControl(str))
         Next
@@ -525,20 +540,20 @@ conts.Checked=False
     'SQL - LOG-OUT CLICK
     Private Sub SendOnlineStatus(sender As Object, e As EventArgs) Handles LoginStatus1.LoggedOut
         'clientService.SendOfflineStatus(User.Identity.Name)
-         Dim query As String = "Update Users Set OnlineStatus='False' WHERE Username='" & User.Identity.Name & "'"
+        Dim query As String = "Update Users Set OnlineStatus='False' WHERE Username='" & User.Identity.Name & "'"
         If _myConnection2.State = ConnectionState.Closed Then _myConnection2.Open()
         Dim cmd As New SqlCommand(query, _myConnection2)
         cmd.ExecuteNonQuery()
         cmd.Dispose()
         If _myConnection2.State = ConnectionState.Open Then _myConnection2.Close()
 
-            Session.Clear()
-            Session.Abandon()
-            Response.Redirect("Login.aspx")
+        Session.Clear()
+        Session.Abandon()
+        Response.Redirect("Login.aspx")
     End Sub
     'SQL - LOG-IN STATUS SEND
     Private Sub SendTrueOnlineStatus(sender As Object, e As EventArgs)
-         clientService.SendOnlineStatus(User.Identity.Name)
+        clientService.SendOnlineStatus(User.Identity.Name)
     End Sub
     'SQL - Load User Profil Details
     Private Sub LoadUserProfile()
@@ -622,10 +637,10 @@ conts.Checked=False
         '        base64String = Convert.ToBase64String(bytes, 0, bytes.Length)
         '        url = Convert.ToString("data:Images/Image/png;base64,") & base64String
         '        End If
-   
+
         '    Dim yourHTMLstring As string = "<li class='contact "+row.Item(1).ToString+"' data-name='"+row.Item(1).ToString+"' ><div class='wrap'><span class='contact-status "+online_status+"'></span><img src='"+url+"'/><div class='meta'><p class='name'>"+row.Item(6).ToString+"</p><p class='preview'>"+row.Item(11)+"</p></div></div></li>"
         '    'msg_ul.Controls.Add(new LiteralControl(yourHTMLstring))
-            
+
         'Next
         ' Dim msgHTMLstr As string = String.Empty
         ' Dim msgHTMLstr1 As string = String.Empty
@@ -649,7 +664,7 @@ conts.Checked=False
         '        'End If
         '    Next
         '    'UKOLIKO JE POSLATA
-          
+
         '    ' Dim recivedDate As DateTime 
         '    '     recivedDate = DateTime.Parse("6/22/2009 07:00:00 AM")
         '    '     recivedDate.ToString("HH:mm")
@@ -660,7 +675,7 @@ conts.Checked=False
         '    '    msg_messages.Controls.Add(New LiteralControl(msgHTMLstr1))
         '    '    msgHTMLstr = "<li class='sent " + row.Item(0).ToString() + "' data-name='" + row.Item(0).ToString() + "'><img src='" + url + "'/><p>" + row.item(2).ToString() + "</p></li>"
         '    '    msg_messages.Controls.Add(New LiteralControl(msgHTMLstr))
-                
+
         '    'End If
         '    'UKOLIKO JE PRIMLJENA
 
@@ -670,9 +685,9 @@ conts.Checked=False
         '          msgHTMLstr = "<li class='sent " + row.Item(0).ToString() + "' data-name='" + row.Item(0).ToString() + "'><img src='" + url + "'/><p>" + row.item(2).ToString() + "</p></li>"
         '          'msg_messages.Controls.Add(New LiteralControl(msgHTMLstr))
         '    End If
-            
+
         'Next
-        
+
     End Sub
     'SQL - Remove User Profile Image
     Private Sub RemoveUserImage()
@@ -768,4 +783,57 @@ conts.Checked=False
             con.Dispose()
         End Try
     End Function
+
+
+
+    Protected Sub req_user_drop_down_SelectedIndexChanged(sender As Object, e As EventArgs)
+        Debug.Print(req_user_drop_down.SelectedValue)
+    End Sub
+
+    Protected Sub req_save_proced_Click(sender As Object, e As EventArgs)
+        '    Dim Name As String = String.Empty
+        '    Dim UserStr As String = String.Empty
+        '    Name = req_user_drop_down.SelectedItem.ToString()
+
+        '    'USERID ID
+        '    For Each row As DataRow In _reqDt.Rows
+        '        If row(0).ToString().Equals(req_user_drop_down.SelectedValue.ToString) Then
+        '            req_user_drop_down.Attributes.Add("data-attr", row(0).ToString)
+        '            UserStr = req_user_drop_down.Attributes("data-attr")
+        '        End If
+        '    Next
+
+        Dim strConnString As String = System.Configuration.ConfigurationManager.ConnectionStrings("NOYConnectionString").ConnectionString
+        Dim query As String = "Insert into UserSoftwareModuleAccesability (UserID,  SoftwareModuleID, CanRead, CanWrite) values (@User,@softid,1,1)"
+        For Each soft As DataRow In _dtAllSoftModules.Rows
+            If soft.Item(0).ToString <> "14" Then
+                Using con As New SqlConnection(strConnString)
+                    Using cmd As New SqlCommand()
+                        With cmd
+                            .Connection = con
+                            .CommandType = CommandType.Text
+                            .CommandText = query
+                            .Parameters.AddWithValue("@User", req_user_drop_down.SelectedValue)
+                            .Parameters.AddWithValue("@softid", soft.Item(0).ToString())
+                        End With
+                        Try
+                            con.Open()
+                            cmd.ExecuteNonQuery()
+                        Catch ex As Exception
+
+                        End Try
+
+                    End Using
+
+
+                End Using
+                Debug.Print("Software ID: " + soft.Item(0).ToString())
+            End If
+
+
+
+
+        Next
+
+    End Sub
 End Class

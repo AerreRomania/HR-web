@@ -26,18 +26,22 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
         //else
         //    Response.Redirect("AccesInterzis.aspx");
         Preparare(Request.QueryString["Departament"]);
-       
+
         //ScriptManager.RegisterClientScriptBlock(this, GetType(), "none", "<script type='text/javascript' src='./js/jquery-3.1.1.min.js'></script>", false);
         //ScriptManager.RegisterClientScriptBlock(this, GetType(), "none", "<script>$(document).ready(function() {$('#tOrganigramaDepartament td').wrapInner('<span></span>');})</script>", false);
     }
     private List<string> CapoSqList = new List<string>();
+    private List<string> TessituraNames = new List<string>() { "PROGRAMMAZIONE", "RESP.MAGAZZINO", "MAGAZZINO FILATO", "ROCCATURA", "RESP.CONTROLLO QUALITÀ", "CONTROLLO QUALITA'", "ADDETTO AL CONTROLLO TAVOLO", "PROGRAMMATORE SHIMA", "CAPO MECCANICO", "MECCANICO", "MANUTENZIONE", "PULITORE", "CAPO SQUADRA - NIS TESSITURA", "CAPOTURNO", "OPERATORE MACCHINA", "RAMMENDO", "PACCHI", "ADDETTO ALLE PULIZIE GENERALI" };
+    private List<string> StiroNames = new List<string>() { "RESPONSABILE STIRO", "ANALISTA TEMPI E METODI", "RESP.CONTROLLO QUALITÀ", "CAPO LINEA", "APPLICAZIONE ETICHETTE", "DIVISIONE TAGLIE", "CONTROLLO MANICHINO", "RAMMENDO", "STIRO PRESSA", "ADDETTO AI CARTELLINI", "PIEGO/IMBUSTO", "ADDETTO ABACO", "CONTROLLO QUALITA'", "MAGAZZINIERE", "MECCANICO", "CALDAISTA CON PATENTE"};
+    private List<string> ConfeNames = new List<string>() { "RESPONSABILE CONFEZIONE", "ANALISTA TEMPI E METODI", "RESONSABILE CAPOLINEA CONFEZ", "CONTROLLO QUALITA'", "CAPO LINEA", "CONTROLLORE DI LAVORO IN LINEA", "TC","RIMAGLIO","OV","TRAVETTA","RAMMENDO","FINISSAGGIO","CONTROLLO MANICHINO","MECCANICO","RESP.MAGAZZINO", "MAGAZZINIERE", "ADDETTO ALLE PULIZIE GENERALI"};
+    private List<string> CurrentDepNames = new List<string>();
     private void Preparare(string Departament)
     {
         
-    string TESSITURA = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='TESSITURA' ORDER BY case when Mansione = 'PROGRAMMAZIONE' then 1 when Mansione = 'MAGAZZINO FILATO' then 2 when Mansione = 'ROCCATURA' then 3 when Mansione = 'RESP.CONTROLLO QUALITÀ' then 4 when Mansione = 'ADDETTO AL CONTROLLO TAVOLO' then 5 when Mansione = 'PROGRAMMATORE SHIMA' then 6 when Mansione = 'MECCANICO' then 7 when Mansione = 'PULITORE' then 8 when Mansione = 'CAPOTURNO' then 9 when Mansione = 'OPERATORE MACCHINA' then 10 when Mansione = 'RAMMENDO' then 11 else 12 end asc";
-    string STIRO = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='STIRO' ORDER BY case When Linea between '1' and '9' then case when Mansione = 'APPLICAZIONE ETICHETTE' then 1 when Mansione = 'DIVISIONE TAGLIE' then 2 when Mansione = 'CONTROLLO MANICHINO' then 3 when Mansione = 'RAMMENDO' then 4 when Mansione = 'STIRO PRESSA' then 5 when Mansione = 'ADDETTO AI CARTELLINI' then 6 when Mansione = 'PIEGO/IMBUSTO' then 7 when Mansione = 'ADDETTO ABACO' then 8 when Mansione = 'CONTROLLO QUALITA' then 9 else 10 end else case when Linea = 'NIS STIRO' then case when Mansione = 'RESPONSABILE STIRO' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESP.CONTROLLO QUALITÀ' then 3 when Mansione = 'MAGAZZINIERE' then 4 when Mansione = 'MECCANICO' then 5 when Mansione = 'CALDAISTA CON PATENTE' then 6 when Mansione = 'PIEGO/IMBUSTO' then 7 else 8 end end end asc";
-    string CONFFEZIONE = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='"+Departament+"' ORDER BY case when Mansione = 'CAPO LINEA' then 1 when Mansione = 'TC' then 2 when Mansione = 'RIMAGLIO' then 3 when Mansione = 'OV' then 4 when Mansione = 'TRAVETTA' then 5 when Mansione = 'FINISSAGGIO' then 6 else 7 end asc";
-        string structura = string.Empty;
+    string TESSITURA = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='TESSITURA' ORDER BY case when Mansione = 'PROGRAMMAZIONE' then 1 when Mansione = 'RESP.MAGAZZINO' then 2 when Mansione = 'MAGAZZINO FILATO' then 3 when Mansione='SFILATURA TELI' then 4 when Mansione = 'ROCCATURA' then 5 when Mansione = 'RESP.CONTROLLO QUALITÀ'  then 6 when Mansione='SVILUPPO SCHEDE/TAGLIE' then 7 when Mansione='CONTROLLO QUALITA''' then 8 when Mansione = 'ADDETTO AL CONTROLLO TAVOLO' then 9 when Mansione = 'PROGRAMMATORE SHIMA' then 10 when Mansione='CAPO MECCANICO' then 10 when Mansione = 'MECCANICO' then 11 when Mansione = 'PULITORE' then 12 when Mansione = 'CAPOTURNO' then 13 when Mansione='CAPO SQUADRA - NIS TESSITURA' then 14 when Mansione = 'OPERATORE MACCHINA' then 15 when Mansione='MANUTENZIONE' then 16 when Mansione='CONTROLLO QUALITA'' RAMMENDO' then 17 when Mansione = 'RAMMENDO' then 18 when Mansione='PACCHI' then 19 else 20 end asc;";
+    string STIRO = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='STIRO' ORDER BY case when Mansione = 'RESPONSABILE STIRO' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESP.CONTROLLO QUALITÀ' then 3 when Mansione = 'CAPO LINEA' then 4 when Mansione = 'APPLICAZIONE ETICHETTE' then 5 when Mansione = 'DIVISIONE TAGLIE' then 6when Mansione = 'CONTROLLO MANICHINO' then 7when Mansione = 'RAMMENDO' then 8 when Mansione = 'STIRO PRESSA' then 9  when Mansione = 'ADDETTO AI CARTELLINI' then 10 when Mansione = 'PIEGO/IMBUSTO' then 11when Mansione = 'ADDETTO ABACO' then 12when Mansione = 'CONTROLLO QUALITA''' then 13 when Mansione = 'MAGAZZINIERE' then 14 when Mansione = 'MECCANICO' then 15 else 16 end asc;";
+    string CONFFEZIONE = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='"+Departament+"' ORDER BY case when Mansione = 'RESPONSABILE CONFEZIONE' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESPONSABILE CAPOLINEA CONFEZ.' then 3 when Mansione = 'CONTROLLO QUALITA''' then 4 when Mansione = 'CAPO LINEA' then 5 when Mansione = 'CONTROLLORE DI LAVORO IN LINEA' then 6 when Mansione = 'TC' then 7 when Mansione = 'RIMAGLIO' then 8 when Mansione = 'OV' then 9 when Mansione = 'TRAVETTA' then 10 when Mansione = 'RAMMENDO' then 11 when Mansione = 'FINISSAGGIO' then 12 when Mansione = 'CONTROLLO MANICHINO' then 13 when Mansione = 'MECCANICO' then 14 when Mansione = 'RESP.MAGAZZINO' then 15 when Mansione = 'MAGAZZINIERE' then 16 when Mansione = 'ADDETTO ALLE PULIZIE GENERALI' then 17 else 18 end asc;";
+    string structura = string.Empty;
         //lOrganigramaDepartament.Text = "Organigramma " + Departament;
         List<int> lineListValue = new List<int>();
         DataClassWbmOlimpias dcWbmOlimpias = new DataClassWbmOlimpias();
@@ -63,18 +67,23 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
         {
             case "TESSITURA":
                 structura = TESSITURA;
+                CurrentDepNames = TessituraNames;
                 break;
             case "STIRO":
                 structura = STIRO;
+                CurrentDepNames = StiroNames;
                 break;
             case "CONFEZIONE A":
                 structura = CONFFEZIONE;
+                CurrentDepNames = ConfeNames;
                 break;
             case "CONFEZIONE B":
                 structura = CONFFEZIONE;
+                CurrentDepNames = ConfeNames;
                 break;
             case "CONFEZIONE C":
                 structura = CONFFEZIONE;
+                CurrentDepNames = ConfeNames;
                 break;
         }
 
@@ -92,17 +101,17 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
             }
         }
 
-        //DataTable MaxMansione = new DataTable();
-        //using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
-        //{
-        //    using (SqlCommand cmd = new SqlCommand("SELECT Linea,Mansione,Count(Mansione) AS Maxim FROM OrganigramaDepartamentListViewByDep where Departament = '"+Departament+"' GROUP BY  Linea, Mansione", conn))
-        //    {
-        //        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-        //        {
-        //            da.Fill(MaxMansione);
-        //        }
-        //    }
-        //}
+        DataTable MaxMansione = new DataTable();
+        using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
+        {
+            using (SqlCommand cmd = new SqlCommand("SELECT Linea,Mansione,Count(Mansione) AS Maxim FROM OrganigramaDepartamentListViewByDep where Departament = '" + Departament + "' and Linea Not like 'MA %' GROUP BY  Linea, Mansione", conn))
+            {
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(MaxMansione);
+                }
+            }
+        }
 
         Int32 total = 0;
         foreach (DataRow dt in query.Rows)
@@ -238,78 +247,82 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
                         CapoSqList.Add(angajat[0].ToString() + " " + angajat[1].ToString());
                     }
 
-
-                    if (MansioneLast == angajat[2].ToString() || MansioneLast == string.Empty)
-                    {
-
-                        tr = new HtmlTableRow();
-                        tc = new HtmlTableCell();
-                        tc.Attributes.Add("class", "rAntetSecundAlb");
-                        tc.InnerText = angajat[0].ToString() + " " + angajat[1].ToString();
-                        tr.Cells.Add(tc);
-
-                        tc = new HtmlTableCell();
-                        tc.Attributes.Add("class", "rAntetSecundAlb");
-                        tc.InnerText = angajat[2].ToString();
-                        tr.Cells.Add(tc);
-                        tLinie.Rows.Add(tr);
-
-                        mansioneC++;
-                    }
                     else
                     {
+                        if (MansioneLast == angajat[2].ToString() || MansioneLast == string.Empty)
+                        {
 
-                        mansioneC++;
-                        //while(mansioneC<max)
-                        //{
-                        //    tr = new HtmlTableRow();
-                        //    tc = new HtmlTableCell();
-                        //    tc.Attributes.Add("class", "rAntetSecundAlb");
-                        //    tc.Style.Add("height", "17px;");
-                        //    tc.InnerText = " ";
-                        //    tr.Cells.Add(tc);
+                            tr = new HtmlTableRow();
+                            tc = new HtmlTableCell();
+                            tc.Attributes.Add("class", "rAntetSecundAlb");
+                            tc.InnerText = angajat[0].ToString() + " " + angajat[1].ToString();
+                            tr.Cells.Add(tc);
 
-                        //    tc = new HtmlTableCell();
-                        //    tc.Attributes.Add("class", "rAntetSecundAlb");
-                        //    tc.Style.Add("height", "17px;");
-                        //    tc.InnerText = " ";
+                            tc = new HtmlTableCell();
+                            tc.Attributes.Add("class", "rAntetSecundAlb");
+                            tc.InnerText = angajat[2].ToString();
+                            tr.Cells.Add(tc);
+                            tLinie.Rows.Add(tr);
 
-                        //    tr.Cells.Add(tc);
-                        //    tLinie.Rows.Add(tr);
-                        //    mansioneC++;
-                        //}
-                        tr = new HtmlTableRow();
-                        tc = new HtmlTableCell();
-                        tc.Attributes.Add("class", "empty");
-                        tc.InnerText = " ";
-                        tr.Cells.Add(tc);
+                            mansioneC++;
+                        }
+                        else
+                        {
+                                mansioneC++;
+                                if (LinieName != "MA TESS." && LinieName!= "MA STIRO" && LinieName != "NIS STRUT" )
+                                {
 
-                        tc = new HtmlTableCell();
-                        tc.Attributes.Add("class", "empty");
-                        tc.InnerText = " ";
-                        tr.Cells.Add(tc);
+                                    while (mansioneC < max)
+                                    {
+                                        tr = new HtmlTableRow();
+                                        tc = new HtmlTableCell();
+                                        tc.Attributes.Add("class", "rAntetSecundAlb");
+                                        tc.Style.Add("height", "17px;");
+                                        tc.InnerText = " ";
+                                        tr.Cells.Add(tc);
+                                        tc = new HtmlTableCell();
+                                        tc.Attributes.Add("class", "rAntetSecundAlb");
+                                        tc.Style.Add("height", "17px;");
+                                        tc.InnerText = " ";
 
+                                        tr.Cells.Add(tc);
+                                        tLinie.Rows.Add(tr);
+                                        mansioneC++;
+                                    }
+                                }
+                            
+                            tr = new HtmlTableRow();
+                            tc = new HtmlTableCell();
+                            tc.Attributes.Add("class", "empty");
+                            tc.InnerText = " ";
+                            tr.Cells.Add(tc);
 
-                        tLinie.Rows.Add(tr);
-                        tr = new HtmlTableRow();
-                        tc = new HtmlTableCell();
-                        tc.Attributes.Add("class", "rAntetSecundAlb");
-                        tc.InnerText = angajat[0].ToString() + " " + angajat[1].ToString();
-                        tr.Cells.Add(tc);
+                            tc = new HtmlTableCell();
+                            tc.Attributes.Add("class", "empty");
+                            tc.InnerText = " ";
+                            tr.Cells.Add(tc);
+                            tLinie.Rows.Add(tr);
 
-                        tc = new HtmlTableCell();
-                        tc.Attributes.Add("class", "rAntetSecundAlb");
-                        tc.InnerText = angajat[2].ToString();
-                        tr.Cells.Add(tc);
+                            tr = new HtmlTableRow();
+                            tc = new HtmlTableCell();
+                            tc.Attributes.Add("class", "rAntetSecundAlb");
+                            tc.InnerText = angajat[0].ToString() + " " + angajat[1].ToString();
+                            tr.Cells.Add(tc);
 
-                        tLinie.Rows.Add(tr);
-                        mansioneC = 0;
+                            tc = new HtmlTableCell();
+                            tc.Attributes.Add("class", "rAntetSecundAlb");
+                            tc.InnerText = angajat[2].ToString();
+                            tr.Cells.Add(tc);
+
+                            tLinie.Rows.Add(tr);
+                            mansioneC = 0;
+
+                        }
+
+                        MansioneLast = angajat[2].ToString();
+                        max = (from row in MaxMansione.AsEnumerable() where row.Field<string>("Mansione") == MansioneLast select row.Field<int>("Maxim")).Max();
 
                     }
-
-                    MansioneLast = angajat[2].ToString();
-                    //max = (from row in MaxMansione.AsEnumerable() where row.Field<string>("Mansione") == MansioneLast select row.Field<int>("Maxim")).Max();
-
                 }
             }
             tcPrincipal.Controls.Add(tLinie);

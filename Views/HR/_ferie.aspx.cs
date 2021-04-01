@@ -30,12 +30,13 @@ public partial class Views_HR_ferie : System.Web.UI.Page
             "YEAR(OreFerieView.Data), AngajatiViewLastMonth.Marca", "WbmOlimpiasConnectionString");
         DataTable dt = helper.PkSelect("SELECT [Marca] as [R-CODE], CONCAT([Prenume],' ',[Nume]) as [NOMINATIVO], [PostDeLucru] as [MANSIONE]," +
             "CONVERT(VARCHAR(10), [DataNasterii], 103) as [DATA ASS.], [Departament] as [REPARTO], [Linie] as [LINE] FROM [AngajatiViewLastMonth]", "WbmOlimpiasConnectionString");
-        DataTable dtLastY = helper.PkSelect("SELECT * FROM FerieTotYY", "WbmOlimpiasConnectionString");
+       
         DataTable LastMonth = helper.PkSelect("SELECT * FROM [LastLoadedData]", "WbmOlimpiasConnectionString");
         string sMonth = LastMonth.Rows[0].ItemArray[0].ToString();
         string lastY = (int.Parse(ddlFiltruAn.SelectedValue)-1).ToString();
-        DateTime lastdayOfLastYear = new DateTime(Convert.ToInt32( lastY), 12, 31);
-       
+        int lastYear = int.Parse(lastY);
+        DataTable dtLastY = helper.PkSelect("SELECT * FROM FerieTotYY where Year='"+lastY+"'", "WbmOlimpiasConnectionString");
+
         dt.Columns.AddRange(new DataColumn[] 
         { 
           new DataColumn("SIT. FINE " + lastY,typeof(string)),
@@ -61,27 +62,27 @@ public partial class Views_HR_ferie : System.Web.UI.Page
             int lastMonth = Convert.ToInt32(sMonth);
             int vMonth = 0;
 
-            if (oDate.Year == int.Parse(ddlFiltruAn.SelectedValue))
+            if(oDate.Year == DateTime.Now.Year)
             {
-                //if (oDate.Day > 1 && lastMonth >= oDate.Month) {
-                //    dtRow[mattcol] = 0;
-                //    vMonth = 0;
-                //} else
-                //{
-                    dtRow[mattcol] = (lastMonth - oDate.Month) * 1.66;
-                    vMonth = (int)((lastMonth - oDate.Month) * 1.66);
-               // }
-
-            } else if(oDate.Year==2020)
-            {
-                dtRow[mattcol] = (lastdayOfLastYear.Month - oDate.Month) * 1.66;
-                vMonth = (int)((lastdayOfLastYear.Month - oDate.Month) * 1.66);
+                dtRow[mattcol] = (lastMonth - oDate.Month) * 1.66;
+                vMonth = (int)((lastMonth - oDate.Month) * 1.66);
             }
-                else
+           else if (oDate.Year == int.Parse(ddlFiltruAn.SelectedValue))
+            {
+              dtRow[mattcol] = (12 - oDate.Month) * 1.66;
+              vMonth = (int)((12 - oDate.Month) * 1.66);
+            }
+            else if(int.Parse(ddlFiltruAn.SelectedValue)==DateTime.Now.Year)
+            {
+                dtRow[mattcol] = lastMonth * 1.66;
+                vMonth = (int)(lastMonth * 1.66);
+            }
+            else
             {
                 dtRow[mattcol] = 12 * 1.66;
                 vMonth = (int)(12 * 1.66);
             }
+            
 
             int SumTotal = 0;
 

@@ -1598,7 +1598,7 @@
                     </div>
                     <%-- LEVEL 0 - RISORSE UMANE --%>
                     <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
-                        <article class="" id="riso" runat="server">
+                        <article class="disabled" id="riso" runat="server">
                             <a href="#!" class="img-container " style="background-image: url('./dashboard/images/risorso-umanei.png');"></a>
                             <div class="article-lpurple">
                                 <h2>
@@ -3774,29 +3774,47 @@
             </div>
         </div>
         <%-- REQ ACTIVATION PAGE --%>
+        
         <div id="req_activation" class="req_hidden" runat="server">
             <a href="#!" id="req_close" style="font-size: 25px; position: absolute; right: 30px; top: 10px; text-decoration: none;">X</a>
             <br />
+            
             <div class="container">
+                <asp:UpdatePanel runat="server">
+                        <ContentTemplate>
                 <div class="row">
                     <div class="col-xs-12">
                         <h3>Unauthorized Users <span runat="server" id="req_h1"></span>
-                            <asp:Button runat="server" Text="Save and Proced" ID="req_save_proced" Style="float: right; font-size: 16px; margin-top: 5px;" /></h3>
+                            <asp:Button runat="server" Text="Save and Proced" ID="req_save_proced" OnClick="req_save_proced_Click" Style="float: right; font-size: 16px; margin-top: 5px;" />
+
+                        </h3>
                         <hr />
                     </div>
                 </div>
-
+                 
+                    
                 <div class="row">
                     <div class="col-xs-1"><span style="font-size: 16px;">Select user:</span></div>
                     <div class="col-xs-2">
-                        <asp:DropDownList ID="req_user_drop_down" runat="server" Style="font-size: 16px; border-style: dashed;"></asp:DropDownList>
-                    </div>
+                   
+                        <asp:DropDownList ID="req_user_drop_down" runat="server" Style="font-size: 16px; border-style: dashed;" AutoPostBack="true" OnSelectedIndexChanged="req_user_drop_down_SelectedIndexChanged"></asp:DropDownList>
+                            
+                             </div>
+                            </div>
+                      
                     <div class="col-xs-1"></div>
                     <div class="col-xs-2"></div>
+                      </ContentTemplate>
+                       <Triggers>
+                           <asp:AsyncPostBackTrigger ControlID="req_user_drop_down" EventName="SelectedIndexChanged" />
+                           <asp:AsyncPostBackTrigger ControlID="req_save_proced" EventName="Click" />
+                       </Triggers>
+                    </asp:UpdatePanel>
                 </div>
+                         
                 <br />
                 <br />
-                <div id="req_checkboxes_all">
+                <div id="req_checkboxes_all" style="margin-left:60px;">
                     <div class="row">
                         <div class="col-xs-3">
                             <asp:CheckBox runat="server" CssClass="role_check" ID="check_cont" data-name="cont" Text="Controlo di Gestione" Style="font-size: 18px;" /><hr style="margin-bottom: 10px; margin-top: 10px;" />
@@ -3906,10 +3924,11 @@
                         <div class="col-xs-3"></div>
                     </div>
                 </div>
+                           
                 <br />
                 <br />
 
-
+                 
 
 
                 <div class="row">
@@ -3937,7 +3956,7 @@
                             <div class="col-xs-2"></div>
                         </div>
 
-                        <div id="req_All_checkboxes_all">
+                        <div id="req_All_checkboxes_all" style="margin-left:60px;">
                             <div class="row">
                                 <div class="col-xs-3">
                                     <asp:CheckBox runat="server" CssClass="role_check" ID="cbx_cont" data-name="cont" Text="Controlo di Gestione" Style="font-size: 18px;" /><hr style="margin-bottom: 10px; margin-top: 10px;" />
@@ -4058,7 +4077,6 @@
             </div>
 
            
-        </div>
         <div class="notification-bell notify show-count" id="reg_notification_control" runat="server"></div>
         <%-- CHAT --%>
         <div id="popup_chat" class="chat_hidden">

@@ -53,74 +53,72 @@ $(document).ready(function () {
         end = this.value;
         $('input:checkbox').prop("checked", false).removeClass("bookselected");
         $('span').removeClass("bookselected");
-        $('#req_user_drop_down').addClass("disabled");
+        $('#req_user_drop_down').addClass("enable");
         $('#req_checkboxes_all').show();
         $('#req_save_proced').show();
     });
 
-    $(".role_check").on("click", function (e) {
-        e.preventDefault();
-        var currentElem = $(this);
-        var user_drop_down = $("#req_user_drop_down");
-        var dataToLog = { UserID: end, RoleID: currentElem.data('guid') };
+    //$(".role_check").on("click", function (e) {
+    //    e.preventDefault();
+    //    var currentElem = $(this);
+    //    var user_drop_down = $("#req_user_drop_down");
+    //    var dataToLog = { UserID: end, RoleID: currentElem.data('guid') };
 
-        $('#req_save_proced').css({ 'border-color': "green" });
-        currentElem.toggleClass("bookselected");
-        if ($(currentElem).hasClass('bookselected')) {
-            currentElem.find('input').prop("checked", true);
-            currentElem.removeClass("bookblack");
+    //    $('#req_save_proced').css({ 'border-color': "green" });
+    //    currentElem.toggleClass("bookselected");
+    //    if ($(currentElem).hasClass('bookselected')) {
+    //        currentElem.find('input').prop("checked", true);
+    //        currentElem.removeClass("bookblack");
 
-            //ADD TO DB
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                contentType: "application/json; charset=utf-8",
-                data: JSON.stringify(dataToLog),
-                url: "WebService.asmx/InsertRole",
-                success: function (data) {
-                    console.log(data);
-                },
-                error: function (error) {
-                    console.log(error);
-                }
-            });
+    //        //ADD TO DB
+    //        $.ajax({
+    //            url: "WebService.asmx/InsertRole",
+    //            method: "post",
+    //            data: jso.stringify(dataToLog),
+    //            contentType: "application/json; charset=utf-8",
+    //            dataType: "json",
+    //            success: function (data) { alert(JSON.stringify(data)); },
+    //            error: function (errMsg) {
+    //                alert(JSON.stringify(errMsg));
+    //            }
+    //        });
 
-            $.notify('Perrmission Added', "success", {
-                showAnimation: 'slideUp',
-                hideAnimation: 'slideDown',
-                autohide: true,
-                globalPosition: "right bottom",
-                clickToHide: true
-            });
-        }
-        else {
-            currentElem.find('input').prop("checked", false);
-            currentElem.removeClass("bookselected");
-            currentElem.addClass("bookblack");
+    //        $.notify('Perrmission Added', "success", {
+    //            showAnimation: 'slideUp',
+    //            hideAnimation: 'slideDown',
+    //            autohide: true,
+    //            globalPosition: "right bottom",
+    //            clickToHide: true
+    //        });
+    //    }
+    //    else {
+    //        currentElem.find('input').prop("checked", false);
+    //        currentElem.removeClass("bookselected");
+    //        currentElem.addClass("bookblack");
 
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                contentType: "application/json; charset=utf-8",
-                data: JSON.stringify(dataToLog),
-                url: "WebService.asmx/DeleteRole",
-                success: function (data) {
-                    console.log(data);
-                },
-                error: function (error) {
-                    console.log(error);
-                }
-            });
+    //        $.ajax({
+    //            type: "POST",
+    //            dataType: "json",
+    //            contentType: "application/json; charset=utf-8",
+    //            data: JSON.stringify(dataToLog),
+    //            url: "WebService.asmx/DeleteRole",
+    //            success: function (data) {
+    //                console.log(data);
+    //            },
+    //            error: function (error) {
+    //                console.log(error);
+    //            }
+    //        });
 
-            $.notify('Perrmission Removed', "success", {
-                showAnimation: 'slideUp',
-                hideAnimation: 'slideDown',
-                autohide: true,
-                globalPosition: "right bottom",
-                clickToHide: true
-            });
-        }
-    });
+    //        $.notify('Perrmission Removed', "success", {
+    //            showAnimation: 'slideUp',
+    //            hideAnimation: 'slideDown',
+    //            autohide: true,
+    //            globalPosition: "right bottom",
+    //            clickToHide: true
+    //        });
+    //    }
+    //});
 
     $("#req_save_proced").on("click", function (e) {
         $('input:checkbox').prop("checked", false);

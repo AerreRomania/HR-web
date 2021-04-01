@@ -5,7 +5,7 @@ Imports System.IO
 Partial Class profil
     Inherits System.Web.UI.Page
 
-    Const strConnection = "Data Source = KNSQL2014;Initial Catalog = ONLYOU; user=sa;password=onlyouolimpias"
+    Const strConnection = "Data Source = 192.168.46.96.37;Initial Catalog = ONLYOU; user=sa;password=olimpiasknitting"
     Dim _myConnection As SqlConnection = New SqlConnection(strConnection)
 
     Dim _tblUsers As New DataTable

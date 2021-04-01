@@ -8,7 +8,11 @@ Imports System.Xml
 Partial Class LogIn
     Inherits Page
     Dim constr As String = ConfigurationManager.ConnectionStrings("NOYConnectionString").ConnectionString
+    'Dim constr2 As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+
     Dim _myConnection As SqlConnection = New SqlConnection(constr)
+    '  Dim _myConnection2 As SqlConnection = New SqlConnection(constr2)
+
     Dim helper = New _MainClass
 
 
@@ -107,6 +111,33 @@ Partial Class LogIn
 
         Dim message As String = String.Empty
 
+        'Using con As New SqlConnection(constr)
+        '    Using cmd As New SqlCommand("spUserRole")
+        '        cmd.CommandType = CommandType.StoredProcedure
+        '        cmd.Parameters.Add("@username", SqlDbType.NVarChar, 64).Value = txtUsername.Text.Trim()
+        '        cmd.Parameters.Add("@password", SqlDbType.VarChar, 128).Value = CreateShaHash(txtUsername.Text, txtPassword.Text)
+        '        'cmd.Parameters.Add("@roleID", SqlDbType.UniqueIdentifier).Direction = ParameterDirection.Output
+        '        cmd.Parameters.Add("@userID", SqlDbType.Int).Direction = ParameterDirection.Output
+        '        cmd.Parameters.Add("@return_value", SqlDbType.Int).Direction = ParameterDirection.ReturnValue
+        '        cmd.Connection = con
+        '        con.Open()
+        '        cmd.ExecuteNonQuery()
+
+        '        Dim s As Integer
+        '        Try
+        '            s = cmd.Parameters("@userID").Value
+        '        Catch ex As Exception
+        '            s = 0
+        '        End Try
+
+        '        If s = 0 Then
+        '            _userId = 0
+        '        Else
+        '            _userId = s
+        '        End If
+        '        con.Close()
+        '    End Using
+        'End Using
         Using con As New SqlConnection(constr)
             Using cmd As New SqlCommand("spUserRole")
                 cmd.CommandType = CommandType.StoredProcedure
@@ -134,7 +165,58 @@ Partial Class LogIn
                 con.Close()
             End Using
         End Using
+        'If txtPassword.Text = txtPasswordre.Text Then
+        '    If _userId = 0 Then
 
+        '        Using con As New SqlConnection(constr)
+        '            Using cmd As New SqlCommand("crud_Users_Insert")
+        '                cmd.CommandType = CommandType.StoredProcedure
+        '                cmd.Parameters.AddWithValue("@FullName", txtName.Text.Trim())
+        '                cmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim())
+        '                cmd.Parameters.AddWithValue("@Password", CreateShaHashWithoutMime(txtUsername.Text.ToLower(), txtPassword.Text))
+        '                cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim())
+        '                'cmd.Parameters.AddWithValue("@RoleID", Guid.Parse("6DEACE6E-D744-4E47-A3DB-014E97DC56C3"))
+        '                'cmd.Parameters.AddWithValue("@DepartmentID", Guid.Parse("F6BA006C-0B13-4F1D-B63B-C94E6EDA4826"))
+        '                cmd.Parameters.AddWithValue("@Telephone", txtPhone.Text.Trim())
+        '                'cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now)
+        '                cmd.Parameters.AddWithValue("@LastLogin", DateTime.Now)
+        '                cmd.Parameters.AddWithValue("@OnlineStatus", "false")
+        '                cmd.Parameters.AddWithValue("@Active", "true")
+        '                cmd.Parameters.AddWithValue("@JobType", txtJob.Text)
+        '                cmd.Connection = con
+        '                con.Open()
+
+        '                Dim reader As SqlDataReader
+        '                reader = cmd.ExecuteReader()
+        '                reader.Read()
+
+        '                _userId = reader.GetOrdinal("UserID")
+        '                con.Close()
+        '            End Using
+        '            message = "Succsessful created"
+        '            Try
+        '                SendRegistrationEmailToAdmin(sender, e)
+        '            Catch ex As Exception
+        '                Exit Try
+        '            End Try
+
+        '            Try
+        '                SendRegistrationEmail(sender, e)
+        '            Catch ex As Exception
+        '                Exit Try
+        '            End Try
+
+        '            ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") + message) + "');", True)
+        '        End Using
+        '    Else
+        '        message = "User already exist"
+        '        ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") & message) + "');", True)
+        '    End If
+        'Else
+        '    message = "Your Password does not match!"
+        '    ClientScript.RegisterStartupScript([GetType](), "alert", (Convert.ToString("alert('") & message) + "');", True)
+        '    Exit Sub
+        'End If
         If txtPassword.Text = txtPasswordre.Text Then
             If _userId = 0 Then
 

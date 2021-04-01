@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+/// <summary>
+/// Summary description for Tessitura
+/// </summary>
+public class Tessitura
+{
+    public Tessitura
+    {
+        public static int PROGRAMMAZIONE = 2;
+        public static int MAGAZZINOFILATO = 2;
+        public static int ROCCATURA = 2;
+        public static int RESPCONTROLLOQUALITÀ = 1;
+        public static int ADDETTOALCONTROLLOTAVOLO = 2
+        public static int PROGRAMMATORESHIMA = 2;
+        public static int MECCANICO = 4;
+        public static int PULITORE = 3;
+        public static int CAPOTURNO = 4;
+        public static int OPERATORE MACCHINA=19;
+        public static int RAMMENDO = 9;
+        public static int CONTROLLOQUALITA = 3;
+        public static int PACCHI = 1;
+
+        //
+        // TODO: Add constructor logic here
+        //
+    }
+}

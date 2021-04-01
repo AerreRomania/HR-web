@@ -16,6 +16,8 @@ Public Class WebService
 
     Const StrConnection = "Data Source=192.168.96.37;Initial Catalog=ONLYOU; User Id=sa; Password=olimpiasknitting;"
     ReadOnly _myConnection As SqlConnection = New SqlConnection(StrConnection)
+    Const StrConnection2 = "Data Source=192.168.96.37;Initial Catalog=ONLYOU; User Id=sa; Password=olimpiasknitting;"
+    ReadOnly _myConnection2 As SqlConnection = New SqlConnection(StrConnection2)
 
     <WebMethod()>
     Public Sub InsertBookmark(username As String, name As String, link As String)

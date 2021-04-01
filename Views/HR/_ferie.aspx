@@ -107,12 +107,23 @@
                  $(".grd tbody").before("<thead><tr></tr></thead>");
                  $(".grd thead tr").append($(".grd th"));
                  $(".grd tbody tr:first").remove();
-
+                 var dropdownListId = document.getElementById("ddlFiltruAn"); 
+                 var year = dropdownListId.options[dropdownListId.selectedIndex].value;
                  $('.grd').dataTable({
                      dom: 'Blfrtip',
                      buttons: [
                          'copyHtml5',
-                         'excelHtml5',
+                         {
+                             extend: 'excel',
+                             customize: function () {
+                                 //alert('HELLO!');
+                                 //$('.tot').remove();
+                             },
+                             title: 'Ferie',
+                             extension: '.xlsx',
+                             filename: 'Ferie ' +year,
+
+                         },
                          {
                              extend: 'print',
                              text: 'Print',
@@ -131,7 +142,7 @@
                  })
              });
               
-            </script>
+         </script>
     </form>
 </body>
 </html>
