@@ -8,7 +8,9 @@
     <link href="~/css/Content/overflow.css" rel="stylesheet" type="text/css" />
     <link href="~/Css/StyleSheet.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        body { height: 950px; }
+        body { 
+            height: 950px; 
+        }
 
         .tdcentered {
             text-align: center;
@@ -112,6 +114,8 @@
             cursor: pointer;
             background: orange;
         }
+
+        
 
         #Departament_104:hover {
             cursor: pointer;
@@ -267,7 +271,7 @@
                             <td valign="top">
                                 <table id="tAbsenteProcent" width="100%" style=" width:100%; border-collapse: collapse;">
                                     <tr>
-                                        <td class="rSecund" colspan="2"><asp:Label ID="htProcent" runat="server" Text="Percentuale" Width="200px"></asp:Label></td>
+                                        <td class="rSecund" colspan="2"><asp:Label ID="htProcent" runat="server" Text="Percentuale" Width="200px"></asp:Label></td> 
                                         <td class="rSecund"><asp:Label ID="htCodSistem" runat="server" Text="Gennaio" Width="70px"></asp:Label></td>
                                         <td class="rSecund"><asp:Label ID="htMarca" runat="server" Text="Febbraio" Width="70px"></asp:Label></td>
                                         <td class="rSecund"><asp:Label ID="htRaportAbsenta" runat="server" Text="Marzo" Width="70px"></asp:Label></td>
@@ -544,7 +548,7 @@
                     $("#hchart").text('Totale assenteismo Stiro:');
                 });
 
-                $("#tAbsenteProcent #Departament_116").click(function () {
+                $("#tAbsenteProcent #Departament_116").click(function () 
                     drawChartsPercentualeAmmin();
                     $("#hchart").text('Totale assenteismo Amministrazione:');
                 });
@@ -1123,7 +1127,7 @@
                     legend: {
                         position: 'bottom',
                         textStyle: {
-                            fontSize: 12
+                        fontSize: 12
                         }
                     },
                     animation: {

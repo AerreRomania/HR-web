@@ -148,6 +148,7 @@
     </style>
 </head>
 <body>
+
     <form id="fRaportAbsenteLuna" runat="server" method="post" enctype="multipart/form-data" target="upload_target">
 
         <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableTheming="True">
@@ -314,10 +315,9 @@
                 <asp:Button ID="load_grid" OnClick="load_grid_Click" runat="server" Text="test" Style="display: none;" />
                 <asp:HiddenField runat="server" ID="lbl_selected_dep" />
                 <asp:HiddenField runat="server" ID="lbl_mansione" />
-
+               
                 <script type="text/javascript">
 
-                    
                     Sys.Application.add_load(function () {
                        
                         $("#btn_close").click(function () {
