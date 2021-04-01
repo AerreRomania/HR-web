@@ -1,0 +1,2197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1429px" height="933px" viewBox="0 0 1429 933" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="59" width="14" height="14" rx="3"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="432" width="14" height="14" rx="3"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="182" width="14" height="14" rx="3"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="0" y="107" width="14" height="14" rx="3"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="0" y="480" width="14" height="14" rx="3"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="0" y="544" width="14" height="14" rx="3"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-13" x="0" y="663" width="14" height="14" rx="3"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <rect id="path-15" x="0" y="740" width="14" height="14" rx="3"></rect>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <rect id="path-17" x="0" y="240" width="14" height="14" rx="3"></rect>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <rect id="path-19" x="0" y="43" width="14" height="14" rx="3"></rect>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <rect id="path-21" x="0" y="416" width="14" height="14" rx="3"></rect>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+        <rect id="path-23" x="0" y="161" width="14" height="14" rx="3"></rect>
+        <mask id="mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-23"></use>
+        </mask>
+        <rect id="path-25" x="0" y="91" width="14" height="14" rx="3"></rect>
+        <mask id="mask-26" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-25"></use>
+        </mask>
+        <rect id="path-27" x="0" y="464" width="14" height="14" rx="3"></rect>
+        <mask id="mask-28" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-27"></use>
+        </mask>
+        <rect id="path-29" x="0" y="528" width="14" height="14" rx="3"></rect>
+        <mask id="mask-30" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-29"></use>
+        </mask>
+        <rect id="path-31" x="0" y="224" width="14" height="14" rx="3"></rect>
+        <mask id="mask-32" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-31"></use>
+        </mask>
+        <rect id="path-33" x="0" y="75" width="14" height="14" rx="3"></rect>
+        <mask id="mask-34" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-33"></use>
+        </mask>
+        <rect id="path-35" x="0" y="448" width="14" height="14" rx="3"></rect>
+        <mask id="mask-36" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-35"></use>
+        </mask>
+        <rect id="path-37" x="0" y="203" width="14" height="14" rx="3"></rect>
+        <mask id="mask-38" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-37"></use>
+        </mask>
+        <rect id="path-39" x="0" y="293" width="14" height="14" rx="3"></rect>
+        <mask id="mask-40" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-39"></use>
+        </mask>
+        <rect id="path-41" x="0" y="352" width="14" height="14" rx="3"></rect>
+        <mask id="mask-42" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-41"></use>
+        </mask>
+        <rect id="path-43" x="0" y="373" width="14" height="14" rx="3"></rect>
+        <mask id="mask-44" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-43"></use>
+        </mask>
+        <rect id="path-45" x="0" y="394" width="14" height="14" rx="3"></rect>
+        <mask id="mask-46" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-45"></use>
+        </mask>
+        <rect id="path-47" x="0" y="123" width="14" height="14" rx="3"></rect>
+        <mask id="mask-48" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-47"></use>
+        </mask>
+        <rect id="path-49" x="0" y="496" width="14" height="14" rx="3"></rect>
+        <mask id="mask-50" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-49"></use>
+        </mask>
+        <rect id="path-51" x="0" y="560" width="14" height="14" rx="3"></rect>
+        <mask id="mask-52" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-51"></use>
+        </mask>
+        <rect id="path-53" x="0" y="679" width="14" height="14" rx="3"></rect>
+        <mask id="mask-54" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-53"></use>
+        </mask>
+        <rect id="path-55" x="0" y="756" width="14" height="14" rx="3"></rect>
+        <mask id="mask-56" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-55"></use>
+        </mask>
+        <rect id="path-57" x="0" y="788" width="14" height="14" rx="3"></rect>
+        <mask id="mask-58" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-57"></use>
+        </mask>
+        <rect id="path-59" x="0" y="256" width="14" height="14" rx="3"></rect>
+        <mask id="mask-60" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-59"></use>
+        </mask>
+        <rect id="path-61" x="0" y="314" width="14" height="14" rx="3"></rect>
+        <mask id="mask-62" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-61"></use>
+        </mask>
+        <rect id="path-63" x="0" y="139" width="14" height="14" rx="3"></rect>
+        <mask id="mask-64" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-63"></use>
+        </mask>
+        <rect id="path-65" x="0" y="512" width="14" height="14" rx="3"></rect>
+        <mask id="mask-66" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-65"></use>
+        </mask>
+        <rect id="path-67" x="0" y="576" width="14" height="14" rx="3"></rect>
+        <mask id="mask-68" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-67"></use>
+        </mask>
+        <rect id="path-69" x="0" y="695" width="14" height="14" rx="3"></rect>
+        <mask id="mask-70" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-69"></use>
+        </mask>
+        <rect id="path-71" x="0" y="772" width="14" height="14" rx="3"></rect>
+        <mask id="mask-72" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-71"></use>
+        </mask>
+        <rect id="path-73" x="0" y="804" width="14" height="14" rx="3"></rect>
+        <mask id="mask-74" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-73"></use>
+        </mask>
+        <rect id="path-75" x="0" y="827" width="14" height="14" rx="3"></rect>
+        <mask id="mask-76" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-75"></use>
+        </mask>
+        <rect id="path-77" x="0" y="848" width="14" height="14" rx="3"></rect>
+        <mask id="mask-78" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-77"></use>
+        </mask>
+        <rect id="path-79" x="0" y="599" width="14" height="14" rx="3"></rect>
+        <mask id="mask-80" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-79"></use>
+        </mask>
+        <rect id="path-81" x="0" y="620" width="14" height="14" rx="3"></rect>
+        <mask id="mask-82" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-81"></use>
+        </mask>
+        <rect id="path-83" x="0" y="641" width="14" height="14" rx="3"></rect>
+        <mask id="mask-84" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-83"></use>
+        </mask>
+        <rect id="path-85" x="0" y="718" width="14" height="14" rx="3"></rect>
+        <mask id="mask-86" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-85"></use>
+        </mask>
+        <rect id="path-87" x="0" y="272" width="14" height="14" rx="3"></rect>
+        <mask id="mask-88" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-87"></use>
+        </mask>
+        <rect id="path-89" x="0" y="330" width="14" height="14" rx="3"></rect>
+        <mask id="mask-90" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="14" fill="white">
+            <use xlink:href="#path-89"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="In-primo-piano-(tutti)-Copy-6" transform="translate(0.000000, -71.000000)">
+            <g id="Group-3-Copy" transform="translate(-1.000000, 72.000000)">
+                <rect id="Rectangle-21-Copy-32" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="157" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-113" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="289" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-153" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="349" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-233" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="596" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-173" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="370" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-234" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="617" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-193" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="391" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-235" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="638" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-313" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="715" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-73" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="199" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-373" fill="#FE001B" x="29" y="178" width="1371.5" height="21"></rect>
+                <rect id="Rectangle-21-Copy-374" fill="#F6A623" x="29" y="57" width="1371.5" height="18"></rect>
+                <rect id="Rectangle-21-Copy-53" stroke="#D1D1D1" x="29" y="178" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-133" stroke="#D1D1D1" x="29" y="310" width="230" height="39"></rect>
+                <rect id="Rectangle-21-Copy-33" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-114" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-154" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-236" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-174" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-237" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-194" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-238" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-314" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-74" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-54" stroke="#D1D1D1" x="259" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-134" stroke="#D1D1D1" x="259" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-35" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-115" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-155" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-239" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-175" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-240" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-195" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-241" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-315" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-75" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-55" stroke="#D1D1D1" x="389" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-135" stroke="#D1D1D1" x="389" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-34" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-116" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-156" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-242" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-176" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-243" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-196" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-244" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-316" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-76" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-56" stroke="#D1D1D1" x="316" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-136" stroke="#D1D1D1" x="316" y="310" width="73" height="39"></rect>
+                <rect id="Rectangle-21-Copy-36" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-117" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-157" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-245" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-177" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-246" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-197" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-247" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-317" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-77" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-57" stroke="#D1D1D1" x="446" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-137" stroke="#D1D1D1" x="446" y="310" width="73" height="39"></rect>
+                <text id="F.to-Gruppo-c/lavoro" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="56">F.to </tspan>
+                    <tspan x="57.1523438" y="56" font-family="Roboto-Bold, Roboto" font-weight="bold">Gruppo</tspan>
+                    <tspan x="96.46875" y="56"> c/lavoro</tspan>
+                    <tspan x="33" y="72">F.to </tspan>
+                    <tspan x="57.1523438" y="72" font-family="Roboto-Bold, Roboto" font-weight="bold">Benetton</tspan>
+                    <tspan x="106.253906" y="72"> c/lavoro</tspan>
+                    <tspan x="33" y="88">F.to </tspan>
+                    <tspan x="57.1523438" y="88" font-family="Roboto-Bold, Roboto" font-weight="bold">Terzi</tspan>
+                    <tspan x="83.8886719" y="88"> netto c/lavoro</tspan>
+                    <tspan x="33" y="104">F.to </tspan>
+                    <tspan x="57.1523438" y="104" font-family="Roboto-Bold, Roboto" font-weight="bold">Gruppo</tspan>
+                    <tspan x="96.46875" y="104"> c/vendita</tspan>
+                    <tspan x="33" y="120">F.to </tspan>
+                    <tspan x="57.1523438" y="120" font-family="Roboto-Bold, Roboto" font-weight="bold">Benetton</tspan>
+                    <tspan x="106.253906" y="120"> c/vendita</tspan>
+                    <tspan x="33" y="136">F.to </tspan>
+                    <tspan x="57.1523438" y="136" font-family="Roboto-Bold, Roboto" font-weight="bold">Terzi</tspan>
+                    <tspan x="83.8886719" y="136"> netto c/vendita</tspan>
+                    <tspan x="33" y="152">F.to Sottoprodotti</tspan>
+                </text>
+                <text id="Energia-elettrica-Me" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="428">Energia elettrica</tspan>
+                    <tspan x="33" y="444">Metano</tspan>
+                    <tspan x="33" y="460">Manutenzioni industriali</tspan>
+                    <tspan x="33" y="476">Manut. struttura</tspan>
+                    <tspan x="33" y="492">Mat. di consumo</tspan>
+                    <tspan x="33" y="508">Depuratore</tspan>
+                    <tspan x="33" y="524">Smaltimento fanghi</tspan>
+                    <tspan x="33" y="540">Consumi imballi e Sussidiarie</tspan>
+                    <tspan x="33" y="556">Prestazioni di lavoro esterno</tspan>
+                    <tspan x="33" y="572">Trasporti BNT</tspan>
+                    <tspan x="33" y="588">Altri costi di prod.ne</tspan>
+                </text>
+                <text id="Pubblicità-Provvigio" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="752">Pubblicità</tspan>
+                    <tspan x="33" y="768">Provvigioni / Enasarco</tspan>
+                    <tspan x="33" y="784">Trasporti commerciali terzi</tspan>
+                    <tspan x="33" y="800">Consulenze commerciali</tspan>
+                    <tspan x="33" y="816">Altre Commerciali</tspan>
+                </text>
+                <text id="Altro-Provvigioni-/" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="860">Altro</tspan>
+                    <tspan x="33" y="876">Provvigioni / Enasarco</tspan>
+                    <tspan x="33" y="892">Trasporti commerciali terzi</tspan>
+                    <tspan x="33" y="908">Consulenze commerciali</tspan>
+                    <tspan x="33" y="924">Altre Commerciali</tspan>
+                </text>
+                <text id="Consumi-materia-prim" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="236">Consumi materia prima</tspan>
+                    <tspan x="33" y="252">Consumi Colorati / ingredienti</tspan>
+                    <tspan x="33" y="268">Trasporto su acquisti</tspan>
+                    <tspan x="33" y="284">Acquisti, altri</tspan>
+                </text>
+                <text id="Costo-pers.-commerci" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="675">Costo pers. commerciale</tspan>
+                    <tspan x="33" y="691">Costo pers. Gen. Amm.</tspan>
+                    <tspan x="33" y="707">Costo pers. Gruppo</tspan>
+                </text>
+                <text id="TOT.-FATTURATO" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="173">TOT. FATTURATO</tspan>
+                </text>
+                <text id="TOT.-FATTURATO-Copy" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="305">TOT. FATTURATO</tspan>
+                </text>
+                <text id="TOT.-LAVORAZIONI-EST" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="365">TOT. LAVORAZIONI ESTERNE</tspan>
+                </text>
+                <text id="TOT.-ALTRI-COSTI-IND" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="612">TOT. ALTRI COSTI IND.LI</tspan>
+                </text>
+                <text id="LAVORO-DIRETTO" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="386">LAVORO DIRETTO</tspan>
+                </text>
+                <text id="TOT.-COSTO-DEL-VENDU" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="633">TOT. COSTO DEL VENDUTO</tspan>
+                </text>
+                <text id="LAVORO-INDIRETTO" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="407">LAVORO INDIRETTO</tspan>
+                </text>
+                <text id="MARGINE-IND.LE-LORDO" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="654">MARGINE IND.LE LORDO</tspan>
+                </text>
+                <text id="LAVORO-IND-GEN.LE" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="731">LAVORO IND GEN.LE</tspan>
+                </text>
+                <text id="VALORE-PRODUZIONE" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="215">VALORE PRODUZIONE</tspan>
+                </text>
+                <text id="Delta-Rimanenze" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="33" y="194">Delta Rimanenze</tspan>
+                </text>
+                <text id="Lavorazioni-esterne" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="326">Lavorazioni esterne varie</tspan>
+                    <tspan x="33" y="342">Trasporti su lavorazioni esterne</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="297.109375" y="56">0,0</tspan>
+                    <tspan x="297.109375" y="72">0,0</tspan>
+                    <tspan x="297.109375" y="88">0,0</tspan>
+                    <tspan x="297.109375" y="104">0,0</tspan>
+                    <tspan x="297.109375" y="120">0,0</tspan>
+                    <tspan x="297.109375" y="136">0,0</tspan>
+                    <tspan x="297.109375" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="297.109375" y="428">0,0</tspan>
+                    <tspan x="297.109375" y="444">0,0</tspan>
+                    <tspan x="297.109375" y="460">0,0</tspan>
+                    <tspan x="297.109375" y="476">0,0</tspan>
+                    <tspan x="297.109375" y="492">0,0</tspan>
+                    <tspan x="297.109375" y="508">0,0</tspan>
+                    <tspan x="297.109375" y="524">0,0</tspan>
+                    <tspan x="297.109375" y="540">0,0</tspan>
+                    <tspan x="297.109375" y="556">0,0</tspan>
+                    <tspan x="297.109375" y="572">0,0</tspan>
+                    <tspan x="297.109375" y="588">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="297.109375" y="752">0,0</tspan>
+                    <tspan x="297.109375" y="768">0,0</tspan>
+                    <tspan x="297.109375" y="784">0,0</tspan>
+                    <tspan x="297.109375" y="800">0,0</tspan>
+                    <tspan x="297.109375" y="816">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-10" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="297.109375" y="860">0,0</tspan>
+                    <tspan x="297.109375" y="876">0,0</tspan>
+                    <tspan x="297.109375" y="892">0,0</tspan>
+                    <tspan x="297.109375" y="908">0,0</tspan>
+                    <tspan x="297.109375" y="924">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="297.109375" y="236">0,0</tspan>
+                    <tspan x="297.109375" y="252">0,0</tspan>
+                    <tspan x="297.109375" y="268">0,0</tspan>
+                    <tspan x="297.109375" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="297.109375" y="675">0,0</tspan>
+                    <tspan x="297.109375" y="691">0,0</tspan>
+                    <tspan x="297.109375" y="707">0,0</tspan>
+                </text>
+                <text id="0,0" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-30" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-40" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-71" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-51" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-72" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-61" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-73" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-101" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-20" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-10" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="297.109375" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="298.109375" y="326">0,0</tspan>
+                    <tspan x="298.109375" y="342">0,0</tspan>
+                </text>
+                <text id="0,0-copy" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-31" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-41" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-74" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-52" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-75" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-62" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-76" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-102" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-21" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-11" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="427.109375" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="427.109375" y="326">0,0</tspan>
+                    <tspan x="427.109375" y="342">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="427.109375" y="56">0,0</tspan>
+                    <tspan x="427.109375" y="72">0,0</tspan>
+                    <tspan x="427.109375" y="88">0,0</tspan>
+                    <tspan x="427.109375" y="104">0,0</tspan>
+                    <tspan x="427.109375" y="120">0,0</tspan>
+                    <tspan x="427.109375" y="136">0,0</tspan>
+                    <tspan x="427.109375" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="427.109375" y="430">0,0</tspan>
+                    <tspan x="427.109375" y="446">0,0</tspan>
+                    <tspan x="427.109375" y="462">0,0</tspan>
+                    <tspan x="427.109375" y="478">0,0</tspan>
+                    <tspan x="427.109375" y="494">0,0</tspan>
+                    <tspan x="427.109375" y="510">0,0</tspan>
+                    <tspan x="427.109375" y="526">0,0</tspan>
+                    <tspan x="427.109375" y="542">0,0</tspan>
+                    <tspan x="427.109375" y="558">0,0</tspan>
+                    <tspan x="427.109375" y="574">0,0</tspan>
+                    <tspan x="427.109375" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="427.109375" y="754">0,0</tspan>
+                    <tspan x="427.109375" y="770">0,0</tspan>
+                    <tspan x="427.109375" y="786">0,0</tspan>
+                    <tspan x="427.109375" y="802">0,0</tspan>
+                    <tspan x="427.109375" y="818">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-11" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="427.109375" y="862">0,0</tspan>
+                    <tspan x="427.109375" y="878">0,0</tspan>
+                    <tspan x="427.109375" y="894">0,0</tspan>
+                    <tspan x="427.109375" y="910">0,0</tspan>
+                    <tspan x="427.109375" y="926">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="427.109375" y="236">0,0</tspan>
+                    <tspan x="427.109375" y="252">0,0</tspan>
+                    <tspan x="427.109375" y="268">0,0</tspan>
+                    <tspan x="427.109375" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="427.109375" y="675">0,0</tspan>
+                    <tspan x="427.109375" y="691">0,0</tspan>
+                    <tspan x="427.109375" y="707">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="360.332031" y="56">0,0%</tspan>
+                    <tspan x="360.332031" y="72">0,0%</tspan>
+                    <tspan x="360.332031" y="88">0,0%</tspan>
+                    <tspan x="360.332031" y="104">0,0%</tspan>
+                    <tspan x="360.332031" y="120">0,0%</tspan>
+                    <tspan x="360.332031" y="136">0,0%</tspan>
+                    <tspan x="360.332031" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="360.332031" y="428">0,0%</tspan>
+                    <tspan x="360.332031" y="444">0,0%</tspan>
+                    <tspan x="360.332031" y="460">0,0%</tspan>
+                    <tspan x="360.332031" y="476">0,0%</tspan>
+                    <tspan x="360.332031" y="492">0,0%</tspan>
+                    <tspan x="360.332031" y="508">0,0%</tspan>
+                    <tspan x="360.332031" y="524">0,0%</tspan>
+                    <tspan x="360.332031" y="540">0,0%</tspan>
+                    <tspan x="360.332031" y="556">0,0%</tspan>
+                    <tspan x="360.332031" y="572">0,0%</tspan>
+                    <tspan x="360.332031" y="588">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="360.332031" y="752">0,0%</tspan>
+                    <tspan x="360.332031" y="768">0,0%</tspan>
+                    <tspan x="360.332031" y="784">0,0%</tspan>
+                    <tspan x="360.332031" y="800">0,0%</tspan>
+                    <tspan x="360.332031" y="816">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-10" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="360.332031" y="860">0,0%</tspan>
+                    <tspan x="360.332031" y="876">0,0%</tspan>
+                    <tspan x="360.332031" y="892">0,0%</tspan>
+                    <tspan x="360.332031" y="908">0,0%</tspan>
+                    <tspan x="360.332031" y="924">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="360.332031" y="236">0,0%</tspan>
+                    <tspan x="360.332031" y="252">0,0%</tspan>
+                    <tspan x="360.332031" y="268">0,0%</tspan>
+                    <tspan x="360.332031" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="360.332031" y="675">0,0%</tspan>
+                    <tspan x="360.332031" y="691">0,0%</tspan>
+                    <tspan x="360.332031" y="707">0,0%</tspan>
+                </text>
+                <text id="0,0%" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-28" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-37" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-64" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-46" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-65" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-55" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-66" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-91" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-19" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-10" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="360.332031" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="360.332031" y="326">0,0%</tspan>
+                    <tspan x="360.332031" y="342">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-29" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-38" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-67" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-47" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-68" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-56" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-69" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-92" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-20" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-11" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="490.332031" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="490.332031" y="326">0,0%</tspan>
+                    <tspan x="490.332031" y="342">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-38" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-118" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-158" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-248" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-178" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-249" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-198" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-250" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-318" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-78" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-58" stroke="#D1D1D1" x="519" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-138" stroke="#D1D1D1" x="519" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-37" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-119" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-159" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-251" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-179" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-252" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-199" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-253" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-319" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-79" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-59" stroke="#D1D1D1" x="576" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-139" stroke="#D1D1D1" x="576" y="310" width="73" height="39"></rect>
+                <text id="0,0-copy-2" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-32" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-42" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-77" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-53" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-78" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-63" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-79" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-103" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-22" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-12" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="557.109375" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="557.109375" y="326">0,0</tspan>
+                    <tspan x="557.109375" y="342">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-2" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-30" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-39" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-70" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-48" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-71" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-57" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-72" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-93" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-21" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-12" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="620.332031" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="620.332031" y="326">0,0%</tspan>
+                    <tspan x="620.332031" y="342">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-40" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-120" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-160" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-254" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-180" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-255" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-200" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-256" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-320" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-80" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-60" stroke="#D1D1D1" x="649" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-140" stroke="#D1D1D1" x="649" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-39" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-121" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-161" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-257" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-181" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-258" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-201" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-259" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-321" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-81" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-61" stroke="#D1D1D1" x="706" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-141" stroke="#D1D1D1" x="706" y="310" width="73" height="39"></rect>
+                <text id="0,0-copy-3" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-33" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-43" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-80" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-54" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-81" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-64" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-82" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-104" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-23" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-13" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="687.109375" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="687.109375" y="326">0,0</tspan>
+                    <tspan x="687.109375" y="342">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-3" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-31" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-40" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-73" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-49" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-74" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-58" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-75" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-94" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-22" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-13" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="750.332031" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="750.332031" y="326">0,0%</tspan>
+                    <tspan x="750.332031" y="342">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-42" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-122" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-162" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-260" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-182" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-261" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-202" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-262" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-322" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-82" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-62" stroke="#D1D1D1" x="779" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-142" stroke="#D1D1D1" x="779" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-41" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-123" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-163" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-263" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-183" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-264" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-203" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-265" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-323" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-83" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-63" stroke="#D1D1D1" x="836" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-143" stroke="#D1D1D1" x="836" y="310" width="73" height="39"></rect>
+                <text id="0,0-copy-4" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-34" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-44" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-83" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-55" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-84" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-65" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-85" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-105" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-24" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-14" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="817.109375" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="817.109375" y="326">0,0</tspan>
+                    <tspan x="817.109375" y="342">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-4" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-32" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-41" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-76" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-50" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-77" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-59" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-78" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-95" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-23" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-14" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="880.332031" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="880.332031" y="326">0,0%</tspan>
+                    <tspan x="880.332031" y="342">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-44" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-124" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-164" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-266" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-184" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-267" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-204" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-268" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-324" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-84" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-64" stroke="#D1D1D1" x="909" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-144" stroke="#D1D1D1" x="909" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-43" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-125" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-165" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-269" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-185" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-270" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-205" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-271" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-325" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-85" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-65" stroke="#D1D1D1" x="966" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-145" stroke="#D1D1D1" x="966" y="310" width="73" height="39"></rect>
+                <text id="0,0-copy-5" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-35" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-45" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-86" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-56" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-87" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-66" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-88" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-106" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-25" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-15" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="947.109375" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="947.109375" y="326">0,0</tspan>
+                    <tspan x="947.109375" y="342">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-5" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-33" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-42" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-79" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-51" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-80" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-60" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-81" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-96" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-24" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-15" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="1010.33203" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1010.33203" y="326">0,0%</tspan>
+                    <tspan x="1010.33203" y="342">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-46" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-126" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-166" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-272" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-186" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-273" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-206" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-274" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-326" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-86" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-66" stroke="#D1D1D1" x="1039" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-146" stroke="#D1D1D1" x="1039" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-45" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-127" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-167" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-275" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-187" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-276" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-207" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-277" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-327" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-87" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-67" stroke="#D1D1D1" x="1096" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-147" stroke="#D1D1D1" x="1096" y="310" width="73" height="39"></rect>
+                <text id="0,0-copy-6" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-36" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-46" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-89" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-57" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-90" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-67" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-91" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-107" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-26" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-16" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="1077.10938" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1077.10938" y="326">0,0</tspan>
+                    <tspan x="1077.10938" y="342">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-6" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-34" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-43" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-82" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-52" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-83" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-61" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-84" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-97" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-25" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-16" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="1140.33203" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1140.33203" y="326">0,0%</tspan>
+                    <tspan x="1140.33203" y="342">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-48" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-128" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-168" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-278" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-188" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-279" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-208" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-280" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-328" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-88" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-68" stroke="#D1D1D1" x="1169" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-148" stroke="#D1D1D1" x="1169" y="310" width="57" height="39"></rect>
+                <rect id="Rectangle-21-Copy-47" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="157" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-129" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="289" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-169" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="349" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-281" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="596" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-189" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="370" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-282" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="617" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-209" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="391" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-283" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="638" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-329" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="715" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-89" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="199" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-69" stroke="#D1D1D1" x="1226" y="178" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-149" stroke="#D1D1D1" x="1226" y="310" width="73" height="39"></rect>
+                <text id="0,0-copy-7" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-37" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-47" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-92" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-58" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-93" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-68" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-94" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-108" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-27" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-17" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="1207.10938" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1207.10938" y="326">0,0</tspan>
+                    <tspan x="1207.10938" y="342">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-7" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="173">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-35" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="305">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-44" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="365">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-85" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="612">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-53" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="386">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-86" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="633">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-62" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="407">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-87" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="654">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-98" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="731">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-26" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="215">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-17" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="1270.33203" y="194">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1270.33203" y="326">0,0%</tspan>
+                    <tspan x="1270.33203" y="342">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-50" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="157" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-130" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="289" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-170" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="349" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-284" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="596" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-190" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="370" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-285" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="617" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-210" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="391" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-286" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="638" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-330" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="715" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-90" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="199" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-70" stroke="#D1D1D1" x="1299" y="178" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-150" stroke="#D1D1D1" x="1299" y="310" width="57" height="39"></rect>
+                <text id="0,0-copy-8" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="173">0,0</tspan>
+                </text>
+                <text id="0,0-copy-38" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="305">0,0</tspan>
+                </text>
+                <text id="0,0-copy-48" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="365">0,0</tspan>
+                </text>
+                <text id="0,0-copy-95" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="612">0,0</tspan>
+                </text>
+                <text id="0,0-copy-59" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="386">0,0</tspan>
+                </text>
+                <text id="0,0-copy-96" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="633">0,0</tspan>
+                </text>
+                <text id="0,0-copy-69" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="407">0,0</tspan>
+                </text>
+                <text id="0,0-copy-97" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="654">0,0</tspan>
+                </text>
+                <text id="0,0-copy-109" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="731">0,0</tspan>
+                </text>
+                <text id="0,0-copy-28" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="215">0,0</tspan>
+                </text>
+                <text id="0,0-copy-18" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="1337.10938" y="194">0,0</tspan>
+                </text>
+                <text id="0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1337.10938" y="326">0,0</tspan>
+                    <tspan x="1337.10938" y="342">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="490.332031" y="56">0,0%</tspan>
+                    <tspan x="490.332031" y="72">0,0%</tspan>
+                    <tspan x="490.332031" y="88">0,0%</tspan>
+                    <tspan x="490.332031" y="104">0,0%</tspan>
+                    <tspan x="490.332031" y="120">0,0%</tspan>
+                    <tspan x="490.332031" y="136">0,0%</tspan>
+                    <tspan x="490.332031" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="490.332031" y="430">0,0%</tspan>
+                    <tspan x="490.332031" y="446">0,0%</tspan>
+                    <tspan x="490.332031" y="462">0,0%</tspan>
+                    <tspan x="490.332031" y="478">0,0%</tspan>
+                    <tspan x="490.332031" y="494">0,0%</tspan>
+                    <tspan x="490.332031" y="510">0,0%</tspan>
+                    <tspan x="490.332031" y="526">0,0%</tspan>
+                    <tspan x="490.332031" y="542">0,0%</tspan>
+                    <tspan x="490.332031" y="558">0,0%</tspan>
+                    <tspan x="490.332031" y="574">0,0%</tspan>
+                    <tspan x="490.332031" y="590">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="490.332031" y="754">0,0%</tspan>
+                    <tspan x="490.332031" y="770">0,0%</tspan>
+                    <tspan x="490.332031" y="786">0,0%</tspan>
+                    <tspan x="490.332031" y="802">0,0%</tspan>
+                    <tspan x="490.332031" y="818">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-11" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="490.332031" y="862">0,0%</tspan>
+                    <tspan x="490.332031" y="878">0,0%</tspan>
+                    <tspan x="490.332031" y="894">0,0%</tspan>
+                    <tspan x="490.332031" y="910">0,0%</tspan>
+                    <tspan x="490.332031" y="926">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="490.332031" y="236">0,0%</tspan>
+                    <tspan x="490.332031" y="252">0,0%</tspan>
+                    <tspan x="490.332031" y="268">0,0%</tspan>
+                    <tspan x="490.332031" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="490.332031" y="675">0,0%</tspan>
+                    <tspan x="490.332031" y="691">0,0%</tspan>
+                    <tspan x="490.332031" y="707">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy" stroke="#D1D1D1" x="29" y="40" width="230" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-213" stroke="#D1D1D1" x="29" y="412" width="230" height="184"></rect>
+                <rect id="Rectangle-21-Copy-333" stroke="#D1D1D1" x="29" y="736" width="230" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-351" stroke="#D1D1D1" x="29" y="844" width="230" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-93" stroke="#D1D1D1" x="29" y="220" width="230" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-293" stroke="#D1D1D1" x="29" y="659" width="230" height="56"></rect>
+                <rect id="Rectangle-21-Copy-2" stroke="#D1D1D1" x="259" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-214" stroke="#D1D1D1" x="259" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-334" stroke="#D1D1D1" x="259" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-371" stroke="#D1D1D1" x="259" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-94" stroke="#D1D1D1" x="259" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-294" stroke="#D1D1D1" x="259" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-3" stroke="#D1D1D1" x="389" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-215" stroke="#D1D1D1" x="389" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-335" stroke="#D1D1D1" x="389" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-375" stroke="#D1D1D1" x="389" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-95" stroke="#D1D1D1" x="389" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-295" stroke="#D1D1D1" x="389" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-22" stroke="#D1D1D1" x="316" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-216" stroke="#D1D1D1" x="316" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-336" stroke="#D1D1D1" x="316" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-376" stroke="#D1D1D1" x="316" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-96" stroke="#D1D1D1" x="316" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-296" stroke="#D1D1D1" x="316" y="659" width="73" height="56"></rect>
+                <rect id="Rectangle-21-Copy-23" stroke="#D1D1D1" x="446" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-217" stroke="#D1D1D1" x="446" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-337" stroke="#D1D1D1" x="446" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-377" stroke="#D1D1D1" x="446" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-97" stroke="#D1D1D1" x="446" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-297" stroke="#D1D1D1" x="446" y="659" width="73" height="56"></rect>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-2" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="557.109375" y="56">0,0</tspan>
+                    <tspan x="557.109375" y="72">0,0</tspan>
+                    <tspan x="557.109375" y="88">0,0</tspan>
+                    <tspan x="557.109375" y="104">0,0</tspan>
+                    <tspan x="557.109375" y="120">0,0</tspan>
+                    <tspan x="557.109375" y="136">0,0</tspan>
+                    <tspan x="557.109375" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="557.109375" y="430">0,0</tspan>
+                    <tspan x="557.109375" y="446">0,0</tspan>
+                    <tspan x="557.109375" y="462">0,0</tspan>
+                    <tspan x="557.109375" y="478">0,0</tspan>
+                    <tspan x="557.109375" y="494">0,0</tspan>
+                    <tspan x="557.109375" y="510">0,0</tspan>
+                    <tspan x="557.109375" y="526">0,0</tspan>
+                    <tspan x="557.109375" y="542">0,0</tspan>
+                    <tspan x="557.109375" y="558">0,0</tspan>
+                    <tspan x="557.109375" y="574">0,0</tspan>
+                    <tspan x="557.109375" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="557.109375" y="754">0,0</tspan>
+                    <tspan x="557.109375" y="770">0,0</tspan>
+                    <tspan x="557.109375" y="786">0,0</tspan>
+                    <tspan x="557.109375" y="802">0,0</tspan>
+                    <tspan x="557.109375" y="818">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-12" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="557.109375" y="862">0,0</tspan>
+                    <tspan x="557.109375" y="878">0,0</tspan>
+                    <tspan x="557.109375" y="894">0,0</tspan>
+                    <tspan x="557.109375" y="910">0,0</tspan>
+                    <tspan x="557.109375" y="926">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="557.109375" y="236">0,0</tspan>
+                    <tspan x="557.109375" y="252">0,0</tspan>
+                    <tspan x="557.109375" y="268">0,0</tspan>
+                    <tspan x="557.109375" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="557.109375" y="675">0,0</tspan>
+                    <tspan x="557.109375" y="691">0,0</tspan>
+                    <tspan x="557.109375" y="707">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-2" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="620.332031" y="56">0,0%</tspan>
+                    <tspan x="620.332031" y="72">0,0%</tspan>
+                    <tspan x="620.332031" y="88">0,0%</tspan>
+                    <tspan x="620.332031" y="104">0,0%</tspan>
+                    <tspan x="620.332031" y="120">0,0%</tspan>
+                    <tspan x="620.332031" y="136">0,0%</tspan>
+                    <tspan x="620.332031" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="620.332031" y="430">0,0%</tspan>
+                    <tspan x="620.332031" y="446">0,0%</tspan>
+                    <tspan x="620.332031" y="462">0,0%</tspan>
+                    <tspan x="620.332031" y="478">0,0%</tspan>
+                    <tspan x="620.332031" y="494">0,0%</tspan>
+                    <tspan x="620.332031" y="510">0,0%</tspan>
+                    <tspan x="620.332031" y="526">0,0%</tspan>
+                    <tspan x="620.332031" y="542">0,0%</tspan>
+                    <tspan x="620.332031" y="558">0,0%</tspan>
+                    <tspan x="620.332031" y="574">0,0%</tspan>
+                    <tspan x="620.332031" y="590">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="620.332031" y="754">0,0%</tspan>
+                    <tspan x="620.332031" y="770">0,0%</tspan>
+                    <tspan x="620.332031" y="786">0,0%</tspan>
+                    <tspan x="620.332031" y="802">0,0%</tspan>
+                    <tspan x="620.332031" y="818">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-12" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="620.332031" y="862">0,0%</tspan>
+                    <tspan x="620.332031" y="878">0,0%</tspan>
+                    <tspan x="620.332031" y="894">0,0%</tspan>
+                    <tspan x="620.332031" y="910">0,0%</tspan>
+                    <tspan x="620.332031" y="926">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="620.332031" y="236">0,0%</tspan>
+                    <tspan x="620.332031" y="252">0,0%</tspan>
+                    <tspan x="620.332031" y="268">0,0%</tspan>
+                    <tspan x="620.332031" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="620.332031" y="675">0,0%</tspan>
+                    <tspan x="620.332031" y="691">0,0%</tspan>
+                    <tspan x="620.332031" y="707">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-4" stroke="#D1D1D1" x="519" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-218" stroke="#D1D1D1" x="519" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-338" stroke="#D1D1D1" x="519" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-378" stroke="#D1D1D1" x="519" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-98" stroke="#D1D1D1" x="519" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-298" stroke="#D1D1D1" x="519" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-24" stroke="#D1D1D1" x="576" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-219" stroke="#D1D1D1" x="576" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-339" stroke="#D1D1D1" x="576" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-379" stroke="#D1D1D1" x="576" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-99" stroke="#D1D1D1" x="576" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-299" stroke="#D1D1D1" x="576" y="659" width="73" height="56"></rect>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-3" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="687.109375" y="56">0,0</tspan>
+                    <tspan x="687.109375" y="72">0,0</tspan>
+                    <tspan x="687.109375" y="88">0,0</tspan>
+                    <tspan x="687.109375" y="104">0,0</tspan>
+                    <tspan x="687.109375" y="120">0,0</tspan>
+                    <tspan x="687.109375" y="136">0,0</tspan>
+                    <tspan x="687.109375" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="687.109375" y="430">0,0</tspan>
+                    <tspan x="687.109375" y="446">0,0</tspan>
+                    <tspan x="687.109375" y="462">0,0</tspan>
+                    <tspan x="687.109375" y="478">0,0</tspan>
+                    <tspan x="687.109375" y="494">0,0</tspan>
+                    <tspan x="687.109375" y="510">0,0</tspan>
+                    <tspan x="687.109375" y="526">0,0</tspan>
+                    <tspan x="687.109375" y="542">0,0</tspan>
+                    <tspan x="687.109375" y="558">0,0</tspan>
+                    <tspan x="687.109375" y="574">0,0</tspan>
+                    <tspan x="687.109375" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="687.109375" y="754">0,0</tspan>
+                    <tspan x="687.109375" y="770">0,0</tspan>
+                    <tspan x="687.109375" y="786">0,0</tspan>
+                    <tspan x="687.109375" y="802">0,0</tspan>
+                    <tspan x="687.109375" y="818">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-13" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="687.109375" y="862">0,0</tspan>
+                    <tspan x="687.109375" y="878">0,0</tspan>
+                    <tspan x="687.109375" y="894">0,0</tspan>
+                    <tspan x="687.109375" y="910">0,0</tspan>
+                    <tspan x="687.109375" y="926">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="687.109375" y="236">0,0</tspan>
+                    <tspan x="687.109375" y="252">0,0</tspan>
+                    <tspan x="687.109375" y="268">0,0</tspan>
+                    <tspan x="687.109375" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="687.109375" y="675">0,0</tspan>
+                    <tspan x="687.109375" y="691">0,0</tspan>
+                    <tspan x="687.109375" y="707">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-3" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="750.332031" y="56">0,0%</tspan>
+                    <tspan x="750.332031" y="72">0,0%</tspan>
+                    <tspan x="750.332031" y="88">0,0%</tspan>
+                    <tspan x="750.332031" y="104">0,0%</tspan>
+                    <tspan x="750.332031" y="120">0,0%</tspan>
+                    <tspan x="750.332031" y="136">0,0%</tspan>
+                    <tspan x="750.332031" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="750.332031" y="430">0,0%</tspan>
+                    <tspan x="750.332031" y="446">0,0%</tspan>
+                    <tspan x="750.332031" y="462">0,0%</tspan>
+                    <tspan x="750.332031" y="478">0,0%</tspan>
+                    <tspan x="750.332031" y="494">0,0%</tspan>
+                    <tspan x="750.332031" y="510">0,0%</tspan>
+                    <tspan x="750.332031" y="526">0,0%</tspan>
+                    <tspan x="750.332031" y="542">0,0%</tspan>
+                    <tspan x="750.332031" y="558">0,0%</tspan>
+                    <tspan x="750.332031" y="574">0,0%</tspan>
+                    <tspan x="750.332031" y="590">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="750.332031" y="754">0,0%</tspan>
+                    <tspan x="750.332031" y="770">0,0%</tspan>
+                    <tspan x="750.332031" y="786">0,0%</tspan>
+                    <tspan x="750.332031" y="802">0,0%</tspan>
+                    <tspan x="750.332031" y="818">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-13" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="750.332031" y="862">0,0%</tspan>
+                    <tspan x="750.332031" y="878">0,0%</tspan>
+                    <tspan x="750.332031" y="894">0,0%</tspan>
+                    <tspan x="750.332031" y="910">0,0%</tspan>
+                    <tspan x="750.332031" y="926">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="750.332031" y="236">0,0%</tspan>
+                    <tspan x="750.332031" y="252">0,0%</tspan>
+                    <tspan x="750.332031" y="268">0,0%</tspan>
+                    <tspan x="750.332031" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="750.332031" y="675">0,0%</tspan>
+                    <tspan x="750.332031" y="691">0,0%</tspan>
+                    <tspan x="750.332031" y="707">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-5" stroke="#D1D1D1" x="649" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-220" stroke="#D1D1D1" x="649" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-340" stroke="#D1D1D1" x="649" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-380" stroke="#D1D1D1" x="649" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-100" stroke="#D1D1D1" x="649" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-300" stroke="#D1D1D1" x="649" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-25" stroke="#D1D1D1" x="706" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-221" stroke="#D1D1D1" x="706" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-341" stroke="#D1D1D1" x="706" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-381" stroke="#D1D1D1" x="706" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-101" stroke="#D1D1D1" x="706" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-301" stroke="#D1D1D1" x="706" y="659" width="73" height="56"></rect>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-4" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="817.109375" y="56">0,0</tspan>
+                    <tspan x="817.109375" y="72">0,0</tspan>
+                    <tspan x="817.109375" y="88">0,0</tspan>
+                    <tspan x="817.109375" y="104">0,0</tspan>
+                    <tspan x="817.109375" y="120">0,0</tspan>
+                    <tspan x="817.109375" y="136">0,0</tspan>
+                    <tspan x="817.109375" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="817.109375" y="430">0,0</tspan>
+                    <tspan x="817.109375" y="446">0,0</tspan>
+                    <tspan x="817.109375" y="462">0,0</tspan>
+                    <tspan x="817.109375" y="478">0,0</tspan>
+                    <tspan x="817.109375" y="494">0,0</tspan>
+                    <tspan x="817.109375" y="510">0,0</tspan>
+                    <tspan x="817.109375" y="526">0,0</tspan>
+                    <tspan x="817.109375" y="542">0,0</tspan>
+                    <tspan x="817.109375" y="558">0,0</tspan>
+                    <tspan x="817.109375" y="574">0,0</tspan>
+                    <tspan x="817.109375" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="817.109375" y="754">0,0</tspan>
+                    <tspan x="817.109375" y="770">0,0</tspan>
+                    <tspan x="817.109375" y="786">0,0</tspan>
+                    <tspan x="817.109375" y="802">0,0</tspan>
+                    <tspan x="817.109375" y="818">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-14" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="817.109375" y="862">0,0</tspan>
+                    <tspan x="817.109375" y="878">0,0</tspan>
+                    <tspan x="817.109375" y="894">0,0</tspan>
+                    <tspan x="817.109375" y="910">0,0</tspan>
+                    <tspan x="817.109375" y="926">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="817.109375" y="236">0,0</tspan>
+                    <tspan x="817.109375" y="252">0,0</tspan>
+                    <tspan x="817.109375" y="268">0,0</tspan>
+                    <tspan x="817.109375" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="817.109375" y="675">0,0</tspan>
+                    <tspan x="817.109375" y="691">0,0</tspan>
+                    <tspan x="817.109375" y="707">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-4" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="880.332031" y="56">0,0%</tspan>
+                    <tspan x="880.332031" y="72">0,0%</tspan>
+                    <tspan x="880.332031" y="88">0,0%</tspan>
+                    <tspan x="880.332031" y="104">0,0%</tspan>
+                    <tspan x="880.332031" y="120">0,0%</tspan>
+                    <tspan x="880.332031" y="136">0,0%</tspan>
+                    <tspan x="880.332031" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="880.332031" y="430">0,0%</tspan>
+                    <tspan x="880.332031" y="446">0,0%</tspan>
+                    <tspan x="880.332031" y="462">0,0%</tspan>
+                    <tspan x="880.332031" y="478">0,0%</tspan>
+                    <tspan x="880.332031" y="494">0,0%</tspan>
+                    <tspan x="880.332031" y="510">0,0%</tspan>
+                    <tspan x="880.332031" y="526">0,0%</tspan>
+                    <tspan x="880.332031" y="542">0,0%</tspan>
+                    <tspan x="880.332031" y="558">0,0%</tspan>
+                    <tspan x="880.332031" y="574">0,0%</tspan>
+                    <tspan x="880.332031" y="590">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="880.332031" y="754">0,0%</tspan>
+                    <tspan x="880.332031" y="770">0,0%</tspan>
+                    <tspan x="880.332031" y="786">0,0%</tspan>
+                    <tspan x="880.332031" y="802">0,0%</tspan>
+                    <tspan x="880.332031" y="818">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-14" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="880.332031" y="862">0,0%</tspan>
+                    <tspan x="880.332031" y="878">0,0%</tspan>
+                    <tspan x="880.332031" y="894">0,0%</tspan>
+                    <tspan x="880.332031" y="910">0,0%</tspan>
+                    <tspan x="880.332031" y="926">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="880.332031" y="236">0,0%</tspan>
+                    <tspan x="880.332031" y="252">0,0%</tspan>
+                    <tspan x="880.332031" y="268">0,0%</tspan>
+                    <tspan x="880.332031" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="880.332031" y="675">0,0%</tspan>
+                    <tspan x="880.332031" y="691">0,0%</tspan>
+                    <tspan x="880.332031" y="707">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-6" stroke="#D1D1D1" x="779" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-222" stroke="#D1D1D1" x="779" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-342" stroke="#D1D1D1" x="779" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-382" stroke="#D1D1D1" x="779" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-102" stroke="#D1D1D1" x="779" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-302" stroke="#D1D1D1" x="779" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-26" stroke="#D1D1D1" x="836" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-223" stroke="#D1D1D1" x="836" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-343" stroke="#D1D1D1" x="836" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-383" stroke="#D1D1D1" x="836" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-103" stroke="#D1D1D1" x="836" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-303" stroke="#D1D1D1" x="836" y="659" width="73" height="56"></rect>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-5" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="947.109375" y="56">0,0</tspan>
+                    <tspan x="947.109375" y="72">0,0</tspan>
+                    <tspan x="947.109375" y="88">0,0</tspan>
+                    <tspan x="947.109375" y="104">0,0</tspan>
+                    <tspan x="947.109375" y="120">0,0</tspan>
+                    <tspan x="947.109375" y="136">0,0</tspan>
+                    <tspan x="947.109375" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="947.109375" y="430">0,0</tspan>
+                    <tspan x="947.109375" y="446">0,0</tspan>
+                    <tspan x="947.109375" y="462">0,0</tspan>
+                    <tspan x="947.109375" y="478">0,0</tspan>
+                    <tspan x="947.109375" y="494">0,0</tspan>
+                    <tspan x="947.109375" y="510">0,0</tspan>
+                    <tspan x="947.109375" y="526">0,0</tspan>
+                    <tspan x="947.109375" y="542">0,0</tspan>
+                    <tspan x="947.109375" y="558">0,0</tspan>
+                    <tspan x="947.109375" y="574">0,0</tspan>
+                    <tspan x="947.109375" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="947.109375" y="754">0,0</tspan>
+                    <tspan x="947.109375" y="770">0,0</tspan>
+                    <tspan x="947.109375" y="786">0,0</tspan>
+                    <tspan x="947.109375" y="802">0,0</tspan>
+                    <tspan x="947.109375" y="818">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-15" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="947.109375" y="862">0,0</tspan>
+                    <tspan x="947.109375" y="878">0,0</tspan>
+                    <tspan x="947.109375" y="894">0,0</tspan>
+                    <tspan x="947.109375" y="910">0,0</tspan>
+                    <tspan x="947.109375" y="926">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="947.109375" y="236">0,0</tspan>
+                    <tspan x="947.109375" y="252">0,0</tspan>
+                    <tspan x="947.109375" y="268">0,0</tspan>
+                    <tspan x="947.109375" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="947.109375" y="675">0,0</tspan>
+                    <tspan x="947.109375" y="691">0,0</tspan>
+                    <tspan x="947.109375" y="707">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-5" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1010.33203" y="56">0,0%</tspan>
+                    <tspan x="1010.33203" y="72">0,0%</tspan>
+                    <tspan x="1010.33203" y="88">0,0%</tspan>
+                    <tspan x="1010.33203" y="104">0,0%</tspan>
+                    <tspan x="1010.33203" y="120">0,0%</tspan>
+                    <tspan x="1010.33203" y="136">0,0%</tspan>
+                    <tspan x="1010.33203" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1010.33203" y="430">0,0%</tspan>
+                    <tspan x="1010.33203" y="446">0,0%</tspan>
+                    <tspan x="1010.33203" y="462">0,0%</tspan>
+                    <tspan x="1010.33203" y="478">0,0%</tspan>
+                    <tspan x="1010.33203" y="494">0,0%</tspan>
+                    <tspan x="1010.33203" y="510">0,0%</tspan>
+                    <tspan x="1010.33203" y="526">0,0%</tspan>
+                    <tspan x="1010.33203" y="542">0,0%</tspan>
+                    <tspan x="1010.33203" y="558">0,0%</tspan>
+                    <tspan x="1010.33203" y="574">0,0%</tspan>
+                    <tspan x="1010.33203" y="590">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1010.33203" y="754">0,0%</tspan>
+                    <tspan x="1010.33203" y="770">0,0%</tspan>
+                    <tspan x="1010.33203" y="786">0,0%</tspan>
+                    <tspan x="1010.33203" y="802">0,0%</tspan>
+                    <tspan x="1010.33203" y="818">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-15" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1010.33203" y="862">0,0%</tspan>
+                    <tspan x="1010.33203" y="878">0,0%</tspan>
+                    <tspan x="1010.33203" y="894">0,0%</tspan>
+                    <tspan x="1010.33203" y="910">0,0%</tspan>
+                    <tspan x="1010.33203" y="926">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1010.33203" y="236">0,0%</tspan>
+                    <tspan x="1010.33203" y="252">0,0%</tspan>
+                    <tspan x="1010.33203" y="268">0,0%</tspan>
+                    <tspan x="1010.33203" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1010.33203" y="675">0,0%</tspan>
+                    <tspan x="1010.33203" y="691">0,0%</tspan>
+                    <tspan x="1010.33203" y="707">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-7" stroke="#D1D1D1" x="909" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-224" stroke="#D1D1D1" x="909" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-344" stroke="#D1D1D1" x="909" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-384" stroke="#D1D1D1" x="909" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-104" stroke="#D1D1D1" x="909" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-304" stroke="#D1D1D1" x="909" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-27" stroke="#D1D1D1" x="966" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-225" stroke="#D1D1D1" x="966" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-345" stroke="#D1D1D1" x="966" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-385" stroke="#D1D1D1" x="966" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-105" stroke="#D1D1D1" x="966" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-305" stroke="#D1D1D1" x="966" y="659" width="73" height="56"></rect>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-6" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1077.10938" y="56">0,0</tspan>
+                    <tspan x="1077.10938" y="72">0,0</tspan>
+                    <tspan x="1077.10938" y="88">0,0</tspan>
+                    <tspan x="1077.10938" y="104">0,0</tspan>
+                    <tspan x="1077.10938" y="120">0,0</tspan>
+                    <tspan x="1077.10938" y="136">0,0</tspan>
+                    <tspan x="1077.10938" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1077.10938" y="430">0,0</tspan>
+                    <tspan x="1077.10938" y="446">0,0</tspan>
+                    <tspan x="1077.10938" y="462">0,0</tspan>
+                    <tspan x="1077.10938" y="478">0,0</tspan>
+                    <tspan x="1077.10938" y="494">0,0</tspan>
+                    <tspan x="1077.10938" y="510">0,0</tspan>
+                    <tspan x="1077.10938" y="526">0,0</tspan>
+                    <tspan x="1077.10938" y="542">0,0</tspan>
+                    <tspan x="1077.10938" y="558">0,0</tspan>
+                    <tspan x="1077.10938" y="574">0,0</tspan>
+                    <tspan x="1077.10938" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1077.10938" y="754">0,0</tspan>
+                    <tspan x="1077.10938" y="770">0,0</tspan>
+                    <tspan x="1077.10938" y="786">0,0</tspan>
+                    <tspan x="1077.10938" y="802">0,0</tspan>
+                    <tspan x="1077.10938" y="818">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-16" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1077.10938" y="862">0,0</tspan>
+                    <tspan x="1077.10938" y="878">0,0</tspan>
+                    <tspan x="1077.10938" y="894">0,0</tspan>
+                    <tspan x="1077.10938" y="910">0,0</tspan>
+                    <tspan x="1077.10938" y="926">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1077.10938" y="236">0,0</tspan>
+                    <tspan x="1077.10938" y="252">0,0</tspan>
+                    <tspan x="1077.10938" y="268">0,0</tspan>
+                    <tspan x="1077.10938" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1077.10938" y="675">0,0</tspan>
+                    <tspan x="1077.10938" y="691">0,0</tspan>
+                    <tspan x="1077.10938" y="707">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-6" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1140.33203" y="56">0,0%</tspan>
+                    <tspan x="1140.33203" y="72">0,0%</tspan>
+                    <tspan x="1140.33203" y="88">0,0%</tspan>
+                    <tspan x="1140.33203" y="104">0,0%</tspan>
+                    <tspan x="1140.33203" y="120">0,0%</tspan>
+                    <tspan x="1140.33203" y="136">0,0%</tspan>
+                    <tspan x="1140.33203" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1140.33203" y="430">0,0%</tspan>
+                    <tspan x="1140.33203" y="446">0,0%</tspan>
+                    <tspan x="1140.33203" y="462">0,0%</tspan>
+                    <tspan x="1140.33203" y="478">0,0%</tspan>
+                    <tspan x="1140.33203" y="494">0,0%</tspan>
+                    <tspan x="1140.33203" y="510">0,0%</tspan>
+                    <tspan x="1140.33203" y="526">0,0%</tspan>
+                    <tspan x="1140.33203" y="542">0,0%</tspan>
+                    <tspan x="1140.33203" y="558">0,0%</tspan>
+                    <tspan x="1140.33203" y="574">0,0%</tspan>
+                    <tspan x="1140.33203" y="590">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1140.33203" y="754">0,0%</tspan>
+                    <tspan x="1140.33203" y="770">0,0%</tspan>
+                    <tspan x="1140.33203" y="786">0,0%</tspan>
+                    <tspan x="1140.33203" y="802">0,0%</tspan>
+                    <tspan x="1140.33203" y="818">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-16" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1140.33203" y="862">0,0%</tspan>
+                    <tspan x="1140.33203" y="878">0,0%</tspan>
+                    <tspan x="1140.33203" y="894">0,0%</tspan>
+                    <tspan x="1140.33203" y="910">0,0%</tspan>
+                    <tspan x="1140.33203" y="926">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1140.33203" y="236">0,0%</tspan>
+                    <tspan x="1140.33203" y="252">0,0%</tspan>
+                    <tspan x="1140.33203" y="268">0,0%</tspan>
+                    <tspan x="1140.33203" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1140.33203" y="675">0,0%</tspan>
+                    <tspan x="1140.33203" y="691">0,0%</tspan>
+                    <tspan x="1140.33203" y="707">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-8" stroke="#D1D1D1" x="1039" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-226" stroke="#D1D1D1" x="1039" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-346" stroke="#D1D1D1" x="1039" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-386" stroke="#D1D1D1" x="1039" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-106" stroke="#D1D1D1" x="1039" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-306" stroke="#D1D1D1" x="1039" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-28" stroke="#D1D1D1" x="1096" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-227" stroke="#D1D1D1" x="1096" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-347" stroke="#D1D1D1" x="1096" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-387" stroke="#D1D1D1" x="1096" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-107" stroke="#D1D1D1" x="1096" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-307" stroke="#D1D1D1" x="1096" y="659" width="73" height="56"></rect>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-7" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1207.10938" y="56">0,0</tspan>
+                    <tspan x="1207.10938" y="72">0,0</tspan>
+                    <tspan x="1207.10938" y="88">0,0</tspan>
+                    <tspan x="1207.10938" y="104">0,0</tspan>
+                    <tspan x="1207.10938" y="120">0,0</tspan>
+                    <tspan x="1207.10938" y="136">0,0</tspan>
+                    <tspan x="1207.10938" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1207.10938" y="430">0,0</tspan>
+                    <tspan x="1207.10938" y="446">0,0</tspan>
+                    <tspan x="1207.10938" y="462">0,0</tspan>
+                    <tspan x="1207.10938" y="478">0,0</tspan>
+                    <tspan x="1207.10938" y="494">0,0</tspan>
+                    <tspan x="1207.10938" y="510">0,0</tspan>
+                    <tspan x="1207.10938" y="526">0,0</tspan>
+                    <tspan x="1207.10938" y="542">0,0</tspan>
+                    <tspan x="1207.10938" y="558">0,0</tspan>
+                    <tspan x="1207.10938" y="574">0,0</tspan>
+                    <tspan x="1207.10938" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1207.10938" y="754">0,0</tspan>
+                    <tspan x="1207.10938" y="770">0,0</tspan>
+                    <tspan x="1207.10938" y="786">0,0</tspan>
+                    <tspan x="1207.10938" y="802">0,0</tspan>
+                    <tspan x="1207.10938" y="818">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-17" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1207.10938" y="862">0,0</tspan>
+                    <tspan x="1207.10938" y="878">0,0</tspan>
+                    <tspan x="1207.10938" y="894">0,0</tspan>
+                    <tspan x="1207.10938" y="910">0,0</tspan>
+                    <tspan x="1207.10938" y="926">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1207.10938" y="236">0,0</tspan>
+                    <tspan x="1207.10938" y="252">0,0</tspan>
+                    <tspan x="1207.10938" y="268">0,0</tspan>
+                    <tspan x="1207.10938" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1207.10938" y="675">0,0</tspan>
+                    <tspan x="1207.10938" y="691">0,0</tspan>
+                    <tspan x="1207.10938" y="707">0,0</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-7" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1270.33203" y="56">0,0%</tspan>
+                    <tspan x="1270.33203" y="72">0,0%</tspan>
+                    <tspan x="1270.33203" y="88">0,0%</tspan>
+                    <tspan x="1270.33203" y="104">0,0%</tspan>
+                    <tspan x="1270.33203" y="120">0,0%</tspan>
+                    <tspan x="1270.33203" y="136">0,0%</tspan>
+                    <tspan x="1270.33203" y="152">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1270.33203" y="430">0,0%</tspan>
+                    <tspan x="1270.33203" y="446">0,0%</tspan>
+                    <tspan x="1270.33203" y="462">0,0%</tspan>
+                    <tspan x="1270.33203" y="478">0,0%</tspan>
+                    <tspan x="1270.33203" y="494">0,0%</tspan>
+                    <tspan x="1270.33203" y="510">0,0%</tspan>
+                    <tspan x="1270.33203" y="526">0,0%</tspan>
+                    <tspan x="1270.33203" y="542">0,0%</tspan>
+                    <tspan x="1270.33203" y="558">0,0%</tspan>
+                    <tspan x="1270.33203" y="574">0,0%</tspan>
+                    <tspan x="1270.33203" y="590">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1270.33203" y="754">0,0%</tspan>
+                    <tspan x="1270.33203" y="770">0,0%</tspan>
+                    <tspan x="1270.33203" y="786">0,0%</tspan>
+                    <tspan x="1270.33203" y="802">0,0%</tspan>
+                    <tspan x="1270.33203" y="818">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%-copy-17" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1270.33203" y="862">0,0%</tspan>
+                    <tspan x="1270.33203" y="878">0,0%</tspan>
+                    <tspan x="1270.33203" y="894">0,0%</tspan>
+                    <tspan x="1270.33203" y="910">0,0%</tspan>
+                    <tspan x="1270.33203" y="926">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1270.33203" y="236">0,0%</tspan>
+                    <tspan x="1270.33203" y="252">0,0%</tspan>
+                    <tspan x="1270.33203" y="268">0,0%</tspan>
+                    <tspan x="1270.33203" y="284">0,0%</tspan>
+                </text>
+                <text id="0,0%-0,0%-0,0%" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1270.33203" y="675">0,0%</tspan>
+                    <tspan x="1270.33203" y="691">0,0%</tspan>
+                    <tspan x="1270.33203" y="707">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-9" stroke="#D1D1D1" x="1169" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-228" stroke="#D1D1D1" x="1169" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-348" stroke="#D1D1D1" x="1169" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-388" stroke="#D1D1D1" x="1169" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-108" stroke="#D1D1D1" x="1169" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-308" stroke="#D1D1D1" x="1169" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-29" stroke="#D1D1D1" x="1226" y="40" width="73" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-229" stroke="#D1D1D1" x="1226" y="412" width="73" height="184"></rect>
+                <rect id="Rectangle-21-Copy-349" stroke="#D1D1D1" x="1226" y="736" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-389" stroke="#D1D1D1" x="1226" y="844" width="73" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-109" stroke="#D1D1D1" x="1226" y="220" width="73" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-309" stroke="#D1D1D1" x="1226" y="659" width="73" height="56"></rect>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-8" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1337.10938" y="56">0,0</tspan>
+                    <tspan x="1337.10938" y="72">0,0</tspan>
+                    <tspan x="1337.10938" y="88">0,0</tspan>
+                    <tspan x="1337.10938" y="104">0,0</tspan>
+                    <tspan x="1337.10938" y="120">0,0</tspan>
+                    <tspan x="1337.10938" y="136">0,0</tspan>
+                    <tspan x="1337.10938" y="152">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1337.10938" y="430">0,0</tspan>
+                    <tspan x="1337.10938" y="446">0,0</tspan>
+                    <tspan x="1337.10938" y="462">0,0</tspan>
+                    <tspan x="1337.10938" y="478">0,0</tspan>
+                    <tspan x="1337.10938" y="494">0,0</tspan>
+                    <tspan x="1337.10938" y="510">0,0</tspan>
+                    <tspan x="1337.10938" y="526">0,0</tspan>
+                    <tspan x="1337.10938" y="542">0,0</tspan>
+                    <tspan x="1337.10938" y="558">0,0</tspan>
+                    <tspan x="1337.10938" y="574">0,0</tspan>
+                    <tspan x="1337.10938" y="590">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1337.10938" y="751">0,0</tspan>
+                    <tspan x="1337.10938" y="767">0,0</tspan>
+                    <tspan x="1337.10938" y="783">0,0</tspan>
+                    <tspan x="1337.10938" y="799">0,0</tspan>
+                    <tspan x="1337.10938" y="815">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0-0,0-copy-18" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1337.10938" y="859">0,0</tspan>
+                    <tspan x="1337.10938" y="875">0,0</tspan>
+                    <tspan x="1337.10938" y="891">0,0</tspan>
+                    <tspan x="1337.10938" y="907">0,0</tspan>
+                    <tspan x="1337.10938" y="923">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1337.10938" y="236">0,0</tspan>
+                    <tspan x="1337.10938" y="252">0,0</tspan>
+                    <tspan x="1337.10938" y="268">0,0</tspan>
+                    <tspan x="1337.10938" y="284">0,0</tspan>
+                </text>
+                <text id="0,0-0,0-0,0" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1337.10938" y="675">0,0</tspan>
+                    <tspan x="1337.10938" y="691">0,0</tspan>
+                    <tspan x="1337.10938" y="707">0,0</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-10" stroke="#D1D1D1" x="1299" y="40" width="57" height="117.146484"></rect>
+                <rect id="Rectangle-21-Copy-230" stroke="#D1D1D1" x="1299" y="412" width="57" height="184"></rect>
+                <rect id="Rectangle-21-Copy-350" stroke="#D1D1D1" x="1299" y="736" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-390" stroke="#D1D1D1" x="1299" y="844" width="57" height="86.84375"></rect>
+                <rect id="Rectangle-21-Copy-110" stroke="#D1D1D1" x="1299" y="220" width="57" height="69.4882812"></rect>
+                <rect id="Rectangle-21-Copy-310" stroke="#D1D1D1" x="1299" y="659" width="57" height="56"></rect>
+                <rect id="Rectangle-21-Copy-12" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-13" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-14" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-15" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-16" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-17" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-18" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-19" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="0" width="130" height="40"></rect>
+                <rect id="Rectangle-21-Copy-20" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="0" width="130" height="40"></rect>
+                <text id="Gennaio" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="303.828125" y="25">Gennaio</tspan>
+                </text>
+                <text id="Febbraio" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="432.427734" y="25">Febbraio</tspan>
+                </text>
+                <text id="Marzo" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="569.045898" y="25">Marzo</tspan>
+                </text>
+                <text id="Aprile" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="700.291016" y="25">Aprile</tspan>
+                </text>
+                <text id="Maggio" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="825.779297" y="25">Maggio</tspan>
+                </text>
+                <text id="Giugno" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="956.839844" y="25">Giugno</tspan>
+                </text>
+                <text id="Luglio" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="1089.43555" y="25">Luglio</tspan>
+                </text>
+                <text id="Agosto" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="1216.81055" y="25">Agosto</tspan>
+                </text>
+                <text id="Settembre" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" fill="#4A4A4A">
+                    <tspan x="1337.79883" y="25">Settembre</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-353" stroke="#D1D1D1" fill="#F7F7F7" x="29" y="823" width="230" height="21"></rect>
+                <rect id="Rectangle-21-Copy-354" stroke="#D1D1D1" fill="#F7F7F7" x="259" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-355" stroke="#D1D1D1" fill="#F7F7F7" x="389" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-356" stroke="#D1D1D1" fill="#F7F7F7" x="316" y="823" width="73" height="21"></rect>
+                <rect id="Rectangle-21-Copy-357" stroke="#D1D1D1" fill="#F7F7F7" x="446" y="823" width="73" height="21"></rect>
+                <text id="TOT.-COSTI-COMMERCIA" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="33" y="839">TOT. COSTI COMMERCIALI</tspan>
+                </text>
+                <text id="0,0-copy-111" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="296.136719" y="839">0,0</tspan>
+                </text>
+                <text id="0,0-copy-112" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="426.136719" y="839">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-100" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="359.271484" y="839">0,0%</tspan>
+                </text>
+                <text id="0,0%-copy-101" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="489.271484" y="839">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-358" stroke="#D1D1D1" fill="#F7F7F7" x="519" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-359" stroke="#D1D1D1" fill="#F7F7F7" x="576" y="823" width="73" height="21"></rect>
+                <text id="0,0-copy-113" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="556.136719" y="839">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-102" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="619.271484" y="839">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-360" stroke="#D1D1D1" fill="#F7F7F7" x="649" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-361" stroke="#D1D1D1" fill="#F7F7F7" x="706" y="823" width="73" height="21"></rect>
+                <text id="0,0-copy-114" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="686.136719" y="839">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-103" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="749.271484" y="839">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-362" stroke="#D1D1D1" fill="#F7F7F7" x="779" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-363" stroke="#D1D1D1" fill="#F7F7F7" x="836" y="823" width="73" height="21"></rect>
+                <text id="0,0-copy-115" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="816.136719" y="839">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-104" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="879.271484" y="839">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-364" stroke="#D1D1D1" fill="#F7F7F7" x="909" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-365" stroke="#D1D1D1" fill="#F7F7F7" x="966" y="823" width="73" height="21"></rect>
+                <text id="0,0-copy-116" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="946.136719" y="839">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-105" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1009.27148" y="839">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-366" stroke="#D1D1D1" fill="#F7F7F7" x="1039" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-367" stroke="#D1D1D1" fill="#F7F7F7" x="1096" y="823" width="73" height="21"></rect>
+                <text id="0,0-copy-117" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1076.13672" y="839">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-106" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1139.27148" y="839">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-368" stroke="#D1D1D1" fill="#F7F7F7" x="1169" y="823" width="57" height="21"></rect>
+                <rect id="Rectangle-21-Copy-369" stroke="#D1D1D1" fill="#F7F7F7" x="1226" y="823" width="73" height="21"></rect>
+                <text id="0,0-copy-118" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1206.13672" y="839">0,0</tspan>
+                </text>
+                <text id="0,0%-copy-107" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1269.27148" y="839">0,0%</tspan>
+                </text>
+                <rect id="Rectangle-21-Copy-370" stroke="#D1D1D1" fill="#F7F7F7" x="1299" y="823" width="57" height="21"></rect>
+                <text id="0,0-copy-119" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                    <tspan x="1336.13672" y="839">0,0</tspan>
+                </text>
+                <use id="Rectangle-13-Copy-15" stroke="#9B9B9B" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                <use id="Rectangle-13-Copy-35" stroke="#9B9B9B" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                <use id="Rectangle-13-Copy-22" stroke="#9B9B9B" mask="url(#mask-6)" stroke-width="2" xlink:href="#path-5"></use>
+                <use id="Rectangle-13-Copy-18" stroke="#9B9B9B" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-7"></use>
+                <use id="Rectangle-13-Copy-36" stroke="#9B9B9B" mask="url(#mask-10)" stroke-width="2" xlink:href="#path-9"></use>
+                <use id="Rectangle-13-Copy-42" stroke="#9B9B9B" mask="url(#mask-12)" stroke-width="2" xlink:href="#path-11"></use>
+                <use id="Rectangle-13-Copy-49" stroke="#9B9B9B" mask="url(#mask-14)" stroke-width="2" xlink:href="#path-13"></use>
+                <use id="Rectangle-13-Copy-53" stroke="#9B9B9B" mask="url(#mask-16)" stroke-width="2" xlink:href="#path-15"></use>
+                <use id="Rectangle-13-Copy-23" stroke="#9B9B9B" mask="url(#mask-18)" stroke-width="2" xlink:href="#path-17"></use>
+                <use id="Rectangle-13-Copy-17" stroke="#9B9B9B" mask="url(#mask-20)" stroke-width="2" xlink:href="#path-19"></use>
+                <use id="Rectangle-13-Copy-37" stroke="#9B9B9B" mask="url(#mask-22)" stroke-width="2" xlink:href="#path-21"></use>
+                <use id="Rectangle-13-Copy-24" stroke="#9B9B9B" mask="url(#mask-24)" stroke-width="2" xlink:href="#path-23"></use>
+                <use id="Rectangle-13-Copy-19" stroke="#9B9B9B" mask="url(#mask-26)" stroke-width="2" xlink:href="#path-25"></use>
+                <use id="Rectangle-13-Copy-38" stroke="#9B9B9B" mask="url(#mask-28)" stroke-width="2" xlink:href="#path-27"></use>
+                <use id="Rectangle-13-Copy-43" stroke="#9B9B9B" mask="url(#mask-30)" stroke-width="2" xlink:href="#path-29"></use>
+                <use id="Rectangle-13-Copy-25" stroke="#9B9B9B" mask="url(#mask-32)" stroke-width="2" xlink:href="#path-31"></use>
+                <use id="Rectangle-13-Copy-16" stroke="#9B9B9B" mask="url(#mask-34)" stroke-width="2" xlink:href="#path-33"></use>
+                <use id="Rectangle-13-Copy-39" stroke="#9B9B9B" mask="url(#mask-36)" stroke-width="2" xlink:href="#path-35"></use>
+                <use id="Rectangle-13-Copy-26" stroke="#9B9B9B" mask="url(#mask-38)" stroke-width="2" xlink:href="#path-37"></use>
+                <use id="Rectangle-13-Copy-29" stroke="#9B9B9B" mask="url(#mask-40)" stroke-width="2" xlink:href="#path-39"></use>
+                <use id="Rectangle-13-Copy-32" stroke="#9B9B9B" mask="url(#mask-42)" stroke-width="2" xlink:href="#path-41"></use>
+                <use id="Rectangle-13-Copy-33" stroke="#9B9B9B" mask="url(#mask-44)" stroke-width="2" xlink:href="#path-43"></use>
+                <use id="Rectangle-13-Copy-34" stroke="#9B9B9B" mask="url(#mask-46)" stroke-width="2" xlink:href="#path-45"></use>
+                <use id="Rectangle-13-Copy-20" stroke="#9B9B9B" mask="url(#mask-48)" stroke-width="2" xlink:href="#path-47"></use>
+                <use id="Rectangle-13-Copy-40" stroke="#9B9B9B" mask="url(#mask-50)" stroke-width="2" xlink:href="#path-49"></use>
+                <use id="Rectangle-13-Copy-44" stroke="#9B9B9B" mask="url(#mask-52)" stroke-width="2" xlink:href="#path-51"></use>
+                <use id="Rectangle-13-Copy-50" stroke="#9B9B9B" mask="url(#mask-54)" stroke-width="2" xlink:href="#path-53"></use>
+                <use id="Rectangle-13-Copy-54" stroke="#9B9B9B" mask="url(#mask-56)" stroke-width="2" xlink:href="#path-55"></use>
+                <use id="Rectangle-13-Copy-56" stroke="#9B9B9B" mask="url(#mask-58)" stroke-width="2" xlink:href="#path-57"></use>
+                <use id="Rectangle-13-Copy-27" stroke="#9B9B9B" mask="url(#mask-60)" stroke-width="2" xlink:href="#path-59"></use>
+                <use id="Rectangle-13-Copy-30" stroke="#9B9B9B" mask="url(#mask-62)" stroke-width="2" xlink:href="#path-61"></use>
+                <use id="Rectangle-13-Copy-21" stroke="#9B9B9B" mask="url(#mask-64)" stroke-width="2" xlink:href="#path-63"></use>
+                <use id="Rectangle-13-Copy-41" stroke="#9B9B9B" mask="url(#mask-66)" stroke-width="2" xlink:href="#path-65"></use>
+                <use id="Rectangle-13-Copy-45" stroke="#9B9B9B" mask="url(#mask-68)" stroke-width="2" xlink:href="#path-67"></use>
+                <use id="Rectangle-13-Copy-51" stroke="#9B9B9B" mask="url(#mask-70)" stroke-width="2" xlink:href="#path-69"></use>
+                <use id="Rectangle-13-Copy-55" stroke="#9B9B9B" mask="url(#mask-72)" stroke-width="2" xlink:href="#path-71"></use>
+                <use id="Rectangle-13-Copy-57" stroke="#9B9B9B" mask="url(#mask-74)" stroke-width="2" xlink:href="#path-73"></use>
+                <use id="Rectangle-13-Copy-58" stroke="#9B9B9B" mask="url(#mask-76)" stroke-width="2" xlink:href="#path-75"></use>
+                <use id="Rectangle-13-Copy-59" stroke="#9B9B9B" mask="url(#mask-78)" stroke-width="2" xlink:href="#path-77"></use>
+                <use id="Rectangle-13-Copy-46" stroke="#9B9B9B" mask="url(#mask-80)" stroke-width="2" xlink:href="#path-79"></use>
+                <use id="Rectangle-13-Copy-47" stroke="#9B9B9B" mask="url(#mask-82)" stroke-width="2" xlink:href="#path-81"></use>
+                <use id="Rectangle-13-Copy-48" stroke="#9B9B9B" mask="url(#mask-84)" stroke-width="2" xlink:href="#path-83"></use>
+                <use id="Rectangle-13-Copy-52" stroke="#9B9B9B" mask="url(#mask-86)" stroke-width="2" xlink:href="#path-85"></use>
+                <use id="Rectangle-13-Copy-28" stroke="#9B9B9B" mask="url(#mask-88)" stroke-width="2" xlink:href="#path-87"></use>
+                <use id="Rectangle-13-Copy-31" stroke="#9B9B9B" mask="url(#mask-90)" stroke-width="2" xlink:href="#path-89"></use>
+            </g>
+        </g>
+    </g>
+</svg>

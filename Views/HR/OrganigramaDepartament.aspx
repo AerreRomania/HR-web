@@ -215,7 +215,7 @@
                     </div>
                 <br />
                 <br />
-                <telerik:RadGrid runat="server" ID="RadGrid1" AllowFilteringByColumn="True" AllowSorting="true" Style="float: left; margin: 0px 60px auto;" AutoGenerateColumns="false" ClientSettings-Scrolling-AllowScroll="true" ClientSettings-Scrolling-ScrollHeight="600" Width="1444px" HeaderStyle-CssClass="grid_header">
+                <telerik:RadGrid runat="server" ID="RadGrid1" AllowFilteringByColumn="True" AllowSorting="true" Style="float: left; margin: 0px 60px auto;" AutoGenerateColumns="false" ClientSettings-Scrolling-AllowScroll="true" ClientSettings-Scrolling-ScrollHeight="600" Width="90%" HeaderStyle-CssClass="grid_header"><%--width=1444px--%>
                     <ClientSettings EnableRowHoverStyle="false" EnableClientPrint="true" Virtualization-EnableVirtualization="false">
                         <Scrolling AllowScroll="True" UseStaticHeaders="true" EnableColumnClientFreeze="true" SaveScrollPosition="true" />
                     </ClientSettings>
@@ -225,19 +225,19 @@
                     <MasterTableView AutoGenerateColumns="false" CommandItemDisplay="Top" CommandItemSettings-ShowExportToCsvButton="true" TableLayout="Auto" HierarchyLoadMode="Client">
                         <Columns>
 
-                            <telerik:GridBoundColumn DataField="IDs" AllowFiltering="false" HeaderStyle-Width="20px" FilterControlAltText="Filter Ids column" HeaderText="N°:" SortExpression="IDs" UniqueName="IDs">
+                            <telerik:GridBoundColumn DataField="IDs" AllowFiltering="false" HeaderStyle-Width="10px" FilterControlAltText="Filter Ids column" HeaderText="N°:" SortExpression="IDs" UniqueName="IDs">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Nome" HeaderStyle-Width="150px" AllowFiltering="false" FilterControlAltText="Filter Nome column" HeaderText="Nome:" SortExpression="Nome" UniqueName="Nome">
+                            <telerik:GridBoundColumn DataField="Nome" HeaderStyle-Width="43px" AllowFiltering="false" FilterControlAltText="Filter Nome column" HeaderText="Nome:" SortExpression="Nome" UniqueName="Nome">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Cognome" AllowSorting="true" HeaderStyle-Width="150px" AllowFiltering="false" FilterControlAltText="Filter Prenume column" HeaderText="Cognome:" SortExpression="Cognome" UniqueName="Cognome">
+                            <telerik:GridBoundColumn DataField="Cognome" AllowSorting="true" HeaderStyle-Width="43px" AllowFiltering="false" FilterControlAltText="Filter Prenume column" HeaderText="Cognome:" SortExpression="Cognome" UniqueName="Cognome">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" HeaderStyle-Width="100px" FilterControlAltText="Filter Data Nascita column" HeaderText="Data di Assunzione:" SortExpression="Data Nascita" UniqueName="DataNascita">
+                            <telerik:GridBoundColumn DataField="Data Nascita" AllowFiltering="false" HeaderStyle-Width="43px" FilterControlAltText="Filter Data Nascita column" HeaderText="Data di Assunzione:" SortExpression="Data Nascita" UniqueName="DataNascita">
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Mansione" HeaderStyle-Width="150px" ItemStyle-CssClass="MansioneClass"
+                            <telerik:GridBoundColumn DataField="Mansione" HeaderStyle-Width="60px" ItemStyle-CssClass="MansioneClass"
                                 FilterControlAltText="Filter Mansione column" HeaderText="Mansione:"
                                 SortExpression="Mansione" UniqueName="Mansione">
                                 <FilterTemplate>
@@ -250,7 +250,7 @@
                                 </FilterTemplate>
                             </telerik:GridBoundColumn>
 
-                            <telerik:GridBoundColumn DataField="Linea" HeaderStyle-Width="150px" AllowSorting="true"
+                            <telerik:GridBoundColumn DataField="Linea" HeaderStyle-Width="51px" AllowSorting="true"
                                 FilterControlAltText="Filter Linea column" HeaderText="Linea:" ItemStyle-CssClass="LineaClass"
                                 SortExpression="Linea" UniqueName="Linea">
                                 <FilterTemplate>
@@ -260,7 +260,7 @@
                                     </telerik:RadComboBox>
                                 </FilterTemplate>
                             </telerik:GridBoundColumn>
-                            <telerik:GridBoundColumn DataField="Note" AllowSorting="true" HeaderStyle-Width="100px" AllowFiltering="false" FilterControlAltText="Filter Note column" HeaderText="Note:" SortExpression="Note" UniqueName="Note">
+                            <telerik:GridBoundColumn DataField="Note" AllowSorting="true" HeaderStyle-Width="40px" AllowFiltering="false" FilterControlAltText="Filter Note column" HeaderText="Note:" SortExpression="Note" UniqueName="Note">
                             </telerik:GridBoundColumn>
                         </Columns>
                     </MasterTableView>

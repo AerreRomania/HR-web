@@ -19,7 +19,7 @@
             height: 800px;
              background-color: #f3f3f3;
                          width:1520px;
-
+                         
         }
 
         td.rSubSelectat {
@@ -123,7 +123,7 @@
             text-transform: uppercase;
         }
 
-       
+      
 
 
         
@@ -415,7 +415,7 @@
                                     <tr id="myHeader12" class="header1">
                                         <td class="rSecund">
                                             <asp:Label ID="Label6" runat="server"
-                                                Text="Reparto" Width="250px"></asp:Label></td>
+                                                Text="Reparto" Width="250px"></asp:Label></td><%--width:250px;--%>
                                         <td class="rSecund">
                                             <asp:Label ID="Label7" runat="server"
                                                 Text="" Width="104px">&nbsp;</asp:Label></td>
@@ -445,7 +445,7 @@
                                                 Width="65px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="Label16" runat="server" Text="Settembre"
-                                                Width="65px"></asp:Label></td>
+                                                Width="45px"></asp:Label></td>
                                         <td class="rSecund">
                                             <asp:Label ID="Label17" runat="server" Text="Ottobre"
                                                 Width="65px"></asp:Label></td>
