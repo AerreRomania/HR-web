@@ -2388,7 +2388,7 @@ button.filter:hover::after, button.filter:focus::after, button.filter.active::af
 /*Categories blocks*/
 .cats {
 	opacity: 0;
-	/* 	display: none; */
+	display: none; 
 	transition: all 0.4s ease 0.4s;
 	z-index: -9999;
 }
@@ -2402,7 +2402,6 @@ button.filter:hover::after, button.filter:focus::after, button.filter.active::af
 
 .cats.show {
 	opacity: 1;
-	/* 	display: block; */
 	transition: all 0.4s ease 0.4s;
 	z-index: 9;
 }
@@ -2421,6 +2420,20 @@ button.filter:hover::after, button.filter:focus::after, button.filter.active::af
 	transition: all 0.4s ease 0.4s;
 	z-index: 9;
 }
+
+.vendite {
+	opacity: 0;
+	/* 	display: none; */
+	transition: all 0.4s ease 0.4s;
+	z-index: -9999;
+}
+.vendite.show {
+	opacity: 1;
+	/* 	display: block; */
+	transition: all 0.4s ease 0.4s;
+	z-index: 9;
+}
+
 
 article {
 	background: none white;

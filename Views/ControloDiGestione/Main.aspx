@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Main.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Main" %>
+<!DOCTYPE html>
 
 
 
@@ -90,62 +91,62 @@
 <div id = "menu">
 	<ul>
 		<li>
-			<a href="./new/index.jsp?m=main">
+			<button onclick="allView()">
 				<img src="/Images/C.Gestione/navicon/all.svg" alt="icon">
 				<span>Tutti</span>
 				<span class="pull-right">7</span>
-			</a>
+			</button>
 		</li>
 		<li>
-			<a href="./new/index.jsp?m=vendite_cat">
+			<button onclick="venditeView()">
 				<img class="notification" src="/Images/miscicon/notify.svg" alt="icon">
 				<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon">
 				<span>Vendite</span>
 				<span class="pull-right">2</span>
-			</a>
+			</button>
 		</li>
 		<li>
-			<a href="./new/index.jsp?m=situazioni_economiche_cat">
+			<button onclick="economicoView()">
 				<img class="notification" src="/Images/miscicon/notify.svg" alt="icon">
 				<img src="/Images/C.Gestione/navicon/market.svg" alt="icon">
 				<span>Situazioni Economiche</span>
 				<span class="pull-right">6</span>
-			</a>
+			</button>
 		</li>
 		<li>
-			<a href="./new/index.jsp?m=costi_cat">
+			<button onclick="costiView()">
 				<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon">
 				<span>Costi</span>
 				<span class="pull-right">8</span>
-			</a>
+			</button>
 		</li>
 		<li>
-			<a href="./new/index.jsp?m=produzione_cat">
+			<button onclick="prodView()">
 				<img src="/Images/C.Gestione/navicon/production.svg" alt="icon">
 				<span>Produzione</span>
 				<span class="pull-right">2</span>
-			</a>
+			</button>
 		</li>
 		<li>
-			<a href="./new/index.jsp?m=personale_cat">
+			<button  onclick="personaleView()">
 				<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon">
 				<span>Personale</span>
 				<span class="pull-right">3</span>
-			</a>
+			</button>
 		</li>
 		<li>
-			<a href="./new/index.jsp?m=finanza_cat">
+			<button  onclick="finanzaView()">
 				<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon">
 				<span>Finanza</span>
 				<span class="pull-right">2</span>
-			</a>
+			</button>
 		</li>
 				<li>
-			<a href="./index.jsp?m=varie_cat">
+			<button onclick="varieView()">
 				<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon">
 				<span>Varie</span>
 				<span class="pull-right">6</span>
-			</a>
+			</button>
 		</li>
 	</ul>
 	</div>
@@ -185,7 +186,10 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
-		<article> <button  onclick="venditeView()" runat="server"  class="img-container" style="background-image: url('/Images/C.Gestione/navicon/sells-article.png');"></button>
+		<article> 
+			<button onclick="venditeView()" type="button" runat="server" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/navicon/sells-article.png');"  >
+
+			</button>
 		<h2>
 			<a onclick="venditeView()">Vendite</a>
 		</h2>
@@ -196,8 +200,8 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
-		<article> <a href="./new/index.jsp?m=situazioni_economiche_cat" class="img-container"
-			style="background-image: url('/Images/C.Gestione/navicon/market-article.png');"></a>
+		<article> <button onclick="economicoView()" class="img-container"
+			style="border:none;background-image: url('/Images/C.Gestione/navicon/market-article.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=situazioni_economiche_cat">Situazioni Economiche</a>
 		</h2>
@@ -208,7 +212,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
-		<article> <a href="./new/index.jsp?m=costi_cat" class="img-container" style="background-image: url('/Images/C.Gestione/navicon/losses-article.png');"></a>
+		<article> <button onclick="costiView()" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/navicon/losses-article.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=costi_cat">Costi</a>
 		</h2>
@@ -218,7 +222,7 @@
 		</article>
 	</div>
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
-		<article> <a href="./new/index.jsp?m=produzione_cat" class="img-container" style="background-image: url('/Images/C.Gestione/navicon/production-article.png');"></a>
+		<article> <button onclick="prodView()" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/navicon/production-article.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=produzione_cat">Produzione</a>
 		</h2>
@@ -228,7 +232,7 @@
 		</article>
 	</div>
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
-		<article> <a href="./new/index.jsp?m=personale_cat" class="img-container" style="background-image: url('/Images/C.Gestione/navicon/human-res-article.png');"></a>
+		<article> <button onclick="personaleView()" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/navicon/human-res-article.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=personale_cat">Personale</a>
 		</h2>
@@ -238,7 +242,7 @@
 		</article>
 	</div>
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
-		<article> <a href="./new/index.jsp?m=finanza_cat" class="img-container" style="background-image: url('/Images/C.Gestione/navicon/warehouse-article.png');"></a>
+		<article> <button onclick="finanzaView()" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/navicon/warehouse-article.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=finanza_cat">Finanza</a>
 		</h2>
@@ -248,7 +252,7 @@
 		</article>
 	</div>
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
-		<article> <a href="./new/index.jsp?m=varie_cat" class="img-container" style="background-image: url('/Images/C.Gestione/navicon/misc-article.png');"></a>
+		<article> <button onclick="varieView()" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/navicon/misc-article.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=varie_cat">Varie</a>
 		</h2>
@@ -285,7 +289,7 @@
 
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats vendite">
-		<article> <a href="./GetRCL?year=2017&month=8" class="img-container" style="background-image: url('/Images/C.Gestione/sells-cat-01.png');"></a>
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/sells-cat-01.png');"></a>
 		<h2>
 			<a href="./GetRCL?anno=2017&month=8">Ricavi - Forecast dinamico</a>
 		</h2>
@@ -296,7 +300,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats vendite">
-		<article> <a href="./GetRCLDinamico?anno=2017&month=8" class="img-container" style="background-image: url('/Images/C.Gestione/navicon/sells-article.png');"></a>
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/navicon/sells-article.png');"></a>
 		<h2>
 			<a href="./GetRCLDinamico?anno=2017&month=8">Ricavi - con Bdg</a>
 		</h2>
@@ -306,8 +310,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./GetCER" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-01.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-01.png');"></a>
 		<h2>
 			<a href="./GetCER">Conto Economico riclassificato</a>
 		</h2>
@@ -317,8 +321,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./montly-balance" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-02.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-02.png');"></a>
 		<h2>
 			<a href="./montly-balance">Conto Economico mensile</a>
 		</h2>
@@ -328,8 +332,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./progressive-balance" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-03.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-03.png');"></a>
 		<h2>
 			<a href="./progressive-balance">Conto Economico per Centro di Profitto</a>
 		</h2>
@@ -339,8 +343,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="/Onlyou/GetCERtxtAreaPrg" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
 		<h2>
 			<a href="./GetCERtxtAreaPrg">Conto Economico Budget</a>
 		</h2>
@@ -349,8 +353,8 @@
 		</div>
 		</article>
 	</div>
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=cinquepuntosei" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=cinquepuntosei">Conto economico a costo del venduto</a>
 		</h2>
@@ -360,8 +364,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="/Onlyou/new/index.jsp?m=cinquepuntosei" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=cinquepuntosei">Contabilitŕ generale</a>
 		</h2>
@@ -373,8 +377,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="/Onlyou/new/index.jsp?m=seipuntouno" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-01.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-01.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntouno">Calcolo costo industriale</a>
 		</h2>
@@ -384,8 +388,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=seipuntodue" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-02.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-02.png');"></a>
 		<h2>
 			<a href="./index.jsp?m=seipuntodue">Grafico costo orario</a>
 		</h2>
@@ -394,8 +398,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=seipuntotre" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-03.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-03.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntotre">Costi consuntivi / budget</a>
 		</h2>
@@ -405,8 +409,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=seipuntoquattro" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-04.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-04.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntoquattro">Costi / ricavi progressivi</a>
 		</h2>
@@ -416,8 +420,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=seipuntocinque" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-05.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-05.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntocinque">Costi mensili per Reparto</a>
 		</h2>
@@ -427,8 +431,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=seipuntosei" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-06.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-06.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntosei">Costi mensili delle energie</a>
 		</h2>
@@ -438,8 +442,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=seipuntosette" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-07.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-07.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntosette">Costo Telefonia</a>
 		</h2>
@@ -449,7 +453,7 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
+	<div class="col-sm-6 col-md-4 col-lg-3 cats prod">
 		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/production-cat-01.png');"></a>
 		<h2>
 			<a href="">Produzione mensile</a>
@@ -461,7 +465,7 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
+	<div class="col-sm-6 col-md-4 col-lg-3 cats prod">
 		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/production-cat-02.png');"></a>
 		<h2>
 			<a href="">Efficienze Confezione per linea</a>
@@ -473,8 +477,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/human-cat-01.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats personale">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/human-cat-01.png');"></a>
 		<h2>
 			<a href="">Organico per Reparto / Mansione</a>
 		</h2>
@@ -485,8 +489,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/human-cat-02.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats personale">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/human-cat-02.png');"></a>
 		<h2>
 			<a href="">Assenteismo</a>
 		</h2>
@@ -497,8 +501,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/human-cat-03.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats personale">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/human-cat-03.png');"></a>
 		<h2>
 			<a href="">Costo del Lavoro</a>
 		</h2>
@@ -509,8 +513,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/warehouse-cat-01.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats finanza">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/warehouse-cat-01.png');"></a>
 		<h2>
 			<a href="">Situazione Finanziaria</a>
 		</h2>
@@ -521,8 +525,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./treasury" class="img-container" style="background-image: url('/Images/C.Gestione/warehouse-cat-03.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats finanza">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/warehouse-cat-03.png');"></a>
 		<h2>
 			<a href="./treasury">Piano di Tesoreria</a>
 		</h2>
@@ -532,8 +536,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-01.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-01.png');"></a>
 		<h2>
 			<a href="">Situazione magazzini</a>
 		</h2>
@@ -544,8 +548,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></a>
 		<h2>
 			<a href="">Rammendo</a>
 		</h2>
@@ -556,8 +560,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-02.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-02.png');"></a>
 		<h2>
 			<a href="">Investimenti</a>
 		</h2>
@@ -568,8 +572,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-01.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-01.png');"></a>
 		<h2>
 			<a href="">Manutenzioni ordinarie</a>
 		</h2>
@@ -580,8 +584,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></a>
 		<h2>
 			<a href="">Tabella Addebiti</a>
 		</h2>
@@ -592,8 +596,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=tassi_di_cambio" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-02.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-02.png');"></a>
 		<h2>
 			<a href="./index.jsp?m=tassi_di_cambio">Tassi di Cambio</a>
 		</h2>
@@ -603,8 +607,8 @@
 		</article>
 	</div>
 
-	<div class="col-sm-6 col-md-4 col-lg-3 cats">
-		<article> <a href="./new/index.jsp?m=caricamenti-file" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></a>
+	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
+		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=caricamenti-file">Caricamenti file</a>
 		</h2>
@@ -643,8 +647,8 @@
 	<span class="bullet three"></span>
 </button>
 <div class="user">
-	<img src="/dashboard/Images/user-demo.png" alt="icon">
-	<span>Carlo Alberto della Siega</span>
+	<img src="/dashboard/Images/user-demo" alt="icon">
+	<span>User</span>
 	<a href="#" class="btn btn-wire">Logout</a>
 </div>
 <nav class="user-navi">
@@ -697,7 +701,7 @@
         function priorView() {
             var collection = document.getElementsByClassName('cats');
 			var collection_prior = document.getElementsByClassName('prior');
-			
+		
 
             document.getElementById('prior').className = 'filter active';
             document.getElementById('all').className = 'filter';
@@ -715,11 +719,11 @@
                 collection_prior[i].classList.add("show");
             }
 
-        }
+		};
         function allView() {
 
             var collection = document.getElementsByClassName('cats');
-            var collection_vendite = document.getElementsByClassName('prior');
+            var collection_prior = document.getElementsByClassName('prior');
 
             document.getElementById('prior').className = 'filter';
             document.getElementById('all').className = 'filter active';
@@ -734,9 +738,144 @@
                 collection_prior[i].classList.add("hide");
                 collection_prior[i].classList.remove("show");
 
+			}
+		
+		};
+		function venditeView() {
+
+			var collection = document.getElementsByClassName('vendite');
+			var collection_prior = document.getElementsByClassName('prior');
+			
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.add("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
             }
 
-        }
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
+            }
+
+		};
+
+        function economicoView() {
+
+            var collection = document.getElementsByClassName('economico');
+            var collection_prior = document.getElementsByClassName('prior');
+
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.add("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
+
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
+            }
+
+		};
+        function finanzaView() {
+
+            var collection = document.getElementsByClassName('finanza');
+            var collection_prior = document.getElementsByClassName('prior');
+
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.add("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
+
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
+            }
+
+		};
+        function costiView() {
+
+            var collection = document.getElementsByClassName('costi');
+            var collection_prior = document.getElementsByClassName('prior');
+
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.add("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
+
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
+            }
+
+		};
+        function varieView() {
+
+            var collection = document.getElementsByClassName('varie');
+            var collection_prior = document.getElementsByClassName('prior');
+
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.add("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
+
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
+            }
+
+		};
+        function personaleView() {
+
+            var collection = document.getElementsByClassName('personale');
+            var collection_prior = document.getElementsByClassName('prior');
+
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.add("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
+
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
+            }
+
+		};
+        function prodView() {
+
+            var collection = document.getElementsByClassName('prod');
+            var collection_prior = document.getElementsByClassName('prior');
+
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.add("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
+
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
+            }
+
+        };
+
     </script>
 
 	<script>
@@ -772,24 +911,7 @@
             // var table = document.getElementById("monthly-balance").innerHTML =
 		};
 
-        function venditeView() {
-
-            var collection_prior = document.getElementByClassName('vendite');
-            var collection_prior = document.getElementsByClassName('prior');
-            for (var i = 0, len = vendite.length; i < len; i++) {
-                collection_prior[i].classList.remove("show");
-                // 				setTimeout(function(){
-                // 					collection[i].style.display = 'none';
-                // 				}, 400);
-            }
-
-            for (var i = 0, len = collection_vendite.length; i < len; i++) {
-                // 				collection[i].style.display = 'block';
-                collection_vendite[i].classList.remove("hide");
-                collection_vendite[i].classList.add("show");
-            }
-
-        }
+       
     </script>
 </body>
 </html>

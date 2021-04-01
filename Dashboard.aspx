@@ -1577,10 +1577,10 @@
                     <%-- LEVEL 0 - CONTROLO DI GESTIONE --%>
                     <div class="col-sm-6 col-md-4 col-lg-3 col-xs-3 prior">
                         <article id="cont" runat="server">
-                            <a href="#!" class="img-container" style="background-image: url('./dashboard/images/controlo-di-gestione.png');"></a>
+                            <a href="./Views/ControloDiGestione/Main.aspx" class="img-container"  style="background-image: url('./dashboard/images/controlo-di-gestione.png');"></a>
                             <div class="article-lgreen">
                                 <h2>
-                                    <a href="#!" style="background: #369747;"><i class="icon-refresh"></i>Controlo di gestione</a>
+                                    <a href="./Views/ControloDiGestione/Main.aspx"  style="background: #369747;"><i class="icon-refresh"></i>Controlo di gestione</a>
                                 </h2>
                             </div>
                         </article>
