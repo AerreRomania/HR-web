@@ -37,7 +37,7 @@ body {
 body.white {
 	background-color: white;
 }
-
+/*
 @media screen and (min-width: 1460px) {
 	.container {
 		width: 80%;
@@ -64,7 +64,7 @@ body.white {
 	.container {
 		width: 100%;
 	}
-}
+}*/
 
 ul {
 	list-style: none;
@@ -170,7 +170,7 @@ button, a {
 	width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 	.btn+.btn {
 		margin-left: 0;
 	}
@@ -178,9 +178,9 @@ button, a {
 		padding-left: 15px;
 		padding-right: 15px;
 		width: 100%;
-		display: block;
+		display: none;
 	}
-}
+}*/
 /*form elements*/
 .form-control {
 	height: 45px;
@@ -243,15 +243,15 @@ button, a {
 	color: #a94442;
 }
 
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
 	.form-group .radio-inline {
 		clear: both;
 		float: none;
 		width: 100%;
 		margin: 5px 0;
-		display: block;
+		display: none;
 	}
-}
+}*/
 /*Modals*/
 .modal-content {
 	border-radius: 0px;
@@ -285,16 +285,16 @@ button, a {
 	margin: 30px auto;
 }
 
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 	.modal-footer .btn {
 		width: 100%;
-		display: block;
+		display: none;
 	}
 	.modal-footer .btn+.btn {
 		margin-left: 0;
 		margin-top: 10px;
 	}
-}
+}*/
 /*Share modal*/
 .share .modal-content {
 	background: transparent;
