@@ -1,13 +1,9 @@
 ﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Main.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Main" %>
 <!DOCTYPE html>
 
-
-
-
-
 <html lang="it" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<<<<<<< Updated upstream
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 <meta charset="utf-8"/>
 <meta http-equiv="pragma" content="no-cache"/>
@@ -16,19 +12,19 @@
 <link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png"/>
 <link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png"/>
 <link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png"/>
-=======
+
 	
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta charset="utf-8">
-<meta http-equiv="pragma" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta charset="utf-8"/>
+<meta http-equiv="pragma" content="no-cache"/>
 <link rel="shortcut icon" type="image/png" href="/Onlyou/favicon.png" />
-<link rel="apple-touch-icon" href="/Onlyou/onlyou-60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png"> <%--152--%>
->>>>>>> Stashed changes
+<link rel="apple-touch-icon" href="/Onlyou/onlyou-60.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png"/> <%--152--%>
+
 <title>Onlyou</title>
 <!-- CSS  -->
 <link rel="stylesheet" href="../../css/font-awesome.min.css"/>
@@ -70,6 +66,17 @@
 <!-- MODULES END -->
 </head>
 <body>
+	 <style>
+	  .tab{
+		  background-color:#f4f4f4;
+		  width:100%;
+		  height:90vh;
+		  display:none;
+	  }
+	  .button{
+		  border:none;
+	  }
+	 </style>
 	<!-- LEFT NAVIGATION -->
 
 
@@ -107,58 +114,58 @@
 	<ul>
 		<li>
 			<a onclick="allView()">
-				<img src="/Images/C.Gestione/navicon/all.svg" alt="icon">
+				<img src="/Images/C.Gestione/navicon/all.svg" alt="icon"/>
 				<span>Tutti</span>
 				<span class="pull-right">7</span>
 			</a>
 		</li>
 		<li>
 			<a onclick="venditeView()">
-				<img class="notification" src="/Images/C.Gestione/miscicon/notify.svg" alt="icon">
-				<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon">
+				<img class="notification" src="/Images/C.Gestione/miscicon/notify.svg" alt="icon"/>
+				<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon"/>
 				<span>Vendite</span>
 				<span class="pull-right">2</span>
 			</a>
 		</li>
 		<li>
 			<a onclick="economicoView()">
-				<img class="notification" src="/Images/C.Gestione/miscicon/notify.svg" alt="icon">
-				<img src="/Images/C.Gestione/navicon/market.svg" alt="icon">
+				<img class="notification" src="/Images/C.Gestione/miscicon/notify.svg" alt="icon"/>
+				<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/>
 				<span>Situazioni Economiche</span>
 				<span class="pull-right">6</span>
 			</a>
 		</li>
 		<li>
 			<a onclick="costiView()">
-				<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon">
+				<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/>
 				<span>Costi</span>
 				<span class="pull-right">8</span>
 			</a>
 		</li>
 		<li>
 			<a onclick="prodView()">
-				<img src="/Images/C.Gestione/navicon/production.svg" alt="icon">
+				<img src="/Images/C.Gestione/navicon/production.svg" alt="icon"/>
 				<span>Produzione</span>
 				<span class="pull-right">2</span>
 			</a>
 		</li>
 		<li>
 			<a  onclick="personaleView()">
-				<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon">
+				<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"/>
 				<span>Personale</span>
 				<span class="pull-right">3</span>
 			</a>
 		</li>
 		<li>
 			<a  onclick="finanzaView()">
-				<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon">
+				<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon"/>
 				<span>Finanza</span>
 				<span class="pull-right">2</span>
 			</a>
 		</li>
 				<li>
 			<a onclick="varieView()">
-				<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon">
+				<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/>
 				<span>Varie</span>
 				<span class="pull-right">6</span>
 			</a>
@@ -166,40 +173,25 @@
 	</ul>
 	</div>
 </nav>
-<div class="search">
-	<form action="" role="form" method="GET">
-		<div class="form-group">
-			<input class="form-control" type="search" placeholder="Cerca">
-			<button class="search-button" type="submit">
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</button>
-		</div>
-	</form>
-</div>
 </div>
 
-
-
 		</div>
-		<div class="">
-			
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
+		
 	<div class="container-fluid">
+		
 		<div class="row">
 			<div class="col-sm-12">
 				<button id="prior" type="button" class="filter active" onclick="priorView()">In primo piano</button>
 				<button id="all" type="button" class="filter" onclick="allView()">Tutti</button>
 			</div>
 		</div>
+		
 	</div>
+		<div class="container-fluid">
+		<iframe class="tab" data-link="">
 
+		</iframe>
+			</div>
 	<div class="col-sm-6 col-md-4 col-lg-3 prior">
 		<article> 
 			<button onclick="venditeView()" type="button" runat="server" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/navicon/sells-article.png');"  >
@@ -209,7 +201,7 @@
 			<a onclick="venditeView()">Vendite</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon"> <span>Vendite</span>
+			<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon"/> <span>Vendite</span>
 		</div>
 		</article>
 	</div>
@@ -218,10 +210,10 @@
 		<article> <button onclick="economicoView()" class="img-container"
 			style="border:none;background-image: url('/Images/C.Gestione/navicon/market-article.png');"></button>
 		<h2>
-			<a href="./new/index.jsp?m=situazioni_economiche_cat">Situazioni Economiche</a>
+			<a href="">Situazioni Economiche</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"> <span>Situazioni Economiche</span>
+			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/> <span>Situazioni Economiche</span>
 		</div>
 		</article>
 	</div>
@@ -232,7 +224,7 @@
 			<a href="./new/index.jsp?m=costi_cat">Costi</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span>
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
 		</div>
 		</article>
 	</div>
@@ -242,7 +234,7 @@
 			<a href="./new/index.jsp?m=produzione_cat">Produzione</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/production.svg" alt="icon"> <span>Dati economici</span>
+			<img src="/Images/C.Gestione/navicon/production.svg" alt="icon"/> <span>Dati economici</span>
 		</div>
 		</article>
 	</div>
@@ -252,7 +244,7 @@
 			<a href="./new/index.jsp?m=personale_cat">Personale</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"> <span>Personale</span>
+			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"/> <span>Personale</span>
 		</div>
 		</article>
 	</div>
@@ -262,7 +254,7 @@
 			<a href="./new/index.jsp?m=finanza_cat">Finanza</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon"> <span>Finanza</span>
+			<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon"/> <span>Finanza</span>
 		</div>
 		</article>
 	</div>
@@ -272,34 +264,12 @@
 			<a href="./new/index.jsp?m=varie_cat">Varie</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span>
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span>
 		</div>
 		</article>
 	</div>
-	<!-- 			<div class="col-sm-6 col-md-4 col-lg-3 prior"> -->
-	<!-- 				<article> -->
+		
 	
-	<!-- 					<h2> -->
-	<!-- 						<a href="#dashboard/detail">Conto Economico per Centro di Profitto</a> -->
-	<!-- 					</h2> -->
-	<!-- 					<div class="detail"> -->
-	
-	
-	<!-- 					</div> -->
-	<!-- 				</article> -->
-	<!-- 			</div> -->
-	<!-- 			<div class="col-sm-6 col-md-4 col-lg-3 prior"> -->
-	<!-- 				<article> -->
-	
-	<!-- 					<h2> -->
-	<!-- 						<a href="#dashboard/detail">Conto Economico Mensilizzato</a> -->
-	<!-- 					</h2> -->
-	<!-- 					<div class="detail"> -->
-	
-	
-	<!-- 					</div> -->
-	<!-- 				</article> -->
-	<!-- 			</div> -->
 
 
 
@@ -309,7 +279,7 @@
 			<a href="./GetRCL?anno=2017&month=8">Ricavi - Forecast dinamico</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon"> <span>Vendite</span>
+			<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon"/> <span>Vendite</span>
 		</div>
 		</article>
 	</div>
@@ -320,85 +290,85 @@
 			<a href="./GetRCLDinamico?anno=2017&month=8">Ricavi - con Bdg</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon"> <span>Vendite</span>
+			<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon"/> <span>Vendite</span>
 		</div>
 		</article>
 	</div>
-
+		<%--CONTO ECONOMICO///////////////////////////////////////--%>
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-01.png');"></a>
+		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-01.png');"></button>
 		<h2>
-			<a href="./GetCER">Conto Economico riclassificato</a>
+			<a href="">Conto Economico riclassificato</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"> <span>Situazione Economiche</span>
+			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/> <span>Situazione Economiche</span>
 		</div>
 		</article>
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-02.png');"></a>
+		<article> <button onclick="CE_Mensile()" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/market-cat-02.png');"></button>
 		<h2>
 			<a href="./montly-balance">Conto Economico mensile</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"> <span>Situazione Economiche</span>
+			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/> <span>Situazione Economiche</span>
 		</div>
 		</article>
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-03.png');"></a>
+		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-03.png');"></button>
 		<h2>
 			<a href="./progressive-balance">Conto Economico per Centro di Profitto</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"> <span>Situazione Economiche</span>
+			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/> <span>Situazione Economiche</span>
 		</div>
 		</article>
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
+		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
 		<h2>
 			<a href="./GetCERtxtAreaPrg">Conto Economico Budget</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"> <span>Situazione Economiche</span>
+			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/> <span>Situazione Economiche</span>
 		</div>
 		</article>
 	</div>
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
+		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=cinquepuntosei">Conto economico a costo del venduto</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"> <span>Situazione Economiche</span>
+			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/> <span>Situazione Economiche</span>
 		</div>
 		</article>
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></a>
+		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=cinquepuntosei">Contabilitŕ generale</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"> <span>Situazione Economiche</span>
+			<img src="/Images/C.Gestione/navicon/market.svg" alt="icon"/> <span>Situazione Economiche</span>
 			<!-- 			<img class="notification pull-right" -->
 			
 		</div>
 		</article>
 	</div>
-
+		<%--COSTI////////////////////////////////////////////////////////////--%>
 	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
 		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-01.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntouno">Calcolo costo industriale</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span>
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
 		</div>
 		</article>
 	</div>
@@ -409,7 +379,7 @@
 			<a href="./index.jsp?m=seipuntodue">Grafico costo orario</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span>
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
 		</article>
 	</div>
 
@@ -419,7 +389,7 @@
 			<a href="./new/index.jsp?m=seipuntotre">Costi consuntivi / budget</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span>
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
 		</div>
 		</article>
 	</div>
@@ -430,7 +400,7 @@
 			<a href="./new/index.jsp?m=seipuntoquattro">Costi / ricavi progressivi</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span>
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
 		</div>
 		</article>
 	</div>
@@ -441,7 +411,7 @@
 			<a href="./new/index.jsp?m=seipuntocinque">Costi mensili per Reparto</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span>
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
 		</div>
 		</article>
 	</div>
@@ -452,7 +422,7 @@
 			<a href="./new/index.jsp?m=seipuntosei">Costi mensili delle energie</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span>
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
 		</div>
 		</article>
 	</div>
@@ -463,7 +433,7 @@
 			<a href="./new/index.jsp?m=seipuntosette">Costo Telefonia</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"> <span>Costi</span> 
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span> 
 		</div>
 		</article>
 	</div>
@@ -474,8 +444,8 @@
 			<a href="">Produzione mensile</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/production.svg" alt="icon"> <span>Produzione</span> <img class="notification pull-right"
-				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon">
+			<img src="/Images/C.Gestione/navicon/production.svg" alt="icon"/> <span>Produzione</span> <img class="notification pull-right"
+				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -486,8 +456,8 @@
 			<a href="">Efficienze Confezione per linea</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/production.svg" alt="icon"> <span>Produzione</span> <img class="notification pull-right"
-				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon">
+			<img src="/Images/C.Gestione/navicon/production.svg" alt="icon"/> <span>Produzione</span> <img class="notification pull-right"
+				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -498,8 +468,8 @@
 			<a href="">Organico per Reparto / Mansione</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"> <span>Personale</span> <img class="notification pull-right"
-				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon">
+			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"/> <span>Personale</span> <img class="notification pull-right"
+				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -510,8 +480,8 @@
 			<a href="">Assenteismo</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"> <span>Personale</span> <img class="notification pull-right"
-				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon">
+			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"/> <span>Personale</span> <img class="notification pull-right"
+				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -522,8 +492,8 @@
 			<a href="">Costo del Lavoro</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"> <span>Personale</span> <img class="notification pull-right"
-				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon">
+			<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon"/> <span>Personale</span> <img class="notification pull-right"
+				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -534,8 +504,8 @@
 			<a href="">Situazione Finanziaria</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon"> <span>Finanza</span> <img class="notification pull-right"
-				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon">
+			<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon"/> <span>Finanza</span> <img class="notification pull-right"
+				src="/Images/C.Gestione/miscicon/divieto.svg" alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -546,7 +516,7 @@
 			<a href="./treasury">Piano di Tesoreria</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon"> <span>Finanza</span>
+			<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon"/> <span>Finanza</span>
 		</div>
 		</article>
 	</div>
@@ -557,8 +527,8 @@
 			<a href="">Situazione magazzini</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
-				alt="icon">
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
+				alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -569,8 +539,8 @@
 			<a href="">Rammendo</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
-				alt="icon">
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
+				alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -581,8 +551,8 @@
 			<a href="">Investimenti</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
-				alt="icon">
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
+				alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -593,8 +563,8 @@
 			<a href="">Manutenzioni ordinarie</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
-				alt="icon">
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
+				alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -605,8 +575,8 @@
 			<a href="">Tabella Addebiti</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
-				alt="icon">
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span> <img class="notification pull-right" src="/Images/C.Gestione/miscicon/divieto.svg"
+				alt="icon"/>
 		</div>
 		</article>
 	</div>
@@ -617,7 +587,7 @@
 			<a href="./index.jsp?m=tassi_di_cambio">Tassi di Cambio</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span>
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span>
 		</div>
 		</article>
 	</div>
@@ -628,12 +598,11 @@
 			<a href="./new/index.jsp?m=caricamenti-file">Caricamenti file</a>
 		</h2>
 		<div class="detail">
-			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"> <span>Varie</span>
+			<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon"/> <span>Varie</span>
 		</div>
 		</article>
 	</div>
-</body>
-</html>
+
 		</div>
 		<div class="">
 			
@@ -661,8 +630,9 @@
 	<span class="bullet two"></span>
 	<span class="bullet three"></span>
 </button>
+
 <div class="user">
-	<img src="/dashboard/Images/user-demo" alt="icon">
+	<img src="/dashboard/Images/user-demo" alt="icon"/>
 	<span>User</span>
 	<a href="#" class="btn btn-wire">Logout</a>
 </div>
@@ -700,7 +670,7 @@
 </footer>
 </div>
 		</div>
-	</div>
+		 
 
 	<script>
         var collection_prior = document.getElementsByClassName('prior');
@@ -712,12 +682,31 @@
 
 	<script>
 		
+		function CE_Mensile() {
+			var collection = document.getElementsByClassName('economico');
+			var tab = document.getElementsByClassName('tab');
 
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.remove("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
+
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+				tab[i].classList.remove("hide");
+				tab[i].classList.add("show");
+            }
+		};
         function priorView() {
             var collection = document.getElementsByClassName('cats');
 			var collection_prior = document.getElementsByClassName('prior');
+			var tab = document.getElementsByClassName('tab');
 		
-
+            for(var i = 0, len = tab.length; i < len; i++) {
+                tab[i].classList.remove("show");
+                tab[i].classList.add("hide");
+            }
             document.getElementById('prior').className = 'filter active';
             document.getElementById('all').className = 'filter';
 
@@ -743,6 +732,12 @@
             document.getElementById('prior').className = 'filter';
             document.getElementById('all').className = 'filter active';
 
+            var tab = document.getElementsByClassName('tab');
+
+            for (var i = 0, len = tab.length; i < len; i++) {
+                tab[i].classList.remove("show");
+                tab[i].classList.add("hide");
+            }
             for (var i = 0, len = collection.length; i < len; i++) {
                 // 				collection[i].style.display = 'block';
                 collection[i].classList.add("show");
@@ -928,5 +923,7 @@
 
        
     </script>
+		
+
 </body>
 </html>

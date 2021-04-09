@@ -1,5 +1,5 @@
 ﻿
-<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Main.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Main" %>
+<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CE_Budget.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_CE_Budget" %>
 <!DOCTYPE html>
 
 
