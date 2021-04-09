@@ -1,5 +1,5 @@
 ﻿<%--<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Main.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Tables_ContoEconomicoprogress_ContoEconomicoProgressivo" %>--%>
-<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ContoEconomicoProgressivo.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Tables_ContoEconomicoprogress_ContoEconomicoProgressivo" %>
+<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CE_Progressivo.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Tables_ContoEconomicoprogress_ContoEconomicoProgressivo" %>
 
 
 <!DOCTYPE html>

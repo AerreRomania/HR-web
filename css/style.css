@@ -2457,6 +2457,7 @@ article .img-container {
 	display: block;
 	background-position: center 16%;
 	background-size: cover;
+	border:none;
 }
 
 article h2 {
