@@ -20,7 +20,8 @@
 
 body {
 	font-family: 'Roboto', Times;
-	background-color: #f4f4f4;
+	/*background-color: #f4f4f4;*/
+	background-color:red;
 	color: #4a4a4a;
 	transition: background-color 0.3s ease 0.3s;
 }
@@ -31,13 +32,16 @@ body.white {
 
 @media screen and (min-width: 1460px) {
 	.container {
+
 		width: 80%;
+		display:block;
 	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1459px) {
 	.container {
 		width: 90%;
+		display: block;
 	}
 }
 
@@ -45,6 +49,7 @@ body.white {
 	.container {
 		width: 100%;
 		padding: 0 70px;
+		display: block;
 	}
 }
 
@@ -54,6 +59,7 @@ body.white {
 	}
 	.container {
 		width: 100%;
+		display: block;
 	}
 }
 
@@ -752,6 +758,7 @@ tbody>tr.green {
 	color: #607D8B;
 }
 
+
 #treasury-plan {
 	min-width: 991px;
 }
@@ -1298,15 +1305,15 @@ button.filter:hover::after, button.filter:focus::after, button.filter.active::af
 }
 /*Categories blocks*/
 .cats {
-	opacity: 0;
-	/* 	display: none; */
+	opacity: 0;/*
+	 	display: none; */
 	transition: all 0.4s ease 0.4s;
 	z-index: -9999;
 }
 
 .cats.show {
 	opacity: 1;
-	/* 	display: block; */
+	 	display: block; 
 	transition: all 0.4s ease 0.4s;
 	z-index: 9;
 }
@@ -1327,13 +1334,12 @@ article:hover {
 	-ms-transform: rotate(1deg);
 }
 
-article .img-container {
-	padding-top: 46%;
-	width: 100%;
-	display: block;
-	background-position: center 16%;
-	background-size: cover;
-}
+	article .img-container {
+		padding-top: 46%;
+		width: 100%;
+		background-position: center 16%;
+		background-size: cover;
+	}
 
 article h2 {
 	padding: 15px 15px 0;
@@ -1361,8 +1367,8 @@ article .detail {
 	display: block;
 	padding: 15px;
 	margin-top: 30px;
-	/* 	position: absolute; */
-}
+/*	 	position: absolute; 
+*/}
 
 article .detail span {
 	font-size: 12px;

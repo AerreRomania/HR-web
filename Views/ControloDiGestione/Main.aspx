@@ -7,6 +7,7 @@
 
 <html lang="it" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<<<<<<< Updated upstream
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 <meta charset="utf-8"/>
 <meta http-equiv="pragma" content="no-cache"/>
@@ -15,6 +16,19 @@
 <link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png"/>
 <link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png"/>
 <link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png"/>
+=======
+	
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache">
+<link rel="shortcut icon" type="image/png" href="/Onlyou/favicon.png" />
+<link rel="apple-touch-icon" href="/Onlyou/onlyou-60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png"> <%--152--%>
+>>>>>>> Stashed changes
 <title>Onlyou</title>
 <!-- CSS  -->
 <link rel="stylesheet" href="../../css/font-awesome.min.css"/>
@@ -43,7 +57,7 @@
 <script src="./js/angular-animate.min.js"></script>
 <script src="./js/ui-bootstrap-tpls-2.2.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
+<%-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> --%>
 <!-- THIRD PARTY MODULES END -->
 <!-- MAIN APP -->
 <script src="./dashboard/js/app.js"></script>
@@ -92,62 +106,62 @@
 <div id = "menu">
 	<ul>
 		<li>
-			<button onclick="allView()">
+			<a onclick="allView()">
 				<img src="/Images/C.Gestione/navicon/all.svg" alt="icon">
 				<span>Tutti</span>
 				<span class="pull-right">7</span>
-			</button>
+			</a>
 		</li>
 		<li>
-			<button onclick="venditeView()">
-				<img class="notification" src="/Images/miscicon/notify.svg" alt="icon">
+			<a onclick="venditeView()">
+				<img class="notification" src="/Images/C.Gestione/miscicon/notify.svg" alt="icon">
 				<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon">
 				<span>Vendite</span>
 				<span class="pull-right">2</span>
-			</button>
+			</a>
 		</li>
 		<li>
-			<button onclick="economicoView()">
-				<img class="notification" src="/Images/miscicon/notify.svg" alt="icon">
+			<a onclick="economicoView()">
+				<img class="notification" src="/Images/C.Gestione/miscicon/notify.svg" alt="icon">
 				<img src="/Images/C.Gestione/navicon/market.svg" alt="icon">
 				<span>Situazioni Economiche</span>
 				<span class="pull-right">6</span>
-			</button>
+			</a>
 		</li>
 		<li>
-			<button onclick="costiView()">
+			<a onclick="costiView()">
 				<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon">
 				<span>Costi</span>
 				<span class="pull-right">8</span>
-			</button>
+			</a>
 		</li>
 		<li>
-			<button onclick="prodView()">
+			<a onclick="prodView()">
 				<img src="/Images/C.Gestione/navicon/production.svg" alt="icon">
 				<span>Produzione</span>
 				<span class="pull-right">2</span>
-			</button>
+			</a>
 		</li>
 		<li>
-			<button  onclick="personaleView()">
+			<a  onclick="personaleView()">
 				<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon">
 				<span>Personale</span>
 				<span class="pull-right">3</span>
-			</button>
+			</a>
 		</li>
 		<li>
-			<button  onclick="finanzaView()">
+			<a  onclick="finanzaView()">
 				<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon">
 				<span>Finanza</span>
 				<span class="pull-right">2</span>
-			</button>
+			</a>
 		</li>
 				<li>
-			<button onclick="varieView()">
+			<a onclick="varieView()">
 				<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon">
 				<span>Varie</span>
 				<span class="pull-right">6</span>
-			</button>
+			</a>
 		</li>
 	</ul>
 	</div>
@@ -755,7 +769,7 @@
             }
 
             for (var i = 0, len = collection_prior.length; i < len; i++) {
-                // 				collection[i].style.display = 'block';
+                 				//collection[i].style.display = 'block';
                 collection_prior[i].classList.add("hide");
                 collection_prior[i].classList.remove("show");
             }

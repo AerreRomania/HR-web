@@ -8,17 +8,17 @@
         </head>
 
 <body onload="borderFunction()">
-    <form id="form1" runat="server">
+    
       
-        <table id="left">
-      <th id="first">Conto Economico
-          </br>
+        <div class="myDiv"> 
+    <table>
+         <tr>
+      <th class="two">Conto Economico S
       </th>
-            </table>
-
-        <div class="two"> 
-              <table id="firstp">
-                  
+  
+        </table>
+  </div>
+                  <table>
                 <th id="progress1">PROGRESSIVO
         </br>
           PRECEDENTE
@@ -31,9 +31,8 @@
           </br>
           ATTUALE
                 </th>
-                  </table>
-          
-          <table>              
+                  </table>              
+            <table>
                 <th id="progress">PROG.
           </br>
           PREC.
@@ -1332,6 +1331,7 @@
                     <td>50</td>
                     <td>50</td>
                     <td>50</td>
+                         </tr>
                             <tr id="borders2">
                     <td>89</td>
                     <td>50</td>
@@ -1346,16 +1346,18 @@
                     <td>50</td>
                     <td>50</td>
                 </tr>
-                </tr>
+               
 
             </table>
-            </div>
+           
     
-        </form>
+       
               <style>
-                #left{
-                    float:left;
+
+                  body{
+                      padding-left:150px;
                   }
+                
 table {
   width: 100%;
   font-size:12px;
@@ -1425,27 +1427,33 @@ th, td {
                   
                   tr:nth-child(even) {background-color:#AFEEEE;}
 
-.two{
-    border-style:double;
-}
+
 
 #gold{
     background-color:yellow;
 }
 
-
-#firstp{
-    width:100%;
-    margin-bottom:1px; /*before:just #first:width::100%;*/
+.two{
+    /*width:107px;*/
+    color:red;
+    margin-top:0px;
+    float:left;
+    margin-left:-112px;
 }
+
+./*myDiv{
+    color:red;
+    width:107px;
+    margin-top:0px;
+    float:left;
+}*/
+
 
 
 </style>
 
     <script>
-        function borderFunction() {
-            document.getElementById("borders2").style.Color = "red";
-        }
+      
         
     </script>
 

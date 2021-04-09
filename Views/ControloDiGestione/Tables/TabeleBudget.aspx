@@ -1,9 +1,11 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="TabeleBudget.aspx.cs" Inherits="Views_ControloDiGestione_Tables_TabeleTab" %>
 
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
     <title> Budget </title>
 </head>
     
@@ -12,10 +14,18 @@
 
    <style>
 
+       #twelve{
+           background-color:lightgreen;
+       }
+
 table {
   border-collapse: collapse;
   width: 200%;
   font-size:12px;
+  position:relative;
+      overflow-y: auto;
+
+
 }
 
 th, td {
@@ -24,16 +34,19 @@ th, td {
   background-color:white;
           border-right: 1px solid gray;
         border-left: 1px solid gray;
+        
 
+}
+
+#borderslight{
+    background-color:lightgreen;
 }
 
 #first{
     width:200px;
+    border-left:none;
 }
 
-#bordersy{
-    background-color:lightgreen;
-}
 
 
 
@@ -46,6 +59,15 @@ th, td {
 #ianuarie,#februarie,#martie{
      background-color:    #ccccff;
         border-style:double;
+        /*overflow-x:scroll;*/
+       position:sticky;
+          top:0;
+        
+}
+
+#ianuarie{
+        border-left:1px solid gray;
+
 }
 
 #empty{
@@ -110,10 +132,15 @@ tr:nth-child(even) {background-color:#AFEEEE;}
             document.getElementById("number12").style.fontFamily = "courgette";
         }
 
+        {
+            document.getElementById("twelve").style.backgroundColor = "lightgreen";
+        }
+
     </script>
 
     <div class="one">
 <div style="overflow-x:auto;">
+
   <table>
 
     
@@ -353,7 +380,8 @@ tr:nth-child(even) {background-color:#AFEEEE;}
       <td>50</td>
     </tr>
      <tr id="borders">
-      <td id="number12">12  <borders12 style="background-color:lightgreen;"> &nbsp  TOT.FATTURATO </font></td>
+      <td id="number12">12   &nbsp  TOT.FATTURATO </font></td>
+         <div id="twelve">
       <td>50</td>
       <td>50</td>
       <td>50</td>
@@ -367,6 +395,7 @@ tr:nth-child(even) {background-color:#AFEEEE;}
       <td>50</td>
       <td>50</td>
       <td>50</td>
+             </div>
     </tr>
       <tr id="borders">
       <td id="number">13 &nbsp Delta Rimanenze </td>
@@ -384,7 +413,7 @@ tr:nth-child(even) {background-color:#AFEEEE;}
       <td>50</td>
       <td>50</td>
     </tr>
-      <tr id="borders">
+      <tr id="borderslight">
       <td id="number">14  <borders14 style="background-color:lightgreen;"> &nbsp VALORE PRODUZIONE </font></td>
       <td>50</td>
       <td>50</td>
