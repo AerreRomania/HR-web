@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CE_Mensile.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Tables_ContoEconomicoMensile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="CE_Mensile.aspx.cs"  Inherits="Views_ControloDiGestione_Tables_CE_Mensile" %>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -12,31 +12,34 @@
 <link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png">
 <title>Onlyou</title>
 <!-- CSS  -->
-<link rel="stylesheet" href="/Onlyou/css/font-awesome.min.css">
-<link rel="stylesheet" href="/Onlyou/css/bootstrap.min.css">
-<link rel="stylesheet" href="/Onlyou/css/animate.min.css">
-<link rel="stylesheet" href="/Onlyou/new/css/style.css">
-<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.bootstrap.css">
-<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.min.css">
+<link rel="stylesheet" href="../../css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../../css/animate.min.css"/>
+<link rel="stylesheet" href="../../css/style.css"/>
+<link rel="stylesheet" href="../../css/datatable/datatables.bootstrap.css"/>
+<link rel="stylesheet" href="../../css/datatable/datatables.min.css"/>
+
 <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.css" /> -->
 <!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
-<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/jquery.dataTables.min.css"/>
-<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/dataTables.bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/dataTables.bootstrap.min.css"/>
 <script src="/Onlyou/js/jquery-2.1.0.min.js"></script>
 <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
 <script src="/Onlyou/new/js/jquery.dataTables.min.js"></script>
+
+
 <!-- CHART JS -->
 
-<script src="/Onlyou/js/chart.bundle.min.js"></script>
-<!-- CHART JS END -->
+<script src="./js/chart.bundle.min.js"></script>
+	<!-- CHART JS END -->
 <!-- CORE -->
-<script src="/Onlyou/js/angular.min.js"></script>
+<script src="./js/angular.min.js"></script>
 <!-- CORE END -->
 <!-- THIRD PARTY MODULES -->
-<script src="/Onlyou/js/angular-ui-router.min.js"></script>
-<script src="/Onlyou/js/angular-animate.min.js"></script>
-<script src="/Onlyou/js/ui-bootstrap-tpls-2.2.0.min.js"></script>
-<script src="/Onlyou/js/bootstrap.min.js"></script>
+<script src="./js/angular-ui-router.min.js"></script>
+<script src="./js/angular-animate.min.js"></script>
+<script src="./js/ui-bootstrap-tpls-2.2.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
 <!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
 
 <!-- THIRD PARTY MODULES END -->

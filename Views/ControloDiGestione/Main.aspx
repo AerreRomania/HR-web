@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Main.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_Main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Main.aspx.cs" Inherits="Views_ControloDiGestione_Main" %>
 <!DOCTYPE html>
 
 <html lang="it" xmlns="http://www.w3.org/1999/xhtml">
@@ -56,14 +56,15 @@
 <%-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> --%>
 <!-- THIRD PARTY MODULES END -->
 <!-- MAIN APP -->
-<script src="./dashboard/js/app.js"></script>
+<script src="/Onlyou/dashboard/js/app.js"></script>
 <!-- MAIN APP END -->
 <!-- MODULES -->
 
-<script src="./dashboard/modules/treasure-plan-ctrl.js"></script>
-<script src="./dashboard/modules/modal/share/modal-share-ctrl.js"></script>
-<script src="./dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
+<script src="/Onlyou/dashboard/modules/treasure-plan-ctrl.js"></script>
+<script src="/Onlyou/dashboard/modules/modal/share/modal-share-ctrl.js"></script>
+<script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 <!-- MODULES END -->
+
 </head>
 <body>
 	 <style>

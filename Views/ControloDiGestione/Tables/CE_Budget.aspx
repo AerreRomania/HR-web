@@ -1,18 +1,6 @@
 ﻿
-<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CE_Budget.aspx.vb" ClientIDMode="Static" Inherits="Views_ControloDiGestione_CE_Budget" %>
+<%@ Page Language="C#" AutoEventWireup="false" CodeFile="CE_Budget.aspx.cs" Inherits="Views_ControloDiGestione_Tables_CE_Budget" %>
 <!DOCTYPE html>
-
-
-
-
-
-<html lang="it">
-<head>
-    
-
-
-
-
 
 <html lang="it">
 <head>
@@ -95,83 +83,7 @@ var $li = $('#menu li a').click(function() {
 </script>
 
 
-<div id = "left-navi" onmouseover = "openClose()" onmouseout = "openClose()">
-<nav class="main-nav">
 
-<div id = "menu">
-	<ul>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=main">
-				<img src="/Images/C.Gestione/navicon/all.svg" alt="icon">
-				<span>Tutti</span>
-				<span class="pull-right">7</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=vendite_cat">
-				<img class="notification" src="/Onlyou/dashboard/images/miscicon/notify.svg" alt="icon">
-				<img src="/Images/C.Gestione/navicon/sells.svg" alt="icon">
-				<span>Vendite</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=situazioni_economiche_cat">
-				<img class="notification" src="/Images/C.Gestione/miscicon/notify.svg" alt="icon">
-				<img src="/Images/C.Gestione/navicon/market.svg" alt="icon">
-				<span>Situazioni Economiche</span>
-				<span class="pull-right">6</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=costi_cat">
-				<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon">
-				<span>Costi</span>
-				<span class="pull-right">8</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=produzione_cat">
-				<img src="/Images/C.Gestione/navicon/production.svg" alt="icon">
-				<span>Produzione</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=personale_cat">
-				<img src="/Images/C.Gestione/navicon/human-res.svg" alt="icon">
-				<span>Personale</span>
-				<span class="pull-right">3</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=finanza_cat">
-				<img src="/Images/C.Gestione/navicon/warehouse.svg" alt="icon">
-				<span>Finanza</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-				<li>
-			<a href="/Onlyou/new/index.jsp?m=varie_cat">
-				<img src="/Images/C.Gestione/navicon/misc.svg" alt="icon">
-				<span>Varie</span>
-				<span class="pull-right">6</span>
-			</a>
-		</li>
-	</ul>
-	</div>
-</nav>
-<div class="search">
-	<form action="" role="form" method="GET">
-		<div class="form-group">
-			<input class="form-control" type="search" placeholder="Cerca">
-			<button class="search-button" type="submit">
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</button>
-		</div>
-	</form>
-</div>
-</div>
 
 
 
