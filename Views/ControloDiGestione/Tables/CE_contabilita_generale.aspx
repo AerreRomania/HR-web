@@ -178,7 +178,21 @@ var $li = $('#menu li a').click(function() {
 <%--<head>--%>
 <style>
 
-	
+	.top-icons{
+		float:right;
+				background-color:darkred;
+
+	}
+
+
+
+	#index{
+		background-color:red;
+		color:white;
+		border-style:none;
+		padding:7px 7px;
+		border-radius:3px;
+	}
 
 	thead{
 		border-bottom:1px solid black;
@@ -337,7 +351,9 @@ body{
 										<option value="2030" >2030</option>
 									
 								</select>
-								<button class="btn btn-danger btn-sm" name="clear" value="1" >Svuota valori</button>
+					
+								<button class="btn btn-danger btn-sm" name="clear" id="index" value="1" background-color="red">Svuota valori</button>
+						
 							</form>
 
 						</section>
@@ -346,36 +362,41 @@ body{
 				<div class="col-sm-12">
 						<table>
 							<tr>
-								<td width="86%"><button id="myBtn" class="btn btn-link">INSERISCI VALORI</button>
-								<td>Tasso di cambio: 118.626</td>
+								<td width="76%"><button id="myBtn" class="btn btn-link">INSERISCI VALORI</button><%--<td width="86%">
+								--%><td style="margin-left:300px;">Tasso di cambio: 118.626</td>
 							</tr>
 						</table>
 				</div>
 				<table id="cinquepuntosei" class="table table-bordered table-hover table-condensed">
-					
+
+					<div align="right">
+	<button onclick="window.print()">
+		<img class="top-icons" onclick="printData();" src="/Images/C.Gestione/dockicon/print.svg" alt="Print" />
+	</button>
+	</div>
 
 
 <thead>
 	<tr>
-		<td style="background-color:yellow;border-right: 1px solid black; padding-top:20px;text-align:center;">Cod.1</th>
-		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;">Cod.2</th>
-		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;">Riclass</th>
-		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;">Descrizione Riclassifica</th>
-		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;">Descrizione Italiano</th>
-		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;">Importo Rsd</th>
-		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;">Importo Euro</th>
+		<td style="background-color:yellow;border-right: 1px solid black; padding-top:20px;text-align:center;font-weight:bold;font-size:18px;">Cod.1</th>
+		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;font-weight:bold;font-size:18px;">Cod.2</th>
+		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;font-weight:bold;font-size:18px;">Riclass</th>
+		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;font-weight:bold;font-size:18px;">Descrizione Riclassifica</th>
+		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;font-weight:bold;font-size:18px;">Descrizione Italiano</th>
+		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;font-weight:bold;font-size:18px;">Importo Rsd</th>
+		<td style="background-color:yellow;border-right: 1px solid black;padding-top:20px;text-align:center;font-weight:bold;font-size:18px;">Importo Euro</th>
 	</tr>
 </thead>
 <tbody>
 	
 	<tr>
-		<td style="background-color:white;border-right: 1px solid black;padding-top:10px;"></td>
+		<td style="background-color:white;border-right: 1px solid black;padding-bottom:25px;"></td>
 		<td style="background-color:white;border-right: 1px solid black;"></td>
 		<td style="background-color:white;border-right: 1px solid black;"></td>
 		<td style="background-color:white;border-right: 1px solid black;"></td>
-		<td style="background-color:white;border-right: 1px solid black;"><strong>TOTALE</strong></td>
-		<td style="text-align:right;background-color:#d6d6c2;border-right: 1px solid black;"><strong>0.0</strong></td>
-		<td style="text-align:right;background-color:#d6f5d6;border-right: 1px solid black;"><strong>0.0</strong></td>
+		<td style="background-color:white;border-right: 1px solid black;font-size:12px;">TOTALE<%--</strong>--%></td>
+		<td style="text-align:right;background-color:#d6d6c2;border-right: 1px solid black;"><%--<strong>--%>0.0<%--</strong>--%></td>
+		<td style="text-align:right;background-color:#d6f5d6;border-right: 1px solid black;"><%--<strong>--%>0.0<%--</strong>--%></td>
 	</tr>
 	
 </tbody>
@@ -458,6 +479,10 @@ body{
 	</section>
 </div>
 <script>
+
+	{
+		document.getElementByName("clear").style.color = "red";
+    }
 	// Get the modal
 	var modal = document.getElementById('myModal');
 
