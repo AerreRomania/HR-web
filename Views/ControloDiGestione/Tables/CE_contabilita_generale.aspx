@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CEcontabilita generale.aspx.vb" Inherits="Views_ControloDiGestione_Tables_CEcontabilita_generale" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CE_contabilita_generale.aspx.vb" Inherits="Views_ControloDiGestione_Tables_CE_contabilita_generale" %>
 
 <!DOCTYPE html>
 
