@@ -1243,7 +1243,10 @@ function rgtForce() {
 
 	  body{
 		  padding:20px 20px;
-	  }
+		font-family:'Trebuchet MS';
+		color:#4a4a4a;
+	}
+	 
 
 	  .col-sm-12{
 		text-align:center;
