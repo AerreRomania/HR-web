@@ -257,27 +257,27 @@ var $li = $('#menu li a').click(function() {
 
 <thead>
 	<tr style="padding-top:20px;">
-		<th></th>
-		<th>Anno 2021</th>
-		<th>cons. Bdg</th>
-		<th>cons. Bdg</th>
-		<th>cons. Bdg</th>
-		<th>cons. Prc1</th>
-		<th>cons. Prc1</th>
-		<th>cons. Prc1</th>
-		<th>cons. Prc1</th>
-		<th>cons. Prc2</th>
-		<th>cons. Prc2</th>
-		<th>cons. Prc2</th>
-		<th>cons. Prc2</th>
-		<th>cons. Prc2</th>
-		<th></th>
-		<th></th>
+		<th style="border-top:1px solid #D3D3D3;border-left:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;"></th>
+		<th style="border-left:1px solid #D3D3D3;border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">Anno 2021</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Bdg</th>
+		<th  style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Bdg</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Bdg</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc1</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc1</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc1</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc1</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc2</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc2</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc2</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc2</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">cons. Prc2</th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;"></th>
+		<th style="border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;"></th>
 
 	</tr>
-	<tr style="border-bottom:1px solid black;border-top:1px solid black;">
-		<th></th>
-		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;border-right:2px solid black;">Reparti</th>
+	<tr style="border-bottom:1px solid black;border-bottom:2px solid black;border-top:1px solid #D3D3D3;">
+		<th style="border-left:1px solid #DCDCDC;"></th>
+		<th style="background-color: #D9E3C0;border-left: 1px solid #D3D3D3;border-right:2px solid black;">Reparti</th>
 		<th style="background-color: #D9E3C0;">Gen</th>
 		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Feb</th>
 		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Mar</th>
@@ -291,226 +291,227 @@ var $li = $('#menu li a').click(function() {
 		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Nov</th>
 		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;border-right:2px solid black;">Dic</th>
 		<th style="background-color: #D9E3C0;border-right:2px solid black;">Totale periodo</th>
-		<th style="background-color: #D9E3C0;">Totale anno (c.+p.)</th>
+		<th style="background-color: #D9E3C0;border-right:2px solid #000000;">Totale anno (c.+p.)</th>
 	</tr>
 </thead>
 <tbody>
 	<tr>
-	<td></td>
-		<td  style="border-left: 2px solid #DCDCDC;border-right:2px solid #0000FF;">Giorni Lavoro</td>
+	<td style="border-left: 1px solid #D3D3D3;"></td>
+		<td  style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;">Giorni Lavoro</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,0,2021)">23.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,0,2021)">23.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,1,2021)">26.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,1,2021)">26.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,2,2021)">31.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,2,2021)">31.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,3,2021)">26.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;" class="yellow" onclick="inserisciRicavi(this,0,0,3,2021)">26.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,4,2021)">29.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,4,2021)">29.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,5,2021)">30.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,5,2021)">30.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,6,2021)">31.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,6,2021)">31.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,7,2021)">31.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;" class="yellow" onclick="inserisciRicavi(this,0,0,7,2021)">31.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,8,2021)">30.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,8,2021)">30.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,9,2021)">31.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,9,2021)">31.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,10,2021)">29.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,10,2021)">29.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,0,11,2021)">24.0</td>
+			<td style="border-right:2px solid #000000; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,11,2021)">24.0</td>
 		
-		<td>341.0</td>
-		<td></td>
+		<td style="border-right:2px solid #000000; text-align:center;">341.0</td>
+		<td style="border-right:2px solid #000000;"></td>
 	</tr>
-	<tr>
-		<td style="color: #607D8B; font-size: 13px;border-right: 2px solid #DCDCDC;">TESSITURA</td>
-		<td style="color: black;border-right: 2px solid red;">Consuntivo</td>
+	<tr id="tessitura">
+		<td style="color: #607D8B; font-size: 13px;border-right: 1px solid #DCDCDC;/*border-top: 1px solid #D3D3D3;*//*border-bottom: 1px solid #D3D3D3;*/">TESSITURA</td>
+		<td style="color: black;border-right: 2px solid red;text-align:center;">Consuntivo</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,0,2021)">284.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:red;" class="yellow" onclick="inserisciRicavi(this,0,1,0,2021)">284.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,1,2021)">471.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,1,2021)">471.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,2,2021)">510.6</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,2,2021)">510.6</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,3,2021)">331.9</td>
+			<td  style="border-right:1px solid #D3D3D3; text-align:center; color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,3,2021)">331.9</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,4,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,4,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,5,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,5,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,6,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,6,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,7,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,7,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,8,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,8,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,9,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,9,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,10,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,10,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,1,11,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,0,1,11,2021)">0.0</td>
 		
-		<td>1,597.5</td>
-		<td>4,782.5</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>bdg</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,0,2021)">311.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,1,2021)">368.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,2,2021)">459.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,3,2021)">404.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,4,2021)">418.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,5,2021)">431.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,6,2021)">412.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,7,2021)">284.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,8,2021)">451.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,9,2021)">473.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,10,2021)">407.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,0,2,11,2021)">309.0</td>
-		
-		<td>1,542.0</td>
-		<td>4,727.0</td>
+		<td style="border-right:2px solid #000000;border-left:2px solid #000000; text-align:center;color:red;">1,597.5</td>
+		<td style="border-right:2px solid #000000;border-top:2px solid #000000; text-align:center;color:red;">4,782.5</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td>delta mese</td>
+		<td style="text-align:center;color:#6495ED;border-left:1px solid #DCDCDC;border-right:2px solid #6495ED;">bdg</td>
+
 		
-			<td>(27.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;" class="yellow" onclick="inserisciRicavi(this,0,2,0,2021)">311.0</td>
 		
-			<td>103.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,1,2021)">368.0</td>
 		
-			<td>51.6</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,2,2021)">459.0</td>
 		
-			<td>(72.1)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,3,2021)">404.0</td>
 		
-			<td>(418.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,4,2021)">418.0</td>
 		
-			<td>(431.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,5,2021)">431.0</td>
 		
-			<td>(412.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,6,2021)">412.0</td>
 		
-			<td>(284.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,7,2021)">284.0</td>
 		
-			<td>(451.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,8,2021)">451.0</td>
 		
-			<td>(473.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,9,2021)">473.0</td>
 		
-			<td>(407.0)</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,10,2021)">407.0</td>
 		
-			<td>(309.0)</td>
+			<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,0,2,11,2021)">309.0</td>
 		
-		<td>55.5</td>
-		<td></td>
+		<td style=" text-align:center; color:#6495ED;">1,542.0</td>
+		<td style="border-right:2px solid #000000;border-top:2px solid #000000; text-align:center;border-left:2px solid #000000; color:#6495ED;">4,727.0</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td>a.p.</td>
+		<td  style="border-right:2px solid #6495ED; text-align:center;border-left:1px solid #D3D3D3;">delta mese</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,0,2021)">230.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(27.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,1,2021)">227.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">103.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,2,2021)">368.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">51.6</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,3,2021)">254.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(72.1)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,4,2021)">411.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(418.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,5,2021)">301.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(431.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,6,2021)">337.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(412.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,7,2021)">303.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(284.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,8,2021)">368.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(451.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,9,2021)">403.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(473.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,10,2021)">413.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;">(407.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,0,3,11,2021)">139.0</td>
+			<td style="color:#6495ED; text-align:center;">(309.0)</td>
 		
-		<td>1,079.0</td>
-		<td>3,754.0</td>
+		<td style="color:#6495ED;border-right:2px solid #000000; text-align:center;border-left:2px solid #000000;">55.5</td>
+		<td style="border-right:2px solid #000000;"></td>
+	</tr>
+	<tr id="ap">
+		<td></td>
+		<td style="text-align:center;border-left:1px solid #D3D3D3;border-right:2px solid#6495ED  ;">a.p.</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,0,2021)">230.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,1,2021)">227.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,2,2021)">368.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,3,2021)">254.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,4,2021)">411.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,5,2021)">301.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,6,2021)">337.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,7,2021)">303.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,8,2021)">368.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,9,2021)">403.0</td>
+		
+			<td  style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,10,2021)">413.0</td>
+		
+			<td style="border-right:2px solid #000000; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,11,2021)">139.0</td>
+		
+		<td style="text-align:center;">1,079.0</td>
+		<td style="border-bottom:2px solid #000000;border-right:2px solid #000000;border-left:2px solid #000000;text-align:center;">3,754.0</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td  style="border-left: 2px solid #DCDCDC;">Giorni Lavoro</td>
+		<td  style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">Giorni Lavoro</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,0,2021)">18.5</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;" class="yellow" onclick="inserisciRicavi(this,1,0,0,2021)">18.5</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,1,2021)">19.5</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,1,2021)">19.5</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,2,2021)">23.5</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,2,2021)">23.5</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,3,2021)">19.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,3,2021)">19.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,4,2021)">23.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,4,2021)">23.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,5,2021)">24.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,5,2021)">24.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,6,2021)">23.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,6,2021)">23.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,7,2021)">19.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,7,2021)">19.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,8,2021)">20.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,8,2021)">20.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,9,2021)">23.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,9,2021)">23.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,10,2021)">21.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,1,0,10,2021)">21.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,0,11,2021)">19.0</td>
+			<td style="text-align:center;border-right:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,0,11,2021)">19.0</td>
 		
-		<td>252.5</td>
-		<td></td>
+		<td style="text-align:center;border-right:2px solid #000000;" >252.5</td>
+		<td style="text-align:center;border-right:2px solid #000000;"></td>
 	</tr>
-	<tr>
+	<tr id="confezione">
 		<td style="color: #607D8B; font-size: 13px;">CONFEZIONE</td>
-		<td style="color: black;">Consuntivo</td>
+		<td style="color: black;border-right: 2px solid red;text-align:center;">Consuntivo</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,0,2021)">116.3</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,0,2021)">116.3</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,1,2021)">197.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;" class="yellow" onclick="inserisciRicavi(this,1,1,1,2021)">197.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,2,2021)">223.4</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,2,2021)">223.4</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,3,2021)">179.5</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;" class="yellow" onclick="inserisciRicavi(this,1,1,3,2021)">179.5</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,4,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,4,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,5,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,5,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,6,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,6,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,7,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,7,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,8,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,8,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,9,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;" class="yellow" onclick="inserisciRicavi(this,1,1,9,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,10,2021)">0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,10,2021)">0.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,1,11,2021)">0.0</td>
+			<td style="border-right:2px solid #000000; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,11,2021)">0.0</td>
 		
-		<td>716.2</td>
-		<td>2,168.2</td>
+		<td style="border-right:2px solid #000000; text-align:center;color:red;">716.2</td>
+		<td style="border-right:2px solid #000000; text-align:center;color:red;border-top:2px solid #000000;border-bottom:2px solid #000000;">2,168.2</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -1262,6 +1263,16 @@ function rgtForce() {
 
 	.fa fa-chevron-left{
 		float:left;
+	}
+
+	#ap{
+		border-bottom:2px solid #000000;
+	}
+
+	#tessitura,#confezione{
+		/*border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3;*/
+		border-left: 1px solid #D3D3D3;
+		background-color: rgba(0, 0, 0, 0.05);
 	}
 
 

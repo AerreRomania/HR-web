@@ -749,7 +749,7 @@
 							
 							
 								
-									<td style="border-right: 1px solid black;>0.0</td>
+									<td style="border-right: 1px solid black;">0.0</td>
 								
 								
 							
@@ -760,7 +760,7 @@
 							
 								
 								
-									<td style="border-right: 1px solid black;> 0.0</td>
+									<td style="border-right: 1px solid black;"> 0.0</td>
 								
 							
 						
@@ -769,27 +769,7 @@
 							
 							
 								
-									<td style="border-right: 1px solid black;>0.0</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
-								
-									<td style="border-right: 1px solid black;> 0.0</tdstyle="border-right:>
-								
-							
-						
-					
-						
-							
-							
-								
-									<td style="border-right: 1px solid black;>�</td>
+									<td style="border-right: 1px solid black;">0.0</td>
 								
 								
 							
@@ -800,7 +780,27 @@
 							
 								
 								
-									<td style="border-right: 1px solid black;> 0.0</td>
+									<td style="border-right: 1px solid black;"> 0.0</tdstyle="border-right:>
+								
+							
+						
+					
+						
+							
+							
+								
+									<td style="border-right: 1px solid black;">�</td>
+								
+								
+							
+						
+					
+						
+							
+							
+								
+								
+									<td style="border-right: 1px solid black;"> 0.0</td>
 								
 							
 						

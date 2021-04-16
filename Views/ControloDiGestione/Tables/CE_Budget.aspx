@@ -65,20 +65,20 @@
 
 <script>
 
-function openClose(){
-	
-	var e = document.getElementById('left-navi');
-	if (e.className == 'ng-scope hover') {
-		e.className = 'ng-scope';
-	} else {
-		e.className = 'ng-scope hover';
-	}
-}
+    function openClose() {
 
-var $li = $('#menu li a').click(function() {
-    $li.removeClass('active');
-    $(this).addClass('active');
-});
+        var e = document.getElementById('left-navi');
+        if (e.className == 'ng-scope hover') {
+            e.className = 'ng-scope';
+        } else {
+            e.className = 'ng-scope hover';
+        }
+    }
+
+    var $li = $('#menu li a').click(function () {
+        $li.removeClass('active');
+        $(this).addClass('active');
+    });
 
 </script>
 
@@ -168,7 +168,9 @@ var $li = $('#menu li a').click(function() {
 						</section>
 					</div>
 				</div>
-
+					<button type="button" onclick="printf()">
+			<img src="/Images/C.Gestione/dockicon/print.svg" alt="icon">
+		</button>
 				<!-- 				<div id="cinquepuntodue"> -->
 				<!-- 					<table class="table table-bordered table-hover table-condensed version" cellspacing="0" id="cinquepuntodue_sopra" width="100%"> -->
 				
@@ -275,7 +277,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style=" white-space: nowrap;/*<%-- overflow: hidden"--%>*/>  F.to Gruppo c/lavoro<br>
+					<td style=" white-space: nowrap;overflow: hidden;">  F.to Gruppo c/lavoro<br>
 						  F.to Benetton c/lavoro<br>
 						  F.to Terzi netto c/lavoro<br>
 						  F.to Gruppo c/vendita<br>
@@ -284,7 +286,7 @@ var $li = $('#menu li a').click(function() {
 						  F.to Sottoprodotti<br>
 						</td>
 					
-						<td onclick="this.firstElementChild.disabled = false;"><textarea disabled rows="7" onpaste="setCERtxtAreaPrg(this,0,6,0)">0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;</textarea></td>
+						<td <%--onclick="this.firstElementChild.disabled = false;--%>"><%--textarea disabled rows="7" onpaste="setCERtxtAreaPrg(this,0,6,0)"--%>0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;0.0&#13;&#10;</%--textarea></td>
 						<td>
 								�<br>
 							
@@ -591,7 +593,7 @@ var $li = $('#menu li a').click(function() {
 
 				
 					<tr>
-						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black;  white-space: nowrap; overflow: hidden"> TOT. FATTURATO</td>
+						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black;  white-space: nowrap;overflow: hidden;"> TOT. FATTURATO</td>
 						
 							
 								
@@ -911,7 +913,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style=" white-space: nowrap; overflow: hidden">  Delta Rimanenze</td>
+						<td style=" white-space: nowrap; overflow: hidden;">  Delta Rimanenze</td>
 						
 							
 								
@@ -1201,7 +1203,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style="background-color: #CFEACF; border-bottom: 3px solid black; border-top: 1px solid black;  white-space: nowrap; overflow: hidden"> VALORE PRODUZIONE</td>
+						<td style="background-color: #CFEACF; border-bottom: 3px solid black; border-top: 1px solid black;  white-space: nowrap; overflow: hidden;"> VALORE PRODUZIONE</td>
 						
 							
 								
@@ -1492,7 +1494,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style=" white-space: nowrap; overflow: hidden">  Consumi materia prima<br>
+					<td style=" white-space: nowrap; overflow: hidden;>  Consumi materia prima<br>
 						  Consumi coloranti/ingredienti<br>
 						 Trasporti su acquisti<br>
 						Costi Accessori di Acquisto<br>
@@ -1746,7 +1748,7 @@ var $li = $('#menu li a').click(function() {
 
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> TOT. CONSUMI</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> TOT. CONSUMI</td>
 					
 						
 							
@@ -2036,7 +2038,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style=" white-space: nowrap; overflow: hidden">  Tessitura<br>
+					<td style=" white-space: nowrap;overflow: hidden;">  Tessitura<br>
 						  Confezione<br>
 						  Stiro<br>
 						  Finissaggio<br>
@@ -2582,7 +2584,7 @@ var $li = $('#menu li a').click(function() {
 				</tr>
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> TOTALE LAVORAZIONI ESTERNE</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden;"> TOTALE LAVORAZIONI ESTERNE</td>
 					
 						
 							
@@ -2886,7 +2888,7 @@ var $li = $('#menu li a').click(function() {
 				</tr>
 				<tr>
 					
-					<td style="background-color: #CFEACF; white-space: nowrap; overflow: hidden"> LAVORO DIRETTO</td>
+					<td style="background-color: #CFEACF; white-space: nowrap;overflow: hidden;"> LAVORO DIRETTO</td>
 					
 						
 							
@@ -3175,7 +3177,7 @@ var $li = $('#menu li a').click(function() {
 				</tr>
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> LAVORO INDIRETTO</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden;"> LAVORO INDIRETTO</td>
 					
 						
 							
@@ -3466,7 +3468,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style="white-space: nowrap; overflow: hidden">  Energia elettrica<br>
+					<td style="white-space: nowrap;overflow: hidden;">  Energia elettrica<br>
 						  Metano<br>
 						  Manutenzione industriale<br>
 						  Manutenzione struttura<br>
@@ -4061,7 +4063,7 @@ var $li = $('#menu li a').click(function() {
 				</tr>
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> TOTALE ALTRI COSTI INDUSTRIALI</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> TOTALE ALTRI COSTI INDUSTRIALI</td>
 					
 						
 							
@@ -4350,7 +4352,7 @@ var $li = $('#menu li a').click(function() {
 				</tr>
 				<tr>
 					
-					<td style="background-color: #CFEACF; white-space: nowrap; overflow: hidden"> TOTALE COSTO DEL VENDUTO</td>
+					<td style="background-color: #CFEACF; white-space: nowrap;overflow: hidden;"> TOTALE COSTO DEL VENDUTO</td>
 					
 						
 							
@@ -4639,7 +4641,7 @@ var $li = $('#menu li a').click(function() {
 				</tr>
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> MARGINE INDUSTRIALE LORDO</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> MARGINE INDUSTRIALE LORDO</td>
 					
 						
 							
@@ -4929,7 +4931,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style=" white-space: nowrap; overflow: hidden">  Costo pers. commerciale<br>
+					<td style=" white-space: nowrap; overflow: hidden;">  Costo pers. commerciale<br>
 						  Costo pers. Gen. Amm<br>
 						  Coto pers. Gruppo<br>
 						</td>
@@ -5132,7 +5134,7 @@ var $li = $('#menu li a').click(function() {
 				</tr>
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> LAVORO IND. GENERALE</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> LAVORO IND. GENERALE</td>
 					
 						
 							
@@ -5423,7 +5425,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style="white-space: nowrap; overflow: hidden">  Pubblicita'/ Promotion<br>
+					<td style="white-space: nowrap; overflow: hidden;">  Pubblicita'/ Promotion<br>
 						  Provvigioni/ Enasarco<br>
 						  Trasporti commerciali terzi<br>
 						  Consulenza Commerciali<br>
@@ -5725,7 +5727,7 @@ var $li = $('#menu li a').click(function() {
 
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> TOT. COSTI COMMERCIALI</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> TOT. COSTI COMMERCIALI</td>
 					
 						
 							
@@ -6016,7 +6018,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style="white-space: nowrap; overflow: hidden">  Assicurazioni<br>
+					<td style="white-space: nowrap;overflow: hidden;">  Assicurazioni<br>
 						  Consulenza<br>
 						  Manut. automezzi<br>
 						  Manut. macch.ufficio<br>
@@ -6660,7 +6662,7 @@ var $li = $('#menu li a').click(function() {
 
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black;  white-space: nowrap; overflow: hidden"> TOT. SPESE GENERALI</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black;  white-space: nowrap;overflow: hidden;"> TOT. SPESE GENERALI</td>
 					
 						
 							
@@ -6951,7 +6953,7 @@ var $li = $('#menu li a').click(function() {
 
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black;  white-space: nowrap; overflow: hidden"> RISULTATO OPERATIVO LORDO</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black;  white-space: nowrap;overflow: hidden;"> RISULTATO OPERATIVO LORDO</td>
 					
 						
 							
@@ -7242,7 +7244,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style="white-space: nowrap; overflow: hidden">  Amm.Imm.tecniche<br>
+					<td style="white-space: nowrap; overflow: hidden;">  Amm.Imm.tecniche<br>
 						  Amm.Imm.Immateriali<br>
 						  Locazioni/ Affitto<br>
 						  Ammortamenti rivalutazione<br>
@@ -7592,7 +7594,7 @@ var $li = $('#menu li a').click(function() {
 
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> TOTALE AMM./LEASING</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> TOTALE AMM./LEASING</td>
 					
 						
 							
@@ -7883,7 +7885,7 @@ var $li = $('#menu li a').click(function() {
 
 				<tr>
 					
-					<td style="background-color: #CFEACF; border-bottom: 1px solid black; white-space: nowrap; overflow: hidden"> RISULTATO OPERATIVO NETTO</td>
+					<td style="background-color: #CFEACF; border-bottom: 1px solid black; white-space: nowrap; overflow: hidden;"> RISULTATO OPERATIVO NETTO</td>
 					
 						
 							
@@ -8174,7 +8176,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style="white-space: nowrap; overflow: hidden">  Plusvalenze cespiti<br>
+					<td style="white-space: nowrap;overflow: hidden;">  Plusvalenze cespiti<br>
 						  Minusvalenze cespiti<br>
 						  Acc. F.do Sval.crediti<br>
 						  Perdite su crediti<br>
@@ -8622,7 +8624,7 @@ var $li = $('#menu li a').click(function() {
 
 				
 					<tr>
-						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> E.B.I.T</td>
+						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> E.B.I.T</td>
 						
 							
 								
@@ -8912,7 +8914,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style="white-space: nowrap; overflow: hidden">  Oneri e proventi finanziari</td>
+						<td style="white-space: nowrap;overflow: hidden;">  Oneri e proventi finanziari</td>
 						
 							
 								
@@ -9202,7 +9204,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden"> RISULTATO DI ESERCIZIO</td>
+						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;"> RISULTATO DI ESERCIZIO</td>
 						
 							
 								
@@ -9492,7 +9494,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style="white-space: nowrap; overflow: hidden">Irap</td>
+						<td style="white-space: nowrap; overflow: hidden;">Irap</td>
 						
 							
 								
@@ -9811,7 +9813,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden">RISULTATO MESE ANTE IRES</td>
+						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;">RISULTATO MESE ANTE IRES</td>
 						
 							
 								
@@ -10130,7 +10132,7 @@ var $li = $('#menu li a').click(function() {
 				
 			    
 					<tr>
-						<td style="white-space: nowrap; overflow: hidden">Ires</td>
+						<td style="white-space: nowrap; overflow: hidden;">Ires</td>
 						
 							
 								
@@ -10464,7 +10466,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap; overflow: hidden">RISULTATO NETTO</td>
+						<td style="background-color: #CFEACF; border-bottom: 1px solid black; border-top: 1px solid black; white-space: nowrap;overflow: hidden;">RISULTATO NETTO</td>
 						
 							
 								
@@ -10783,7 +10785,7 @@ var $li = $('#menu li a').click(function() {
 				
 				
 					<tr>
-						<td style="background-color: #CFEACF; white-space: nowrap; overflow: hidden">E.B.I.T.D.A</td>
+						<td style="background-color: #CFEACF; white-space: nowrap; overflow: hidden;">E.B.I.T.D.A</td>
 						
 							
 								
@@ -11254,26 +11256,26 @@ var $li = $('#menu li a').click(function() {
 
 
 <script>
-	$(window).on("scroll", function() {
-		var scrollHeight = $(document).height();
-		var scrollPosition = $(window).height() + $(window).scrollTop();
-		if ((scrollHeight - scrollPosition) / scrollHeight != 0) {
+    $(window).on("scroll", function () {
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        if ((scrollHeight - scrollPosition) / scrollHeight != 0) {
 
-			document.getElementById("dockbar").className = "hide";
-		}
-	});
+            document.getElementById("dockbar").className = "hide";
+        }
+    });
 
-	$(window).on("scroll", function() {
-		var scrollHeight = $(document).height();
-		var scrollPosition = $(window).height() + $(window).scrollTop();
-		if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+    $(window).on("scroll", function () {
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
 
-			document.getElementById("dockbar").className = "";
-		}
-	});
+            document.getElementById("dockbar").className = "";
+        }
+    });
 </script>
 
-<div id="dockbar" class="hide">
+<%--<div id="dockbar" class="hide">
 	<div class="scroll-container">
 		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
 		
@@ -11286,16 +11288,14 @@ var $li = $('#menu li a').click(function() {
 		</button>
 		<button type="button" onclick="openModalPriority()">
 			<img src="/Onlyou/dashboard/images/dockicon/remind.svg" alt="icon">
-		</button>
+		</button>--%>
 		<!--            <button uib-tooltip="Zoom" type="button"> -->
 		
 		<!--            </button> -->
 		<!--            <button uib-tooltip="Carica" type="button"> -->
 		
 		<!--            </button> -->
-		<button type="button" onclick="printf()">
-			<img src="/Images/C.Gestione/dockicon/print.svg" alt="icon">
-		</button>
+	
 		<!--            <button uib-tooltip="Scarica" type="button"> -->
 		
 		<!--            </button> -->
@@ -11303,17 +11303,17 @@ var $li = $('#menu li a').click(function() {
 </div>
 <input type="hidden" value="" id="param-start">
 <script>
-	function printf() {
+    function printf() {
 
-		window.print();
-	}
+        window.print();
+    }
 </script>
 <script src="/Onlyou/ajax-pages/cinquepuntodue.js"></script>
 <script>
-$(document).ready(function() {
-	prova();
-});
-document.body.style.zoom = "88%";
+    $(document).ready(function () {
+        prova();
+    });
+    document.body.style.zoom = "88%";
 </script>
 
 		</div>
@@ -11325,19 +11325,19 @@ document.body.style.zoom = "88%";
 
 <script>
 
-function rgtForce() {
+    function rgtForce() {
 
-	var e = document.getElementById('right-navi');
-	if (e.className == 'ng-scope hover') {
-		e.className = 'ng-scope';
-	} else {
-		e.className = 'ng-scope hover';
-	}
-}
+        var e = document.getElementById('right-navi');
+        if (e.className == 'ng-scope hover') {
+            e.className = 'ng-scope';
+        } else {
+            e.className = 'ng-scope hover';
+        }
+    }
 
 </script>
 
-<div id = "right-navi">
+<%--<div id = "right-navi">
 <button type="button" class="right-toggle" onclick="rgtForce()">
 	<span class="bullet one"></span>
 	<span class="bullet two"></span>
@@ -11363,8 +11363,8 @@ function rgtForce() {
 			<a href="#">Preferenze</a>
 		</li>
 	</ul>
-</nav>
-<footer>
+</nav>--%>
+<%--<footer>
 	<small>© 2017 ONLYOU </small>
 	<nav class="footer-navi">
 		<ul>
@@ -11382,93 +11382,93 @@ function rgtForce() {
 </footer>
 </div>
 		</div>
-	</div>
+	</div>--%>
 
 	<script>
-		var collection_prior = document.getElementsByClassName('prior');
-		for (var i = 0, len = collection_prior.length; i < len; i++) {
-			// 				collection[i].style.display = 'block';
-			collection_prior[i].classList.add("show");
-		}
-	</script>
+        var collection_prior = document.getElementsByClassName('prior');
+        for (var i = 0, len = collection_prior.length; i < len; i++) {
+            // 				collection[i].style.display = 'block';
+            collection_prior[i].classList.add("show");
+        }
+    </script>
 
 	<script>
-		function priorView() {
-			var collection = document.getElementsByClassName('cats');
-			var collection_prior = document.getElementsByClassName('prior');
+        function priorView() {
+            var collection = document.getElementsByClassName('cats');
+            var collection_prior = document.getElementsByClassName('prior');
 
-			document.getElementById('prior').className = 'filter active';
-			document.getElementById('all').className = 'filter';
+            document.getElementById('prior').className = 'filter active';
+            document.getElementById('all').className = 'filter';
 
-			for (var i = 0, len = collection.length; i < len; i++) {
-				collection[i].classList.remove("show");
-				// 				setTimeout(function(){
-				// 					collection[i].style.display = 'none';
-				// 				}, 400);
-			}
+            for (var i = 0, len = collection.length; i < len; i++) {
+                collection[i].classList.remove("show");
+                // 				setTimeout(function(){
+                // 					collection[i].style.display = 'none';
+                // 				}, 400);
+            }
 
-			for (var i = 0, len = collection_prior.length; i < len; i++) {
-				// 				collection[i].style.display = 'block';
-				collection_prior[i].classList.remove("hide");
-				collection_prior[i].classList.add("show");
-			}
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection_prior[i].classList.remove("hide");
+                collection_prior[i].classList.add("show");
+            }
 
-		}
-		function allView() {
+        }
+        function allView() {
 
-			var collection = document.getElementsByClassName('cats');
-			var collection_prior = document.getElementsByClassName('prior');
+            var collection = document.getElementsByClassName('cats');
+            var collection_prior = document.getElementsByClassName('prior');
 
-			document.getElementById('prior').className = 'filter';
-			document.getElementById('all').className = 'filter active';
+            document.getElementById('prior').className = 'filter';
+            document.getElementById('all').className = 'filter active';
 
-			for (var i = 0, len = collection.length; i < len; i++) {
-				// 				collection[i].style.display = 'block';
-				collection[i].classList.add("show");
-			}
+            for (var i = 0, len = collection.length; i < len; i++) {
+                // 				collection[i].style.display = 'block';
+                collection[i].classList.add("show");
+            }
 
-			for (var i = 0, len = collection_prior.length; i < len; i++) {
-				// collection_prior[i].style.display = 'block';
-				collection_prior[i].classList.add("hide");
-				collection_prior[i].classList.remove("show");
+            for (var i = 0, len = collection_prior.length; i < len; i++) {
+                // collection_prior[i].style.display = 'block';
+                collection_prior[i].classList.add("hide");
+                collection_prior[i].classList.remove("show");
 
-			}
+            }
 
-		}
-	</script>
+        }
+    </script>
 
 	<script>
-		function update(n) {
-			/*document.getElementById("month-id").value = n;
-			var change = document.getElementById("change").value*/
-			var e = document.getElementById("week_start");
-			var startWeek = e.options[e.selectedIndex].value;
-			var e = document.getElementById("week_end");
-			var weekNumber = e.options[e.selectedIndex].value;
-			var change = document.getElementById("change").value;
-			console.log(startWeek, weekNumber, change);
-			if (!isNaN(change) && change != null && change != "") {
-				change = change;
-			} else {
-				change = 1.0;
-				document.getElementById("change").value = 1.0;
-			}
-			var xhr = new XMLHttpRequest();
-			xhr.open('POST', '/Onlyou/UpTreasuryPageTotal', true);
-			xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-			xhr.onload = function() {
-				document.getElementById("treasury-plan-table").innerHTML = this.responseText;
-				getGraph();
-			}
-			var valuta = document.getElementById("valutaEuroRsd");
-			if (change != '' && change != '1' && change != '1.0') {
-				valuta.innerHTML = 'EUR';
-			} else {
-				valuta.innerHTML = 'RSD';
-			}
-			xhr.send('week=' + startWeek + '&week_number=' + weekNumber + '&change=' + change);
-			// var table = document.getElementById("monthly-balance").innerHTML =
-		};
+        function update(n) {
+            /*document.getElementById("month-id").value = n;
+            var change = document.getElementById("change").value*/
+            var e = document.getElementById("week_start");
+            var startWeek = e.options[e.selectedIndex].value;
+            var e = document.getElementById("week_end");
+            var weekNumber = e.options[e.selectedIndex].value;
+            var change = document.getElementById("change").value;
+            console.log(startWeek, weekNumber, change);
+            if (!isNaN(change) && change != null && change != "") {
+                change = change;
+            } else {
+                change = 1.0;
+                document.getElementById("change").value = 1.0;
+            }
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/Onlyou/UpTreasuryPageTotal', true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.onload = function () {
+                document.getElementById("treasury-plan-table").innerHTML = this.responseText;
+                getGraph();
+            }
+            var valuta = document.getElementById("valutaEuroRsd");
+            if (change != '' && change != '1' && change != '1.0') {
+                valuta.innerHTML = 'EUR';
+            } else {
+                valuta.innerHTML = 'RSD';
+            }
+            xhr.send('week=' + startWeek + '&week_number=' + weekNumber + '&change=' + change);
+            // var table = document.getElementById("monthly-balance").innerHTML =
+        };
     </script>
 </body>
 </html>
