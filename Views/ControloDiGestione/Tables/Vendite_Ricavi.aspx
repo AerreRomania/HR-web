@@ -58,7 +58,7 @@
 <script src="./dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 <!-- MODULES END -->
 </head>
-<body>
+<body bgcolor="#f4f4f4">
 	<!-- LEFT NAVIGATION -->
 
 
@@ -181,12 +181,12 @@ var $li = $('#menu li a').click(function() {
 				<div class="col-sm-12">
 					<h1>Ricavi Forecast dinamico</h1>
 
-					<a class="link" href="/Onlyou/new/index.jsp?m=vendite_cat"> <i class="fa fa-chevron-left"></i> Indietro
-					</a>
+					<%--<a class="link" href="/Onlyou/new/index.jsp?m=vendite_cat"> <i class="fa fa-chevron-left"></i> Indietro
+					</a>--%>
 					<div style="display: inline-block; float: right;">
 						<b class="col-sm-12 knitting-title">Olimpias Knitting - anno <span id="yearspan">2021</span></b>
 					</div>
-					<div class="col-sm-5" style="display: inline-block; float: right;">
+					<div class="col-sm-5" style="display: inline-block;margin-left:140px; /*float: right;*/">
 						<section>
 							Mese <select id="month" onchange="getRCL(this);">
 								
@@ -246,7 +246,7 @@ var $li = $('#menu li a').click(function() {
 								
 							</select>
 						</section>
-
+						</br>
 					</div>
 				</div>
 				<div class="col-sm-9">
@@ -256,7 +256,7 @@ var $li = $('#menu li a').click(function() {
 
 
 <thead>
-	<tr style="padding: 0px;">
+	<tr style="padding-top:20px;">
 		<th></th>
 		<th>Anno 2021</th>
 		<th>cons. Bdg</th>
@@ -275,29 +275,29 @@ var $li = $('#menu li a').click(function() {
 		<th></th>
 
 	</tr>
-	<tr>
+	<tr style="border-bottom:1px solid black;border-top:1px solid black;">
 		<th></th>
-		<th style="background-color: #D9E3C0;">Reparti</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;border-right:2px solid black;">Reparti</th>
 		<th style="background-color: #D9E3C0;">Gen</th>
-		<th style="background-color: #D9E3C0;">Feb</th>
-		<th style="background-color: #D9E3C0;">Mar</th>
-		<th style="background-color: #D9E3C0;">Apr</th>
-		<th style="background-color: #D9E3C0;">Mag</th>
-		<th style="background-color: #D9E3C0;">Giu</th>
-		<th style="background-color: #D9E3C0;">Lug</th>
-		<th style="background-color: #D9E3C0;">Ago</th>
-		<th style="background-color: #D9E3C0;">Set</th>
-		<th style="background-color: #D9E3C0;">Ott</th>
-		<th style="background-color: #D9E3C0;">Nov</th>
-		<th style="background-color: #D9E3C0;">Dic</th>
-		<th style="background-color: #D9E3C0;">Totale periodo</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Feb</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Mar</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Apr</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Mag</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Giu</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Lug</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Ago</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Set</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Ott</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;">Nov</th>
+		<th style="background-color: #D9E3C0;border-left: 2px solid #D3D3D3;border-right:2px solid black;">Dic</th>
+		<th style="background-color: #D9E3C0;border-right:2px solid black;">Totale periodo</th>
 		<th style="background-color: #D9E3C0;">Totale anno (c.+p.)</th>
 	</tr>
 </thead>
 <tbody>
 	<tr>
-		<td></td>
-		<td>Giorni Lavoro</td>
+	<td></td>
+		<td  style="border-left: 2px solid #DCDCDC;border-right:2px solid #0000FF;">Giorni Lavoro</td>
 		
 			<td class="yellow" onclick="inserisciRicavi(this,0,0,0,2021)">23.0</td>
 		
@@ -327,8 +327,8 @@ var $li = $('#menu li a').click(function() {
 		<td></td>
 	</tr>
 	<tr>
-		<td style="color: #607D8B; font-size: 13px;">TESSITURA</td>
-		<td style="color: black;">Consuntivo</td>
+		<td style="color: #607D8B; font-size: 13px;border-right: 2px solid #DCDCDC;">TESSITURA</td>
+		<td style="color: black;border-right: 2px solid red;">Consuntivo</td>
 		
 			<td class="yellow" onclick="inserisciRicavi(this,0,1,0,2021)">284.0</td>
 		
@@ -452,7 +452,7 @@ var $li = $('#menu li a').click(function() {
 	</tr>
 	<tr>
 		<td></td>
-		<td>Giorni Lavoro</td>
+		<td  style="border-left: 2px solid #DCDCDC;">Giorni Lavoro</td>
 		
 			<td class="yellow" onclick="inserisciRicavi(this,1,0,0,2021)">18.5</td>
 		
@@ -607,7 +607,7 @@ var $li = $('#menu li a').click(function() {
 	</tr>
 	<tr>
 		<td></td>
-		<td>Giorni Lavoro</td>
+		<td  style="border-left: 2px solid #DCDCDC;">Giorni Lavoro</td>
 		
 			<td class="yellow" onclick="inserisciRicavi(this,2,0,0,2021)">17.5</td>
 		
@@ -1045,7 +1045,7 @@ var $li = $('#menu li a').click(function() {
 		}
 	});
 </script>
-<div id="dockbar" class="hide">
+<%--<div id="dockbar" class="hide">
 	<div class="scroll-container">
 		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
 		
@@ -1072,7 +1072,7 @@ var $li = $('#menu li a').click(function() {
 		
 		<!--            </button> -->
 	</div>
-</div>
+</div>--%>
 <input type="hidden" value="" id="param-start">
 
 <script>
@@ -1105,13 +1105,13 @@ function rgtForce() {
 
 </script>
 
-<div id = "right-navi">
+<%--<div id = "right-navi">
 <button type="button" class="right-toggle" onclick="rgtForce()">
 	<span class="bullet one"></span>
 	<span class="bullet two"></span>
 	<span class="bullet three"></span>
-</button>
-<div class="user">
+</button>--%>
+<%--<div class="user">
 	<img src="/Onlyou/dashboard/images/user-demo.png" alt="icon">
 	<span>Carlo Alberto della Siega</span>
 	<a href="#" class="btn btn-wire">Logout</a>
@@ -1133,7 +1133,7 @@ function rgtForce() {
 	</ul>
 </nav>
 <footer>
-	<small>© 2017 ONLYOU </small>
+	<small>© 2017 ONLYOU </small>--%>
 	<%--<nav class="footer-navi">
 		<ul>
 			<li>
@@ -1238,6 +1238,34 @@ function rgtForce() {
 			// var table = document.getElementById("monthly-balance").innerHTML =
 		};
     </script>
+
+		<style>
+
+	  body{
+		  padding:20px 20px;
+		font-family:'Trebuchet MS';
+		color:#4a4a4a;
+	}
+	 
+
+	  .col-sm-12{
+		text-align:center;
+	}
+
+	  #rcl-table{
+
+		  width:100%;
+		padding:5px;
+		border:1px solid grey;
+		border-collapse:collapse;
+	  }
+
+	.fa fa-chevron-left{
+		float:left;
+	}
+
+
+		</style>
 </body>
 </html>
 

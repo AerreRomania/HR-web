@@ -275,7 +275,7 @@ var $li = $('#menu li a').click(function() {
 				<tr>
 					
 					
-					<td style=" white-space: nowrap; overflow: hidden">  F.to Gruppo c/lavoro<br>
+					<td style=" white-space: nowrap;/*<%-- overflow: hidden"--%>*/>  F.to Gruppo c/lavoro<br>
 						  F.to Benetton c/lavoro<br>
 						  F.to Terzi netto c/lavoro<br>
 						  F.to Gruppo c/vendita<br>
