@@ -1,11 +1,6 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="CE_contabilita_generale.aspx.vb" Inherits="Views_ControloDiGestione_Tables_CE_contabilita_generale" %>
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="CE_contabilita_generale.aspx.cs" Inherits="Views_ControloDiGestione_Tables_CE_contabilita_generale" %>
 
 <!DOCTYPE html>
-
-
-
-
-
 
 
 <html lang="it">
@@ -263,10 +258,9 @@ var $li = $('#menu li a').click(function() {
 }*/
 
 body{
-	padding-left:60px;
-	padding-right:60px;
-}
-
+		font-family:'Trebuchet MS';
+		color:#4a4a4a;
+	}
 
 </style>
 

@@ -77,6 +77,11 @@
 	  .button{
 		  border:none;
 	  }
+	     body {
+	         font-family: 'Trebuchet MS';
+	         color: #4a4a4a;
+	     }
+
 	 </style>
 	<!-- LEFT NAVIGATION -->
 
