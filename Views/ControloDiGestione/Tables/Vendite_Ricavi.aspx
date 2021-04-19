@@ -256,6 +256,15 @@ var $li = $('#menu li a').click(function() {
 
 
 <thead>
+
+	<div align="right">
+	<button onclick="window.print()">
+		<img class="top-icons" onclick="printData();" src="/Images/C.Gestione/dockicon/print.svg" alt="Print" />
+	</button>
+	</div>
+	</br>
+
+
 	<tr style="padding-top:20px;">
 		<th style="border-top:1px solid #D3D3D3;border-left:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;"></th>
 		<th style="border-left:1px solid #D3D3D3;border-right:1px solid #D3D3D3;border-top:1px solid #D3D3D3;">Anno 2021</th>
@@ -297,7 +306,7 @@ var $li = $('#menu li a').click(function() {
 <tbody>
 	<tr>
 	<td style="border-left: 1px solid #D3D3D3;"></td>
-		<td  style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;">Giorni Lavoro</td>
+		<td  style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">Giorni Lavoro</td>
 		
 			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,0,0,2021)">23.0</td>
 		
@@ -327,7 +336,7 @@ var $li = $('#menu li a').click(function() {
 		<td style="border-right:2px solid #000000;"></td>
 	</tr>
 	<tr id="tessitura">
-		<td style="color: #607D8B; font-size: 13px;border-right: 1px solid #DCDCDC;/*border-top: 1px solid #D3D3D3;*//*border-bottom: 1px solid #D3D3D3;*/">TESSITURA</td>
+		<td style="text-align:center;color: #607D8B; font-size: 13px;border-right: 1px solid #DCDCDC;/*border-top: 1px solid #D3D3D3;*//*border-bottom: 1px solid #D3D3D3;*/">TESSITURA</td>
 		<td style="color: black;border-right: 2px solid red;text-align:center;">Consuntivo</td>
 		
 			<td style="border-right:1px solid #D3D3D3; text-align:center; color:red;" class="yellow" onclick="inserisciRicavi(this,0,1,0,2021)">284.0</td>
@@ -358,7 +367,7 @@ var $li = $('#menu li a').click(function() {
 		<td style="border-right:2px solid #000000;border-top:2px solid #000000; text-align:center;color:red;">4,782.5</td>
 	</tr>
 	<tr>
-		<td></td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
 		<td style="text-align:center;color:#6495ED;border-left:1px solid #DCDCDC;border-right:2px solid #6495ED;">bdg</td>
 
 		
@@ -390,7 +399,7 @@ var $li = $('#menu li a').click(function() {
 		<td style="border-right:2px solid #000000;border-top:2px solid #000000; text-align:center;border-left:2px solid #000000; color:#6495ED;">4,727.0</td>
 	</tr>
 	<tr>
-		<td></td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
 		<td  style="border-right:2px solid #6495ED; text-align:center;border-left:1px solid #D3D3D3;">delta mese</td>
 		
 			<td style="border-right:1px solid #D3D3D3; text-align:center;">(27.0)</td>
@@ -421,7 +430,7 @@ var $li = $('#menu li a').click(function() {
 		<td style="border-right:2px solid #000000;"></td>
 	</tr>
 	<tr id="ap">
-		<td></td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
 		<td style="text-align:center;border-left:1px solid #D3D3D3;border-right:2px solid#6495ED  ;">a.p.</td>
 		
 			<td style="border-right:1px solid #D3D3D3; text-align:center;"class="yellow" onclick="inserisciRicavi(this,0,3,0,2021)">230.0</td>
@@ -452,7 +461,7 @@ var $li = $('#menu li a').click(function() {
 		<td style="border-bottom:2px solid #000000;border-right:2px solid #000000;border-left:2px solid #000000;text-align:center;">3,754.0</td>
 	</tr>
 	<tr>
-		<td></td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
 		<td  style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">Giorni Lavoro</td>
 		
 			<td style="text-align:center;border-right:1px solid #D3D3D3;" class="yellow" onclick="inserisciRicavi(this,1,0,0,2021)">18.5</td>
@@ -483,7 +492,7 @@ var $li = $('#menu li a').click(function() {
 		<td style="text-align:center;border-right:2px solid #000000;"></td>
 	</tr>
 	<tr id="confezione">
-		<td style="color: #607D8B; font-size: 13px;">CONFEZIONE</td>
+		<td style="text-align:center;color: #607D8B; font-size: 13px;">CONFEZIONE</td>
 		<td style="color: black;border-right: 2px solid red;text-align:center;">Consuntivo</td>
 		
 			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,1,1,0,2021)">116.3</td>
@@ -514,255 +523,255 @@ var $li = $('#menu li a').click(function() {
 		<td style="border-right:2px solid #000000; text-align:center;color:red;border-top:2px solid #000000;border-bottom:2px solid #000000;">2,168.2</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td>bdg</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td style="text-align:center;color:#6495ED;border-left:1px solid #DCDCDC;border-right:2px solid #6495ED;">bdg</td>
 		
 			<td class="yellow" onclick="inserisciRicavi(this,1,2,0,2021)">140.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,1,2021)">140.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;" class="yellow" onclick="inserisciRicavi(this,1,2,1,2021)">140.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,2,2021)">194.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,2,2021)">194.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,3,2021)">155.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,3,2021)">155.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,4,2021)">189.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,4,2021)">189.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,5,2021)">208.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,5,2021)">208.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,6,2021)">199.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;" class="yellow" onclick="inserisciRicavi(this,1,2,6,2021)">199.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,7,2021)">137.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,7,2021)">137.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,8,2021)">173.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,8,2021)">173.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,9,2021)">199.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,9,2021)">199.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,10,2021)">182.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;" class="yellow" onclick="inserisciRicavi(this,1,2,10,2021)">182.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,2,11,2021)">165.0</td>
+			<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,1,2,11,2021)">165.0</td>
 		
-		<td>629.0</td>
-		<td>2,081.0</td>
+		<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;">629.0</td>
+		<td style="text-align:center;border-right:2px solid #000000;">2,081.0</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td>delta mese</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">delta mese</td>
 		
-			<td>(23.7)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(23.7)</td>
 		
-			<td>57.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">57.0</td>
 		
-			<td>29.4</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">29.4</td>
 		
-			<td>24.5</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">24.5</td>
 		
-			<td>(189.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(189.0)</td>
 		
-			<td>(208.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(208.0)</td>
 		
-			<td>(199.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(199.0)</td>
 		
-			<td>(137.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(137.0)</td>
 		
-			<td>(173.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(173.0)</td>
 		
-			<td>(199.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(199.0)</td>
 		
-			<td>(182.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(182.0)</td>
 		
-			<td>(165.0)</td>
+			<td style="text-align:center;border-right:2px solid #000000;">(165.0)</td>
 		
-		<td>87.2</td>
-		<td></td>
+		<td style="text-align:center;border-right:2px solid #000000;">87.2</td>
+		<td style="text-align:center;border-right:2px solid #000000;"></td>
+	</tr>
+	<tr style="border-left:1px solid #D3D3D3;">
+		<td style="border-bottom:2px solid #000000;"></td>
+		<td style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;border-bottom:2px solid #000000;">a.p.</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,0,2021)">103.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;" class="yellow" onclick="inserisciRicavi(this,1,3,1,2021)">142.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,2,2021)">186.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,3,2021)">148.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;" class="yellow" onclick="inserisciRicavi(this,1,3,4,2021)">186.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,5,2021)">188.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;" class="yellow" onclick="inserisciRicavi(this,1,3,6,2021)">185.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,7,2021)">144.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,8,2021)">186.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,9,2021)">168.0</td>
+		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"style="text-align:center;border-right:1px solid #D3D3D3;" class="yellow" onclick="inserisciRicavi(this,1,3,10,2021)">162.0</td>
+		
+			<td style="text-align:center;border-right:2px solid #000000;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,1,3,11,2021)">93.0</td>
+		
+		<td style="text-align:center;border-right:2px solid #000000;border-bottom:2px solid #000000;">579.0</td>
+		<td style="text-align:center;border-right:2px solid #000000; border-bottom:2px solid #000000;">1,891.0</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td>a.p.</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td  style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">Giorni Lavoro</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,0,2021)">103.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,2,0,0,2021)">17.5</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,1,2021)">142.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,2,0,1,2021)">18.5</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,2,2021)">186.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;" class="yellow" onclick="inserisciRicavi(this,2,0,2,2021)">23.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,3,2021)">148.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,2,0,3,2021)">19.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,4,2021)">186.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,2,0,4,2021)">21.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,5,2021)">188.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;" class="yellow" onclick="inserisciRicavi(this,2,0,5,2021)">21.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,6,2021)">185.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,2,0,6,2021)">22.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,7,2021)">144.0</td>
+			<td  style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,2,0,7,2021)">22.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,8,2021)">186.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;" class="yellow" onclick="inserisciRicavi(this,2,0,8,2021)">20.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,9,2021)">168.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;"class="yellow" onclick="inserisciRicavi(this,2,0,9,2021)">23.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,10,2021)">162.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;" class="yellow" onclick="inserisciRicavi(this,2,0,10,2021)">21.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,1,3,11,2021)">93.0</td>
+			<td style="text-align:center;border-right:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,0,11,2021)">19.0</td>
 		
-		<td>579.0</td>
-		<td>1,891.0</td>
+		<td style="text-align:center;border-right:2px solid #000000;">247.0</td>
+		<td style="text-align:center;border-right:2px solid #000000;border-bottom:2px solid #000000;"></td>
+	</tr>
+	<tr id="stiro">
+		<td style="text-align:center;color: #607D8B; font-size: 13px;">STIRO</td>
+		<td style="color: black;border-right: 2px solid red;text-align:center;">Consuntivo</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;" class="yellow" onclick="inserisciRicavi(this,2,1,0,2021)">106.7</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,1,2021)">64.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;" class="yellow" onclick="inserisciRicavi(this,2,1,2,2021)">99.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,3,2021)">59.5</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,4,2021)">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,5,2021)">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;" class="yellow" onclick="inserisciRicavi(this,2,1,6,2021)">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,7,2021)">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,8,2021)">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,9,2021)">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,10,2021)">0.0</td>
+		
+			<td style="border-right:2px solid #000000; text-align:center;color:red;"class="yellow" onclick="inserisciRicavi(this,2,1,11,2021)">0.0</td>
+		
+		<td style="border-right:2px solid #000000; text-align:center;color:red;">329.2</td>
+		<td style="border-right:2px solid #000000; text-align:center;color:red;border-bottom:2px solid #000000;">1,006.6</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td  style="border-left: 2px solid #DCDCDC;">Giorni Lavoro</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td style="text-align:center;color:#6495ED;border-left:1px solid #DCDCDC;border-right:2px solid #6495ED;">bdg</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,0,2021)">17.5</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;" class="yellow" onclick="inserisciRicavi(this,2,2,0,2021)">73.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,1,2021)">18.5</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,1,2021)">73.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,2,2021)">23.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,2,2021)">93.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,3,2021)">19.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,3,2021)">77.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,4,2021)">21.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,4,2021)">85.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,5,2021)">21.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,5,2021)">84.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,6,2021)">22.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,6,2021)">87.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,7,2021)">22.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;" class="yellow" onclick="inserisciRicavi(this,2,2,7,2021)">88.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,8,2021)">20.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,8,2021)">81.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,9,2021)">23.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,9,2021)">92.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,10,2021)">21.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,10,2021)">84.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,0,11,2021)">19.0</td>
+			<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;"class="yellow" onclick="inserisciRicavi(this,2,2,11,2021)">76.4</td>
 		
-		<td>247.0</td>
-		<td></td>
+		<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;">316.0</td>
+		<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;">993.4</td>
 	</tr>
 	<tr>
-		<td style="color: #607D8B; font-size: 13px;">STIRO</td>
-		<td style="color: black;">Consuntivo</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td  style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">delta mese</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,0,2021)">106.7</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">33.7</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,1,2021)">64.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(9.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,2,2021)">99.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">6.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,3,2021)">59.5</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(17.5)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,4,2021)">0.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(85.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,5,2021)">0.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(84.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,6,2021)">0.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(87.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,7,2021)">0.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(88.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,8,2021)">0.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(81.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,9,2021)">0.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(92.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,10,2021)">0.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(84.0)</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,1,11,2021)">0.0</td>
+			<td style=" color:#6495ED;text-align:center;border-right:2px solid #000000;">(76.4)</td>
 		
-		<td>329.2</td>
-		<td>1,006.6</td>
+		<td style=" color:#6495ED;text-align:center;border-right:2px solid #000000;">13.2</td>
+		<td style="border-right:2px solid #000000;"></td>
 	</tr>
 	<tr>
-		<td></td>
-		<td>bdg</td>
+		<td style="border-left: 1px solid #D3D3D3;text-align:center;border-bottom:2px solid #000000;"></td>
+		<td style="border-left: 1px solid #D3D3D3;border-right:2px solid #6495ED;text-align:center;border-bottom:2px solid #000000;"">a.p.</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,0,2021)">73.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,0,2021)">63.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,1,2021)">73.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,1,2021)">54.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,2,2021)">93.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;" class="yellow" onclick="inserisciRicavi(this,2,3,2,2021)">87.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,3,2021)">77.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,3,2021)">83.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,4,2021)">85.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;" class="yellow" onclick="inserisciRicavi(this,2,3,4,2021)">118.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,5,2021)">84.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,5,2021)">91.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,6,2021)">87.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,6,2021)">39.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,7,2021)">88.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,7,2021)">63.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,8,2021)">81.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,8,2021)">93.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,9,2021)">92.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,9,2021)">80.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,10,2021)">84.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,10,2021)">68.0</td>
 		
-			<td class="yellow" onclick="inserisciRicavi(this,2,2,11,2021)">76.4</td>
+			<td style="text-align:center;border-right:2px solid #000000;border-bottom:2px solid #000000;"class="yellow" onclick="inserisciRicavi(this,2,3,11,2021)">49.0</td>
 		
-		<td>316.0</td>
-		<td>993.4</td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>delta mese</td>
-		
-			<td>33.7</td>
-		
-			<td>(9.0)</td>
-		
-			<td>6.0</td>
-		
-			<td>(17.5)</td>
-		
-			<td>(85.0)</td>
-		
-			<td>(84.0)</td>
-		
-			<td>(87.0)</td>
-		
-			<td>(88.0)</td>
-		
-			<td>(81.0)</td>
-		
-			<td>(92.0)</td>
-		
-			<td>(84.0)</td>
-		
-			<td>(76.4)</td>
-		
-		<td>13.2</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>a.p.</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,0,2021)">63.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,1,2021)">54.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,2,2021)">87.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,3,2021)">83.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,4,2021)">118.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,5,2021)">91.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,6,2021)">39.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,7,2021)">63.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,8,2021)">93.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,9,2021)">80.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,10,2021)">68.0</td>
-		
-			<td class="yellow" onclick="inserisciRicavi(this,2,3,11,2021)">49.0</td>
-		
-		<td>287.0</td>
-		<td>888.0</td>
+		<td style="text-align:center;border-right:2px solid #000000;border-bottom:2px solid #000000;">287.0</td>
+		<td style="text-align:center;border-right:2px solid #000000;border-bottom:2px solid #000000;">888.0</td>
 	</tr>
 	<!-- 						TOTALE -->
-	<tr style="background-color: #BCCCE2;">
+	<tr style="background-color: #BCCCE2;height:15px;">
 		<td></td>
 		
 			<td></td>
@@ -791,167 +800,167 @@ var $li = $('#menu li a').click(function() {
 		
 			<td></td>
 		
-		<td></td>
-		<td></td>
+		<td style="border-left:2px solid #000000;"></td>
+		<td style="border-right:2px solid #000000;border-left:2px solid #000000;border-bottom:2px solid #000000;"></td>
+	</tr>
+	<tr id="totale">
+		<td style="text-align:center;color: #607D8B; font-size: 13px;">TOTALE</td>
+		<td style="color: black;border-right: 2px solid red;text-align:center;">Consuntivo</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">507.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">732.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">833.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">570.9</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">0.0</td>
+		
+			<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;">0.0</td>
+		
+			<td style="border-right:2px solid #000000; text-align:center;color:red;">0.0</td>
+		
+		<td style="border-right:1px solid #D3D3D3; text-align:center;color:red;border-right:2px solid #000000;">2,642.9</td>
+		<td style="border-right:1px solid #D3D3D3; text-align:center;color:red; border-right:2px solid #000000;border-bottom:2px solid #000000;">7,957.3</td>
 	</tr>
 	<tr>
-		<td style="color: #607D8B; font-size: 13px;">TOTALE</td>
-		<td style="color: black;">Consuntivo</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td style="text-align:center;color:#6495ED;border-left:1px solid #DCDCDC;border-right:2px solid #6495ED;">bdg</td>
 		
-			<td>507.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">524.0</td>
 		
-			<td>732.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">581.0</td>
 		
-			<td>833.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">746.0</td>
 		
-			<td>570.9</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">636.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">692.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">723.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">698.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">509.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">705.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">764.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:1px solid #D3D3D3; text-align:center; color:#6495ED;">673.0</td>
 		
-			<td>0.0</td>
+			<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;">550.4</td>
 		
-		<td>2,642.9</td>
-		<td>7,957.3</td>
+		<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;">2,487.0</td>
+		<td style="border-right:2px solid #000000; text-align:center; color:#6495ED;">7,801.4</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td>bdg</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">delta bdg</td>
 		
-			<td>524.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(17.0)</td>
 		
-			<td>581.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">151.0</td>
 		
-			<td>746.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">87.0</td>
 		
-			<td>636.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">(65.1)</td>
 		
-			<td>692.0</td>
 		
-			<td>723.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">0,0</td>
 		
-			<td>698.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">0,0</td>
 		
-			<td>509.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">0,0</td>
 		
-			<td>705.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">0,0</td>
 		
-			<td>764.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">0,0</td>
 		
-			<td>673.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">0,0</td>
 		
-			<td>550.4</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">0,0</td>
 		
-		<td>2,487.0</td>
-		<td>7,801.4</td>
+			<td style="text-align:center;border-right:2px solid #000000;color:#6495ED;">0,0</td>
+		
+		<td style="text-align:center;border-right:2px solid #000000;color:#6495ED;">155.9</td>
+		<td style="border-right:2px solid #000000;"></td>
 	</tr>
 	<tr>
-		<td></td>
-		<td>delta bdg</td>
+		<td style="border-left:1px solid #D3D3D3;"></td>
+		<td style="border-left: 1px solid #DCDCDC;border-right:2px solid #6495ED;text-align:center;">a.p.</td>
 		
-			<td>(17.0)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">396.0</td>
 		
-			<td>151.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">423.0</td>
 		
-			<td>87.0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">641.0</td>
 		
-			<td>(65.1)</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">485.0</td>
 		
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">715.0</td>
 		
-			<td>0,0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">580.0</td>
 		
-			<td>0,0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">561.0</td>
 		
-			<td>0,0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">510.0</td>
 		
-			<td>0,0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">647.0</td>
 		
-			<td>0,0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">651.0</td>
 		
-			<td>0,0</td>
+			<td style="text-align:center;border-right:1px solid #D3D3D3;">643.0</td>
 		
-			<td>0,0</td>
+			<td style="text-align:center;border-right:2px solid #000000;">281.0</td>
 		
-			<td>0,0</td>
-		
-		<td>155.9</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td>a.p.</td>
-		
-			<td>396.0</td>
-		
-			<td>423.0</td>
-		
-			<td>641.0</td>
-		
-			<td>485.0</td>
-		
-			<td>715.0</td>
-		
-			<td>580.0</td>
-		
-			<td>561.0</td>
-		
-			<td>510.0</td>
-		
-			<td>647.0</td>
-		
-			<td>651.0</td>
-		
-			<td>643.0</td>
-		
-			<td>281.0</td>
-		
-		<td>1,945.0</td>
-		<td>6,533.0</td>
+		<td style="text-align:center;border-right:2px solid #000000;">1,945.0</td>
+		<td style="text-align:center;border-right:2px solid #000000;">6,533.0</td>
 	</tr>
 
 
-	<tr>
-		<td></td>
-		<td>delta a.p.</td>
+	<tr style="border-bottom:1px solid black;border-bottom:2px solid black;border-top:1px solid #D3D3D3;">
+		<td style="background-color: #D9E3C0;border-left:1px solid #D3D3D3;border-top:2px solid #000000;"></td>
+		<td  style="background-color: #D9E3C0;border-left: 1px solid #D3D3D3;border-right:2px solid black;border-top:2px solid #000000;">delta a.p.</td>
 		
-			<td>111.0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">111.0</td>
 		
-			<td>309.0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">309.0</td>
 		
-			<td>192.0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">192.0</td>
 		
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-			<td>0,0</td>
+			<td style="background-color: #D9E3C0;text-align:center;border-right:1px solid #D3D3D3;border-top:2px solid #000000;">0,0</td>
 		
-		<td style="background-color: #BCCCE2; font-size: 15px;">697.9</td>
-		<td style="background-color: #BCCCE2; font-size: 15px;">1,424.3</td>
+		<td style="background-color: #BCCCE2; font-size: 15px;border-top:2px solid #000000;">697.9</td>
+		<td style="background-color: #BCCCE2; font-size: 15px;border-top:2px solid #000000;">1,424.3</td>
 	</tr>
 </tbody>
 						</table>
@@ -959,7 +968,7 @@ var $li = $('#menu li a').click(function() {
 				</div>
 				<div class="col-sm-3">
 					<div class="col-sm-12" id="graph_tessitura" style="background-color: #D9E3C0;"></div>
-					<div class="col-sm-12" id="graph_confezione" style="background-color: #BCCCE2; margin-top: 8%"></div>
+					<div class="col-sm-12" id="graph_confezione" style="background-color: #BCCCE2 ;margin-top: 8%"></div>
 					<div class="col-sm-12" id="graph_stiro" style="background-color: #FCCE56; margin-top: 8%; margin-bottom: 8%"></div>
 					<div class="col-sm-12" id="budget">
 						<div class="col-sm-3"></div>
@@ -971,6 +980,9 @@ var $li = $('#menu li a').click(function() {
 <!-- 						<div class="col-sm-3"></div> -->
 <!-- 					</div> -->
 <!-- 				</div> -->
+
+
+					
 			</div>
 		</div>
 	</section>
@@ -1009,17 +1021,17 @@ var $li = $('#menu li a').click(function() {
 				barGraphRCL(obj.PercConsTes, obj.PercConsConf,
 						obj.PercConsStir, obj.PercBdgTes, obj.PercBdgConf,
 						obj.PercBdgStir, anno);
-				// $('#rcl-table').DataTable({
-				// "ordering" : false,
-				// "order" : [],
-				// "paging" : false,
-				// "autoWidth" : true,
-				// "pageLength" : 16,
-				// "bFilter" : false,
-				// "dom" : '<"topcustom"lfr>t<"bottomcustom"ip>'
-				//
-				// });
-				//       document.getElementById("ricavi-conto-lavoro-page").style.visibility = 'visible';
+				 //$('#rcl-table').DataTable({
+				 //"ordering" : false,
+				 //"order" : [],
+				 //"paging" : false,
+				 //"autoWidth" : true,
+				 //"pageLength" : 16,
+				 //"bFilter" : false,
+				 //"dom" : '<"topcustom"lfr>t<"bottomcustom"ip>'
+				
+				 //});
+				 //      document.getElementById("ricavi-conto-lavoro-page").style.visibility = 'visible';
 			}, 500);
 
 		}
@@ -1242,6 +1254,14 @@ function rgtForce() {
 
 		<style>
 
+	  
+		  .top-icons{
+		float:right;
+				background-color:darkred;
+
+	}
+	
+
 	  body{
 		  padding:20px 20px;
 		font-family:'Trebuchet MS';
@@ -1269,7 +1289,7 @@ function rgtForce() {
 		border-bottom:2px solid #000000;
 	}
 
-	#tessitura,#confezione{
+	#tessitura,#confezione,#stiro,#totale{
 		/*border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3;*/
 		border-left: 1px solid #D3D3D3;
 		background-color: rgba(0, 0, 0, 0.05);
