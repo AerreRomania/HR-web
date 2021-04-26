@@ -37,11 +37,11 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
     private List<string> CurrentDepNames = new List<string>();
     private void Preparare(string Departament)
     {
-        
-    string TESSITURA = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='TESSITURA' ORDER BY case when Mansione = 'PROGRAMMAZIONE' then 1 when Mansione = 'RESP.MAGAZZINO' then 2 when Mansione = 'MAGAZZINO FILATO' then 3 when Mansione='SFILATURA TELI' then 4 when Mansione = 'ROCCATURA' then 5 when Mansione = 'RESP.CONTROLLO QUALITÀ'  then 6 when Mansione='SVILUPPO SCHEDE/TAGLIE' then 7 when Mansione='CONTROLLO QUALITA''' then 8 when Mansione = 'ADDETTO AL CONTROLLO TAVOLO' then 9 when Mansione = 'PROGRAMMATORE SHIMA' then 10 when Mansione='CAPO MECCANICO' then 10 when Mansione = 'MECCANICO' then 11 when Mansione = 'PULITORE' then 12 when Mansione = 'CAPOTURNO' then 13 when Mansione='CAPO SQUADRA - NIS TESSITURA' then 14 when Mansione = 'OPERATORE MACCHINA' then 15 when Mansione='MANUTENZIONE' then 16 when Mansione='CONTROLLO QUALITA'' RAMMENDO' then 17 when Mansione = 'RAMMENDO' then 18 when Mansione='PACCHI' then 19 else 20 end asc;";
-    string STIRO = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='STIRO' ORDER BY case when Mansione = 'RESPONSABILE STIRO' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESP.CONTROLLO QUALITÀ' then 3 when Mansione = 'CAPO LINEA' then 4 when Mansione = 'APPLICAZIONE ETICHETTE' then 5 when Mansione = 'DIVISIONE TAGLIE' then 6when Mansione = 'CONTROLLO MANICHINO' then 7when Mansione = 'RAMMENDO' then 8 when Mansione = 'STIRO PRESSA' then 9  when Mansione = 'ADDETTO AI CARTELLINI' then 10 when Mansione = 'PIEGO/IMBUSTO' then 11when Mansione = 'ADDETTO ABACO' then 12when Mansione = 'CONTROLLO QUALITA''' then 13 when Mansione = 'MAGAZZINIERE' then 14 when Mansione = 'MECCANICO' then 15 else 16 end asc;";
-    string CONFFEZIONE = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='"+Departament+"' ORDER BY case when Mansione = 'RESPONSABILE CONFEZIONE' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESPONSABILE CAPOLINEA CONFEZ.' then 3 when Mansione = 'CONTROLLO QUALITA''' then 4 when Mansione = 'CAPO LINEA' then 5 when Mansione = 'CONTROLLORE DI LAVORO IN LINEA' then 6 when Mansione = 'TC' then 7 when Mansione = 'RIMAGLIO' then 8 when Mansione = 'OV' then 9 when Mansione = 'TRAVETTA' then 10 when Mansione = 'RAMMENDO' then 11 when Mansione = 'FINISSAGGIO' then 12 when Mansione = 'CONTROLLO MANICHINO' then 13 when Mansione = 'MECCANICO' then 14 when Mansione = 'RESP.MAGAZZINO' then 15 when Mansione = 'MAGAZZINIERE' then 16 when Mansione = 'ADDETTO ALLE PULIZIE GENERALI' then 17 else 18 end asc;";
-    string structura = string.Empty;
+
+        string TESSITURA = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='TESSITURA' ORDER BY case when Mansione = 'PROGRAMMAZIONE' then 1 when Mansione = 'RESP.MAGAZZINO' then 2 when Mansione = 'MAGAZZINO FILATO' then 3 when Mansione='SFILATURA TELI' then 4 when Mansione = 'ROCCATURA' then 5 when Mansione = 'RESP.CONTROLLO QUALITÀ'  then 6 when Mansione='SVILUPPO SCHEDE/TAGLIE' then 7 when Mansione='CONTROLLO QUALITA''' then 8 when Mansione = 'ADDETTO AL CONTROLLO TAVOLO' then 9 when Mansione = 'PROGRAMMATORE SHIMA' then 10 when Mansione='CAPO MECCANICO' then 10 when Mansione = 'MECCANICO' then 11 when Mansione = 'PULITORE' then 12 when Mansione = 'CAPOTURNO' then 13 when Mansione='CAPO SQUADRA - NIS TESSITURA' then 14 when Mansione = 'OPERATORE MACCHINA' then 15 when Mansione='MANUTENZIONE' then 16 when Mansione='CONTROLLO QUALITA'' RAMMENDO' then 17 when Mansione = 'RAMMENDO' then 18 when Mansione='PACCHI' then 19 else 20 end asc;";
+        string STIRO = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='STIRO' ORDER BY case when Mansione = 'RESPONSABILE STIRO' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESP.CONTROLLO QUALITÀ' then 3 when Mansione = 'CAPO LINEA' then 4 when Mansione = 'APPLICAZIONE ETICHETTE' then 5 when Mansione = 'DIVISIONE TAGLIE' then 6when Mansione = 'CONTROLLO MANICHINO' then 7when Mansione = 'RAMMENDO' then 8 when Mansione = 'STIRO PRESSA' then 9  when Mansione = 'ADDETTO AI CARTELLINI' then 10 when Mansione = 'PIEGO/IMBUSTO' then 11when Mansione = 'ADDETTO ABACO' then 12when Mansione = 'CONTROLLO QUALITA''' then 13 when Mansione = 'MAGAZZINIERE' then 14 when Mansione = 'MECCANICO' then 15 else 16 end asc;";
+        string CONFFEZIONE = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='" + Departament + "' ORDER BY case when Mansione = 'RESPONSABILE CONFEZIONE' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESPONSABILE CAPOLINEA CONFEZ.' then 3 when Mansione = 'CONTROLLO QUALITA''' then 4 when Mansione = 'CAPO LINEA' then 5 when Mansione = 'CONTROLLORE DI LAVORO IN LINEA' then 6 when Mansione = 'TC' then 7 when Mansione = 'RIMAGLIO' then 8 when Mansione = 'OV' then 9 when Mansione = 'TRAVETTA' then 10 when Mansione = 'RAMMENDO' then 11 when Mansione = 'FINISSAGGIO' then 12 when Mansione = 'CONTROLLO MANICHINO' then 13 when Mansione = 'MECCANICO' then 14 when Mansione = 'RESP.MAGAZZINO' then 15 when Mansione = 'MAGAZZINIERE' then 16 when Mansione = 'ADDETTO ALLE PULIZIE GENERALI' then 17 else 18 end asc;";
+        string structura = string.Empty;
         //lOrganigramaDepartament.Text = "Organigramma " + Departament;
         List<int> lineListValue = new List<int>();
         DataClassWbmOlimpias dcWbmOlimpias = new DataClassWbmOlimpias();
@@ -97,6 +97,7 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
                 using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
                     da.Fill(queryAngajat);
+
                 }
             }
         }
@@ -185,6 +186,7 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
             tcPrincipal = new HtmlTableCell();
             tcPrincipal.VAlign = "top";
            
+           
             HtmlTable tLinie = new HtmlTable();
             tLinie.Style.Add("border", "1px solid #800080");
             tLinie.Style.Add("border-collapse", "collapse");
@@ -237,9 +239,9 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
             string MansioneLast = string.Empty;
             foreach (DataRow angajat in queryAngajat.Rows)
             {
+            
 
-
-                if (LinieName == angajat[3].ToString())
+                    if (LinieName == angajat[3].ToString())
                 {
                     if (angajat[2].ToString() == "CAPO SQUADRA")
                     {

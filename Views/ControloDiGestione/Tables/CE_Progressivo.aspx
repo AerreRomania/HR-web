@@ -79,10 +79,10 @@
 		border-collapse:collapse;
 		border:1px solid;
 	}
-
-	.col-sm-12{
+.col-sm-12{
 		text-align:center;
 	}
+	
 
 	th{
 		color:#696969;

@@ -59,7 +59,7 @@
         .capoSquadra
         {
         background-color: #f4f4f4;
-        color: black;
+        color: red;
         font: 17px Arial, Helvetica, sans-serif;
         font-weight: 600;
         text-align: right;
