@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Copertina.aspx.cs" Inherits="Views_ControloDiGestione_Tables_ContoEconomicoprogress_Copertina" %>
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Copertina.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Copertina" %>
 
 <!DOCTYPE html>
 
