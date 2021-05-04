@@ -58,6 +58,7 @@
 
 	<style>
 
+	 
 	
 
 	 #fatturo,#valore,#consumi,#esterne,#lavorodiretto,#lavoroindiretto,#costiindustria,#costodelvenduto,#marginelordo,#indgenerale,#costicom,#speseg,#operativol,#leasing,#operativon,#ebit,#resercitio,#ires,#rnetto,#ebitda{
@@ -73,6 +74,7 @@
 		 border-collapse:collapse;
 		border:1px solid ;
 		border-top:none;
+	
 	 }
 
 	 .col-sm-5{
@@ -82,6 +84,7 @@
 
 	 .col-sm-12{
 		 text-align:center;
+
 	 }
 
 	   body{
@@ -89,6 +92,7 @@
 		font-family:'Trebuchet MS';
 		color:#4a4a4a;
 		background-color:#F5F5F5;
+		
 		
 	}
 
@@ -286,7 +290,7 @@
 		<!-- 		<th><span class="sr-only">Seleziona</span></th> -->
 		<!-- 		<th -->
 		<!-- 			style="border-top: 1px solid #ddd; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Codice</th> -->
-		<th style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid black; color:#F5F5F5;background-color: #F5F5F5 !important; border-right: 1px solid black; padding: 0px;">Conto economico al:<br>31/10/2017
+		<th style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3; color:#F5F5F5;background-color: #F5F5F5 !important; border-right: 1px solid black; padding: 0px;">Conto economico al:<br>31/10/2017
 		</th>
 		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Gennaio</th>
 		<th colspan="2" style="border-top: 1px solid #D3D3D3; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Febbraio</th>
@@ -301,8 +305,8 @@
 		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Novembre</th>
 		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Dicembre</th>
 		<th colspan="2" style="border-top: 1px solid black; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Totale</th>
-		<th colspan="2" style="border-top: 1px solid black; border-bottom: none; background-color: white!important; border-right: 1px solid black; width:95px;padding: 0px;color:white;">Empty</th>
-		<th colspan="2" style="border-top: 1px solid black; border-bottom: 2px solid #FFFFFF ; background-color: lightgray!important;width:95px; border-right: 1px solid transparent; padding: 0px;">Prog </br> Cons</th>
+		<th colspan="2" style="border-top: 1px solid lightgray; border-bottom: none; background-color: white!important; border-right: 1px solid black; width:95px;padding: 0px;color:white;">Empty</th>
+		<th id="over" colspan="2" style="border-top: 1px solid black; border-bottom: 2px solid #FFFFFF ; background-color: lightgray!important;width:95px; border-right: 1px solid transparent; padding: 0px;">Prog </br> Cons</th>
 	</tr>
 	<tr>
 
@@ -942,10 +946,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 			
 		</tr>
 	
@@ -1087,10 +1091,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 			
 		</tr>
 	
@@ -1106,15 +1110,14 @@
 									<td style="border-right: 1px solid black;"> %</td>
 								
 							<td style="border-right: 1px solid black;">0.0</td>
-								
-							
+						
 									<td style="border-right: 1px solid black;"> %</td>
+
 								<td style="border-right: 1px solid black;">0.0</td>
 								
 									<td style="border-right: 1px solid black;"> %</td>
 								
 							<td style="border-right: 1px solid black;">0.0</td>
-								
 								
 									<td style="border-right: 1px solid black;"> %</td>
 								
@@ -1463,10 +1466,12 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
+
+			
 		</tr>
 	
 		<tr>
@@ -2293,10 +2298,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr  id="lavorodiretto" style="background-color:#CFEACF;">
@@ -2363,10 +2368,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr id="lavoroindiretto"   style="background-color:#CFEACF;">
@@ -2434,10 +2439,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3343,10 +3348,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr  id="costodelvenduto" style="background-color:#CFEACF;">
@@ -3413,10 +3418,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr id="marginelordo" style="background-color:#CFEACF;">
@@ -3484,10 +3489,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3783,10 +3788,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+				<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4235,10 +4240,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5223,10 +5228,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr  id="operativol"style="background-color:#CFEACF;">
@@ -5293,10 +5298,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5819,10 +5824,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr  id="operativon" style="background-color:#CFEACF;">
@@ -5889,10 +5894,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -6569,10 +6574,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -6715,10 +6720,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -6856,10 +6861,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 		<tr>
@@ -7003,10 +7008,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+			<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 
 	
@@ -7078,10 +7083,10 @@
 								
 									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
 
-		<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+		<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
 								
-									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+									<td style="border-right:1px solid transparent;background-color:#CFEACF;"> %</td>
 		</tr>
 	
 </tbody>
