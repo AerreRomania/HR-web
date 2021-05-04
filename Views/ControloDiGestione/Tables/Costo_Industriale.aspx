@@ -629,7 +629,7 @@
 				
 				
 				
-					<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">  VARIABILI</td>
+					<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #000000;">  VARIABILI</td>
 					
 					<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
 								

@@ -58,6 +58,7 @@
 
 	<style>
 
+	
 
 	 #fatturo,#valore,#consumi,#esterne,#lavorodiretto,#lavoroindiretto,#costiindustria,#costodelvenduto,#marginelordo,#indgenerale,#costicom,#speseg,#operativol,#leasing,#operativon,#ebit,#resercitio,#ires,#rnetto,#ebitda{
 		 border-top:1px solid #000000;
@@ -287,19 +288,21 @@
 		<!-- 			style="border-top: 1px solid #ddd; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Codice</th> -->
 		<th style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid black; color:#F5F5F5;background-color: #F5F5F5 !important; border-right: 1px solid black; padding: 0px;">Conto economico al:<br>31/10/2017
 		</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Gennaio</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Febbraio</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Marzo</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Aprile</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Maggio</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Giugno</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Luglio</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Agosto</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Settembre</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Ottobre</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Novembre</th>
-		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Dicembre</th>
-		<th colspan="2" style="border-top: 1px solid black; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Totale</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Gennaio</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Febbraio</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Marzo</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Aprile</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Maggio</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Giugno</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Luglio</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Agosto</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Settembre</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Ottobre</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Novembre</th>
+		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Dicembre</th>
+		<th colspan="2" style="border-top: 1px solid black; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black;width:95px; padding: 0px;">Totale</th>
+		<th colspan="2" style="border-top: 1px solid black; border-bottom: none; background-color: white!important; border-right: 1px solid black; width:95px;padding: 0px;color:white;">Empty</th>
+		<th colspan="2" style="border-top: 1px solid black; border-bottom: 2px solid #FFFFFF ; background-color: lightgray!important;width:95px; border-right: 1px solid transparent; padding: 0px;">Prog </br> Cons</th>
 	</tr>
 	<tr>
 
@@ -329,7 +332,12 @@
 		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">Val</th>
 		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">%</th>
 		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">Val</th>
-		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 0px solid black; padding: 0px; font-size: 11px;">%</th>
+		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">%</th>
+		<td style="border-right: none;background-color:#FFFFFF;"></td>
+		<td style="background-color:#FFFFFF;"></td>
+		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: lightgray !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">Val</th>
+		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: lightgray !important; border-right: 1px solid transparent; padding: 0px; font-size: 11px;">%</th>
+
 	</tr>
 </thead>
 <tbody>
@@ -399,6 +407,18 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+								
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+
+
 		</tr>
 	
 		<tr>
@@ -465,6 +485,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 			
 		</tr>
 
@@ -533,6 +563,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -599,6 +639,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -665,6 +715,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -731,6 +791,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -797,6 +867,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="fatturo">
@@ -856,6 +936,16 @@
 								
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 			
 		</tr>
 	
@@ -923,6 +1013,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="valore">
@@ -981,6 +1081,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 		
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 			
 		</tr>
 	
@@ -1048,6 +1158,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1114,6 +1234,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1180,6 +1310,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1246,6 +1386,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="consumi">
@@ -1307,6 +1457,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1373,6 +1533,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1439,6 +1609,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1505,6 +1685,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1571,6 +1761,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1637,6 +1837,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1703,6 +1913,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1769,6 +1989,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1835,6 +2065,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1901,6 +2141,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -1967,6 +2217,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="esterne"   style="background-color:#CFEACF;">
@@ -2027,6 +2287,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 					
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr  id="lavorodiretto" style="background-color:#CFEACF;">
@@ -2087,6 +2357,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 	
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="lavoroindiretto"   style="background-color:#CFEACF;">
@@ -2148,6 +2428,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 														
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2214,6 +2504,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2280,6 +2580,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2346,6 +2656,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2412,6 +2732,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2478,6 +2808,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2545,6 +2885,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2611,6 +2961,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2677,6 +3037,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2743,6 +3113,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2809,6 +3189,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -2876,6 +3266,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="costiindustria" style="background-color:#CFEACF;">
@@ -2937,6 +3337,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 		
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr  id="costodelvenduto" style="background-color:#CFEACF;">
@@ -2997,6 +3407,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 							
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="marginelordo" style="background-color:#CFEACF;">
@@ -3058,6 +3478,16 @@
 								
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3124,6 +3554,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3190,6 +3630,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3256,6 +3706,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>	
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="indgenerale" style="background-color:#CFEACF;">
@@ -3317,6 +3777,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3383,6 +3853,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3449,6 +3929,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>	
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+				<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3515,6 +4005,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3581,6 +4081,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3648,6 +4158,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="costicom" style="background-color:#CFEACF;">
@@ -3709,6 +4229,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3775,6 +4305,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3841,6 +4381,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3907,6 +4457,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -3973,6 +4533,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4040,6 +4610,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4106,6 +4686,18 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+
+			
 		</tr>
 	
 		<tr>
@@ -4172,6 +4764,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4238,6 +4840,18 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+		
+							
 		</tr>
 	
 		<tr>
@@ -4304,6 +4918,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4370,6 +4994,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4436,6 +5070,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4502,6 +5146,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="speseg" style="background-color:#CFEACF;">
@@ -4563,6 +5217,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 						
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr  id="operativol"style="background-color:#CFEACF;">
@@ -4623,6 +5287,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4689,6 +5363,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4755,6 +5439,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4821,6 +5515,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4887,6 +5591,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -4953,6 +5667,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5019,6 +5743,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr  id="leasing" style="background-color:#CFEACF;">
@@ -5079,6 +5813,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr  id="operativon" style="background-color:#CFEACF;">
@@ -5139,6 +5883,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5205,6 +5959,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5271,6 +6035,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5337,6 +6111,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5403,6 +6187,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5469,6 +6263,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5536,6 +6340,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5602,6 +6416,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5668,6 +6492,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="ebit" style="background-color:#CFEACF;">
@@ -5729,6 +6563,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5795,6 +6639,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="resercitio"style="background-color:#CFEACF;";">
@@ -5855,6 +6709,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -5915,6 +6779,16 @@
 			<td style="border-right: 1px solid black;">0.0</td>
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr  id="ires" style="background-color:#CFEACF;">
@@ -5976,6 +6850,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr>
@@ -6042,6 +6926,16 @@
 								
 								
 									<td style="border-right: 1px solid black;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 		<tr id="rnetto"  style="background-color:#CFEACF;">
@@ -6102,7 +6996,18 @@
 								
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
-									<td style="background-color:#CFEACF;"> %</td>	</tr>
+									<td style="background-color:#CFEACF;"> %</td>
+
+			<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+			<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
+		</tr>
 
 	
 	
@@ -6167,6 +7072,16 @@
 									<td style="background-color:#CFEACF;"> 0.0</td>
 								
 									<td style="background-color:#CFEACF;"> %</td>
+
+		<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+								
+								
+									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+
+		<td style="border-right:none;background-color:#e6e6e6;">0.0</td>
+								
+								
+									<td style="border-right:1px solid transparent;background-color:#e6e6e6;"> %</td>
 		</tr>
 	
 </tbody>
