@@ -71,8 +71,9 @@
 	  .tab{
 		  background-color:#f4f4f4;
 		  width:100%;
-		  height:90vh;
+		  height:88vh;
 		  display:none;
+		  border:none;
 	  }
 	  .button{
 		  border:none;
@@ -187,6 +188,7 @@
 		
 		<div class="row">
 			<div class="col-sm-12">
+				<button id="back" type="button" class="filter hide" onclick="backView()">Indietro</button>
 				<button id="prior" type="button" class="filter active" onclick="priorView()">In primo piano</button>
 				<button id="all" type="button" class="filter" onclick="allView()">Tutti</button>
 			</div>
@@ -194,7 +196,7 @@
 		
 	</div>
 		<div class="container-fluid">
-		<iframe class="tab" data-link="">
+		<iframe class="tab" id="tab">
 
 		</iframe>
 			</div>
@@ -313,7 +315,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <button onclick="CE_Mensile()" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/market-cat-02.png');"></button>
+		<article> <button onclick="Tab_Source('CE_Mensile')" class="img-container" style="border:none;background-image: url('/Images/C.Gestione/market-cat-02.png');"></button>
 		<h2>
 			<a href="./montly-balance">Conto Economico mensile</a>
 		</h2>
@@ -335,7 +337,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
+		<article> <button onclick="Tab_Source('CE_Budget')" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
 		<h2>
 			<a href="./GetCERtxtAreaPrg">Conto Economico Budget</a>
 		</h2>
@@ -345,7 +347,7 @@
 		</article>
 	</div>
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
+		<article> <button onclick="Tab_Source('CE_Progressivo')" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=cinquepuntosei">Conto economico a costo del venduto</a>
 		</h2>
@@ -356,7 +358,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats economico">
-		<article> <button href=" " class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
+		<article> <button onclick="Tab_Source('CE_contabilita_generale')" class="img-container" style="background-image: url('/Images/C.Gestione/market-cat-04.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=cinquepuntosei">Contabilitŕ generale</a>
 		</h2>
@@ -369,7 +371,7 @@
 	</div>
 		<%--COSTI////////////////////////////////////////////////////////////--%>
 	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-01.png');"></a>
+		<article> <a onclick="Tab_Source('Costo_Industriale')" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-01.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntouno">Calcolo costo industriale</a>
 		</h2>
@@ -687,22 +689,52 @@
     </script>
 
 	<script>
-		
-		function CE_Mensile() {
-			var collection = document.getElementsByClassName('economico');
-			var tab = document.getElementsByClassName('tab');
-
-            for (var i = 0, len = collection.length; i < len; i++) {
-                collection[i].classList.remove("show");
-                // 				setTimeout(function(){
-                // 					collection[i].style.display = 'none';
-                // 				}, 400);
+			var category = '';
+		function Tab_Source(location) {
+			var link = "Tables/" + location + ".aspx";
+            category = location;
+            if (category.startsWith("CE")) {
+                category = 'economico';
+			}
+			if (category.startsWith("Costo")) {
+				category = 'costi';
             }
 
-            for (var i = 0, len = collection_prior.length; i < len; i++) {
+			var collection = document.getElementsByClassName(category);
+			var tab = document.getElementsByClassName('tab');
+			
+			document.getElementById('tab').setAttribute("src", link);
+		    document.getElementById('prior').className = 'filter hide';
+			document.getElementById('all').className = 'filter hide';
+			document.getElementById('back').className = 'filter ';
+			
+			
+            for (var i = 0, len = collection.length; i < len; i++) {
+				collection[i].classList.remove("show");
+            }
+            for (var i = 0, len = tab.length; i < len; i++) {
 				tab[i].classList.remove("hide");
 				tab[i].classList.add("show");
             }
+		};
+
+		function backView() {
+			
+			
+			var collection = document.getElementsByClassName(category);
+			
+			var tab = document.getElementsByClassName('tab');
+			for (var i = 0, len = tab.length; i < len; i++) {
+				tab[i].classList.remove("show");
+                tab[i].classList.add("hide");
+            }
+			for (var i = 0, len = collection.length; i < len; i++) {
+				collection[i].classList.remove("hide");
+				collection[i].classList.add("show");
+			}
+            document.getElementById('prior').className = 'filter active';
+            document.getElementById('all').className = 'filter';
+            document.getElementById('back').className = 'filter hide';
 		};
         function priorView() {
             var collection = document.getElementsByClassName('cats');
@@ -728,7 +760,7 @@
                 collection_prior[i].classList.remove("hide");
                 collection_prior[i].classList.add("show");
             }
-
+           
 		};
         function allView() {
 
