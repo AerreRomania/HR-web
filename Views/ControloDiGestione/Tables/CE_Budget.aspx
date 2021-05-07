@@ -7078,10 +7078,10 @@
 								
 									<td style="background-color:#CFEACF;"> %</td>
 
-		<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"></td>
+		<td style="border-right:none;border-top:1px solid transparent;border-bottom:1px solid lightgray;background-color:#FFFFFF;"></td>
 								
 								
-									<td style="border-right:none;border-top:1px solid transparent;background-color:#FFFFFF;"> </td>
+									<td style="border-right:none;border-top:1px solid transparent;border-bottom:1px solid lightgray;background-color:#FFFFFF;"> </td>
 
 		<td style="border-right:none;background-color:#CFEACF;">0.0</td>
 								
