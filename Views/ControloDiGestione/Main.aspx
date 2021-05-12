@@ -282,7 +282,7 @@
 
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats vendite">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/sells-cat-01.png');"></a>
+		<article> <button onclick="Tab_Source('Vendite_Ricavi_Forecast_Dinamico')" class="img-container" style="background-image: url('/Images/C.Gestione/sells-cat-01.png');"></button>
 		<h2>
 			<a href="./GetRCL?anno=2017&month=8">Ricavi - Forecast dinamico</a>
 		</h2>
@@ -590,7 +590,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-02.png');"></a>
+		<article> <button onclick="Tab_Source('Varie_Tassi_di_Cambio')" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-02.png');"></button>
 		<h2>
 			<a href="./index.jsp?m=tassi_di_cambio">Tassi di Cambio</a>
 		</h2>
@@ -601,7 +601,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats varie">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></a>
+		<article> <button onclick="Tab_Source('Varie_Caricamenti_file')" class="img-container" style="background-image: url('/Images/C.Gestione/misc-cat-03.png');"></button>
 		<h2>
 			<a href="./new/index.jsp?m=caricamenti-file">Caricamenti file</a>
 		</h2>
@@ -698,6 +698,12 @@
 			}
 			if (category.startsWith("Costo")) {
 				category = 'costi';
+			}
+			if (category.startsWith("Vendite")) {
+				category = 'vendite';
+			}
+			if (category.startsWith("Varie")) {
+				category = 'varie';
             }
 
 			var collection = document.getElementsByClassName(category);
