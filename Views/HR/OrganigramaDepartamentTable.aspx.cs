@@ -39,7 +39,15 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
     string STIRO = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='STIRO' ORDER BY case when Mansione = 'RESPONSABILE STIRO' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESP.CONTROLLO QUALITÀ' then 3 when Mansione = 'CAPO LINEA' then 4 when Mansione = 'APPLICAZIONE ETICHETTE' then 5 when Mansione = 'DIVISIONE TAGLIE' then 6when Mansione = 'CONTROLLO MANICHINO' then 7when Mansione = 'RAMMENDO' then 8 when Mansione = 'STIRO PRESSA' then 9  when Mansione = 'ADDETTO AI CARTELLINI' then 10 when Mansione = 'PIEGO/IMBUSTO' then 11when Mansione = 'ADDETTO ABACO' then 12when Mansione = 'CONTROLLO QUALITA''' then 13 when Mansione = 'MAGAZZINIERE' then 14 when Mansione = 'MECCANICO' then 15 else 16 end asc;";
     string CONFFEZIONE = "SELECT Cognome, Nome, Mansione, Linea from OrganigramaDepartamentListViewByDep WHERE Departament='"+Departament+"' ORDER BY case when Mansione = 'RESPONSABILE CONFEZIONE' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESPONSABILE CAPOLINEA CONFEZ.' then 3 when Mansione = 'CONTROLLO QUALITA''' then 4 when Mansione = 'CAPO LINEA' then 5 when Mansione = 'CONTROLLORE DI LAVORO IN LINEA' then 6 when Mansione = 'TC' then 7 when Mansione = 'RIMAGLIO' then 8 when Mansione = 'OV' then 9 when Mansione = 'TRAVETTA' then 10 when Mansione = 'RAMMENDO' then 11 when Mansione = 'FINISSAGGIO' then 12 when Mansione = 'CONTROLLO MANICHINO' then 13 when Mansione = 'MECCANICO' then 14 when Mansione = 'RESP.MAGAZZINO' then 15 when Mansione = 'MAGAZZINIERE' then 16 when Mansione = 'ADDETTO ALLE PULIZIE GENERALI' then 17 else 18 end asc;";
     string ADMINISTRAZIONE= "SELECT Cognome,Nome,Mansione,Linea from OrganigramaDepartamentListViewbyDep where Departament='AMMINISTRAZIONE' Order by Linea,Mansione";
-    string structura = string.Empty;
+
+        string MaxTessitura = "SELECT Linea,Mansione,Count(Mansione) AS Maxim FROM OrganigramaDepartamentListViewByDep where Departament = 'TESSITURA' and Linea Not like 'MA %' GROUP BY  Linea, Mansione ORDER BY case when Mansione = 'PROGRAMMAZIONE' then 1 when Mansione = 'RESP.MAGAZZINO' then 2 when Mansione = 'MAGAZZINO FILATO' then 3 when Mansione='SFILATURA TELI' then 4 when Mansione = 'ROCCATURA' then 5 when Mansione = 'RESP.CONTROLLO QUALITÀ'  then 6 when Mansione='SVILUPPO SCHEDE/TAGLIE' then 7 when Mansione='CONTROLLO QUALITA''' then 8 when Mansione = 'ADDETTO AL CONTROLLO TAVOLO' then 9 when Mansione = 'PROGRAMMATORE SHIMA' then 10 when Mansione='CAPO MECCANICO' then 11 when Mansione = 'MECCANICO' then 12 when Mansione = 'PULITORE' then 13 when Mansione = 'CAPOTURNO' then 14 when Mansione='CAPO SQUADRA - NIS TESSITURA' then 15 when Mansione = 'OPERATORE MACCHINA' then 16 when Mansione='MANUTENZIONE' then 17 when Mansione='CONTROLLO QUALITA'' RAMMENDO' then 18 when Mansione = 'RAMMENDO' then 19 when Mansione='PACCHI' then 20 else 21 end asc;";
+        string MaxStriro = "SELECT Linea,Mansione,Count(Mansione) AS Maxim FROM OrganigramaDepartamentListViewByDep where Departament = 'STIRO' and Linea Not like 'MA %' GROUP BY  Linea, Mansione ORDER BY case when Mansione = 'RESPONSABILE STIRO' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESP.CONTROLLO QUALITÀ' then 3 when Mansione = 'CAPO LINEA' then 4 when Mansione = 'APPLICAZIONE ETICHETTE' then 5 when Mansione = 'DIVISIONE TAGLIE' then 6when Mansione = 'CONTROLLO MANICHINO' then 7when Mansione = 'RAMMENDO' then 8 when Mansione = 'STIRO PRESSA' then 9  when Mansione = 'ADDETTO AI CARTELLINI' then 10 when Mansione = 'PIEGO/IMBUSTO' then 11when Mansione = 'ADDETTO ABACO' then 12when Mansione = 'CONTROLLO QUALITA''' then 13 when Mansione = 'MAGAZZINIERE' then 14 when Mansione = 'MECCANICO' then 15 else 16 end asc;";
+        string MaxConfezione = "SELECT Linea,Mansione,Count(Mansione) AS Maxim FROM OrganigramaDepartamentListViewByDep where Departament = '" + Departament + "' and Linea Not like 'MA %' GROUP BY  Linea, Mansione ORDER BY case when Mansione = 'RESPONSABILE CONFEZIONE' then 1 when Mansione = 'ANALISTA TEMPI E METODI' then 2 when Mansione = 'RESPONSABILE CAPOLINEA CONFEZ.' then 3 when Mansione = 'CONTROLLO QUALITA''' then 4 when Mansione = 'CAPO LINEA' then 5 when Mansione = 'CONTROLLORE DI LAVORO IN LINEA' then 6 when Mansione = 'TC' then 7 when Mansione = 'RIMAGLIO' then 8 when Mansione = 'OV' then 9 when Mansione = 'TRAVETTA' then 10 when Mansione = 'RAMMENDO' then 11 when Mansione = 'FINISSAGGIO' then 12 when Mansione = 'CONTROLLO MANICHINO' then 13 when Mansione = 'MECCANICO' then 14 when Mansione = 'RESP.MAGAZZINO' then 15 when Mansione = 'MAGAZZINIERE' then 16 when Mansione = 'ADDETTO ALLE PULIZIE GENERALI' then 17 else 18 end asc;";
+        string MaxAdministrazione = "SELECT Linea,Mansione,Count(Mansione) AS Maxim FROM OrganigramaDepartamentListViewByDep where Departament = 'AMMINISTRAZIONE' and Linea Not like 'MA %' GROUP BY  Linea, Mansione ;";
+        
+        
+        string structura = string.Empty;
+        string maxbyDep = string.Empty;
         //lOrganigramaDepartament.Text = "Organigramma " + Departament;
         List<int> lineListValue = new List<int>();
        // DataClassWbmOlimpias dcWbmOlimpias = new DataClassWbmOlimpias();
@@ -65,21 +73,27 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
         {
             case "TESSITURA":
                 structura = TESSITURA;
+                maxbyDep = MaxTessitura;
                 break;
             case "STIRO":
                 structura = STIRO;
+                maxbyDep = MaxStriro;
                 break;
             case "CONFEZIONE A":
                 structura = CONFFEZIONE;
+                maxbyDep = MaxConfezione;
                 break;
             case "CONFEZIONE B":
                 structura = CONFFEZIONE;
+                maxbyDep = MaxConfezione;
                 break;
             case "CONFEZIONE C":
                 structura = CONFFEZIONE;
+                maxbyDep = MaxConfezione;
                 break;
             case "AMMINISTRAZIONE":
                 structura = ADMINISTRAZIONE;
+                maxbyDep = MaxAdministrazione;
                 break;
         }
 
@@ -100,7 +114,7 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
         DataTable MaxMansione = new DataTable();
         using (SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT Linea,Mansione,Count(Mansione) AS Maxim FROM OrganigramaDepartamentListViewByDep where Departament = '" + Departament + "' and Linea Not like 'MA %' GROUP BY  Linea, Mansione", conn))
+            using (SqlCommand cmd = new SqlCommand(maxbyDep, conn))
             {
                 using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
