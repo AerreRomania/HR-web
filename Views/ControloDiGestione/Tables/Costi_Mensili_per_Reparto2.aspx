@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png">
 <link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png">
 <title>Onlyou</title>
-<!-- CSS  -->
+
 <link rel="stylesheet" href="../../css/font-awesome.min.css">
 <link rel="stylesheet" href="../../css/bootstrap.min.css">
 <link rel="stylesheet" href="../../css/animate.min.css">
@@ -29,7 +29,7 @@
 <script src="./js/jquery-2.1.0.min.js"></script>
 <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
 <script src="/Onlyou/new/js/jquery.dataTables.min.js"></script>
-<!-- CHART JS -->
+
 
 <script src="./js/chart.bundle.min.js""></script>
 
@@ -53,6 +53,10 @@
 
 	<style>
 
+	 .detailrow{
+		 margin-top:-50px;
+	 }
+
 	 #amendamento{
 		 float:right;
 	 }
@@ -69,16 +73,9 @@
 	border-collapse:collapse;
 	overflow-x:auto;
 	width:40%;
-	top:-700px;
+	margin-top:-12px;
 }
-/*#cinquepuntoquattros{
-	border:1px solid #D3D3D3;
-	border-right:1px solid #D3D3D3;
-	border-collapse:collapse;
-	overflow-x:auto;
-	width:40%;
-	float:right;
-}*/
+
 
 .col-md-8{
 	bottom:1000px;
@@ -91,8 +88,6 @@
 		margin-left:1000px;
 	
 	 }
-
-
 thead{
 	border-right:1px solid #D3D3D3;
 }
@@ -106,8 +101,6 @@ thead{
 	float:right;
 	margin-right:-42px;
 }
-
-
 
 	 #chButton{
 		 background-color:#6495ED;
@@ -131,23 +124,15 @@ thead{
 		float:left;
 		margin-left:70px;
 		color:#6495ED;
-	
 	}
 
-
-	 
 	</style>
-	
-
 
 	<div class="container">
 
 		<div class="">
-			
-
-
-		<div class="">
 		
+		<div class="">
 <div>
 	<section class="detail">
 		<div class="container-fluid">
@@ -156,7 +141,6 @@ thead{
 					<div class="col-sm-12">
 						<h1 id="tassi">Costi mensili per reparto</h1>
 
-					
 						<div style="display: inline-block; float: right;">
 							<b class="col-sm-12 knitting-title">Olimpias Knitting-anno 2020</b>
 						</div>
@@ -171,7 +155,7 @@ thead{
 	</br>
 
 					<div>
-	<section class="detail">
+	<section class="detailrow">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12">
@@ -237,8 +221,6 @@ thead{
 									
 								</select>
 							</section>
-
-
 					<section class="detail" id="load-data">
 
 						<div class="col-md-2">
@@ -250,9 +232,6 @@ thead{
 						<div class="col-md-2">
 						
 						</div>
-
-			
-
 														<div class="col-sm-12 form-group">
 							<div  class="col-sm-4 form-group">
 								<div  class="table-responsive">
@@ -300,10 +279,21 @@ thead{
 
 					</div>
 				</div>
-					
-					
+<thead>
+											<tr id="theady">
+														<input type="hidden" name="totalRow" value="65" />
+							<input type="hidden" name="totalColumn" value="6" />
+							<input type="hidden" name="table" value="cinquepuntoquattro" />
+							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
+						</form>
 
-
+					</div>
+				</div>
+		
+														<div class="col-sm-12 form-group">
+							<div  class="col-sm-4 form-group">
+								<div  class="table-responsive">
+									<table id="cambio"class="table table-bordered table-hover table-condensed version" <%--width="50%"--%>>
 										<thead>
 											<tr id="theady">
 														<input type="hidden" name="totalRow" value="65" />
@@ -315,11 +305,6 @@ thead{
 					</div>
 				</div>
 			
-					
-					
-
-
-
 														<div class="col-sm-12 form-group">
 							<div  class="col-sm-4 form-group">
 								<div  class="table-responsive">
@@ -334,29 +319,6 @@ thead{
 
 					</div>
 				</div>
-					
-					
-
-
-											
-														<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version" <%--width="50%"--%>>
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
-
-					</div>
-				</div>
-					
-					
-
-
 
 						<div class="col-sm-12 form-group">
 							<div  class="col-sm-4 form-group">
@@ -373,8 +335,6 @@ thead{
 					</div>
 				</div>
 				<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
-					
-					
 
 <div id="tess">
 <h1>TESSITURA</h1>
@@ -389,10 +349,10 @@ thead{
 		<th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:66px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
 		<th style="border-right: 1px solid #000000;font-weight:bold;font-size:15px;width:133px; width:66px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17 </th>
 		<th style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:15px;width:66px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">costi GG</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">costi GG</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
 		<th style="background-color:#90EE90; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.18</th>
 		
 											</tr>
@@ -405,7 +365,6 @@ thead{
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td>0</td>
 														
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>0</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -463,7 +422,6 @@ thead{
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td style="background-color:#90EE90;">0</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
-
 
 													<a href="/Onlyou/DeleteMonth?month=8&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -834,13 +792,8 @@ thead{
 									</table>
 							</br>
 
-
-								</div>
-								
-								
-							</div>
-
-
+				</div>
+				</div>
 
 						<div class="col-sm-12 form-group">
 							<div  class="col-sm-4 form-group">
@@ -858,8 +811,6 @@ thead{
 				</div>
 				<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
 					
-					
-
 <div id="tess">
 <h1>CONFEZIONE</h1>
 	</div>
@@ -874,10 +825,10 @@ thead{
 		<th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:66px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
 		<th style="border-right: 1px solid #000000;font-weight:bold;font-size:15px;width:133px; width:66px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17 </th>
 		<th style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:15px;width:66px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">costi GG</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">costi GG</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
 		<th style="background-color:#90EE90; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.18</th>
 		
 											</tr>
@@ -1334,11 +1285,8 @@ thead{
 
 
 								</div>
-								
-								
+						
 							</div>
-
-
 
 					<div class="col-sm-12 form-group">
 							<div  class="col-sm-4 form-group">
@@ -1355,9 +1303,7 @@ thead{
 					</div>
 				</div>
 				<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
-					
-					
-
+		
 <div id="tess">
 <h1>STIRO</h1>
 	</div>
@@ -1371,10 +1317,10 @@ thead{
 		<th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:66px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
 		<th style="border-right: 1px solid #000000;font-weight:bold;font-size:15px;width:133px; width:66px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17 </th>
 		<th style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:15px;width:66px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">costi GG</th>
-		<th style="background-color:#FFFFFF; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">costi GG</th>
+		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:133px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
 		<th style="background-color:#90EE90; font-weight:bold;font-size:15px;width:133px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.18</th>
 		
 											</tr>
@@ -1829,10 +1775,8 @@ thead{
 									</table>
 							</br>
 
-
 								</div>
-								
-								
+							
 							</div>
 							<div class="col-md-8">
 								<div class="col-md-12 form-group">
@@ -1857,7 +1801,8 @@ thead{
 	{
         document.getElementById("amendamento2").style.color="#f4f4f4";
 
-    }
+	}
+	
 	function showButton(n) {
 		//  alert(n);
 		if (n == '1') {
@@ -1873,9 +1818,6 @@ thead{
 
 	}
 </script>
-
-
-
 
 		</div>
 		<div class="">
