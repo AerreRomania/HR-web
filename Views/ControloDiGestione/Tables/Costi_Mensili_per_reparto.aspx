@@ -193,9 +193,9 @@
 					<th></th>
 					</br>
 					<th>TESSITURA</th>
+
 	<thead>
 	<tr>
-		
 		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-left: 1px solid #000000;padding-top:0px;width:67px;height:10px; font-weight:bold;font-size:15px;color:#f4f4f4;">Numero </br> Mesi</th>
 		<th style="border-right: 1px solid #000000;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;border-left:1px solid #000000;font-weight:bold;font-size:15px;width:67px;color:#FF0000;padding:0px auto 0px auto;"<%--color:red;--%> colspan="2">FATT.17 </th>
 		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-right: 1px solid #DCDCDC;width:67px;height:10px;color:#FF0000;  font-weight:bold;font-size:15px;"colspan="2">FATT.18</th>
@@ -204,294 +204,27 @@
 		<th style="background-color:#f4f4f4; border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">costi GG</th>
 		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">Ris. 17</th>
 		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">Ris. 18</th>
-
-											</tr>
-										
+</tr>			
 			</thead>
-			<%--<tbody id="seipuntocinque_tessitura">--%>
-
-<%--	<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">44</th>
-
-
-	</tr>--%>
-			<%--	<tr>
-			
-					<td></td>
-	
-					<td></td>
-	
-					<td onclick="setDataMulti(this,0,2,'_tessitura')"></td>
-				
-					<td onclick="setDataMulti(this,0,3,'_tessitura')"></td>
-			
-					<td onclick="setDataMulti(this,0,4,'_tessitura')"></td>
-				
-					<td onclick="setDataMulti(this,0,5,'_tessitura')"></td>
-				
-			<td></td>
-
-            <td></td>
-     
-            <td></td>
-
-	</tr>
-
+		
+				<thead>
 	<tr>
-
-					<td></td>
-	
-					<td></td>
-		
-					<td onclick="setDataMulti(this,1,2,'_tessitura')"></td>
-			
-					<td onclick="setDataMulti(this,1,3,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,1,4,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,1,5,'_tessitura')"></td>
-			
-			<td></td>
-
-            <td></td>
-       
-            <td></td>
-
-	</tr>
-
-	<tr>
-					<td></td>
-	
-					<td></td>
-		
-					<td onclick="setDataMulti(this,2,2,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,2,3,'_tessitura')"></td>
-
-					<td onclick="setDataMulti(this,2,4,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,2,5,'_tessitura')"></td>
-
-			<td></td>
-
-            <td></td>
-
-            <td></td>
-
-	</tr>
-
-	<tr>
-
-					<td></td>
-	
-					<td></td>
-
-					<td onclick="setDataMulti(this,3,2,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,3,3,'_tessitura')"></td>
-
-					<td onclick="setDataMulti(this,3,4,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,3,5,'_tessitura')"></td>
-	
-			<td></td>
-
-            <td></td>
-
-            <td></td>
-
-	</tr>
-
-	<tr>
-
-					<td></td>
-
-					<td></td>
-	
-					<td onclick="setDataMulti(this,4,2,'_tessitura')"></td>
-
-					<td onclick="setDataMulti(this,4,3,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,4,4,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,4,5,'_tessitura')"></td>
-		
-			<td></td>
-
-            <td></td>
- 
-            <td></td>
-  
-	</tr>
-
-	<tr>
-
-					<td></td>
-
-					<td></td>
-	
-					<td onclick="setDataMulti(this,5,2,'_tessitura')"></td>
-
-					<td onclick="setDataMulti(this,5,3,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,5,4,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,5,5,'_tessitura')"></td>
-
-			<td></td>
-
-            <td></td>
-      
-            <td></td>
-   
-	</tr>
-
-	<tr>
-
-					<td></td>
-
-					<td></td>
-
-					<td onclick="setDataMulti(this,6,2,'_tessitura')"></td>
-
-					<td onclick="setDataMulti(this,6,3,'_tessitura')"></td>
-
-					<td onclick="setDataMulti(this,6,4,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,6,5,'_tessitura')"></td>
-	
-			<td></td>
-
-            <td></td>
-      
-            <td></td>
-
-	</tr>
-
-	<tr>
-					<td></td>
-			
-					<td></td>
-	
-					<td onclick="setDataMulti(this,7,2,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,7,3,'_tessitura')"></td>
-				
-					<td onclick="setDataMulti(this,7,4,'_tessitura')"></td>
-			
-					<td onclick="setDataMulti(this,7,5,'_tessitura')"></td>
-				
-			<td></td>
-		
-            <td></td>
-        
-            <td></td>
-
-	</tr>
-
-	<tr>
-	
-					<td></td>
-		
-					<td></td>
-	
-					<td onclick="setDataMulti(this,8,2,'_tessitura')"></td>
-			
-					<td onclick="setDataMulti(this,8,3,'_tessitura')"></td>
-				
-					<td onclick="setDataMulti(this,8,4,'_tessitura')"></td>
-			
-					<td onclick="setDataMulti(this,8,5,'_tessitura')"></td>
-		
-			<td></td>
-	
-            <td></td>
- 
-            <td></td>
-
-	</tr>
-
-	<tr>
-	
-					<td></td>
-		
-					<td></td>
-	
-					<td onclick="setDataMulti(this,9,2,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,9,3,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,9,4,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,9,5,'_tessitura')"></td>
-		
-			<td></td>
-
-            <td></td>
-  
-            <td></td>
-        
-	</tr>
-
-	<tr>
-
-					<td></td>
-	
-					<td></td>
-
-					<td onclick="setDataMulti(this,10,2,'_tessitura')"></td>
-
-					<td onclick="setDataMulti(this,10,3,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,10,4,'_tessitura')"></td>
-		
-					<td onclick="setDataMulti(this,10,5,'_tessitura')"></td>
-		
-			<td></td>
-
-            <td></td>
-  
-            <td></td>
-
-	</tr>
-
-	<tr>
-
-					<td></td>
-
-					<td></td>
-
-					<td onclick="setDataMulti(this,11,2,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,11,3,'_tessitura')"></td>
-			
-					<td onclick="setDataMulti(this,11,4,'_tessitura')"></td>
-	
-					<td onclick="setDataMulti(this,11,5,'_tessitura')"></td>
-	
-			<td></td>
-
-            <td></td>
-       
-            <td></td>
-
-
-  
-	</tr>--%>
+		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-left: 1px solid #000000;padding-top:0px;width:67px;height:10px; font-weight:bold;font-size:15px;color:#f4f4f4;">Empty </br> Mesi</th>
+		<th style="border-right: 1px solid #000000;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;border-left:1px solid #000000;font-weight:bold;font-size:15px;width:67px;color:#FF0000;padding:0px auto 0px auto;"<%--color:red;--%> colspan="2">empty</th>
+		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-right: 1px solid #DCDCDC;width:67px;height:10px;color:#FF0000;  font-weight:bold;font-size:15px;"colspan="2">empty</th>
+		<th style="background-color:#f4f4f4; border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;font-weight:bold;font-size:15px;width:67px; height:10px;border-right: 1px solid #000000;" colspan="2">empty</th>
+		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px; height:10px;border-right: 1px solid #000000;" colspan="2">empty</th>
+		<th style="background-color:#f4f4f4; border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">empty</th>
+		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">empty</th>
+		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">empty</th>
+</tr>			
+			</thead>
 
 	<tbody>
 
 			<tr>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;"></th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-	<%--	<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>--%>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
@@ -503,7 +236,6 @@
 			<tr>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<%--<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>--%>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
@@ -515,7 +247,6 @@
 			<tr>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<%--<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>--%>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
@@ -527,7 +258,6 @@
 			<tr>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	<%--	<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>--%>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
 		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
