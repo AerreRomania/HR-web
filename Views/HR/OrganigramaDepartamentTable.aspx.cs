@@ -434,10 +434,22 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
         {
            
             CapoSqList.RemoveAll(RemoveEmpty);
-            capo1.Text = CapoSqList[0];
-            capo2.Text = CapoSqList[1];
-            capo3.Text = CapoSqList[2];
-        }
+            if (CapoSqList.Count == 0) return;
+            if (CapoSqList.Count == 3)
+            {
+                capo1.Text = CapoSqList[0];
+                capo2.Text = CapoSqList[1];
+                capo3.Text = CapoSqList[2];
+            }
+            if(CapoSqList.Count==2){
+                capo1.Text = CapoSqList[0];
+                capo2.Text = CapoSqList[1];
+            }
+            if(CapoSqList.Count == 1){
+                capo1.Text = CapoSqList[0];
+            }
+            
+          }
        
     }
     private static bool RemoveEmpty(String s)
