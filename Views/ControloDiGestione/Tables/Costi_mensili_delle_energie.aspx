@@ -2,10 +2,8 @@
 
 <!DOCTYPE html>
 
-
 <html lang="it">
 <head>
-
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="utf-8">
 <meta http-equiv="pragma" content="no-cache">
@@ -1037,7 +1035,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td s>g</td>
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1060,7 +1057,6 @@ thead{
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">g</td>
-													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
@@ -1082,7 +1078,6 @@ thead{
 													<td style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
-													
 													<td style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
 													<td  style="border-top:1px solid #000000;"></td>
@@ -1104,7 +1099,6 @@ thead{
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">222</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">233</td>
-													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
@@ -1136,12 +1130,8 @@ thead{
 										</tbody>
 									</table>
 							</br>
-
-
 								</div>
-						
 							</div>
-
 					<div class="col-sm-12 form-group">
 							<div  class="col-sm-4 form-group">
 								<div  class="table-responsive">
@@ -1176,14 +1166,10 @@ thead{
 		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">c.mc16</th>
 		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">c.mc 17</th>
 		<th style="background-color:#90EE90; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Delta %</th>
-		
-											</tr>
-					
-										</thead>
-					
-										<tbody>
-										
-												<tr>
+	</tr>
+	</thead>
+<tbody>
+<tr>
 													<td  style="border-right: 1px solid #000000;">hhhGEN</td>
 													<td>d</td>
 														
@@ -1204,9 +1190,6 @@ thead{
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
-
-
-										
 												<tr>
 													<td style="border-right: 1px solid #000000;">hhhGEN</td>
 													<td>d</td>
@@ -1236,7 +1219,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1259,7 +1241,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1281,7 +1262,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1303,7 +1283,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1325,7 +1304,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1347,7 +1325,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1369,7 +1346,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1391,7 +1367,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1413,7 +1388,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>g</td>
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1435,7 +1409,6 @@ thead{
 													<td style="border-bottom:1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;">g</td>
-													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
@@ -1457,7 +1430,6 @@ thead{
 													<td>f</td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td s>g</td>
-													
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -1480,7 +1452,6 @@ thead{
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">g</td>
-													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
@@ -1502,7 +1473,6 @@ thead{
 													<td style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
-													
 													<td style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
 													<td  style="border-top:1px solid #000000;"></td>
@@ -1524,7 +1494,6 @@ thead{
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">222</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">233</td>
-													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
@@ -1579,7 +1548,7 @@ thead{
 </div>
 
 <script>
-
+	function 
     {
         document.getElementById("amendamento2").style.color = "#f4f4f4";
 
