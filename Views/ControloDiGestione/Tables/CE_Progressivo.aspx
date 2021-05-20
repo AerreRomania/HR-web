@@ -30,33 +30,21 @@
 <script src="./js/jquery-2.1.0.min.js"></script>
 <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
 <script src="./new/js/jquery.dataTables.min.js"></script>
-<!-- CHART JS -->
-
 <script src="./js/chart.bundle.min.js"></script>
-<!-- CHART JS END -->
-<!-- CORE -->
 <script src="./js/angular.min.js"></script>
-<!-- CORE END -->
-<!-- THIRD PARTY MODULES -->
 <script src="./js/angular-ui-router.min.js"></script>
 <script src="./js/angular-animate.min.js"></script>
 <script src="./js/ui-bootstrap-tpls-2.2.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
-
-<!-- THIRD PARTY MODULES END -->
-<!-- MAIN APP -->
 <script src="./dashboard/js/app.js"></script>
-<!-- MAIN APP END -->
-<!-- MODULES -->
+
 
 <script src="./dashboard/modules/treasure-plan-ctrl.js"></script>
 <script src="./dashboard/modules/modal/share/modal-share-ctrl.js"></script>
 <script src="./dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
-<!-- MODULES END -->
 </head>
 <body style="background-color:#f4f4f4">
-	<!-- LEFT NAVIGATION -->
+	
 
 
 	<div class="container">

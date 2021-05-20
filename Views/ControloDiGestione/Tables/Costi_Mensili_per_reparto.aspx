@@ -1,8 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Costi_Mensili_per_reparto.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Costi_Mensili_per_reparto" %>
 
 <!DOCTYPE html>
-
-
 <html lang="it">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -28,91 +26,51 @@
 <script src="/Onlyou/js/jquery-2.1.0.min.js"></script>
 <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
 <script src="/Onlyou/new/js/jquery.dataTables.min.js"></script>
-<!-- CHART JS -->
-
 <script src="/Onlyou/js/chart.bundle.min.js"></script>
-<!-- CHART JS END -->
-<!-- CORE -->
 <script src="/Onlyou/js/angular.min.js"></script>
-<!-- CORE END -->
-<!-- THIRD PARTY MODULES -->
 <script src="/Onlyou/js/angular-ui-router.min.js"></script>
 <script src="/Onlyou/js/angular-animate.min.js"></script>
 <script src="/Onlyou/js/ui-bootstrap-tpls-2.2.0.min.js"></script>
 <script src="/Onlyou/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
-
-<!-- THIRD PARTY MODULES END -->
-<!-- MAIN APP -->
 <script src="/Onlyou/dashboard/js/app.js"></script>
-<!-- MAIN APP END -->
-<!-- MODULES -->
-
 <script src="/Onlyou/dashboard/modules/treasure-plan-ctrl.js"></script>
 <script src="/Onlyou/dashboard/modules/modal/share/modal-share-ctrl.js"></script>
 <script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
-<!-- MODULES END -->
 </head>
+
 <body bgcolor="f4f4f4">
-	<!-- LEFT NAVIGATION -->
 
+    <div id="title">
+    <h2> Costi mensili per reparto </h2>
+        </div>
 
-	<div class="container">
-
-		<div class="">
-			
-
-<!-- Left navigation -->
-
-<script>
-
-    function openClose() {
-
-        var e = document.getElementById('left-navi');
-        if (e.className == 'ng-scope hover') {
-            e.className = 'ng-scope';
-        } else {
-            e.className = 'ng-scope hover';
-        }
-    }
-
-    var $li = $('#menu li a').click(function () {
-        $li.removeClass('active');
-        $(this).addClass('active');
-    });
-
-</script>
-
-		<div class="">
+    <div style="display: inline-block; float: right;">
+							<b class="col-sm-12 knitting-title">Olimpias Knitting-anno 2020</b>
+						</div>
+					</div>
+					</br>
 	
-<!-- SETTING -->
-
-<!-- END SETTING -->
-
-<div>
-	<section class="detail">
+    		 <div align="right">
+	<button onclick="window.print()">
+		<img id="top-icons" onclick="printData();" src="/Images/C.Gestione/dockicon/print.svg" alt="Print" />
+	</button>
+	</div>
+			<div>
+	<section class="detailrow">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12">
-					<h1>Costi mensili per reparto</h1>
-					</br>
-					
-					<div style="display: inline-block; float: right;">
-						<b class="col-sm-12 knitting-title">Olimpias Knitting - anno <span id="yearspan">2018</span></b>
-					</div>
-					<div class="col-sm-5" style="display: inline-block; float: right;">
-						<form action="/Onlyou/GetSetData" method="GET">
-							<section>
-								Mese
+
+							Mese 
 								<select id="month" name="month" onchange="this.form.submit()">
 									
 										<option value="1" >1</option>
 									
 										<option value="2" >2</option>
 									
-										<option value="3" selected>3</option>
+										<option value="3" >3</option>
 									
-										<option value="4" >4</option>
+										<option value="4">4</option>
 									
 										<option value="5" >5</option>
 									
@@ -120,7 +78,7 @@
 									
 										<option value="7" >7</option>
 									
-										<option value="8" >8</option>
+										<option value="8"selected >8</option>
 									
 										<option value="9" >9</option>
 									
@@ -136,11 +94,11 @@
 									
 										<option value="2017" >2017</option>
 									
-										<option value="2018" selected>2018</option>
+										<option value="2018" >2018</option>
 									
 										<option value="2019" >2019</option>
 									
-										<option value="2020" >2020</option>
+										<option value="2020"selected >2020</option>
 									
 										<option value="2021" >2021</option>
 									
@@ -164,3846 +122,1127 @@
 									
 								</select>
 							</section>
-							<input type="hidden" name="totalRow" value="80" />
-							<input type="hidden" name="totalColumn" value="9" />
-							<input type="hidden" name="table" value="seipuntocinque" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=seipuntocinque" />
-						</form>
-					</div>
-				</div>
-				<div id="">
-					
-
-
+					<section class="detail" id="load-data">
+                        </div>
+		
+		
+				
+				
 <style>
-.seipuntocinque th, td {
-	white-space: nowrap;
-	overflow: hidden;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
+
+    .col-sm-12{
+        text-align:center;
+        margin-top:-20px;
+        margin-bottom:20px;
+    }
+
+    #title{
+        text-align:center;
+    }
+* {
+  box-sizing: border-box;
+}
+
+/*.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}*/
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 1px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height:1px;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+h3{
+    color:#6495ED;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 </style>
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table id="center;" class="table table-bordered table-hover table-condensed version seipuntocinque">
-			
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					</br>
-					<th>TESSITURA</th>
+</head>
+<body>
 
-	<thead>
-	<tr>
-		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-left: 1px solid #000000;padding-top:0px;width:67px;height:10px; font-weight:bold;font-size:15px;color:#f4f4f4;">Numero </br> Mesi</th>
-		<th style="border-right: 1px solid #000000;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;border-left:1px solid #000000;font-weight:bold;font-size:15px;width:67px;color:#FF0000;padding:0px auto 0px auto;"<%--color:red;--%> colspan="2">FATT.17 </th>
-		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-right: 1px solid #DCDCDC;width:67px;height:10px;color:#FF0000;  font-weight:bold;font-size:15px;"colspan="2">FATT.18</th>
-		<th style="background-color:#f4f4f4; border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;font-weight:bold;font-size:15px;width:67px; height:10px;border-right: 1px solid #000000;" colspan="2">C 17</th>
-		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px; height:10px;border-right: 1px solid #000000;" colspan="2">C 18</th>
-		<th style="background-color:#f4f4f4; border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">costi GG</th>
-		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">Ris. 17</th>
-		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">Ris. 18</th>
-</tr>			
-			</thead>
-		
-				<thead>
-	<tr>
-		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-left: 1px solid #000000;padding-top:0px;width:67px;height:10px; font-weight:bold;font-size:15px;color:#f4f4f4;">Empty </br> Mesi</th>
-		<th style="border-right: 1px solid #000000;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;border-left:1px solid #000000;font-weight:bold;font-size:15px;width:67px;color:#FF0000;padding:0px auto 0px auto;"<%--color:red;--%> colspan="2">empty</th>
-		<th style="background-color: #f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; border-right: 1px solid #DCDCDC;width:67px;height:10px;color:#FF0000;  font-weight:bold;font-size:15px;"colspan="2">empty</th>
-		<th style="background-color:#f4f4f4; border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;font-weight:bold;font-size:15px;width:67px; height:10px;border-right: 1px solid #000000;" colspan="2">empty</th>
-		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px; height:10px;border-right: 1px solid #000000;" colspan="2">empty</th>
-		<th style="background-color:#f4f4f4; border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">empty</th>
-		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">empty</th>
-		<th style="background-color:#f4f4f4;border-top:1px solid #D3D3D3;border-bottom:1px solid #D3D3D3; font-weight:bold;font-size:15px;width:67px;height:10px; border-right: 1px solid #000000;" colspan="2">empty</th>
-</tr>			
-			</thead>
+<div class="row">
+  <div class="column">
+    <table>
+        <h3>TESSITURA</h3>
+      <tr>
+        <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:66px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
+        <th style="border-right: 1px solid #000000;font-weight:bold;font-size:13px;width:46px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17</th>
+        <th  style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:13px;width:46px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;"colspan="2" >costi GG</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
+        <th style="background-color:#90EE90; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.18</th>
+      </tr>
+      <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+      <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
 
-	<tbody>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
 
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;width:67px;">0</th>
-	</tr>
-
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	</tr>
-
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	</tr>
-
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	</tr>
-
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<%--<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>--%>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	</tr>
-
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	<%--	<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>--%>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	</tr>
-
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	<%--	<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>--%>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	</tr>
-
-			<tr>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;"></th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<%--<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>--%>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-		<th   style="border-right:1px solid #D3D3D3;background-color: #f4f4f4;">0</th>
-	</tr>
-											
-<%--												<tr>
-													<td  style="border-right:1px solid #D3D3D3;"></td>
-													<td>0</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2018</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-
-												
-													
-													<td  style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=10&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-										
-												<tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style=" background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        	<tr>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>0</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2018</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td  style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=9&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>2</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2018</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
+													<td>0</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">0</td>
 													
-													<td  style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=8&year=2017">
+													<td style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<td style="background-color:#90EE90;">0</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;""></td>
+													<td>0.0</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td>0</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">0</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													
+													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
-											
+
 												<tr>
-													<td style="border-right: 1px solid SILVER;">43</td>
-													<td>1</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2018</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
 													
-													<td  style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=7&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">38</td>
-													<td>10</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td  style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=6&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">37</td>
-													<td>9</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"</td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td  style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=5&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">35</td>
-													<td>8</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=4&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">34</td>
-													<td>7</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=3&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">32</td>
-													<td>6</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">31</td>
-													<td>5</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=1&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">29</td>
-													<td>4</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=4&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">26</td>
-													<td>3</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=3&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">25</td>
-													<td>2</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color: #D3D3D3;"></td>
-													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">%</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
-												<tr>
-													<td style="border-right: 1px solid SILVER;">24</td>
-													<td>1</td>
-													<td></td>
-													<td style="background-color: #D3D3D3;">2017</td>
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<td style="background-color:#D3D3D3;"></td>
+											<tr>
+													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style=";border-top:1px solid #000000;color:#f4f4f4;">0</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;">fatturato</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
 													
-													<td style="background-color: #D3D3D3;border-right: 1px solid SILVER;"></td>
-													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;">costi</td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;border-right:1px solid #f4f4f4;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
-												</tr>--%>
-											
-										</tbody>
-									</table>
+												</tr>
 
-								</div>
-								
-								
-							</div>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
+											<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Media mese</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+												<tr>
+													<td style="border-left: 1px solid #f4f4f4;border-top:1px solid #000000;font-size:12px;">Scostamenti con a.p.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">Fatturato</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90;">maggior fatturato</td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; border-right:1px solid #f4f4f4;"></td>
+													
+													<tr>
+													<td style="font-size:12px;border-left:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">Costi</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+														<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; ">maggior costi </td>
+													<td  style="border-bottom:1px solid #90EE90;color:red;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+														<tr>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;">TOTALE</td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90; ">Differenza con a.p POSITIVA </td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+    </table>
+  </div>
+    </br>
+    </br>
+    </br>
+    </br>
+  <div class="column">
+    <table>
+      <tr>
+        <th> l</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>l</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>l</td>
+      </tr>
+     
+
+    </table>
+  </div>
+
     
-    </tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
+    <div class="column">
+    <table>
+      <tr>
+        <th> 2t</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>e</th>
+        <th>2</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>e</td>
+        <td>2</td>
+      </tr>
+     
+
+    </table>
+  </div>
+</div>
+
+    </br>
+    </br>
+
+   <div class="row">
+  <div class="column">
+    <table>
+        <h3>CONFEZZIONE</h3>
+      <tr>
+        <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:46px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
+        <th style="border-right: 1px solid #000000;font-weight:bold;font-size:13px;width:46px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17</th>
+        <th  style=" border-right: 1px solid #000000;width:46px;  font-weight:bold;font-size:13px;width:56px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;"colspan="2" >costi GG</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
+        <th style="background-color:#90EE90; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.18</th>
+      </tr>
+     <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+      <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+    </table>
+  </div>
+
+
+       </br>
+    </br>
+    </br>
+    </br>
+  <div class="column">
+    <table>
+      <tr>
+        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"> </th>
+        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th style="border-bottom:1px solid #d3d3d3;"></th>
+      </tr>
+      <tr>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+      </tr>
+     
+
+    </table>
+  </div>
+    <div class="column">
+    <table>
+      <tr>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;"></th>
+      </tr>
+      <tr>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td></td>
+      </tr>
+     
+
+    </table>
+  </div>
+</div>
+
+    </br>
+    </br>
+
+   <div class="row">
+  <div class="column">
+    <table>
+
+        <h3>STIRO</h3
+      <tr>
+        <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:66px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
+        <th style="border-right: 1px solid #000000;font-weight:bold;font-size:13px;width:56px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17</th>
+        <th  style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:13px;width:56px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;"colspan="2" >costi GG</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
+        <th style="background-color:#90EE90; font-weight:bold;font-size:13px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.18</th>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+      <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+    </table>
+  </div>
+       </br>
+       </br>
+       </br>
+       </br>
+     <div class="column">
+    <table>
+     <tr>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;"></th>
+      </tr>
+      <tr>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td></td>
+      </tr>
+
+    </table>
+  </div>
+       </br>
+       </br>
+       </br>
     
-    
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-    
-    </tr>
-
-		</table>
-	</div>
-	<div class="col-md-7">
-		<div>
-			<canvas id="chart_div_tessitura_costi" width="100%" height="20%"></canvas>
-		</div>
-		<div>
-			<canvas id="chart_div_tessitura_ricavi" width="100%" height="20%"></canvas>
-		</div>
-		<!-- 		<div style="width: 100%;" id="chart_div_tessitura_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_tessitura_ricavi"></div> -->
-	</div>
+    <div class="column">
+    <table>
+     <tr>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:1px solid #d3d3d3;"></th>
+      </tr>
+      <tr>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td  style="border-right:1px solid #d3d3d3;"></td>
+        <td style="border-right:1px solid #d3d3d3;"></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 
 
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table class="table table-bordered table-hover table-condensed version seipuntocinque">
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>CONFEZIONE</th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th></th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;"></th>
-					<th style="white-space: nowrap; overflow: hidden; padding-left: 5px; padding-right: 5px;">FATT. 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">FATT. 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">costi GG</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 18</th>
-				</tr>
-			</thead>
-			<tbody id="seipuntocinque_confezione">
-				
-
-
-
-
-
-	<%--<tr>
+</body>
+</html>
 		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>--%>
-
-<%--<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td>fatturato</td>
-	<td></td>
-	<td>costi</td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>--%>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-
-			</tbody>
-		</table>
-	</div>
-	<div class="col-md-7">
-		<div>
-			<canvas id="chart_div_confezione_costi" width="100%" height="20%"></canvas>
-		</div>
-		<div>
-			<canvas id="chart_div_confezione_ricavi" width="100%" height="20%"></canvas>
-		</div>
-		<!-- 		<div style="width: 100%;" id="chart_div_confezione_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_confezione_ricavi"></div> -->
-	</div>
-</div>
-
-
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table class="table table-bordered table-hover table-condensed version seipuntocinque">
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>STIRO</th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th></th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;"></th>
-					<th style="white-space: nowrap; overflow: hidden; padding-left: 5px; padding-right: 5px;">FATT. 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">FATT. 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">costi GG</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 18</th>
-				</tr>
-			</thead>
-			<tbody id="seipuntocinque_stiro">
-				
-
-
-
-
-
-<%--	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>--%>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td>fatturato</td>
-	<td></td>
-	<td>costi</td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-
-			</tbody>
-		</table>
-	</div>
-	<div class="col-md-7">
-		<canvas id="chart_div_stiro_costi" width="100%" height="20%"></canvas>
-		<canvas id="chart_div_stiro_ricavi" width="100%" height="20%"></canvas>
-		<!-- 		<div style="width: 100%;" id="chart_div_stiro_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_stiro_ricavi"></div> -->
-	</div>
-</div>
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table class="table table-bordered table-hover table-condensed version seipuntocinque">
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>TOTALE REPARTI</th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th></th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;"></th>
-					<th style="white-space: nowrap; overflow: hidden; padding-left: 5px; padding-right: 5px; width: 12.5%;">FATT. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">FATT. 18</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">C 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">C 18</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">costi GG</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 18</th>
-				</tr>
-			</thead>
-			<tbody id="seipuntocinque_generale">
-				
-
-
-
-
-
-	<%--<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>--%>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td>fatturato</td>
-	<td></td>
-	<td>costi</td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-
-			</tbody>
-		</table>
-	</div>
-	<div class="col-md-7">
-		<canvas id="chart_div_generale_costi" width="100%" height="20%"></canvas>
-		<canvas id="chart_div_generale_ricavi" width="100%" height="20%"></canvas>
-		<!-- 		<div style="width: 100%;" id="chart_div_generale_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_generale_ricavi"></div> -->
-	</div>
-</div>
-</div>
 <script>
+
+    {
+        document.getElementById("top-icons").style.backgroundColor = "indianred";
+    }
     function getGraph() {
         var resTC = [];
         var resCC = [];
@@ -4231,19 +1470,19 @@
                 valuta.innerHTML = 'RSD';
             }
             xhr.send('week=' + startWeek + '&week_number=' + weekNumber + '&change=' + change);
-            // var table = document.getElementById("monthly-balance").innerHTML =
+         
         };
     </script>
 
 	<style>
 
-	 .col-sm-12{
+/*	 .col-sm-12{
 		 text-align:center;
 	 }
 
 	 #center{
 		 border-collapse:collapse;
-	 }
+	 }*/
 
 	
 
