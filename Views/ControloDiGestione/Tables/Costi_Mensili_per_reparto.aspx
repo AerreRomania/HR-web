@@ -45,9 +45,10 @@
         </div>
 
     <div style="display: inline-block; float: right;">
-							<b class="col-sm-12 knitting-title">Olimpias Knitting-anno 2020</b>
+							<b class="col-sm-12 knitting-title">Olimpias Knitting-anno 2019</b>
 						</div>
 					</div>
+					</br>
 					</br>
 	
     		 <div align="right">
@@ -130,6 +131,27 @@
 				
 <style>
 
+    #lastcolumn{
+        margin-left:-15px;
+    }
+
+   #secondconfezione{
+      margin-top:-60px;
+    }
+
+   #thirdconfezione{
+       margin-top:-130px;
+   }
+  
+
+    #csscolumn{
+        margin-left:-330px;
+    }
+
+    #firstcolumn{
+        margin-left:-20px;
+    }
+
     .col-sm-12{
         text-align:center;
         margin-top:-20px;
@@ -143,15 +165,15 @@
   box-sizing: border-box;
 }
 
-/*.row {
-  margin-left:-5px;
-  margin-right:-5px;
-}*/
+.row {
+  margin-left:35px;
+  margin-right:55px;
+}
   
 .column {
   float: left;
   width: 50%;
-  padding: 1px;
+  
 }
 
 .row::after {
@@ -163,14 +185,14 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  line-height:1px;
+  line-height:0px;
   width: 100%;
   border: 1px solid #ddd;
 }
 
 th, td {
   text-align: center;
-  padding: 16px;
+  padding: 8px;
 }
 
 tr:nth-child(even) {
@@ -179,6 +201,20 @@ tr:nth-child(even) {
 
 h3{
     color:#6495ED;
+}
+
+#tessiturax{
+    margin-left:-38px;
+    width:100px;
+}
+
+#tessituray{
+    margin-left:-70px;
+}
+
+#tessituraZ{
+    margin-left:-70px;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -192,13 +228,13 @@ h3{
 
 <div class="row">
   <div class="column">
-    <table>
+    <table id="tessiturax">
         <h3>TESSITURA</h3>
       <tr>
-        <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:66px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
+        <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:46px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
         <th style="border-right: 1px solid #000000;font-weight:bold;font-size:13px;width:46px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17</th>
         <th  style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:13px;width:46px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
-        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;"colspan="2" >costi GG</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
@@ -206,7 +242,7 @@ h3{
       </tr>
       <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
-        <td>0</td>
+        <td style="font-size:15px;">0</td>
         <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
         <td>0</td>
         <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -428,22 +464,22 @@ h3{
           <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
         	<tr>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>0</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>0</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">0</td>
+													<td style="border-right: 1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="background-color:#90EE90;border-top:1px solid #000000;">0</td>
 													
-													<td style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
-													<td style="background-color:#90EE90;">0</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;""></td>
-													<td>0.0</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>0</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">0</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<td style="border-right: 1px solid #000000;background-color:#90EE90;border-top:1px solid #000000;"></td>
+													<td style="background-color:#90EE90;border-top:1px solid #000000;">0</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;">0</td>
+													<td  style="border-right: 1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="background-color:#90EE90;border-top:1px solid #000000;">0</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-top:1px solid #000000;"></td>
 													
 													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -461,7 +497,7 @@ h3{
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">%</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
@@ -476,12 +512,12 @@ h3{
 													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style=";border-top:1px solid #000000;color:#f4f4f4;">0</td>
 													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;">fatturato</td>
+													<td style="border-top:1px solid #000000;font-size:12px;">fatturato</td>
 													<td style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
 													
 													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;">costi</td>
+													<td style="border-top:1px solid #000000;font-size:12px;">costi</td>
 													<td  style="border-top:1px solid #000000;"></td>
 													<td style="border-top:1px solid #000000;"></td>
 													<td  style="border-top:1px solid #000000;"></td>
@@ -512,18 +548,18 @@ h3{
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 												<tr>
-													<td style="border-left: 1px solid #f4f4f4;border-top:1px solid #000000;font-size:12px;">Scostamenti con a.p.</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">Fatturato</td>
+													<td style="border-left: 1px solid #f4f4f4;border-top:1px solid #000000;font-size:12px;">Scostamenti </td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">con</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;;">a.p.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Fatturato</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;background-color:#90EE90;">maggior fatturato</td>
-													<td  style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90;font-size:12px;">maggior </td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; font-size:12px;">fatturato</td>
 													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
 													<td  style="border-top:1px solid #000000;background-color:#90EE90; "></td>
 													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
@@ -533,15 +569,15 @@ h3{
 													<td style="font-size:12px;border-left:1px solid #f4f4f4;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">Costi</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Costi</td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													
 														<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
 													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
-													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; ">maggior costi </td>
-													<td  style="border-bottom:1px solid #90EE90;color:red;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">maggior </td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">costi</td>
 													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
 													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
 													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
@@ -550,16 +586,16 @@ h3{
 													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
 													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
 													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
-													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;">TOTALE</td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;font-size:11px;">TOTALE</td>
 													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
 													
 													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;">0</td>
 													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
-													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90; ">Differenza con a.p POSITIVA </td>
-													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90; "></td>
-													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;">Differenza </td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;"> con a.p</td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90;color:red;font-size:11px;">POSITIVA</td>
 													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
 													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
 													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
@@ -572,75 +608,114 @@ h3{
     </br>
     </br>
     </br>
-    </br>
-  <div class="column">
-    <table>
-      <tr>
-        <th> l</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>l</th>
+
+  <div<%-- style="width:40%;float:right;"--%> class="column">
+     <div class="column">
+         </br>
+       
+    <table id="firstcolumn">
+      <h5> TESSITURA-andamento costi 2018/2019</h5>
+     <tr>
+
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>l</td>
+        <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
      
 
     </table>
   </div>
-
-    
     <div class="column">
-    <table>
-      <tr>
-        <th> 2t</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>e</th>
-        <th>2</th>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>e</td>
-        <td>2</td>
-      </tr>
-     
+    <table id="csscolumn" >
 
+       <tr>
+    
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:27px;padding-right:27px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:27px;padding-right:27px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:27px;padding-right:27px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
+      </tr>
+      </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+  
+        <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:27px;padding-right:27px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:27px;padding-right:27px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:27px;padding-right:27px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
+      </tr>
     </table>
   </div>
 </div>
 
     </br>
     </br>
+    </br>
+
 
    <div class="row">
   <div class="column">
-    <table>
-        <h3>CONFEZZIONE</h3>
+    <table id="tessituray">
+        <h3>CONFEZIONE</h3>
       <tr>
         <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:46px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
         <th style="border-right: 1px solid #000000;font-weight:bold;font-size:13px;width:46px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17</th>
         <th  style=" border-right: 1px solid #000000;width:46px;  font-weight:bold;font-size:13px;width:56px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
-        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;"colspan="2" >costi GG</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
@@ -835,40 +910,135 @@ h3{
       </tr>
 
          <tr>
-        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
-        <td>0</td>
-        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
-        <td>0</td>
-        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
-        <td>0</td>
-        <td></td>
-          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
-           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
-          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td  style="background-color:#90EE90;">0</td>
-          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-top:1px solid #000000;border-bottom:1px solid #000000;"></td>
+        <td style="border-top:1px solid #000000;border-bottom:1px solid #000000;">0</td>
+        <td  style="background-color: #f4f4f4; border-bottom:1px solid #000000;border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-top:1px solid #000000;"></td>
+        <td style="border-top:1px solid #000000;border-bottom:1px solid #000000;">0</td>
+        <td  style="background-color: #f4f4f4; border-bottom:1px solid #000000;border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-top:1px solid #000000;"></td>
+        <td style="border-top:1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;">0</td>
+        <td style="border-top:1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;"></td>
+          <td  style="background-color: #90EE90;border-bottom:1px solid #000000;border-left:1px solid black;width:66px;font-size:15px;border-top:1px solid #000000;">0</td>
+           <td  style="background-color: #90EE90; border-bottom:1px solid #000000;border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-top:1px solid #000000;"></td>
+          <td  style="background-color: #f4f4f4;border-bottom:1px solid #000000;width:66px;font-size:15px;border-top:1px solid #000000;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-bottom:1px solid #000000;border-right: 1px solid #000000;width:66px;font-size:15px;border-top:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td style="border-top:1px solid #000000;border-bottom:1px solid #000000;">0</td>
+          <td  style="background-color: #f4f4f4; border-bottom:1px solid #000000;border-right: 1px solid #000000;width:66px;font-size:15px;border-top:1px solid #000000;"></td>
+          <td  style="background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+          <td   style="background-color:#90EE90;border-bottom:1px solid #000000; border-right: 1px solid #000000;width:66px;font-size:15px;border-top:1px solid #000000;"></td>
       </tr>
 
          <tr>
-        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
         <td>0</td>
-        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
         <td>0</td>
-        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
         <td>0</td>
         <td></td>
-          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
-           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
-          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
           <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
           <td  style="background-color:#90EE90;">0</td>
-          <td  style="background-color:#90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
       </tr>
+        <tr>
+													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style=";border-top:1px solid #000000;color:#f4f4f4;">0</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;font-size:12px;">fatturato</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;font-size:12px;">costi</td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;border-right:1px solid #f4f4f4;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+											<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Media mese</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+												<tr>
+													<td style="border-left: 1px solid #f4f4f4;border-top:1px solid #000000;font-size:12px;">Scostamenti </td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">con</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;;">a.p.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Fatturato</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90;font-size:12px;">maggior </td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; font-size:12px;">fatturato</td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; border-right:1px solid #f4f4f4;"></td>
+													
+													<tr>
+													<td style="font-size:12px;border-left:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Costi</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+														<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">maggior </td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">costi</td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+														<tr>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;font-size:11px;">TOTALE</td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;">Differenza </td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;"> con a.p</td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90;color:red;font-size:11px;">POSITIVA</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
     </table>
   </div>
 
@@ -877,27 +1047,44 @@ h3{
     </br>
     </br>
     </br>
+   
   <div class="column">
     <table>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+              <div id="secondconfezione">
+      <h5>CONFEZIONE-andamento costi 2018/2019</h5>
+          </div>
       <tr>
-        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"> </th>
-        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th style="border-bottom:1px solid #d3d3d3;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
-      <tr>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
+    <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
      
 
@@ -905,25 +1092,46 @@ h3{
   </div>
     <div class="column">
     <table>
-      <tr>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;"></th>
+       
+  <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
-      <tr>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td></td>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        
+        
+      
+       
+       <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
      
 
@@ -936,14 +1144,14 @@ h3{
 
    <div class="row">
   <div class="column">
-    <table>
+    <table id="tessituraZ">
 
         <h3>STIRO</h3
       <tr>
         <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:66px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
         <th style="border-right: 1px solid #000000;font-weight:bold;font-size:13px;width:56px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17</th>
         <th  style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:13px;width:56px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
-        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 17</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:66px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;"colspan="2" >costi GG</th>
         <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:66px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
@@ -963,8 +1171,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
        <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -980,8 +1188,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
       <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -997,8 +1205,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
           <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1014,8 +1222,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
         <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1031,8 +1239,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
          <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1048,8 +1256,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
          <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1065,8 +1273,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
         <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1082,8 +1290,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
           <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1099,8 +1307,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
        <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1116,8 +1324,8 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
           <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1133,11 +1341,245 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
-          <td>0</td>
-          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td style="background-color: #90EE90;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;border-bottom:1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
 
          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+        <td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td  style="background-color: #f4f4f4;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td style="background-color: #90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+          <td  style="background-color: #90EE90; border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;width:66px;font-size:15px;"></td>
+      </tr>
+
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style=";border-top:1px solid #000000;color:#f4f4f4;">0</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;font-size:12px;">fatturato</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;font-size:12px;">costi</td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;border-right:1px solid #f4f4f4;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+											<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Media mese</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+												<tr>
+													<td style="border-left: 1px solid #f4f4f4;border-top:1px solid #000000;font-size:12px;">Scostamenti </td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">con</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;;">a.p.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Fatturato</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90;font-size:12px;">maggior </td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; font-size:12px;">fatturato</td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; border-right:1px solid #f4f4f4;"></td>
+													
+													<tr>
+													<td style="font-size:12px;border-left:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Costi</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+														<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">maggior </td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">costi</td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+														<tr>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;font-size:11px;">TOTALE</td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;">Differenza </td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;"> con a.p</td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90;color:red;font-size:11px;">POSITIVA</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+    </table>
+  </div>
+       </br>
+       </br>
+       </br>
+      
+     
+     <div class="column">
+    <table>
+        <h5>STIRO-andamento costi 2017/2018</h5>
+    <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
+      </tr>
+                
+
+     <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
+      </tr>
+
+    </table>
+  </div>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+       </br>
+        <div class="column">
+    <table>
+        <h5>STIRO-andamento ricavi 2017/2018</h5>
+       <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
+      </tr>
+      <tr>
+        <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
+      </tr>
+    </table>
+  </div>
+</div>
+    <div class="row">
+    <div class="column">
+    <table id="tessituraZ">
+        <h3>TOTALE REPARTI</h3>
+      <tr>
+        <th style="background-color: #f4f4f4; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:46px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
+        <th style="border-right: 1px solid #000000;font-weight:bold;font-size:13px;width:46px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">FATT.17</th>
+        <th  style=" border-right: 1px solid #000000;width:46px;  font-weight:bold;font-size:13px;width:56px;color:red;border-bottom:1px solid #D3D3D3;"colspan="2">FATT.18</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">C 28</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;"colspan="2" >costi GG</th>
+        <th style="background-color:#f4f4f4; font-weight:bold;font-size:13px;width:46px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.17</th>
+        <th style="background-color:#90EE90; font-weight:bold;font-size:13px; width:46px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Ris.18</th>
+      </tr>
+     <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
         <td>0</td>
         <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
@@ -1151,10 +1593,77 @@ h3{
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
           <td>0</td>
           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
-
+      <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
          <tr>
         <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
         <td>0</td>
@@ -1172,68 +1681,322 @@ h3{
           <td  style="background-color:#90EE90;">0</td>
           <td  style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
       </tr>
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+        <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td  style="background-color:#90EE90;border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+       <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+          <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;padding-top:20px;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;padding-top:20px;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;padding-top:20px;width:66px;font-size:15px;"></td>
+      </tr>
+
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+        <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td  style="background-color: #f4f4f4;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+          <td  style="background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+          <td   style="background-color:#90EE90; border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;width:66px;font-size:15px;"></td>
+      </tr>
+
+         <tr>
+        <td style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+        <td>0</td>
+        <td></td>
+          <td  style="background-color: #f4f4f4;border-left:1px solid black;width:66px;font-size:15px;">0</td>
+           <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px; font-weight:bold;font-size:15px;"></td>
+          <td  style="background-color: #f4f4f4;width:66px;font-size:15px;">0.0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
+          <td>0</td>
+          <td  style="background-color: #f4f4f4; border-right: 1px solid #000000;width:66px;font-size:15px;"></td>
+          <td  style="background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+          <td  style="background-color:#90EE90;border-right: 1px solid #000000;width:66px;font-size:15px;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+      </tr>
+        <tr>
+													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style=";border-top:1px solid #000000;color:#f4f4f4;">0</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;font-size:12px;">fatturato</td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													
+													<td style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;font-size:12px;">costi</td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;"></td>
+													<td  style="border-top:1px solid #000000;border-right:1px solid #f4f4f4;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+											<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Media mese</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+												<tr>
+													<td style="border-left: 1px solid #f4f4f4;border-top:1px solid #000000;font-size:12px;">Scostamenti </td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">con</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;;">a.p.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Fatturato</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0.0</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90;font-size:12px;">maggior </td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; font-size:12px;">fatturato</td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-top:1px solid #000000;background-color:#90EE90; border-right:1px solid #f4f4f4;"></td>
+													
+													<tr>
+													<td style="font-size:12px;border-left:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Costi</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													
+														<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">maggior </td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; font-size:12px;">costi</td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #90EE90;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #90EE90;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+														<tr>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td  style="border-right: 1px solid #f4f4f4;border-left:1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;font-size:11px;">TOTALE</td>
+													<td style="border-right: 1px solid #f4f4f4;border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;">0</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;"> </td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;">Differenza </td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;color:red;background-color:#90EE90;font-size:12px;"> con a.p</td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90;color:red;font-size:11px;">POSITIVA</td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;background-color:#90EE90; "></td>
+													<td  style="border-bottom:1px solid #f4f4f4;border-top:1px solid #000000;border-right:1px solid #f4f4f4;background-color:#90EE90; "></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
     </table>
   </div>
+
+
        </br>
-       </br>
-       </br>
-       </br>
-     <div class="column">
-    <table>
-     <tr>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;"></th>
-      </tr>
+    </br>
+    </br>
+    </br>
+   
+  <div class="column">
+    <table id="firstcolumn">
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+      
+              <div id="thirdconfezione">
+      <h5>GENERALE-andamento ricavi 2018/2019</h5>
+          </div>
       <tr>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td></td>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
+    <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
+      </tr>
+     
 
     </table>
   </div>
-       </br>
-       </br>
-       </br>
-    
     <div class="column">
-    <table>
-     <tr>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;"></th>
-        <th  style="border-bottom:1px solid #d3d3d3;"></th>
+    <table id="lastcolumn">
+    
+  <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
-      <tr>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td  style="border-right:1px solid #d3d3d3;"></td>
-        <td style="border-right:1px solid #d3d3d3;"></td>
-        <td></td>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+
+       <tr>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:180px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="border-bottom:2px solid #d3d3d3;border-right:1px solid #d3d3d3;width:280px;padding-top:15px ;padding-bottom:20px ;padding-left:30px;padding-right:30px;"></th>
+        <th  style="width:180px;border-bottom:2px solid #d3d3d3;padding-left:30px;padding-right:30px;"></th>
       </tr>
+     
+
     </table>
   </div>
 </div>
 
-
+    </br>
+    </br>
 
 </body>
 </html>
