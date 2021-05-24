@@ -54,7 +54,7 @@
 <script src="./dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 <!-- MODULES END -->
 </head>
-<body bgcolor="#f4f4f4">
+<body bgcolor="#F8F8FF">
 	<!-- LEFT NAVIGATION -->
 
 	<style>
@@ -120,130 +120,15 @@ thead{
 		text-align:center;
 	 }
 
-	
-	 
+
 	</style>
 	
-
-
 	<div class="container">
 
 		<div class="">
 			
-
-<!-- Left navigation -->
-
-<%--<script>
-
-function openClose(){
-	
-	var e = document.getElementById('left-navi');
-	if (e.className == 'ng-scope hover') {
-		e.className = 'ng-scope';
-	} else {
-		e.className = 'ng-scope hover';
-	}
-}
-
-var $li = $('#menu li a').click(function() {
-    $li.removeClass('active');
-    $(this).addClass('active');
-});
-
-</script>
-
-
-<div id = "left-navi" onmouseover = "openClose()" onmouseout = "openClose()">
-<nav class="main-nav">
-
-<div id = "menu">
-	<ul>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=main">
-				<img src="/Onlyou/dashboard/images/navicon/all.svg" alt="icon">
-				<span>Tutti</span>
-				<span class="pull-right">7</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=vendite_cat">
-				<img class="notification" src="/Onlyou/dashboard/images/miscicon/notify.svg" alt="icon">
-				<img src="/Onlyou/dashboard/images/navicon/sells.svg" alt="icon">
-				<span>Vendite</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=situazioni_economiche_cat">
-				<img class="notification" src="/Onlyou/dashboard/images/miscicon/notify.svg" alt="icon">
-				<img src="/Onlyou/dashboard/images/navicon/market.svg" alt="icon">
-				<span>Situazioni Economiche</span>
-				<span class="pull-right">6</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=costi_cat">
-				<img src="/Onlyou/dashboard/images/navicon/losses.svg" alt="icon">
-				<span>Costi</span>
-				<span class="pull-right">8</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=produzione_cat">
-				<img src="/Onlyou/dashboard/images/navicon/production.svg" alt="icon">
-				<span>Produzione</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=personale_cat">
-				<img src="/Onlyou/dashboard/images/navicon/human-res.svg" alt="icon">
-				<span>Personale</span>
-				<span class="pull-right">3</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=finanza_cat">
-				<img src="/Onlyou/dashboard/images/navicon/warehouse.svg" alt="icon">
-				<span>Finanza</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-				<li>
-			<a href="/Onlyou/new/index.jsp?m=varie_cat">
-				<img src="/Onlyou/dashboard/images/navicon/misc.svg" alt="icon">
-				<span>Varie</span>
-				<span class="pull-right">6</span>
-			</a>
-		</li>
-	</ul>
-	</div>
-</nav>
-<div class="search">
-	<form action="" role="form" method="GET">
-		<div class="form-group">
-			<input class="form-control" type="search" placeholder="Cerca">
-			<button class="search-button" type="submit">
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</button>
-		</div>
-	</form>
-</div>
-</div>--%>
-
-
-
-		<%--</div>--%>
 		<div class="">
-			
-
-
-
-
-
-
-
-
+		
 <div>
 	<section class="detail">
 		<div class="container-fluid">
@@ -665,53 +550,6 @@ function rgtForce() {
 
 </script>
 
-<%--<div id = "right-navi">
-<button type="button" class="right-toggle" onclick="rgtForce()">
-	<span class="bullet one"></span>
-	<span class="bullet two"></span>
-	<span class="bullet three"></span>
-</button>
-<div class="user">
-	<img src="/Onlyou/dashboard/images/user-demo.png" alt="icon">
-	<span>Carlo Alberto della Siega</span>
-	<a href="#" class="btn btn-wire">Logout</a>
-</div>
-<nav class="user-navi">
-	<ul>
-		<li>
-			<a href="#">Il mio profilo</a>
-		</li>
-		<li>
-			<a href="#">Impostazioni</a>
-		</li>
-		<li>
-			<a href="#">Contatta l'assistenza</a>
-		</li>
-		<li>
-			<a href="#">Preferenze</a>
-		</li>
-	</ul>
-</nav>
-<footer>--%>
-	<%--<small>© 2017 ONLYOU </small>
-	<nav class="footer-navi">
-		<ul>
-			<li>
-				<a href="#">Termini e Condizioni</a>
-			</li>
-			<li>
-				<a href="#">Policy</a>
-			</li>
-			<li>
-				<a href="#">Cookie</a>
-			</li>
-		</ul>
-	</nav>
-</footer>--%>
-<%--</div>
-		</div>
-	</div>--%>
-
 	<script>
 		var collection_prior = document.getElementsByClassName('prior');
 		for (var i = 0, len = collection_prior.length; i < len; i++) {
@@ -801,14 +639,4 @@ function rgtForce() {
 </body>
 </html>
 
-<%--<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>--%>
+

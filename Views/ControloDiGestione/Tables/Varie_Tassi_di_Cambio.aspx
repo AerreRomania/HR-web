@@ -53,7 +53,7 @@
 <script src="./dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 <!-- MODULES END -->
 </head>
-<body bgcolor="#f4f4f4">
+<body bgcolor="#F8F8FF">
 	<!-- LEFT NAVIGATION -->
 
 	<style>

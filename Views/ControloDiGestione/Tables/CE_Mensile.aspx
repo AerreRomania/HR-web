@@ -53,13 +53,15 @@
 <script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 <!-- MODULES END -->
 </head>
-<body>
+<body bgcolor="#F8F8FF">
 
 	
 
 	<style>
 
-	
+	#top-icons{
+		background-color:indianred;
+	}
 	 
 
 	 #fatturo,#valore,#consumi,#esterne,#lavorodiretto,#lavoroindiretto,#costiindustria,#costodelvenduto,#marginelordo,#indgenerale,#costicom,#speseg,#operativol,#leasing,#operativon,#ebit,#resercitio,#ires,#rnetto,#ebitda{
@@ -143,21 +145,27 @@
 					<div style="display: inline-block; float: right;">
 						<b class="col-sm-12 knitting-title">Olimpias Knitting - anno 2017</b>
 					</div>
+					</br>
+					</br>
+					
+						 <div align="right">
+	<button onclick="window.print()">
+		<img id="top-icons" onclick="printData();" src="/Images/C.Gestione/dockicon/print.svg" alt="Print" />
+	</button>
+	</div>
 					<div class="col-sm-5" style="display: inline-block; float: left;">
 						<form action="/Onlyou/montly-balance"
 							method="GET">
 							<section>
 								Anno <select id="year" name="year" onchange="this.form.submit()">
-									
 										<option value="2017" selected>2017</option>
-									
 										<option value="2018" >2018</option>
-									</br>
 								</select>
 							</section>
 						</form>
 					</div>
-					
+						</br>
+									</br>
 				</div>
 				</br>
 				<div class="col-sm-12">
@@ -170,26 +178,17 @@
 				<table id="collapse" class="table table-bordered table-hover table-condensed version" width="100%">			
 <thead>
 	<tr>
-		<!-- 		<th -->
-		<!-- 			style="border-top: 1px solid #ddd; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;"></th> -->
 		<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important">Cambio mese:</th>
 	
-		
 			<th style="padding: 0px; font-size: 10px;text-align:right; border-bottom: 1px solid black;border-left: none;border-right: none !important">0.0</th>
 
-		
-			<t<%--h style="padding: 0px; font-size: 10px; border-right: none !important" colspan="2">0.0</th>--%>
-			<th style="padding: 0px; font-size: 10px;margin-right:100px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.0</th>
+					<th style="padding: 0px; font-size: 10px;margin-right:100px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.0</th>
 
-		
 			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.0</th>
 
-		
 			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.0</th>
 
-		
 			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.0</th>
-
 		
 			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.0</th>
 
@@ -269,285 +268,66 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td>  F.to Gruppo c/lavoro</td>
 					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
 								
 									<td style="border-right: 1px solid black;">0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td style="border-right: 1px solid black;"> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td style="border-right: 1px solid black;">0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td style="border-right: 1px solid black;"> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td style="border-right: 1px solid black;">�</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td style="border-right: 1px solid black;"> 0.0</td>
 								
-							
-						
-					
-				
-			
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td>  F.to Benetton c/lavoro</td>
 					
-						
-							
-								
 									<td style="border-right: 1px solid black;background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
 								
@@ -22669,36 +22449,7 @@
 </script>
 <div id="dockbar" class="hide">
 	<div class="scroll-container">
-		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
 		
-		<!--            </button> -->
-		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
-		
-		<!--            </button> -->
-	<%--	<button type="button" onclick="openModalShare()">
-			<img
-				src="/Images/C.Gestione/dockicon/check.svg"
-				alt="icon">
-		</button>
-		<button type="button" onclick="openModalPriority()">
-			<img
-				src="/Images/C.Gestione/dockicon/remind.svg"
-				alt="icon">
-		</button>--%>
-		<!--            <button uib-tooltip="Zoom" type="button"> -->
-		
-		<!--            </button> -->
-		<!--            <button uib-tooltip="Carica" type="button"> -->
-		
-		<!--            </button> -->
-	<%--	<button type="button" onclick="printf()">
-			<img
-				src="/Images/C.Gestione/dockicon/print.svg"
-				alt="icon">
-		</button>--%>
-		<!--            <button uib-tooltip="Scarica" type="button"> -->
-		
-		<!--            </button> -->
 	</div>
 </div>
 <input type="hidden" value="" id="param-start">
@@ -22732,11 +22483,7 @@
 </script>
 		</div>
 		<div class="">
-			
-
-<!-- Right navigation -->
-
-
+		
 <script>
 
     function rgtForce() {
@@ -22751,49 +22498,6 @@
 
 </script>
 
-<%--<div id = "right-navi">
-<button type="button" class="right-toggle" onclick="rgtForce()">
-	<span class="bullet one"></span>
-	<span class="bullet two"></span>
-	<span class="bullet three"></span>
-</button>
-<div class="user">
-	<img src="/Onlyou/dashboard/images/user-demo.png" alt="icon">
-	<span>Carlo Alberto della Siega</span>
-	<a href="#" class="btn btn-wire">Logout</a>
-</div>--%>
-<%--<nav class="user-navi">
-	<ul>
-		<li>--%>
-			<%--<a href="#">Il mio profilo</a>
-		</li>
-		<li>
-			<a href="#">Impostazioni</a>
-		</li>
-		<li>
-			<a href="#">Contatta l'assistenza</a>
-		</li>
-		<li>--%>
-	<%--		<a href="#">Preferenze</a>
-		</li>
-	</ul>
-</nav>
-<footer>
-	<small>© 2017 ONLYOU </small>
-	<nav class="footer-navi">
-		<ul>
-			<li>
-				<a href="#">Termini e Condizioni</a>
-			</li>
-			<li>
-				<a href="#">Policy</a>
-			</li>
-			<li>
-				<a href="#">Cookie</a>
-			</li>
-		</ul>
-	</nav>
-</footer>--%>
 </div>
 		</div>
 	</div>

@@ -43,7 +43,7 @@
 <script src="./dashboard/modules/modal/share/modal-share-ctrl.js"></script>
 <script src="./dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 </head>
-<body style="background-color:#f4f4f4">
+<body style="background-color:#F8F8FF">
 	
 
 

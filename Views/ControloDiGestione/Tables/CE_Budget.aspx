@@ -53,13 +53,9 @@
 <script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 <!-- MODULES END -->
 </head>
-<body>
-
+<body bgcolor="#F8F8FF">
 
 	<style>
-
-	 
-	
 
 	 #fatturo,#valore,#consumi,#esterne,#lavorodiretto,#lavoroindiretto,#costiindustria,#costodelvenduto,#marginelordo,#indgenerale,#costicom,#speseg,#operativol,#leasing,#operativon,#ebit,#resercitio,#ires,#rnetto,#ebitda{
 		 border-top:1px solid #000000;
@@ -91,9 +87,6 @@
 		  padding:20px 20px;
 		font-family:'Trebuchet MS';
 		color:#4a4a4a;
-		background-color:#F5F5F5;
-		
-		
 	}
 
 	     .top-icons{
@@ -106,16 +99,12 @@
 		 }
 
 	</style>
-	<!-- LEFT NAVIGATION -->
 
 
 	<div class="container">
 
 		<div class="">
 			
-
-<!-- Left navigation -->
-
 <script>
 
     function openClose() {
@@ -135,15 +124,9 @@
 
 </script>
 
-
-
-
 		</div>
 		<div class="">
 			
-
-
-
 <div>
 	<section class="detail">
 		<div class="container-fluid">
@@ -162,13 +145,13 @@
 								Mese 
 								<select id="month" name="month" onchange="this.form.submit()">
 									
-										<option value="1" >1</option>
+										<option value="1"selected >1</option>
 									
 										<option value="2" >2</option>
 									
 										<option value="3" >3</option>
 									
-										<option value="4" selected>4</option>
+										<option value="4" >4</option>
 									
 										<option value="5" >5</option>
 									
@@ -192,13 +175,13 @@
 									
 										<option value="2017" >2017</option>
 									
-										<option value="2018" selected>2018</option>
+										<option value="2018" >2018</option>
 									
 										<option value="2019" >2019</option>
 									
 										<option value="2020" >2020</option>
 									
-										<option value="2021" >2021</option>
+										<option value="2021"selected >2021</option>
 									
 										<option value="2022" >2022</option>
 									
@@ -242,15 +225,12 @@
 	</div>
 	
 	<tr>
-		<!-- 		<th -->
-		<!-- 			style="border-top: 1px solid #ddd; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;"></th> -->
 		<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"></th>
 	
 		
 			<th style="padding: 0px; font-size: 10px;text-align:right; border-bottom: 1px solid black;border-left: none;border-right: none !important"></th>
 
 		
-			<t<%--h style="padding: 0px; font-size: 10px; border-right: none !important" colspan="2">0.0</th>--%>
 			<th style="padding: 0px; font-size: 10px;margin-right:100px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2"></th>
 
 		
@@ -290,7 +270,7 @@
 		<!-- 		<th><span class="sr-only">Seleziona</span></th> -->
 		<!-- 		<th -->
 		<!-- 			style="border-top: 1px solid #ddd; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;">Codice</th> -->
-		<th style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3; color:#F5F5F5;background-color: #F5F5F5 !important; border-right: 1px solid black; padding: 0px;">Conto economico al:<br>31/10/2017
+		<th style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3; color:#F8F8FF;background-color: #F8F8FF; !important; border-right: 1px solid black; padding: 0px;">Conto economico al:<br>31/10/2017
 		</th>
 		<th colspan="2" style="border-top: 1px solid #D3D3D3;border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Gennaio</th>
 		<th colspan="2" style="border-top: 1px solid #D3D3D3; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; width:95px;padding: 0px;">Febbraio</th>
@@ -310,7 +290,7 @@
 	</tr>
 	<tr>
 
-		<th style="border-top: 1px solid #000000;border-bottom: 1px solid #000000; background-color: #F5F5F5 !important; border-right: 1px solid black; padding-bottom: 25px; font-size: 11px;"></th>
+		<th style="border-top: 1px solid #000000;border-bottom: 1px solid #000000; background-color: #F8F8FF !important; border-right: 1px solid black; padding-bottom: 25px; font-size: 11px;"></th>
 		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">Val</th>
 		<th style="border-top: 1px solid #ddd; border-bottom: 1px solid #000000; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">%</th>
 		<th style="border-top: 1px solid #ddd;border-bottom: 1px solid #000000;  background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px; font-size: 11px;">Val</th>
@@ -7129,36 +7109,7 @@
 </script>
 <div id="dockbar" class="hide">
 	<div class="scroll-container">
-		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
-		
-		<!--            </button> -->
-		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
-		
-		<!--            </button> -->
-	<%--	<button type="button" onclick="openModalShare()">
-			<img
-				src="/Images/C.Gestione/dockicon/check.svg"
-				alt="icon">
-		</button>
-		<button type="button" onclick="openModalPriority()">
-			<img
-				src="/Images/C.Gestione/dockicon/remind.svg"
-				alt="icon">
-		</button>--%>
-		<!--            <button uib-tooltip="Zoom" type="button"> -->
-		
-		<!--            </button> -->
-		<!--            <button uib-tooltip="Carica" type="button"> -->
-		
-		<!--            </button> -->
-	<%--	<button type="button" onclick="printf()">
-			<img
-				src="/Images/C.Gestione/dockicon/print.svg"
-				alt="icon">
-		</button>--%>
-		<!--            <button uib-tooltip="Scarica" type="button"> -->
-		
-		<!--            </button> -->
+	
 	</div>
 </div>
 <input type="hidden" value="" id="param-start">
@@ -7188,13 +7139,11 @@
     function printf() {
         window.print();
     }
-	//getData();
 </script>
 		</div>
 		<div class="">
 			
 
-<!-- Right navigation -->
 
 
 <script>
@@ -7211,49 +7160,6 @@
 
 </script>
 
-<%--<div id = "right-navi">
-<button type="button" class="right-toggle" onclick="rgtForce()">
-	<span class="bullet one"></span>
-	<span class="bullet two"></span>
-	<span class="bullet three"></span>
-</button>
-<div class="user">
-	<img src="/Onlyou/dashboard/images/user-demo.png" alt="icon">
-	<span>Carlo Alberto della Siega</span>
-	<a href="#" class="btn btn-wire">Logout</a>
-</div>--%>
-<%--<nav class="user-navi">
-	<ul>
-		<li>--%>
-			<%--<a href="#">Il mio profilo</a>
-		</li>
-		<li>
-			<a href="#">Impostazioni</a>
-		</li>
-		<li>
-			<a href="#">Contatta l'assistenza</a>
-		</li>
-		<li>--%>
-	<%--		<a href="#">Preferenze</a>
-		</li>
-	</ul>
-</nav>
-<footer>
-	<small>© 2017 ONLYOU </small>
-	<nav class="footer-navi">
-		<ul>
-			<li>
-				<a href="#">Termini e Condizioni</a>
-			</li>
-			<li>
-				<a href="#">Policy</a>
-			</li>
-			<li>
-				<a href="#">Cookie</a>
-			</li>
-		</ul>
-	</nav>
-</footer>--%>
 </div>
 		</div>
 	</div>
@@ -7341,7 +7247,6 @@
                 valuta.innerHTML = 'RSD';
             }
             xhr.send('week=' + startWeek + '&week_number=' + weekNumber + '&change=' + change);
-            // var table = document.getElementById("monthly-balance").innerHTML =
         };
     </script>
 </body>

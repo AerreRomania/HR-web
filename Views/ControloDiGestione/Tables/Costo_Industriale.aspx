@@ -53,7 +53,7 @@
 <script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
 <!-- MODULES END -->
 </head>
-<body style="background-color:#f4f4f4;">
+<body style="background-color:#F8F8FF;">
 
 	
 
@@ -70,9 +70,6 @@
 		width:100%;
 	}
 	 
-
-	
-
 	 td{
 		 border-right: 1px solid black;
 	 }
@@ -129,14 +126,8 @@
 
 </script>
 
-
-
-
 		</div>
 		<div class="">
-			
-
-
 
 <div>
 	<section class="detail">
@@ -210,50 +201,7 @@
 				<table id="collapse" class="table table-bordered table-hover table-condensed version" width="100%;">			
 <thead>
 	<tr>
-		<!-- 		<th -->
-		<!-- 			style="border-top: 1px solid #ddd; background-color: #CFEACF !important; border-right: 1px solid black; padding: 0px;"></th> -->
-		<%--<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important">Cambio mese:</th>--%>
 	
-		
-<%--			<th style="padding: 0px; font-size: 10px;text-align:right; border-bottom: 1px solid black;border-left: none;border-right: none !important"></th>--%>
-
-		
-			<%--<t--%><%--h style="padding: 0px; font-size: 10px; border-right: none !important" colspan="2"></th>--%>
-		<%--	<th style="padding: 0px; font-size: 10px;margin-right:100px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2"></th>%>
-
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>
-
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2">0.00</th>--%>
-
-		
-		
-		<%--	<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2"></th>
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2"></th>
-		
-			<th style="padding: 0px; font-size: 10px; border-bottom: 1px solid black;border-left: none;border-right: none !important"colspan="2"></th>--%>
-		
 	</tr>
 
 	<div align="right">
@@ -289,26 +237,15 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="border-bottom:1px solid #D3D3D3;">  Ore macchina(funzionamento macchina)</td>
 					
-						
-							
-								
 									<td style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;">0.00</td>
 								
-								
-							
 							<td style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;"> 0.00</td>
 						
 					<td style="border-right: 1px solid #000000;border-bottom:1px solid #d3d3d3;"> 0.00</td>
 						
-								
 									<td style="border-right: 1px solid #000000;border-bottom:1px solid #d3d3d3;"> 0.00</td>
-								
-							
 								
 									<td style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #D3D3D3;"> 0.00</td>
 								
@@ -354,17 +291,10 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="border-bottom:1px solid #D3D3D3;">  Giorni lavorati</td>
 					
-						
-							
-								
 									<td style="border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
 								
-					
 									<td style="border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;"> 0.0</td>
 								
 									<td style="border-bottom:1px solid #D3D3D3;">0.0</td>
@@ -378,44 +308,13 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="border-bottom:1px solid #D3D3D3;">  quantita/giorno</td>
 					
-						
-							
-								
 									<td style="border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;"> 0.0</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="border-bottom:1px solid #D3D3D3;"> 0.0</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="border-bottom:1px solid #D3D3D3;"> 0.0</td>
 
@@ -424,15 +323,9 @@
 		</tr>
 	
 		<tr>
-			
-				
-				
-				
+		
 					<td style="border-bottom:1px solid #000000;">  Prezzo medio</td>
 					
-						
-							
-								
 									<td style="border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;"> 0.0</td>
 								
 								<td style="border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;"> 0.0</td>
@@ -446,9 +339,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="border-bottom:1px solid #D3D3D3;"> Ricavi C.to Lavoro Benetton</td>
 
 					<td style="border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;"> 0.0</td>
@@ -461,40 +351,18 @@
 
 						<td style="border-bottom:1px solid #D3D3D3;border-right: 1px solid #D3D3D3;"> 0.0</td>
 
-	
-			
 		</tr>
 	
 		<tr id="fatturo">
 			
-				
-				
-				
 					<td  style=" border-bottom:1px solid #D3D3D3;"> Ricavi C.to Lavoro Intercompany</td>
 					
-						
-							
-								
 									<td style="border-bottom:1px solid #D3D3D3;border-top:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;"> 0.0</td>
 								
-							
-							
 						<td style=" border-bottom:1px solid #D3D3D3;"> 0.0</td>
 					
-						
-							
-								
 									<td style=" border-bottom:1px solid #D3D3D3;">0.0</td>
 								
 										<td style="border-bottom:1px solid #D3D3D3;border-right: 1px solid #D3D3D3;"> 0.0</td>
@@ -503,9 +371,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Ricavi C.to Lavoro Terzi</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -523,9 +388,6 @@
 	
 		<tr id="valore">
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;">  Vendita capi</td>
 					
 				<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -538,15 +400,10 @@
 
 									<td style="border-right: 1px solid #D3D3D3;"> 0.0</td>
 
-								
-					
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;">TOTALE FATTURATO</td>
 					
 						
@@ -556,22 +413,14 @@
 								
 			<td style=" border-bottom:1px solid #000000;">0.0</td>
 								
-					
 									<td style=" border-bottom:1px solid #000000;"> 0.0</td>
 								
-							
 												<td style="border-right: 1px solid #D3D3D3;"> 0.0</td>
 
-					
-				
-			
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;"> Variazione magazzini Rf Wip</td>
 					
 					<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -588,9 +437,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;"> VALORE PRODUZIONE</td>
 					
 						<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -607,9 +453,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;color:red;">COSTI DIRETTI INDUSTRIALE</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -626,9 +469,6 @@
 	
 		<tr id="consumi">
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #000000;">  VARIABILI</td>
 					
 					<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -645,9 +485,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Consumi filato e accessori x vendita</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -659,15 +496,11 @@
 		<td style=" border-bottom:1px solid #D3D3D3;">0.0</td>
 
 			<td style="border-bottom:1px solid #D3D3D3;border-right: 1px solid #D3D3D3;"> 0.0</td>
-								
-		
+						
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Consumo filato separazione</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -683,9 +516,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Vendite materiali vari</td>
 					
 					<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -702,9 +532,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;"> Costi accessori aquisto</td>
 					
 						<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -721,9 +548,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;">TOTALE CONSUMI</td>
 					
 						<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -740,9 +564,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Lavorazioni Esterne</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -754,15 +575,11 @@
 				<td style="border-bottom:1px solid #D3D3D3;border-right: 1px solid #000000;"> 0.0</td>0.0</td>
 
 			<td style="border-bottom:1px solid #D3D3D3;border-right: 1px solid #D3D3D3;"> 0.0</td>
-								
 							
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Manodopera Diretta</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -778,9 +595,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;"> Materiali di consumo</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -797,9 +611,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Metano</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -816,9 +627,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;"> Energia Elettrica</td>
 					
 						<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -835,9 +643,6 @@
 	
 		<tr id="esterne">
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;">TOTALE COSTI DIRETTI VARIABILI</td>
 					
 									<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -889,11 +694,7 @@
 		</tr>
 	
 		<tr>
-			
-				
-				
-				
-					<td style=" border-bottom:1px solid #D3D3D3;">FISSI</td>
+								<td style=" border-bottom:1px solid #D3D3D3;">FISSI</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
 								
@@ -908,9 +709,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;"> Manodopera indiretta</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -927,9 +725,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Manutenzioni industriali</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -946,8 +741,6 @@
 	
 		<tr>
 			
-				
-				
 				
 					<td style=" border-bottom:1px solid #D3D3D3;"> Altri costi di produzione</td>
 					
@@ -966,9 +759,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Ammortamenti</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -985,9 +775,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Consulenze Tecniche</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1004,9 +791,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #D3D3D3;">Manodopera Servizi + IT</td>
 					
 						<td style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1023,9 +807,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;">Affitti ( spazi + distaccati ) netto</td>
 					
 						<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1042,9 +823,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style=" border-bottom:1px solid #000000;">TOTALE COSTI DIRETTI FISSI</td>
 					
 						<td style=" border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1061,9 +839,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="border-bottom:1px solid #000000;background-color:#FFA500;">margine industriale diretto</td>
 					
 						<td style="border-bottom:1px solid #000000;background-color:#FFA500;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1080,9 +855,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td   style="background-color:#98FB98;"> Costo orario fissi</td>
 					
 						<td   style="background-color:#98FB98;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1100,9 +872,6 @@
 	
 		<tr id="costiindustria">
 			
-				
-				
-				
 					<td  style="background-color:#98FB98;"> COSTO ORARIO DIRETTI</td>
 					
 						<td  style="background-color:#98FB98;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1119,9 +888,6 @@
 	
 		<tr  id="costodelvenduto">
 			
-				
-				
-				
 					<td style="color:red;">TARIFA MEDIA PAGATA</td>
 					
 						<td style="border-right:1px solid #D3D3D3;"></td>
@@ -1138,9 +904,6 @@
 	
 		<tr id="marginelordo">
 			
-				
-				
-				
 					<td style="background-color:#98FB98;"> margine industriale diretto</td>
 					
 						<td style="background-color:#98FB98;border-right:1px solid #D3D3D3;">0.0</td>
@@ -1158,9 +921,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="border-bottom:1px solid #000000;">TOTALE COSTI STRUTTURA</td>
 					<td  style="border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">  0.0</td>
 								
@@ -1172,14 +932,10 @@
 
 								<td   style=" border-bottom:1px solid #000000;border-right:1px solid #000000;">0.0</td>
 
-							
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td  style="background-color:#98FB98;border-bottom:1px solid #000000;"> Costo orario Struttura</td>
 					
 					<td style="background-color:#98FB98;border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">  0.0</td>
@@ -1197,9 +953,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="background-color:#98FB98;border-bottom:1px solid #000000;">Costo orario Full Cost</td>
 					
 						<td style="background-color:#98FB98;border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">  0.0</td>
@@ -1211,15 +964,11 @@
 				<td style="background-color:#98FB98;border-bottom:1px solid #000000;">  0.0</td>
 
 								<td   style=" border-bottom:1px solid #000000;border-right:1px solid #d3d3d3;">0.0</td>
-
-								
+	
 		</tr>
 	
 		<tr id="indgenerale">
 			
-				
-				
-				
 					<td style="background-color:#98FB98;border-bottom:1px solid #000000;">Utile ante imposte</td>
 					
 					<td style="background-color:#98FB98;border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;"> 0.0</td>
@@ -1237,9 +986,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="background-color:#98FB98;border-bottom:1px solid #000000;">Utile netto</td>
 					
 						<td style="background-color:#98FB98;border-bottom:1px solid #000000;border-right:1px solid #D3D3D3;">  0.0</td>
@@ -1257,9 +1003,6 @@
 	
 		<tr>
 			
-				
-				
-				
 					<td style="color:red;border-bottom:1px solid #d3d3d3;">COSTI INDIRETTI INDUSTRIALI</td>
 					
 						<td   style=" border-bottom:1px solid #D3D3D3;border-right:1px solid #d3d3d3;"  0.0</td>
@@ -1276,837 +1019,6 @@
 	
 		<tr>
 			
-			<%--	
-				
-				
-					<td>  Trasporti commerciali terzi</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-								<td>  0.0</td>
-					
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Consulenza Commerciali</td>
-					
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-				
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Altre Commerciali</td>
-					
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-				<td>  0.0</td>
-				
-		</tr>
-	
-		<tr id="costicom">
-			
-				
-				
-				
-					<td> TOT. COSTI COMMERCIALI</td>
-					
-						<td> 0.0</td>
-								
-					<td>  0.0</td>
-								
-		<td> 0.0</td>
-		<td>  0.0</td>
-		
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Assicurazioni</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>>
-								
-								<td>  0.0</td>
-						
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Consulenza</td>
-					
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-								<td>  0.0</td>
-								
-			
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Manut. automezzi</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-						<td>  0.0</td>
-					
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Manut. macch.ufficio</td>
-					
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-								<td>  0.0</td>
-						
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Sindaci</td>
-					
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-							<td>  0.0</td>
-						
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Amministratori</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-						<td>  0.0</td>
-					
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Pulizia uffici</td>
-					
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Postelegrafoniche</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-							
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Cancelleria</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-					
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Rappres.,viaggi,diarie</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-						
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Spese varie</td>
-					
-						<td>  0.0</td>
-								
-								<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-		<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Spese varie Gruppo</td>
-					
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-		</tr>
-	
-		<tr id="speseg">
-			
-				
-				
-				
-					<td> TOT. SPESE GENERALI</td>
-					
-					<td> 0.0</td>
-								
-					<td>  0.0</td>
-								
-				<td> 0.0</td>
-								
-			<td>  0.0</td>
-								
-		
-		</tr>
-	
-		<tr  id="operativol">
-			
-				
-				
-				
-					<td> RISULTATO OPERATIVO LORDO</td>
-					
-						
-							
-								
-									<td>0.0</td>
-					<td> 0.0</td>
-				<td>0.0</td>
-								
-			<td> 0.0</td>
-			
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Amm.Imm.tecniche</td>
-					
-				<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-				<td>  0.0</td>
-							
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Amm.Imm.Immateriali</td>
-					
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-			<td>  0.0</td>
-					
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Locazioni/ Affitto</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-				
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Ammortamenti rivalutazione</td>
-					
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Ammortamenti Gruppo</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-							
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Ammortamenti anticipati</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-								<td>  0.0</td>
-								
-		</tr>
-	
-		<tr  id="leasing">
-			
-				
-				
-				
-					<td> TOTALE AMM./LEASING</td>
-					
-				<td>0.0</td>
-								
-				<td> 0.0</td>
-								
-			<td>0.0</td>
-								
-	<td> 0.0</td>
-	
-		</tr>
-	
-		<tr  id="operativon">
-			
-				
-				
-				
-					<td> RISULTATO OPERATIVO NETTO</td>
-					
-						<td>0.0</td>
-								
-					<td> 0.0</td>
-								
-			<td>0.0</td>
-								
-		<td> 0.0</td>
-		
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Plusvalenze cespiti</td>
-					
-						<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Minusvalenze cespiti</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Acc. F.do Sval.crediti</td>
-					
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-								<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Perdite su crediti</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-						
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Indennizzi assicurativi</td>
-					
-						<td>  0.0</td>
-								
-								<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Oneri diversi</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-								<td>  0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Proventi diversi</td>
-					
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-								<td>  0.0</td>
-					
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Correttivo gruppo</td>
-					
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-		</tr>
-	
-		<tr id="ebit">
-			
-				
-				
-				
-					<td> E.B.I.T</td>
-					
-				<td>0.0</td>
-								
-<td> 0.0</td>
-								
-<td>0.0</td>
-								
-<td> 0.0</td>
-		
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>  Oneri e proventi finanziari</td>
-					
-					<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-					<td>  0.0</td>
-								
-				<td>  0.0</td>
-								
-		</tr>
-	
-		<tr id="resercitio">
-			
-				
-				
-				
-					<td> RISULTATO DI ESERCIZIO</td>
-					
-						
-							
-								
-									<td>0.0</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td>0.0</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td> 0.0</td>
-								
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>Irap</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-								
-		</tr>
-	
-		<tr  id="ires">
-			
-				
-				
-				
-					<td>RISULTATO MESE ANTE IRES</td>
-					
-						<td>0.0</td>
-								
-			<td> 0.0</td>
-								
-	<td>0.0</td>
-								
-<td> 0.0</td>
-	
-		</tr>
-	
-		<tr>
-			
-				
-				
-				
-					<td>Ires</td>
-					
-						<td>  0.0</td>
-								
-						<td>  0.0</td>
-								
-							<td>  0.0</td>
-								
-								<td>  0.0</td>
-								
-		</tr>
-	
-		<tr id="rnetto">
-			
-				
-				
-				
-					<td>RISULTATO NETTO</td>
-					
-		<td>0.0</td>
-								
-<td> 0.0</td>
-								
-<td>0.0</td>
-								
-<td> 0.0</td>
-				
-		</tr>--%>
-
-<%--	<tr>
-			
-				
-					<td style="height: 15px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-					
-						<td style="height: 10px !important; background-color: #FFFFFF !important; border-bottom: 1px solid black !important; border-top: 1px solid black !important; border-right: none !important"></td>
-
-		</tr>--%>
-	
-		<%--<tr>
-
-					<%--<td>E.B.I.T.D.A</td>--%>
-		
-							<%--		<td style="background-color: rgba(0, 0, 0, 0.1);">0.0</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">0.0</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-								
-		</tr>--%>
-
-	
 </tbody>
 
 
@@ -2148,36 +1060,7 @@
 </script>
 <div id="dockbar" class="hide">
 	<div class="scroll-container">
-		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
 		
-		<!--            </button> -->
-		<!--            <button uib-tooltip="Marca come importante" type="button"> -->
-		
-		<!--            </button> -->
-	<%--	<button type="button" onclick="openModalShare()">
-			<img
-				src="/Images/C.Gestione/dockicon/check.svg"
-				alt="icon">
-		</button>
-		<button type="button" onclick="openModalPriority()">
-			<img
-				src="/Images/C.Gestione/dockicon/remind.svg"
-				alt="icon">
-		</button>--%>
-		<!--            <button uib-tooltip="Zoom" type="button"> -->
-		
-		<!--            </button> -->
-		<!--            <button uib-tooltip="Carica" type="button"> -->
-		
-		<!--            </button> -->
-	<%--	<button type="button" onclick="printf()">
-			<img
-				src="/Images/C.Gestione/dockicon/print.svg"
-				alt="icon">
-		</button>--%>
-		<!--            <button uib-tooltip="Scarica" type="button"> -->
-		
-		<!--            </button> -->
 	</div>
 </div>
 <input type="hidden" value="" id="param-start">
@@ -2230,49 +1113,6 @@
 
 </script>
 
-<%--<div id = "right-navi">
-<button type="button" class="right-toggle" onclick="rgtForce()">
-	<span class="bullet one"></span>
-	<span class="bullet two"></span>
-	<span class="bullet three"></span>
-</button>
-<div class="user">
-	<img src="/Onlyou/dashboard/images/user-demo.png" alt="icon">
-	<span>Carlo Alberto della Siega</span>
-	<a href="#" class="btn btn-wire">Logout</a>
-</div>--%>
-<%--<nav class="user-navi">
-	<ul>
-		<li>--%>
-			<%--<a href="#">Il mio profilo</a>
-		</li>
-		<li>
-			<a href="#">Impostazioni</a>
-		</li>
-		<li>
-			<a href="#">Contatta l'assistenza</a>
-		</li>
-		<li>--%>
-	<%--		<a href="#">Preferenze</a>
-		</li>
-	</ul>
-</nav>
-<footer>
-	<small>© 2017 ONLYOU </small>
-	<nav class="footer-navi">
-		<ul>
-			<li>
-				<a href="#">Termini e Condizioni</a>
-			</li>
-			<li>
-				<a href="#">Policy</a>
-			</li>
-			<li>
-				<a href="#">Cookie</a>
-			</li>
-		</ul>
-	</nav>
-</footer>--%>
 </div>
 		</div>
 	</div>
