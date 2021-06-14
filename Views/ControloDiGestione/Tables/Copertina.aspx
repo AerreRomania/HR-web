@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="Copertina.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Copertina" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Copertina.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Copertina" %>
 
 <!DOCTYPE html>
 
@@ -16,7 +16,296 @@
    
    
    
-  
+    <script language="JavaScript">
+<!--
+    var c_lTabs = 26;
+
+    var c_rgszSh = new Array(c_lTabs);
+    c_rgszSh[0] = "MAIN";
+    c_rgszSh[1] = "IMPORT BILANCIO";
+    c_rgszSh[2] = "Contabilit&agrave;";
+    c_rgszSh[3] = "COPERTINA ";
+    c_rgszSh[4] = "Ce progress.";
+    c_rgszSh[5] = "sostituire Ce Progress";
+    c_rgszSh[6] = "Ce mensile";
+    c_rgszSh[7] = "budget";
+    c_rgszSh[8] = "budget PRC1";
+    c_rgszSh[9] = "budget PRC 2";
+    c_rgszSh[10] = "saturazione tessitura";
+    c_rgszSh[11] = "produzione capi";
+    c_rgszSh[12] = "efficienze reparti";
+    c_rgszSh[13] = "dati produttivi";
+    c_rgszSh[14] = "Costi cons. budget";
+    c_rgszSh[15] = "Costi ricavi ";
+    c_rgszSh[16] = "Costi reparto";
+    c_rgszSh[17] = "Costo energie";
+    c_rgszSh[18] = "margini x reparto";
+    c_rgszSh[19] = " costo orario fase";
+    c_rgszSh[20] = "investimenti";
+    c_rgszSh[21] = "manut ord";
+    c_rgszSh[22] = "ricavi ";
+    c_rgszSh[23] = "organico";
+    c_rgszSh[24] = "Assenteismo";
+    c_rgszSh[25] = "sit finanza";
+
+
+
+    var c_rgszClr = new Array(8);
+    c_rgszClr[0] = "window";
+    c_rgszClr[1] = "buttonface";
+    c_rgszClr[2] = "windowframe";
+    c_rgszClr[3] = "windowtext";
+    c_rgszClr[4] = "threedlightshadow";
+    c_rgszClr[5] = "threedhighlight";
+    c_rgszClr[6] = "threeddarkshadow";
+    c_rgszClr[7] = "threedshadow";
+
+    var g_iShCur;
+    var g_rglTabX = new Array(c_lTabs);
+
+    function fnGetIEVer() {
+        var ua = window.navigator.userAgent
+        var msie = ua.indexOf("MSIE")
+        if (msie > 0 && window.navigator.platform == "Win32")
+            return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+        else
+            return 0;
+    }
+
+    function fnBuildFrameset() {
+        var szHTML = "<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>" +
+            "<frame src=\"" + document.all.item("shLink")[3].href + "\" name=\"frSheet\" noresize>" +
+            "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>" +
+            "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>" +
+            "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>" +
+            "</frameset></frameset><plaintext>";
+
+        with (document) {
+            open("text/html", "replace");
+            write(szHTML);
+            close();
+        }
+
+        fnBuildTabStrip();
+    }
+
+    function fnBuildTabStrip() {
+        var szHTML =
+            "<html><head><style>.clScroll {font:8pt Courier New;color:" + c_rgszClr[6] + ";cursor:default;line-height:10pt;}" +
+            ".clScroll2 {font:10pt Arial;color:" + c_rgszClr[6] + ";cursor:default;line-height:11pt;}</style></head>" +
+            "<body onclick=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" onselectstart=\"event.returnValue=false;\" bgcolor=" + c_rgszClr[4] + " topmargin=0 leftmargin=0><table cellpadding=0 cellspacing=0 width=100%>" +
+            "<tr><td colspan=6 height=1 bgcolor=" + c_rgszClr[2] + "></td></tr>" +
+            "<tr><td style=\"font:1pt\">&nbsp;<td>" +
+            "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(0);\" onmouseout=\"parent.fnMouseOutScroll(0);\"><a>&#171;</a></td>" +
+            "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(0);\" ondblclick=\"parent.fnScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(1);\" onmouseout=\"parent.fnMouseOutScroll(1);\"><a>&lt</a></td>" +
+            "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(1);\" ondblclick=\"parent.fnScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(2);\" onmouseout=\"parent.fnMouseOutScroll(2);\"><a>&gt</a></td>" +
+            "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(3);\" onmouseout=\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>" +
+            "<td style=\"font:1pt\">&nbsp;<td></tr></table></body></html>";
+
+        with (frames['frScroll'].document) {
+            open("text/html", "replace");
+            write(szHTML);
+            close();
+        }
+
+        szHTML =
+            "<html><head>" +
+            "<style>A:link,A:visited,A:active {text-decoration:none;" + "color:" + c_rgszClr[3] + ";}" +
+            ".clTab {cursor:hand;background:" + c_rgszClr[1] + ";font:9pt Arial;padding-left:3px;padding-right:3px;text-align:center;}" +
+            ".clBorder {background:" + c_rgszClr[2] + ";font:1pt;}" +
+            "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor=" + c_rgszClr[4] +
+            " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
+
+        var iCellCount = (c_lTabs + 1) * 2;
+
+        var i;
+        for (i = 0; i < iCellCount; i += 2)
+            szHTML += "<col width=1><col>";
+
+        var iRow;
+        for (iRow = 0; iRow < 6; iRow++) {
+
+            szHTML += "<tr>";
+
+            if (iRow == 5)
+                szHTML += "<td colspan=" + iCellCount + "></td>";
+            else {
+                if (iRow == 0) {
+                    for (i = 0; i < iCellCount; i++)
+                        szHTML += "<td height=1 class=\"clBorder\"></td>";
+                } else if (iRow == 1) {
+                    for (i = 0; i < c_lTabs; i++) {
+                        szHTML += "<td height=1 nowrap class=\"clBorder\">&nbsp;</td>";
+                        szHTML +=
+                            "<td id=tdTab height=1 nowrap class=\"clTab\" onmouseover=\"parent.fnMouseOverTab(" + i + ");\" onmouseout=\"parent.fnMouseOutTab(" + i + ");\">" +
+                            "<a href=\"" + document.all.item("shLink")[i].href + "\" target=\"frSheet\" id=aTab>&nbsp;" + c_rgszSh[i] + "&nbsp;</a></td>";
+                    }
+                    szHTML += "<td id=tdTab height=1 nowrap class=\"clBorder\"><a id=aTab>&nbsp;</a></td><td width=100%></td>";
+                } else if (iRow == 2) {
+                    for (i = 0; i < c_lTabs; i++)
+                        szHTML += "<td height=1></td><td height=1 class=\"clBorder\"></td>";
+                    szHTML += "<td height=1></td><td height=1></td>";
+                } else if (iRow == 3) {
+                    for (i = 0; i < iCellCount; i++)
+                        szHTML += "<td height=1></td>";
+                } else if (iRow == 4) {
+                    for (i = 0; i < c_lTabs; i++)
+                        szHTML += "<td height=1 width=1></td><td height=1></td>";
+                    szHTML += "<td height=1 width=1></td><td></td>";
+                }
+            }
+            szHTML += "</tr>";
+        }
+
+        szHTML += "</table></body></html>";
+        with (frames['frTabs'].document) {
+            open("text/html", "replace");
+            charset = document.charset;
+            write(szHTML);
+            close();
+        }
+    }
+
+    function fnInit() {
+        g_rglTabX[0] = 0;
+        var i;
+        for (i = 1; i <= c_lTabs; i++)
+            with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i - 1)])
+            g_rglTabX[i] = offsetLeft + offsetWidth - 6;
+    }
+
+    function fnTabToCol(iTab) {
+        return 2 * iTab + 1;
+    }
+
+    function fnNextTab(fDir) {
+        var iNextTab = -1;
+        var i;
+
+        with (frames['frTabs'].document.body) {
+            if (fDir == 0) {
+                if (scrollLeft > 0) {
+                    for (i = 0; i < c_lTabs && g_rglTabX[i] < scrollLeft; i++);
+                    if (i < c_lTabs)
+                        iNextTab = i - 1;
+                }
+            } else {
+                if (g_rglTabX[c_lTabs] + 6 > offsetWidth + scrollLeft) {
+                    for (i = 0; i < c_lTabs && g_rglTabX[i] <= scrollLeft; i++);
+                    if (i < c_lTabs)
+                        iNextTab = i;
+                }
+            }
+        }
+        return iNextTab;
+    }
+
+    function fnScrollTabs(fDir) {
+        var iNextTab = fnNextTab(fDir);
+
+        if (iNextTab >= 0) {
+            frames['frTabs'].scroll(g_rglTabX[iNextTab], 0);
+            return true;
+        } else
+            return false;
+    }
+
+    function fnFastScrollTabs(fDir) {
+        if (c_lTabs > 16)
+            frames['frTabs'].scroll(g_rglTabX[fDir ? c_lTabs - 1 : 0], 0);
+        else
+            if (fnScrollTabs(fDir) > 0) window.setTimeout("fnFastScrollTabs(" + fDir + ");", 5);
+    }
+
+    function fnSetTabProps(iTab, fActive) {
+        var iCol = fnTabToCol(iTab);
+        var i;
+
+        if (iTab >= 0) {
+            with (frames['frTabs'].document.all) {
+                with (tbTabs) {
+                    for (i = 0; i <= 4; i++) {
+                        with (rows[i]) {
+                            if (i == 0)
+                                cells[iCol].style.background = c_rgszClr[fActive ? 0 : 2];
+                            else if (i > 0 && i < 4) {
+                                if (fActive) {
+                                    cells[iCol - 1].style.background = c_rgszClr[2];
+                                    cells[iCol].style.background = c_rgszClr[0];
+                                    cells[iCol + 1].style.background = c_rgszClr[2];
+                                } else {
+                                    if (i == 1) {
+                                        cells[iCol - 1].style.background = c_rgszClr[2];
+                                        cells[iCol].style.background = c_rgszClr[1];
+                                        cells[iCol + 1].style.background = c_rgszClr[2];
+                                    } else {
+                                        cells[iCol - 1].style.background = c_rgszClr[4];
+                                        cells[iCol].style.background = c_rgszClr[(i == 2) ? 2 : 4];
+                                        cells[iCol + 1].style.background = c_rgszClr[4];
+                                    }
+                                }
+                            } else
+                                cells[iCol].style.background = c_rgszClr[fActive ? 2 : 4];
+                        }
+                    }
+                }
+                with (aTab[iTab].style) {
+                    cursor = (fActive ? "default" : "hand");
+                    color = c_rgszClr[3];
+                }
+            }
+        }
+    }
+
+    function fnMouseOverScroll(iCtl) {
+        frames['frScroll'].document.all.tdScroll[iCtl].style.color = c_rgszClr[7];
+    }
+
+    function fnMouseOutScroll(iCtl) {
+        frames['frScroll'].document.all.tdScroll[iCtl].style.color = c_rgszClr[6];
+    }
+
+    function fnMouseOverTab(iTab) {
+        if (iTab != g_iShCur) {
+            var iCol = fnTabToCol(iTab);
+            with (frames['frTabs'].document.all) {
+                tdTab[iTab].style.background = c_rgszClr[5];
+            }
+        }
+    }
+
+    function fnMouseOutTab(iTab) {
+        if (iTab >= 0) {
+            var elFrom = frames['frTabs'].event.srcElement;
+            var elTo = frames['frTabs'].event.toElement;
+
+            if ((!elTo) ||
+                (elFrom.tagName == elTo.tagName) ||
+                (elTo.tagName == "A" && elTo.parentElement != elFrom) ||
+                (elFrom.tagName == "A" && elFrom.parentElement != elTo)) {
+
+                if (iTab != g_iShCur) {
+                    with (frames['frTabs'].document.all) {
+                        tdTab[iTab].style.background = c_rgszClr[1];
+                    }
+                }
+            }
+        }
+    }
+
+    function fnSetActiveSheet(iSh) {
+        if (iSh != g_iShCur) {
+            fnSetTabProps(g_iShCur, false);
+            fnSetTabProps(iSh, true);
+            g_iShCur = iSh;
+        }
+    }
+
+    window.g_iIEVer = fnGetIEVer();
+    if (window.g_iIEVer >= 4)
+        fnBuildFrameset();
+
+    </script>
 
 </head>
    
@@ -29,8 +318,47 @@
 <meta name="Generator" content="Microsoft Excel 15">
 <link id="Main-File" rel="Main-File" href="../controllo%20gestione%20(1)%20(2).html">
 <link rel="File-List" href="filelist.xml">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<link rel="Stylesheet" href="stylesheet.css">
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+@page
+	{margin:.75in 0in .16in 0in;
+	mso-header-margin:.51in;
+	mso-footer-margin:.51in;
+	mso-page-orientation:landscape;
+	mso-horizontal-page-align:center;}
+-->
+</style>
+<!--[if !supportTabStrip]--><script language="JavaScript">
+<!--
+    function fnUpdateTabs() {
+        if (parent.window.g_iIEVer >= 4) {
+            if (parent.document.readyState == "complete"
+                && parent.frames['frTabs'].document.readyState == "complete")
+                parent.fnSetActiveSheet(3);
+            else
+                window.setTimeout("fnUpdateTabs();", 150);
+        }
+    }
 
-
+    if (window.name != "frSheet")
+        window.location.replace("../controllo%20gestione%20(1)%20(2).html");
+    else
+        fnUpdateTabs();
+//-->
+</script>
+<!--[endif]-->
+</head>
 
 <body link="blue" vlink="purple" class="xl1193">
 
@@ -291,8 +619,72 @@
  </tr>
  <tr height="17" style="mso-height-source:userset;height:12.95pt">
   <td height="17" class="xl1563" style="height:12.95pt">&nbsp;</td>
-  <td align="left" valign="top">
-      <span style="mso-ignore:vglayout;
+  <td align="left" valign="top"><!--[if gte vml 1]><v:shape id="Immagine_x0020_2"
+   o:spid="_x0000_s37908" type="#_x0000_t75" alt="cid:image001.png@01D2DABC.F97B4D40"
+   style='position:absolute;margin-left:0;margin-top:10.5pt;width:408.75pt;
+   height:3.75pt;z-index:20;visibility:visible' o:gfxdata="UEsDBBQABgAIAAAAIQD0vmNdDgEAABoCAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJQ4sEEJJuiCwhAqVA1j2JDHEY8vjhvb2OEkrQVWQWNoz7//npFzt7MBGCGQcVvw6LzgD
+VE4b7Cr+tnnK7jijKFHLwSFUfA/EV/XlRbnZeyCWaKSK9zH6eyFI9WAl5c4DpknrgpUxHUMnvFQf
+sgNxUxS3QjmMgDGLUwavywZauR0ie9yl68Xk3UPH2cOyOHVV3NgpYB6Is0yAgU4Y6f1glIzpdWJE
+fWKWHazyRM471BtPV0mdn2+YJj+lvhccuJf0OYPRwNYyxGdpk7rQgYQ3Km4DpK3875xJ1FLm2tYo
+yJtA64U8iv1WoN0nBhj/m94k7BXGY7qY/2z9BQAA//8DAFBLAwQUAAYACAAAACEACMMYpNQAAACT
+AQAACwAAAF9yZWxzLy5yZWxzpJDBasMwDIbvg76D0X1x2sMYo05vg15LC7saW0nMYstIbtq+/UzZ
+YBm97ahf6PvEv91d46RmZAmUDKybFhQmRz6kwcDp+P78CkqKTd5OlNDADQV23eppe8DJlnokY8ii
+KiWJgbGU/Ka1uBGjlYYyprrpiaMtdeRBZ+s+7YB607Yvmn8zoFsw1d4b4L3fgDrecjX/YcfgmIT6
+0jiKmvo+uEdU7emSDjhXiuUBiwHPcg8Z56Y+B/qxd/1Pbw6unBk/qmGh/s6r+ceuF1V2XwAAAP//
+AwBQSwMEFAAGAAgAAAAhAIDJe+lEAgAAxwUAABIAAABkcnMvcGljdHVyZXhtbC54bWysVNuO2yAQ
+fa/Uf0C8NzZOnIuVeJuNlWql3Taq2g8gGMdobbCATbJ/3wEcp+lT1fRtmIEzZ2bOsHw4tw06cm2E
+kitMRjFGXDJVCnlY4Z8/tp/mGBlLZUkbJfkKv3ODH/KPH5bnUmdUslppBBDSZOBY4draLosiw2re
+UjNSHZcQrZRuqYWjPkSlpicAb5soieNpZDrNaWlqzm0RIjj32PakNrxp1j5FcFVatcFiqsnJMnIc
+nOkfgPGtqvJ4cLuTj2h1yifB7cyLz8XJOE3S6RDzTzzsNZdVA34+G8AHn3syHU9Jeo3dJE4H8NvE
+izjtqQKna95Ltk6wcF8ed4LtdJ/v63GnkShXeEwwkrSFiTy1LT0IyVGCUckNgykwUWYCvDyOyaiT
+h88xKZJi/bgZbRezx0kxiXF0BQzwNIOUz4q9mn6e9B+m2VIhgZfa1FQe+Np0nFlQ1W8uDdXWbuLO
+DSTCDKGswMIfb0reN6LbigaGTDNn380uqPWvtKqqSjBeKPbWcmmDYDVvqIVlMbXoDEY64+2ew0D0
+Uwl16qwR8tWfElcezYxm36EL99IOWFZzy+p7sRytClrqeLkRAMkA3I/j2nK3YKYDye1PL6oEsdE3
+q2BBaXaudPs/eECL0Rm0kCaTGP6edzATQtK5FwfN+NkiBvGUzBcknmHE4MYknZGFF0/g4fh02tgv
+XN3NCTkgmB+0xtdJj8+mb9IlhUsnldPkvQ246N+1uO/9sPesEaC5glp6ufXHj+hXJfzA+S8AAAD/
+/wMAUEsDBAoAAAAAAAAAIQDBc0TMLQMAAC0DAAAVAAAAZHJzL21lZGlhL2ltYWdlMS5qcGVn/9j/
+4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMgIyIo
+LTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCAACAOMDASIAAhEB
+AxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9
+AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6
+Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ip
+qrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEB
+AQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJB
+UQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RV
+VldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6
+wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDIooor6o+L
+AU2b/j1k+lFFKRpS+Mxx0/CloopHcxR2+tXZOkf+7RRWNbZHt5J/GfoNooormR9QuhPYf8fK1YH9
+TRRXgZt/Eierl/wyFpD0b6UUV5R6B0uj/wDINT/eNXaKK8bEfxJHj1PiYVJbf69frRRWZnPZmq33
+vxooorle7ONbCGqWp/ch+poorpwnxnFmH8BmdRRRXqdT5zqOT74rmJv9dJ/vn+dFFdmE2POx20Rl
+FFFdx5YUUUUAf//ZUEsDBBQABgAIAAAAIQDSKNrbEQEAAIQBAAAPAAAAZHJzL2Rvd25yZXYueG1s
+XJBLT8MwEITvSPwHa5G4UTsNaUqoU1UVlXoCtTzE0Uqchxrbke02Dr8ehxZFcJxZf+PZXSydaNCJ
+a1MrSSGYEEBcZiqvZUnh7XVzNwdkLJM5a5TkFHpuYJleXy1YkqtO7vhpb0vkQ6RJGIXK2jbB2GQV
+F8xMVMulnxVKC2a91CXONet8uGjwlJAZFqyW/oeKtXxd8eywPwpfY7M9ut4R2bX9+ik+fH68v7RT
+Sm9v3OoRkOXOjo8v9DanEAYw7OIDIPUFXbOSWaU0Knbc1F++/dkvtBJIq47CPaBMNYM/6OeiMNx6
+FYZh5A/hR78WATwkWnXmogsX/+UeyD9sFs6DOBpYPNb5EePx0m8AAAD//wMAUEsDBBQABgAIAAAA
+IQCzdLC/7gAAAM4BAAAdAAAAZHJzL19yZWxzL3BpY3R1cmV4bWwueG1sLnJlbHO0kU1PAyEQhu8m
+/gcy9y6wjdo0Zdv0w6QHL6b+AAKzLLp8BNC0/15qLzZp4snjwMzzPjCL5dGN5AtTtsEL4A0Dgl4F
+bb0R8HZ4nsyA5CK9lmPwKOCEGZbd/d3iFUdZ6lAebMykUnwWMJQS55RmNaCTuQkRfb3pQ3Ky1DIZ
+GqX6kAZpy9gjTb8Z0F0xyV4LSHvdAjmcYk3+mx363ircBvXp0JcbEdS6ml2BMhksApTV858jxnjz
+Hs2K8e3DbrZZN9Mnxnm7qb9x6X0JuirsjgWTlyPQ2678H10daisvDzi7ojlL0KstdN8AAAD//wMA
+UEsBAi0AFAAGAAgAAAAhAPS+Y10OAQAAGgIAABMAAAAAAAAAAAAAAAAAAAAAAFtDb250ZW50X1R5
+cGVzXS54bWxQSwECLQAUAAYACAAAACEACMMYpNQAAACTAQAACwAAAAAAAAAAAAAAAAA/AQAAX3Jl
+bHMvLnJlbHNQSwECLQAUAAYACAAAACEAgMl76UQCAADHBQAAEgAAAAAAAAAAAAAAAAA8AgAAZHJz
+L3BpY3R1cmV4bWwueG1sUEsBAi0ACgAAAAAAAAAhAMFzRMwtAwAALQMAABUAAAAAAAAAAAAAAAAA
+sAQAAGRycy9tZWRpYS9pbWFnZTEuanBlZ1BLAQItABQABgAIAAAAIQDSKNrbEQEAAIQBAAAPAAAA
+AAAAAAAAAAAAABAIAABkcnMvZG93bnJldi54bWxQSwECLQAUAAYACAAAACEAs3Swv+4AAADOAQAA
+HQAAAAAAAAAAAAAAAABOCQAAZHJzL19yZWxzL3BpY3R1cmV4bWwueG1sLnJlbHNQSwUGAAAAAAYA
+BgCFAQAAdwoAAAAA
+">
+   <v:imagedata src="image058.png" o:title=""/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;
   position:absolute;z-index:20;margin-left:0px;margin-top:14px;width:545px;
   height:5px"><img width="545" height="5" src="image059.png" alt="cid:image001.png@01D2DABC.F97B4D40" v:shapes="Immagine_x0020_2"></span><!--[endif]--><span style="mso-ignore:vglayout2">
   <table cellpadding="0" cellspacing="0">
@@ -4034,8 +4426,12 @@ x\:* {behavior:url(#default#VML);}
  </tr>
  <tr height="17" style="mso-height-source:userset;height:12.95pt">
   <td height="17" class="xl1563" style="height:12.95pt">&nbsp;</td>
-  <td align="left" valign="top">
-      <span style="mso-ignore:vglayout2">
+  <td align="left" valign="top"><!--[if gte vml 1]><v:shape id="Immagine_x0020_2"
+ 
+
+ <span style="mso-ignore:vglayout;
+  position:absolute;z-index:20;margin-left:0px;margin-top:14px;width:545px;
+  height:5px"><img width="545" height="5" src="image059.png" alt="cid:image001.png@01D2DABC.F97B4D40" v:shapes="Immagine_x0020_2"></span><!--[endif]--><span style="mso-ignore:vglayout2">
   <table cellpadding="0" cellspacing="0">
    <tbody><tr>
     <td height="17" class="xl1195" width="64" style="height:12.95pt;width:48pt"></td>
@@ -4049,7 +4445,253 @@ x\:* {behavior:url(#default#VML);}
   <td class="xl1568"></td>
   <td class="xl1357"></td>
   <td class="xl1357"></td>
-  <td align="left" valign="top"><span style="mso-ignore:vglayout2">
+  <td align="left" valign="top"><!--[if gte vml 1]><v:shape id="_x0000_s37891"
+ 
+
+  
+
+  <span style="mso-ignore:vglayout;
+  position:absolute;z-index:3;margin-left:109px;margin-top:2px;width:166px;
+  height:42px"><img width="166" height="42" src="image062.png" v:shapes="_x0000_s37891 CasellaDiTesto_x0020_15"></span><!--[endif]--><span style="mso-ignore:vglayout2">
+  <table cellpadding="0" cellspacing="0">
+   <tbody><tr>
+    <td height="17" class="xl1357" width="116" style="height:12.95pt;width:87pt"></td>
+   </tr>
+  </tbody></table>
+  </span></td>
+  <td colspan="2" class="xl1584"></td>
+  <td class="xl2102">Conto Economico progressivo</td>
+  <td class="xl1285">"</td>
+  <td class="xl1285">3</td>
+  <td class="xl1564">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+ </tr>
+ <tr height="17" style="mso-height-source:userset;height:12.95pt">
+  <td height="17" class="xl1563" style="height:12.95pt">&nbsp;</td>
+  <td></td>
+  <td class="xl1195"></td>
+  <td class="xl1195"></td>
+  <td class="xl1195"></td>
+  <td class="xl1195"></td>
+  <td class="xl1568"></td>
+  <td class="xl1357"></td>
+  <td class="xl1357"></td>
+  <td class="xl1357"></td>
+  <td class="xl1584"></td>
+  <td class="xl1584"></td>
+  <td class="xl2102">Conto Economico mensilizzato</td>
+  <td class="xl1285">"</td>
+  <td class="xl1285">4</td>
+  <td class="xl1564">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+ </tr>
+ <tr height="17" style="mso-height-source:userset;height:12.95pt">
+  <td height="17" class="xl1563" style="height:12.95pt">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1585"></td>
+  <td class="xl1585"></td>
+  <td class="xl2102">Conto Economico per Centro Profitto</td>
+  <td class="xl1285">"</td>
+  <td class="xl1285">5</td>
+  <td class="xl1564">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+ </tr>
+ <tr height="17" style="mso-height-source:userset;height:12.95pt">
+  <td height="17" class="xl1563" style="height:12.95pt">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1585"></td>
+  <td class="xl1585"></td>
+  <td class="xl2102">Conto Economico a costo del venduto</td>
+  <td class="xl1285">"</td>
+  <td class="xl1285">6</td>
+  <td class="xl1564">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+ </tr>
+ <tr height="17" style="mso-height-source:userset;height:12.95pt">
+  <td height="17" class="xl1563" style="height:12.95pt">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1357"></td>
+  <td class="xl1583">&nbsp;</td>
+  <td class="xl1583">&nbsp;</td>
+  <td class="xl1583">&nbsp;</td>
+  <td class="xl2103">Contabilità</td>
+  <td class="xl1194">"</td>
+  <td class="xl1194">7</td>
+  <td class="xl1564">&nbsp;</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+ </tr>
+ <tr height="17" style="mso-height-source:userset;height:12.95pt">
+  <td height="17" class="xl1563" style="height:12.95pt">&nbsp;</td>
+  <td colspan="4" rowspan="2" class="xl3054" width="334" style="width:250pt">Report
+  mensile - mese :</td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1193"></td>
+  <td class="xl1357"></td>
+  <td align="left" valign="top"><!--[if gte vml 1]><v:shape id="Picture_x0020_1640"
+ 
+
+
+  <span style="mso-ignore:vglayout;
+  position:absolute;z-index:1;margin-left:108px;margin-top:2px;width:173px;
+  height:43px"><img width="173" height="43" src="image065.png" v:shapes="Picture_x0020_1640 CasellaDiTesto_x0020_4"></span><!--[endif]--><span style="mso-ignore:vglayout2">
   <table cellpadding="0" cellspacing="0">
    <tbody><tr>
     <td height="17" class="xl1357" width="116" style="height:12.95pt;width:87pt"></td>
