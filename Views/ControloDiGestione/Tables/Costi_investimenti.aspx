@@ -2,56 +2,13 @@
 
 <!DOCTYPE html>
 
-<html lang="it">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta charset="utf-8">
-<meta http-equiv="pragma" content="no-cache">
-<link rel="shortcut icon" type="image/png" href="/Onlyou/favicon.png" />
-<link rel="apple-touch-icon" href="/Onlyou/onlyou-60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png">
-<title>Onlyou</title>
-
-<link rel="stylesheet" href="../../css/font-awesome.min.css">
-<link rel="stylesheet" href="../../css/bootstrap.min.css">
-<link rel="stylesheet" href="../../css/animate.min.css">
-<link rel="stylesheet" href="../../new/css/style.css">
-<link rel="stylesheet" href="../../css/datatable/datatables.bootstrap.css">
-<link rel="stylesheet" href="../../css/datatable/datatables.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.css" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
-<link rel="stylesheet" type="text/css" href=../../css/jquery.dataTables.min.css"/>
-<link rel="stylesheet" type="text/css" href="../../css/dataTables.bootstrap.min.css"/>
-<script src="./js/jquery-2.1.0.min.js"></script>
-<!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
-<script src="/Onlyou/new/js/jquery.dataTables.min.js"></script>
-<script src="./js/chart.bundle.min.js""></script>
-
-<script src=./js/angular.min.js"></script>
-
-<script src="./js/angular-ui-router.min.js"></script>
-<script src="./js/angular-animate.min.js"></script>
-<script src="./js/ui-bootstrap-tpls-2.2.0.min.js"></script>
-<script src=="./js/bootstrap.min.js"></script>
-
-<script src="/Onlyou/dashboard/js/app.js"></script>
-
-
-<script src="./dashboard/modules/treasure-plan-ctrl.js"></script>
-<script src="./dashboard/modules/modal/share/modal-share-ctrl.js"></script>
-<script src="./dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
-
+	<meta charset="utf-8">
 </head>
 <body>
 	
 
 	<style>
-
-	 #separating{
-		 border-collapse:separate;
-	 }
 
 	 .detailrow{
 		 margin-top:-50px;
@@ -63,6 +20,7 @@
 
 	 .col-sm-12{
 		 text-align:center;
+
 	 }
 	    .top-icons {
 	        background-color: darkred;
@@ -89,7 +47,6 @@
 	 }
 thead{
 	border-right:1px solid #000000;
-
 }
 
 #righr{
@@ -280,7 +237,7 @@ thead{
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;"></td>
 													<td></td>
-													<td style="border-right: 1px solid #000000;">empty cell</td>
+													<td style="border-right: 1px solid #000000;"></td>
 													<td></td>
 													<td  style="border-right:1px solid #000000;"></td>
 													<td></td>
@@ -292,7 +249,6 @@ thead{
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-ACQUISTO MACCHINE CONFEZIONE EX LAES BABIC</td>
 													<td></td>
-<%--													<td>f</td>--%>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td>57.100</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -302,12 +258,11 @@ thead{
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
-											
+													
+
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-NR. 14 MACCHINE DA TESSERE</td>
 													<td></td>
-<%--													<td style="border-right: 1px solid #000000;"></td>--%>
-<%--													<td>f</td>--%>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td></td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -469,12 +424,12 @@ thead{
 											<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">ACQUISTI HARDWARE</td>
 													<td></td>
-													<td style="border-right: 1px solid #000000;">fffdd</td>
-
+													<td style="border-right: 1px solid #000000;"></td>
 													<td>11.320 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td></td>
 													<td>10.986 </td>
+
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
@@ -484,7 +439,7 @@ thead{
 											<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">ACQUISTI HARDWARE</td>
 													<td></td>
-													<td style="border-right: 1px solid #000000;">fffdd</td>		
+													<td style="border-right: 1px solid #000000;"></td>		
 
 													<td>265.500 </td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -498,42 +453,97 @@ thead{
 
 												<tr>
 													<td style="border-right: 1px solid #000000;float:right;">Totale</td>
+													<td></td>
+													<td style="border-right: 1px solid #000000;">0</td>		
+
+													<td></td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+													<td></td>
+													
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
 													</tr>
 
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;"><u> <em>INTERVENTI DI INGEGNERIA E MANUTENZIONE</u></em></td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
 													</tr>
 
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-AGGIORNAMENTO BLINDOSBARRE</td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
 													</tr>
 
 											<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-MIGLIORIE SICUREZZA STABILIMENTO</td>
+												<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+												<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
 													</tr>
 
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-LAVORI EDILI PAVIM. PARETI E PITTURE</td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
 													</tr>
 
 											<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-LAVORI EDILI SU FABB.16 AREA MENSA</td>
+												<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+												<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
 													</tr>
 
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-LAVORI ADEGUAMENTO ANTINCENDIO</td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
 													</tr>
 
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-AMPLIAMENTO IMPIANTO ASPIRAZIONE STIRO</td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
 													</tr>
 
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-VARIE ED EVENTUALI</td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+																										<td style="border-right: 1px solid #000000;"></td>
+
 													</tr>
 
 												<tr>
 													<td style="border-right: 1px solid #000000;float:right;">Totale</td>
+													<td></td>
+													<td style="border-right: 1px solid #000000;">0</td>		
+
+													<td></td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td></td>
+													<td></td>
+													
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
 													</tr>
 										</tbody>
 									</table>
@@ -561,14 +571,14 @@ thead{
 										<tbody>
 										
 											<tr>
-													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOTALE</td>
-													<td style=";border-top:1px solid #000000;">ETC</td>
+													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOTALE</td>
+													<%--<td style="border-top:1px solid #000000;">ETC</td>
 													<td style="border-top:1px solid #000000;">ETC</td>
 													<td style="border-top:1px solid #000000;">ETC</td>
 													<td style="border-top:1px solid #000000;">ETC</td>
 													<td style="border-top:1px solid #000000;">ETC</td>
 													<td style="border-top:1px solid #000000;">ETC</td>
-													<td style="border-top:1px solid #000000;">ETC</td>
+													<td style="border-top:1px solid #000000;">ETC</td>--%>
 													
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
