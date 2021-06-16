@@ -59,7 +59,7 @@
         .capoSquadra
         {
         background-color: #f4f4f4;
-        color: red;
+        color: black;
         font: 17px Arial, Helvetica, sans-serif;
         font-weight: 600;
         text-align: right;
@@ -69,6 +69,17 @@
         }
 
         #capoSquadraT1,#capoSquadraT2, #capoSquadraT3
+        {
+        background-color: #f4f4f4;
+        color: black;
+        font: 17px Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight:600;
+        }
+        #capoLinea1,#capoLinea2,#capoLinea3
         {
         background-color: #f4f4f4;
         color: black;
@@ -114,6 +125,9 @@
          <asp:Label runat="server" ID="capo1" ></asp:Label>
          <asp:Label ID="capo2" runat="server" ></asp:Label>
          <asp:Label ID="capo3" runat="server" ></asp:Label>
+        <asp:Label runat="server" ID="cl1"></asp:Label>
+        <asp:Label runat="server" ID="cl2"></asp:Label>
+        <asp:Label runat="server" ID="cl3"></asp:Label>
     </form>
 
     <script type="text/javascript">
@@ -130,7 +144,15 @@
         c1.hidden = true;
         c2.hidden = true;
         c3.hidden = true;
-
+        var cl1 = document.getElementById("cl1");
+        var cl2 = document.getElementById("cl2");
+        var cl3 = document.getElementById("cl3");
+        document.getElementById("capoLinea1").innerHTML = cl1.innerHTML;
+        document.getElementById("capoLinea2").innerHTML = cl2.innerHTML;
+        document.getElementById("capoLinea3").innerHTML = cl3.innerHTML;
+        cl1.hidden = true;
+        cl2.hidden = true;
+        cl3.hidden = true;
     </script>
 </body>
 </html>
