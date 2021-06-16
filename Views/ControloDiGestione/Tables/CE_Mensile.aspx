@@ -15985,314 +15985,71 @@
 							
 								
 									<td>0.0</td>
-								
-								
-							
-						
 					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
 						
-					
-						
-							
-							
-								
 									<td>�</td>
-								
-								
-							
-						
 					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-				
-			
+		
 		</tr>
 	
 		<tr>
-			
-				
-				
-				
+	
 					<td>  Spese varie Gruppo</td>
 					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
+									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 							
-							
-						
-					
-						
-							
-								
+									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
 						
-					
-				
-			
 		</tr>
 	
 		<tr id="speseg" style="background-color:#CFEACF;">
@@ -16342,86 +16099,28 @@
 								
 <td>  0.0</td>
 								
-							
-							
-						
-					
-						
-							
-							
-								
 									<td>0.0</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
 								
 									<td> 0.0</td>
 								
-							
-						
-					
-						
-							
-							
-								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
 								
-							
-						
-					
-				
-			
 		</tr>
 	
 		<tr  id="operativol"style="background-color:#CFEACF;">
 			
-				
-				
-				
 					<td> RISULTATO OPERATIVO LORDO</td>
 					
-						
-							
-								
 									<td>�</td>
+
 					<td> 0.0</td>
+
 				<td>�</td>
 								
 			<td> 0.0</td>
@@ -16457,1328 +16156,288 @@
 <td>�</td>
 								
 <td> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
-								
+
 									<td>0.0</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
 								
 									<td> 0.0</td>
 								
-							
-						
-					
-						
-							
-							
-								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
-								
-									<td> 0.0</td>
-								
-							
-						
-					
-				
 			
+									<td> 0.0</td>
+							
 		</tr>
 	
 		<tr>
-			
-				
-				
-				
+	
 					<td>  Amm.Imm.tecniche</td>
 					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
 								
-							
-						
-					
-				
-			
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td>  Amm.Imm.Immateriali</td>
 					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
+
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-				
-			
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td>  Locazioni/ Affitto</td>
 					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
 							
-						
-					
-						
-							
-							
-								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
 							
-						
-					
-						
-							
-							
-								
 									<td>�</td>
-								
-								
-							
 						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-				
 			
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td>  Ammortamenti rivalutazione</td>
 					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
+									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 						
-					
-						
-							
-								
+									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
 							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
 							
-						
-					
-				
-			
 		</tr>
 	
 		<tr>
 			
-				
-				
-				
 					<td>  Ammortamenti Gruppo</td>
 					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
@@ -21565,310 +20224,72 @@
 								
 								
 									<td> 0.0</td>
-								
-							
 						
-					
-						
-							
-							
-								
 									<td>�</td>
-								
-								
-							
-						
 					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-				
-			
+		
 		</tr>
-	
 		<tr>
 			
-				
-				
-				
 					<td>Ires</td>
 					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
 								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
 								
-							
-							
-						
-					
-						
-							
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
 								
-								
-							
-							
-						
-					
-						
-							
-								
-								
 									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
 					
-				
-			
 		</tr>
 	
 		<tr id="rnetto"  style="background-color:#CFEACF;">
 			
-				
-				
-				
 					<td>RISULTATO NETTO</td>
 					
 		<td>�</td>
@@ -21910,66 +20331,19 @@
 <td>�</td>
 								
 <td> 0.0</td>
-								
-							
-							
+				
+									<td>0.0</td>
 						
-					
-						
+									<td> 0.0</td>
 							
-							
-								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
-								
-									<td>0.0</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
-								
-									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-			
-								
 									<td> 0.0</td>
-								
-							
-						
-					
 				
-			
 		</tr>
 
 	<tr>
@@ -22031,272 +20405,7 @@
 
 		</tr>
 	
-		<%--<tr>
-
-					<%--<td>E.B.I.T.D.A</td>--%>
 		
-							<%--		<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);">�</td>
-								
-								
-							
-							
-						
-					
-						
-							
-								
-								
-									<td style="background-color: rgba(0, 0, 0, 0.1);"> 0.0</td>
-								
-							
-							
-						
-					
-						
-							
-							
-								
-									<td>0.0</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
-								
-									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
-								
-									<td>0.0</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
-								
-									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
-								
-									<td>�</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
-								
-									<td> 0.0</td>
-								
-							
-						
-					
-				
-				
-			
-		</tr>--%>
-
 	<tr id="ebitda" style="background-color:#CFEACF;">
 			
 				
@@ -22343,73 +20452,22 @@
 <td>�</td>
 								
 <td> 0.0</td>
-								
-							
-							
-						
+
+									<td>0.0</td>
 					
-						
-							
-							
+									<td> 0.0</td>
 								
 									<td>0.0</td>
 								
-								
-							
-						
-					
-						
-							
-							
-								
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
-								
-									<td>0.0</td>
-								
-								
-							
-						
-					
-						
-							
-							
-								
-								
-									<td> 0.0</td>
-								
-							
-						
-					
-						
-							
-							
 								
 									<td>�</td>
 								
-			
-								
 									<td> 0.0</td>
-								
-							
-						
-					
-				
 			
 		</tr>
 	
-	
-		
-	
 </tbody>
-
 
 						</table>
 					</div>

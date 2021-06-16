@@ -640,7 +640,7 @@
 </button>
 
 <div class="user">
-	<img src="/dashboard/Images/user-demo" alt="icon"/>
+<%--	<img src="/dashboard/Images/user-demo" alt="icon"/>--%>
 	<span>User</span>
 	<a href="#" class="btn btn-wire">Logout</a>
 </div>
