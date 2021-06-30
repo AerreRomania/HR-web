@@ -27,7 +27,7 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
     private void Preparare(string Departament)
     {
         
-        string angajatibydep = " select c.Prenume as Cognome,c.Nume as Nome,a.Linie as Linea,a.PostDeLucru as Mansione from (select distinct e.Id,e.Linie,IdDepartament,Departament,PostDeLucru,IdPostDeLucru from AngajatiViewLastMonth as b join Linii as e on b.IdDepartament=e.DepartamentId) as a join (SELECT DisplayNumber,Organigramma.LineGroupId,PostDeLucruId,Linii.DepartamentId,Linii.Linie,Linii.Id as IdLinie, s_index = ROW_NUMBER() OVER(PARTITION BY PostDeLucruId,Linii.Id ORDER BY Organigramma.Id) FROM Organigramma join Linii on Organigramma.LineGroupId=Linii.LineGroupId) as o on a.IdPostDeLucru=o.PostDeLucruId and a.Id=o.IdLinie and a.IdDepartament= o.DepartamentId left join (SELECT Prenume,Nume,IdPostDeLucru,IdLinie,Linie,PostDeLucru,Departament, s_index = ROW_NUMBER() OVER(PARTITION BY IdPostDeLucru,IdLinie ORDER BY Id) FROM AngajatiViewLastMonth) as c on c.IdPostDeLucru=o.PostDeLucruId and c.IdLinie=o.IdLinie and o.s_index=c.s_index  where a.Departament='"+Departament+ "' order by a.Linie,o.DisplayNumber";
+        string angajatibydep = " select c.Prenume as Cognome,c.Nume as Nome,a.Linie as Linea,a.PostDeLucru as Mansione from (select distinct e.Id,e.Linie,IdDepartament,Departament,PostDeLucru,IdPostDeLucru from AngajatiViewLastMonth as b join Linii as e on b.IdDepartament=e.DepartamentId) as a join (SELECT DisplayNumber,Organigramma.LineGroupId,PostDeLucruId,Linii.DepartamentId,Linii.Linie,Linii.Id as IdLinie, s_index = ROW_NUMBER() OVER(PARTITION BY PostDeLucruId,Linii.Id ORDER BY Organigramma.Id) FROM Organigramma join Linii on Organigramma.LineGroupId=Linii.LineGroupId) as o on a.IdPostDeLucru=o.PostDeLucruId and a.Id=o.IdLinie and a.IdDepartament= o.DepartamentId left join (SELECT Prenume,Nume,IdPostDeLucru,IdLinie,Linie,PostDeLucru,Departament, s_index = ROW_NUMBER() OVER(PARTITION BY IdPostDeLucru,IdLinie ORDER BY Id) FROM AngajatiViewLastMonth) as c on c.IdPostDeLucru=o.PostDeLucruId and c.IdLinie=o.IdLinie and o.s_index=c.s_index  where a.Departament='" +Departament+ "' order by a.Linie,o.DisplayNumber, case when c.Nume is not null and c.Prenume is not null then 1 else 2 end";
        
         string structura = string.Empty;
         string maxbyDep = string.Empty;
@@ -287,24 +287,26 @@ public partial class OrganigramaDepartament : System.Web.UI.Page
                         tLinie.Rows.Add(tr);
                     
             }
-
-            foreach (DataRow ang in maternita.Rows)
+            if (LinieName.Contains("MA"))
             {
-               string nume = ang["Nome"].ToString() + " " + ang["Cognome"].ToString();
-               string mansione = ang["Mansione"].ToString();
-                tr = new HtmlTableRow();
-                tc = new HtmlTableCell();
-                tc.Attributes.Add("class", "rAntetSecundAlb");
-                tc.InnerHtml = nume;
-                tr.Cells.Add(tc);
+                foreach (DataRow ang in maternita.Rows)
+                {
+                    string nume = ang["Nome"].ToString() + " " + ang["Cognome"].ToString();
+                    string mansione = ang["Mansione"].ToString();
+                    tr = new HtmlTableRow();
+                    tc = new HtmlTableCell();
+                    tc.Attributes.Add("class", "rAntetSecundAlb");
+                    tc.InnerHtml = nume;
+                    tr.Cells.Add(tc);
 
-                tc = new HtmlTableCell();
-                tc.Attributes.Add("class", "rAntetSecundAlb");
-                tc.InnerHtml = mansione;
-                tr.Cells.Add(tc);
-                tLinie.Rows.Add(tr);
+                    tc = new HtmlTableCell();
+                    tc.Attributes.Add("class", "rAntetSecundAlb");
+                    tc.InnerHtml = mansione;
+                    tr.Cells.Add(tc);
+                    tLinie.Rows.Add(tr);
+                }
             }
-            
+
             tcPrincipal.Controls.Add(tLinie);
             trPrincipal.Cells.Add(tcPrincipal);
         }
