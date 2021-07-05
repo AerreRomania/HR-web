@@ -58,9 +58,9 @@ public partial class Views_HR_OreLavorate :  System.Web.UI.Page
         using (var conn = new SqlConnection(System.Configuration.ConfigurationManager
             .ConnectionStrings["WbmOlimpiasConnectionString"].ConnectionString))
         {
-            var cmd = new SqlCommand(
-                "SELECT dbo.Departamente.Departament, dbo.PosturiDeLucru.PostDeLucru,SUM(dbo.Prezente.R1TOT) AS Ore,dbo.TipuriOre.Categorie,dbo.TipuriPostDeLucru.TipPostDeLucru,DATEPART(YEAR, dbo.Prezente.Data) AS Yyear,DATEPART(MONTH, dbo.Prezente.Data) AS Mmonth FROM dbo.Departamente INNER JOIN dbo.Prezente ON dbo.Departamente.Id = dbo.Prezente.IdDepartament INNER JOIN dbo.PosturiDeLucru ON dbo.Prezente.IdPostDeLucru = dbo.PosturiDeLucru.Id INNER JOIN dbo.TipuriOre ON dbo.Prezente.IdTipOra = dbo.TipuriOre.Id INNER JOIN dbo.TipuriPostDeLucru On dbo.Prezente.IdTipPostDeLucru=dbo.TipuriPostDeLucru.Id WHERE (dbo.TipuriOre.Categorie = 'Ore straordinarie') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' OR (dbo.TipuriOre.Categorie = 'Ore lavorate') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' OR (dbo.TipuriOre.Categorie = 'Ore lavorabili') AND  DATEPART(YEAR, dbo.Prezente.Data)='"+ddlFiltruAn.SelectedValue+"' GROUP BY  dbo.Departamente.Departament,dbo.PosturiDeLucru.PostDeLucru,dbo.TipuriOre.Categorie,dbo.TipuriPostDeLucru.TipPostDeLucru,DATEPART(YEAR, dbo.Prezente.Data),DATEPART(MONTH, dbo.Prezente.Data)ORDER BY dbo.Departamente.Departament,PosturiDeLucru.postdelucru,TipuriOre.Categorie, TipPostDeLucru", conn);
-
+            var cmd = new SqlCommand("[GetOreLavorateByYear]", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@year", SqlDbType.NVarChar).Value = ddlFiltruAn.SelectedValue.ToString();
             conn.Open();
             var dr = cmd.ExecuteReader();
             sqlTbl.Load(dr);
