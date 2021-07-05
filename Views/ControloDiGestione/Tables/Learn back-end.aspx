@@ -1,9 +1,10 @@
 ﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Costi_investimenti.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Costi_investimenti" %>
 
+<!DOCTYPE html>
 
-
-
-
+<head>
+	<meta charset="utf-8">
 <html lang="it">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -55,15 +56,747 @@
 <!-- MODULES END -->
 </head>
 <body>
-	<!-- LEFT NAVIGATION -->
+	
 
 
-	<div class="container">
 
-		<div class="">
-			
 
-<!-- Left navigation -->
+<html>
+<head>
+<style>
+
+    .top-icons{
+        background-color:darkred;
+    }
+
+    hr {
+  border:none;
+  border-top:1px dotted;
+  color:white;
+  height:0px;
+  width:50%;
+}
+
+    h4{
+        text-align:center;
+    }
+
+    #code{
+        float:left;
+    }
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:5px;
+  margin-right:5px;
+}
+  
+.column {
+  float: left;/*Aici se pozitioneaza dedesubt daca float nu exista*/
+  width: 25%;
+  padding: 7px;
+  margin-top:0px;
+}
+
+ Clearfix (clear floats) 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    table {
+        border-collapse: collapse;
+        border-spacing:0;
+        width: 100%;
+        border: 1px solid #000000;
+    }
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  font-weight:bold;
+  font-size:0.9em;
+}
+
+    tr:nth-child(even) {
+        background-color: white;
+    }
+
+  tbody{
+           border:1px solid #000000;
+       }
+
+  
+
+</style>
+</head>
+<body>
+
+     <div id="code">
+    <h4>Cod.INV1</h4>
+        </div>
+    </br>
+
+<h4>INVESTIMENTI-Esercizio 2020 - </h4>
+    	</br>
+   
+					 <div align="right">
+	<button onclick="window.print()">
+		<img class="top-icons" onclick="printData();" src="/Images/C.Gestione/dockicon/print.svg" alt="Print" />
+	</button>
+	</div>
+<div class="row">
+  <div class="column">
+    <table style="float:left;">
+        <tbody>
+           
+      <tr>
+        <th>Divisione: KNITTING</th>
+        <th></th>
+      </tr>
+           
+      <tr>
+        <td>Stabilim.:  SERBIA MAGLIERIA</td>
+        <td style="border-bottom:1px solid #000000;"></td>
+      </tr>
+            
+            </tbody>
+       
+        <div class="row">
+  <div class="column">
+      <tr>
+        <td><u><em>INVESTIMENTI TECNICI</em></u></td>
+        <td ></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+
+         <tr>
+        <td>ACQUISTO MACCHINE CONFEZIONE EX LAES BABIC</td>
+        <td></td>
+      </tr>
+
+         <tr>
+        <td>NR. 14 MACCHINE DA TESSERE</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>ACQUISTO MACCHINE CONFEZIONE TECNOSTIRO</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>TAVOLO STIRO </td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>ATTREZZATURE VARIE</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>LUCI LED</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>COMPRESSORE</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>CITROEN C3</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>MACCHINE MASCHERINE</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>RICAMATRICE</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>VARIE ED EVENTUALI</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>AREA SISTEMI INFORMATIVI: </td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td>ACQUISTI PACCHETTI SOFTWARE</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>ACQUISTI HARDWARE</td>
+        <td></td>
+      </tr>
+
+          <tr>
+        <td style="float:right;">Totale</td>
+        <td></td>
+      </tr>
+
+             <tr>
+        <td>INTERVENTI DI INGEGNERIA E MANUTENZIONE</td>
+        <td></td>
+      </tr>
+
+             <tr>
+        <td>AGGIORNAMENTO BLINDOSBARRE</td>
+        <td></td>
+      </tr>
+
+             <tr>
+        <td>MIGLIORIE SICUREZZA STABILIMENTO</td>
+        <td></td>
+      </tr>
+
+             <tr>
+        <td>LAVORI EDILI PAVIM. PARETI E PITTURE</td>
+        <td></td>
+      </tr>
+
+             <tr>
+        <td>LAVORI EDILI SU FABB.16 AREA MENSA</td>
+        <td></td>
+      </tr>
+             <tr>
+        <td>LAVORI ADEGUAMENTO ANTINCENDIO</td>
+        <td></td>
+      </tr>
+
+             <tr>
+        <td>AMPLIAMENTO IMPIANTO ASPIRAZIONE STIRO</td>
+        <td></td>
+      </tr>
+
+             <tr>
+        <td>VARIE ED EVENTUALI</td>
+        <td></td>
+      </tr>
+             <tr>
+        <td style="float:right;">Totale</td>
+        <td></td>
+      </tr>
+
+        	<tbody>
+										
+											<tr>
+													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOTALE</td>
+												
+													
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+										</tbody>
+    </table>
+  </div>
+
+  <div class="column">
+    <table style="width:100px;margin-left:20px;">
+      <tr>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;"></th>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;"> 31.12.2020</th>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;"></th>
+      </tr>
+      <tr>
+        <td style="border:1PX solid #000000;width:107px;border-collapse:separate;">Autorizzato</td>
+        <td style="border:1PX solid #000000;width:107px;border-collapse:separate;">Ordinato</td>
+        <td style="border:1PX solid #000000;width:107px;border-collapse:separate;">Fatturato</td>
+      </tr>
+      <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+    
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td  style="border-left:1PX solid #000000;border-right:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>57.100</td>
+        <td style="border-left:1px solid #000000;border-right:1px solid #000000;">56.884 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td  style="border-left:1PX solid #000000;border-right:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"> </td>
+        <td <%--style="border:1PX solid #000000;"--%>>13.410</td>
+        <td style="border-left:1PX solid #000000;border-right:1px solid #000000;">13.197 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>5.550 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">5.450 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>61.270 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">60.076 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>25.250 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">24.954 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>22.100 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">22.081 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>1.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">1.494 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>60.200 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">59.469 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>5.300  </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">5.200 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>2.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">2.500 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>11.320 </td>
+<hr/>
+              <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">10.986 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+        
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+        <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+        <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;">0</td>
+        <td style="border-bottom:1px solid #000000;">0</td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;">0</td>
+      </tr>
+       	<tbody>
+	
+											<tr>
+
+													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">265.500</td>
+                                                <td style="border-left:1px solid #000000;">262.291</td>
+												
+													
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+										</tbody>
+    </table>
+  </div>
+
+     <div class="column">
+    <table style="/*float:right;*/padding:1px;width:100px;margin-left:0px;">
+      <tr>
+        <th style="background-color:#90EE90;border-top:1PX solid #000000;text-align:center;"></th>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;padding:1px;">TOTALE ANNO</th>
+        <th style="background-color:#90EE90;border-top:1PX solid #000000;text-align:center;"></th>
+      </tr>
+      <tr>
+        <td style="border:1PX solid #000000;background-color:#90EE90;width:117px;">2020</td>
+        <td style="border:1PX solid #000000;width:117px;color:white;">Ordinato</td>
+        <td style="border:1PX solid #000000;width:117px;color:white;">Fatturato</td>
+      </tr>
+        </br>
+      <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">66.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">100.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">11.023 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">22.081 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">1.494 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">50.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">40.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">25.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">320.598 </td>
+        <td></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;">0</td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">10.000</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">10.000</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">10.000</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+      <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+           <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">35.000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;">0</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;">0</td>
+      </tr>
+
+        	<tbody>
+										
+											<tr>
+													<td style="width:430px ;height:40px;border-left:1PX solid #000000;border-right:1PX solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">355.598</td>
+													<td style="width:430px ;height:40px;border-left:1PX solid #000000;border-right:1PX solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+                                                <td>0</td>
+												
+													
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+										</tbody>
+
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
+
+
 
 <script>
 
@@ -85,4688 +818,12 @@
 </script>
 
 
-<div id = "left-navi" onmouseover = "openClose()" onmouseout = "openClose()">
-<nav class="main-nav">
 
-<div id = "menu">
-	<ul>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=main">
-				<img src="/Onlyou/dashboard/images/navicon/all.svg" alt="icon">
-				<span>Tutti</span>
-				<span class="pull-right">7</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=vendite_cat">
-				<img class="notification" src="/Onlyou/dashboard/images/miscicon/notify.svg" alt="icon">
-				<img src="/Onlyou/dashboard/images/navicon/sells.svg" alt="icon">
-				<span>Vendite</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=situazioni_economiche_cat">
-				<img class="notification" src="/Onlyou/dashboard/images/miscicon/notify.svg" alt="icon">
-				<img src="/Onlyou/dashboard/images/navicon/market.svg" alt="icon">
-				<span>Situazioni Economiche</span>
-				<span class="pull-right">6</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=costi_cat">
-				<img src="/Onlyou/dashboard/images/navicon/losses.svg" alt="icon">
-				<span>Costi</span>
-				<span class="pull-right">8</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=produzione_cat">
-				<img src="/Onlyou/dashboard/images/navicon/production.svg" alt="icon">
-				<span>Produzione</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=personale_cat">
-				<img src="/Onlyou/dashboard/images/navicon/human-res.svg" alt="icon">
-				<span>Personale</span>
-				<span class="pull-right">3</span>
-			</a>
-		</li>
-		<li>
-			<a href="/Onlyou/new/index.jsp?m=finanza_cat">
-				<img src="/Onlyou/dashboard/images/navicon/warehouse.svg" alt="icon">
-				<span>Finanza</span>
-				<span class="pull-right">2</span>
-			</a>
-		</li>
-				<li>
-			<a href="/Onlyou/new/index.jsp?m=varie_cat">
-				<img src="/Onlyou/dashboard/images/navicon/misc.svg" alt="icon">
-				<span>Varie</span>
-				<span class="pull-right">6</span>
-			</a>
-		</li>
-	</ul>
-	</div>
-</nav>
-<div class="search">
-	<form action="" role="form" method="GET">
-		<div class="form-group">
-			<input class="form-control" type="search" placeholder="Cerca">
-			<button class="search-button" type="submit">
-				<i class="fa fa-search" aria-hidden="true"></i>
-			</button>
-		</div>
-	</form>
-</div>
-</div>
-
-
-
-		</div>
-		<div class="">
-			
-
-
-
-
-
-<!-- SETTING -->
-
-
-
-	
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- END SETTING -->
-
-<div>
-	<section class="detail">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1>Costi mensili per reparto</h1>
-
-					<a class="link" href="/Onlyou/new/index.jsp?m=costi_cat">
-						<i class="fa fa-chevron-left"></i> Indietro
-					</a>
-					<div style="display: inline-block; float: right;">
-						<b class="col-sm-12 knitting-title">Olimpias Knitting - anno <span id="yearspan">2018</span></b>
-					</div>
-					<div class="col-sm-5" style="display: inline-block; float: right;">
-						<form action="/Onlyou/GetSetData" method="GET">
-							<section>
-								Mese
-								<select id="month" name="month" onchange="this.form.submit()">
-									
-										<option value="1" >1</option>
-									
-										<option value="2" >2</option>
-									
-										<option value="3" selected>3</option>
-									
-										<option value="4" >4</option>
-									
-										<option value="5" >5</option>
-									
-										<option value="6" >6</option>
-									
-										<option value="7" >7</option>
-									
-										<option value="8" >8</option>
-									
-										<option value="9" >9</option>
-									
-										<option value="10" >10</option>
-									
-										<option value="11" >11</option>
-									
-										<option value="12" >12</option>
-									
-								</select>
-								Anno
-								<select id="year" name="year" onchange="this.form.submit()">
-									
-										<option value="2017" >2017</option>
-									
-										<option value="2018" selected>2018</option>
-									
-										<option value="2019" >2019</option>
-									
-										<option value="2020" >2020</option>
-									
-										<option value="2021" >2021</option>
-									
-										<option value="2022" >2022</option>
-									
-										<option value="2023" >2023</option>
-									
-										<option value="2024" >2024</option>
-									
-										<option value="2025" >2025</option>
-									
-										<option value="2026" >2026</option>
-									
-										<option value="2027" >2027</option>
-									
-										<option value="2028" >2028</option>
-									
-										<option value="2029" >2029</option>
-									
-										<option value="2030" >2030</option>
-									
-								</select>
-							</section>
-							<input type="hidden" name="totalRow" value="80" />
-							<input type="hidden" name="totalColumn" value="9" />
-							<input type="hidden" name="table" value="seipuntocinque" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=seipuntocinque" />
-						</form>
-					</div>
-				</div>
-				<div id="">
 					
-
-
-<style>
-.seipuntocinque th, td {
-	white-space: nowrap;
-	overflow: hidden;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
-}
-</style>
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table class="table table-bordered table-hover table-condensed version seipuntocinque">
-			
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>TESSITURA</th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th></th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;"></th>
-					<th style="white-space: nowrap; overflow: hidden; padding-left: 5px; padding-right: 5px; width: 12.5%;">FATT. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">FATT. 18</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">C 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">C 18</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">costi GG</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 18</th>
-				</tr>
-			</thead>
-			<tbody id="seipuntocinque_tessitura">
-				
-
-
-
-
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,0,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,0,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,0,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,0,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,1,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,1,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,1,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,1,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,2,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,2,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,2,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,2,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,3,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,3,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,3,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,3,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,4,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,4,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,4,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,4,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,5,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,5,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,5,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,5,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,6,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,6,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,6,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,6,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,7,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,7,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,7,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,7,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,8,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,8,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,8,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,8,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,9,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,9,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,9,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,9,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,10,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,10,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,10,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,10,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,11,2,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,11,3,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,11,4,'_tessitura')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,11,5,'_tessitura')"></td>
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-		
-			<td></td>
-		
-		
-		
-		
-		
-            <td></td>
-        
-		
-		
-		
-            <td></td>
-        
-		
-	</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td>fatturato</td>
-	<td></td>
-	<td>costi</td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
-    
-    </tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
-    
-    
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-    
-    </tr>
-
-		</table>
-	</div>
-	<div class="col-md-7">
-		<div>
-			<canvas id="chart_div_tessitura_costi" width="100%" height="20%"></canvas>
-		</div>
-		<div>
-			<canvas id="chart_div_tessitura_ricavi" width="100%" height="20%"></canvas>
-		</div>
-		<!-- 		<div style="width: 100%;" id="chart_div_tessitura_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_tessitura_ricavi"></div> -->
-	</div>
-</div>
-
-
-
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table class="table table-bordered table-hover table-condensed version seipuntocinque">
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>CONFEZIONE</th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th></th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;"></th>
-					<th style="white-space: nowrap; overflow: hidden; padding-left: 5px; padding-right: 5px;">FATT. 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">FATT. 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">costi GG</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 18</th>
-				</tr>
-			</thead>
-			<tbody id="seipuntocinque_confezione">
-				
-
-
-
-
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,20,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,21,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,22,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,23,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,24,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,25,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,26,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,27,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,28,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,29,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,30,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,2,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,3,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,4,'_confezione')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,31,5,'_confezione')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td>fatturato</td>
-	<td></td>
-	<td>costi</td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
 	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-
-			</tbody>
-		</table>
-	</div>
-	<div class="col-md-7">
-		<div>
-			<canvas id="chart_div_confezione_costi" width="100%" height="20%"></canvas>
-		</div>
-		<div>
-			<canvas id="chart_div_confezione_ricavi" width="100%" height="20%"></canvas>
-		</div>
-		<!-- 		<div style="width: 100%;" id="chart_div_confezione_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_confezione_ricavi"></div> -->
-	</div>
-</div>
-
-
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table class="table table-bordered table-hover table-condensed version seipuntocinque">
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>STIRO</th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th></th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;"></th>
-					<th style="white-space: nowrap; overflow: hidden; padding-left: 5px; padding-right: 5px;">FATT. 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">FATT. 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 17</th>
-					<th style="white-space: nowrap; overflow: hidden;">C 18</th>
-					<th style="white-space: nowrap; overflow: hidden;">costi GG</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 18</th>
-				</tr>
-			</thead>
-			<tbody id="seipuntocinque_stiro">
-				
-
-
-
-
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,40,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,41,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,42,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,43,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,44,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,45,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,46,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,47,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,48,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,49,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,50,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,2,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,3,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,4,'_stiro')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,51,5,'_stiro')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td>fatturato</td>
-	<td></td>
-	<td>costi</td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-
-			</tbody>
-		</table>
-	</div>
-	<div class="col-md-7">
-		<canvas id="chart_div_stiro_costi" width="100%" height="20%"></canvas>
-		<canvas id="chart_div_stiro_ricavi" width="100%" height="20%"></canvas>
-		<!-- 		<div style="width: 100%;" id="chart_div_stiro_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_stiro_ricavi"></div> -->
-	</div>
-</div>
-<div class="col-md-12">
-	<div class="col-md-5">
-		<table class="table table-bordered table-hover table-condensed version seipuntocinque">
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>TOTALE REPARTI</th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th></th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;"></th>
-					<th style="white-space: nowrap; overflow: hidden; padding-left: 5px; padding-right: 5px; width: 12.5%;">FATT. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">FATT. 18</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">C 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">C 18</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">costi GG</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 17</th>
-					<th style="white-space: nowrap; overflow: hidden; width: 12.5%;">Ris. 18</th>
-				</tr>
-			</thead>
-			<tbody id="seipuntocinque_generale">
-				
-
-
-
-
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,60,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,61,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,62,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,63,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,64,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,65,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,66,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,67,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,68,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,69,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,70,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,2,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,3,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,4,'_generale')"></td>
-				
-			
-		
-			
-				
-				
-				
-				
-					<td onclick="setDataMulti(this,71,5,'_generale')"></td>
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-	<tr>
-		
-			
-				
-					<td></td>
-				
-				
-				
-				
-			
-		
-			
-				
-				
-					<td></td>
-				
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
-			
-				
-				
-				
-					<td></td>
-				
-				
-			
-		
 			
-				
 				
 				
-					<td></td>
 				
 				
 			
@@ -4775,89 +832,6 @@
 				
 				
 				
-					<td></td>
-				
-				
-			
-		
-		
-			
-				<td></td>
-			
-			
-		
-			
-			
-				<td></td>
-			
-		
-			
-			
-				<td></td>
-			
-		
-
-	</tr>
-
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td>fatturato</td>
-	<td></td>
-	<td>costi</td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden;">Media mese</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr style="height: 10px !important; background-color: #FFFFFF;"></tr>
-<tr>
-	<td></td>
-	<td style="white-space: nowrap; overflow: hidden" colspan="2">Scostamenti con a.p.</td>
-	<td colspan="2">Fatturato</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">Costi</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-<tr>
-	<td></td>
-	<td colspan="2"></td>
-	<td colspan="2">TOTALE</td>
-	<td colspan="2"></td>
-	
-	
-</tr>
-
-			</tbody>
-		</table>
-	</div>
-	<div class="col-md-7">
-		<canvas id="chart_div_generale_costi" width="100%" height="20%"></canvas>
-		<canvas id="chart_div_generale_ricavi" width="100%" height="20%"></canvas>
-		<!-- 		<div style="width: 100%;" id="chart_div_generale_costi"></div> -->
-		<!-- 		<div style="width: 100%;" id="chart_div_generale_ricavi"></div> -->
-	</div>
-</div>
-</div>
 <script>
     function getGraph() {
         var resTC = [];
@@ -4964,108 +938,7 @@
 
 <script src="/Onlyou/new/js/Chart.bundle.min.js"></script>
 <script src="/Onlyou/new/js/Chart.min.js"></script>
-<script>
-// 	var lineChartData = {
-// 		labels : [ 'January', 'February', 'March', 'April', 'May', 'June', 'July' ],
-// 		datasets : [ {
-// 			label : 'My First dataset',
-// 			borderColor : "#00ff00",
-// 			backgroundColor : "rgba(0, 0, 0, 0.1)",
-// 			fill : false,
-// 			data : [ 10, 20 ],
-// 			yAxisID : 'y-axis-1',
-// 		}, {
-// 			label : 'My Second dataset',
-// 			//      borderColor: window.chartColors.blue,
-// 			//      backgroundColor: window.chartColors.blue,
-// 			fill : false,
-// 			data : [ 20, 10 ],
-// 			yAxisID : 'y-axis-2'
-// 		} ]
-// 	};
 
-// 	window.onload = function() {
-// 		var ctx = document.getElementById('myChart').getContext('2d');
-// 		window.myLine = Chart.Line(ctx, {
-// 			data : lineChartData,
-// 			options : {
-// 				responsive : true,
-// 				hoverMode : 'index',
-// 				stacked : false,
-// 				title : {
-// 					display : true,
-// 					text : 'Chart.js Line Chart - Multi Axis'
-// 				},
-// 				scales : {
-// 					yAxes : [ {
-// 						type : 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-// 						display : true,
-// 						position : 'left',
-// 						id : 'y-axis-1',
-// 					}, {
-// 						type : 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-// 						display : true,
-// 						position : 'right',
-// 						id : 'y-axis-2',
-
-// 						// grid line settings
-// 						gridLines : {
-// 							drawOnChartArea : false, // only want the grid lines for one axis to show up
-// 						},
-// 					} ],
-// 				}
-// 			}
-// 		});
-// 	};
-
-// 	document.getElementById('randomizeData').addEventListener('click', function() {
-// 		lineChartData.datasets.forEach(function(dataset) {
-// 			dataset.data = dataset.data.map(function() {
-// 				return randomScalingFactor();
-// 			});
-// 		});
-
-// 		window.myLine.update();
-// 	});
-
-	// var ctx = document.getElementById("myChart").getContext('2d');
-	// var myChart = new Chart(ctx, {
-	//     type: 'bar',
-	//     data: {
-	//         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-	//         datasets: [{
-	//             label: '# of Votes',
-	//             data: [12, 19, 3, 5, 2, 3],
-	//             backgroundColor: [
-	//                 'rgba(255, 99, 132, 0.2)',
-	//                 'rgba(54, 162, 235, 0.2)',
-	//                 'rgba(255, 206, 86, 0.2)',
-	//                 'rgba(75, 192, 192, 0.2)',
-	//                 'rgba(153, 102, 255, 0.2)',
-	//                 'rgba(255, 159, 64, 0.2)'
-	//             ],
-	//             borderColor: [
-	//                 'rgba(255,99,132,1)',
-	//                 'rgba(54, 162, 235, 1)',
-	//                 'rgba(255, 206, 86, 1)',
-	//                 'rgba(75, 192, 192, 1)',
-	//                 'rgba(153, 102, 255, 1)',
-	//                 'rgba(255, 159, 64, 1)'
-	//             ],
-	//             borderWidth: 1
-	//         }]
-	//     },
-	//     options: {
-	//         scales: {
-	//             yAxes: [{
-	//                 ticks: {
-	//                     beginAtZero:true
-	//                 }
-	//             }]
-	//         }
-	//     }
-	// });
-</script>
 
 <script>
     //	getData();
@@ -5081,21 +954,7 @@
     getDataMulti('_confezione');
     getDataMulti('_stiro');
     getDataMulti('_generale');
-	//	var tessituraData = [{3,3,3,3,3,3,3,3,3}];
-	// 	setTimeout(function() {
-	// 		console.log("->");
-	// 		var tablea = $('#seipuntocinque_tessitura');
-	// 		tablea.DataTable({
-	//             scrollY : "800px",
-	//             scrollX : true,
-	//             scrollCollapse : false,
-	//             paging : false,
-	//             fixedColumns : false,
-	//             "searching" : false,
-	//             "info" : false,
-	//             "ordering" : false,
-	//         });
-	//     }, 5000);
+	
 </script>
 
 		</div>
@@ -5119,52 +978,7 @@
 
 </script>
 
-<div id = "right-navi">
-<button type="button" class="right-toggle" onclick="rgtForce()">
-	<span class="bullet one"></span>
-	<span class="bullet two"></span>
-	<span class="bullet three"></span>
-</button>
-<div class="user">
-	<img src="/Onlyou/dashboard/images/user-demo.png" alt="icon">
-	<span>Carlo Alberto della Siega</span>
-	<a href="#" class="btn btn-wire">Logout</a>
-</div>
-<nav class="user-navi">
-	<ul>
-		<li>
-			<a href="#">Il mio profilo</a>
-		</li>
-		<li>
-			<a href="#">Impostazioni</a>
-		</li>
-		<li>
-			<a href="#">Contatta l'assistenza</a>
-		</li>
-		<li>
-			<a href="#">Preferenze</a>
-		</li>
-	</ul>
-</nav>
-<footer>
-	<small>© 2017 ONLYOU </small>
-	<nav class="footer-navi">
-		<ul>
-			<li>
-				<a href="#">Termini e Condizioni</a>
-			</li>
-			<li>
-				<a href="#">Policy</a>
-			</li>
-			<li>
-				<a href="#">Cookie</a>
-			</li>
-		</ul>
-	</nav>
-</footer>
-</div>
-		</div>
-	</div>
+
 
 	<script>
         var collection_prior = document.getElementsByClassName('prior');

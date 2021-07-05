@@ -1,584 +1,304 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Costi_investimenti.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Costi_investimenti" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Costi_investimenti.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Costi_investimenti" %>
 
 <!DOCTYPE html>
 
 <head>
 	<meta charset="utf-8">
+<html lang="it">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache">
+<link rel="shortcut icon" type="image/png" href="/Onlyou/favicon.png" />
+<link rel="apple-touch-icon" href="/Onlyou/onlyou-60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png">
+<title>Onlyou</title>
+<!-- CSS  -->
+<link rel="stylesheet" href="/Onlyou/css/font-awesome.min.css">
+<link rel="stylesheet" href="/Onlyou/css/bootstrap.min.css">
+<link rel="stylesheet" href="/Onlyou/css/animate.min.css">
+<link rel="stylesheet" href="/Onlyou/new/css/style.css">
+<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.bootstrap.css">
+<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
+<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/dataTables.bootstrap.min.css"/>
+<script src="/Onlyou/js/jquery-2.1.0.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
+<script src="/Onlyou/new/js/jquery.dataTables.min.js"></script>
+<!-- CHART JS -->
+
+<script src="/Onlyou/js/chart.bundle.min.js"></script>
+<!-- CHART JS END -->
+<!-- CORE -->
+<script src="/Onlyou/js/angular.min.js"></script>
+<!-- CORE END -->
+<!-- THIRD PARTY MODULES -->
+<script src="/Onlyou/js/angular-ui-router.min.js"></script>
+<script src="/Onlyou/js/angular-animate.min.js"></script>
+<script src="/Onlyou/js/ui-bootstrap-tpls-2.2.0.min.js"></script>
+<script src="/Onlyou/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
+
+<!-- THIRD PARTY MODULES END -->
+<!-- MAIN APP -->
+<script src="/Onlyou/dashboard/js/app.js"></script>
+<!-- MAIN APP END -->
+<!-- MODULES -->
+
+<script src="/Onlyou/dashboard/modules/treasure-plan-ctrl.js"></script>
+<script src="/Onlyou/dashboard/modules/modal/share/modal-share-ctrl.js"></script>
+<script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
+<!-- MODULES END -->
 </head>
 <body>
 	
 
-	<style>
 
-	 .detailrow{
-		 margin-top:-50px;
-	 }
 
-	 #amendamento{
-		 float:right;
-	 }
 
-	 .col-sm-12{
-		 text-align:center;
+<html>
+<head>
+<style>
 
-	 }
-	    .top-icons {
-	        background-color: darkred;
-	    }
-#cinquepuntoquattro{
-	border:1px solid #000000;
-	border-right:1px solid #000000;
-	border-collapse:collapse;
-	overflow-x:auto;
+    .top-icons{
+        background-color:darkred;
+    }
 
+    hr {
+  border:none;
+  border-top:1px dotted;
+  color:white;
+  height:0px;
+  width:50%;
 }
 
+    h4{
+        text-align:center;
+    }
 
-.col-md-8{
-	bottom:1000px;
-		margin-left:700px;
-	
+    #code{
+        float:left;
+    }
+* {
+  box-sizing: border-box;
 }
 
-	#months,#years,#cambios,{
-		bottom:1000px;
-		margin-left:1000px;
-	
-	 }
-thead{
-	border-right:1px solid #000000;
+.row {
+  margin-left:5px;
+  margin-right:5px;
+}
+  
+.column {
+  float: left;/*Aici se pozitioneaza dedesubt daca float nu exista*/
+  width: 25%;
+  padding: 7px;
+  margin-top:0px;
 }
 
-#righr{
-	float:right;
-	margin-right:220px;
+ Clearfix (clear floats) 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-#errori{
-	float:right;
-	margin-right:-42px;
+    table {
+        border-collapse: collapse;
+        border-spacing:0;
+        width: 100%;
+        border: 1px solid #000000;
+    }
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  font-weight:bold;
+  font-size:0.9em;
 }
 
-	 #chButton{
-		 background-color:#6495ED;
-		 color:#ffffff;
-		 padding:3px  3px ;
-		 font-size:17px;
-		 font-family:arial;
-		 border-radius:7%;
-	 }
+    tr:nth-child(even) {
+        background-color: white;
+    }
 
-	 #tassi{
-		 text-align:center;
+  tbody{
+           border:1px solid #000000;
+       }
 
-	 }
+  
 
-	 tbody{
-		text-align:center;
-	 }
+</style>
+</head>
+<body>
 
-	#tess{
-		float:left;
-		margin-left:70px;
-		color:#6495ED;
-	}
+     <div id="code">
+    <h4>Cod.INV1</h4>
+        </div>
+    </br>
 
-	</style>
-
-	<div class="container">
-
-		<div class="">
-		
-		<div class="">
-<div>
-	<section class="detail">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-12">
-						<h4 id="tassi">INVESTIMENTI - Esercizio 2020 -
-						</h4>
-					</div>
-					</br>
-
+<h4>INVESTIMENTI-Esercizio 2020 - </h4>
+    	</br>
+   
 					 <div align="right">
 	<button onclick="window.print()">
 		<img class="top-icons" onclick="printData();" src="/Images/C.Gestione/dockicon/print.svg" alt="Print" />
 	</button>
 	</div>
-	</br>
+<div class="row">
+  <div class="column">
+    <table style="float:left;">
+        <tbody>
+           
+      <tr>
+        <th>Divisione: KNITTING</th>
+        <th></th>
+      </tr>
+           
+      <tr>
+        <td>Stabilim.:  SERBIA MAGLIERIA</td>
+        <td style="border-bottom:1px solid #000000;"></td>
+      </tr>
+            
+            </tbody>
+       
+        <div class="row">
+  <div class="column">
+      <tr>
+        <td><u><em>INVESTIMENTI TECNICI</em></u></td>
+        <td ></td>
+      </tr>
 
-					<section class="detail" id="load-data">
-						<div class="col-md-2">
-						</div>
-						<div class="col-md-8">
-						</div>
-						<div class="col-md-2">
-						</div>
-														<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version">
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
-					</div>
-				</div>	
-														<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version"></table>
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
 
-					</div>
-				</div>
-														<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version">
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+         <tr>
+        <td>ACQUISTO MACCHINE CONFEZIONE EX LAES BABIC</td>
+        <td></td>
+      </tr>
 
-					</div>
-				</div>
-<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+         <tr>
+        <td>NR. 14 MACCHINE DA TESSERE</td>
+        <td></td>
+      </tr>
 
-					</div>
-				</div>
-		
-														<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version">
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+          <tr>
+        <td>ACQUISTO MACCHINE CONFEZIONE TECNOSTIRO</td>
+        <td></td>
+      </tr>
 
-					</div>
-				</div>
-			
-														<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version" >
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+          <tr>
+        <td>TAVOLO STIRO </td>
+        <td></td>
+      </tr>
 
-					</div>
-				</div>
+          <tr>
+        <td>ATTREZZATURE VARIE</td>
+        <td></td>
+      </tr>
 
-						<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version">
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+          <tr>
+        <td>LUCI LED</td>
+        <td></td>
+      </tr>
 
-					</div>
-				</div>
-				<table id="cinquepuntoquattro"class="table table-bordered table-hover table-condensed version">
+          <tr>
+        <td>COMPRESSORE</td>
+        <td></td>
+      </tr>
 
+          <tr>
+        <td>CITROEN C3</td>
+        <td></td>
+      </tr>
 
-<thead>
-	<tr style="border-bottom:1px solid #000000;">
-		</br>
-		<th style="border: 1px solid #000000;;padding-top:20px;width:430px; font-weight:bold;font-size:15px;border-collapse:separate;">Divisione:KNITTING</br> Stabilim:SERBIA MAGLIERIA</th>
-											</tr>
-										</thead>
-					
-										<tbody>
-										
-												<tr>
-													<td  style="border-top: 1px solid #000000;border-right: 1px solid #000000;border-left: 1px solid #000000;"><u><em>INVESTIMENTI TECNICI </em></u></td>
-													</tr>
-											
-											<tr>
-													<th style=" border-right: 1px solid #000000;border-left:1px solid black;/*padding-top:20px;*/width:140px; font-weight:bold;font-size:15px;"></th>
-		<th style="border-right: 1px solid #000000;font-weight:bold;font-size:15px; width:140px;border-bottom:1px solid #000000;border-top: 1px solid #000000;margin-bottom:20px;" colspan="2">Autorizzato </th>
-		<th style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top: 1px solid #000000;"colspan="2">Odinato</th>
-		<th style=" border-top: 1px solid #000000;width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;"colspan="2">Fatturato</th>
-													
-												</tr>
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;"></td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td  style="border-right:1px solid #000000;"></td>
-													<td></td>
-													<a href="/Onlyou/DeleteMonth?month=9&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-ACQUISTO MACCHINE CONFEZIONE EX LAES BABIC</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>57.100</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td>56.884 </td>
-													<a href="/Onlyou/DeleteMonth?month=8&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-													
+          <tr>
+        <td>MACCHINE MASCHERINE</td>
+        <td></td>
+      </tr>
 
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-NR. 14 MACCHINE DA TESSERE</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td></td>
-													<a href="/Onlyou/DeleteMonth?month=7&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-ACQUISTO MACCHINE CONFEZIONE TECNOSTIRO</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>13.410</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-												<td> </td>
-												<td>13.197  </td>
-													<a href="/Onlyou/DeleteMonth?month=6&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-TAVOLO STIRO</td>
-													<td></td>
-<%--													<td style="border-right: 1px solid #000000;"></td>--%>
-<%--													<td>f</td>--%>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>5.550</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td></td>
-												<td>5.450 </td>
-													<a href="/Onlyou/DeleteMonth?month=5&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td  style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-ATTREZZATURE VARIE </td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>61.270</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-												<td>60.076 </td>
-													<a href="/Onlyou/DeleteMonth?month=4&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-LUCI LED</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>25.250</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td>24.954  </td>
-													<a href="/Onlyou/DeleteMonth?month=3&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-COMPRESSORE</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>22.100 </td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td>22.081  </td>
-													
-													<a href="/Onlyou/DeleteMonth?month=2&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-CITROEN C3</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>1.500 </td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td>1.494  </td>
-													<a href="/Onlyou/DeleteMonth?month=1&year=2017">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-MACCHINE MASCHERINE</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>60.200 </td>
-													<td style="border-right: 1px solid #000000;"></td>
-												<td></td>
-													<td>59.469 </td>
-												
-													<a href="/Onlyou/DeleteMonth?month=4&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-RICAMATRICE</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>5.300 </td>
-													<td style="border-right: 1px solid #000000;"></td>
-											        <td></td>
-													<td>5.200 </td>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-VARIE ED EVENTUALI</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													 <td></td>
-													<td> </td>
-													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
+          <tr>
+        <td>RICAMATRICE</td>
+        <td></td>
+      </tr>
 
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-AREA SISTEMI INFORMATIVI: </td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td> </td>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
-											<tr>
-													<td style="border-right:1px solid #000000;border-left: 1px solid #000000;">-ACQUISTI PACCHETTI SOFTWARE</td>
-													<td></td>
-													<td style="border-right:1px solid #000000;"></td>
-													<td>2.500 </td>
-													<td style="border-right:1px solid #000000;"></td>
-											    	<td></td>
-													<td>2.500 </td>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-											
+          <tr>
+        <td>VARIE ED EVENTUALI</td>
+        <td></td>
+      </tr>
 
-											<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">ACQUISTI HARDWARE</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>11.320 </td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td>10.986 </td>
+          <tr>
+        <td>AREA SISTEMI INFORMATIVI: </td>
+        <td></td>
+      </tr>
 
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
+          <tr>
+        <td>ACQUISTI PACCHETTI SOFTWARE</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td>ACQUISTI HARDWARE</td>
+        <td></td>
+      </tr>
 
-											
-											<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">ACQUISTI HARDWARE</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>		
+          <tr>
+        <td style="float:right;">Totale</td>
+        <td></td>
+      </tr>
 
-													<td>265.500 </td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td>262.291 </td>
-													
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
+             <tr>
+        <td>INTERVENTI DI INGEGNERIA E MANUTENZIONE</td>
+        <td></td>
+      </tr>
 
-												<tr>
-													<td style="border-right: 1px solid #000000;float:right;">Totale</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;">0</td>		
+             <tr>
+        <td>AGGIORNAMENTO BLINDOSBARRE</td>
+        <td></td>
+      </tr>
 
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td></td>
-													
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-													</tr>
+             <tr>
+        <td>MIGLIORIE SICUREZZA STABILIMENTO</td>
+        <td></td>
+      </tr>
 
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;"><u> <em>INTERVENTI DI INGEGNERIA E MANUTENZIONE</u></em></td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													</tr>
+             <tr>
+        <td>LAVORI EDILI PAVIM. PARETI E PITTURE</td>
+        <td></td>
+      </tr>
 
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-AGGIORNAMENTO BLINDOSBARRE</td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													</tr>
+             <tr>
+        <td>LAVORI EDILI SU FABB.16 AREA MENSA</td>
+        <td></td>
+      </tr>
+             <tr>
+        <td>LAVORI ADEGUAMENTO ANTINCENDIO</td>
+        <td></td>
+      </tr>
 
-											<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-MIGLIORIE SICUREZZA STABILIMENTO</td>
-												<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-												<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													</tr>
+             <tr>
+        <td>AMPLIAMENTO IMPIANTO ASPIRAZIONE STIRO</td>
+        <td></td>
+      </tr>
 
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-LAVORI EDILI PAVIM. PARETI E PITTURE</td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													</tr>
+             <tr>
+        <td>VARIE ED EVENTUALI</td>
+        <td></td>
+      </tr>
+             <tr>
+        <td style="float:right;">Totale</td>
+        <td></td>
+      </tr>
 
-											<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-LAVORI EDILI SU FABB.16 AREA MENSA</td>
-												<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-												<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													</tr>
-
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-LAVORI ADEGUAMENTO ANTINCENDIO</td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													</tr>
-
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-AMPLIAMENTO IMPIANTO ASPIRAZIONE STIRO</td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													</tr>
-
-												<tr>
-													<td style="border-right: 1px solid #000000;border-left: 1px solid #000000;">-VARIE ED EVENTUALI</td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-																										<td style="border-right: 1px solid #000000;"></td>
-
-													</tr>
-
-												<tr>
-													<td style="border-right: 1px solid #000000;float:right;">Totale</td>
-													<td></td>
-													<td style="border-right: 1px solid #000000;">0</td>		
-
-													<td></td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td></td>
-													<td></td>
-													
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-													</tr>
-										</tbody>
-									</table>
-							</br>
-				</div>
-				</div>
-
-						<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version" <%--width="50%"--%>>
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
-
-					</div>
-				</div>
-				<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
-					
-<div id="tess">
-										<tbody>
+        	<tbody>
 										
 											<tr>
 													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOTALE</td>
-													<%--<td style="border-top:1px solid #000000;">ETC</td>
-													<td style="border-top:1px solid #000000;">ETC</td>
-													<td style="border-top:1px solid #000000;">ETC</td>
-													<td style="border-top:1px solid #000000;">ETC</td>
-													<td style="border-top:1px solid #000000;">ETC</td>
-													<td style="border-top:1px solid #000000;">ETC</td>
-													<td style="border-top:1px solid #000000;">ETC</td>--%>
+												
 													
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -599,28 +319,248 @@ thead{
 												</tr>
 
 										</tbody>
-									</table>
-							</br>
-								</div>
-							</div>
-					<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version" <%--width="50%"--%>>
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+    </table>
+  </div>
 
-					</div>
-				</div>
-				<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
-		
-<tbody>
+  <div class="column">
+    <table style="width:100px;margin-left:20px;">
+      <tr>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;"></th>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;"> 31.12.2020</th>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;"></th>
+      </tr>
+      <tr>
+        <td style="border:1PX solid #000000;width:107px;border-collapse:separate;">Autorizzato</td>
+        <td style="border:1PX solid #000000;width:107px;border-collapse:separate;">Ordinato</td>
+        <td style="border:1PX solid #000000;width:107px;border-collapse:separate;">Fatturato</td>
+      </tr>
+      <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+    
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td  style="border-left:1PX solid #000000;border-right:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>57.100</td>
+        <td style="border-left:1px solid #000000;border-right:1px solid #000000;">56.884 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td  style="border-left:1PX solid #000000;border-right:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"> </td>
+        <td <%--style="border:1PX solid #000000;"--%>>13.410</td>
+        <td style="border-left:1PX solid #000000;border-right:1px solid #000000;">13.197 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>5.550 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">5.450 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>61.270 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">60.076 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>25.250 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">24.954 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>22.100 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">22.081 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>1.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">1.494 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>60.200 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">59.469 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>5.300  </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">5.200 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>2.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">2.500 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>>11.320 </td>
+<hr/>
+              <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">10.986 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>>265.500 </td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">262.291 </td>
+      </tr>
+        
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
 
+          <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+        <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+             <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+        <td></td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
+      </tr>
+        <tr>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;">0</td>
+        <td style="border-bottom:1px solid #000000;">0</td>
+        <td style="border-right:1PX solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;">0</td>
+      </tr>
+       	<tbody>
+	
+											<tr>
+
+													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">265.500</td>
+                                                <td style="border-left:1px solid #000000;">262.291</td>
+												
+													
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
@@ -640,53 +580,390 @@ thead{
 												</tr>
 
 										</tbody>
-									</table>
-							</br>
-								</div>
-							</div>
+    </table>
+  </div>
 
-							<div class="col-md-8">
-								<div class="col-md-12 form-group">
-									<form action="/Onlyou/cambio-tasso" method="post">
-										<div class="col-md-6 form-group">
+     <div class="column">
+    <table style="/*float:right;*/padding:1px;width:100px;margin-left:0px;">
+      <tr>
+        <th style="background-color:#90EE90;border-top:1PX solid #000000;text-align:center;"></th>
+        <th style="background-color:#90EE90;border-top:1px solid #000000;text-align:center;padding:1px;">TOTALE ANNO</th>
+        <th style="background-color:#90EE90;border-top:1PX solid #000000;text-align:center;"></th>
+      </tr>
+      <tr>
+        <td style="border:1PX solid #000000;background-color:#90EE90;width:117px;">2020</td>
+        <td style="border:1PX solid #000000;width:117px;color:white;">Ordinato</td>
+        <td style="border:1PX solid #000000;width:117px;color:white;">Fatturato</td>
+      </tr>
+        </br>
+      <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">66.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">0</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">100.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">11.023 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">22.081 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">1.494 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">50.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">40.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">25.000 </td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">320.598 </td>
+        <td></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;">0</td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">10.000</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">10.000</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">10.000</td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+          <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;"></td>
+        <td <%--style="border:1PX solid #000000;"--%>></td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+      <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
 
-											<div id="change">
-								<div class="clearfix"></div>
-							</div>
-						</div>
-					</section>
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+
+           <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">5000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;"></td>
+      </tr>
+         <tr>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;background-color:#90EE90;">35.000</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;">0</td>
+        <td style="border-left:1PX solid #000000;border-right:1PX solid #000000;">0</td>
+      </tr>
+
+        	<tbody>
+										
+											<tr>
+													<td style="width:430px ;height:40px;border-left:1PX solid #000000;border-right:1PX solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">355.598</td>
+													<td style="width:430px ;height:40px;border-left:1PX solid #000000;border-right:1PX solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+                                                <td>0</td>
+												
+													
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+										</tbody>
+
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+
+    function openClose() {
+
+        var e = document.getElementById('left-navi');
+        if (e.className == 'ng-scope hover') {
+            e.className = 'ng-scope';
+        } else {
+            e.className = 'ng-scope hover';
+        }
+    }
+
+    var $li = $('#menu li a').click(function () {
+        $li.removeClass('active');
+        $(this).addClass('active');
+    });
+
+</script>
+
+
+
+					
+	
+			
+				
+				
+				
+				
+			
+		
+			
+				
+				
+				
+<script>
+    function getGraph() {
+        var resTC = [];
+        var resCC = [];
+        var resSC = [];
+        var resGC = [];
+        var resTR = [];
+        var resCR = [];
+        var resSR = [];
+        var resGR = [];
+
+        var year = '2018';
+        var month = '3';
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/Onlyou/GetSeiPuntoCinqueGraph?month=' + month + '&year=' + year, true);
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.onload = function () {
+            var obj = JSON.parse(this.responseText);
+
+            resTC = obj.TessituraCosti;
+            resCC = obj.ConfezioneCosti;
+            resSC = obj.StiroCosti;
+            resGC = obj.GeneraleCosti;
+            resTR = obj.TessituraRicavi;
+            resCR = obj.ConfezioneRicavi;
+            resSR = obj.StiroRicavi;
+            resGR = obj.GeneraleRicavi;
+            createChart(resTC[0], resTC[1], 'chart_div_tessitura_costi', year, 'TESSITURA - andamento costi ' + (year - 1) + '/' + year);
+            createChart(resCC[0], resCC[1], 'chart_div_tessitura_ricavi', year, 'TESSITURA - andamento ricavi ' + (year - 1) + '/' + year);
+            createChart(resSC[0], resSC[1], 'chart_div_confezione_costi', year, 'CONFEZIONE - andamento costi ' + (year - 1) + '/' + year);
+            createChart(resGC[0], resGC[1], 'chart_div_confezione_ricavi', year, 'CONFEZIONE - andamento ricavi ' + (year - 1) + '/' + year);
+            createChart(resTR[0], resTR[1], 'chart_div_stiro_costi', year, 'STIRO - andamento costi ' + (year - 1) + '/' + year);
+            createChart(resCR[0], resCR[1], 'chart_div_stiro_ricavi', year, 'STIRO - andamento ricavi ' + (year - 1) + '/' + year);
+            createChart(resSR[0], resSR[1], 'chart_div_generale_costi', year, 'GENERALE - andamento costi ' + (year - 1) + '/' + year);
+            createChart(resGR[0], resGR[1], 'chart_div_generale_ricavi', year, 'GENERALE - andamento ricavi ' + (year - 1) + '/' + year);
+
+        };
+        xhr.send();
+    }
+
+    function createChart(costi, ricavi, idChart, year, title) {
+        var lineChartData = {
+            labels: ['Gen', 'Feb', 'Mar', 'Apr', 'Mag', 'Giu', 'Lug', 'Ago', 'Set', 'Ott', 'Nov', 'Dic'],
+            datasets: [{
+                label: 'Anno ' + (year - 1),
+                borderColor: "#176d17",
+                backgroundColor: "#29b229",
+                fill: false,
+                data: costi,
+                yAxisID: 'y-axis-1',
+            }, {
+                label: 'Anno ' + year,
+                borderColor: "#d32626",
+                backgroundColor: "#f99393",
+                fill: false,
+                data: ricavi,
+                yAxisID: 'y-axis-2'
+            }]
+        };
+
+        var ctx = document.getElementById(idChart).getContext('2d');
+        window.myLine = Chart.Line(ctx, {
+            data: lineChartData,
+            options: {
+                responsive: true,
+                hoverMode: 'index',
+                stacked: false,
+                title: {
+                    display: true,
+                    text: title
+                },
+                scales: {
+                    yAxes: [{
+                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                        display: true,
+                        position: 'left',
+                        id: 'y-axis-1',
+                    }, {
+                        type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                        display: true,
+                        position: 'right',
+                        id: 'y-axis-2',
+
+                        // grid line settings
+                        gridLines: {
+                            drawOnChartArea: false, // only want the grid lines for one axis to show up
+                        },
+                    }],
+                }
+            }
+        });
+    }
+
+
+</script>
 				</div>
 			</div>
 		</div>
 	</section>
 </div>
+<script id="set-data" month="3" year="2018" total-row="80" total-column="9" db-table='seipuntocinque' post-page="ajax-pages/seipuntocinque.jsp" get-page="ajax-pages/seipuntocinque.jsp"
+	servlet="/Onlyou/GetSetData" servlet-multi="/Onlyou/GetSetDataMulti" multi="true" src="/Onlyou/js/functions.js"></script>
+
+
+<script src="/Onlyou/new/js/Chart.bundle.min.js"></script>
+<script src="/Onlyou/new/js/Chart.min.js"></script>
+
 
 <script>
-	function 
-    {
-        document.getElementById("amendamento2").style.color = "#f4f4f4";
+    //	getData();
+    var resTC = [];
+    var resCC = [];
+    var resSC = [];
+    var resGC = [];
+    var resTR = [];
+    var resCR = [];
+    var resSR = [];
+    var resGR = [];
+    getDataMulti('_tessitura');
+    getDataMulti('_confezione');
+    getDataMulti('_stiro');
+    getDataMulti('_generale');
 
-    }
-
-    function showButton(n) {
-        //  alert(n);
-        if (n == '1') {
-            var sel1 = document.getElementById("month").value
-            var sel2 = document.getElementById("year").value
-            var file = document.getElementById("valuta").value;
-
-            if (sel1 != 0 && sel2 != 0 && file > 0) {
-                document.getElementById("chButton").disabled = false;
-            } else
-                document.getElementById("chButton").disabled = true;
-        }
-
-    }
 </script>
 
 		</div>
 		<div class="">
-	
+			
+
+<!-- Right navigation -->
+
+
 <script>
 
     function rgtForce() {
@@ -700,6 +977,8 @@ thead{
     }
 
 </script>
+
+
 
 	<script>
         var collection_prior = document.getElementsByClassName('prior');
@@ -789,4 +1068,3 @@ thead{
     </script>
 </body>
 </html>
-
