@@ -116,7 +116,7 @@
 
 th, td {
   text-align: left;
-  padding: 10px;
+  padding: 9.5px;
   font-weight:bold;
   font-size:0.9em;
 }
@@ -293,29 +293,13 @@ th, td {
         <td style="float:right;">Totale</td>
         <td></td>
       </tr>
-
+        </br>
+        <table>
         	<tbody>
 										
 											<tr>
-													<td style="width:430px ;height:40px;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOTALE</td>
+													<td style="border-collapse:collapse;width:430px ;/*height:50px;*/border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOTALE</td>
 												
-													
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
 												</tr>
 
 										</tbody>
@@ -367,7 +351,7 @@ th, td {
       </tr>
           <tr>
         <td style="border-right:1PX solid #000000;border-left:1px solid #000000;"></td>
-        <td <%--style="border:1PX solid #000000;"--%>>5.550 </td>
+        <td <%--style="border:1PX solid #000000;"--%>>5.550  </td>
         <td style="border-right:1PX solid #000000;border-left:1px solid #000000;">5.450 </td>
       </tr>
           <tr>
