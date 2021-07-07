@@ -382,12 +382,13 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-02.png');"></a>
+		<article> <a onclick="Tab_Source('Costi_orario')" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-02.png');"></a>
 		<h2>
 			<a href="./index.jsp?m=seipuntodue">Grafico costo orario</a>
 		</h2>
 		<div class="detail">
 			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
+			</div>
 		</article>
 	</div>
 
@@ -414,7 +415,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-05.png');"></a>
+		<article> <a onclick="Tab_Source('Costi_Mensili_per_Reparto2')" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-05.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntocinque">Costi mensili per Reparto</a>
 		</h2>
@@ -425,7 +426,7 @@
 	</div>
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
-		<article> <a href=" " class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-06.png');"></a>
+		<article> <a onclick="Tab_Source('Costi_mensili_delle_energie')" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-06.png');"></a>
 		<h2>
 			<a href="./new/index.jsp?m=seipuntosei">Costi mensili delle energie</a>
 		</h2>
@@ -445,6 +446,17 @@
 		</div>
 		</article>
 	</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 cats costi">
+		<article> <a onclick="Tab_Source('Costi_investimenti')" class="img-container" style="background-image: url('/Images/C.Gestione/losses-cat-02.png');"></a>
+		<h2>
+			<a href="./index.jsp?m=seipuntodue">Investimenti</a>
+		</h2>
+		<div class="detail">
+			<img src="/Images/C.Gestione/navicon/losses.svg" alt="icon"/> <span>Costi</span>
+			</div>
+		</article>
+			</div>
+	
 
 	<div class="col-sm-6 col-md-4 col-lg-3 cats prod">
 		<article> <a href="" class="img-container" style="background-image: url('/Images/C.Gestione/production-cat-01.png');"></a>
@@ -610,10 +622,7 @@
 		</div>
 		</article>
 	</div>
-
-		</div>
-		<div class="">
-			
+	</div>
 
 <!-- Right navigation -->
 
@@ -696,7 +705,7 @@
             if (category.startsWith("CE")) {
                 category = 'economico';
 			}
-			if (category.startsWith("Costo")) {
+			if (category.startsWith("Costo") || category.startsWith("Costi")) {
 				category = 'costi';
 			}
 			if (category.startsWith("Vendite")) {
