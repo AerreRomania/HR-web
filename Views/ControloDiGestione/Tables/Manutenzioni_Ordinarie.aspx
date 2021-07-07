@@ -8,50 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="utf-8">
 <meta http-equiv="pragma" content="no-cache">
-<link rel="shortcut icon" type="image/png" href="/Onlyou/favicon.png" />
-<link rel="apple-touch-icon" href="/Onlyou/onlyou-60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png">
-<title>Onlyou</title>
-<!-- CSS  -->
-<link rel="stylesheet" href="/Onlyou/css/font-awesome.min.css">
-<link rel="stylesheet" href="/Onlyou/css/bootstrap.min.css">
-<link rel="stylesheet" href="/Onlyou/css/animate.min.css">
-<link rel="stylesheet" href="/Onlyou/new/css/style.css">
-<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.bootstrap.css">
-<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.css" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
-<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/jquery.dataTables.min.css"/>
-<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/dataTables.bootstrap.min.css"/>
-<script src="/Onlyou/js/jquery-2.1.0.min.js"></script>
-<!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
-<script src="/Onlyou/new/js/jquery.dataTables.min.js"></script>
-<!-- CHART JS -->
 
-<script src="/Onlyou/js/chart.bundle.min.js"></script>
-<!-- CHART JS END -->
-<!-- CORE -->
-<script src="/Onlyou/js/angular.min.js"></script>
-<!-- CORE END -->
-<!-- THIRD PARTY MODULES -->
-<script src="/Onlyou/js/angular-ui-router.min.js"></script>
-<script src="/Onlyou/js/angular-animate.min.js"></script>
-<script src="/Onlyou/js/ui-bootstrap-tpls-2.2.0.min.js"></script>
-<script src="/Onlyou/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
-
-<!-- THIRD PARTY MODULES END -->
-<!-- MAIN APP -->
-<script src="/Onlyou/dashboard/js/app.js"></script>
-<!-- MAIN APP END -->
-<!-- MODULES -->
-
-<script src="/Onlyou/dashboard/modules/treasure-plan-ctrl.js"></script>
-<script src="/Onlyou/dashboard/modules/modal/share/modal-share-ctrl.js"></script>
-<script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
-<!-- MODULES END -->
 </head>
 <body>
 	
@@ -61,13 +18,13 @@
 	</button>
 	</div>
 </br>
-    <table style="border-collapse:collapse;width:5%">
-    
+
+
+    <table style="border-collapse:separate;margin-left:550px;width:5%">
+            <figcaption style="margin-left:445px;font-family:monospace;font-size:13px;">DATI PER GRAFO:</figcaption> 
   <tr>
-          <%--<caption>2017</caption>                     
-        <caption>2018</caption>  
-          <caption>2019</caption>  
-          <caption>2020</caption>  --%>
+                              
+      
     <th>11.310</th>
       <th>6099</th>
 
@@ -147,8 +104,230 @@
     
   </tr>
 </table>
+    </br>
+    </br>
 
+    <div id="forms">
 
+        <form>
+  <label for="fname">Dati grafico ok?</label>
+  <input type="text" id="fname3" name="fname">
+        <br><br>
+  <label for="lname">data rif.report:</label>&nbsp; &nbsp; 
+  <input type="text" id="lname2" name="lname">
+        </br>
+        </br>
+        <label for="lname">Coerenza mese:</label>
+  <input type="text" id="lname" name="lname">
+     
+        <br><br>
+ <%-- <input type="submit" value="Submit">--%>
+</form>
+    </div>
+
+     <table style="width:100%;color:red;">
+    <figcaption>	
+        <center>
+		CONSUNTIVO MANUTENZIONI ORDINARIE-Esercizio 2020			
+            </center>
+</figcaption>
+         </br>
+         </table>
+              <table id="second" style="border-collapse:separate;margin-left:100px;width:60%;">
+
+  <tr>
+          <%--<caption>2017</caption>                     
+        <caption>2018</caption>  
+          <caption>2019</caption>  
+          <caption>2020</caption>  --%>
+    <th style="border-style:dashed;">Divisione: TESSITURA CAPI	
+Stabilim.: KNITTING - SERBIA	</th>
+      <th style="border-style:dashed;width:60px;">Cons.</br>2017</th>
+
+    <th style="border-style:dashed;width:60px;">Cons.</br>2018</th>
+
+    <th style="border-style:dashed;width:60px;">Cons.</br>2019</th>
+    <th style="border-style:dashed;width:60px;">BDG</br>
+        2020</th>
+    <th style="border-style:dashed;width:60px;">PRC1</br>
+        2020</th>
+    <th style="border-style:dashed;width:60px;">PRC2</br>
+2020</th>
+    <th style="border-style:dashed;width:60px;">Progr. a	</br>
+precedente	
+</th>
+    <th style="border-style:dashed;width:60px;">Spesato a</br>
+dic-20</th>
+    <th style="border-style:dashed;width:60px;">Progr. a</br>
+dic-20
+</th>
+  </tr>
+         </table>
+
+    </br>
+    </br>
+
+     <table id="second" style="border-collapse:separate;margin-left:100px;width:60%;">
+    
+  <tr>
+          <%--<caption>2017</caption>                     
+        <caption>2018</caption>  
+          <caption>2019</caption>  
+          <caption>2020</caption>  --%>
+    <th style="border-style:dashed;width:14%;padding-top:15px;padding-bottom:15px;">FABBRICATI:	
+IMPIANTI:	
+MACCHINARI:	
+ATTREZZATURE INDUSTRIALI:	
+MEZZI DI TRASPORTO:	
+	</th>
+      <th style="border-style:dashed;width:60px;"> 76.879 </br>
+ 139.894 </br>
+ 54.387 </br>
+ 1.000 
+</th>
+
+    <th style="border-style:dashed;width:60px;"> 783 v
+ 25.879 </br>
+ 144.336 </br>
+ 28.542 </br>
+ 1.819 </br>
+</th>
+
+    <th style="border-style:dashed;width:60px;"> 873 </br>
+ 27.219 </br>
+ 119.594 </br>
+ 22.792 </br>
+ 878 
+</th>
+    <th style="border-style:dashed;width:60px;"> 10.000 	</br>
+ 35.000 	</br>
+ 85.000 	</br>
+ 35.000 	</br>
+ 2.000 	
+</th>
+    <th style="border-style:dashed;width:60px;"></th>
+    <th style="border-style:dashed;width:60px;"></th>
+    <th style="border-style:dashed;width:60px;"> 5.573 </br>
+ 8.051 </br>
+ 83.414 </br>
+ 15.909 </br>
+ 465 
+
+</th>
+    <th style="border-style:dashed;width:60px;"> 148 </br>
+ -   
+ 21.091 </br>
+ 4.185 </br>
+ 285 
+</th>
+    <th style="border-style:dashed;width:60px;"> 5.721 </br>
+ 8.051 </br>
+ 104.505 </br>
+ 20.094 </br>
+ 749 
+
+</th>
+  </tr>
+         </table>
+    </br>
+    </br>
+     <table id="second" style="border-collapse:separate;margin-left:100px;width:60%;">
+    
+  <tr>
+          <%--<caption>2017</caption>                     
+        <caption>2018</caption>  
+          <caption>2019</caption>  
+          <caption>2020</caption>  --%>
+    <th style="border-style:dashed;width:14%;padding-top:15px;padding-bottom:15px;">TOTALE
+
+	</th>
+      <th style="border-style:dashed;width:60px;">  272.160 
+
+</th>
+
+    <th style="border-style:dashed;width:60px;">  201.359 
+
+</th>
+
+    <th style="border-style:dashed;width:60px;">  171.357 
+
+</th>
+    <th style="border-style:dashed;width:60px;">  167.000 
+
+</th>
+    <th style="border-style:dashed;width:60px;">-</th>
+    <th style="border-style:dashed;width:60px;">-</th>
+    <th style="border-style:dashed;width:60px;"> 113.413 
+
+</th>
+    <th style="border-style:dashed;width:60px;"> 25.709 
+
+</th>
+    <th style="border-style:dashed;width:60px;">  139.121 
+
+</th>
+  </tr>
+         
+         </table>
+    </br>
+    </br>
+   <table border="0"  id="novalues">
+       <tr>
+           <th style="border-bottom:hidden;font-size:17px ;text-align:center;">Budget</th>
+       </tr>
+        <tr>
+           <th style="border-bottom:hidden;">300.000&nbsp; --------------------------------------- <%--<hr size="1" width="180px" align="right"/>--%></th>
+       </tr>
+     <tr>
+           <th style="border-bottom:hidden;">250.000&nbsp; --------------------------------------- </th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">200.000&nbsp; ---------------------------------------</th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">150.000&nbsp; ---------------------------------------</th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">100.000&nbsp; ---------------------------------------</th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">50.000&nbsp;&nbsp; ----------------------------------------</th>
+       </tr>
+       <tr>
+           <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;-----------------------------------------</th>
+       </tr>
+   </table>
+   
+     </br>
+    </br>
+    <center>
+   <table border="0"  id="novalues2">
+       <tr>
+           <th style="border-bottom:hidden;font-size:17px ;text-align:center;">Andamento Mensile</th>
+       </tr>
+        <tr>
+           <th style="border-bottom:hidden;">60.000</th>
+       </tr>
+     <tr>
+           <th style="border-bottom:hidden;">50.000</th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">40.000</th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">30.000</th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">20.000</th>
+       </tr>
+       <tr>
+           <th style="border-bottom:hidden;">10.000</th>
+       </tr>
+       <tr>
+           <th>0</th>
+       </tr>
+   </table>
+   </center>
 <html>
 <head>
 <style>
@@ -161,9 +340,57 @@
   border-collapse: separate;
 }
 th, td {
-  padding: 5px;
+  padding: 7px;
   text-align: left;
+  font-size:13px;
 }
+
+#lname{
+    background-color:#000000;
+    width:10%;
+            margin-left:4px;
+            border:1px ridge #000000 ;
+            color:red;
+}
+
+#lname2{
+    background-color:#FFFF00;
+        width:10%;
+       margin-left:3px;
+     border:1px ridge #000000;
+
+}
+
+#fname3{
+        width:10%;
+        margin-left:3px;
+       border:1px ridge #000000 ;
+}
+
+#captions{
+    color:red;
+}
+
+#novalues{
+    margin-left:100px;
+    width:250px;
+    height:300px;
+    border-collapse:collapse;
+      color: #A9A9A9;
+      border-color:#A9A9A9;
+}
+
+#novalues2{
+    margin-left:100px;
+    width:500px;
+    height:300px;
+    border-collapse:collapse;
+      color: #A9A9A9;
+      border-color:#A9A9A9;
+      margin-top:-335px;
+      margin-left:-30px;/*margin-left:170px;*/
+}
+
   
 </style>
 </head>
@@ -191,6 +418,8 @@ th, td {
 
 
 <script>
+
+    
 
     function openClose() {
 
