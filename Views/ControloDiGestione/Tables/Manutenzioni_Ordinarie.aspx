@@ -8,50 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="utf-8">
 <meta http-equiv="pragma" content="no-cache">
-<link rel="shortcut icon" type="image/png" href="/Onlyou/favicon.png" />
-<link rel="apple-touch-icon" href="/Onlyou/onlyou-60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/Onlyou/onlyou-76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/Onlyou/onlyou-120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/Onlyou/onlyou-152.png">
-<title>Onlyou</title>
-<!-- CSS  -->
-<link rel="stylesheet" href="/Onlyou/css/font-awesome.min.css">
-<link rel="stylesheet" href="/Onlyou/css/bootstrap.min.css">
-<link rel="stylesheet" href="/Onlyou/css/animate.min.css">
-<link rel="stylesheet" href="/Onlyou/new/css/style.css">
-<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.bootstrap.css">
-<link rel="stylesheet" href="/Onlyou/css/datatable/datatables.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.css" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
-<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/jquery.dataTables.min.css"/>
-<link rel="stylesheet" type="text/css" href="/Onlyou/new/css/dataTables.bootstrap.min.css"/>
-<script src="/Onlyou/js/jquery-2.1.0.min.js"></script>
-<!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/fc-3.2.4/fh-3.1.3/r-2.2.1/datatables.min.js"></script> -->
-<script src="/Onlyou/new/js/jquery.dataTables.min.js"></script>
-<!-- CHART JS -->
 
-<script src="/Onlyou/js/chart.bundle.min.js"></script>
-<!-- CHART JS END -->
-<!-- CORE -->
-<script src="/Onlyou/js/angular.min.js"></script>
-<!-- CORE END -->
-<!-- THIRD PARTY MODULES -->
-<script src="/Onlyou/js/angular-ui-router.min.js"></script>
-<script src="/Onlyou/js/angular-animate.min.js"></script>
-<script src="/Onlyou/js/ui-bootstrap-tpls-2.2.0.min.js"></script>
-<script src="/Onlyou/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script> -->
-
-<!-- THIRD PARTY MODULES END -->
-<!-- MAIN APP -->
-<script src="/Onlyou/dashboard/js/app.js"></script>
-<!-- MAIN APP END -->
-<!-- MODULES -->
-
-<script src="/Onlyou/dashboard/modules/treasure-plan-ctrl.js"></script>
-<script src="/Onlyou/dashboard/modules/modal/share/modal-share-ctrl.js"></script>
-<script src="/Onlyou/dashboard/modules/modal/priority/modal-priority-ctrl.js"></script>
-<!-- MODULES END -->
 </head>
 <body>
 	
