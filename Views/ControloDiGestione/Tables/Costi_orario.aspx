@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Grafico_costo_orario.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Grafico_costo_orario" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Costi_orario.aspx.cs" Inherits="Views_ControloDiGestione_Tables_Costi_orario" %>
 
 <!DOCTYPE html>
 
@@ -80,8 +80,7 @@ var $li = $('#menu li a').click(function() {
 				<div class="col-sm-12">
 					<h1>Grafico costo orario</h1>
 
-					<a class="link" href="/Onlyou/new/index.jsp?m=costi_cat"> <i class="fa fa-chevron-left"></i> Indietro
-					</a>
+					
 					<div style="display: inline-block; float: right;">
 						<b class="col-sm-12 knitting-title">Olimpias Knitting - anno <span id="yearspan"></span></b>
 					</div>

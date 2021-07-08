@@ -756,16 +756,16 @@ th, td {
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
-												</tr>
+												
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
-												</tr>
+												
 
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
-												</tr>
+												
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
