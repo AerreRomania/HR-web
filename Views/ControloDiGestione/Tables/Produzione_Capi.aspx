@@ -466,7 +466,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">APR</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;"></td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -475,7 +475,7 @@ thead{
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">(1,8)</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<%--<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -488,7 +488,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAG</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">133,5 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -497,7 +497,7 @@ thead{
 													<td  style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">1,2 </td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 										<%--			<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -510,7 +510,7 @@ thead{
 											
 												<tr>
 													<td  style="border-right: 1px solid #000000;border-left:1px solid #000000;">GIU</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">156,7 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -519,7 +519,7 @@ thead{
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">0,6 </td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 											<%--		<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -532,7 +532,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">LUG</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">141,5 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -541,7 +541,7 @@ thead{
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">(0,1)</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 										<%--			<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -554,7 +554,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">AGO</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">146,5 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -563,7 +563,7 @@ thead{
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">0,2 </td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 												<%--	<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -576,7 +576,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">SET</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">174,3 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -585,7 +585,7 @@ thead{
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">(2,1)</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<%--<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -598,7 +598,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">OTT</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">200,4 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;" >f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -607,7 +607,7 @@ thead{
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">(1,0)</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<%--<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -620,7 +620,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">NOV</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">151,4 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -629,7 +629,7 @@ thead{
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">0,5 </td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 											<%--		<td style="border-bottom:1px solid #000000;">l</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
@@ -642,7 +642,7 @@ thead{
 											
 												<tr>
 													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">DIC</td>
-													<td  style="border-right: 1px solid #000000;">d</td>
+													<td  style="border-right: 1px solid #000000;">182,2 </td>
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
@@ -651,7 +651,7 @@ thead{
 													<td style="border-right: 1px solid #000000;"></td>
 													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">j</td>
+													<td style="background-color:#90EE90;">(1,2)</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 <%--													<td>l</td>
 													<td  style="border-right: 1px solid #000000;"></td>
@@ -665,16 +665,16 @@ thead{
 
 												<tr>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #000000;">PROG.</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">d</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">1.889</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#F4A460;">1.332</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;background-color:#DCDCDC;">g</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;background-color:#DCDCDC;"></td>
 													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;COLOR:red;background-color:#DCDCDC;">5,5%</td>
 													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;background-color:#DCDCDC;">-10,3%</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#DCDCDC;">-13,5%</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">j</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;"></td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;"></td>
 												<%--	<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">l</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
@@ -1078,7 +1078,7 @@ thead{
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.889</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.879</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.588</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.332</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.627</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:yellow;">5,5</td>
 													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:yellow;">6,2</td>
@@ -1140,8 +1140,6 @@ thead{
 		<th style="background-color:tan; font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
 		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
 		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
-		<%--<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #D3D3D3;" colspan="2"></th>
-		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">efff</th>--%>
 		
 											</tr>
 					
@@ -1467,7 +1465,7 @@ thead{
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.889</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.879</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.588</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.332</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.811</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:yellow;">5,5</td>
 													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:yellow;">5,8</td>
@@ -1529,9 +1527,7 @@ thead{
 		<th style="background-color:tan; font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
 		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
 		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
-		<%--<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #D3D3D3;" colspan="2"></th>
-		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">efff</th>--%>
-		
+	
 											</tr>
 					
 										</thead>
@@ -1856,7 +1852,7 @@ thead{
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.889</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.879</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.588</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.332</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">405</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:yellow;">5,5</td>
 													
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:yellow;">5,8</td>
@@ -1873,95 +1869,60 @@ thead{
 														</a>
 												</tr>
 
-											<%--<tr>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Media consumo kwh/giorno</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">222</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">233</td>
-													
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-												
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>--%>
-
 										</tbody>
 									</table>
+				</div>
+				</div>
+	
+</br>
+</br>
 
-
+		<%--	<thead>
+	<tr>
+		</br>
+		<th style="background-color: tan; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="border-right: 1px solid #000000;font-weight:bold;font-size:15px; width:72px;color:red;border-bottom:1px solid #000000;border-top:1px solid #000000;color:blue;" colspan="2">TESSITURA </th>
+		<th style=" background-color:tan; width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style="background-color:tan; font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+		<%--<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #D3D3D3;" colspan="2"></th>
+		<th style="background-color:tan; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">efff</th>--%>
+		
+											</tr>
+					
+										</thead>
+					
+									</table>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
 							</br>
 
 				</div>
 				</div>
+		</br>
+		<center>
+		<h2><font color="#C71585"> COSTI VARI</font></h2>
+			</center>
+															<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
 
-		
-
-						<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version" <%--width="50%"--%>>
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
-
-					</div>
-				</div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-				<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
-					
-
+<div id="tess">
 
 <thead>
-		<tr>
+	<tr>
 		</br>
-		<th style="background-color: #F8F8FF; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:140px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
-		<th style="border-right: 1px solid #000000;font-weight:bold;font-size:15px; width:140px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">COSTO 16 </th>
-		<th style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #D3D3D3;"colspan="2">COSTO 17</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px; width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;color:red;" colspan="2">Mc 16</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Mc 17</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">c.mc 16</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">c.mc 17</th>
-		<th style="background-color:#90EE90; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Delta %</th>
-		
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;color:red;border-bottom:1px solid #000000;border-top:1px solid #000000;color:blue;" colspan="2">Ammortamenti  e Leasing	 </th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+
+
 											</tr>
 					
 										</thead>
@@ -1969,22 +1930,21 @@ thead{
 										<tbody>
 										
 												<tr>
-													<td  style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
-														
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;color:#FFFFFF;">capi/mese</br>2017</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:75px;">C 14</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;color:#FFFFFF;width:75px;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 15</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 16</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi </br>gg/20</td>
+													<%--<td style="border-bottom:1px solid #000000;">j</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;">l</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>--%>
+													<td style="background-color:#90EE90;border-bottom:1px solid #000000;">B 16</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;"></td>
 													<a href="/Onlyou/DeleteMonth?month=10&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
@@ -1993,21 +1953,17 @@ thead{
 
 										
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">GEN</td>
+													<td  style="border-right: 1px solid #000000;">140,2 </td>
+													<td style="border-right: 1px solid #000000;">104,7 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">104,9 </td>
+													<td  style="border-right: 1px solid #000000;">160 </td>
 													
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td >j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">4,6 </td>
+													<td  style="border-right: 1px solid #000000;">320 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,5 </td>
+													<td style="background-color:#90EE90;" >#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=9&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2015,66 +1971,53 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000">fffGEN</td>
-													<td>d</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">FEB</td>
+													<td  style="border-right: 1px solid #000000;">138,0 </td>
+													<td style="border-right: 1px solid #000000;">175,4 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">137,4 </td>
+													<td  style="border-right: 1px solid #000000;">145 </td>
 													
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">6,7 </td>
+													<td  style="border-right: 1px solid #000000;">323 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,3 </td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
-
 													<a href="/Onlyou/DeleteMonth?month=8&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAR</td>
+													<td  style="border-right: 1px solid #000000;">187,5 </td>
+													<td style="border-right: 1px solid #000000;">166,6 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">101,1 </td>
+													<td  style="border-right: 1px solid #000000;">167 </td>
 													
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,4 </td>
+													<td  style="border-right: 1px solid #000000;">328 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">3,4 </td><%--it's a "ghost" number--%>
+													<td style="background-color:#90EE90;">#REF! </td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"> </td>
 													<a href="/Onlyou/DeleteMonth?month=7&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">APR</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=6&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2082,21 +2025,17 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=5&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2104,21 +2043,16 @@ thead{
 												</tr>
 											
 												<tr>
-													<td  style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td  style="border-right: 1px solid #000000;border-left:1px solid #000000;">GIU</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
-													
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=4&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2126,21 +2060,16 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">LUG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
-													
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=3&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2148,21 +2077,17 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">AGO</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=2&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2170,21 +2095,16 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">SET</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
-													
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=1&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2192,21 +2112,17 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">OTT</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;" >f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=4&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2214,121 +2130,69 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;">fffGEN</td>
-													<td style="border-bottom:1px solid #000000;">d</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">f</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">g</td>
-													
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">h</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">j</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">l</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="background-color:#90EE90;border-bottom:1px solid #000000;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">NOV</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">fffGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">DIC</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td s>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
-													
 													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 
 												<tr>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">fffGEN</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #000000;">PROG.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">f</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">1.993</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">g</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">h</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">4.045</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">j</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">l</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;"></td>
+				
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 											<tr>
-													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style=";border-top:1px solid #000000;color:#f4f4f4;">0</td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;border-right:1px solid #f4f4f4;"></td>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-
-											<tr>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Media consumo kwh/giorno</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOT.</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">222</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.993</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">233</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">4.045</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-											
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #90EE90;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
@@ -2336,83 +2200,87 @@ thead{
 
 										</tbody>
 									</table>
-							</br>
-								</div>
-							</div>
-					<div class="col-sm-12 form-group">
-							<div  class="col-sm-4 form-group">
-								<div  class="table-responsive">
-									<table id="cambio"class="table table-bordered table-hover table-condensed version" <%--width="50%"--%>>
-										<thead>
-											<tr id="theady">
-														<input type="hidden" name="totalRow" value="65" />
-							<input type="hidden" name="totalColumn" value="6" />
-							<input type="hidden" name="table" value="cinquepuntoquattro" />
-							<input type="hidden" name="page" value="/new/index.jsp?m=cinquepuntoquattro" />
-						</form>
+		% inc.
 
-					</div>
-				</div>
-				<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
-		
-<%--<div id="tess">
-<h1>AQUA</h1>
-	</div>
-					</br>
-					</br>
-					</br>--%>
+															<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
+
+<div id="tess">
 
 <thead>
-		<tr>
+	<tr>
 		</br>
-		<th style="background-color: #F8F8FF; border-right: 1px solid #000000;border-left:1px solid black;padding-top:20px;width:140px; font-weight:bold;border-bottom:1px solid #D3D3D3;font-size:15px;"></th>
-		<th style="border-right: 1px solid #000000;font-weight:bold;font-size:15px; width:140px;color:red;border-bottom:1px solid #D3D3D3;" colspan="2">COSTO 16 </th>
-		<th style=" border-right: 1px solid #000000;width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #D3D3D3;"colspan="2">COSTO 17</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px; width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;color:red;" colspan="2">Mc 16</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Mc 17</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">c.mc16</th>
-		<th style="background-color:#f4f4f4; font-weight:bold;font-size:15px;width:65px; border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">c.mc 17</th>
-		<th style="background-color:#90EE90; font-weight:bold;font-size:15px;width:65px;border-right: 1px solid #000000;border-bottom:1px solid #D3D3D3;" colspan="2">Delta %</th>
-	</tr>
-	</thead>
-<tbody>
-<tr>
-													<td  style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
-														
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;border-bottom:1px solid #000000;border-top:1px solid #000000;width:385px;" colspan="2">% scost. da bdg  </th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+											</tr>
+										</thead>
+
+							</br>
+
+				</div>
+				</div>
+
+<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
+	</br>
+	</br>
+	</br>
+<div id="tess">
+
+<thead>
+	<tr>
+		</br>
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;color:red;border-bottom:1px solid #000000;border-top:1px solid #000000;color:blue;" colspan="2">Spese Generali	 </th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+
+
+											</tr>
+					
+										</thead>
+					
+										<tbody>
+										
+												<tr>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;color:#FFFFFF;">capi/mese</br>2017</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:75px;">C 14</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;color:#FFFFFF;width:75px;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 15</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 16</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi </br>gg/20</td>
+													<%--<td style="border-bottom:1px solid #000000;">j</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;">l</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>--%>
+													<td style="background-color:#90EE90;border-bottom:1px solid #000000;">B 16</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;"></td>
 													<a href="/Onlyou/DeleteMonth?month=10&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
+
+
+										
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">GEN</td>
+													<td  style="border-right: 1px solid #000000;">140,2 </td>
+													<td style="border-right: 1px solid #000000;">104,7 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">104,9 </td>
+													<td  style="border-right: 1px solid #000000;">20 </td>
 													
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td >j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">4,6 </td>
+													<td  style="border-right: 1px solid #000000;">29 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,5 </td>
+													<td style="background-color:#90EE90;" >#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=9&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2420,63 +2288,53 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000">hhhGEN</td>
-													<td>d</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">FEB</td>
+													<td  style="border-right: 1px solid #000000;">138,0 </td>
+													<td style="border-right: 1px solid #000000;">175,4 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">137,4 </td>
+													<td  style="border-right: 1px solid #000000;">25</td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">6,7 </td>
+													<td  style="border-right: 1px solid #000000;">25</td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,3 </td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
-
 													<a href="/Onlyou/DeleteMonth?month=8&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
-													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAR</td>
+													<td  style="border-right: 1px solid #000000;">187,5 </td>
+													<td style="border-right: 1px solid #000000;">166,6 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">101,1 </td>
+													<td  style="border-right: 1px solid #000000;">29</td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,4 </td>
+													<td  style="border-right: 1px solid #000000;">38 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">3,4 </td><%--it's a "ghost" number--%>
+													<td style="background-color:#90EE90;">#REF! </td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"> </td>
 													<a href="/Onlyou/DeleteMonth?month=7&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">APR</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=6&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2484,20 +2342,17 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=5&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2505,20 +2360,16 @@ thead{
 												</tr>
 											
 												<tr>
-													<td  style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td  style="border-right: 1px solid #000000;border-left:1px solid #000000;">GIU</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=4&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2526,20 +2377,16 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">LUG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=3&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2547,20 +2394,17 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">AGO</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=2&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2568,20 +2412,16 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">SET</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=1&year=2017">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2589,20 +2429,17 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">OTT</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;" >f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=4&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -2610,120 +2447,69 @@ thead{
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;">hhhGEN</td>
-													<td style="border-bottom:1px solid #000000;">d</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">f</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">g</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">h</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">j</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;">l</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
-													<td style="background-color:#90EE90;border-bottom:1px solid #000000;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">NOV</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 												<tr>
-													<td style="border-right: 1px solid #000000;">hhhGEN</td>
-													<td>d</td>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">DIC</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>f</td>
+													<td  style="border-right: 1px solid #000000;">f</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td s>g</td>
+													<td  style="border-right: 1px solid #000000;">g</td>
 													<td style="border-right: 1px solid #000000;"></td>
-													<td>h</td>
+													<td  style="border-right: 1px solid #000000;">h</td>
 													<td  style="border-right: 1px solid #000000;"></td>
-													<td>j</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td>l</td>
-													<td  style="border-right: 1px solid #000000;"></td>
-													<td style="background-color:#90EE90;">777</td>
+													<td style="background-color:#90EE90;">#REF!</td>
 													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
-													
 													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 
 												<tr>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">hhhGEN</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #000000;">PROG.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">f</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">1.993</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">g</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">h</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">4.045</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">j</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">l</td>
-													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;">777</td>
-													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;"></td>
+				
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
 												</tr>
 											
 											<tr>
-													<td style="border-left:1px solid #f4f4f4;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style=";border-top:1px solid #000000;color:#f4f4f4;">0</td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;"></td>
-													<td style="border-top:1px solid #000000;"></td>
-													<td  style="border-top:1px solid #000000;border-right:1px solid #f4f4f4;"></td>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-
-											<tr>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:12px;">Media consumo kwh/giorno</td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOT.</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">222</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.993</td>
 													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;">233</td>
-													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-right: 1px solid #D3D3D3;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #d3d3d3;"></td>
-													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">4.045</td>
 													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
-												
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
-
-													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-														</a>
-												</tr>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #90EE90;background-color:#90EE90;"></td>
 													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
 														</a>
@@ -2731,11 +2517,669 @@ thead{
 
 										</tbody>
 									</table>
+		% inc.
+
+															<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
+
+<div id="tess">
+
+<thead>
+	<tr>
+		</br>
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;border-bottom:1px solid #000000;border-top:1px solid #000000;width:385px;" colspan="2">% scost. da bdg  </th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+											</tr>
+										</thead>
+
 							</br>
 
-								</div>
-							
-							</div>
+				<%--</div>
+				</div>--%>
+
+										</tbody>
+									</table>
+				</div>
+				</div>
+	</br>
+	</br>
+
+	<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
+		</br>
+
+<div id="tess">
+
+<thead>
+	<tr>
+		</br>
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;color:red;border-bottom:1px solid #000000;border-top:1px solid #000000;color:blue;" colspan="2">Oneri Finanziari </th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+
+
+											</tr>
+					
+										</thead>
+					
+										<tbody>
+										
+												<tr>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;color:#FFFFFF;">capi/mese</br>2017</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:75px;">C 14</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;color:#FFFFFF;width:75px;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 15</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 16</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi </br>gg/20</td>
+													<%--<td style="border-bottom:1px solid #000000;">j</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;">l</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>--%>
+													<td style="background-color:#90EE90;border-bottom:1px solid #000000;">B 16</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;"></td>
+													<a href="/Onlyou/DeleteMonth?month=10&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+
+										
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">GEN</td>
+													<td  style="border-right: 1px solid #000000;">140,2 </td>
+													<td style="border-right: 1px solid #000000;">104,7 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">104,9 </td>
+													<td  style="border-right: 1px solid #000000;">160 </td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">4,6 </td>
+													<td  style="border-right: 1px solid #000000;">320 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,5 </td>
+													<td style="background-color:#90EE90;" >#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=9&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">FEB</td>
+													<td  style="border-right: 1px solid #000000;">138,0 </td>
+													<td style="border-right: 1px solid #000000;">175,4 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">137,4 </td>
+													<td  style="border-right: 1px solid #000000;">145 </td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">6,7 </td>
+													<td  style="border-right: 1px solid #000000;">323 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,3 </td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=8&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAR</td>
+													<td  style="border-right: 1px solid #000000;">187,5 </td>
+													<td style="border-right: 1px solid #000000;">166,6 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">101,1 </td>
+													<td  style="border-right: 1px solid #000000;">167 </td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,4 </td>
+													<td  style="border-right: 1px solid #000000;">328 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">3,4 </td><%--it's a "ghost" number--%>
+													<td style="background-color:#90EE90;">#REF! </td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"> </td>
+													<a href="/Onlyou/DeleteMonth?month=7&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">APR</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=6&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=5&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td  style="border-right: 1px solid #000000;border-left:1px solid #000000;">GIU</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=4&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">LUG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=3&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">AGO</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">SET</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=1&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">OTT</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;" >f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=4&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">NOV</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">DIC</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+												<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #000000;">PROG.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">1.993</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">4.045</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;"></td>
+				
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+											<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOT.</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.993</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">4.045</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #90EE90;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+										</tbody>
+									</table>
+		% inc.
+<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version">
+
+<div id="tess">
+
+<thead>
+	<tr>
+		
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;border-bottom:1px solid #000000;border-top:1px solid #000000;width:385px;" colspan="2">%gfggg scost. da bdg  </th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+											</tr>
+										</thead>
+							</br>
+				</div>
+				</div>
+																</br>
+																<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version"<%-- width="40%"--%>>
+</br>
+</br>
+</br>
+<div id="tess">
+
+<thead>
+	<tr>
+		</br>
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;color:red;border-bottom:1px solid #000000;border-top:1px solid #000000;color:blue;" colspan="2">Personale  a Struttura</th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+
+
+											</tr>
+					
+										</thead>
+					
+										<tbody>
+										
+												<tr>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;color:#FFFFFF;">capi/mese</br>2017</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:75px;">C 14</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;color:#FFFFFF;width:75px;"></td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 15</td>
+													<td style="border-right: 1px solid #000000; border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi/mese</td>
+													<td style="border-bottom:1px solid #000000;border-right:1px solid #000000;width:72px;">C 16</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;width:72px;color:#FFFFFF;">capi </br>gg/20</td>
+													<%--<td style="border-bottom:1px solid #000000;">j</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;">l</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;"></td>--%>
+													<td style="background-color:#90EE90;border-bottom:1px solid #000000;">B 16</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;border-bottom:1px solid #000000;"></td>
+													<a href="/Onlyou/DeleteMonth?month=10&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+
+										
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">GEN</td>
+													<td  style="border-right: 1px solid #000000;">140,2 </td>
+													<td style="border-right: 1px solid #000000;">104,7 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">104,9 </td>
+													<td  style="border-right: 1px solid #000000;">160 </td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">4,6 </td>
+													<td  style="border-right: 1px solid #000000;">320 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,5 </td>
+													<td style="background-color:#90EE90;" >#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=9&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">FEB</td>
+													<td  style="border-right: 1px solid #000000;">138,0 </td>
+													<td style="border-right: 1px solid #000000;">175,4 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">137,4 </td>
+													<td  style="border-right: 1px solid #000000;">145 </td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">6,7 </td>
+													<td  style="border-right: 1px solid #000000;">323 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,3 </td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=8&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAR</td>
+													<td  style="border-right: 1px solid #000000;">187,5 </td>
+													<td style="border-right: 1px solid #000000;">166,6 </td>
+													<td  style="border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;color:#FFFFFF;">101,1 </td>
+													<td  style="border-right: 1px solid #000000;">167 </td>
+													
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">5,4 </td>
+													<td  style="border-right: 1px solid #000000;">328 </td>
+													<td  style="border-right: 1px solid #000000;color:#FFFFFF;">3,4 </td><%--it's a "ghost" number--%>
+													<td style="background-color:#90EE90;">#REF! </td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"> </td>
+													<a href="/Onlyou/DeleteMonth?month=7&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">APR</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=6&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">MAG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=5&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td  style="border-right: 1px solid #000000;border-left:1px solid #000000;">GIU</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=4&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">LUG</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=3&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">AGO</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">SET</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=1&year=2017">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">OTT</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;" >f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=4&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">NOV</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+												<tr>
+													<td style="border-right: 1px solid #000000;border-left:1px solid #000000;">DIC</td>
+													<td  style="border-right: 1px solid #000000;">d</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">f</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">g</td>
+													<td style="border-right: 1px solid #000000;"></td>
+													<td  style="border-right: 1px solid #000000;">h</td>
+													<td  style="border-right: 1px solid #000000;"></td>
+													<td style="background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=1&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+												<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #000000;">PROG.</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">1.993</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;border-right: 1px solid #000000;">4.045</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;"></td>
+				
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+											
+											<tr>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-left:1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">TOT.</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">0</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">1.993</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;">4.045</td>
+													<td  style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;"></td>
+													<td  style="border-bottom:1px solid #000000;border-top:1px solid #000000;background-color:#90EE90;">#REF!</td>
+													<td style="border-right: 1px solid #000000;border-bottom:1px solid #000000;border-top:1px solid #000000;border-left:1px solid #90EE90;background-color:#90EE90;"></td>
+													<a href="/Onlyou/DeleteMonth?month=2&year=2018">
+															<i class="fa fa-trash-o" aria-hidden="true"></i>
+														</a>
+												</tr>
+
+										</tbody>
+									</table>
+		% inc.
+
+															<table id="cinquepuntoquattro" class="table table-bordered table-hover table-condensed version">
+<div id="tess">
+
+<thead>
+	<tr>
+		</br>
+		<th style="border-left:1px solid black;padding-top:20px;width:72px; font-weight:bold;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:15px;"></th>
+		<th style="font-weight:bold;font-size:15px; width:72px;border-bottom:1px solid #000000;border-top:1px solid #000000;width:385px;" colspan="2">% scost. da bdg  </th>
+		<th style="width:133px;  font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;"colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px; width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;color:red;" colspan="2"></th>
+		<th style=" font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;" colspan="2"></th>
+		<th style="font-weight:bold;font-size:15px;width:65px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;" colspan="2"></th>
+											</tr>
+										</thead>
+
+							</br>
+
+				</div>
+				</div>
+
+
+
+
+			
 							<div class="col-md-8">
 								<div class="col-md-12 form-group">
 									<form action="/Onlyou/cambio-tasso" method="post">
